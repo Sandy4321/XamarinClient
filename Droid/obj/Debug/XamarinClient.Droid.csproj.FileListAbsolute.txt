@@ -50,10 +50,11 @@
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/res/drawable-xxhdpi/icon.png
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/R.cs.flag
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/uploadflags.txt
-/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/MonoAndroid10/FormsViewGroup.dll
-/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/MonoAndroid10/Xamarin.Forms.Core.dll
-/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll
-/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/MonoAndroid10/Xamarin.Forms.Xaml.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/XamarinClient.Droid.UserAccount.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/FormsViewGroup.dll.mdb
+/Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/Xamarin.Forms.Core.dll.mdb
+/Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb
+/Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 bin/Debug/FormsViewGroup.dll.mdb
 bin/Debug/Xamarin.Forms.Core.dll.mdb
 bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb

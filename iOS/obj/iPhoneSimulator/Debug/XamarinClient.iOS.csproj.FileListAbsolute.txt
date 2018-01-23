@@ -60,3 +60,5 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.XamarinClientPage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.UserAccount.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.ProposeTransaction.xaml.g.cs

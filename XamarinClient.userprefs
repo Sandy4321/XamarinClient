@@ -1,19 +1,30 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/XamarinClientPage.xaml.cs">
     <Files>
-      <File FileName="XamarinClient/Account.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/UTXO.cs" Line="6" Column="23" />
-      <File FileName="XamarinClient/UtxoOutput.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/RpcCall.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/RpcClient.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/UtxoReturn.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/Transaction.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/TransactionService.cs" Line="20" Column="4" />
-      <File FileName="XamarinClient/HexHelper.cs" Line="3" Column="1" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="5" Column="1" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="XamarinClient/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/ProposeTransaction.xaml" Line="13" Column="1" />
+      <File FileName="XamarinClient/UserAccount.xaml.cs" Line="25" Column="17" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="10" Column="43" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="35" Column="10" />
+      <File FileName="XamarinClient/ProposeTransaction.xaml.cs" Line="17" Column="30" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinClient" expanded="True">
+            <Node name="XamarinClient" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="ProposeTransaction.xaml" expanded="True" />
+              <Node name="UserAccount.xaml" expanded="True" />
+              <Node name="XamarinClientPage.xaml" expanded="True">
+                <Node name="XamarinClientPage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="XamarinClient.Droid" expanded="True" />
+            <Node name="XamarinClient.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -11,7 +11,7 @@ using Org.BouncyCastle.Utilities.Encoders;
 
 namespace BlockchainTools
 {
-	class RpcClient
+	public class RpcClient
 	{
 		private static readonly int HASHLENGTH = 64;
 
@@ -48,6 +48,7 @@ namespace BlockchainTools
 			//Console.WriteLine(res);
 			JObject responseJson = JObject.Parse(res);
 			string result = responseJson.GetValue("result").ToString();
+            result = result.Replace("\0","");
 			//Console.WriteLine(result);
 			return Convert.FromBase64String(result);
 		}

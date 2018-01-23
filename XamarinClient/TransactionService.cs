@@ -6,7 +6,7 @@ using Org.BouncyCastle.Utilities.Encoders;
 
 namespace BlockchainTools
 {
-	class TransactionService
+	public class TransactionService
 	{
 		public UtxoTable UtxoTable { get; set; }
 		public List<UtxoReturn> returns;

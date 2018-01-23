@@ -11,6 +11,14 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)XamarinClientPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)UserAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ProposeTransaction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -28,5 +36,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Transaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TransactionService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HexHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UserAccount.xaml.cs">
+      <DependentUpon>UserAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ProposeTransaction.xaml.cs">
+      <DependentUpon>ProposeTransaction.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@ namespace BlockchainTools
 		}
 	}
 	
-	class RpcCall
+	public class RpcCall
 	{
 		//129.78.10.53,7822
 		//129.78.10.53,7722

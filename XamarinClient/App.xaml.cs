@@ -1,14 +1,23 @@
 ﻿using Xamarin.Forms;
+using BlockchainTools;
 
 namespace XamarinClient
 {
     public partial class App : Application
     {
+        public Account acc { get; set; }
+        public RpcClient client { get; set; }
+
+        public static new App Current
+        {
+            get { return Application.Current as App; }
+        }
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new XamarinClientPage());
+            MainPage = new NavigationPage(new UserAccount());
         }
 
         protected override void OnStart()
