@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/App.xaml.cs">
+    <Files>
+      <File FileName="XamarinClient/Account.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/UTXO.cs" Line="6" Column="23" />
+      <File FileName="XamarinClient/UtxoOutput.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/RpcCall.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/RpcClient.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/UtxoReturn.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/Transaction.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/TransactionService.cs" Line="20" Column="4" />
+      <File FileName="XamarinClient/HexHelper.cs" Line="3" Column="1" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="5" Column="1" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/App.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2E3BF376-AE17-4D9F-8B3F-54784D4C88D4">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.XamarinClient.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>

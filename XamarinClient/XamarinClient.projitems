@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{75419B5C-F956-4562-942D-2D67342B7378}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>XamarinClient</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XamarinClientPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)XamarinClientPage.xaml.cs">
+      <DependentUpon>XamarinClientPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UTXO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UtxoOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RpcCall.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RpcClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UtxoReturn.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TransactionService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HexHelper.cs" />
+  </ItemGroup>
+</Project>
