@@ -108,6 +108,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "XamarinClient.Droid.dll" comes first in this list. */
 		"XamarinClient.Droid.dll",
 		"BouncyCastle.Crypto.dll",
+		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"NBitcoin.dll",
 		"Newtonsoft.Json.dll",
@@ -131,6 +132,11 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"ZXing.Net.Mobile.Core.dll",
+		"ZXing.Net.Mobile.Forms.Android.dll",
+		"ZXing.Net.Mobile.Forms.dll",
+		"zxing.portable.dll",
+		"ZXingNetMobile.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

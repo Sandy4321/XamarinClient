@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinClient.ScannerPage">
+<StackLayout>
+    <Grid x:Name="mainGrid">
+    <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" BackgroundColor="Green" TextColor="White" Text="Start" Clicked="ScannerFunc"/>
+    </Grid>
+
+    <Button Text="Scan" BackgroundColor="Green" TextColor="White" Clicked="OnClickScan"/>
+</StackLayout>
+</ContentPage>

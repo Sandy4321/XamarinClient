@@ -51,6 +51,16 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/zxing.portable.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Primitives.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/Microsoft.Win32.Registry.AccessControl.dll \
@@ -338,6 +348,16 @@
 	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/zxing.portable.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \

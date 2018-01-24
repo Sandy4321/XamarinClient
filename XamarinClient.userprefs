@@ -1,23 +1,27 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/XamarinClientPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/App.xaml.cs">
     <Files>
-      <File FileName="XamarinClient/ProposeTransaction.xaml" Line="13" Column="1" />
-      <File FileName="XamarinClient/UserAccount.xaml.cs" Line="25" Column="17" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="10" Column="43" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="35" Column="10" />
-      <File FileName="XamarinClient/ProposeTransaction.xaml.cs" Line="17" Column="30" NotebookId="1" />
+      <File FileName="XamarinClient/ScannerPage.xaml" Line="12" Column="9" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="12" Column="51" />
+      <File FileName="XamarinClient/ScannerPage.xaml.cs" Line="79" Column="10" NotebookId="1" />
+      <File FileName="XamarinClient/BarCodePage.cs" Line="24" Column="31" NotebookId="1" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="44" Column="59" NotebookId="1" />
+      <File FileName="XamarinClient/App.xaml.cs" Line="20" Column="58" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XamarinClient" expanded="True">
             <Node name="XamarinClient" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="ProposeTransaction.xaml" expanded="True" />
-              <Node name="UserAccount.xaml" expanded="True" />
-              <Node name="XamarinClientPage.xaml" expanded="True">
-                <Node name="XamarinClientPage.xaml.cs" selected="True" />
+              <Node name="AddServerPage.xaml" expanded="True" />
+              <Node name="App.xaml" expanded="True">
+                <Node name="App.xaml.cs" selected="True" />
               </Node>
+              <Node name="ProposeTransaction.xaml" expanded="True" />
+              <Node name="QRCodePage.xaml" expanded="True" />
+              <Node name="ScannerPage.xaml" expanded="True" />
+              <Node name="UserAccount.xaml" expanded="True" />
+              <Node name="XamarinClientPage.xaml" expanded="True" />
             </Node>
             <Node name="XamarinClient.Droid" expanded="True" />
             <Node name="XamarinClient.iOS" expanded="True" />

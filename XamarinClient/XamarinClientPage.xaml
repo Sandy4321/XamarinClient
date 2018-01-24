@@ -8,5 +8,7 @@
         <Label Text="UTXO:"/>
         <Label x:Name="UTXO" Text=""/>
         <Button Text="Pay" Clicked="Pay"/>
+        <Button Text="Scan QR Code" Clicked="OnClickScan"/>
+        <Button Text="My QR Code" Clicked="MyQR"/>  
     </StackLayout>
 </ContentPage>

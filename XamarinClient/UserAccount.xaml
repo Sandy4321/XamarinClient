@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinClient.UserAccount">
 	<StackLayout>
         <Label Text="Private Key"/>
-        <Entry x:Name="PrivKey" IsPassword="true" Text=""/>
+        <Entry x:Name="PrivKey" IsPassword="true" Text="LrJF+fNxAHGtnz6W8co8De53Ff6tOU2LKLGIsWBI1yg="/>
         <Label Text="Server"/>
         <StackLayout Orientation="Horizontal">
-        <Label Text="Host"/><Entry x:Name="ServerHost" Text="" HorizontalOptions="FillAndExpand"/>
+        <Label Text="Host"/><Entry x:Name="ServerHost" Text="129.78.10.53" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-        <Label Text="Port"/><Entry x:Name = "ServerPort" Text="" HorizontalOptions="FillAndExpand"/>
+        <Label Text="Port"/><Entry x:Name = "ServerPort" Text="7822" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
         <Label Text=""/>
         <Button x:Name="ShowPrivKey" Text="Show Private Key" Clicked="ShowPrivateKey" />

@@ -1,5 +1,6 @@
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/XamarinClient.Droid.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/BouncyCastle.Crypto.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/FastAndroidCamera.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/FormsViewGroup.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/Java.Interop.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/Microsoft.CSharp.dll
@@ -33,6 +34,11 @@
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.Android.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/Xamarin.Forms.Platform.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/Xamarin.Forms.Xaml.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/ZXing.Net.Mobile.Core.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/ZXing.Net.Mobile.Forms.Android.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/ZXing.Net.Mobile.Forms.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/zxing.portable.dll
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/ZXingNetMobile.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/System.Threading.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/System.Collections.dll
 /Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/android/assets/System.Collections.Concurrent.dll

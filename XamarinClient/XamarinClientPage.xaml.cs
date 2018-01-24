@@ -35,6 +35,28 @@ namespace XamarinClient
         async void Pay(object sender, EventArgs args){
             await Navigation.PushAsync(new ProposeTransaction());
         }
+
+        public async void OnClickScan(Object sender, EventArgs args)
+        {
+            var scanPage = new ZXing.Net.Mobile.Forms.ZXingScannerPage();
+
+            scanPage.OnScanResult += (result) =>
+            {
+                scanPage.IsScanning = false;
+
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    Navigation.PopAsync();
+                    DisplayAlert("Scanned bar code", result.Text, "OK");
+                });
+            };
+
+            await Navigation.PushAsync(scanPage);
+        }
+
+        async void MyQR(Object sender, EventArgs args){
+            await Navigation.PushAsync(new BarCodePage());
+        }
     }
 }
 
