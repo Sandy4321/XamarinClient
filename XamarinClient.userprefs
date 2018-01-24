@@ -2,11 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/App.xaml.cs">
     <Files>
       <File FileName="XamarinClient/ScannerPage.xaml" Line="12" Column="9" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="12" Column="51" />
-      <File FileName="XamarinClient/ScannerPage.xaml.cs" Line="79" Column="10" NotebookId="1" />
-      <File FileName="XamarinClient/BarCodePage.cs" Line="24" Column="31" NotebookId="1" />
-      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="44" Column="59" NotebookId="1" />
-      <File FileName="XamarinClient/App.xaml.cs" Line="20" Column="58" NotebookId="1" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml" Line="11" Column="45" />
+      <File FileName="XamarinClient/ProposeTransaction.xaml.cs" Line="18" Column="31" />
+      <File FileName="XamarinClient/App.xaml.cs" Line="10" Column="35" />
+      <File FileName="XamarinClient/ScannerPage.xaml.cs" Line="92" Column="49" NotebookId="1" />
+      <File FileName="XamarinClient/BarCodePage.cs" Line="20" Column="48" NotebookId="1" />
+      <File FileName="XamarinClient/XamarinClientPage.xaml.cs" Line="31" Column="40" NotebookId="1" />
+      <File FileName="XamarinClient/UserAccount.xaml.cs" Line="31" Column="33" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -1,4 +1,5 @@
 ﻿using System;
+using BlockchainTools;
 
 using Xamarin.Forms;
 
@@ -19,7 +20,8 @@ namespace XamarinClient
             barcode.BarcodeOptions.Width = 300;
             barcode.BarcodeOptions.Height = 300;
             barcode.BarcodeOptions.Margin = 10;
-            barcode.BarcodeValue = Convert.ToBase64String(App.Current.acc.address);
+            Account acc = App.Current.Properties["Account"] as Account;
+            barcode.BarcodeValue = Convert.ToBase64String(acc.address);
 
             Content = barcode;
         }

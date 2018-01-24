@@ -14,8 +14,8 @@ namespace XamarinClient
         {
             InitializeComponent();
 
-            acc = App.Current.acc;
-            client = App.Current.client;
+            acc = Application.Current.Properties["Account"] as Account;
+            client = Application.Current.Properties["Client"] as RpcClient;
 
             Account.Text = Convert.ToBase64String(acc.address);
             Balance.Text = client.BalanceFromAccountTable().ToString();
@@ -24,7 +24,7 @@ namespace XamarinClient
             List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
             if(list.Count!=0){
                 foreach(UtxoOutput output in list){
-                    UTXO.Text += output.ToString();
+                    UTXO.Text += output.ToString() + "\n";
                 }
             }
             else{

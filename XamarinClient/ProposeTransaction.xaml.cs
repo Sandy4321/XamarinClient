@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using BlockchainTools;
 
 using Xamarin.Forms;
 
@@ -14,7 +15,8 @@ namespace XamarinClient
 
         void Pay(object sender,EventArgs args){
             int amount = Int32.Parse(Amount.Text);
-            App.Current.client.ProposeTransaction(Convert.FromBase64String(Receiver.Text),amount);
+            RpcClient client = Application.Current.Properties["Client"] as RpcClient;
+            client.ProposeTransaction(Convert.FromBase64String(Receiver.Text),amount);
             DisplayAlert("Transaction","Payment successful","OK");
         }
     }
