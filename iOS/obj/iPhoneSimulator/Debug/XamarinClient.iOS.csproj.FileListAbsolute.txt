@@ -50,10 +50,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool/_BundleResourceWithLogicalName.items
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_PartialAppManifest.items
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_BundleResourceWithLogicalName.items
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.csprojResolveAssemblyReference.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.csproj.CoreCompileInputs.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.App.xaml.g.cs
@@ -70,3 +66,8 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/zxing.portable.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/ZXingNetMobile.dll
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.QRCodePage.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_PartialAppManifest.items
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/hamburger.png

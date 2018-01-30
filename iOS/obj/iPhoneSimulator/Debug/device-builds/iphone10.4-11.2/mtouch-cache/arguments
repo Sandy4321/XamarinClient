@@ -1,6 +1,6 @@
-# Version: 11.6.1.3 (xcode9.2: f70a1348)
+# Version: 11.6.1.4 (xcode9.2: db807ec9)
 # [first argument, ignore] # --cache
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.3/lib/mtouch/mtouch.exe \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mtouch/mtouch.exe \
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache \
 	--sim \
 	/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/XamarinClient.iOS.app \
@@ -13,7 +13,7 @@
 	--sdk \
 	11.2 \
 	--targetver \
-	8.0 \
+	11.0 \
 	--aot-options=-O=-float32 \
 	--http-message-handler=HttpClientHandler \
 	--abi=x86_64 \

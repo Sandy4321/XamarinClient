@@ -65,6 +65,8 @@
 /Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/zxing.portable.dll
 /Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/ZXingNetMobile.dll
 /Users/Yiding/Documents/XamarinClient/Droid/bin/Debug/FastAndroidCamera.xml
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/XamarinClient.Droid.QRCodePage.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/XamarinClient.Droid.RootPage.xaml.g.cs
 bin/Debug/FormsViewGroup.dll.mdb
 bin/Debug/Xamarin.Forms.Core.dll.mdb
 bin/Debug/Xamarin.Forms.Platform.Android.dll.mdb

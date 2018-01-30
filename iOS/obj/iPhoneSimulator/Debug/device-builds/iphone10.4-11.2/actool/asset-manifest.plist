@@ -6,7 +6,6 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/bundle/AppIcon40x40@3x.png</string>
 			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/bundle/AppIcon60x60@2x.png</string>
 			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/bundle/Assets.car</string>
 			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/partial-info.plist</string>
@@ -14,42 +13,6 @@
 	</dict>
 	<key>com.apple.actool.document.warnings</key>
 	<array>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>A 76x76@1x app icon is required for iPad apps targeting iOS 7, 8, and 9</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>A 76x76@2x app icon is required for iPad apps targeting iOS 7.0 and later</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
-				<string>./AppIcon.appiconset</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>A 83.5x83.5@2x app icon is required for iPad apps targeting iOS 9.0 and later</string>
-			<key>type</key>
-			<string>Missing Content</string>
-		</dict>
 		<dict>
 			<key>affected-items</key>
 			<array>

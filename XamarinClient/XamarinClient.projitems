@@ -9,60 +9,67 @@
     <Import_RootNamespace>XamarinClient</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)XamarinClientPage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)UserAccount.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\AddServerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ProposeTransaction.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ProposeTransaction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AddServerPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ScannerPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ScannerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)QRCodePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\UserAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)XamarinClientPage.xaml.cs">
-      <DependentUpon>XamarinClientPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Account.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UTXO.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UtxoOutput.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RpcCall.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)RpcClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UtxoReturn.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transaction.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)TransactionService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)HexHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)UserAccount.xaml.cs">
-      <DependentUpon>UserAccount.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ProposeTransaction.xaml.cs">
-      <DependentUpon>ProposeTransaction.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AddServerPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RpcCall.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RpcClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Transaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TransactionService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\UTXO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\UtxoOutput.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\UtxoReturn.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HexHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\AddServerPage.xaml.cs">
       <DependentUpon>AddServerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ScannerPage.xaml.cs">
-      <DependentUpon>ScannerPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)View\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)QRCodePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)View\BarCodePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\MasterPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\MasterPageItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ProposeTransaction.xaml.cs">
+      <DependentUpon>ProposeTransaction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml.cs">
       <DependentUpon>QRCodePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)BarCodePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\ScannerPage.xaml.cs">
+      <DependentUpon>ScannerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\UserAccount.xaml.cs">
+      <DependentUpon>UserAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml.cs">
+      <DependentUpon>XamarinClientPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)View\" />
   </ItemGroup>
 </Project>
