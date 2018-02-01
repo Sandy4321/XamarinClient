@@ -3,18 +3,11 @@
 	<StackLayout>
         <Label Text="Private Key"/>
         <Entry x:Name="PrivKey" IsPassword="true" Text="LrJF+fNxAHGtnz6W8co8De53Ff6tOU2LKLGIsWBI1yg="/>
-        <Label Text="Server"/>
-        <StackLayout Orientation="Horizontal">
-        <Label Text="Host"/><Entry x:Name="ServerHost" Text="129.78.10.53" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-        <Label Text="Port"/><Entry x:Name = "ServerPort" Text="7822" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+
         <Label Text=""/>
         <Button x:Name="ShowPrivKey" Text="Show Private Key" Clicked="ShowPrivateKey" />
         <Button Text="Save Key Pair" Clicked="SaveKeys"/>
         <Label x:Name ="Error" Text=""/>
-        <Label Text=""/>
         <Button Text="Create New Account" Clicked="CreateNewAccount"/>
     </StackLayout>
 </ContentPage>

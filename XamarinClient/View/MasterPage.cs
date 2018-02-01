@@ -16,6 +16,12 @@ namespace XamarinClient
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {
+                Title = "Home Page",
+                IconSource = "homepage.png",
+                TargetType = typeof(XamarinClientPage),
+            });
+            masterPageItems.Add(new MasterPageItem
+            {
                 Title = "Set Account",
                 IconSource = "contacts.png",
                 TargetType = typeof(UserAccount)
@@ -24,7 +30,7 @@ namespace XamarinClient
             {
                 Title = "Configure Server",
                 IconSource = "todo.png",
-                TargetType = typeof(AddServerPage)
+                TargetType = typeof(ServersPage)
             });
 
             listView = new ListView

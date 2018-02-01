@@ -13,6 +13,12 @@ namespace XamarinClient
             InitializeComponent();
         }
 
+        public ProposeTransaction(string receiver)
+        {
+            InitializeComponent();
+            Receiver.Text = receiver;
+        }
+
         void Pay(object sender,EventArgs args){
             int amount = Int32.Parse(Amount.Text);
             RpcClient client = Application.Current.Properties["Client"] as RpcClient;

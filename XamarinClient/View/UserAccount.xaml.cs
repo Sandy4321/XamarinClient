@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using BlockchainTools;
 using Newtonsoft.Json;
+using System.Net.Http;
 
 using Xamarin.Forms;
 
@@ -24,12 +25,11 @@ namespace XamarinClient
             RpcClient client = new RpcClient(false);
             Account acc = new Account();
             try{
-                if(PrivKey.Text=="" || ServerHost.Text=="" || ServerPort.Text==""){
+                if(PrivKey.Text==""){
                     throw new Exception("Please fill in the content");
                 }
                 acc= new Account(PrivKey.Text);
                 client.Account = acc;
-                client.AddServer(ServerHost.Text, Int32.Parse(ServerPort.Text));
                 if(!Application.Current.Properties.ContainsKey("Account")){
                     Application.Current.Properties.Add("Account", acc);
                     Application.Current.Properties.Add("Client", client);
@@ -42,15 +42,10 @@ namespace XamarinClient
             }
             if(!Application.Current.Properties.ContainsKey("PrivateKey")){
                 Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(acc.privateKey));
-                Application.Current.Properties.Add("ServerHost", ServerHost.Text);
-                Application.Current.Properties.Add("ServerPort", ServerPort.Text);
             } else {
                 Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(acc.privateKey);
-                Application.Current.Properties["ServerHost"] = ServerHost.Text;
-                Application.Current.Properties["ServerPort"] = ServerPort.Text;
             }
             await Application.Current.SavePropertiesAsync();
-            await Navigation.PushAsync(new XamarinClientPage());
         }
 
         async void CreateNewAccount(object sender, EventArgs args)
@@ -58,22 +53,17 @@ namespace XamarinClient
             RpcClient client = new RpcClient(true);
             if (!Application.Current.Properties.ContainsKey("Account"))
             {
+                client.InitFromBootstrap();
                 Application.Current.Properties.Add("Account", client.Account);
                 Application.Current.Properties.Add("Client", client);
                 Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(client.Account.privateKey));
-                Application.Current.Properties.Add("ServerHost", ServerHost.Text);
-                Application.Current.Properties.Add("ServerPort", ServerPort.Text);
             }
             else
             {
                 Application.Current.Properties["Account"] = client.Account;
                 Application.Current.Properties["Client"] = client;
                 Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(client.Account.privateKey);
-                Application.Current.Properties["ServerHost"] = ServerHost.Text;
-                Application.Current.Properties["ServerPort"] = ServerPort.Text;
             }
-
-            await Navigation.PushAsync(new XamarinClientPage());
         }
     }
 }

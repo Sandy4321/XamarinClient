@@ -2,6 +2,7 @@
 using BlockchainTools;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace XamarinClient
 {
@@ -9,26 +10,49 @@ namespace XamarinClient
     {
         public Account acc { get; set; }
         public RpcClient client { get; set; }
+        public ObservableCollection<ServerDisplay> servers { get; set; }
 
         public XamarinClientPage()
         {
             InitializeComponent();
+            if (Application.Current.Properties.ContainsKey("Account") && Application.Current.Properties.ContainsKey("Client") && Application.Current.Properties.ContainsKey("Servers"))
+            {
+                acc = Application.Current.Properties["Account"] as Account;
+                client = Application.Current.Properties["Client"] as RpcClient;
+                servers = Application.Current.Properties["Servers"] as ObservableCollection<ServerDisplay>;
 
-            acc = Application.Current.Properties["Account"] as Account;
-            client = Application.Current.Properties["Client"] as RpcClient;
+                Account.Text = Convert.ToBase64String(acc.address);
+                Balance.Text = client.BalanceFromAccountTable().ToString();
 
-            Account.Text = Convert.ToBase64String(acc.address);
-            Balance.Text = client.BalanceFromAccountTable().ToString();
-
-            client.InitFromBootstrap();
-            List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
-            if(list.Count!=0){
-                foreach(UtxoOutput output in list){
-                    UTXO.Text += output.ToString() + "\n";
+                foreach(ServerDisplay server in servers){
+                    client.ServerList.Add(new Tuple<string, int>(server.host,server.port));
                 }
+                client.InitFromBootstrap();
+
+                List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                if (list.Count != 0)
+                {
+                    foreach (UtxoOutput output in list)
+                    {
+                        UTXO.Text += output.ToString() + "\n";
+                    }
+                }
+                else
+                {
+                    UTXO.Text = "No Utxos";
+                }
+                Payment.IsEnabled = true;
+                QR.IsEnabled = true;
+                Scan.IsEnabled = true;
             }
-            else{
-                UTXO.Text = "No Utxos";
+            else
+            {
+                Account.Text = "N/A";
+                Balance.Text = "-1";
+                UTXO.Text = "N/A";
+                Payment.IsEnabled = false;
+                QR.IsEnabled = false;
+                Scan.IsEnabled = false;
             }
         }
 
@@ -44,10 +68,10 @@ namespace XamarinClient
             {
                 scanPage.IsScanning = false;
 
-                Device.BeginInvokeOnMainThread(() =>
+                Device.BeginInvokeOnMainThread(async () =>
                 {
-                    Navigation.PopAsync();
-                    DisplayAlert("Scanned bar code", result.Text, "OK");
+                    var payment = new ProposeTransaction(result.Text);
+                    await Navigation.PushAsync(payment);
                 });
             };
 

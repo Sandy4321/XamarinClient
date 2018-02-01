@@ -25,7 +25,9 @@ namespace BlockchainTools
 			{
 				UserTxTable.Add(address, new Dictionary<string, int>());
 			}
-			UserTxTable[address].Add(hash,index);
+            if(!UserTxTable[address].ContainsKey(hash)){
+                UserTxTable[address].Add(hash, index);
+            }
 		}
 		
 		//Add a list of UtxoOutputs to the transaction

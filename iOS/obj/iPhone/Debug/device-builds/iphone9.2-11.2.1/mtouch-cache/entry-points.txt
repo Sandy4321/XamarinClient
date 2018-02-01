@@ -16,12 +16,12 @@ Function=WriteZStream
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/System.dll
 Function=xamarin_start_wwan
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/System.dll
+Function=UIApplicationMain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_IntPtr_objc_msgSend_IntPtr
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/Xamarin.iOS.dll
-Function=UIApplicationMain
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/mtouch-cache/Link/Xamarin.iOS.dll
 Function=mono_pmip

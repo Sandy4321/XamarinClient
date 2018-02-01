@@ -7,8 +7,8 @@
         <Label x:Name="Balance" Text="-1"/>
         <Label Text="UTXO:"/>
         <Label x:Name="UTXO" Text=""/>
-        <Button Text="Pay" Clicked="Pay"/>
-        <Button Text="Scan QR Code" Clicked="OnClickScan"/>
-        <Button Text="My QR Code" Clicked="MyQR"/>  
+        <Button x:Name="Payment" Text="Pay" Clicked="Pay"/>
+        <Button x:Name="Scan" Text="Scan QR Code" Clicked="OnClickScan"/>
+        <Button x:Name="QR" Text="My QR Code" Clicked="MyQR"/>  
     </StackLayout>
 </ContentPage>

@@ -12,7 +12,7 @@ namespace XamarinClient
         {
             masterPage = new MasterPage();
             Master = masterPage;
-            Detail = new NavigationPage(new UserAccount());
+            Detail = new NavigationPage(new XamarinClientPage());
 
             masterPage.ListView.ItemSelected += OnItemSelected;
 
@@ -24,6 +24,7 @@ namespace XamarinClient
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            Page current = sender as Page;
             var item = e.SelectedItem as MasterPageItem;
             if (item != null)
             {

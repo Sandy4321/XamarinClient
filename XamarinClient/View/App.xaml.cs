@@ -3,6 +3,8 @@ using Xamarin.Forms.Xaml;
 using BlockchainTools;
 using Newtonsoft.Json;
 using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace XamarinClient
 {
@@ -18,6 +20,10 @@ namespace XamarinClient
         protected override void OnStart()
         {
             // Handle when your app starts
+            HttpClient http = new HttpClient();
+            Task.Run(async () => {
+                await http.GetAsync(new Uri("http://www.google.com"));
+            }).GetAwaiter().GetResult();
 
             if (!Application.Current.Properties.ContainsKey("PrivateKey"))
             {

@@ -76,7 +76,7 @@ namespace BlockchainTools
 					networkStream.Read(recvByte, 0, recvByte.Length);
 					recv += Encoding.UTF8.GetString(recvByte);
 					i++;
-					System.Threading.Thread.Sleep(30);
+					System.Threading.Thread.Sleep(100);
 				} while (networkStream.DataAvailable);
 				recv = recv.Substring(0, recv.IndexOf("\n"));
 			}

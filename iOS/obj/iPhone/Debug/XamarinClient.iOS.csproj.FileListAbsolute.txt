@@ -56,14 +56,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.csproj.CoreCompileInputs.cache
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.App.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.XamarinClientPage.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.UserAccount.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.ProposeTransaction.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.AddServerPage.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.ScannerPage.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.QRCodePage.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.RootPage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.csprojResolveAssemblyReference.cache
@@ -71,3 +63,9 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/actool/_PartialAppManifest.items
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/actool/_BundleResourceWithLogicalName.items
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/optimized/
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/device-builds/iphone9.2-11.2.1/optimized/hamburger.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.App.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.ProposeTransaction.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.QRCodePage.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.UserAccount.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs

@@ -9,20 +9,12 @@
     <Import_RootNamespace>XamarinClient</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\AddServerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ProposeTransaction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ScannerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -42,9 +34,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\UtxoReturn.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HexHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\AddServerPage.xaml.cs">
-      <DependentUpon>AddServerPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -58,15 +47,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml.cs">
       <DependentUpon>QRCodePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\ScannerPage.xaml.cs">
-      <DependentUpon>ScannerPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\UserAccount.xaml.cs">
       <DependentUpon>UserAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml.cs">
       <DependentUpon>XamarinClientPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ServersPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

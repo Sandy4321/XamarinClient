@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Mon Dec 18 14:29:38 EST 2017)"
+	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
 	.asciz "System.Globalization.Extensions.dll"
 	.asciz ""
 
@@ -234,7 +234,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "A653CE87-2517-4FBB-B783-CE1F1473807B"
+	.asciz "AF03DFE2-1A7F-4F7B-A60B-E0EF309A9078"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -317,7 +317,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 93,248,251,226,185,142,212,155,147,60,81,155,111,63,203,73
+	.byte 4,33,52,255,7,112,238,83,248,107,170,146,13,44,218,176
 	.globl _mono_aot_module_System_Globalization_Extensions_info
 	.align 3
 _mono_aot_module_System_Globalization_Extensions_info:
