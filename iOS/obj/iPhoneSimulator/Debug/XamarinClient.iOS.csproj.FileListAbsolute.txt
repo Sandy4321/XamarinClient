@@ -69,3 +69,8 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.QRCodePage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.UserAccount.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Acr.UserDialogs.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/BTProgressHUD.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.Platform.dll

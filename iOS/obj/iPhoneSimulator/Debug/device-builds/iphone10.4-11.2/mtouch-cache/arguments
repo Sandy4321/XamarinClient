@@ -21,7 +21,11 @@
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-symbols.list \
 	--dsym=no \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Acr.UserDialogs.7.0.1/lib/xamarinios10/Acr.UserDialogs.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/BTProgressHUD.1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
@@ -30,6 +34,14 @@
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
@@ -40,6 +52,8 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.Linq.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
@@ -335,11 +349,21 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Acr.UserDialogs.7.0.1/lib/xamarinios10/Acr.UserDialogs.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/BTProgressHUD.1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
