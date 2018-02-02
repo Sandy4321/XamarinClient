@@ -59,8 +59,12 @@ namespace BlockchainTools
 			return recvJson;
 		}
 		
-		public byte[] InvokeAndReadResponse(string method, object[] parameters, TcpClient client)
+        public byte[] InvokeAndReadResponse(string method, object[] parameters, TcpClient client, int sleepTime)
 		{
+            if(sleepTime>300){
+                throw new Exception("Network Error");
+            }
+
 			JsonObj json = new JsonObj(method, parameters,0);
 			String recv = "";
 			using (NetworkStream networkStream = client.GetStream())
@@ -76,9 +80,13 @@ namespace BlockchainTools
 					networkStream.Read(recvByte, 0, recvByte.Length);
 					recv += Encoding.UTF8.GetString(recvByte);
 					i++;
-					System.Threading.Thread.Sleep(100);
+					System.Threading.Thread.Sleep(sleepTime);
 				} while (networkStream.DataAvailable);
-				recv = recv.Substring(0, recv.IndexOf("\n"));
+                try{
+                    recv = recv.Substring(0, recv.IndexOf("\n"));
+                } catch (Exception e){
+                    return InvokeAndReadResponse(method, parameters, client, sleepTime+100);
+                }
 			}
 			return Encoding.UTF8.GetBytes(recv);
 		}

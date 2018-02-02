@@ -1,25 +1,22 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/XamarinClientPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/ProposeTransaction.xaml.cs">
     <Files>
+      <File FileName="XamarinClient/View/ServersPage.cs" Line="11" Column="30" />
+      <File FileName="XamarinClient/View/UserAccount.xaml" Line="14" Column="1" />
+      <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="43" Column="14" />
+      <File FileName="XamarinClient/View/MainPage.cs" Line="14" Column="33" />
       <File FileName="XamarinClient/View/MasterPage.cs" Line="28" Column="16" />
-      <File FileName="XamarinClient/View/MainPage.cs" Line="31" Column="1" />
-      <File FileName="XamarinClient/View/App.xaml.cs" Line="30" Column="40" />
-      <File FileName="XamarinClient/Model/RpcCall.cs" Line="79" Column="38" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="XamarinClient/View/XamarinClientPage.xaml.cs" Line="74" Column="52" />
-      <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="54" Column="72" NotebookId="1" />
-      <File FileName="XamarinClient/Model/RpcClient.cs" Line="83" Column="1" NotebookId="1" />
-      <File FileName="XamarinClient/Model/UTXO.cs" Line="32" Column="3" NotebookId="1" />
-      <File FileName="XamarinClient/View/ServersPage.cs" Line="16" Column="52" NotebookId="1" />
-      <File FileName="XamarinClient/View/ProposeTransaction.xaml" Line="7" Column="44" NotebookId="1" />
-      <File FileName="XamarinClient/View/ProposeTransaction.xaml.cs" Line="16" Column="32" NotebookId="1" />
+      <File FileName="XamarinClient/View/ProposeTransaction.xaml.cs" Line="24" Column="1" />
+      <File FileName="XamarinClient/View/XamarinClientPage.xaml" Line="3" Column="16" NotebookId="1" />
+      <File FileName="XamarinClient/View/XamarinClientPage.xaml.cs" Line="30" Column="17" NotebookId="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2E3BF376-AE17-4D9F-8B3F-54784D4C88D4" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.da276a7b445433b7dd593c797ae9871386f11eae" automaticSigning="False" />
   <MultiItemStartupConfigurations />
 </Properties>

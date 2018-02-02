@@ -62,19 +62,21 @@ namespace BlockchainTools
 			}
 			Client = new TcpClient();
 			Client.Connect(ServerList[0].Item1,ServerList[0].Item2);
-			return GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable", new object[]{this.Account.address}, Client));
+			return GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable", new object[]{this.Account.address}, Client, 50));
 		}
 		
 		//GET ACCOUNT TABLE
 		public byte[] GetAccountTable()
 		{
+            byte[] result = null;
 			if (ServerList.Count == 0)
 			{
 				return null;
 			}
 			Client = new TcpClient();
 			Client.Connect(ServerList[0].Item1,ServerList[0].Item2);
-			return GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount", new object[]{this.Account.address}, Client));
+            return GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount", new object[]{this.Account.address}, Client, 50));
+            
 		}
 		
 		//Initialize From BootStrapTable
@@ -160,7 +162,7 @@ namespace BlockchainTools
 			
 			Client = new TcpClient();
 			Client.Connect(ServerList[0].Item1,ServerList[0].Item2);
-			byte[] json = Rpc.InvokeAndReadResponse("RpcNode.ProposeTransaction", new Object[]{signedTransaction} ,Client);
+			byte[] json = Rpc.InvokeAndReadResponse("RpcNode.ProposeTransaction", new Object[]{signedTransaction} ,Client, 50);
 			string res = Encoding.UTF8.GetString(json);
 			JObject responseJson = JObject.Parse(res);
 			string result = responseJson.GetValue("result").ToString();

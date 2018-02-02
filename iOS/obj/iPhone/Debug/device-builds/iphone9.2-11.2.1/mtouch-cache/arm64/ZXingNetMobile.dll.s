@@ -20095,7 +20095,7 @@ bl _p_88
 .word 0xf9402801
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9404030
+.word 0xf9404430
 .word 0xd63f0200
 .word 0x53001c00
 .word 0xf9401bb1
@@ -63197,7 +63197,7 @@ _mono_aot_file_info:
 	.long 688,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 175,98,33,65,37,207,109,96,238,55,58,252,23,78,195,89
+	.byte 132,95,181,209,92,198,50,123,141,79,140,136,22,197,43,182
 	.globl _mono_aot_module_ZXingNetMobile_info
 	.align 3
 _mono_aot_module_ZXingNetMobile_info:

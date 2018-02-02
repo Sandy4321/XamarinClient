@@ -17887,9 +17887,9 @@ ldr x2, [x16, #16]
 .word 0xf944a231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd281b340
+.word 0xd281b540
 .word 0xf2a00040
-.word 0xd281b340
+.word 0xd281b540
 .word 0xf2a00040
 bl _p_62
 .word 0xf9004fa0
@@ -22538,7 +22538,7 @@ _mono_aot_file_info:
 	.long 440,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 175,17,0,25,239,106,54,249,76,160,3,201,36,42,72,43
+	.byte 70,114,58,153,195,42,94,170,24,108,221,230,69,195,30,144
 	.globl _mono_aot_module_ZXing_Net_Mobile_Core_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Core_info:

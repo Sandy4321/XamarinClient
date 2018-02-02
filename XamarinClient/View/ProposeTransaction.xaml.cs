@@ -19,11 +19,12 @@ namespace XamarinClient
             Receiver.Text = receiver;
         }
 
-        void Pay(object sender,EventArgs args){
+        async void Pay(object sender,EventArgs args){
             int amount = Int32.Parse(Amount.Text);
-            RpcClient client = Application.Current.Properties["Client"] as RpcClient;
+            RpcClient client = XamarinClientPage.client;
             client.ProposeTransaction(Convert.FromBase64String(Receiver.Text),amount);
-            DisplayAlert("Transaction","Payment successful","OK");
+            await DisplayAlert("Transaction","Payment successful","OK");
+            await Navigation.PushModalAsync(new MainPage());
         }
     }
 }

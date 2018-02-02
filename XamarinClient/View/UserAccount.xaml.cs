@@ -22,20 +22,16 @@ namespace XamarinClient
 
         async void SaveKeys(object sender, EventArgs args)
         {
-            RpcClient client = new RpcClient(false);
             Account acc = new Account();
             try{
                 if(PrivKey.Text==""){
                     throw new Exception("Please fill in the content");
                 }
                 acc= new Account(PrivKey.Text);
-                client.Account = acc;
                 if(!Application.Current.Properties.ContainsKey("Account")){
                     Application.Current.Properties.Add("Account", acc);
-                    Application.Current.Properties.Add("Client", client);
                 } else {
                     Application.Current.Properties["Account"] = acc;
-                    Application.Current.Properties["Client"] = client;
                 }
             } catch(Exception e){
                 Error.Text = e.Message;
@@ -50,19 +46,16 @@ namespace XamarinClient
 
         async void CreateNewAccount(object sender, EventArgs args)
         {
-            RpcClient client = new RpcClient(true);
+            Account account = new Account();
             if (!Application.Current.Properties.ContainsKey("Account"))
             {
-                client.InitFromBootstrap();
-                Application.Current.Properties.Add("Account", client.Account);
-                Application.Current.Properties.Add("Client", client);
-                Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(client.Account.privateKey));
+                Application.Current.Properties.Add("Account", account);
+                Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(account.privateKey));
             }
             else
             {
-                Application.Current.Properties["Account"] = client.Account;
-                Application.Current.Properties["Client"] = client;
-                Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(client.Account.privateKey);
+                Application.Current.Properties["Account"] = account;
+                Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(account.privateKey);
             }
         }
     }

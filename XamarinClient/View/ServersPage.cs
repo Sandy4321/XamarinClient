@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Net.Sockets;
 
 using Xamarin.Forms;
 
@@ -138,24 +139,57 @@ namespace XamarinClient
         {
             if (ServerHost.Text != "" && ServerPort.Text != "")
             {
-                ServerDisplay server = new ServerDisplay(ServerHost.Text, int.Parse(ServerPort.Text));
+                ServerDisplay server;
+
+                try
+                {
+                    server = new ServerDisplay(ServerHost.Text, int.Parse(ServerPort.Text));
+                    if (server.port < 0 || server.port > 65535){
+                        throw new FormatException();
+                    }
+                } catch (FormatException e){
+                    await DisplayAlert("Error", "Invalid port:\nPort can only be number from 0-65535.", "OK");
+                    return;
+                } catch(OverflowException e){
+                    await DisplayAlert("Error", "Invalid port:\nPort can only be number from 0-65535.", "OK");
+                    return;
+                } catch(Exception e){
+                    await DisplayAlert("Fatal", "Invalid Server", "OK");
+                    return;
+                }
+
+                try
+                {
+                    TcpClient client = new TcpClient();
+                    var result = client.BeginConnect(server.host, server.port,null,null);
+                    var success = result.AsyncWaitHandle.WaitOne(TimeSpan.FromSeconds(1));
+                    if(!success){
+                        throw new Exception("Failed to connect");
+                    }
+                }
+                catch (Exception e)
+                {
+                    await DisplayAlert("Fatal", "Invalid Server", "OK");
+                    return;
+                }
+
                 if (ServerList.Contains(server))
                 {
                     await DisplayAlert("Alert", "You have added this server", "OK");
-                
                 }
                 else
                 {
                     ServerList.Add(server);
+
+                    if (Application.Current.Properties.ContainsKey("Servers"))
+                    {
+                        Application.Current.Properties["Servers"] = ServerList;
+                    }
+                    else
+                    {
+                        Application.Current.Properties.Add("Servers", ServerList);
+                    }
                 }
-            }
-            if (Application.Current.Properties.ContainsKey("Servers"))
-            {
-                Application.Current.Properties["Servers"] = ServerList;
-            }
-            else
-            {
-                Application.Current.Properties.Add("Servers", ServerList);
             }
         }
     }

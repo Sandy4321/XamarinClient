@@ -97792,9 +97792,9 @@ ldr x2, [x16, #16]
 .word 0xf944ce31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd281b340
+.word 0xd281b540
 .word 0xf2a00040
-.word 0xd281b340
+.word 0xd281b540
 .word 0xf2a00040
 bl _p_470
 .word 0xf90087a0
@@ -119235,7 +119235,7 @@ _mono_aot_file_info:
 	.long 1392,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 156,129,24,239,194,240,11,26,171,145,186,116,222,143,227,138
+	.byte 163,234,35,18,4,76,151,218,146,18,50,115,101,22,193,192
 	.globl _mono_aot_module_Xamarin_Forms_Xaml_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_Xaml_info:

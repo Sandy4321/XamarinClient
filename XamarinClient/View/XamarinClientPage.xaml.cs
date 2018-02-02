@@ -3,35 +3,55 @@ using BlockchainTools;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 
 namespace XamarinClient
 {
     public partial class XamarinClientPage : ContentPage
     {
-        public Account acc { get; set; }
-        public RpcClient client { get; set; }
-        public ObservableCollection<ServerDisplay> servers { get; set; }
+        public static Account acc { get; set; }
+        public static RpcClient client { get; set; }
+        public static ObservableCollection<ServerDisplay> servers { get; set; }
 
         public XamarinClientPage()
         {
             InitializeComponent();
-            if (Application.Current.Properties.ContainsKey("Account") && Application.Current.Properties.ContainsKey("Client") && Application.Current.Properties.ContainsKey("Servers"))
+            Init();
+        }
+
+        async void Init(){
+            if (Application.Current.Properties.ContainsKey("Account") && Application.Current.Properties.ContainsKey("Servers"))
             {
                 acc = Application.Current.Properties["Account"] as Account;
-                client = Application.Current.Properties["Client"] as RpcClient;
                 servers = Application.Current.Properties["Servers"] as ObservableCollection<ServerDisplay>;
 
+                List<UtxoOutput> list = new List<UtxoOutput>();
                 Account.Text = Convert.ToBase64String(acc.address);
-                Balance.Text = client.BalanceFromAccountTable().ToString();
 
-                foreach(ServerDisplay server in servers){
-                    client.ServerList.Add(new Tuple<string, int>(server.host,server.port));
+                client = new RpcClient(false);
+                client.Account = acc;
+
+                foreach (ServerDisplay server in servers)
+                {
+                    client.ServerList.Add(new Tuple<string, int>(server.host, server.port));
                 }
-                client.InitFromBootstrap();
 
-                List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                try
+                {
+                    Balance.Text = client.BalanceFromAccountTable().ToString();
+
+                    client.InitFromBootstrap();
+
+                    list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                }
+                catch (Exception e)
+                {
+                    Device.BeginInvokeOnMainThread(async () => await DisplayAlert("Fatal", "Network Error", "OK"));
+                }
+
                 if (list.Count != 0)
                 {
+                    UTXO.Text = "";
                     foreach (UtxoOutput output in list)
                     {
                         UTXO.Text += output.ToString() + "\n";
