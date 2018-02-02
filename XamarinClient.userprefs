@@ -1,14 +1,8 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/ProposeTransaction.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/UserAccount.xaml.cs">
     <Files>
-      <File FileName="XamarinClient/View/ServersPage.cs" Line="111" Column="75" />
-      <File FileName="XamarinClient/View/UserAccount.xaml" Line="14" Column="1" />
       <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="43" Column="14" />
-      <File FileName="XamarinClient/View/MainPage.cs" Line="14" Column="33" />
-      <File FileName="XamarinClient/View/MasterPage.cs" Line="28" Column="16" />
-      <File FileName="XamarinClient/View/ProposeTransaction.xaml.cs" Line="32" Column="13" />
-      <File FileName="XamarinClient/View/XamarinClientPage.xaml" Line="17" Column="1" />
-      <File FileName="XamarinClient/View/ProposeTransaction.xaml" Line="5" Column="99" />
+      <File FileName="XamarinClient/View/UserAccount.xaml" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
