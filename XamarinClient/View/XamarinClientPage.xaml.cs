@@ -3,7 +3,6 @@ using BlockchainTools;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 
 namespace XamarinClient
 {
@@ -100,6 +99,10 @@ namespace XamarinClient
 
         async void MyQR(Object sender, EventArgs args){
             await Navigation.PushAsync(new BarCodePage());
+        }
+
+        async void RefreshPage(Object sender, EventArgs args){
+            await Navigation.PushModalAsync(new MainPage(), false);
         }
     }
 }

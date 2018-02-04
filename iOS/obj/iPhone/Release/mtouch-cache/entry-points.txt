@@ -1,0 +1,26 @@
+Function=xamarin_timezone_get_data
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
+Function=UIApplicationMain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll

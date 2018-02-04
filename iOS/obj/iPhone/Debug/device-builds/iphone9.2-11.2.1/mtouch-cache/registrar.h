@@ -117,6 +117,7 @@
 @class Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem;
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
+@class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer;
 @class ZXing_Mobile_CaptureDelegate;
@@ -492,6 +493,14 @@
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(void) layoutSubviews;
 	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
+}
+	-(void) viewDidLayoutSubviews;
+	-(void) viewWillAppear:(BOOL)p0;
+	-(void) viewWillDisappear:(BOOL)p0;
 	-(id) init;
 @end
 

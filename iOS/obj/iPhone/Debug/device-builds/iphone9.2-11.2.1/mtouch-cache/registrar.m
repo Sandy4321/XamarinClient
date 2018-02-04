@@ -6064,7 +6064,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6112,7 +6112,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6154,13 +6154,13 @@ exception_handling:;
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x93F1E);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x9471E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6202,13 +6202,13 @@ exception_handling:;
 	-(void) xamarinFireSelector:(NSTimer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0x9421E);
+		native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0x94A1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6250,13 +6250,13 @@ exception_handling:;
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x9451E);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x94D1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6343,7 +6343,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -6365,14 +6365,14 @@ exception_handling:;
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, 0xA600);
+		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, 0xAC00);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xA700);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xAD00);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_FormsApplicationDelegate class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6409,13 +6409,13 @@ exception_handling:;
 	-(UIColor *) tintColor
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, 0x6051E);
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, 0x60A1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -6451,14 +6451,14 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x3311E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x3321E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6473,7 +6473,7 @@ exception_handling:;
 	-(void) target
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x3331E);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x3341E);
 	}
 @end
 
@@ -6483,7 +6483,7 @@ exception_handling:;
 	-(void) target:(UIGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, 0x3341E);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, 0x3351E);
 	}
 @end
 
@@ -6531,50 +6531,50 @@ exception_handling:;
 	-(BOOL) gestureRecognizer:(UIGestureRecognizer *)p0 shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x3361E);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x3371E);
 	}
 
 	-(BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x3371E);
+		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x3381E);
 	}
 
 	-(BOOL) gestureRecognizer:(UIGestureRecognizer *)p0 shouldReceivePress:(UIPress *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, 0x3381E);
+		return native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, p1, 0x3391E);
 	}
 
 	-(BOOL) gestureRecognizer:(UIGestureRecognizer *)p0 shouldReceiveTouch:(UITouch *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, 0x3391E);
+		return native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, 0x33A1E);
 	}
 
 	-(BOOL) gestureRecognizer:(UIGestureRecognizer *)p0 shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x33A1E);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x33B1E);
 	}
 
 	-(BOOL) gestureRecognizer:(UIGestureRecognizer *)p0 shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x33B1E);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, p1, 0x33C1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x3351E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x3361E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6594,7 +6594,7 @@ exception_handling:;
 	-(void) target:(UIRotationGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x33F1E);
+		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x3401E);
 	}
 @end
 
@@ -6609,7 +6609,7 @@ exception_handling:;
 	-(void) target:(UILongPressGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, 0x3461E);
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, 0x3471E);
 	}
 @end
 
@@ -6624,7 +6624,7 @@ exception_handling:;
 	-(void) target:(UITapGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, 0x3511E);
+		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, 0x3521E);
 	}
 @end
 
@@ -6639,7 +6639,7 @@ exception_handling:;
 	-(void) target:(UIPanGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x35A1E);
+		native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x35B1E);
 	}
 @end
 
@@ -6654,7 +6654,7 @@ exception_handling:;
 	-(void) target:(UIPinchGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, 0x3611E);
+		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, 0x3621E);
 	}
 @end
 
@@ -6669,7 +6669,7 @@ exception_handling:;
 	-(void) target:(UISwipeGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x3651E);
+		native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x3661E);
 	}
 @end
 
@@ -6684,7 +6684,7 @@ exception_handling:;
 	-(void) target:(UIScreenEdgePanGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, 0x3691E);
+		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, 0x36A1E);
 	}
 @end
 
@@ -6727,20 +6727,20 @@ exception_handling:;
 	-(void) InvokeAction:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_23 (self, _cmd, &managed_method, p0, 0x38E1E);
+		native_to_managed_trampoline_23 (self, _cmd, &managed_method, p0, 0x38F1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x38D1E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x38E1E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6755,13 +6755,13 @@ exception_handling:;
 	-(UIColor *) barTintColor
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, 0x3C31E);
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, 0x3C81E);
 	}
 
 	-(NSDictionary *) titleTextAttributes
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_24 (self, _cmd, &managed_method, 0x3C41E);
+		return native_to_managed_trampoline_24 (self, _cmd, &managed_method, 0x3C91E);
 	}
 @end
 
@@ -6771,19 +6771,19 @@ exception_handling:;
 	-(UIImage *) backgroundImageForState:(NSUInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_25 (self, _cmd, &managed_method, p0, 0x4101E);
+		return native_to_managed_trampoline_25 (self, _cmd, &managed_method, p0, 0x4151E);
 	}
 
 	-(UIColor *) titleColorForState:(NSUInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x4111E);
+		return native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x4161E);
 	}
 
 	-(UIColor *) titleShadowColorForState:(NSUInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x4121E);
+		return native_to_managed_trampoline_26 (self, _cmd, &managed_method, p0, 0x4171E);
 	}
 @end
 
@@ -6836,80 +6836,80 @@ exception_handling:;
 	-(void) searchBarBookmarkButtonClicked:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x4581E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45D1E);
 	}
 
 	-(void) searchBarCancelButtonClicked:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x4591E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45E1E);
 	}
 
 	-(void) searchBarResultsListButtonClicked:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45A1E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45F1E);
 	}
 
 	-(void) searchBarTextDidBeginEditing:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45B1E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x4601E);
 	}
 
 	-(void) searchBarTextDidEndEditing:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45C1E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x4611E);
 	}
 
 	-(void) searchBarSearchButtonClicked:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x45D1E);
+		native_to_managed_trampoline_27 (self, _cmd, &managed_method, p0, 0x4621E);
 	}
 
 	-(void) searchBar:(UISearchBar *)p0 selectedScopeButtonIndexDidChange:(NSInteger)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_28 (self, _cmd, &managed_method, p0, p1, 0x45E1E);
+		native_to_managed_trampoline_28 (self, _cmd, &managed_method, p0, p1, 0x4631E);
 	}
 
 	-(BOOL) searchBarShouldBeginEditing:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_29 (self, _cmd, &managed_method, p0, 0x45F1E);
+		return native_to_managed_trampoline_29 (self, _cmd, &managed_method, p0, 0x4641E);
 	}
 
 	-(BOOL) searchBar:(UISearchBar *)p0 shouldChangeTextInRange:(NSRange)p1 replacementText:(NSString *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_30 (self, _cmd, &managed_method, p0, p1, p2, 0x4601E);
+		return native_to_managed_trampoline_30 (self, _cmd, &managed_method, p0, p1, p2, 0x4651E);
 	}
 
 	-(BOOL) searchBarShouldEndEditing:(UISearchBar *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_29 (self, _cmd, &managed_method, p0, 0x4611E);
+		return native_to_managed_trampoline_29 (self, _cmd, &managed_method, p0, 0x4661E);
 	}
 
 	-(void) searchBar:(UISearchBar *)p0 textDidChange:(NSString *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_31 (self, _cmd, &managed_method, p0, p1, 0x4621E);
+		native_to_managed_trampoline_31 (self, _cmd, &managed_method, p0, p1, 0x4671E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x4571E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x45C1E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -6964,62 +6964,62 @@ exception_handling:;
 	-(void) textFieldDidEndEditing:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_32 (self, _cmd, &managed_method, p0, 0x5171E);
+		native_to_managed_trampoline_32 (self, _cmd, &managed_method, p0, 0x51C1E);
 	}
 
 	-(void) textFieldDidEndEditing:(UITextField *)p0 reason:(NSInteger)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_33 (self, _cmd, &managed_method, p0, p1, 0x5181E);
+		native_to_managed_trampoline_33 (self, _cmd, &managed_method, p0, p1, 0x51D1E);
 	}
 
 	-(void) textFieldDidBeginEditing:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_32 (self, _cmd, &managed_method, p0, 0x5191E);
+		native_to_managed_trampoline_32 (self, _cmd, &managed_method, p0, 0x51E1E);
 	}
 
 	-(BOOL) textFieldShouldBeginEditing:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x51A1E);
+		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x51F1E);
 	}
 
 	-(BOOL) textField:(UITextField *)p0 shouldChangeCharactersInRange:(NSRange)p1 replacementString:(NSString *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_35 (self, _cmd, &managed_method, p0, p1, p2, 0x51B1E);
+		return native_to_managed_trampoline_35 (self, _cmd, &managed_method, p0, p1, p2, 0x5201E);
 	}
 
 	-(BOOL) textFieldShouldClear:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x51C1E);
+		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x5211E);
 	}
 
 	-(BOOL) textFieldShouldEndEditing:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x51D1E);
+		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x5221E);
 	}
 
 	-(BOOL) textFieldShouldReturn:(UITextField *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x51E1E);
+		return native_to_managed_trampoline_34 (self, _cmd, &managed_method, p0, 0x5231E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x5161E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x51B1E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7080,98 +7080,98 @@ exception_handling:;
 	-(void) scrollViewDidEndDecelerating:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA21E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAA1E);
 	}
 
 	-(void) scrollViewWillBeginDecelerating:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA31E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAB1E);
 	}
 
 	-(void) scrollViewDidChangeAdjustedContentInset:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA41E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAC1E);
 	}
 
 	-(void) scrollViewDidZoom:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA51E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAD1E);
 	}
 
 	-(void) scrollViewDidEndDragging:(UIScrollView *)p0 willDecelerate:(BOOL)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_37 (self, _cmd, &managed_method, p0, p1, 0xFA61E);
+		native_to_managed_trampoline_37 (self, _cmd, &managed_method, p0, p1, 0xFAE1E);
 	}
 
 	-(void) scrollViewWillBeginDragging:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA71E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAF1E);
 	}
 
 	-(void) scrollViewDidEndScrollingAnimation:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA81E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFB01E);
 	}
 
 	-(void) scrollViewDidScroll:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFA91E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFB11E);
 	}
 
 	-(void) scrollViewDidScrollToTop:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFAA1E);
+		native_to_managed_trampoline_36 (self, _cmd, &managed_method, p0, 0xFB21E);
 	}
 
 	-(BOOL) scrollViewShouldScrollToTop:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_38 (self, _cmd, &managed_method, p0, 0xFAB1E);
+		return native_to_managed_trampoline_38 (self, _cmd, &managed_method, p0, 0xFB31E);
 	}
 
 	-(UIView *) viewForZoomingInScrollView:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_39 (self, _cmd, &managed_method, p0, 0xFAC1E);
+		return native_to_managed_trampoline_39 (self, _cmd, &managed_method, p0, 0xFB41E);
 	}
 
 	-(void) scrollViewWillEndDragging:(UIScrollView *)p0 withVelocity:(CGPoint)p1 targetContentOffset:(CGPoint*)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_40 (self, _cmd, &managed_method, p0, p1, p2, 0xFAD1E);
+		native_to_managed_trampoline_40 (self, _cmd, &managed_method, p0, p1, p2, 0xFB51E);
 	}
 
 	-(void) scrollViewDidEndZooming:(UIScrollView *)p0 withView:(UIView *)p1 atScale:(CGFloat)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_41 (self, _cmd, &managed_method, p0, p1, p2, 0xFAE1E);
+		native_to_managed_trampoline_41 (self, _cmd, &managed_method, p0, p1, p2, 0xFB61E);
 	}
 
 	-(void) scrollViewWillBeginZooming:(UIScrollView *)p0 withView:(UIView *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_42 (self, _cmd, &managed_method, p0, p1, 0xFAF1E);
+		native_to_managed_trampoline_42 (self, _cmd, &managed_method, p0, p1, 0xFB71E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xFA11E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xFA91E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7202,74 +7202,74 @@ exception_handling:;
 	-(void) textViewDidChange:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x57A1E);
+		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x57F1E);
 	}
 
 	-(void) textViewDidEndEditing:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x57B1E);
+		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x5801E);
 	}
 
 	-(void) textViewDidBeginEditing:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x57C1E);
+		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x5811E);
 	}
 
 	-(void) textViewDidChangeSelection:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x57D1E);
+		native_to_managed_trampoline_43 (self, _cmd, &managed_method, p0, 0x5821E);
 	}
 
 	-(BOOL) textViewShouldBeginEditing:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_44 (self, _cmd, &managed_method, p0, 0x57E1E);
+		return native_to_managed_trampoline_44 (self, _cmd, &managed_method, p0, 0x5831E);
 	}
 
 	-(BOOL) textView:(UITextView *)p0 shouldChangeTextInRange:(NSRange)p1 replacementText:(NSString *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_45 (self, _cmd, &managed_method, p0, p1, p2, 0x57F1E);
+		return native_to_managed_trampoline_45 (self, _cmd, &managed_method, p0, p1, p2, 0x5841E);
 	}
 
 	-(BOOL) textViewShouldEndEditing:(UITextView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_44 (self, _cmd, &managed_method, p0, 0x5801E);
+		return native_to_managed_trampoline_44 (self, _cmd, &managed_method, p0, 0x5851E);
 	}
 
 	-(BOOL) textView:(UITextView *)p0 shouldInteractWithTextAttachment:(NSTextAttachment *)p1 inRange:(NSRange)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_46 (self, _cmd, &managed_method, p0, p1, p2, 0x5811E);
+		return native_to_managed_trampoline_46 (self, _cmd, &managed_method, p0, p1, p2, 0x5861E);
 	}
 
 	-(BOOL) textView:(UITextView *)p0 shouldInteractWithTextAttachment:(NSTextAttachment *)p1 inRange:(NSRange)p2 interaction:(NSInteger)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_47 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x5821E);
+		return native_to_managed_trampoline_47 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x5871E);
 	}
 
 	-(BOOL) textView:(UITextView *)p0 shouldInteractWithURL:(NSURL *)p1 inRange:(NSRange)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_48 (self, _cmd, &managed_method, p0, p1, p2, 0x5831E);
+		return native_to_managed_trampoline_48 (self, _cmd, &managed_method, p0, p1, p2, 0x5881E);
 	}
 
 	-(BOOL) textView:(UITextView *)p0 shouldInteractWithURL:(NSURL *)p1 inRange:(NSRange)p2 interaction:(NSInteger)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_49 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x5841E);
+		return native_to_managed_trampoline_49 (self, _cmd, &managed_method, p0, p1, p2, p3, 0x5891E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x5791E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x57E1E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIKit_UIScrollView__UIScrollViewDelegate class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7317,20 +7317,20 @@ exception_handling:;
 	+(void) drain:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_50 (self, _cmd, &managed_method, p0, 0x9E01E);
+		native_to_managed_trampoline_50 (self, _cmd, &managed_method, p0, 0x9E81E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x9DE1E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x9E61E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7377,13 +7377,13 @@ exception_handling:;
 	-(void) glkView:(GLKView *)p0 drawInRect:(CGRect)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_51 (self, _cmd, &managed_method, p0, p1, 0xE7E1E);
+		native_to_managed_trampoline_51 (self, _cmd, &managed_method, p0, p1, 0xE861E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -7438,91 +7438,91 @@ exception_handling:;
 	-(BOOL) splitViewController:(UISplitViewController *)p0 collapseSecondaryViewController:(UIViewController *)p1 ontoPrimaryViewController:(UIViewController *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_52 (self, _cmd, &managed_method, p0, p1, p2, 0xF481E);
+		return native_to_managed_trampoline_52 (self, _cmd, &managed_method, p0, p1, p2, 0xF501E);
 	}
 
 	-(BOOL) splitViewController:(UISplitViewController *)p0 showDetailViewController:(UIViewController *)p1 sender:(NSObject *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_53 (self, _cmd, &managed_method, p0, p1, p2, 0xF491E);
+		return native_to_managed_trampoline_53 (self, _cmd, &managed_method, p0, p1, p2, 0xF511E);
 	}
 
 	-(BOOL) splitViewController:(UISplitViewController *)p0 showViewController:(UIViewController *)p1 sender:(NSObject *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_53 (self, _cmd, &managed_method, p0, p1, p2, 0xF4A1E);
+		return native_to_managed_trampoline_53 (self, _cmd, &managed_method, p0, p1, p2, 0xF521E);
 	}
 
 	-(NSInteger) splitViewControllerPreferredInterfaceOrientationForPresentation:(UISplitViewController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_54 (self, _cmd, &managed_method, p0, 0xF4B1E);
+		return native_to_managed_trampoline_54 (self, _cmd, &managed_method, p0, 0xF531E);
 	}
 
 	-(UIViewController *) primaryViewControllerForCollapsingSplitViewController:(UISplitViewController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_55 (self, _cmd, &managed_method, p0, 0xF4C1E);
+		return native_to_managed_trampoline_55 (self, _cmd, &managed_method, p0, 0xF541E);
 	}
 
 	-(UIViewController *) primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_55 (self, _cmd, &managed_method, p0, 0xF4D1E);
+		return native_to_managed_trampoline_55 (self, _cmd, &managed_method, p0, 0xF551E);
 	}
 
 	-(NSInteger) targetDisplayModeForActionInSplitViewController:(UISplitViewController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_54 (self, _cmd, &managed_method, p0, 0xF4E1E);
+		return native_to_managed_trampoline_54 (self, _cmd, &managed_method, p0, 0xF561E);
 	}
 
 	-(UIViewController *) splitViewController:(UISplitViewController *)p0 separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_56 (self, _cmd, &managed_method, p0, p1, 0xF4F1E);
+		return native_to_managed_trampoline_56 (self, _cmd, &managed_method, p0, p1, 0xF571E);
 	}
 
 	-(BOOL) splitViewController:(UISplitViewController *)p0 shouldHideViewController:(UIViewController *)p1 inOrientation:(NSInteger)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_57 (self, _cmd, &managed_method, p0, p1, p2, 0xF501E);
+		return native_to_managed_trampoline_57 (self, _cmd, &managed_method, p0, p1, p2, 0xF581E);
 	}
 
 	-(NSUInteger) splitViewControllerSupportedInterfaceOrientations:(UISplitViewController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_58 (self, _cmd, &managed_method, p0, 0xF511E);
+		return native_to_managed_trampoline_58 (self, _cmd, &managed_method, p0, 0xF591E);
 	}
 
 	-(void) splitViewController:(UISplitViewController *)p0 willChangeToDisplayMode:(NSInteger)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_59 (self, _cmd, &managed_method, p0, p1, 0xF521E);
+		native_to_managed_trampoline_59 (self, _cmd, &managed_method, p0, p1, 0xF5A1E);
 	}
 
 	-(void) splitViewController:(UISplitViewController *)p0 willHideViewController:(UIViewController *)p1 withBarButtonItem:(UIBarButtonItem *)p2 forPopoverController:(UIPopoverController *)p3
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_60 (self, _cmd, &managed_method, p0, p1, p2, p3, 0xF531E);
+		native_to_managed_trampoline_60 (self, _cmd, &managed_method, p0, p1, p2, p3, 0xF5B1E);
 	}
 
 	-(void) splitViewController:(UISplitViewController *)p0 popoverController:(UIPopoverController *)p1 willPresentViewController:(UIViewController *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_61 (self, _cmd, &managed_method, p0, p1, p2, 0xF541E);
+		native_to_managed_trampoline_61 (self, _cmd, &managed_method, p0, p1, p2, 0xF5C1E);
 	}
 
 	-(void) splitViewController:(UISplitViewController *)p0 willShowViewController:(UIViewController *)p1 invalidatingBarButtonItem:(UIBarButtonItem *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_62 (self, _cmd, &managed_method, p0, p1, p2, 0xF551E);
+		native_to_managed_trampoline_62 (self, _cmd, &managed_method, p0, p1, p2, 0xF5D1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -7574,74 +7574,74 @@ exception_handling:;
 	-(void) tabBarController:(UITabBarController *)p0 didEndCustomizingViewControllers:(NSArray *)p1 changed:(BOOL)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_63 (self, _cmd, &managed_method, p0, p1, p2, 0xFE51E);
+		native_to_managed_trampoline_63 (self, _cmd, &managed_method, p0, p1, p2, 0xFED1E);
 	}
 
 	-(id) tabBarController:(UITabBarController *)p0 animationControllerForTransitionFromViewController:(UIViewController *)p1 toViewController:(UIViewController *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_64 (self, _cmd, &managed_method, p0, p1, p2, 0xFE61E);
+		return native_to_managed_trampoline_64 (self, _cmd, &managed_method, p0, p1, p2, 0xFEE1E);
 	}
 
 	-(id) tabBarController:(UITabBarController *)p0 interactionControllerForAnimationController:(id)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_65 (self, _cmd, &managed_method, p0, p1, 0xFE71E);
+		return native_to_managed_trampoline_65 (self, _cmd, &managed_method, p0, p1, 0xFEF1E);
 	}
 
 	-(NSInteger) tabBarControllerPreferredInterfaceOrientationForPresentation:(UITabBarController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_66 (self, _cmd, &managed_method, p0, 0xFE81E);
+		return native_to_managed_trampoline_66 (self, _cmd, &managed_method, p0, 0xFF01E);
 	}
 
 	-(void) tabBarController:(UITabBarController *)p0 willBeginCustomizingViewControllers:(NSArray *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_67 (self, _cmd, &managed_method, p0, p1, 0xFE91E);
+		native_to_managed_trampoline_67 (self, _cmd, &managed_method, p0, p1, 0xFF11E);
 	}
 
 	-(void) tabBarController:(UITabBarController *)p0 willEndCustomizingViewControllers:(NSArray *)p1 changed:(BOOL)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_63 (self, _cmd, &managed_method, p0, p1, p2, 0xFEA1E);
+		native_to_managed_trampoline_63 (self, _cmd, &managed_method, p0, p1, p2, 0xFF21E);
 	}
 
 	-(BOOL) tabBarController:(UITabBarController *)p0 shouldSelectViewController:(UIViewController *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_68 (self, _cmd, &managed_method, p0, p1, 0xFEB1E);
+		return native_to_managed_trampoline_68 (self, _cmd, &managed_method, p0, p1, 0xFF31E);
 	}
 
 	-(NSUInteger) tabBarControllerSupportedInterfaceOrientations:(UITabBarController *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_69 (self, _cmd, &managed_method, p0, 0xFEC1E);
+		return native_to_managed_trampoline_69 (self, _cmd, &managed_method, p0, 0xFF41E);
 	}
 
 	-(void) tabBarController:(UITabBarController *)p0 didSelectViewController:(UIViewController *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_70 (self, _cmd, &managed_method, p0, p1, 0xFED1E);
+		native_to_managed_trampoline_70 (self, _cmd, &managed_method, p0, p1, 0xFF51E);
 	}
 
 	-(BOOL) respondsToSelector:(SEL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_71 (self, _cmd, &managed_method, p0, 0xFEE1E);
+		return native_to_managed_trampoline_71 (self, _cmd, &managed_method, p0, 0xFF61E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xFE41E);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xFEC1E);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -7691,31 +7691,31 @@ exception_handling:;
 	-(void) webView:(UIWebView *)p0 didFailLoadWithError:(NSError *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_72 (self, _cmd, &managed_method, p0, p1, 0x11BF1E);
+		native_to_managed_trampoline_72 (self, _cmd, &managed_method, p0, p1, 0x11C71E);
 	}
 
 	-(void) webViewDidStartLoad:(UIWebView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_73 (self, _cmd, &managed_method, p0, 0x11C01E);
+		native_to_managed_trampoline_73 (self, _cmd, &managed_method, p0, 0x11C81E);
 	}
 
 	-(void) webViewDidFinishLoad:(UIWebView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_73 (self, _cmd, &managed_method, p0, 0x11C11E);
+		native_to_managed_trampoline_73 (self, _cmd, &managed_method, p0, 0x11C91E);
 	}
 
 	-(BOOL) webView:(UIWebView *)p0 shouldStartLoadWithRequest:(NSURLRequest *)p1 navigationType:(NSInteger)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_74 (self, _cmd, &managed_method, p0, p1, p2, 0x11C21E);
+		return native_to_managed_trampoline_74 (self, _cmd, &managed_method, p0, p1, p2, 0x11CA1E);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -7763,7 +7763,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -7825,7 +7825,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -7922,7 +7922,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8026,7 +8026,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8082,7 +8082,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_87 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_87 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 	-(id) init
 	{
@@ -8158,7 +8158,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8251,7 +8251,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -8382,7 +8382,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -8442,7 +8442,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8502,7 +8502,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -8670,7 +8670,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8751,7 +8751,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -8874,7 +8874,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -8916,7 +8916,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -8984,7 +8984,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -9045,7 +9045,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -9113,7 +9113,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -9187,7 +9187,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -9285,7 +9285,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -9355,7 +9355,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -9429,7 +9429,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -9598,7 +9598,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -9684,7 +9684,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) initWithFrame:(CGRect)p0
@@ -9837,7 +9837,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -9917,7 +9917,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -9977,7 +9977,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10072,7 +10072,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10133,7 +10133,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10213,7 +10213,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10294,7 +10294,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10384,7 +10384,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10451,7 +10451,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10531,7 +10531,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10628,7 +10628,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10666,7 +10666,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10719,7 +10719,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10782,7 +10782,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10835,7 +10835,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10890,7 +10890,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -10953,7 +10953,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
@@ -10969,26 +10969,60 @@ exception_handling:;
 	}
 @end
 
-@implementation ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer {
+@implementation Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer {
 }
 
-	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
+	-(void) viewDidLayoutSubviews
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_75 (self, _cmd, &managed_method, p0, p1, 0x430);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x534);
 	}
 
-	-(void) layoutSubviews
+	-(void) viewWillAppear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x530);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x634);
+	}
+
+	-(void) viewWillDisappear:(BOOL)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x734);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x630);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xB34);
+		if (call_super && rv) {
+			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_PageRenderer class] };
+			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
+		}
+		return rv;
+	}
+@end
+
+@implementation ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer {
+}
+
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_75 (self, _cmd, &managed_method, p0, p1, 0x436);
+	}
+
+	-(void) layoutSubviews
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x536);
+	}
+
+	-(id) init
+	{
+		static MonoMethod *managed_method = NULL;
+		bool call_super = false;
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x636);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -11004,7 +11038,7 @@ exception_handling:;
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xE30);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0xE36);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_ViewRenderer_2 class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -11051,13 +11085,13 @@ exception_handling:;
 	-(void) captureOutput:(AVCaptureMetadataOutput *)p0 didOutputMetadataObjects:(NSArray *)p1 fromConnection:(AVCaptureConnection *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_117 (self, _cmd, &managed_method, p0, p1, p2, 0x3432);
+		native_to_managed_trampoline_117 (self, _cmd, &managed_method, p0, p1, p2, 0x3438);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -11089,49 +11123,49 @@ exception_handling:;
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x4032);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x4038);
 	}
 
 	-(void) viewDidAppear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4632);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4638);
 	}
 
 	-(void) viewDidDisappear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4732);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4738);
 	}
 
 	-(void) viewWillDisappear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4832);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0x4838);
 	}
 
 	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_104 (self, _cmd, &managed_method, p0, 0x4932);
+		native_to_managed_trampoline_104 (self, _cmd, &managed_method, p0, 0x4938);
 	}
 
 	-(BOOL) shouldAutorotate
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_79 (self, _cmd, &managed_method, 0x4A32);
+		return native_to_managed_trampoline_79 (self, _cmd, &managed_method, 0x4A38);
 	}
 
 	-(NSUInteger) supportedInterfaceOrientations
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_77 (self, _cmd, &managed_method, 0x4B32);
+		return native_to_managed_trampoline_77 (self, _cmd, &managed_method, 0x4B38);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -11163,55 +11197,55 @@ exception_handling:;
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0xCE32);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0xCE38);
 	}
 
 	-(void) viewDidAppear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD432);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD438);
 	}
 
 	-(void) viewDidDisappear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD532);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD538);
 	}
 
 	-(void) viewWillDisappear:(BOOL)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD632);
+		native_to_managed_trampoline_81 (self, _cmd, &managed_method, p0, 0xD638);
 	}
 
 	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_104 (self, _cmd, &managed_method, p0, 0xD732);
+		native_to_managed_trampoline_104 (self, _cmd, &managed_method, p0, 0xD738);
 	}
 
 	-(BOOL) shouldAutorotate
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_79 (self, _cmd, &managed_method, 0xD832);
+		return native_to_managed_trampoline_79 (self, _cmd, &managed_method, 0xD838);
 	}
 
 	-(NSUInteger) supportedInterfaceOrientations
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_77 (self, _cmd, &managed_method, 0xD932);
+		return native_to_managed_trampoline_77 (self, _cmd, &managed_method, 0xD938);
 	}
 
 	-(BOOL) shouldAutorotateToInterfaceOrientation:(NSInteger)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_80 (self, _cmd, &managed_method, p0, 0xDA32);
+		return native_to_managed_trampoline_80 (self, _cmd, &managed_method, p0, 0xDA38);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -11243,14 +11277,14 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x132);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x138);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIView class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -11287,13 +11321,13 @@ exception_handling:;
 	-(void) layoutSubviews
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x8632);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, 0x8638);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -11325,19 +11359,19 @@ exception_handling:;
 	-(void) captureOutput:(AVCaptureOutput *)p0 didDropSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_118 (self, _cmd, &managed_method, p0, p1, p2, 0xB932);
+		native_to_managed_trampoline_118 (self, _cmd, &managed_method, p0, p1, p2, 0xB938);
 	}
 
 	-(void) captureOutput:(AVCaptureOutput *)p0 didOutputSampleBuffer:(id)p1 fromConnection:(AVCaptureConnection *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_118 (self, _cmd, &managed_method, p0, p1, p2, 0xBA32);
+		native_to_managed_trampoline_118 (self, _cmd, &managed_method, p0, p1, p2, 0xBA38);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 @end
 
@@ -11369,14 +11403,14 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9B21E);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x9BA1E);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x8F32);
+		id rv = native_to_managed_trampoline_9 (self, _cmd, &managed_method, &call_super, 0x8F38);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIView class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -11425,7 +11459,7 @@ exception_handling:;
 		{ NULL, 0x511E /* 'UIEvent' => 'UIKit.UIEvent, Xamarin.iOS' */ },
 		{ NULL, 0x521E /* 'UIFont' => 'UIKit.UIFont, Xamarin.iOS' */ },
 		{ NULL, 0x6E1E /* 'UIImage' => 'UIKit.UIImage, Xamarin.iOS' */ },
-		{ NULL, 0x2141E /* 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */ },
+		{ NULL, 0x2151E /* 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */ },
 		{ NULL, 0x961E /* 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */ },
 		{ NULL, 0x781E /* 'UINavigationController' => 'UIKit.UINavigationController, Xamarin.iOS' */ },
 		{ NULL, 0x791E /* 'UIBarItem' => 'UIKit.UIBarItem, Xamarin.iOS' */ },
@@ -11435,7 +11469,7 @@ exception_handling:;
 		{ NULL, 0x7C1E /* 'UIPopoverController' => 'UIKit.UIPopoverController, Xamarin.iOS' */ },
 		{ NULL, 0x7F1E /* 'UIPopoverPresentationController' => 'UIKit.UIPopoverPresentationController, Xamarin.iOS' */ },
 		{ NULL, 0x801E /* 'UIScreen' => 'UIKit.UIScreen, Xamarin.iOS' */ },
-		{ NULL, 0x22A1E /* 'UIScrollView' => 'UIKit.UIScrollView, Xamarin.iOS' */ },
+		{ NULL, 0x22B1E /* 'UIScrollView' => 'UIKit.UIScrollView, Xamarin.iOS' */ },
 		{ NULL, 0x851E /* 'UITableView' => 'UIKit.UITableView, Xamarin.iOS' */ },
 		{ NULL, 0x861E /* 'UITableViewCell' => 'UIKit.UITableViewCell, Xamarin.iOS' */ },
 		{ NULL, 0x8F1E /* 'UITraitCollection' => 'UIKit.UITraitCollection, Xamarin.iOS' */ },
@@ -11472,7 +11506,7 @@ exception_handling:;
 		{ NULL, 0x1A01E /* 'NSIndexSet' => 'Foundation.NSIndexSet, Xamarin.iOS' */ },
 		{ NULL, 0x1A51E /* 'NSNotification' => 'Foundation.NSNotification, Xamarin.iOS' */ },
 		{ NULL, 0x1A91E /* 'NSNull' => 'Foundation.NSNull, Xamarin.iOS' */ },
-		{ NULL, 0x2A71E /* 'UIVisualEffect' => 'UIKit.UIVisualEffect, Xamarin.iOS' */ },
+		{ NULL, 0x2A81E /* 'UIVisualEffect' => 'UIKit.UIVisualEffect, Xamarin.iOS' */ },
 		{ NULL, 0x1B41E /* 'UIBlurEffect' => 'UIKit.UIBlurEffect, Xamarin.iOS' */ },
 		{ NULL, 0x1B91E /* 'UICollectionReusableView' => 'UIKit.UICollectionReusableView, Xamarin.iOS' */ },
 		{ NULL, 0x1BD1E /* 'UICollectionViewCell' => 'UIKit.UICollectionViewCell, Xamarin.iOS' */ },
@@ -11489,28 +11523,28 @@ exception_handling:;
 		{ NULL, 0x2021E /* 'UILabel' => 'UIKit.UILabel, Xamarin.iOS' */ },
 		{ NULL, 0x2041E /* 'UILocalNotification' => 'UIKit.UILocalNotification, Xamarin.iOS' */ },
 		{ NULL, 0x2081E /* 'UIPasteConfiguration' => 'UIKit.UIPasteConfiguration, Xamarin.iOS' */ },
-		{ NULL, 0x2121E /* 'UINavigationItem' => 'UIKit.UINavigationItem, Xamarin.iOS' */ },
-		{ NULL, 0x2161E /* 'UIPress' => 'UIKit.UIPress, Xamarin.iOS' */ },
-		{ NULL, 0x21D1E /* 'UIProgressView' => 'UIKit.UIProgressView, Xamarin.iOS' */ },
-		{ NULL, 0x2241E /* 'UIRefreshControl' => 'UIKit.UIRefreshControl, Xamarin.iOS' */ },
-		{ NULL, 0x2271E /* 'UIStepper' => 'UIKit.UIStepper, Xamarin.iOS' */ },
-		{ NULL, 0x2341E /* 'UITabBar' => 'UIKit.UITabBar, Xamarin.iOS' */ },
-		{ NULL, 0x2431E /* 'UISpringTimingParameters' => 'UIKit.UISpringTimingParameters, Xamarin.iOS' */ },
-		{ NULL, 0x2441E /* 'UISlider' => 'UIKit.UISlider, Xamarin.iOS' */ },
-		{ NULL, 0x2461E /* 'UITableViewController' => 'UIKit.UITableViewController, Xamarin.iOS' */ },
-		{ NULL, 0x24A1E /* 'UISwipeActionsConfiguration' => 'UIKit.UISwipeActionsConfiguration, Xamarin.iOS' */ },
-		{ NULL, 0x24B1E /* 'UITableViewRowAction' => 'UIKit.UITableViewRowAction, Xamarin.iOS' */ },
-		{ NULL, 0x24E1E /* 'UISwitch' => 'UIKit.UISwitch, Xamarin.iOS' */ },
-		{ NULL, 0x2511E /* 'UITargetedDragPreview' => 'UIKit.UITargetedDragPreview, Xamarin.iOS' */ },
-		{ NULL, 0x2631E /* 'UITextDropProposal' => 'UIKit.UITextDropProposal, Xamarin.iOS' */ },
-		{ NULL, 0x2661E /* 'UITabBarItem' => 'UIKit.UITabBarItem, Xamarin.iOS' */ },
-		{ NULL, 0x2701E /* 'UITextPosition' => 'UIKit.UITextPosition, Xamarin.iOS' */ },
-		{ NULL, 0x2711E /* 'UITextRange' => 'UIKit.UITextRange, Xamarin.iOS' */ },
-		{ NULL, 0x2741E /* 'UITextSelectionRect' => 'UIKit.UITextSelectionRect, Xamarin.iOS' */ },
-		{ NULL, 0x27A1E /* 'UITableViewFocusUpdateContext' => 'UIKit.UITableViewFocusUpdateContext, Xamarin.iOS' */ },
-		{ NULL, 0x2811E /* 'UIUserNotificationSettings' => 'UIKit.UIUserNotificationSettings, Xamarin.iOS' */ },
-		{ NULL, 0x2861E /* 'UITouch' => 'UIKit.UITouch, Xamarin.iOS' */ },
-		{ NULL, 0x28C1E /* 'UIVisualEffectView' => 'UIKit.UIVisualEffectView, Xamarin.iOS' */ },
+		{ NULL, 0x2131E /* 'UINavigationItem' => 'UIKit.UINavigationItem, Xamarin.iOS' */ },
+		{ NULL, 0x2171E /* 'UIPress' => 'UIKit.UIPress, Xamarin.iOS' */ },
+		{ NULL, 0x21E1E /* 'UIProgressView' => 'UIKit.UIProgressView, Xamarin.iOS' */ },
+		{ NULL, 0x2251E /* 'UIRefreshControl' => 'UIKit.UIRefreshControl, Xamarin.iOS' */ },
+		{ NULL, 0x2281E /* 'UIStepper' => 'UIKit.UIStepper, Xamarin.iOS' */ },
+		{ NULL, 0x2351E /* 'UITabBar' => 'UIKit.UITabBar, Xamarin.iOS' */ },
+		{ NULL, 0x2441E /* 'UISpringTimingParameters' => 'UIKit.UISpringTimingParameters, Xamarin.iOS' */ },
+		{ NULL, 0x2451E /* 'UISlider' => 'UIKit.UISlider, Xamarin.iOS' */ },
+		{ NULL, 0x2471E /* 'UITableViewController' => 'UIKit.UITableViewController, Xamarin.iOS' */ },
+		{ NULL, 0x24B1E /* 'UISwipeActionsConfiguration' => 'UIKit.UISwipeActionsConfiguration, Xamarin.iOS' */ },
+		{ NULL, 0x24C1E /* 'UITableViewRowAction' => 'UIKit.UITableViewRowAction, Xamarin.iOS' */ },
+		{ NULL, 0x24F1E /* 'UISwitch' => 'UIKit.UISwitch, Xamarin.iOS' */ },
+		{ NULL, 0x2521E /* 'UITargetedDragPreview' => 'UIKit.UITargetedDragPreview, Xamarin.iOS' */ },
+		{ NULL, 0x2641E /* 'UITextDropProposal' => 'UIKit.UITextDropProposal, Xamarin.iOS' */ },
+		{ NULL, 0x2671E /* 'UITabBarItem' => 'UIKit.UITabBarItem, Xamarin.iOS' */ },
+		{ NULL, 0x2711E /* 'UITextPosition' => 'UIKit.UITextPosition, Xamarin.iOS' */ },
+		{ NULL, 0x2721E /* 'UITextRange' => 'UIKit.UITextRange, Xamarin.iOS' */ },
+		{ NULL, 0x2751E /* 'UITextSelectionRect' => 'UIKit.UITextSelectionRect, Xamarin.iOS' */ },
+		{ NULL, 0x27B1E /* 'UITableViewFocusUpdateContext' => 'UIKit.UITableViewFocusUpdateContext, Xamarin.iOS' */ },
+		{ NULL, 0x2821E /* 'UIUserNotificationSettings' => 'UIKit.UIUserNotificationSettings, Xamarin.iOS' */ },
+		{ NULL, 0x2871E /* 'UITouch' => 'UIKit.UITouch, Xamarin.iOS' */ },
+		{ NULL, 0x28D1E /* 'UIVisualEffectView' => 'UIKit.UIVisualEffectView, Xamarin.iOS' */ },
 		{ NULL, 0x51E /* 'AVCaptureVideoPreviewLayer' => 'AVFoundation.AVCaptureVideoPreviewLayer, Xamarin.iOS' */ },
 		{ NULL, 0x191E /* 'NSData' => 'Foundation.NSData, Xamarin.iOS' */ },
 		{ NULL, 0x221E /* 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */ },
@@ -11536,11 +11570,11 @@ exception_handling:;
 		{ NULL, 0x8B1E /* 'UITextField' => 'UIKit.UITextField, Xamarin.iOS' */ },
 		{ NULL, 0x8D1E /* 'UITextView' => 'UIKit.UITextView, Xamarin.iOS' */ },
 		{ NULL, 0x1DF1E /* 'GLKView' => 'GLKit.GLKView, Xamarin.iOS' */ },
-		{ NULL, 0x2171E /* 'UISplitViewController' => 'UIKit.UISplitViewController, Xamarin.iOS' */ },
-		{ NULL, 0x2351E /* 'UITabBarController' => 'UIKit.UITabBarController, Xamarin.iOS' */ },
-		{ NULL, 0x2911E /* 'UIWebView' => 'UIKit.UIWebView, Xamarin.iOS' */ },
+		{ NULL, 0x2181E /* 'UISplitViewController' => 'UIKit.UISplitViewController, Xamarin.iOS' */ },
+		{ NULL, 0x2361E /* 'UITabBarController' => 'UIKit.UITabBarController, Xamarin.iOS' */ },
+		{ NULL, 0x2921E /* 'UIWebView' => 'UIKit.UIWebView, Xamarin.iOS' */ },
 		{ NULL, 0x1128 /* 'Xamarin_Forms_Platform_iOS_FormsApplicationDelegate' => 'Xamarin.Forms.Platform.iOS.FormsApplicationDelegate, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x1A00 /* 'AppDelegate' => 'XamarinClient.iOS.AppDelegate, XamarinClient.iOS' */ },
+		{ NULL, 0x1B00 /* 'AppDelegate' => 'XamarinClient.iOS.AppDelegate, XamarinClient.iOS' */ },
 		{ NULL, 0x941E /* 'UIKit_UIView_UIViewAppearance' => 'UIKit.UIView+UIViewAppearance, Xamarin.iOS' */ },
 		{ NULL, 0x4A1E /* 'UIKit_UIControl_UIControlAppearance' => 'UIKit.UIControl+UIControlAppearance, Xamarin.iOS' */ },
 		{ NULL, 0x591E /* '__UIGestureRecognizerToken' => 'UIKit.UIGestureRecognizer+Token, Xamarin.iOS' */ },
@@ -11559,13 +11593,13 @@ exception_handling:;
 		{ NULL, 0x7E1E /* 'UIKit_UIButton_UIButtonAppearance' => 'UIKit.UIButton+UIButtonAppearance, Xamarin.iOS' */ },
 		{ NULL, 0x831E /* 'UIKit_UISearchBar__UISearchBarDelegate' => 'UIKit.UISearchBar+_UISearchBarDelegate, Xamarin.iOS' */ },
 		{ NULL, 0x8C1E /* 'UIKit_UITextField__UITextFieldDelegate' => 'UIKit.UITextField+_UITextFieldDelegate, Xamarin.iOS' */ },
-		{ NULL, 0x22B1E /* 'UIKit_UIScrollView__UIScrollViewDelegate' => 'UIKit.UIScrollView+_UIScrollViewDelegate, Xamarin.iOS' */ },
+		{ NULL, 0x22C1E /* 'UIKit_UIScrollView__UIScrollViewDelegate' => 'UIKit.UIScrollView+_UIScrollViewDelegate, Xamarin.iOS' */ },
 		{ NULL, 0x8E1E /* 'UIKit_UITextView__UITextViewDelegate' => 'UIKit.UITextView+_UITextViewDelegate, Xamarin.iOS' */ },
 		{ NULL, 0x1151E /* '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */ },
 		{ NULL, 0x1E01E /* 'GLKit_GLKView__GLKViewDelegate' => 'GLKit.GLKView+_GLKViewDelegate, Xamarin.iOS' */ },
-		{ NULL, 0x2181E /* 'UIKit_UISplitViewController__UISplitViewControllerDelegate' => 'UIKit.UISplitViewController+_UISplitViewControllerDelegate, Xamarin.iOS' */ },
-		{ NULL, 0x2361E /* 'UIKit_UITabBarController__UITabBarControllerDelegate' => 'UIKit.UITabBarController+_UITabBarControllerDelegate, Xamarin.iOS' */ },
-		{ NULL, 0x2921E /* 'UIKit_UIWebView__UIWebViewDelegate' => 'UIKit.UIWebView+_UIWebViewDelegate, Xamarin.iOS' */ },
+		{ NULL, 0x2191E /* 'UIKit_UISplitViewController__UISplitViewControllerDelegate' => 'UIKit.UISplitViewController+_UISplitViewControllerDelegate, Xamarin.iOS' */ },
+		{ NULL, 0x2371E /* 'UIKit_UITabBarController__UITabBarControllerDelegate' => 'UIKit.UITabBarController+_UITabBarControllerDelegate, Xamarin.iOS' */ },
+		{ NULL, 0x2931E /* 'UIKit_UIWebView__UIWebViewDelegate' => 'UIKit.UIWebView+_UIWebViewDelegate, Xamarin.iOS' */ },
 		{ NULL, 0xA28 /* 'Xamarin_Forms_Platform_iOS_iOS7ButtonContainer' => 'Xamarin.Forms.Platform.iOS.iOS7ButtonContainer, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0xC28 /* 'Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer' => 'Xamarin.Forms.Platform.iOS.GlobalCloseContextGestureRecognizer, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0x1428 /* 'Xamarin_Forms_Platform_iOS_ModalWrapper' => 'Xamarin.Forms.Platform.iOS.ModalWrapper, Xamarin.Forms.Platform.iOS' */ },
@@ -11634,15 +11668,16 @@ exception_handling:;
 		{ NULL, 0x9128 /* 'Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem' => 'Xamarin.Forms.Platform.iOS.ToolbarItemExtensions+SecondaryToolbarItem, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0xA128 /* 'Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource' => 'Xamarin.Forms.Platform.iOS.NavigationMenuRenderer+DataSource, Xamarin.Forms.Platform.iOS' */ },
 		{ NULL, 0xA228 /* 'Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar' => 'Xamarin.Forms.Platform.iOS.NavigationRenderer+SecondaryToolbar, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x230 /* 'ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer' => 'ZXing.Net.Mobile.Forms.iOS.ZXingScannerViewRenderer, ZXing.Net.Mobile.Forms.iOS' */ },
-		{ NULL, 0x430 /* 'ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer' => 'ZXing.Net.Mobile.Forms.iOS.ZXingBarcodeImageViewRenderer, ZXing.Net.Mobile.Forms.iOS' */ },
-		{ NULL, 0x632 /* 'ZXing_Mobile_CaptureDelegate' => 'ZXing.Mobile.CaptureDelegate, ZXingNetMobile' */ },
-		{ NULL, 0x732 /* 'ZXing_Mobile_AVCaptureScannerViewController' => 'ZXing.Mobile.AVCaptureScannerViewController, ZXingNetMobile' */ },
-		{ NULL, 0x1932 /* 'ZXing_Mobile_ZXingScannerViewController' => 'ZXing.Mobile.ZXingScannerViewController, ZXingNetMobile' */ },
-		{ NULL, 0x232 /* 'ZXing_Mobile_AVCaptureScannerView' => 'ZXing.Mobile.AVCaptureScannerView, ZXingNetMobile' */ },
-		{ NULL, 0x1232 /* 'ZXing_Mobile_ZXingDefaultOverlayView' => 'ZXing.Mobile.ZXingDefaultOverlayView, ZXingNetMobile' */ },
-		{ NULL, 0x1632 /* 'ZXing_Mobile_ZXingScannerView_OutputRecorder' => 'ZXing.Mobile.ZXingScannerView+OutputRecorder, ZXingNetMobile' */ },
-		{ NULL, 0x1432 /* 'ZXing_Mobile_ZXingScannerView' => 'ZXing.Mobile.ZXingScannerView, ZXingNetMobile' */ },
+		{ NULL, 0x334 /* 'Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer' => 'Rg.Plugins.Popup.IOS.Renderers.PopupPageRenderer, Rg.Plugins.Popup.IOS' */ },
+		{ NULL, 0x236 /* 'ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer' => 'ZXing.Net.Mobile.Forms.iOS.ZXingScannerViewRenderer, ZXing.Net.Mobile.Forms.iOS' */ },
+		{ NULL, 0x436 /* 'ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer' => 'ZXing.Net.Mobile.Forms.iOS.ZXingBarcodeImageViewRenderer, ZXing.Net.Mobile.Forms.iOS' */ },
+		{ NULL, 0x638 /* 'ZXing_Mobile_CaptureDelegate' => 'ZXing.Mobile.CaptureDelegate, ZXingNetMobile' */ },
+		{ NULL, 0x738 /* 'ZXing_Mobile_AVCaptureScannerViewController' => 'ZXing.Mobile.AVCaptureScannerViewController, ZXingNetMobile' */ },
+		{ NULL, 0x1938 /* 'ZXing_Mobile_ZXingScannerViewController' => 'ZXing.Mobile.ZXingScannerViewController, ZXingNetMobile' */ },
+		{ NULL, 0x238 /* 'ZXing_Mobile_AVCaptureScannerView' => 'ZXing.Mobile.AVCaptureScannerView, ZXingNetMobile' */ },
+		{ NULL, 0x1238 /* 'ZXing_Mobile_ZXingDefaultOverlayView' => 'ZXing.Mobile.ZXingDefaultOverlayView, ZXingNetMobile' */ },
+		{ NULL, 0x1638 /* 'ZXing_Mobile_ZXingScannerView_OutputRecorder' => 'ZXing.Mobile.ZXingScannerView+OutputRecorder, ZXingNetMobile' */ },
+		{ NULL, 0x1438 /* 'ZXing_Mobile_ZXingScannerView' => 'ZXing.Mobile.ZXingScannerView, ZXingNetMobile' */ },
 		{ NULL, 0 },
 	};
 
@@ -11671,6 +11706,9 @@ exception_handling:;
 		"ZXing.Net.Mobile.Forms", 
 		"zxing.portable", 
 		"ZXing.Net.Mobile.Core", 
+		"Rg.Plugins.Popup", 
+		"Rg.Plugins.Popup.Platform", 
+		"Rg.Plugins.Popup.IOS", 
 		"ZXing.Net.Mobile.Forms.iOS", 
 		"ZXingNetMobile"
 	};
@@ -11682,9 +11720,9 @@ exception_handling:;
 		__xamarin_registration_assemblies,
 		__xamarin_class_map,
 		__xamarin_token_references,
-		26,
-		257,
-		104,
+		29,
+		258,
+		105,
 		0
 	};
 
@@ -11937,15 +11975,16 @@ void xamarin_create_classes () {
 	__xamarin_class_map [245].handle = [Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem class];
 	__xamarin_class_map [246].handle = [Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource class];
 	__xamarin_class_map [247].handle = [Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar class];
-	__xamarin_class_map [248].handle = [ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer class];
-	__xamarin_class_map [249].handle = [ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer class];
-	__xamarin_class_map [250].handle = [ZXing_Mobile_CaptureDelegate class];
-	__xamarin_class_map [251].handle = [ZXing_Mobile_AVCaptureScannerViewController class];
-	__xamarin_class_map [252].handle = [ZXing_Mobile_ZXingScannerViewController class];
-	__xamarin_class_map [253].handle = [ZXing_Mobile_AVCaptureScannerView class];
-	__xamarin_class_map [254].handle = [ZXing_Mobile_ZXingDefaultOverlayView class];
-	__xamarin_class_map [255].handle = [ZXing_Mobile_ZXingScannerView_OutputRecorder class];
-	__xamarin_class_map [256].handle = [ZXing_Mobile_ZXingScannerView class];
+	__xamarin_class_map [248].handle = [Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer class];
+	__xamarin_class_map [249].handle = [ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer class];
+	__xamarin_class_map [250].handle = [ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer class];
+	__xamarin_class_map [251].handle = [ZXing_Mobile_CaptureDelegate class];
+	__xamarin_class_map [252].handle = [ZXing_Mobile_AVCaptureScannerViewController class];
+	__xamarin_class_map [253].handle = [ZXing_Mobile_ZXingScannerViewController class];
+	__xamarin_class_map [254].handle = [ZXing_Mobile_AVCaptureScannerView class];
+	__xamarin_class_map [255].handle = [ZXing_Mobile_ZXingDefaultOverlayView class];
+	__xamarin_class_map [256].handle = [ZXing_Mobile_ZXingScannerView_OutputRecorder class];
+	__xamarin_class_map [257].handle = [ZXing_Mobile_ZXingScannerView class];
 	xamarin_add_registration_map (&__xamarin_registration_map);
 }
 

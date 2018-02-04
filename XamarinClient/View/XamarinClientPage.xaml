@@ -10,7 +10,8 @@
             <Label x:Name="UTXO" Text=""/>
             <Button x:Name="Payment" Text="Pay" Clicked="Pay"/>
             <Button x:Name="Scan" Text="Scan QR Code" Clicked="OnClickScan"/>
-            <Button x:Name="QR" Text="My QR Code" Clicked="MyQR"/>  
+            <Button x:Name="QR" Text="My QR Code" Clicked="MyQR"/> 
+            <Button x:Name = "Refresh" Text="Refresh" Clicked="RefreshPage"/> 
         </StackLayout>
     </ScrollView>
 </ContentPage>

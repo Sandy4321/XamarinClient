@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using BlockchainTools;
-using Newtonsoft.Json;
-using System.Net.Http;
 
 using Xamarin.Forms;
 
@@ -22,26 +20,31 @@ namespace XamarinClient
 
         async void SaveKeys(object sender, EventArgs args)
         {
-            Account acc = new Account();
+            if (PrivKey.Text == "")
+            {
+                await DisplayAlert("Error","Private Key cannot be empty","OK");
+                return;
+            }
+
+            Account account = new Account();
             try{
-                if(PrivKey.Text==""){
-                    throw new Exception("Please fill in the content");
-                }
-                acc= new Account(PrivKey.Text);
-                if(!Application.Current.Properties.ContainsKey("Account")){
-                    Application.Current.Properties.Add("Account", acc);
-                } else {
-                    Application.Current.Properties["Account"] = acc;
-                }
+                account= new Account(PrivKey.Text);
             } catch(Exception e){
-                Error.Text = e.Message;
+                await DisplayAlert("Fatal","Invalid Private Key","OK");
+                return;
             }
-            if(!Application.Current.Properties.ContainsKey("PrivateKey")){
-                Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(acc.privateKey));
-            } else {
-                Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(acc.privateKey);
+
+            if (!Application.Current.Properties.ContainsKey("Account"))
+            {
+                Application.Current.Properties.Add("Account", account);
             }
-            await Application.Current.SavePropertiesAsync();
+            else
+            {
+                Application.Current.Properties["Account"] = account;
+            }
+
+            SaveAccount(account);
+            await DisplayAlert("Account", "Account signed in successfully.","OK");
         }
 
         async void CreateNewAccount(object sender, EventArgs args)
@@ -50,12 +53,20 @@ namespace XamarinClient
             if (!Application.Current.Properties.ContainsKey("Account"))
             {
                 Application.Current.Properties.Add("Account", account);
-                Application.Current.Properties.Add("PrivateKey", Convert.ToBase64String(account.privateKey));
             }
             else
             {
                 Application.Current.Properties["Account"] = account;
-                Application.Current.Properties["PrivateKey"] = Convert.ToBase64String(account.privateKey);
+            }
+            SaveAccount(account);
+            await DisplayAlert("Account", "Account created successfully.", "OK");
+        }
+
+        void SaveAccount(Account account){
+            try{
+                File.WriteAllText(App.AccountPath, Convert.ToBase64String(account.privateKey));
+            } catch(Exception e){
+                var error = e.Message;
             }
         }
     }

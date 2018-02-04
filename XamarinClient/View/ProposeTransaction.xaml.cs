@@ -54,7 +54,7 @@ namespace XamarinClient
                 var result = client.ProposeTransaction(receiver,amount);
                 if(result){
                     await DisplayAlert("Transaction", "Payment Successful", "OK");
-                    await Navigation.PushModalAsync(new MainPage());
+                    await Navigation.PushModalAsync(new MainPage(),false);
                 } else {
                     await DisplayAlert("Transaction", "Payment Failed", "OK");
                 }

@@ -69,3 +69,14 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.QRCodePage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.UserAccount.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Debug/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/BTProgressHUD.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/Rg.Plugins.Popup.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/Rg.Plugins.Popup.IOS.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/Rg.Plugins.Popup.Platform.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLite-net.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLitePCLRaw.batteries_green.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLitePCLRaw.batteries_v2.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLitePCLRaw.core.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLitePCLRaw.provider.sqlite3.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLite-net.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Debug/SQLite-net.xml

@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Net.Sockets;
+using Newtonsoft.Json;
 
 using Xamarin.Forms;
 using Rg.Plugins.Popup.Pages;
@@ -20,7 +20,7 @@ namespace XamarinClient
         {
             this.host = host;
             this.port = port;
-            this.DisplayName = ToString();
+            this.DisplayName = this.ToString();
         }
 
         public override string ToString()
@@ -184,6 +184,7 @@ namespace XamarinClient
                         Application.Current.Properties.Add("Servers", ServersPage.ServerList);
                     }
 
+                    SaveServers(ServersPage.ServerList);
                     await PopupNavigation.PopAsync();
                     return;
                 }
@@ -209,6 +210,18 @@ namespace XamarinClient
             // Prevent background clicked action
             //return base.OnBackgroundClicked();
             return false;
+        }
+
+        public void SaveServers(ObservableCollection<ServerDisplay> servers)
+        {
+            try
+            {
+                File.WriteAllText(App.ServersPath, JsonConvert.SerializeObject(servers));
+            }
+            catch (Exception e)
+            {
+                var error = e.Message;
+            }
         }
     }
 
@@ -372,8 +385,21 @@ namespace XamarinClient
                     {
                         Application.Current.Properties.Add("Servers", ServerList);
                     }
+                    SaveServers(ServerList);
                 }
             }
         }
+
+        public void SaveServers(ObservableCollection<ServerDisplay> servers)
+        {
+            try{
+                File.WriteAllText(App.ServersPath,JsonConvert.SerializeObject(servers));
+            }
+            catch (Exception e)
+            {
+                var error = e.Message;
+            }
+        }
+
     }
 }

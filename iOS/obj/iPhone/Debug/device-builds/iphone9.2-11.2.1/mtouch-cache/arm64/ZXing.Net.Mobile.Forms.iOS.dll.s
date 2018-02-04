@@ -1084,7 +1084,7 @@ bl _p_25
 .word 0xf94027a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9419c30
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -6264,7 +6264,7 @@ _mono_aot_file_info:
 	.long 96,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 148,91,103,133,250,7,96,206,65,252,225,181,43,45,151,229
+	.byte 232,207,237,252,60,17,157,62,43,183,165,68,54,153,188,92
 	.globl _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info:
