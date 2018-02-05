@@ -8451,7 +8451,7 @@ bl _p_145
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 7 411 0
-.word 0xd281c380
+.word 0xd281ad80
 .word 0xf2a00040
 bl _p_35
 .word 0xf9003ba0
@@ -11369,7 +11369,7 @@ _mono_aot_file_info:
 	.long 440,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 131,77,183,76,96,86,185,136,22,255,59,132,63,182,227,164
+	.byte 128,15,155,62,130,94,149,42,32,120,30,11,112,170,227,172
 	.globl _mono_aot_module_ZXing_Net_Mobile_Core_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Core_info:

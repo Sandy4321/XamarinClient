@@ -1874,7 +1874,7 @@ bl _p_66
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 2 72 0
-.word 0xd29fbee0
+.word 0xd29fa8e0
 .word 0xf2a00020
 bl _p_67
 .word 0xaa0003e1
@@ -2912,7 +2912,7 @@ _mono_aot_file_info:
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 68,101,171,67,127,135,150,78,223,142,224,237,42,61,106,51
+	.byte 219,41,60,241,10,44,245,29,72,69,54,226,47,131,90,255
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

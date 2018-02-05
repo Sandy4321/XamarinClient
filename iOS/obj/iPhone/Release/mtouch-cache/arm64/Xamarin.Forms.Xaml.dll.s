@@ -51241,7 +51241,7 @@ bl _p_396
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 35 411 0
-.word 0xd281c380
+.word 0xd281ad80
 .word 0xf2a00040
 bl _p_304
 .word 0xf9004ba0
@@ -63704,7 +63704,7 @@ _mono_aot_file_info:
 	.long 1392,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 126,178,204,15,90,115,40,16,38,2,93,14,161,40,238,73
+	.byte 91,28,193,106,254,12,203,107,122,70,133,134,133,68,39,153
 	.globl _mono_aot_module_Xamarin_Forms_Xaml_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_Xaml_info:

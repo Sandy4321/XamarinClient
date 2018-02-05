@@ -54,6 +54,7 @@
       <DependentUpon>XamarinClientPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\ServersPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\GetCoinPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

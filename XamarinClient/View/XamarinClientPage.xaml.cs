@@ -101,6 +101,10 @@ namespace XamarinClient
             await Navigation.PushAsync(new BarCodePage());
         }
 
+        async void GetCoins(Object sender, EventArgs args){
+            await Navigation.PushAsync(new GetCoinPage());
+        }
+
         async void RefreshPage(Object sender, EventArgs args){
             await Navigation.PushModalAsync(new MainPage(), false);
         }

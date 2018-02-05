@@ -68,7 +68,7 @@
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
-/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll
-/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll
+/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll
+/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.dll

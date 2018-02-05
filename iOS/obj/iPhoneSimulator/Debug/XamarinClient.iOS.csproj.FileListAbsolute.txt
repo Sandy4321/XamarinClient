@@ -73,14 +73,7 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.Platform.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLite-net.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_green.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.sqlite3.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLite-net.pdb
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLite-net.xml
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/PCLStorage.Abstractions.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/PCLStorage.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/PCLStorage.Abstractions.xml
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/PCLStorage.xml

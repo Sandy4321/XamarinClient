@@ -35,17 +35,11 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll \
-	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll \
-	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
-	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/sqlite-net-pcl.1.4.118/lib/netstandard1.1/SQLite-net.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/SQLitePCLRaw.bundle_green.1.1.5/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll \
 	-r \
@@ -369,17 +363,11 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll \
-	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/PCLStorage.1.0.2/lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll \
-	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll \
-	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/sqlite-net-pcl.1.4.118/lib/netstandard1.1/SQLite-net.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/SQLitePCLRaw.bundle_green.1.1.5/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll \
 	-r \

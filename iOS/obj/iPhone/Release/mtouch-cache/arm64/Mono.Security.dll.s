@@ -47404,7 +47404,7 @@ _mono_aot_file_info:
 	.long 784,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 131,9,182,89,152,43,120,107,174,251,189,178,178,210,192,119
+	.byte 6,204,161,26,92,74,177,105,140,193,29,26,244,253,201,250
 	.globl _mono_aot_module_Mono_Security_info
 	.align 3
 _mono_aot_module_Mono_Security_info:
