@@ -20,6 +20,9 @@ namespace XamarinClient
         }
 
         async void Pay(object sender,EventArgs args){
+            Loading.IsRunning = true;
+            Loading.IsVisible = true;
+
             int amount;
             byte[] receiver;
 
@@ -53,12 +56,18 @@ namespace XamarinClient
             try{
                 var result = client.ProposeTransaction(receiver,amount);
                 if(result){
+                    Loading.IsVisible = false;
+                    Loading.IsRunning = false;
                     await DisplayAlert("Transaction", "Payment Successful", "OK");
                     await Navigation.PushModalAsync(new MainPage(),false);
                 } else {
+                    Loading.IsVisible = false;
+                    Loading.IsRunning = false;
                     await DisplayAlert("Transaction", "Payment Failed", "OK");
                 }
             } catch(Exception e){
+                Loading.IsVisible = false;
+                Loading.IsRunning = false;
                 await DisplayAlert("Transaction", "Payment Failed", "OK");
             }
         }

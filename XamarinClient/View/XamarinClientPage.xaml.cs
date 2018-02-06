@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using BlockchainTools;
+using UIKit;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -19,6 +20,8 @@ namespace XamarinClient
         }
 
         async void Init(){
+            Loading.IsRunning = true;
+            Loading.IsVisible = true;
             if (Application.Current.Properties.ContainsKey("Account") && Application.Current.Properties.ContainsKey("Servers"))
             {
                 acc = Application.Current.Properties["Account"] as Account;
@@ -37,9 +40,9 @@ namespace XamarinClient
 
                 try
                 {
-                    Balance.Text = client.BalanceFromAccountTable().ToString();
-
                     client.InitFromBootstrap();
+
+                    Balance.Text = client.GetBalance().ToString();
 
                     list = client.TxService.UtxoTable.FindForAccount(acc.address);
                 }
@@ -73,6 +76,8 @@ namespace XamarinClient
                 QR.IsEnabled = false;
                 Scan.IsEnabled = false;
             }
+            Loading.IsRunning = false;
+            Loading.IsVisible = false;
         }
 
         async void Pay(object sender, EventArgs args){

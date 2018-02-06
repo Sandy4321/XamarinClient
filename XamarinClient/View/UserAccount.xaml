@@ -8,5 +8,6 @@
         <Button x:Name="ShowPrivKey" Text="Show Private Key" Clicked="ShowPrivateKey" />
         <Button Text="Save Key Pair" Clicked="SaveKeys"/>
         <Button Text="Create New Account" Clicked="CreateNewAccount"/>
+        <Button Text="Remove Key Pair" Clicked="RemoveKeys"/>  
     </StackLayout>
 </ContentPage>

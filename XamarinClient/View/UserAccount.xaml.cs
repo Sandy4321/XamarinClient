@@ -11,6 +11,10 @@ namespace XamarinClient
         public UserAccount()
         {
             InitializeComponent();
+            if(Application.Current.Properties.ContainsKey("Account")){
+                Account acc = Application.Current.Properties["Account"] as Account;
+                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
+            }
         }
 
         void ShowPrivateKey(object sender, EventArgs args)
@@ -62,7 +66,20 @@ namespace XamarinClient
             await DisplayAlert("Account", "Account created successfully.", "OK");
         }
 
-        void SaveAccount(Account account){
+        async void RemoveKeys(object sender, EventArgs args)
+        {
+            if(Application.Current.Properties.ContainsKey("Account")){
+                Application.Current.Properties.Remove("Account");
+                try{
+                    File.Delete(App.AccountPath);
+                } catch(Exception e){
+                    File.WriteAllText(App.AccountPath,"");
+                }
+            }
+            return;
+        }
+
+        async void SaveAccount(Account account){
             try{
                 File.WriteAllText(App.AccountPath, Convert.ToBase64String(account.privateKey));
             } catch(Exception e){

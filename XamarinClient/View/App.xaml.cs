@@ -54,7 +54,7 @@ namespace XamarinClient
                     } catch (Exception e) {}
                 }
             }
-            MainPage = new MainPage();
+            MainPage = new XamarinClientPage();
         }
 
         protected override void OnSleep()

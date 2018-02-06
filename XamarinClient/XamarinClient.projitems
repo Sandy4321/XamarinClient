@@ -23,6 +23,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\MyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\RpcCall.cs" />
@@ -55,6 +59,9 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\ServersPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\GetCoinPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\MyPage.xaml.cs">
+      <DependentUpon>MyPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

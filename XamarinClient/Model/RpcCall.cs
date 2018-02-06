@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.Data;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -49,7 +48,7 @@ namespace BlockchainTools
 					networkStream.Read(recvByte, 0, recvByte.Length);
 					recv += Encoding.UTF8.GetString(recvByte);
 					i++;
-					System.Threading.Thread.Sleep(5);
+					Thread.Sleep(5);
 				} while (networkStream.DataAvailable);
 				recv = recv.Substring(0, recv.IndexOf("\n"));
 				recvJson = JObject.Parse(recv);
@@ -70,7 +69,6 @@ namespace BlockchainTools
 			using (NetworkStream networkStream = client.GetStream())
 			{
 				String jsonData = JsonConvert.SerializeObject(json);
-				//Console.WriteLine(jsonData);
 				Byte[] jsonByte = Encoding.UTF8.GetBytes(jsonData);
 				networkStream.Write(jsonByte, 0, jsonByte.Length);
 				int i = 0;
@@ -80,7 +78,7 @@ namespace BlockchainTools
 					networkStream.Read(recvByte, 0, recvByte.Length);
 					recv += Encoding.UTF8.GetString(recvByte);
 					i++;
-					System.Threading.Thread.Sleep(sleepTime);
+					Thread.Sleep(sleepTime);
 				} while (networkStream.DataAvailable);
                 try{
                     recv = recv.Substring(0, recv.IndexOf("\n"));

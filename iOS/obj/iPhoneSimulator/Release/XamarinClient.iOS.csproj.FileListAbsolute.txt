@@ -77,3 +77,8 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.xml
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.xml

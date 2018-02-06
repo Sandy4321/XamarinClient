@@ -1,21 +1,45 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/GetCoinPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/XamarinClientPage.xaml">
     <Files>
-      <File FileName="XamarinClient/View/ServersPage.cs" Line="268" Column="54" />
-      <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="56" Column="14" />
-      <File FileName="XamarinClient/Model/Account.cs" Line="6" Column="2" />
-      <File FileName="XamarinClient/View/XamarinClientPage.xaml" Line="14" Column="73" />
-      <File FileName="XamarinClient/View/App.xaml.cs" Line="20" Column="89" NotebookId="1" />
-      <File FileName="XamarinClient/View/XamarinClientPage.xaml.cs" Line="95" Column="15" NotebookId="1" />
-      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="136" Column="94" NotebookId="1" />
+      <File FileName="XamarinClient/View/XamarinClientPage.xaml" Line="18" Column="65" />
+      <File FileName="XamarinClient/View/XamarinClientPage.xaml.cs" Line="18" Column="35" />
+      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="5" Column="7" />
+      <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="18" Column="10" />
+      <File FileName="XamarinClient/View/UserAccount.xaml" Line="11" Column="62" />
+      <File FileName="XamarinClient/View/ProposeTransaction.xaml" Line="13" Column="61" />
+      <File FileName="XamarinClient/View/ProposeTransaction.xaml.cs" Line="65" Column="47" />
+      <File FileName="XamarinClient/View/MyPage.xaml" Line="6" Column="1" />
+      <File FileName="XamarinClient/View/MyPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XamarinClient/Model/RpcCall.cs" Line="84" Column="66" NotebookId="1" />
+      <File FileName="XamarinClient/Model/RpcClient.cs" Line="162" Column="35" NotebookId="1" />
+      <File FileName="XamarinClient/View/App.xaml.cs" Line="57" Column="36" NotebookId="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinClient" expanded="True">
+            <Node name="XamarinClient" expanded="True">
+              <Node name="Model" expanded="True" />
+              <Node name="View" expanded="True">
+                <Node name="App.xaml" expanded="True" />
+                <Node name="MyPage.xaml" expanded="True" />
+                <Node name="ProposeTransaction.xaml" expanded="True" />
+                <Node name="UserAccount.xaml" expanded="True" />
+                <Node name="XamarinClientPage.xaml" expanded="True" selected="True" />
+              </Node>
+            </Node>
+            <Node name="XamarinClient.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.da276a7b445433b7dd593c797ae9871386f11eae" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2E3BF376-AE17-4D9F-8B3F-54784D4C88D4" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.XamarinClient.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

@@ -34,6 +34,10 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll \
@@ -361,6 +365,10 @@
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll \
 	-r \

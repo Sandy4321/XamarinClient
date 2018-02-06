@@ -77,3 +77,9 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.batteries_v2.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.sqlite3.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.Abstractions.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.Abstractions.xml
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.xml
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.MyPage.xaml.g.cs
