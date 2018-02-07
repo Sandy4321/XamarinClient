@@ -10,20 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\ProposeTransaction.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\UserAccount.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\MyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -45,23 +32,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\MasterPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\MasterPageItem.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\ProposeTransaction.xaml.cs">
-      <DependentUpon>ProposeTransaction.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\QRCodePage.xaml.cs">
-      <DependentUpon>QRCodePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\UserAccount.xaml.cs">
       <DependentUpon>UserAccount.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.xaml.cs">
-      <DependentUpon>XamarinClientPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\ServersPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\GetCoinPage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\MyPage.xaml.cs">
-      <DependentUpon>MyPage.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\ClientPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\PaymentPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

@@ -71,10 +71,7 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.csprojResolveAssemblyReference.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.csproj.CoreCompileInputs.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.App.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.ProposeTransaction.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.QRCodePage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.UserAccount.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.dll

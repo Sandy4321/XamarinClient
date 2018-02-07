@@ -95,8 +95,8 @@ namespace BlockchainTools
         public void GetBootstrapTableThread(object param)
         {
             int i = (int)param;
-            //try
-            //{
+            try
+            {
                 TcpClient Client = new TcpClient();
                 Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
                 byte[] result = GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable",
@@ -118,7 +118,7 @@ namespace BlockchainTools
                         results.Add(result, 1);
                     }
                 }
-            /**}
+            }
             catch (Exception e)
             {
                 try
@@ -146,7 +146,7 @@ namespace BlockchainTools
                     }
                 }
                 catch (Exception exception) { }
-            }*/
+            }
         }
 
         //TODO

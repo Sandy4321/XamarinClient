@@ -65,10 +65,7 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/hamburger.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.App.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.ProposeTransaction.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.QRCodePage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.UserAccount.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.XamarinClientPage.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/BTProgressHUD.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.dll
@@ -82,4 +79,3 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.Abstractions.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.Abstractions.xml
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/Plugin.Messaging.xml
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/XamarinClient.iOS.View.MyPage.xaml.g.cs

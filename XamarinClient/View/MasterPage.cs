@@ -18,7 +18,7 @@ namespace XamarinClient
             {
                 Title = "Home Page",
                 IconSource = "homepage.png",
-                TargetType = typeof(XamarinClientPage),
+                TargetType = typeof(ClientPage),
             });
             masterPageItems.Add(new MasterPageItem
             {
