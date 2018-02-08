@@ -12890,7 +12890,7 @@ _mono_aot_file_info:
 	.long 184,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 175,59,77,235,204,38,136,215,126,140,28,254,250,58,91,117
+	.byte 165,117,136,115,216,79,146,180,180,109,91,144,14,98,151,159
 	.globl _mono_aot_module_ZXing_Net_Mobile_Forms_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Forms_info:

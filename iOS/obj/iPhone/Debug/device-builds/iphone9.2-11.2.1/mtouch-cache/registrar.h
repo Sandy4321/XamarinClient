@@ -10,13 +10,23 @@
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <CoreSpotlight/CoreSpotlight.h>
-#import <CloudKit/CloudKit.h>
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <CloudKit/CloudKit.h>
 #import <Intents/Intents.h>
+#import <CoreTelephony/CoreTelephonyDefines.h>
+#import <CoreTelephony/CTCall.h>
+#import <CoreTelephony/CTCallCenter.h>
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTSubscriber.h>
+#import <CoreTelephony/CTSubscriberInfo.h>
 #import <GLKit/GLKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @class Foundation_InternalNSNotificationHandler;
+@class MessageUI_Mono_MFMailComposeViewControllerDelegate;
+@class MessageUI_Mono_MFMessageComposeViewControllerDelegate;
 @class UIKit_UIControlEventProxy;
 @class __MonoMac_NSActionDispatcher;
 @class __Xamarin_NSTimerActionDispatcher;

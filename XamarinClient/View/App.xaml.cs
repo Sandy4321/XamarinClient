@@ -25,11 +25,13 @@ namespace XamarinClient
         protected override void OnStart()
         {
             // Handle when your app starts
-            HttpClient http = new HttpClient();
-            Task.Run(async () =>
+            using (HttpClient http = new HttpClient())
             {
-                await http.GetAsync(new Uri("http://www.google.com"));
-            });
+                Task.Run(async () =>
+                {
+                    await http.GetAsync(new Uri("http://www.google.com"));
+                });
+            }
 
             if (File.Exists(AccountPath))
             {

@@ -317,7 +317,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 10,224,199,29,7,48,92,16,179,176,177,99,53,171,226,63
+	.byte 178,223,211,160,227,38,164,66,203,53,2,190,212,59,144,50
 	.globl _mono_aot_module_System_Globalization_Extensions_info
 	.align 3
 _mono_aot_module_System_Globalization_Extensions_info:

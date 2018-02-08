@@ -27,8 +27,10 @@ extern void *mono_aot_module_ZXing_Net_Mobile_Core_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_Platform_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_IOS_info;
+extern void *mono_aot_module_Plugin_Messaging_Abstractions_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info;
 extern void *mono_aot_module_ZXingNetMobile_info;
+extern void *mono_aot_module_Plugin_Messaging_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -59,8 +61,10 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_Platform_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_IOS_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Messaging_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info);
 	mono_aot_register_module (mono_aot_module_ZXingNetMobile_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Messaging_info);
 
 }
 
