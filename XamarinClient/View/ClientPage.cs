@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
+using SlideOverKit;
+
 namespace XamarinClient
 {
-    public class ClientPage : ContentPage
+    public class ClientPage : MenuContainerPage
     {
         public static Account acc { get; set; }
         public static RpcClient client { get; set; }
@@ -19,13 +21,10 @@ namespace XamarinClient
         public Label UTXO;
 
         public Button Payment;
-        public Button Scan;
         public Button QR;
         public Button GetCoin;
         public Button Refresh;
-
-        public ActivityIndicator Loading;
-
+        public Button Settings;
 
         public ClientPage()
         {
@@ -33,26 +32,50 @@ namespace XamarinClient
             Balance = new Label { Text = "-1" };
             UTXO = new Label { Text = "" };
 
-            Payment = new Button { Text = "Payment" };
-            Payment.Clicked += Pay;
-            Scan = new Button { Text = "Scan QR Code" };
-            Scan.Clicked += OnClickScan;
-            QR = new Button { Text = "My QR Code" };
-            QR.Clicked += MyQR;
+            Payment = new Button{
+                Text = "Pay",
+                TextColor = Color.Black,
+                BackgroundColor = Color.White,
+                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top, 0),
+                BorderRadius = 0,
+                Image = "send.png",
+                Command = new Command(()=>{
+                    this.ShowMenu();
+                })
+            };
+
+            QR = new Button {
+                Text = "Receive",
+                TextColor = Color.Black,
+                BackgroundColor = Color.White,
+                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top, 0),
+                BorderRadius = 0,
+                Image = "receive.png",
+                Command = new Command(()=>{
+                    this.SlideMenu = new BarCodePage();
+                    this.ShowMenu();
+                })
+            };
+
+            Settings = new Button{
+                Text="Settings",
+                TextColor = Color.Black,
+                BackgroundColor = Color.White,
+                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top, 0),
+                BorderRadius = 0
+            };
+            Settings.Image = "settings.png";
+
             GetCoin = new Button { Text = "Get Coin" };
             GetCoin.Clicked += GetCoins;
+
             Refresh = new Button { Text = "Refresh" };
             Refresh.Clicked += RefreshPage;
 
-            Loading = new ActivityIndicator
-            {
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                Color = Color.Black,
-            };
-
+            ScrollView userDetails = new ScrollView();
             StackLayout stack = new StackLayout
             {
+                BackgroundColor = Color.White,
                 Children = {
                     new Label{Text = "Account Address: "},
                     Acc,
@@ -60,35 +83,54 @@ namespace XamarinClient
                     Balance,
                     new Label{Text = "UTXO: "},
                     UTXO,
-                    Payment,
-                    Scan,
-                    QR,
-                    GetCoin,
-                    Refresh,
                 }
             };
+            userDetails.Content = stack;
 
-            Content = new Grid
+            Grid panel = new Grid
             {
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                Children = {
-                    new ScrollView{
-                        Content = stack,
-                    },
-                    Loading,
-                }
+                ColumnSpacing = 0.5,
+                BackgroundColor = Color.Gray,
             };
+            panel.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            panel.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            panel.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            panel.Children.Add(Payment,0,0);
+            panel.Children.Add(QR,1,0);
+            panel.Children.Add(Settings,2,0);
+
+            Grid grid = new Grid
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                RowSpacing = 0.5,
+                BackgroundColor = Color.Gray,
+            };
+            grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(3, GridUnitType.Star)});
+            grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(10, GridUnitType.Star) });
+            grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(2, GridUnitType.Star) });
+            grid.Children.Add(new Label{
+                Text = "Red Belly Blockchain",
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                BackgroundColor = Color.Red,
+                VerticalTextAlignment = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+            },0,0);
+            grid.Children.Add(userDetails,0,1);
+            grid.Children.Add(panel,0,2);
+
+            Content = grid;
+
+            this.SlideMenu = new PaymentPage();
             Init();
         }
 
         async void Init()
         {
-            Loading.IsVisible = true;
-            Loading.IsRunning = true;
             await Load();
-            Loading.IsVisible = false;
-            Loading.IsRunning = false;
         }
 
         async Task Load()
@@ -136,42 +178,12 @@ namespace XamarinClient
                 }
                 Payment.IsEnabled = true;
                 QR.IsEnabled = true;
-                Scan.IsEnabled = true;
             }
             else
             {
                 Payment.IsEnabled = false;
                 QR.IsEnabled = false;
-                Scan.IsEnabled = false;
             }
-        }
-
-        async void Pay(object sender, EventArgs args)
-        {
-            await Navigation.PushAsync(new PaymentPage());
-        }
-
-        public async void OnClickScan(Object sender, EventArgs args)
-        {
-            var scanPage = new ZXing.Net.Mobile.Forms.ZXingScannerPage();
-
-            scanPage.OnScanResult += (result) =>
-            {
-                scanPage.IsScanning = false;
-
-                Device.BeginInvokeOnMainThread(async () =>
-                {
-                    var payment = new PaymentPage(result.Text);
-                    await Navigation.PushAsync(payment);
-                });
-            };
-
-            await Navigation.PushAsync(scanPage);
-        }
-
-        async void MyQR(Object sender, EventArgs args)
-        {
-            await Navigation.PushAsync(new BarCodePage());
         }
 
         async void GetCoins(Object sender, EventArgs args)

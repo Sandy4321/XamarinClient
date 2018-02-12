@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 
+using SlideOverKit.MoreSample;
+
 namespace XamarinClient
 {
     public partial class App : Application
@@ -56,7 +58,7 @@ namespace XamarinClient
                     } catch (Exception e) {}
                 }
             }
-            MainPage = new MainPage();
+            MainPage = new ClientPage();
         }
 
         protected override void OnSleep()

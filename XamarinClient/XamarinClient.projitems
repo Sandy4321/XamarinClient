@@ -10,6 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\SlideUpMenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Model\RpcCall.cs" />
@@ -33,6 +37,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\ClientPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\PaymentPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\AccountPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\SlideUpMenuView.xaml.cs">
+      <DependentUpon>SlideUpMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\SlideUpMenuPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

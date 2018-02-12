@@ -2906,13 +2906,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 56,1088,80,32,66,391195135,0,2235
+	.long 56,1088,80,32,66,391195135,0,2239
 	.long 128,8,8,10,0,24,3400,1152
 	.long 552,296,0,448,520,352,0,216
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 57,92,125,11,25,42,16,74,201,199,102,185,17,15,99,220
+	.byte 123,81,64,188,48,220,250,239,11,101,38,31,202,50,2,18
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

@@ -4,18 +4,28 @@ using BlockchainTools;
 
 using Xamarin.Forms;
 
+using SlideOverKit;
+
 namespace XamarinClient
 {
-    public class PaymentPage : ContentPage
+    public class PaymentPage : SlideMenuView
     {
         public Entry Receiver;
         public Entry Amount;
+
         public Button MakePayment;
+        public Button Scan;
 
         public ActivityIndicator Loading;
 
         public PaymentPage()
         {
+            this.HeightRequest = 385;
+            this.IsFullScreen = true;
+            this.MenuOrientations = MenuOrientation.BottomToTop;
+            this.BackgroundColor = Color.Gray;
+            this.BackgroundViewColor = Color.Transparent;
+
             Receiver = new Entry
             {
                 Text = "",
@@ -33,6 +43,9 @@ namespace XamarinClient
             MakePayment.Clicked += TurnLoading;
             MakePayment.Clicked += Pay;
             MakePayment.Clicked += TurnLoading;
+
+            Scan = new Button { Text = "Scan QR" };
+            Scan.Clicked += OnClickScan;
 
             Loading = new ActivityIndicator
             {
@@ -62,6 +75,7 @@ namespace XamarinClient
                         },
                     },
                     MakePayment,
+                    Scan,
                 },
             };
 
@@ -86,7 +100,7 @@ namespace XamarinClient
             int amount;
             byte[] receiver;
 
-            if (Receiver.Text == "")
+            /**if (Receiver.Text == "")
             {
                 await DisplayAlert("Error", "Receiver cannot be empty", "OK");
                 return;
@@ -135,7 +149,7 @@ namespace XamarinClient
             catch (Exception e)
             {
                 await DisplayAlert("Transaction", "Payment Failed", "OK");
-            }
+            }*/
         }
 
         public void TurnLoading(object sender, EventArgs args){
@@ -143,6 +157,25 @@ namespace XamarinClient
             Loading.IsVisible = !Loading.IsVisible;
             return;
         }
+
+        public async void OnClickScan(Object sender, EventArgs args)
+        {
+            var scanPage = new ZXing.Net.Mobile.Forms.ZXingScannerPage();
+
+            scanPage.OnScanResult += (result) =>
+            {
+                scanPage.IsScanning = false;
+
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    this.Receiver.Text = result.Text;
+                    await Navigation.PopAsync();
+                });
+            };
+
+            await Navigation.PushAsync(scanPage);
+        }
+
     }
 }
 

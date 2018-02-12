@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/BarCodePage.cs">
     <Files>
-      <File FileName="XamarinClient/View/PaymentPage.cs" Line="35" Column="48" />
-      <File FileName="XamarinClient/View/ClientPage.cs" Line="124" Column="17" />
-      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="141" Column="76" />
-      <File FileName="XamarinClient/View/AccountPage.cs" Line="27" Column="41" NotebookId="1" />
-      <File FileName="XamarinClient/View/MasterPage.cs" Line="27" Column="48" NotebookId="1" />
-      <File FileName="XamarinClient/View/App.xaml.cs" Line="27" Column="12" NotebookId="1" />
+      <File FileName="XamarinClient/View/ClientPage.cs" Line="121" Column="28" />
+      <File FileName="XamarinClient/View/BarCodePage.cs" Line="9" Column="45" />
+      <File FileName="XamarinClient/View/App.xaml.cs" Line="61" Column="38" />
+      <File FileName="XamarinClient/View/PaymentPage.cs" Line="57" Column="37" />
+      <File FileName="XamarinClient/View/SlideUpMenuView.xaml.cs" Line="18" Column="38" NotebookId="1" />
+      <File FileName="XamarinClient/View/SlideUpMenuPage.cs" Line="35" Column="28" NotebookId="1" />
+      <File FileName="XamarinClient/View/SlideUpMenuView.xaml" Line="14" Column="31" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,23 +16,25 @@
             <Node name="XamarinClient" expanded="True">
               <Node name="Model" expanded="True" />
               <Node name="View" expanded="True">
-                <Node name="App.xaml" expanded="True">
-                  <Node name="App.xaml.cs" selected="True" />
-                </Node>
+                <Node name="App.xaml" expanded="True" />
+                <Node name="BarCodePage.cs" selected="True" />
+                <Node name="SlideUpMenuView.xaml" expanded="True" />
               </Node>
             </Node>
-            <Node name="XamarinClient.iOS" expanded="True" />
+            <Node name="XamarinClient.iOS" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.da276a7b445433b7dd593c797ae9871386f11eae" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.2E3BF376-AE17-4D9F-8B3F-54784D4C88D4" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.XamarinClient.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

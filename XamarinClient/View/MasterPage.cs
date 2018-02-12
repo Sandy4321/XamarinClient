@@ -29,7 +29,7 @@ namespace XamarinClient
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Configure Server",
-                IconSource = "todo.png",
+                IconSource = "settings.png",
                 TargetType = typeof(ServersPage)
             });
 
