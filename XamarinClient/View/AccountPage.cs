@@ -17,14 +17,19 @@ namespace XamarinClient
 
         public AccountPage()
         {
+            Title = "Setting";
+            Icon = "settings.png";
+            
             PrivKey = new Entry
             {
                 IsPassword = true,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
             };
 
             ShowPrivKey = new Button
             {
-                Text = "Show Private Key",
+                HorizontalOptions = LayoutOptions.End,
+                Image = "hide.png",
             };
             ShowPrivKey.Clicked += ShowPrivateKey;
 
@@ -46,17 +51,24 @@ namespace XamarinClient
             };
             Remove.Clicked += RemoveKeys;
 
+            Grid passwordGrid = new Grid
+            {
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                RowSpacing = 0.5,
+            };
+            passwordGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
+            passwordGrid.ColumnDefinitions.Add(new ColumnDefinition{ Width = new GridLength(9, GridUnitType.Star) });
+            passwordGrid.ColumnDefinitions.Add(new ColumnDefinition{ Width = new GridLength(1, GridUnitType.Star) });
+            passwordGrid.Children.Add(PrivKey,0,0);
+            passwordGrid.Children.Add(ShowPrivKey,1,0);
+
             Content = new StackLayout
             {
                 Children = {
                     new Label{
                         Text = "Private Key",
                     },
-                    PrivKey,
-                    new Label{
-                        Text = ""
-                    },
-                    ShowPrivKey,
+                    passwordGrid,
                     Save,
                     CreateAccount,
                     Remove,
@@ -67,6 +79,13 @@ namespace XamarinClient
         void ShowPrivateKey(object sender, EventArgs args)
         {
             PrivKey.IsPassword = !PrivKey.IsPassword;
+            if (PrivKey.IsPassword)
+            {
+                ShowPrivKey.Image = "hide.png";
+            }
+            else{
+                ShowPrivKey.Image = "eye.png";
+            }
         }
 
         async void SaveKeys(object sender, EventArgs args)

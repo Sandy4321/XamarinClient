@@ -162,6 +162,12 @@
     <Reference Include="SlideOverKit.iOS">
       <HintPath>..\packages\SlideOverKit.2.1.5\lib\Xamarin.iOS10\SlideOverKit.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="FreshIOC">
+      <HintPath>..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshIOC.dll</HintPath>
+    </Reference>
+    <Reference Include="FreshMvvm">
+      <HintPath>..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshMvvm.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -190,6 +196,9 @@
     <BundleResource Include="Resources\settings.png" />
     <BundleResource Include="Resources\send.png" />
     <BundleResource Include="Resources\receive.png" />
+    <BundleResource Include="Resources\refresh.png" />
+    <BundleResource Include="Resources\eye.png" />
+    <BundleResource Include="Resources\hide.png" />
   </ItemGroup>
   <Import Project="..\XamarinClient\XamarinClient.projitems" Label="Shared" Condition="Exists('..\XamarinClient\XamarinClient.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

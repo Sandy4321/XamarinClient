@@ -6,18 +6,14 @@ using Xamarin.Forms;
 
 namespace XamarinClient
 {
-    public class BarCodePage : SlideMenuView
+    public class BarCodePage : ContentPage
     {
         ZXing.Net.Mobile.Forms.ZXingBarcodeImageView barcode;
 
         public BarCodePage()
         {
-            this.HeightRequest = 385;
-            this.IsFullScreen = true;
-            this.MenuOrientations = MenuOrientation.BottomToTop;
-            this.BackgroundColor = Color.Black;
-            this.BackgroundViewColor = Color.Transparent;
-
+            Title = "Receive";
+            Icon = "receive.png";
 
             barcode = new ZXing.Net.Mobile.Forms.ZXingBarcodeImageView
             {

@@ -8,15 +8,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace XamarinClient {
+namespace SlideOverKit.MoreSample {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Yiding/Documents/XamarinClient/XamarinClient/View/App.xaml")]
-    public partial class App : global::Xamarin.Forms.Application {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Yiding/Documents/XamarinClient/XamarinClient/View/SlideUpMenuView.xaml")]
+    public partial class SlideUpMenuView : global::SlideOverKit.SlideMenuView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(App));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SlideUpMenuView));
         }
     }
 }

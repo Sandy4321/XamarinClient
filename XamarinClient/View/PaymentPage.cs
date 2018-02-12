@@ -8,7 +8,7 @@ using SlideOverKit;
 
 namespace XamarinClient
 {
-    public class PaymentPage : SlideMenuView
+    public class PaymentPage : ContentPage
     {
         public Entry Receiver;
         public Entry Amount;
@@ -20,11 +20,8 @@ namespace XamarinClient
 
         public PaymentPage()
         {
-            this.HeightRequest = 385;
-            this.IsFullScreen = true;
-            this.MenuOrientations = MenuOrientation.BottomToTop;
-            this.BackgroundColor = Color.Gray;
-            this.BackgroundViewColor = Color.Transparent;
+            Title = "Payment";
+            Icon = "send.png";
 
             Receiver = new Entry
             {
@@ -60,6 +57,7 @@ namespace XamarinClient
             {
                 BackgroundColor = Color.Transparent,
                 Children = {
+                    new Label(), 
                     new StackLayout{
                         Orientation=StackOrientation.Horizontal,
                         Children = {
@@ -100,7 +98,7 @@ namespace XamarinClient
             int amount;
             byte[] receiver;
 
-            /**if (Receiver.Text == "")
+            if (Receiver.Text == "")
             {
                 await DisplayAlert("Error", "Receiver cannot be empty", "OK");
                 return;
@@ -149,7 +147,7 @@ namespace XamarinClient
             catch (Exception e)
             {
                 await DisplayAlert("Transaction", "Payment Failed", "OK");
-            }*/
+            }
         }
 
         public void TurnLoading(object sender, EventArgs args){
