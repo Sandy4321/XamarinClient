@@ -124,9 +124,6 @@
     <Reference Include="ZXing.Net.Mobile.Forms.iOS">
       <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="BTProgressHUD">
-      <HintPath>..\packages\BTProgressHUD.1.2.0.6\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
-    </Reference>
     <Reference Include="OpenTK-1.0" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Rg.Plugins.Popup">
@@ -161,12 +158,6 @@
     </Reference>
     <Reference Include="SlideOverKit.iOS">
       <HintPath>..\packages\SlideOverKit.2.1.5\lib\Xamarin.iOS10\SlideOverKit.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="FreshIOC">
-      <HintPath>..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshIOC.dll</HintPath>
-    </Reference>
-    <Reference Include="FreshMvvm">
-      <HintPath>..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshMvvm.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
