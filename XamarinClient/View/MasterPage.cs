@@ -24,12 +24,12 @@ namespace XamarinClient
             {
                 Title = "Set Account",
                 IconSource = "contacts.png",
-                TargetType = typeof(UserAccount)
+                TargetType = typeof(AccountPage)
             });
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Configure Server",
-                IconSource = "todo.png",
+                IconSource = "settings.png",
                 TargetType = typeof(ServersPage)
             });
 

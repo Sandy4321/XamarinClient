@@ -14,6 +14,8 @@ namespace XamarinClient.iOS
         {
             Rg.Plugins.Popup.IOS.Popup.Init();
 
+            SlideOverKit.iOS.SlideOverKit.Init();
+
             global::Xamarin.Forms.Forms.Init();
 
             LoadApplication(new App());

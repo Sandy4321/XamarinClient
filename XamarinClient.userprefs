@@ -1,29 +1,13 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/UserAccount.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/RootView.cs">
     <Files>
-      <File FileName="XamarinClient/View/PaymentPage.cs" Line="35" Column="48" />
-      <File FileName="XamarinClient/View/ClientPage.cs" Line="174" Column="55" />
-      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="141" Column="76" />
-      <File FileName="XamarinClient/View/UserAccount.xaml" Line="11" Column="53" />
-      <File FileName="XamarinClient/View/UserAccount.xaml.cs" Line="18" Column="10" />
+      <File FileName="XamarinClient/View/RootView.cs" Line="12" Column="1" />
+      <File FileName="XamarinClient/View/BarCodePage.cs" Line="41" Column="14" />
+      <File FileName="XamarinClient/View/SettingsPage.cs" Line="100" Column="14" NotebookId="1" />
+      <File FileName="XamarinClient/View/XamarinClientPage.cs" Line="13" Column="35" NotebookId="1" />
+      <File FileName="XamarinClient/View/PaymentPage.cs" Line="114" Column="49" NotebookId="1" />
+      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="141" Column="81" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="XamarinClient" expanded="True">
-            <Node name="XamarinClient" expanded="True">
-              <Node name="Model" expanded="True" />
-              <Node name="View" expanded="True">
-                <Node name="UserAccount.xaml" expanded="True">
-                  <Node name="UserAccount.xaml.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-            <Node name="XamarinClient.iOS" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

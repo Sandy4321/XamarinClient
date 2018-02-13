@@ -124,9 +124,6 @@
     <Reference Include="ZXing.Net.Mobile.Forms.iOS">
       <HintPath>..\packages\ZXing.Net.Mobile.Forms.2.3.2\lib\Xamarin.iOS10\ZXing.Net.Mobile.Forms.iOS.dll</HintPath>
     </Reference>
-    <Reference Include="BTProgressHUD">
-      <HintPath>..\packages\BTProgressHUD.1.2.0.6\lib\Xamarin.iOS10\BTProgressHUD.dll</HintPath>
-    </Reference>
     <Reference Include="OpenTK-1.0" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Rg.Plugins.Popup">
@@ -156,6 +153,12 @@
     <Reference Include="Plugin.Messaging">
       <HintPath>..\packages\Xam.Plugins.Messaging.5.1.0\lib\Xamarin.iOS10\Plugin.Messaging.dll</HintPath>
     </Reference>
+    <Reference Include="SlideOverKit">
+      <HintPath>..\packages\SlideOverKit.2.1.5\lib\Xamarin.iOS10\SlideOverKit.dll</HintPath>
+    </Reference>
+    <Reference Include="SlideOverKit.iOS">
+      <HintPath>..\packages\SlideOverKit.2.1.5\lib\Xamarin.iOS10\SlideOverKit.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -179,6 +182,17 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\contacts.png" />
+    <BundleResource Include="Resources\homepage.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\send.png" />
+    <BundleResource Include="Resources\receive.png" />
+    <BundleResource Include="Resources\refresh.png" />
+    <BundleResource Include="Resources\eye.png" />
+    <BundleResource Include="Resources\hide.png" />
+    <BundleResource Include="Resources\newuser.png" />
+    <BundleResource Include="Resources\trash.png" />
+    <BundleResource Include="Resources\adduser.png" />
   </ItemGroup>
   <Import Project="..\XamarinClient\XamarinClient.projitems" Label="Shared" Condition="Exists('..\XamarinClient\XamarinClient.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

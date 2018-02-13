@@ -3512,7 +3512,7 @@ ldr x1, [x16, #792]
 .word 0xaa1903e1
 .word 0xaa1803e2
 .word 0xf9400343
-.word 0xf941c470
+.word 0xf941c870
 .word 0xd63f0200
 .word 0xa94167b8
 .word 0xf94013ba
@@ -3698,7 +3698,7 @@ ldr x1, [x16, #840]
 .word 0xaa1903e1
 .word 0xaa1803e2
 .word 0xf9400343
-.word 0xf941c470
+.word 0xf941c870
 .word 0xd63f0200
 .word 0xa94167b8
 .word 0xf94013ba
@@ -7623,7 +7623,7 @@ _mono_aot_file_info:
 	.long 232,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 254,86,254,162,250,99,232,10,39,86,82,250,243,98,12,101
+	.byte 144,233,1,199,113,79,92,83,10,220,90,212,203,120,2,165
 	.globl _mono_aot_module_Plugin_Messaging_info
 	.align 3
 _mono_aot_module_Plugin_Messaging_info:

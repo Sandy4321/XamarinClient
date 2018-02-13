@@ -138,7 +138,7 @@ namespace XamarinClient
             string emailaddr = Email.Text;
             string detail = Detail.Text;
 
-            string body = "Address: " + Convert.ToBase64String(ClientPage. acc.address)
+            string body = "Address: " + Convert.ToBase64String(XamarinClientPage.acc.address)
                                                        + "\nRole: " + role
                                                        + "\nReason: " + detail
                                                        + "\nFrom: " + emailaddr;
