@@ -203,6 +203,10 @@ namespace XamarinClient
         {
             Init();
         }
+
+        protected override void OnAppearing(){
+            Init();
+        }
     }
 }
 

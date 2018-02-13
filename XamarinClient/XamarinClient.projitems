@@ -35,6 +35,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)View\RootView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\SettingsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\XamarinClientPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

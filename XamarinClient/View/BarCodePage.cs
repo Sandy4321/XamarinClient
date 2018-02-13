@@ -24,10 +24,32 @@ namespace XamarinClient
             barcode.BarcodeOptions.Width = 400;
             barcode.BarcodeOptions.Height = 400;
             barcode.BarcodeOptions.Margin = 10;
-            Account acc = App.Current.Properties["Account"] as Account;
-            barcode.BarcodeValue = Convert.ToBase64String(acc.address);
+            if(App.Current.Properties.ContainsKey("Account")){
+                Account acc = App.Current.Properties["Account"] as Account;
+                barcode.BarcodeValue = Convert.ToBase64String(acc.address);
+                Content = barcode;
+            } else {
+                Content = new Label
+                {
+                    Text = "Please Login First"
+                };
+            }
+        }
 
-            Content = barcode;
+        protected override void OnAppearing(){
+            if (App.Current.Properties.ContainsKey("Account"))
+            {
+                Account acc = App.Current.Properties["Account"] as Account;
+                barcode.BarcodeValue = Convert.ToBase64String(acc.address);
+                Content = barcode;
+            }
+            else
+            {
+                Content = new Label
+                {
+                    Text = "Please Login First"
+                };
+            }
         }
     }
 }

@@ -8,7 +8,7 @@ namespace XamarinClient
     {
         public RootView()
         {
-            var clientpage = new NavigationPage(new ClientPage());
+            var clientpage = new NavigationPage(new XamarinClientPage());
             clientpage.Title = "Home";
             clientpage.Icon = "homepage.png";
             Children.Add(clientpage);
@@ -23,7 +23,7 @@ namespace XamarinClient
             barcodepage.Icon = "receive.png";
             Children.Add(barcodepage);
 
-            var settingpage = new NavigationPage(new AccountPage());
+            var settingpage = new NavigationPage(new SettingsPage());
             settingpage.Title = "Setting";
             settingpage.Icon = "settings.png";
             Children.Add(settingpage);
