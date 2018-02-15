@@ -57,7 +57,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Threading.Thread.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Net.WebHeaderCollection.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Threading.Tasks.Parallel.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Xamarin.Forms.Xaml.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Xamarin.Forms.Core.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.ComponentModel.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Xamarin.Forms.Platform.dll
@@ -65,10 +64,13 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/ZXing.Net.Mobile.Forms.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/zxing.portable.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/ZXing.Net.Mobile.Core.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Xamarin.Forms.Xaml.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Rg.Plugins.Popup.Platform.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Rg.Plugins.Popup.IOS.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/SlideOverKit.iOS.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/SlideOverKit.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/ZXingNetMobile.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Plugin.Messaging.dll

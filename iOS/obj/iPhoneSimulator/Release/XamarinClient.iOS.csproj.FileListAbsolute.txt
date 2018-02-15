@@ -1,7 +1,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/BouncyCastle.Crypto.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/BTProgressHUD.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/NBitcoin.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Newtonsoft.Json.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Rg.Plugins.Popup.dll
@@ -70,8 +69,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.csprojResolveAssemblyReference.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.csproj.CoreCompileInputs.cache
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.App.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.View.UserAccount.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.dll
@@ -79,3 +76,19 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.Abstractions.xml
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/Plugin.Messaging.xml
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/SlideOverKit.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/SlideOverKit.iOS.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/SlideOverKit.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/SlideOverKit.iOS.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/contacts.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/homepage.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/settings.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/send.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/receive.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/refresh.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/eye.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/hide.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/newuser.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/trash.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/adduser.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.App.xaml.g.cs

@@ -154,7 +154,7 @@ namespace XamarinClient
             listView.ItemTapped += OnItemTapped;
             listView.SeparatorVisibility = SeparatorVisibility.None;
 
-            Content = new StackLayout
+            StackLayout stack = new StackLayout
             {
                 Spacing = 10,
                 VerticalOptions = LayoutOptions.Fill,
@@ -202,6 +202,10 @@ namespace XamarinClient
                     listView,
                 }
             };
+            ScrollView scroll = new ScrollView();
+            scroll.Content = stack;
+
+            Content = scroll;
         }
 
         void ShowPrivateKey(object sender, EventArgs args)
@@ -251,6 +255,11 @@ namespace XamarinClient
 
         async void CreateNewAccount(object sender, EventArgs args)
         {
+            var response = await DisplayAlert("Alert","Are you sure you want to create a new key pair?\nPlease make sure you have a copy of this private key.","Yes","No");
+            if (!response)
+            {
+                return;
+            }
             Account account = new Account();
             if (!Application.Current.Properties.ContainsKey("Account"))
             {
@@ -404,6 +413,13 @@ namespace XamarinClient
             catch (Exception e)
             {
                 var error = e.Message;
+            }
+        }
+
+        protected override void OnAppearing(){
+            if(App.Current.Properties.ContainsKey("Account")){
+                Account acc = App.Current.Properties["Account"] as Account;
+                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
             }
         }
     }
