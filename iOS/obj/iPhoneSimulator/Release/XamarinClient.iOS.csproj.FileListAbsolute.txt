@@ -92,3 +92,4 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/trash.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/adduser.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.App.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/optimized/coin.png

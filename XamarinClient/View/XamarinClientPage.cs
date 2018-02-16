@@ -1,15 +1,39 @@
 ﻿using Xamarin.Forms;
 using BlockchainTools;
-using UIKit;
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-using SlideOverKit;
-
 namespace XamarinClient
 {
+    public class UtxoDisplay
+    {
+        public string DisplayName;
+        public UtxoOutput utxo;
+
+        public UtxoDisplay(UtxoOutput u){
+            this.utxo = u;
+            this.DisplayName = "Value: " + u.value + " Script: "+Convert.ToBase64String(u.script);
+        }
+
+        public override string ToString()
+        {
+            return DisplayName;
+        }
+
+        public override bool Equals(System.Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            UtxoDisplay otherUtxo = obj as UtxoDisplay;
+            if (otherUtxo.utxo.ToString().Equals(this.utxo.ToString())) return true;
+            return false;
+        }
+    }
+    
     public class XamarinClientPage : ContentPage
     {
         public static Account acc { get; set; }
@@ -18,7 +42,9 @@ namespace XamarinClient
 
         public Label Acc;
         public Label Balance;
-        public Label UTXO;
+
+        public ListView Utxos;
+        public static ObservableCollection<UtxoDisplay> UtxoTable;
 
         public Button GetCoin;
         public Button Refresh;
@@ -29,41 +55,124 @@ namespace XamarinClient
             Icon = "homepage.png";
 
             Acc = new Label { Text = "N/A" };
-            Balance = new Label { Text = "-1" };
-            UTXO = new Label { Text = "" };
+            UtxoTable = new ObservableCollection<UtxoDisplay>();
 
-            GetCoin = new Button { Text = "Get Coin" };
+            Balance = new Label {
+                Text = "-1",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+            };
+
+            GetCoin = new Button {
+                Image = "coin.png",
+                HorizontalOptions = LayoutOptions.StartAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+            };
             GetCoin.Clicked += GetCoins;
 
-            Refresh = new Button { Image = "refresh.png" };
+            Refresh = new Button {
+                Image = "refresh.png",
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+            };
             Refresh.Clicked += RefreshPage;
 
-            ScrollView userDetails = new ScrollView();
+            Grid userView = new Grid
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                RowSpacing = 0.5,
+                BackgroundColor = Color.Gray,
+            };
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(60, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(10, GridUnitType.Star) });
+
+
+            userView.Children.Add(new StackLayout
+            {
+                BackgroundColor = Color.White,
+                Orientation = StackOrientation.Horizontal,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Children = {
+                    GetCoin,
+                    new Label{
+                        Text = "Red Belly Blockchain",
+                        TextColor = Color.Red,
+                        FontSize = Device.GetNamedSize(NamedSize.Large,typeof(Label)),
+                        FontAttributes = FontAttributes.Bold,
+                        HorizontalOptions = LayoutOptions.Center,
+                        VerticalOptions = LayoutOptions.Center,
+                    },
+                    Refresh,
+                },
+            }, 0, 0);
+
+            userView.Children.Add(new StackLayout
+            {
+                BackgroundColor = Color.White,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Children = {
+                    new Label{
+                        Text = "Account Address: ",
+                        FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
+                        FontAttributes = FontAttributes.Bold,
+                        HorizontalOptions = LayoutOptions.StartAndExpand,
+                        VerticalOptions = LayoutOptions.StartAndExpand,
+                    },
+                    Acc,
+                }
+            }, 0, 1);
+
+            userView.Children.Add(new StackLayout
+            {
+                BackgroundColor = Color.White,
+                Orientation = StackOrientation.Horizontal,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Children = {
+                    new Label{
+                        Text = "Account Balance: ",
+                        FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
+                        FontAttributes = FontAttributes.Bold,
+                        HorizontalOptions = LayoutOptions.StartAndExpand,
+                        VerticalOptions = LayoutOptions.CenterAndExpand,
+                    },
+                    Balance,
+                }
+            }, 0, 2);
+
+            Utxos = new ListView();
+            Utxos.ItemsSource = UtxoTable;
+            Utxos.ItemTapped += OnItemTapped;
+            Utxos.SeparatorVisibility = SeparatorVisibility.None;
+
+            ScrollView UtxoDetail = new ScrollView();
+            UtxoDetail.Content = Utxos;
+
             StackLayout stack = new StackLayout
             {
                 BackgroundColor = Color.White,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
                 Children = {
-                    new Label{Text = "Account Address: "},
-                    Acc,
-                    new Label{Text = "Account Balance: "},
-                    Balance,
-                    new Label{Text = "UTXO: "},
-                    UTXO,
-                    new StackLayout{
-                        HorizontalOptions = LayoutOptions.Center,
-                        Children = {
-                            GetCoin,
-                            Refresh,
-                        },
+                    new Label{
+                        Text = "UTXO: ",
+                        FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
+                        FontAttributes = FontAttributes.Bold,
                     },
+                    Utxos,
                 }
             };
-            userDetails.Content = stack;
 
-            Content = userDetails;
+            userView.Children.Add(stack, 0, 3);
 
-            Load();
-
+            Content = userView;
         }
 
         public void Load()
@@ -87,36 +196,32 @@ namespace XamarinClient
                 try
                 {
                     client.InitFromBootstrap();
-
-                    Balance.Text = client.GetBalance().ToString();
-
-                    list = client.TxService.UtxoTable.FindForAccount(acc.address);
                 }
                 catch (Exception e)
                 {
-                    Device.BeginInvokeOnMainThread(async () => await DisplayAlert("Fatal", "Network Error", "OK"));
+                    Device.BeginInvokeOnMainThread(async () => await DisplayAlert("Fatal", e.Message, "OK"));
                 }
 
-                if (list.Count != 0)
-                {
-                    UTXO.Text = "";
-                    foreach (UtxoOutput output in list)
-                    {
-                        UTXO.Text += output.ToString() + "\n";
-                    }
+                Balance.Text = client.GetBalance().ToString();
+
+                list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                UtxoTable.Clear();
+                foreach(UtxoOutput u in list){
+                    if(u!=null) UtxoTable.Add(new UtxoDisplay(u));
                 }
-                else
-                {
-                    UTXO.Text = "No Utxos";
-                }
+
                 GetCoin.IsEnabled = true;
             } else {
                 acc = null;
                 Acc.Text = "N/A";
                 Balance.Text = "-1";
-                UTXO.Text = "";
                 GetCoin.IsEnabled = false;
             }
+        }
+
+        async void OnItemTapped(object sender, ItemTappedEventArgs e){
+            UtxoDisplay utxo = e.Item as UtxoDisplay;
+            await Navigation.PushAsync(new UtxoView(utxo.utxo));
         }
 
         async void GetCoins(Object sender, EventArgs args)

@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using NBitcoin.DataEncoders;
 using Newtonsoft.Json.Linq;
 using Org.BouncyCastle.Crypto.Tls;

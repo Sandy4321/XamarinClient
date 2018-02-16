@@ -92,3 +92,4 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/newuser.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/trash.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/adduser.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/optimized/coin.png

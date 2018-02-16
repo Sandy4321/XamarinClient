@@ -1,43 +1,5 @@
-objc[61302]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x1298964d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x129715f48). One of the two will be used. Which one is undefined.
-objc[61302]: Class MPExportableArtworkProperties is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer (0x10d8fd7d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore (0x122c2f108). One of the two will be used. Which one is undefined.
-objc[61302]: Class SFUserNotification is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Sharing.framework/Sharing (0x11af13ab0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SafariServices.framework/SafariServices (0x10b5ff448). One of the two will be used. Which one is undefined.
-2018-02-13 14:50:11.301 XamarinClient.iOS[61302:2765128] 129.78.10.53:7722
-2018-02-13 14:50:11.306 XamarinClient.iOS[61302:2765126] 129.78.10.53:7822
-2018-02-13 14:50:11.311 XamarinClient.iOS[61302:2765127] 129.78.10.53:7622
-2018-02-13 14:50:11.320 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:12.176 XamarinClient.iOS[61302:2765148] 129.78.10.53:7822
-2018-02-13 14:50:12.234 XamarinClient.iOS[61302:2765149] 129.78.10.53:7622
-2018-02-13 14:50:12.242 XamarinClient.iOS[61302:2765150] 129.78.10.53:7722
-2018-02-13 14:50:12.254 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:27.586 XamarinClient.iOS[61302:2765297] 129.78.10.53:7822
-2018-02-13 14:50:27.589 XamarinClient.iOS[61302:2765299] 129.78.10.53:7722
-2018-02-13 14:50:27.594 XamarinClient.iOS[61302:2765298] 129.78.10.53:7622
-2018-02-13 14:50:27.603 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:28.503 XamarinClient.iOS[61302:2765313] 129.78.10.53:7722
-2018-02-13 14:50:28.549 XamarinClient.iOS[61302:2765312] 129.78.10.53:7622
-2018-02-13 14:50:28.556 XamarinClient.iOS[61302:2765311] 129.78.10.53:7822
-2018-02-13 14:50:28.565 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:30.085 XamarinClient.iOS[61302:2765320] 129.78.10.53:7822
-2018-02-13 14:50:30.088 XamarinClient.iOS[61302:2765322] 129.78.10.53:7722
-2018-02-13 14:50:30.093 XamarinClient.iOS[61302:2765321] 129.78.10.53:7622
-2018-02-13 14:50:30.103 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:31.772 XamarinClient.iOS[61302:2765334] 129.78.10.53:7722
-2018-02-13 14:50:31.775 XamarinClient.iOS[61302:2765332] 129.78.10.53:7822
-2018-02-13 14:50:31.780 XamarinClient.iOS[61302:2765333] 129.78.10.53:7622
-2018-02-13 14:50:31.788 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:33.156 XamarinClient.iOS[61302:2765340] 129.78.10.53:7822
-2018-02-13 14:50:33.161 XamarinClient.iOS[61302:2765342] 129.78.10.53:7722
-2018-02-13 14:50:33.169 XamarinClient.iOS[61302:2765341] 129.78.10.53:7622
-2018-02-13 14:50:33.177 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 14:50:39.692 XamarinClient.iOS[61302:2765460] 129.78.10.53:7822
-2018-02-13 14:50:39.701 XamarinClient.iOS[61302:2765462] 129.78.10.53:7722
-2018-02-13 14:50:39.708 XamarinClient.iOS[61302:2765461] 129.78.10.53:7622
-2018-02-13 14:50:39.716 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 16:26:32.664 XamarinClient.iOS[61302:2810234] 129.78.10.53:7622
-2018-02-13 16:26:32.734 XamarinClient.iOS[61302:2810233] 129.78.10.53:7822
-2018-02-13 16:26:32.739 XamarinClient.iOS[61302:2810235] 129.78.10.53:7722
-2018-02-13 16:26:32.748 XamarinClient.iOS[61302:2765068] Occurence:3
-2018-02-13 16:27:01.670 XamarinClient.iOS[61302:2810514] 129.78.10.53:7722
-2018-02-13 16:27:01.716 XamarinClient.iOS[61302:2810512] 129.78.10.53:7822
-2018-02-13 16:27:01.738 XamarinClient.iOS[61302:2810513] 129.78.10.53:7622
-2018-02-13 16:27:01.747 XamarinClient.iOS[61302:2765068] Occurence:3
+objc[69158]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x1287944d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x128613f48). One of the two will be used. Which one is undefined.
+objc[69158]: Class MPExportableArtworkProperties is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer (0x10c7407d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore (0x121b2d108). One of the two will be used. Which one is undefined.
+objc[69158]: Class SFUserNotification is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Sharing.framework/Sharing (0x119e11ab0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SafariServices.framework/SafariServices (0x10a38c448). One of the two will be used. Which one is undefined.
+2018-02-16 15:38:38.294 XamarinClient.iOS[69158:3250276] 129.78.10.53:7822
+2018-02-16 15:38:38.304 XamarinClient.iOS[69158:3250236] Occurence:1

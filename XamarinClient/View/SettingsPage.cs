@@ -320,6 +320,7 @@ namespace XamarinClient
                 if (reassure)
                 {
                     ServerList.Remove(server);
+                    SaveServers(ServerList);
                 }
             }
             else if (action.Equals("Edit"))
@@ -552,25 +553,25 @@ namespace XamarinClient
                     return;
                 }
 
-                if (ServersPage.ServerList.Contains(server))
+                if (SettingsPage.ServerList.Contains(server))
                 {
                     await DisplayAlert("Alert", "You have added this server", "OK");
                 }
                 else
                 {
-                    ServersPage.ServerList.Add(server);
-                    ServersPage.ServerList.Remove(oldServer);
+                    SettingsPage.ServerList.Add(server);
+                    SettingsPage.ServerList.Remove(oldServer);
 
                     if (Application.Current.Properties.ContainsKey("Servers"))
                     {
-                        Application.Current.Properties["Servers"] = ServersPage.ServerList;
+                        Application.Current.Properties["Servers"] = SettingsPage.ServerList;
                     }
                     else
                     {
-                        Application.Current.Properties.Add("Servers", ServersPage.ServerList);
+                        Application.Current.Properties.Add("Servers", SettingsPage.ServerList);
                     }
 
-                    SaveServers(ServersPage.ServerList);
+                    SaveServers(SettingsPage.ServerList);
                     await PopupNavigation.PopAsync();
                     return;
                 }

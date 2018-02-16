@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RNznDi7cxEim01fJI65VYZFaOoY=
+		5NFt0wfBqaU2HfZY7Emb3KKXXCc=
 		</data>
 		<key>BouncyCastle.Crypto.aotdata.arm64</key>
 		<data>
@@ -294,11 +294,11 @@
 		</data>
 		<key>XamarinClient.iOS.aotdata.arm64</key>
 		<data>
-		A/v7Npj5iS2ZjLrSqUJx416YNro=
+		sLO3riWSR6FZYQzfB44YinBR/6Y=
 		</data>
 		<key>XamarinClient.iOS.exe</key>
 		<data>
-		7ihLOByxhEE4lb1mcuQorHNzNVI=
+		2jUYEeqTDGsbUZNV80EEobeY7tw=
 		</data>
 		<key>XamarinClient.iOS.exe.config</key>
 		<data>
@@ -351,6 +351,10 @@
 		<key>ca/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
 		sXhigktWeQS8tSDbU6ViLBrzvKg=
+		</data>
+		<key>coin.png</key>
+		<data>
+		6E/OMEB39CK6YvZaxZMq4cWGy0A=
 		</data>
 		<key>contacts.png</key>
 		<data>
@@ -562,11 +566,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RNznDi7cxEim01fJI65VYZFaOoY=
+			5NFt0wfBqaU2HfZY7Emb3KKXXCc=
 			</data>
 			<key>hash2</key>
 			<data>
-			8bncBGvxrnuwAE3edeGBVcCNwk8E7I1xU4AQAt2YyQs=
+			2/ccAkCSdeBoy5KQ+gc1xVSYXo4OLt47bmzBhsSOJ24=
 			</data>
 		</dict>
 		<key>BouncyCastle.Crypto.aotdata.arm64</key>
@@ -1321,22 +1325,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			A/v7Npj5iS2ZjLrSqUJx416YNro=
+			sLO3riWSR6FZYQzfB44YinBR/6Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			1kEPnyHVXsBFjKjMhpzhOkxWimnusQcwVZUBx3/8n6E=
+			KYvU+nflSITIB+zClfomG7x70rmc2ReLxOKqmnl8j1Q=
 			</data>
 		</dict>
 		<key>XamarinClient.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7ihLOByxhEE4lb1mcuQorHNzNVI=
+			2jUYEeqTDGsbUZNV80EEobeY7tw=
 			</data>
 			<key>hash2</key>
 			<data>
-			V8LwrjuLLudMqK2ZoskvWcPK/S3Pe22q7XfveTNom64=
+			uXrcv8HwpA9zvlkv+CYTFQYAuuehMHUFxEPxNhViD5I=
 			</data>
 		</dict>
 		<key>XamarinClient.iOS.exe.config</key>
@@ -1480,6 +1484,17 @@
 			<key>hash2</key>
 			<data>
 			+Z3jJEroJKkXTfvJ4seBz2UUk+RtrlF77y5MBGTUAyc=
+			</data>
+		</dict>
+		<key>coin.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6E/OMEB39CK6YvZaxZMq4cWGy0A=
+			</data>
+			<key>hash2</key>
+			<data>
+			ijSpGChXQmPYtvfN71cgBKIXr75NEommA7Wkm5dajtM=
 			</data>
 		</dict>
 		<key>contacts.png</key>

@@ -193,6 +193,7 @@
     <BundleResource Include="Resources\newuser.png" />
     <BundleResource Include="Resources\trash.png" />
     <BundleResource Include="Resources\adduser.png" />
+    <BundleResource Include="Resources\coin.png" />
   </ItemGroup>
   <Import Project="..\XamarinClient\XamarinClient.projitems" Label="Shared" Condition="Exists('..\XamarinClient\XamarinClient.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
