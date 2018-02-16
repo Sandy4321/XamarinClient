@@ -58,7 +58,7 @@ namespace XamarinClient
 
         public SettingsPage()
         {
-            Title = "Setting";
+            Title = "Red Belly Blockchain";
             Icon = "settings.png";
 
             PrivKey = new Entry

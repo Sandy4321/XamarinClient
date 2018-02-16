@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		5NFt0wfBqaU2HfZY7Emb3KKXXCc=
+		MAcf0NM9xrARvAk1Psvcw7K9B8Y=
 		</data>
 		<key>BouncyCastle.Crypto.aotdata.arm64</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QVpX9WvfvYE6nfd0nL3Rdn9JKxk=
+		9M8Xlg1j7EgJTVESIYiCmV23+R8=
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -294,11 +294,11 @@
 		</data>
 		<key>XamarinClient.iOS.aotdata.arm64</key>
 		<data>
-		sLO3riWSR6FZYQzfB44YinBR/6Y=
+		LopkO7w46jGzwXBdk6Z4/tZB/f4=
 		</data>
 		<key>XamarinClient.iOS.exe</key>
 		<data>
-		2jUYEeqTDGsbUZNV80EEobeY7tw=
+		oow19cmhUwa6jGR64SzMeST3cPM=
 		</data>
 		<key>XamarinClient.iOS.exe.config</key>
 		<data>
@@ -354,7 +354,7 @@
 		</data>
 		<key>coin.png</key>
 		<data>
-		6E/OMEB39CK6YvZaxZMq4cWGy0A=
+		F5pmv0vnt63gBkL9zvjWmG9K2Bk=
 		</data>
 		<key>contacts.png</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		QYCj/C7jNHnM90FZyh4SiUeiG24=
+		/JJ3VN4Oth145Ncp+9i/pr6Uvgw=
 		</data>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -478,11 +478,11 @@
 		</data>
 		<key>receive.png</key>
 		<data>
-		4rdJ1+sh5LFM8b3JS5T/gUd3n4Q=
+		7ONE+fmk3RScDbsmqj9u2ZJw1dk=
 		</data>
 		<key>refresh.png</key>
 		<data>
-		CHDwzLvGSspJFfADvJ+nbFwtncc=
+		UGNI6ZtWeQ++AwfHzP/9FPwAA70=
 		</data>
 		<key>ro/Xamarin.Forms.Platform.iOS.resources.dll</key>
 		<data>
@@ -566,11 +566,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5NFt0wfBqaU2HfZY7Emb3KKXXCc=
+			MAcf0NM9xrARvAk1Psvcw7K9B8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			2/ccAkCSdeBoy5KQ+gc1xVSYXo4OLt47bmzBhsSOJ24=
+			95zjTUwrhNlZvcDv8HtXByGaM+MxwpnN3P+szU8ypq0=
 			</data>
 		</dict>
 		<key>BouncyCastle.Crypto.aotdata.arm64</key>
@@ -1325,22 +1325,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sLO3riWSR6FZYQzfB44YinBR/6Y=
+			LopkO7w46jGzwXBdk6Z4/tZB/f4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KYvU+nflSITIB+zClfomG7x70rmc2ReLxOKqmnl8j1Q=
+			JvfSUoHwvqYsPTSukEanQruu5f42pGeQVvQ0NbvsDno=
 			</data>
 		</dict>
 		<key>XamarinClient.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2jUYEeqTDGsbUZNV80EEobeY7tw=
+			oow19cmhUwa6jGR64SzMeST3cPM=
 			</data>
 			<key>hash2</key>
 			<data>
-			uXrcv8HwpA9zvlkv+CYTFQYAuuehMHUFxEPxNhViD5I=
+			pKnHHUMjqoIFzzmfCDeb3IzvxyrVLUerXUlB/fzVrus=
 			</data>
 		</dict>
 		<key>XamarinClient.iOS.exe.config</key>
@@ -1490,11 +1490,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6E/OMEB39CK6YvZaxZMq4cWGy0A=
+			F5pmv0vnt63gBkL9zvjWmG9K2Bk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ijSpGChXQmPYtvfN71cgBKIXr75NEommA7Wkm5dajtM=
+			4qKsBu99kL2QhyZyMHdwHf/izfqTrM1tAe7kRyj7igE=
 			</data>
 		</dict>
 		<key>contacts.png</key>
@@ -1556,11 +1556,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QYCj/C7jNHnM90FZyh4SiUeiG24=
+			/JJ3VN4Oth145Ncp+9i/pr6Uvgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			2RltC7wZTf8xYJiH2W2hKNIqHTbzpga7RSgX3qV4toU=
+			7f8Zljmr+nRg3G7ezzvWPm+7yt6Sk+Xo8LTa5YeaUDo=
 			</data>
 		</dict>
 		<key>es/Xamarin.Forms.Platform.iOS.resources.dll</key>
@@ -1831,22 +1831,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4rdJ1+sh5LFM8b3JS5T/gUd3n4Q=
+			7ONE+fmk3RScDbsmqj9u2ZJw1dk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ODCmCoVa5Cwcz17mioVW4+9POSYrC2YSjM7yFrD9jSM=
+			uiG0YEF+yPBEZU7izVnBq8jvvG7x1kx3v/Eqt4P/zGE=
 			</data>
 		</dict>
 		<key>refresh.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CHDwzLvGSspJFfADvJ+nbFwtncc=
+			UGNI6ZtWeQ++AwfHzP/9FPwAA70=
 			</data>
 			<key>hash2</key>
 			<data>
-			ujcGs8ru69ow8tcpxLNiraVCq2yG+E0c/xhdI/SRarM=
+			sRfY5V7qeteCs9C+AUIQg0O5KW35JM3CB5D+aJ49tnY=
 			</data>
 		</dict>
 		<key>ro/Xamarin.Forms.Platform.iOS.resources.dll</key>

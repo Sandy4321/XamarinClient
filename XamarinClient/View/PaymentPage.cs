@@ -20,7 +20,7 @@ namespace XamarinClient
 
         public PaymentPage()
         {
-            Title = "Payment";
+            Title = "Red Belly Blockchain";
             Icon = "send.png";
 
             Receiver = new Entry

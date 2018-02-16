@@ -46,12 +46,11 @@ namespace XamarinClient
         public ListView Utxos;
         public static ObservableCollection<UtxoDisplay> UtxoTable;
 
-        public Button GetCoin;
         public Button Refresh;
 
         public XamarinClientPage()
         {
-            Title = "Home";
+            Title = "Red Belly Blockchain";
             Icon = "homepage.png";
 
             Acc = new Label { Text = "N/A" };
@@ -64,13 +63,6 @@ namespace XamarinClient
                 HorizontalOptions = LayoutOptions.EndAndExpand,
                 VerticalOptions = LayoutOptions.CenterAndExpand,
             };
-
-            GetCoin = new Button {
-                Image = "coin.png",
-                HorizontalOptions = LayoutOptions.StartAndExpand,
-                VerticalOptions = LayoutOptions.CenterAndExpand,
-            };
-            GetCoin.Clicked += GetCoins;
 
             Refresh = new Button {
                 Image = "refresh.png",
@@ -86,31 +78,9 @@ namespace XamarinClient
                 RowSpacing = 0.5,
                 BackgroundColor = Color.Gray,
             };
-            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(60, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(10, GridUnitType.Star) });
-
-
-            userView.Children.Add(new StackLayout
-            {
-                BackgroundColor = Color.White,
-                Orientation = StackOrientation.Horizontal,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                Children = {
-                    GetCoin,
-                    new Label{
-                        Text = "Red Belly Blockchain",
-                        TextColor = Color.Red,
-                        FontSize = Device.GetNamedSize(NamedSize.Large,typeof(Label)),
-                        FontAttributes = FontAttributes.Bold,
-                        HorizontalOptions = LayoutOptions.Center,
-                        VerticalOptions = LayoutOptions.Center,
-                    },
-                    Refresh,
-                },
-            }, 0, 0);
 
             userView.Children.Add(new StackLayout
             {
@@ -127,7 +97,7 @@ namespace XamarinClient
                     },
                     Acc,
                 }
-            }, 0, 1);
+            }, 0, 0);
 
             userView.Children.Add(new StackLayout
             {
@@ -145,7 +115,7 @@ namespace XamarinClient
                     },
                     Balance,
                 }
-            }, 0, 2);
+            }, 0, 1);
 
             Utxos = new ListView();
             Utxos.ItemsSource = UtxoTable;
@@ -161,16 +131,26 @@ namespace XamarinClient
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Children = {
-                    new Label{
-                        Text = "UTXO: ",
-                        FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
-                        FontAttributes = FontAttributes.Bold,
+                    new StackLayout{
+                        Orientation = StackOrientation.Horizontal,
+                        HorizontalOptions = LayoutOptions.FillAndExpand,
+                        VerticalOptions = LayoutOptions.FillAndExpand,
+                        Children = {
+                            new Label{
+                                Text = "UTXO: ",
+                                FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
+                                FontAttributes = FontAttributes.Bold,
+                                HorizontalTextAlignment = TextAlignment.Start,
+                                VerticalTextAlignment = TextAlignment.Center,
+                            },
+                            Refresh,
+                        }
                     },
                     Utxos,
                 }
             };
 
-            userView.Children.Add(stack, 0, 3);
+            userView.Children.Add(stack, 0, 2);
 
             Content = userView;
         }
@@ -209,24 +189,16 @@ namespace XamarinClient
                 foreach(UtxoOutput u in list){
                     if(u!=null) UtxoTable.Add(new UtxoDisplay(u));
                 }
-
-                GetCoin.IsEnabled = true;
             } else {
                 acc = null;
                 Acc.Text = "N/A";
                 Balance.Text = "-1";
-                GetCoin.IsEnabled = false;
             }
         }
 
         async void OnItemTapped(object sender, ItemTappedEventArgs e){
             UtxoDisplay utxo = e.Item as UtxoDisplay;
             await Navigation.PushAsync(new UtxoView(utxo.utxo));
-        }
-
-        async void GetCoins(Object sender, EventArgs args)
-        {
-            await Navigation.PushAsync(new GetCoinPage());
         }
 
         async void RefreshPage(Object sender, EventArgs args)
