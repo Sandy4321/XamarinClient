@@ -2912,7 +2912,7 @@ _mono_aot_file_info:
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 253,100,90,56,7,54,142,212,41,121,2,92,134,193,167,7
+	.byte 201,139,94,15,114,134,131,255,103,108,162,126,93,142,64,63
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

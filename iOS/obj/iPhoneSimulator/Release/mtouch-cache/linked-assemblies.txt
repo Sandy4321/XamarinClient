@@ -1,9 +1,9 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/mscorlib.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Core.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Mono.Security.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Xml.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Core.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/Newtonsoft.Json.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.Runtime.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/mtouch-cache/Link/System.ComponentModel.Composition.dll
