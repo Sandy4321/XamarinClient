@@ -128,6 +128,8 @@
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
+@class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
+@class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer;
 @class ZXing_Mobile_CaptureDelegate;
@@ -511,6 +513,20 @@
 	-(void) viewDidLayoutSubviews;
 	-(void) viewWillAppear:(BOOL)p0;
 	-(void) viewWillDisappear:(BOOL)p0;
+	-(id) init;
+@end
+
+@interface SlideOverKit_iOS_MenuContainerPageiOSRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
+}
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
+	-(id) init;
+@end
+
+@interface SlideOverKit_iOS_SlidePopupViewRendereriOS : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
+}
 	-(id) init;
 @end
 

@@ -7971,7 +7971,7 @@ _mono_aot_file_info:
 	.long 224,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 246,23,94,37,197,60,13,165,150,149,246,93,162,119,16,61
+	.byte 85,46,16,236,85,107,23,169,173,222,52,56,208,8,162,169
 	.globl _mono_aot_module_SlideOverKit_iOS_info
 	.align 3
 _mono_aot_module_SlideOverKit_iOS_info:

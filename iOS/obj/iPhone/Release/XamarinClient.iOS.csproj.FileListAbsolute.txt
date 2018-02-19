@@ -2,7 +2,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/BouncyCastle.Crypto.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/BTProgressHUD.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/NBitcoin.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/Newtonsoft.Json.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/Rg.Plugins.Popup.dll
@@ -72,7 +71,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csprojResolveAssemblyReference.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csproj.XamarinClient.iOS.exe.config
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csproj.CoreCompileInputs.cache
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.View.App.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.pdb
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/Plugin.Messaging.Abstractions.dll
@@ -89,3 +87,11 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/settings.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/send.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/receive.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/refresh.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/eye.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/hide.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/newuser.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/trash.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/adduser.png
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.App.xaml.g.cs
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/coin.png

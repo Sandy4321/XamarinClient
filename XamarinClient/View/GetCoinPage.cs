@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using BlockchainTools;
+
 using Xamarin.Forms;
 using Plugin.Messaging;
 
@@ -16,6 +18,8 @@ namespace XamarinClient
         public Editor Detail = new Editor { HeightRequest = 100,  };
         public Button Submit;
         public Button Cancel;
+
+        public ScrollView scroll;
 
         public GetCoinPage()
         {
@@ -45,7 +49,7 @@ namespace XamarinClient
             };
             Cancel.Clicked += Cancel_Clicked;
 
-            var scroll = new ScrollView();
+            scroll = new ScrollView();
             StackLayout stack = new StackLayout
             {
                 VerticalOptions = LayoutOptions.Fill,
@@ -138,7 +142,8 @@ namespace XamarinClient
             string emailaddr = Email.Text;
             string detail = Detail.Text;
 
-            string body = "Address: " + Convert.ToBase64String(ClientPage. acc.address)
+            Account acc = App.Current.Properties["Account"] as Account;
+            string body = "Address: " + Convert.ToBase64String(acc.address)
                                                        + "\nRole: " + role
                                                        + "\nReason: " + detail
                                                        + "\nFrom: " + emailaddr;
@@ -156,6 +161,21 @@ namespace XamarinClient
         {
             await Navigation.PopAsync();
             return;
+        }
+
+        protected override void OnAppearing()
+        {
+            if (App.Current.Properties.ContainsKey("Account"))
+            {
+                Content = scroll;
+            }
+            else
+            {
+                Content = new Label
+                {
+                    Text = "Please Login First"
+                };
+            }
         }
     }
 }

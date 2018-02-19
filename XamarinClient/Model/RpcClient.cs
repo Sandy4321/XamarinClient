@@ -44,15 +44,6 @@ namespace BlockchainTools
 
         public void AddServer(String address, int port) => ServerList.Add(new Tuple<string, int>(address, port));
 
-        public byte[] GetResultFromServerResponse(byte[] response)
-        {
-            string res = Encoding.UTF8.GetString(response);
-            JObject responseJson = JObject.Parse(res);
-            string result = responseJson.GetValue("result").ToString();
-            result = result.Replace("\0", "");
-            return Convert.FromBase64String(result);
-        }
-
         //TODO
         //Get Bootstrap Table
         public byte[] GetBootstrapTable()
@@ -99,8 +90,8 @@ namespace BlockchainTools
             {
                 TcpClient Client = new TcpClient();
                 Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
-                byte[] result = GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable",
-                    new object[] { this.Account.address }, Client, 50));
+                byte[] result = Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable",
+                    new object[] { this.Account.address }, Client, 50);
                 if (result == null)
                 {
                     return;
@@ -125,8 +116,8 @@ namespace BlockchainTools
                 {
                     TcpClient Client = new TcpClient();
                     Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
-                    byte[] result = GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable",
-                        new object[] { this.Account.address }, Client, 50));
+                    byte[] result = Rpc.InvokeAndReadResponse("RpcNode.BootstrapTable",
+                        new object[] { this.Account.address }, Client, 50);
                     if (result == null)
                     {
                         return;
@@ -196,8 +187,8 @@ namespace BlockchainTools
                 TcpClient Client = new TcpClient();
                 Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
                 Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                byte[] result = GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount",
-                    new object[] { this.Account.address }, Client, 50));
+                byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount",
+                    new object[] { this.Account.address }, Client, 50);
                 if (result == null)
                 {
                     return;
@@ -218,7 +209,7 @@ namespace BlockchainTools
                     TcpClient Client = new TcpClient();
                     Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
                     Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                    byte[] result = GetResultFromServerResponse(Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount", new object[] { this.Account.address }, Client, 50));
+                    byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetTableAccount", new object[] { this.Account.address }, Client, 50);
                     if (result == null)
                     {
                         return;

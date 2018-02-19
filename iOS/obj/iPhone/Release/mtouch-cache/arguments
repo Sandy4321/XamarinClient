@@ -22,8 +22,6 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/BTProgressHUD.1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll \
-	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -363,8 +361,6 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
-	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/BTProgressHUD.1.2.0.6/lib/Xamarin.iOS10/BTProgressHUD.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \

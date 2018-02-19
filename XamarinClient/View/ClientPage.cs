@@ -10,7 +10,7 @@ using SlideOverKit;
 
 namespace XamarinClient
 {
-    public class ClientPage : MenuContainerPage
+    public class ClientPage : ContentPage
     {
         public static Account acc { get; set; }
         public static RpcClient client { get; set; }
@@ -28,6 +28,9 @@ namespace XamarinClient
 
         public ClientPage()
         {
+            Title = "Home";
+            Icon = "homepage.png";
+
             Acc = new Label { Text = "N/A" };
             Balance = new Label { Text = "-1" };
             UTXO = new Label { Text = "" };
@@ -40,7 +43,7 @@ namespace XamarinClient
                 BorderRadius = 0,
                 Image = "send.png",
                 Command = new Command(()=>{
-                    this.ShowMenu();
+                    Navigation.PushAsync(new PaymentPage());
                 })
             };
 
@@ -52,8 +55,7 @@ namespace XamarinClient
                 BorderRadius = 0,
                 Image = "receive.png",
                 Command = new Command(()=>{
-                    this.SlideMenu = new BarCodePage();
-                    this.ShowMenu();
+                    Navigation.PushAsync(new BarCodePage());
                 })
             };
 
@@ -69,7 +71,7 @@ namespace XamarinClient
             GetCoin = new Button { Text = "Get Coin" };
             GetCoin.Clicked += GetCoins;
 
-            Refresh = new Button { Text = "Refresh" };
+            Refresh = new Button { Image = "refresh.png" };
             Refresh.Clicked += RefreshPage;
 
             ScrollView userDetails = new ScrollView();
@@ -83,6 +85,12 @@ namespace XamarinClient
                     Balance,
                     new Label{Text = "UTXO: "},
                     UTXO,
+                    new StackLayout{
+                        HorizontalOptions = LayoutOptions.Center,
+                        Children = {
+                            Refresh,
+                        },
+                    },
                 }
             };
             userDetails.Content = stack;
@@ -122,9 +130,9 @@ namespace XamarinClient
             grid.Children.Add(userDetails,0,1);
             grid.Children.Add(panel,0,2);
 
-            Content = grid;
 
-            this.SlideMenu = new PaymentPage();
+            Content = userDetails;
+
             Init();
         }
 
@@ -193,6 +201,10 @@ namespace XamarinClient
 
         async void RefreshPage(Object sender, EventArgs args)
         {
+            Init();
+        }
+
+        protected override void OnAppearing(){
             Init();
         }
     }
