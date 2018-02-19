@@ -12,7 +12,7 @@ namespace XamarinClient
 
         public BarCodePage()
         {
-            Title = "Receive";
+            Title = "Red Belly Blockchain";
             Icon = "receive.png";
 
             barcode = new ZXing.Net.Mobile.Forms.ZXingBarcodeImageView

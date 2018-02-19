@@ -186,13 +186,14 @@
     <BundleResource Include="Resources\homepage.png" />
     <BundleResource Include="Resources\settings.png" />
     <BundleResource Include="Resources\send.png" />
-    <BundleResource Include="Resources\receive.png" />
     <BundleResource Include="Resources\refresh.png" />
     <BundleResource Include="Resources\eye.png" />
     <BundleResource Include="Resources\hide.png" />
     <BundleResource Include="Resources\newuser.png" />
     <BundleResource Include="Resources\trash.png" />
     <BundleResource Include="Resources\adduser.png" />
+    <BundleResource Include="Resources\coin.png" />
+    <BundleResource Include="Resources\receive.png" />
   </ItemGroup>
   <Import Project="..\XamarinClient\XamarinClient.projitems" Label="Shared" Condition="Exists('..\XamarinClient\XamarinClient.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

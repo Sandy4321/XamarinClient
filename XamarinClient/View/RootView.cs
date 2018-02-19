@@ -23,6 +23,11 @@ namespace XamarinClient
             barcodepage.Icon = "receive.png";
             Children.Add(barcodepage);
 
+            var getcoinpage = new NavigationPage(new GetCoinPage());
+            getcoinpage.Title = "Get Coin";
+            getcoinpage.Icon = "coin.png";
+            Children.Add(getcoinpage);
+
             var settingpage = new NavigationPage(new SettingsPage());
             settingpage.Title = "Setting";
             settingpage.Icon = "settings.png";
