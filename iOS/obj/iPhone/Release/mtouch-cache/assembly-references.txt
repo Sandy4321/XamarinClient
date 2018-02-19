@@ -1,9 +1,9 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/mscorlib.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Mono.Security.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.Core.dll
 /Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.ComponentModel.Composition.dll
@@ -57,7 +57,6 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Threading.Thread.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Net.WebHeaderCollection.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Threading.Tasks.Parallel.dll
-/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.ComponentModel.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
@@ -65,10 +64,13 @@
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/zxing.portable.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll
+/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
-/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
+/Users/Yiding/Documents/XamarinClient/packages/SlideOverKit.2.1.5/lib/Xamarin.iOS10/SlideOverKit.iOS.dll
+/Users/Yiding/Documents/XamarinClient/packages/SlideOverKit.2.1.5/lib/Xamarin.iOS10/SlideOverKit.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.dll

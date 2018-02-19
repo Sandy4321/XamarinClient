@@ -17,18 +17,22 @@ extern void *mono_aot_module_NBitcoin_info;
 extern void *mono_aot_module_System_Net_Http_info;
 extern void *mono_aot_module_Xamarin_iOS_info;
 extern void *mono_aot_module_System_Globalization_Extensions_info;
-extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 extern void *mono_aot_module_Xamarin_Forms_Core_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_info;
 extern void *mono_aot_module_Xamarin_Forms_Platform_iOS_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Forms_info;
 extern void *mono_aot_module_zxing_portable_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Core_info;
+extern void *mono_aot_module_Plugin_Messaging_Abstractions_info;
+extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_Platform_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_IOS_info;
+extern void *mono_aot_module_SlideOverKit_iOS_info;
+extern void *mono_aot_module_SlideOverKit_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info;
 extern void *mono_aot_module_ZXingNetMobile_info;
+extern void *mono_aot_module_Plugin_Messaging_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -49,18 +53,22 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_Net_Http_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_iOS_info);
 	mono_aot_register_module (mono_aot_module_System_Globalization_Extensions_info);
-	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Core_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Platform_iOS_info);
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Forms_info);
 	mono_aot_register_module (mono_aot_module_zxing_portable_info);
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Core_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Messaging_Abstractions_info);
+	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_Platform_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_IOS_info);
+	mono_aot_register_module (mono_aot_module_SlideOverKit_iOS_info);
+	mono_aot_register_module (mono_aot_module_SlideOverKit_info);
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info);
 	mono_aot_register_module (mono_aot_module_ZXingNetMobile_info);
+	mono_aot_register_module (mono_aot_module_Plugin_Messaging_info);
 
 }
 
@@ -70,6 +78,8 @@ void xamarin_register_assemblies_impl ()
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Rg.Plugins.Popup.IOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("SlideOverKit.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("ZXing.Net.Mobile.Forms.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

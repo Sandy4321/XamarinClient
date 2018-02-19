@@ -4,18 +4,25 @@ using BlockchainTools;
 
 using Xamarin.Forms;
 
+using SlideOverKit;
+
 namespace XamarinClient
 {
     public class PaymentPage : ContentPage
     {
         public Entry Receiver;
         public Entry Amount;
-        public Button MakePayment;
 
-        public ActivityIndicator Loading;
+        public Button MakePayment;
+        public Button Scan;
+
+        public StackLayout stack;
 
         public PaymentPage()
         {
+            Title = "Red Belly Blockchain";
+            Icon = "send.png";
+
             Receiver = new Entry
             {
                 Text = "",
@@ -30,23 +37,16 @@ namespace XamarinClient
             MakePayment = new Button{
                 Text = "Pay",
             };
-            MakePayment.Clicked += TurnLoading;
             MakePayment.Clicked += Pay;
-            MakePayment.Clicked += TurnLoading;
 
-            Loading = new ActivityIndicator
-            {
-                IsVisible = false,
-                IsRunning = false,
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                Color = Color.Black,
-            };
+            Scan = new Button { Text = "Scan QR" };
+            Scan.Clicked += OnClickScan;
 
-            StackLayout stack = new StackLayout
+            stack = new StackLayout
             {
                 BackgroundColor = Color.Transparent,
                 Children = {
+                    new Label(), 
                     new StackLayout{
                         Orientation=StackOrientation.Horizontal,
                         Children = {
@@ -62,18 +62,11 @@ namespace XamarinClient
                         },
                     },
                     MakePayment,
+                    Scan,
                 },
             };
 
-            Content = new Grid
-            {
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                Children = {
-                    Loading,
-                    stack,
-                }
-            };
+            Content = stack;
         }
 
         public PaymentPage(string address):this()
@@ -118,14 +111,13 @@ namespace XamarinClient
                 return;
             }
 
-            RpcClient client = ClientPage.client;
+            RpcClient client = XamarinClientPage.client;
             try
             {
                 var result = client.ProposeTransaction(receiver, amount);
                 if (result)
                 {
                     await DisplayAlert("Transaction", "Payment Successful", "OK");
-                    await Navigation.PushModalAsync(new MainPage(), false);
                 }
                 else
                 {
@@ -138,11 +130,35 @@ namespace XamarinClient
             }
         }
 
-        public void TurnLoading(object sender, EventArgs args){
-            Loading.IsRunning = !Loading.IsRunning;
-            Loading.IsVisible = !Loading.IsVisible;
-            return;
+        public async void OnClickScan(Object sender, EventArgs args)
+        {
+            var scanPage = new ZXing.Net.Mobile.Forms.ZXingScannerPage();
+
+            scanPage.OnScanResult += (result) =>
+            {
+                scanPage.IsScanning = false;
+
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    this.Receiver.Text = result.Text;
+                    await Navigation.PopAsync();
+                });
+            };
+
+            await Navigation.PushAsync(scanPage);
         }
+
+        protected override void OnAppearing(){
+            if(App.Current.Properties.ContainsKey("Account")){
+                Content = stack;
+            } else {
+                Content = new Label
+                {
+                    Text = "Please Login First"
+                };
+            }
+        }
+
     }
 }
 
