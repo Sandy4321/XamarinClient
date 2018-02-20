@@ -22,15 +22,41 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.PCL.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.iOS.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PCLCrypto.2.0.147/lib/xamarinios10/PCLCrypto.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.BCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.BCrypt.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Kernel32.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Kernel32.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.NCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.NCrypt.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Windows.Core.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
 	-r \
@@ -60,19 +86,25 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.IO.Compression.dll \
 	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Json.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.Linq.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Validation.2.2.8/lib/dotnet/Validation.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Auth.1.5.0.3/lib/Xamarin.iOS10/Xamarin.Auth.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
 	-r \
@@ -362,9 +394,35 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.PCL.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.iOS.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PCLCrypto.2.0.147/lib/xamarinios10/PCLCrypto.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.BCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.BCrypt.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Kernel32.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Kernel32.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.NCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.NCrypt.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Windows.Core.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
 	-r \
@@ -388,13 +446,17 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/SQLitePCLRaw.provider.sqlite3.ios_unified.1.1.5/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Validation.2.2.8/lib/dotnet/Validation.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Auth.1.5.0.3/lib/Xamarin.iOS10/Xamarin.Auth.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll \
 	-r \
@@ -406,73 +468,73 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \
-	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.121934/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
+	/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
 	--target-framework \
 	'Xamarin.iOS,v1.0' \
 	/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.exe \

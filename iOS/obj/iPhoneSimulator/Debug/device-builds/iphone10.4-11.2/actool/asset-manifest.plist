@@ -28,18 +28,6 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcon.appiconset/[][iphone][20x20][][][3x][][]</string>
-			</array>
-			<key>catalog</key>
-			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
-			<key>message</key>
-			<string>AppIcon.appiconset/rbbc_android.png is 120x120 but should be 60x60.</string>
-			<key>type</key>
-			<string>Ambiguous Content</string>
-		</dict>
-		<dict>
-			<key>affected-items</key>
-			<array>
 				<string>./AppIcon.appiconset/[][iphone][29x29][][][3x][][]</string>
 			</array>
 			<key>catalog</key>
@@ -70,6 +58,18 @@
 			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
 			<key>message</key>
 			<string>AppIcon.appiconset/rbbc_android.png is 120x120 but should be 87x87.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./AppIcon.appiconset/[][iphone][20x20][][][3x][][]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>AppIcon.appiconset/rbbc_android.png is 120x120 but should be 60x60.</string>
 			<key>type</key>
 			<string>Ambiguous Content</string>
 		</dict>

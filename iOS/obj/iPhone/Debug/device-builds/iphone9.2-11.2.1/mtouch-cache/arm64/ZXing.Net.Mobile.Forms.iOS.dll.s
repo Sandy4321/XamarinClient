@@ -200,7 +200,7 @@ ldr x16, [x16, #200]
 .word 0xaa1903e0
 .word 0xd2800241
 .word 0xf9400322
-.word 0xf941ec50
+.word 0xf941fc50
 .word 0xd63f0200
 .word 0xf94013b1
 .word 0xf9408631
@@ -355,7 +355,7 @@ bl _p_7
 .word 0xaa0203e0
 .word 0xd2800241
 .word 0xf9400042
-.word 0xf941ec50
+.word 0xf941fc50
 .word 0xd63f0200
 .word 0xf94013b1
 .word 0xf942d231
@@ -576,7 +576,7 @@ bl _p_16
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_17
 
@@ -922,7 +922,7 @@ bl _p_13
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_17
 
@@ -1042,7 +1042,7 @@ bl _p_25
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9411830
+.word 0xf9412030
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -1058,7 +1058,7 @@ bl _p_25
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf942cc30
+.word 0xf942e030
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -1074,7 +1074,7 @@ bl _p_25
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf942cc30
+.word 0xf942e030
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -1084,7 +1084,7 @@ bl _p_25
 .word 0xf94027a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419c30
+.word 0xf941b030
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -2059,7 +2059,7 @@ bl _p_42
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_17
 
@@ -2269,7 +2269,7 @@ bl _p_46
 .word 0xaa1903e0
 .word 0xd2800021
 .word 0xf9400322
-.word 0xf941c450
+.word 0xf941d450
 .word 0xd63f0200
 .word 0xf94017b1
 .word 0xf9418631
@@ -2567,7 +2567,7 @@ bl _p_54
 .word 0xaa0103e0
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9428450
+.word 0xf9429850
 .word 0xd63f0200
 .word 0xf94013b1
 .word 0xf940da31
@@ -2730,13 +2730,13 @@ ldr x16, [x16, #528]
 .word 0xf9407231
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd2964820
-.word 0xd2964820
+.word 0xd29687c0
+.word 0xd29687c0
 bl _p_55
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801f00
 .word 0xf2a04000
-.word 0xd2801ea0
+.word 0xd2801f00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -3414,7 +3414,7 @@ bl _p_61
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ee0
 .word 0xaa1103e1
 bl _p_17
 
@@ -3555,7 +3555,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -3696,7 +3696,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -3900,9 +3900,9 @@ ldr x16, [x16, #672]
 .word 0xd2862d20
 bl _p_55
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -3948,9 +3948,9 @@ ldr x16, [x16, #680]
 .word 0xd2863320
 bl _p_55
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -3996,9 +3996,9 @@ ldr x16, [x16, #688]
 .word 0xd2863320
 bl _p_55
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
-.word 0xd2802060
+.word 0xd28020e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -4073,9 +4073,9 @@ bl _p_65
 .word 0xb4000051
 .word 0xd63f0220
 .word 0xf94033a1
-.word 0xd2802200
+.word 0xd2802280
 .word 0xf2a04000
-.word 0xd2802200
+.word 0xd2802280
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -4424,7 +4424,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -4558,7 +4558,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -4708,7 +4708,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -4849,7 +4849,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -4990,7 +4990,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -5124,7 +5124,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_17
 
@@ -5247,15 +5247,15 @@ bl _mono_gsharedvt_value_copy
 .word 0xf941aa31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd29fa8e0
+.word 0xd29ff2c0
 .word 0xf2a00020
-.word 0xd29fa8e0
+.word 0xd29ff2c0
 .word 0xf2a00020
 bl _p_55
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801380
 .word 0xf2a04000
-.word 0xd2801360
+.word 0xd2801380
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_51
@@ -6264,7 +6264,7 @@ _mono_aot_file_info:
 	.long 96,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 20,123,47,164,55,106,254,214,99,227,222,178,87,77,11,110
+	.byte 223,166,97,189,150,68,55,102,198,13,227,114,26,248,24,112
 	.globl _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info:

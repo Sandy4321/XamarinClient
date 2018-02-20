@@ -144,7 +144,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_2
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801360
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_3
@@ -317,7 +317,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 26,80,217,144,89,124,83,196,216,214,76,200,231,142,87,205
+	.byte 16,152,250,170,77,23,152,238,181,90,155,30,178,74,82,128
 	.globl _mono_aot_module_System_Globalization_Extensions_info
 	.align 3
 _mono_aot_module_System_Globalization_Extensions_info:

@@ -11,6 +11,8 @@ namespace XamarinClient
 {
     public partial class App : Application
     {
+        public static readonly string AppName = "RBBCWallet";
+
         public static string AccountPath;
         public static string ServersPath;
 
@@ -57,7 +59,7 @@ namespace XamarinClient
                 }
             }
 
-            MainPage = new RootView();
+            MainPage = new AuthenticationPage();
         }
 
         protected override void OnSleep()

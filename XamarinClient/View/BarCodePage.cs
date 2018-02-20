@@ -1,6 +1,5 @@
 ﻿using System;
 using BlockchainTools;
-using SlideOverKit;
 
 using Xamarin.Forms;
 

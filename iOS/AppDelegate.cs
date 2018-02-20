@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using FormsPinView.iOS;
 
 namespace XamarinClient.iOS
 {
@@ -17,6 +18,8 @@ namespace XamarinClient.iOS
             SlideOverKit.iOS.SlideOverKit.Init();
 
             global::Xamarin.Forms.Forms.Init();
+
+            PinItemViewRenderer.Init();
 
             LoadApplication(new App());
 

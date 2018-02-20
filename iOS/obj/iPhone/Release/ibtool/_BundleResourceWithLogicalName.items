@@ -1,23 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib">
-      <InterfaceDefinition>LaunchScreen.storyboard</InterfaceDefinition>
-      <LogicalName>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc/204-view-205.nib">
+      <LogicalName>LaunchScreen.storyboardc/204-view-205.nib</LogicalName>
       <Optimize>false</Optimize>
-      <OriginalItemSpec>obj/iPhone/Release/ibtool/LaunchScreen.storyboardc</OriginalItemSpec>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool/LaunchScreen.storyboardc/Info.plist">
-      <InterfaceDefinition>LaunchScreen.storyboard</InterfaceDefinition>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc/Info.plist">
       <LogicalName>LaunchScreen.storyboardc/Info.plist</LogicalName>
       <Optimize>false</Optimize>
-      <OriginalItemSpec>obj/iPhone/Release/ibtool/LaunchScreen.storyboardc</OriginalItemSpec>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
-    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib">
-      <InterfaceDefinition>LaunchScreen.storyboard</InterfaceDefinition>
-      <LogicalName>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</LogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc/UIViewController-204.nib">
+      <LogicalName>LaunchScreen.storyboardc/UIViewController-204.nib</LogicalName>
       <Optimize>false</Optimize>
-      <OriginalItemSpec>obj/iPhone/Release/ibtool/LaunchScreen.storyboardc</OriginalItemSpec>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/Main.storyboardc/398-view-399.nib">
+      <LogicalName>Main.storyboardc/398-view-399.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/Main.storyboardc/407-view-408.nib">
+      <LogicalName>Main.storyboardc/407-view-408.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/Main.storyboardc/AuthenticationViewController.nib">
+      <LogicalName>Main.storyboardc/AuthenticationViewController.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/Main.storyboardc/Info.plist">
+      <LogicalName>Main.storyboardc/Info.plist</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhone/Release/ibtool-link/Main.storyboardc/UIViewController-407.nib">
+      <LogicalName>Main.storyboardc/UIViewController-407.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhone/Release/ibtool-link/Main.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
   </ItemGroup>
 </Project>

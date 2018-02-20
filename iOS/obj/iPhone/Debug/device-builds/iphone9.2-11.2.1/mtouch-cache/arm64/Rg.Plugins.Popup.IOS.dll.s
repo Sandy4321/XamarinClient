@@ -223,7 +223,7 @@ ldr x1, [x16, #208]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ee0
 .word 0xaa1103e1
 bl _p_2
 
@@ -338,7 +338,7 @@ bl _p_6
 .word 0xaa1703e0
 .word 0xd2800001
 .word 0xf94002e2
-.word 0xf9410850
+.word 0xf9410c50
 .word 0xd63f0200
 .word 0xf9401bb1
 .word 0xf9419e31
@@ -370,7 +370,7 @@ bl _p_7
 .word 0xaa1903e0
 .word 0xd28000c1
 .word 0xf9400322
-.word 0xf9419450
+.word 0xf941a850
 .word 0xd63f0200
 .word 0xf9401bb1
 .word 0xf9421e31
@@ -385,7 +385,7 @@ bl _p_7
 .word 0xaa1903e0
 .word 0xd2800001
 .word 0xf9400322
-.word 0xf9419050
+.word 0xf941a450
 .word 0xd63f0200
 .word 0xf9401bb1
 .word 0xf9425a31
@@ -398,7 +398,7 @@ bl _p_7
 .word 0xaa1903e0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9415030
+.word 0xf9416030
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9401bb1
@@ -410,7 +410,7 @@ bl _p_7
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0xf9400042
-.word 0xf9427850
+.word 0xf9428c50
 .word 0xd63f0200
 .word 0xf9401bb1
 .word 0xf942be31
@@ -442,7 +442,7 @@ bl _p_8
 .word 0xaa1903e0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9415030
+.word 0xf9416030
 .word 0xd63f0200
 .word 0xf9002ba0
 .word 0xf9401bb1
@@ -454,7 +454,7 @@ bl _p_8
 .word 0xaa0203e0
 .word 0xaa1803e1
 .word 0xf9400042
-.word 0xf9423050
+.word 0xf9424450
 .word 0xd63f0200
 .word 0xf9401bb1
 .word 0xf9436e31
@@ -477,7 +477,7 @@ bl _p_8
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_2
 
@@ -520,7 +520,7 @@ ldr x16, [x16, #264]
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf940f030
+.word 0xf940f430
 .word 0xd63f0200
 .word 0xf9004ba0
 .word 0xf94017b1
@@ -541,7 +541,7 @@ ldr x16, [x16, #264]
 .word 0xf9003ba0
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9411850
+.word 0xf9411c50
 .word 0xd63f0200
 .word 0xf9403bbe
 .word 0xfd0003c0
@@ -574,7 +574,7 @@ ldr x16, [x16, #264]
 .word 0xfd4027a1
 .word 0xd2800001
 .word 0xf9400042
-.word 0xf9424850
+.word 0xf9425c50
 .word 0xd63f0200
 .word 0xf90043a0
 .word 0xf94017b1
@@ -672,7 +672,7 @@ bl _p_11
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9415030
+.word 0xf9416030
 .word 0xd63f0200
 .word 0xf9006fa0
 .word 0xf9400fb1
@@ -684,7 +684,7 @@ bl _p_11
 .word 0xf9005ba0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941dc30
+.word 0xf941ec30
 .word 0xd63f0200
 .word 0xf9405bbe
 .word 0xfd0003c0
@@ -719,7 +719,7 @@ bl _p_12
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9415030
+.word 0xf9416030
 .word 0xd63f0200
 .word 0xf9006ba0
 .word 0xf9400fb1
@@ -731,7 +731,7 @@ bl _p_12
 .word 0xf9005ba0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941dc30
+.word 0xf941ec30
 .word 0xd63f0200
 .word 0xf9405bbe
 .word 0xfd0003c0
@@ -993,7 +993,7 @@ bl _p_19
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_2
 
@@ -1050,7 +1050,7 @@ bl _p_17
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0xf9400042
-.word 0xf940e050
+.word 0xf940e450
 .word 0xd63f0200
 .word 0xf94013b1
 .word 0xf940ce31
@@ -1152,7 +1152,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801360
 .word 0xaa1103e1
 bl _p_2
 
@@ -1235,7 +1235,7 @@ bl _p_26
 .word 0xf9006fa0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940f030
+.word 0xf940f430
 .word 0xd63f0200
 .word 0xf9406fbe
 .word 0xfd0003c0
@@ -1417,7 +1417,7 @@ bl _p_26
 .word 0xf9006fa0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940f030
+.word 0xf940f430
 .word 0xd63f0200
 .word 0xf9406fbe
 .word 0xfd0003c0
@@ -2243,7 +2243,7 @@ bl _p_40
 .word 0xaa0103e0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf941a430
+.word 0xf941b830
 .word 0xd63f0200
 .word 0xf90043a0
 .word 0xf9402bb1
@@ -2362,7 +2362,7 @@ bl _p_45
 .word 0xaa0003f7
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9415030
+.word 0xf9416030
 .word 0xd63f0200
 .word 0xf90047a0
 .word 0xf9402bb1
@@ -2389,7 +2389,7 @@ ldr x15, [x16, #496]
 .word 0xf94047a2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9427450
+.word 0xf9428850
 .word 0xd63f0200
 .word 0xf9402bb1
 .word 0xf942ee31
@@ -2505,7 +2505,7 @@ ldr x15, [x16, #512]
 .word 0xaa1803e0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9419830
+.word 0xf941ac30
 .word 0xd63f0200
 .word 0x53001c00
 .word 0xf9002ba0
@@ -2538,7 +2538,7 @@ ldr x15, [x16, #496]
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9423430
+.word 0xf9424830
 .word 0xd63f0200
 .word 0xf9401fb1
 .word 0xf941ee31
@@ -2601,7 +2601,7 @@ bl _p_46
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9412430
+.word 0xf9412c30
 .word 0xd63f0200
 .word 0xf90027a0
 .word 0xf94013b1
@@ -2611,7 +2611,7 @@ bl _p_46
 .word 0xf94027a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9428830
+.word 0xf9429c30
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -2632,7 +2632,7 @@ bl _p_46
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9417030
+.word 0xf9418430
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -2652,7 +2652,7 @@ bl _p_46
 .word 0xaa1a03e0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9417030
+.word 0xf9418430
 .word 0xd63f0200
 .word 0xf90023a0
 .word 0xf94013b1
@@ -2780,7 +2780,7 @@ bl _p_26
 .word 0xf9007ba0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940f030
+.word 0xf940f430
 .word 0xd63f0200
 .word 0xf9407bbe
 .word 0xfd0003c0
@@ -3056,7 +3056,7 @@ bl _p_46
 .word 0xf9008fa0
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9411c30
+.word 0xf9412430
 .word 0xd63f0200
 .word 0xf9408fbe
 .word 0xfd0003c0
@@ -3462,7 +3462,7 @@ bl _p_37
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_2
 
@@ -3596,7 +3596,7 @@ bl _p_37
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_2
 
@@ -3739,7 +3739,7 @@ bl _p_37
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e20
 .word 0xaa1103e1
 bl _p_2
 
@@ -3862,15 +3862,15 @@ bl _mono_gsharedvt_value_copy
 .word 0xf941aa31
 .word 0xb4000051
 .word 0xd63f0220
-.word 0xd29fa8e0
+.word 0xd29ff2c0
 .word 0xf2a00020
-.word 0xd29fa8e0
+.word 0xd29ff2c0
 .word 0xf2a00020
 bl _p_68
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801380
 .word 0xf2a04000
-.word 0xd2801360
+.word 0xd2801380
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_37
@@ -4163,7 +4163,7 @@ bl _p_71
 .word 0xf94073a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9405c30
+.word 0xf9406030
 .word 0xd63f0200
 .word 0xf9006fa0
 .word 0xf94033b1
@@ -4422,7 +4422,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 735
+.word 736
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_2:
@@ -4430,7 +4430,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 740
+.word 741
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_VisualElementChangedEventArgs
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_VisualElementChangedEventArgs:
 _p_3:
@@ -4438,7 +4438,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 775
+.word 776
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_4:
@@ -4446,7 +4446,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 780
+.word 781
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_5:
@@ -4454,7 +4454,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 788
+.word 789
 	.no_dead_strip plt_UIKit_UITapGestureRecognizer__ctor_System_Action_1_UIKit_UITapGestureRecognizer
 plt_UIKit_UITapGestureRecognizer__ctor_System_Action_1_UIKit_UITapGestureRecognizer:
 _p_6:
@@ -4462,7 +4462,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 820
+.word 821
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_VisualElement_get_NewElement
 plt_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_VisualElement_get_NewElement:
 _p_7:
@@ -4470,7 +4470,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 825
+.word 826
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_VisualElement_get_OldElement
 plt_Xamarin_Forms_Platform_iOS_ElementChangedEventArgs_1_Xamarin_Forms_VisualElement_get_OldElement:
 _p_8:
@@ -4478,7 +4478,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 836
+.word 837
 	.no_dead_strip plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer_get__element
 plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer_get__element:
 _p_9:
@@ -4486,7 +4486,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 847
+.word 848
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_SendBackgroundClick
 plt_Rg_Plugins_Popup_Pages_PopupPage_SendBackgroundClick:
 _p_10:
@@ -4494,7 +4494,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 852
+.word 853
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidLayoutSubviews
 plt_UIKit_UIViewController_ViewDidLayoutSubviews:
 _p_11:
@@ -4502,7 +4502,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 857
+.word 858
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Width
 plt_CoreGraphics_CGRect_get_Width:
 _p_12:
@@ -4510,7 +4510,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 862
+.word 863
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Height
 plt_CoreGraphics_CGRect_get_Height:
 _p_13:
@@ -4518,7 +4518,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 867
+.word 868
 	.no_dead_strip plt_Xamarin_Forms_Size__ctor_double_double
 plt_Xamarin_Forms_Size__ctor_double_double:
 _p_14:
@@ -4526,7 +4526,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 872
+.word 873
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_SetElementSize_Xamarin_Forms_Size
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_SetElementSize_Xamarin_Forms_Size:
 _p_15:
@@ -4534,7 +4534,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 877
+.word 878
 	.no_dead_strip plt_UIKit_UIViewController_ViewWillAppear_bool
 plt_UIKit_UIViewController_ViewWillAppear_bool:
 _p_16:
@@ -4542,7 +4542,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 882
+.word 883
 	.no_dead_strip plt_Foundation_NSNotificationCenter_get_DefaultCenter
 plt_Foundation_NSNotificationCenter_get_DefaultCenter:
 _p_17:
@@ -4550,7 +4550,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 887
+.word 888
 	.no_dead_strip plt_UIKit_UIKeyboard_get_WillChangeFrameNotification
 plt_UIKit_UIKeyboard_get_WillChangeFrameNotification:
 _p_18:
@@ -4558,7 +4558,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 892
+.word 893
 	.no_dead_strip plt_Foundation_NSNotificationCenter_AddObserver_Foundation_NSString_System_Action_1_Foundation_NSNotification
 plt_Foundation_NSNotificationCenter_AddObserver_Foundation_NSString_System_Action_1_Foundation_NSNotification:
 _p_19:
@@ -4566,7 +4566,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 897
+.word 898
 	.no_dead_strip plt_UIKit_UIKeyboard_get_WillHideNotification
 plt_UIKit_UIKeyboard_get_WillHideNotification:
 _p_20:
@@ -4574,7 +4574,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 902
+.word 903
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewWillDisappear_bool
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewWillDisappear_bool:
 _p_21:
@@ -4582,7 +4582,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 907
+.word 908
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_get_PopupStack
 plt_Rg_Plugins_Popup_Services_PopupNavigation_get_PopupStack:
 _p_22:
@@ -4590,7 +4590,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 912
+.word 913
 	.no_dead_strip plt_System_Linq_Enumerable_Any_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage_System_Func_2_Rg_Plugins_Popup_Pages_PopupPage_bool
 plt_System_Linq_Enumerable_Any_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage_System_Func_2_Rg_Plugins_Popup_Pages_PopupPage_bool:
 _p_23:
@@ -4598,7 +4598,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 917
+.word 918
 	.no_dead_strip plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer_RemoveThisPageFromStack
 plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer_RemoveThisPageFromStack:
 _p_24:
@@ -4606,7 +4606,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 929
+.word 930
 	.no_dead_strip plt_UIKit_UIKeyboard_BoundsFromNotification_Foundation_NSNotification
 plt_UIKit_UIKeyboard_BoundsFromNotification_Foundation_NSNotification:
 _p_25:
@@ -4614,7 +4614,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 934
+.word 935
 	.no_dead_strip plt_UIKit_UIScreen_get_MainScreen
 plt_UIKit_UIScreen_get_MainScreen:
 _p_26:
@@ -4622,7 +4622,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 939
+.word 940
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_27:
@@ -4630,7 +4630,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 944
+.word 945
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_:
 _p_28:
@@ -4638,7 +4638,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 947
+.word 948
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer__ctor
 plt_Xamarin_Forms_Platform_iOS_PageRenderer__ctor:
 _p_29:
@@ -4646,7 +4646,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 959
+.word 960
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
 plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
 _p_30:
@@ -4654,7 +4654,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 964
+.word 965
 	.no_dead_strip plt_System_Threading_Tasks_Task_GetAwaiter
 plt_System_Threading_Tasks_Task_GetAwaiter:
 _p_31:
@@ -4662,7 +4662,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 969
+.word 970
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted
 plt_System_Runtime_CompilerServices_TaskAwaiter_get_IsCompleted:
 _p_32:
@@ -4670,7 +4670,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 972
+.word 973
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__RemoveThisPageFromStackd__9_:
 _p_33:
@@ -4678,7 +4678,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 975
+.word 976
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
 _p_34:
@@ -4686,7 +4686,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 987
+.word 988
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_35:
@@ -4694,7 +4694,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 990
+.word 991
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_36:
@@ -4702,7 +4702,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 993
+.word 994
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_37:
@@ -4710,7 +4710,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 1032
+.word 1033
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_38:
@@ -4718,7 +4718,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 1060
+.word 1061
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_39:
@@ -4726,7 +4726,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 1063
+.word 1064
 	.no_dead_strip plt_Rg_Plugins_Popup_IOS_Impl_PopupNavigationIOS_GetTopViewController
 plt_Rg_Plugins_Popup_IOS_Impl_PopupNavigationIOS_GetTopViewController:
 _p_40:
@@ -4734,7 +4734,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1066
+.word 1067
 	.no_dead_strip plt_System_Linq_Enumerable_LastOrDefault_UIKit_UIViewController_System_Collections_Generic_IEnumerable_1_UIKit_UIViewController
 plt_System_Linq_Enumerable_LastOrDefault_UIKit_UIViewController_System_Collections_Generic_IEnumerable_1_UIKit_UIViewController:
 _p_41:
@@ -4742,7 +4742,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1071
+.word 1072
 	.no_dead_strip plt_Xamarin_Forms_Element_set_Parent_Xamarin_Forms_Element
 plt_Xamarin_Forms_Element_set_Parent_Xamarin_Forms_Element:
 _p_42:
@@ -4750,7 +4750,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 1083
+.word 1084
 	.no_dead_strip plt_Xamarin_Forms_Application_get_Current
 plt_Xamarin_Forms_Application_get_Current:
 _p_43:
@@ -4758,7 +4758,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 1088
+.word 1089
 	.no_dead_strip plt_Xamarin_Forms_Application_get_MainPage
 plt_Xamarin_Forms_Application_get_MainPage:
 _p_44:
@@ -4766,7 +4766,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 1093
+.word 1094
 	.no_dead_strip plt_Rg_Plugins_Popup_IOS_Extensions_PlatformExtension_GetOrCreateRenderer_Xamarin_Forms_VisualElement
 plt_Rg_Plugins_Popup_IOS_Extensions_PlatformExtension_GetOrCreateRenderer_Xamarin_Forms_VisualElement:
 _p_45:
@@ -4774,7 +4774,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 1098
+.word 1099
 	.no_dead_strip plt_UIKit_UIApplication_get_SharedApplication
 plt_UIKit_UIApplication_get_SharedApplication:
 _p_46:
@@ -4782,7 +4782,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 1103
+.word 1104
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Top
 plt_CoreGraphics_CGRect_get_Top:
 _p_47:
@@ -4790,7 +4790,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 1108
+.word 1109
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Top_double
 plt_Xamarin_Forms_Rectangle_set_Top_double:
 _p_48:
@@ -4798,7 +4798,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 1113
+.word 1114
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Bottom
 plt_CoreGraphics_CGRect_get_Bottom:
 _p_49:
@@ -4806,7 +4806,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1118
+.word 1119
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Bottom_double
 plt_Xamarin_Forms_Rectangle_set_Bottom_double:
 _p_50:
@@ -4814,7 +4814,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1123
+.word 1124
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Left
 plt_CoreGraphics_CGRect_get_Left:
 _p_51:
@@ -4822,7 +4822,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1128
+.word 1129
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Left_double
 plt_Xamarin_Forms_Rectangle_set_Left_double:
 _p_52:
@@ -4830,7 +4830,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 1133
+.word 1134
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Right
 plt_CoreGraphics_CGRect_get_Right:
 _p_53:
@@ -4838,7 +4838,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 1138
+.word 1139
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Right_double
 plt_Xamarin_Forms_Rectangle_set_Right_double:
 _p_54:
@@ -4846,7 +4846,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 1143
+.word 1144
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Width_double
 plt_Xamarin_Forms_Rectangle_set_Width_double:
 _p_55:
@@ -4854,7 +4854,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 1148
+.word 1149
 	.no_dead_strip plt_Xamarin_Forms_Rectangle_set_Height_double
 plt_Xamarin_Forms_Rectangle_set_Height_double:
 _p_56:
@@ -4862,7 +4862,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 1153
+.word 1154
 	.no_dead_strip plt_CoreGraphics_CGRect_get_Size
 plt_CoreGraphics_CGRect_get_Size:
 _p_57:
@@ -4870,7 +4870,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 1158
+.word 1159
 	.no_dead_strip plt_CoreGraphics_CGSize_get_Height
 plt_CoreGraphics_CGSize_get_Height:
 _p_58:
@@ -4878,7 +4878,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 1163
+.word 1164
 	.no_dead_strip plt_Xamarin_Forms_Thickness_set_Top_double
 plt_Xamarin_Forms_Thickness_set_Top_double:
 _p_59:
@@ -4886,7 +4886,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 1168
+.word 1169
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_Platform_GetRenderer_Xamarin_Forms_VisualElement
 plt_Xamarin_Forms_Platform_iOS_Platform_GetRenderer_Xamarin_Forms_VisualElement:
 _p_60:
@@ -4894,7 +4894,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 1173
+.word 1174
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_Platform_CreateRenderer_Xamarin_Forms_VisualElement
 plt_Xamarin_Forms_Platform_iOS_Platform_CreateRenderer_Xamarin_Forms_VisualElement:
 _p_61:
@@ -4902,7 +4902,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 1178
+.word 1179
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_Platform_SetRenderer_Xamarin_Forms_VisualElement_Xamarin_Forms_Platform_iOS_IVisualElementRenderer
 plt_Xamarin_Forms_Platform_iOS_Platform_SetRenderer_Xamarin_Forms_VisualElement_Xamarin_Forms_Platform_iOS_IVisualElementRenderer:
 _p_62:
@@ -4910,7 +4910,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 1183
+.word 1184
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_63:
@@ -4918,7 +4918,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 1188
+.word 1189
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_64:
@@ -4926,7 +4926,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 1244
+.word 1245
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_65:
@@ -4934,7 +4934,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 1290
+.word 1291
 	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
 plt_wrapper_alloc_object_Alloc_intptr:
 _p_66:
@@ -4942,7 +4942,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 1298
+.word 1299
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_67:
@@ -4950,7 +4950,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1306
+.word 1307
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_68:
@@ -4958,7 +4958,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1314
+.word 1315
 	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
 plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
 _p_69:
@@ -4966,7 +4966,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 1343
+.word 1344
 	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
 plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_70:
@@ -4974,7 +4974,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 1346
+.word 1347
 	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
 plt__jit_icall_mono_gsharedvt_constrained_call:
 _p_71:
@@ -4982,7 +4982,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 1349
+.word 1350
 	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
 plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_72:
@@ -4990,7 +4990,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 1383
+.word 1384
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_73:
@@ -4998,7 +4998,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 1407
+.word 1408
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
 plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
 _p_74:
@@ -5006,7 +5006,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 1456
+.word 1457
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
 _p_75:
@@ -5014,7 +5014,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 1459
+.word 1460
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_76:
@@ -5022,7 +5022,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 1462
+.word 1463
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
 plt_System_Threading_Tasks_Task_get_Id:
 _p_77:
@@ -5030,7 +5030,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 1465
+.word 1466
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_78:
@@ -5038,7 +5038,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 1468
+.word 1469
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_79:
@@ -5046,7 +5046,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 1476
+.word 1477
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
 _p_80:
@@ -5054,7 +5054,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 1479
+.word 1480
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_81:
@@ -5062,7 +5062,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 1482
+.word 1483
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_82:
@@ -5070,7 +5070,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 1490
+.word 1491
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_83:
@@ -5078,7 +5078,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 1493
+.word 1494
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_84:
@@ -5086,7 +5086,7 @@ adrp x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_IOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 1501
+.word 1502
 plt_end:
 .section __DATA, __bss
 	.align 3
@@ -5198,13 +5198,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 81,1328,85,32,70,391195135,0,7328
-	.long 128,8,8,10,0,24,8536,1200
+	.long 81,1328,85,32,70,391195135,0,7349
+	.long 128,8,8,10,0,24,8560,1200
 	.long 600,296,0,480,568,352,0,216
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 123,12,158,8,205,202,235,209,187,118,187,163,226,74,145,53
+	.byte 252,231,182,123,14,103,125,93,21,77,95,75,139,71,12,223
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

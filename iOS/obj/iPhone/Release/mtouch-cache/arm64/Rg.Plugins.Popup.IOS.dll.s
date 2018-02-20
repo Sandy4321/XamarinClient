@@ -163,7 +163,7 @@ ldr x1, [x16, #192]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e60
+.word 0xd2801e80
 .word 0xaa1103e1
 bl _p_1
 
@@ -276,7 +276,7 @@ bl _p_11
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801320
+.word 0xd2801340
 .word 0xaa1103e1
 bl _p_1
 
@@ -311,7 +311,7 @@ bl _p_13
 .word 0xd2800001
 .word 0xf90023a2
 .word 0xf9400042
-.word 0xf941e050
+.word 0xf941f050
 .word 0xd63f0200
 .word 0xf94023a1
 .word 0xeb01001f
@@ -342,7 +342,7 @@ bl _p_14
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801e60
+.word 0xd2801e80
 .word 0xaa1103e1
 bl _p_1
 
@@ -533,7 +533,7 @@ bl _p_22
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801320
+.word 0xd2801340
 .word 0xaa1103e1
 bl _p_1
 
@@ -615,7 +615,7 @@ bl _p_28
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801320
+.word 0xd2801340
 .word 0xaa1103e1
 bl _p_1
 
@@ -930,7 +930,7 @@ ldr x1, [x16, #192]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801e60
+.word 0xd2801e80
 .word 0xaa1103e1
 bl _p_1
 
@@ -1090,7 +1090,7 @@ bl _p_41
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e60
+.word 0xd2801e80
 .word 0xaa1103e1
 bl _p_1
 
@@ -1592,7 +1592,7 @@ bl _p_58
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801da0
+.word 0xd2801dc0
 .word 0xaa1103e1
 bl _p_1
 
@@ -1666,7 +1666,7 @@ bl _p_58
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801da0
+.word 0xd2801dc0
 .word 0xaa1103e1
 bl _p_1
 
@@ -1744,7 +1744,7 @@ bl _p_58
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801da0
+.word 0xd2801dc0
 .word 0xaa1103e1
 bl _p_1
 
@@ -1874,11 +1874,11 @@ bl _p_66
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 2 72 0
-.word 0xd29fa8e0
+.word 0xd29fc2c0
 .word 0xf2a00020
 bl _p_67
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801360
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_40
@@ -1980,7 +1980,7 @@ bl _p_65
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9405c30
+.word 0xf9406030
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94047a0
@@ -2906,13 +2906,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 56,1088,80,32,66,391195135,0,2239
-	.long 128,8,8,10,0,24,3400,1152
+	.long 56,1088,80,32,66,391195135,0,2255
+	.long 128,8,8,10,0,24,3416,1152
 	.long 552,296,0,448,520,352,0,216
 	.long 72,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 201,139,94,15,114,134,131,255,103,108,162,126,93,142,64,63
+	.byte 74,179,226,171,103,103,152,137,146,152,26,64,159,117,166,175
 	.globl _mono_aot_module_Rg_Plugins_Popup_IOS_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_IOS_info:

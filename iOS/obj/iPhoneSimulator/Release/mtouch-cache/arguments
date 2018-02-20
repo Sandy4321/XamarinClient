@@ -26,11 +26,23 @@
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.iOS.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
 	-r \
@@ -362,9 +374,21 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/MvvmCross.Plugins.Fingerprint.iOS.dll \
+	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/NBitcoin.4.0.0.52/lib/netstandard1.3/NBitcoin.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Newtonsoft.Json.10.0.3/lib/netstandard1.3/Newtonsoft.Json.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.Abstractions.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Plugins.Fingerprint.1.4.5/lib/Xamarin.iOS10/Plugin.Fingerprint.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll \
 	-r \

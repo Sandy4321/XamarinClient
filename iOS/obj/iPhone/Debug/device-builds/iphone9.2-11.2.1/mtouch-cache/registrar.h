@@ -7,13 +7,16 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
-#import <CoreSpotlight/CoreSpotlight.h>
 #import <UIKit/UIKit.h>
+#import <CoreSpotlight/CoreSpotlight.h>
+#import <SafariServices/SafariServices.h>
 #import <MessageUI/MessageUI.h>
 #import <CloudKit/CloudKit.h>
 #import <Intents/Intents.h>
+#import <Accounts/Accounts.h>
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCall.h>
 #import <CoreTelephony/CTCallCenter.h>
@@ -21,6 +24,7 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTSubscriber.h>
 #import <CoreTelephony/CTSubscriberInfo.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 #import <GLKit/GLKit.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -36,6 +40,7 @@
 @class AppDelegate;
 @class UIKit_UIView_UIViewAppearance;
 @class UIKit_UIControl_UIControlAppearance;
+@class UIKit_UIAlertView__UIAlertViewDelegate;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
@@ -128,8 +133,23 @@
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
+@class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
+@class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
+@class Xamarin_Controls_ProgressLabel;
+@class Xamarin_Auth_NativeAuthSafariViewControllerDelegate;
+@class Xamarin_Auth_FormAuthenticatorController_FormDelegate;
+@class Xamarin_Auth_FormAuthenticatorController;
+@class Xamarin_Auth_WebAuthenticatorController_UIWebViewDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewUIDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewNavigationDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewJacascriptMessageHandler;
+@class Xamarin_Auth_WebAuthenticatorController;
+@class Xamarin_Auth_FormAuthenticatorController_FieldCell;
+@class Xamarin_Auth_FormAuthenticatorController_FormDataSource;
 @class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
 @class SlideOverKit_iOS_SlidePopupViewRendereriOS;
+@class FormsPinView_iOS_ZFRippleButton;
+@class FormsPinView_iOS_PinItemViewRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingBarcodeImageViewRenderer;
 @class ZXing_Mobile_CaptureDelegate;
@@ -516,6 +536,42 @@
 	-(id) init;
 @end
 
+@interface OpenTK_Platform_iPhoneOS_iPhoneOSGameView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	+(Class) layerClass;
+	-(void) layoutSubviews;
+	-(void) willMoveToWindow:(UIWindow *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Xamarin_Auth_NativeAuthSafariViewControllerDelegate : NSObject<SFSafariViewControllerDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) safariViewController:(SFSafariViewController *)p0 didCompleteInitialLoad:(BOOL)p1;
+	-(void) safariViewControllerDidFinish:(SFSafariViewController *)p0;
+	-(NSArray *) safariViewController:(SFSafariViewController *)p0 activityItemsForURL:(NSURL *)p1 title:(NSString *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Auth_WebAuthenticatorController_WKWebViewJacascriptMessageHandler : NSObject<WKScriptMessageHandler> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) userContentController:(WKUserContentController *)p0 didReceiveScriptMessage:(WKScriptMessage *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
 @interface SlideOverKit_iOS_MenuContainerPageiOSRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
 }
 	-(void) viewDidLayoutSubviews;
@@ -527,6 +583,24 @@
 
 @interface SlideOverKit_iOS_SlidePopupViewRendereriOS : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
 }
+	-(id) init;
+@end
+
+@interface FormsPinView_iOS_ZFRippleButton : UIButton {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(BOOL) beginTrackingWithTouch:(UITouch *)p0 withEvent:(UIEvent *)p1;
+	-(void) cancelTrackingWithEvent:(UIEvent *)p0;
+	-(void) endTrackingWithTouch:(UITouch *)p0 withEvent:(UIEvent *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface FormsPinView_iOS_PinItemViewRenderer : Xamarin_Forms_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
 	-(id) init;
 @end
 
