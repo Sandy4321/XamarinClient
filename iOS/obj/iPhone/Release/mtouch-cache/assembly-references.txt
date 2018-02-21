@@ -66,6 +66,15 @@
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Core.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xamarin.Forms.2.5.0.280555/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/Yiding/Documents/XamarinClient/packages/Xamarin.Auth.1.5.0.3/lib/Xamarin.iOS10/Xamarin.Auth.dll
+/Users/Yiding/Documents/XamarinClient/packages/PCLCrypto.2.0.147/lib/xamarinios10/PCLCrypto.dll
+/Users/Yiding/Documents/XamarinClient/packages/PInvoke.BCrypt.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.BCrypt.dll
+/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Windows.Core.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Windows.Core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Runtime.InteropServices.dll
+/Users/Yiding/Documents/XamarinClient/packages/PInvoke.Kernel32.0.3.2/lib/portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10/PInvoke.Kernel32.dll
+/Users/Yiding/Documents/XamarinClient/packages/Validation.2.2.8/lib/dotnet/Validation.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/Facades/System.Diagnostics.Tools.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/lib/mono/Xamarin.iOS/System.Json.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.Platform.dll
 /Users/Yiding/Documents/XamarinClient/packages/Rg.Plugins.Popup.1.0.4/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll

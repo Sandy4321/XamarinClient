@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Auth;
@@ -21,18 +22,53 @@ namespace XamarinClient
 
         public AuthenticationPage()
         {
-            string pin = "1989";
-            /**var Credentials = (Array)AccountStore.Create().FindAccountsForService(App.AppName);
-            if(Credentials != null)
+            string pin = "";
+            bool FPEnabled = false;
+
+            var Credentials = AccountStore.Create().FindAccountsForService(App.AppName) as List<Account>;
+
+            //Account account = Credentials[0];AccountStore.Create().Delete(account, App.AppName);Credentials = AccountStore.Create().FindAccountsForService(App.AppName) as List<Account>;
+
+            if (Credentials.Count == 0)
             {
-                //Navigation.PushAsync(new CreateAuthPage());
-            }else{
-                pin = Credentials.GetValue(0) as string;
-            }*/
+                Device.BeginInvokeOnMainThread(() => App.Current.MainPage = new CreateAuthPage());
+            }
+            else
+            {
+                Account acc = Credentials[0];
+                pin = acc.Username;
+                App.Current.Properties.TryAdd("Pin",acc);
+
+                if (!acc.Properties.ContainsKey("FingerPrint")){
+                    Device.BeginInvokeOnMainThread(async () => {
+                        var res = await DisplayAlert("Finger Print", "Do you want to enable finger print unlock?", "Yes", "No");
+                        if (res)
+                        {
+                            AccountStore.Create().Delete(acc, App.AppName);
+                            acc.Properties.Add("FingerPrint", "True");
+                            AccountStore.Create().Save(acc, App.AppName);
+                            App.Current.Properties.TryAdd("Pin", acc);
+                            Authenticate();
+                        }
+                        else
+                        {
+                            AccountStore.Create().Delete(acc, App.AppName);
+                            acc.Properties.Add("FingerPrint", "False");
+                            AccountStore.Create().Save(acc, App.AppName);
+                            App.Current.Properties.TryAdd("Pin", acc);
+                        }
+                    });
+                } else {
+                    if (acc.Properties["FingerPrint"].Equals("True"))
+                    {
+                        FPEnabled = true;
+                    }
+                }
+            }
 
             PinViewModel = new PinViewModel
             {
-                TargetPinLength = 4,
+                TargetPinLength = 6,
                 ValidatorFunc = (arg) =>
                 {
                     string m = "";
@@ -44,7 +80,7 @@ namespace XamarinClient
                         App.Current.MainPage = new RootView();
                         return true;
                     } else {
-                        DisplayAlert("Error","Wrong PassCode","OK");
+                        DisplayAlert("Error","Wrong Passcode","OK");
                         return false;
                     }
                 }
@@ -58,13 +94,12 @@ namespace XamarinClient
                 BindingContext = PinViewModel,
             };
 
+            if(FPEnabled){
+                //Device.BeginInvokeOnMainThread(async () => await DisplayAlert("alert", "Finger print enaled", "OK"));
+                Authenticate();
+            }
+
             Content = PIN;
-
-            Authenticate();
-        }
-
-        public void Submit_Clicked(object sender, EventArgs args){
-            
         }
 
         public async void Authenticate(){

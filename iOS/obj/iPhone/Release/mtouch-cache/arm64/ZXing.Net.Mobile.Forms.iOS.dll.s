@@ -541,12 +541,12 @@ bl _p_22
 .word 0xaa0003f9
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9426030
+.word 0xf9426430
 .word 0xd63f0200
 .word 0xb4000140
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9426030
+.word 0xf9426430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xaa0103e0
@@ -1286,10 +1286,10 @@ System_Nullable_1_bool_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_47
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_42
@@ -1633,7 +1633,7 @@ bl _p_51
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_15
 
@@ -1711,7 +1711,7 @@ bl _p_52
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -1789,7 +1789,7 @@ bl _p_52
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -1886,7 +1886,7 @@ System_Array_InternalArray__ICollection_Clear:
 .word 0xd2862d20
 bl _p_47
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_42
@@ -1908,7 +1908,7 @@ System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
 .word 0xd2863320
 bl _p_47
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_42
@@ -1930,7 +1930,7 @@ System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
 .word 0xd2863320
 bl _p_47
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_42
@@ -2004,7 +2004,7 @@ bl _p_55
 .word 0xd2863aa0
 bl _p_47
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_42
@@ -2118,7 +2118,7 @@ bl _p_52
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2192,7 +2192,7 @@ bl _p_52
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2275,7 +2275,7 @@ bl _p_52
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2353,7 +2353,7 @@ bl _p_52
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2431,7 +2431,7 @@ bl _p_52
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2505,7 +2505,7 @@ bl _p_52
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_15
 
@@ -2635,7 +2635,7 @@ bl _p_64
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 4 72 0
-.word 0xd29fc2c0
+.word 0xd29ff2c0
 .word 0xf2a00020
 bl _p_47
 .word 0xaa0003e1
@@ -3425,7 +3425,7 @@ _mono_aot_file_info:
 	.long 96,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 136,193,165,57,247,140,192,75,103,66,190,36,31,121,145,228
+	.byte 244,47,29,225,50,25,235,149,192,145,210,39,160,13,63,83
 	.globl _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info
 	.align 3
 _mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info:

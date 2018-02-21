@@ -911,7 +911,7 @@ ldr x2, [x16, #272]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -981,7 +981,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1053,7 +1053,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1125,7 +1125,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1197,7 +1197,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1269,7 +1269,7 @@ ldr x2, [x16, #344]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1339,7 +1339,7 @@ ldr x2, [x16, #272]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -1443,7 +1443,7 @@ ldr x2, [x16, #384]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -2103,7 +2103,7 @@ ldr x0, [x16, #0]
 .word 0xd28022e1
 bl _p_19
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -2121,7 +2121,7 @@ ldr x0, [x16, #0]
 .word 0xd2803541
 bl _p_19
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -2949,7 +2949,7 @@ ldr x0, [x16, #0]
 .word 0xd28022e1
 bl _p_19
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -2967,7 +2967,7 @@ ldr x0, [x16, #0]
 .word 0xd2803f01
 bl _p_19
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -3689,7 +3689,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -3761,7 +3761,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -3867,7 +3867,7 @@ ldr x2, [x16, #384]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -3953,7 +3953,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -4025,7 +4025,7 @@ ldr x2, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -5417,7 +5417,7 @@ bl _p_53
 .word 0xd2870e60
 bl _p_54
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -5425,7 +5425,7 @@ bl _p_20
 .word 0xd2871920
 bl _p_54
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -5645,7 +5645,7 @@ bl _p_60
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_8
 
@@ -5717,7 +5717,7 @@ bl _p_60
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_8
 
@@ -5805,7 +5805,7 @@ bl _p_60
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc3
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_8
 
@@ -5883,7 +5883,7 @@ bl _p_60
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_8
 
@@ -5963,10 +5963,10 @@ System_Nullable_1_Xamarin_Forms_Point_get_Value:
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 3 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_54
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_20
@@ -6360,7 +6360,7 @@ bl _p_66
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_8
 
@@ -7505,7 +7505,7 @@ _mono_aot_file_info:
 	.long 256,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 202,224,58,200,73,77,74,69,163,173,183,242,234,124,74,218
+	.byte 197,197,231,132,221,128,37,36,226,78,101,157,88,227,99,95
 	.globl _mono_aot_module_SlideOverKit_info
 	.align 3
 _mono_aot_module_SlideOverKit_info:

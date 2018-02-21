@@ -44,6 +44,8 @@ namespace XamarinClient
 
     public class SettingsPage : ContentPage
     {
+        public Button changePin;
+        public Switch FPswitch;
         public Entry PrivKey;
         public Button ShowPrivKey;
         public Button Save;
@@ -56,10 +58,34 @@ namespace XamarinClient
         public Entry ServerHost;
         public Button AddServer;
 
+        public Xamarin.Auth.Account pinAccount;
+
         public SettingsPage()
         {
             Title = "Red Belly Blockchain";
             Icon = "settings.png";
+
+            pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
+
+            changePin = new Button
+            {
+                Text = "Change Pin",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black,
+            };
+            changePin.Clicked += ChangePin_Clicked;
+
+            FPswitch = new Switch
+            {
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                IsToggled = false,
+            };
+            if(pinAccount.Properties["FingerPrint"].Equals("True")){
+                FPswitch.IsToggled = true;
+            }
+            FPswitch.Toggled += FPswitch_Toggled;
+
 
             PrivKey = new Entry
             {
@@ -172,6 +198,24 @@ namespace XamarinClient
                         Text = ""
                     },
 
+                    changePin,
+
+                    new StackLayout{
+                        Orientation = StackOrientation.Horizontal,
+                        HorizontalOptions = LayoutOptions.StartAndExpand,
+                        Children = {
+                            new Label{
+                                Text = "Finger Print Unlock",
+                                HorizontalTextAlignment = TextAlignment.Start,
+                            },
+                            FPswitch,
+                        }
+                    },
+
+                    new Label{
+                        Text = ""
+                    },
+
                     new Label
                     {
                         Text = "Server Configuration",
@@ -206,6 +250,23 @@ namespace XamarinClient
             scroll.Content = stack;
 
             Content = scroll;
+        }
+
+        async void ChangePin_Clicked(object sender, EventArgs args){
+            await Navigation.PushAsync(new ChangePinPage());
+        }
+
+        void FPswitch_Toggled(object sender, ToggledEventArgs args){
+            bool FPenabled = args.Value;
+            Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
+            if(FPenabled){
+                pinAccount.Properties["FingerPrint"]="True";
+            } else {
+                pinAccount.Properties["FingerPrint"] = "False";
+            }
+            Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
+            App.Current.Properties["Pin"] = pinAccount;
+            return;
         }
 
         void ShowPrivateKey(object sender, EventArgs args)
@@ -422,6 +483,7 @@ namespace XamarinClient
                 Account acc = App.Current.Properties["Account"] as Account;
                 PrivKey.Text = Convert.ToBase64String(acc.privateKey);
             }
+            pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
         }
     }
 

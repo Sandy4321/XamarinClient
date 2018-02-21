@@ -20,6 +20,8 @@
 	--symbollist \
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-symbols.list \
 	--dsym=no \
+	--gcc_flags \
+	'-Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/Entitlements.xcent' \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/BouncyCastle.1.8.1/lib/BouncyCastle.Crypto.dll \
 	-r \

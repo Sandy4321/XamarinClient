@@ -586,7 +586,7 @@ ldr x0, [x16, #0]
 .word 0xd2800561
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -598,7 +598,7 @@ ldr x0, [x16, #0]
 .word 0xd2800ca1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -614,7 +614,7 @@ bl _p_8
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -777,7 +777,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -955,7 +955,7 @@ bl _p_13
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -1326,7 +1326,7 @@ ldr x0, [x16, #0]
 .word 0xd28014a1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -1338,11 +1338,11 @@ ldr x0, [x16, #0]
 .word 0xd2801be1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -1785,7 +1785,7 @@ ldr x15, [x16, #416]
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -2148,7 +2148,7 @@ ldr x15, [x16, #416]
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -2663,7 +2663,7 @@ ldr x0, [x16, #576]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -5829,7 +5829,7 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -5972,7 +5972,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -7057,7 +7057,7 @@ ldr x0, [x16, #0]
 .word 0xd2807821
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -7888,7 +7888,7 @@ ldr x0, [x16, #0]
 .word 0xd280a281
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -8181,11 +8181,11 @@ ldr x0, [x16, #0]
 .word 0xd280a781
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -8383,7 +8383,7 @@ bl _p_58
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -10984,7 +10984,7 @@ bl _p_9
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -11069,7 +11069,7 @@ bl _p_122
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -11451,7 +11451,7 @@ ldr x1, [x16, #16]
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -11994,7 +11994,7 @@ bl _p_139
 .word 0xaa1803e1
 bl _p_24
 .word 0xaa0003e1
-.word 0xd2801fc0
+.word 0xd2802000
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -12014,7 +12014,7 @@ bl _p_83
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -12237,7 +12237,7 @@ bl _p_32
 .word 0xd65f03c0
 bl _p_140
 .word 0x17ffffd1
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -12711,7 +12711,7 @@ bl _p_24
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -13523,7 +13523,7 @@ bl _p_140
 .word 0x17fffde8
 bl _p_140
 .word 0x17fffe16
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -14611,7 +14611,7 @@ bl _p_83
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -15082,7 +15082,7 @@ bl _p_167
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -16948,10 +16948,10 @@ bl _p_9
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802080
+.word 0xd28020e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -17489,7 +17489,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -17671,7 +17671,7 @@ ldr x1, [x16, #264]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 .word 0xd2801340
@@ -18113,7 +18113,7 @@ bl _p_89
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802080
+.word 0xd28020e0
 .word 0xaa1103e1
 bl _p_10
 
@@ -19322,7 +19322,7 @@ ldr x2, [x16, #16]
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -19609,7 +19609,7 @@ bl _p_83
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -20032,10 +20032,10 @@ bl _p_83
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 .word 0xd2801340
@@ -20720,7 +20720,7 @@ bl _p_58
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -21794,7 +21794,7 @@ bl _p_9
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -22626,7 +22626,7 @@ bl _p_140
 .word 0x17ffff67
 bl _p_140
 .word 0x17ffff88
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -23562,7 +23562,7 @@ bl _p_8
 .word 0xaa0003fa
 .word 0xb4fffcb9
 .word 0x17ffffcd
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 .word 0xd2801340
@@ -24231,7 +24231,7 @@ bl _p_227
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -24872,7 +24872,7 @@ bl Xamarin_Forms_Xaml_ValueNode__ctor_object_System_Xml_IXmlNamespaceResolver_in
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -25107,10 +25107,10 @@ ldr x15, [x16, #416]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -27233,7 +27233,7 @@ bl _p_9
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -27781,7 +27781,7 @@ bl Xamarin_Forms_Xaml_ApplyPropertiesVisitor__ctor_Xamarin_Forms_Xaml_HydrationC
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -28215,7 +28215,7 @@ bl Xamarin_Forms_Xaml_ApplyPropertiesVisitor__ctor_Xamarin_Forms_Xaml_HydrationC
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -28593,7 +28593,7 @@ ldr x15, [x16, #648]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -28801,12 +28801,12 @@ ldr x0, [x16, #0]
 .word 0xd2800561
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 27 85 0
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -28818,11 +28818,11 @@ ldr x0, [x16, #0]
 .word 0xd2800ca1
 bl _p_8
 .word 0xaa0003e1
-.word 0xd2801900
+.word 0xd2801940
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -29515,11 +29515,11 @@ bl _p_9
 bl _mono_create_corlib_exception_0
 bl _p_9
 .loc 27 150 0
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -30232,7 +30232,7 @@ bl _p_1
 bl _p_25
 .word 0xf9402ba0
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -30851,7 +30851,7 @@ bl _p_121
 .word 0x910003bf
 .word 0xa8d77bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -31617,7 +31617,7 @@ ldr x1, [x16, #424]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -31693,7 +31693,7 @@ ldr x1, [x16, #952]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -31769,7 +31769,7 @@ ldr x1, [x16, #440]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -31845,7 +31845,7 @@ ldr x1, [x16, #1032]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -31921,7 +31921,7 @@ ldr x1, [x16, #1096]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -31997,7 +31997,7 @@ ldr x1, [x16, #456]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -32573,7 +32573,7 @@ Xamarin_Forms_Xaml_Internals_XamlValueTargetProvider__Xamarin_Forms_Xaml_IProvid
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -32790,7 +32790,7 @@ Xamarin_Forms_Xaml_Internals_SimpleValueTargetProvider_Xamarin_Forms_Xaml_IProvi
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -33244,7 +33244,7 @@ bl Xamarin_Forms_Xaml_XmlType__ctor_string_string_System_Collections_Generic_ILi
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -33405,7 +33405,7 @@ Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver_GetNamespacesInScope_System_Xm
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2802040
+.word 0xd28020a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -33452,7 +33452,7 @@ Xamarin_Forms_Xaml_Internals_XmlNamespaceResolver_LookupPrefix_string:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2802040
+.word 0xd28020a0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -33558,7 +33558,7 @@ _PrivateImplementationDetails_ComputeStringHash_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -34033,7 +34033,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -34211,7 +34211,7 @@ bl _p_303
 .word 0xd2870e60
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -34219,7 +34219,7 @@ bl _p_9
 .word 0xd2871920
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -34443,7 +34443,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -34519,7 +34519,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -34595,7 +34595,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -34794,7 +34794,7 @@ ldr x2, [x16, #16]
 .word 0xd2870e60
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -34802,7 +34802,7 @@ bl _p_9
 .word 0xd2871920
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -35165,7 +35165,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1006 0
-.word 0xd2952260
+.word 0xd2954820
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801360
@@ -35371,7 +35371,7 @@ ldr x2, [x16, #16]
 .word 0xd2821380
 bl _p_304
 .word 0xf9002fa0
-.word 0xd2801e40
+.word 0xd2801e80
 bl _p_315
 .word 0xb900101a
 .word 0xf90033a0
@@ -35388,7 +35388,7 @@ bl _p_316
 .word 0xf9402ba0
 bl _p_9
 .loc 35 1030 0
-.word 0xd288c460
+.word 0xd288c620
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801340
@@ -35403,7 +35403,7 @@ bl _p_304
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -35452,10 +35452,10 @@ System_Collections_Generic_Dictionary_2_KeyCollection_Xamarin_Forms_Xaml_XmlName
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd295d320
+.word 0xd295f8e0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -35472,10 +35472,10 @@ System_Collections_Generic_Dictionary_2_KeyCollection_Xamarin_Forms_Xaml_XmlName
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd295d320
+.word 0xd295f8e0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -35517,10 +35517,10 @@ System_Collections_Generic_Dictionary_2_KeyCollection_Xamarin_Forms_Xaml_XmlName
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd295d320
+.word 0xd295f8e0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -35894,7 +35894,7 @@ ldr x4, [x16, #16]
 .word 0x1400000d
 .word 0xf90027a0
 .loc 35 1134 0
-.word 0xd2957e40
+.word 0xd295a400
 bl _p_304
 .word 0xf9003ba0
 .word 0xd28571c0
@@ -35925,7 +35925,7 @@ bl _p_304
 bl _mono_create_corlib_exception_2
 bl _p_9
 .loc 35 1096 0
-.word 0xd29572c0
+.word 0xd2959880
 bl _p_304
 .word 0xf9003ba0
 .word 0xd28571c0
@@ -35940,7 +35940,7 @@ bl _p_9
 .word 0xd2821380
 bl _p_304
 .word 0xf9003fa0
-.word 0xd2801e40
+.word 0xd2801e80
 bl _p_315
 .word 0xb900101a
 .word 0xf90043a0
@@ -35957,7 +35957,7 @@ bl _p_316
 .word 0xf9403ba0
 bl _p_9
 .loc 35 1106 0
-.word 0xd288c460
+.word 0xd288c620
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801340
@@ -35973,7 +35973,7 @@ bl _p_304
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 35 1119 0
-.word 0xd2957e40
+.word 0xd295a400
 bl _p_304
 .word 0xf9003ba0
 .word 0xd28571c0
@@ -35984,7 +35984,7 @@ bl _p_304
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -36060,7 +36060,7 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1237 0
-.word 0xd2952260
+.word 0xd2954820
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801360
@@ -36214,7 +36214,7 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Xamarin_Forms_Xaml_XmlNa
 .word 0xd2821380
 bl _p_304
 .word 0xf90027a0
-.word 0xd2801e40
+.word 0xd2801e80
 bl _p_315
 .word 0xb900101a
 .word 0xf9002ba0
@@ -36231,7 +36231,7 @@ bl _p_316
 .word 0xf94023a0
 bl _p_9
 .loc 35 1261 0
-.word 0xd288c460
+.word 0xd288c620
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801340
@@ -36246,7 +36246,7 @@ bl _p_304
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -36294,10 +36294,10 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Xamarin_Forms_Xaml_XmlNa
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd295ea80
+.word 0xd2961040
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -36315,10 +36315,10 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Xamarin_Forms_Xaml_XmlNa
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd295ea80
+.word 0xd2961040
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -36335,10 +36335,10 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Xamarin_Forms_Xaml_XmlNa
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd295ea80
+.word 0xd2961040
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -36670,7 +36670,7 @@ ldr x0, [x16, #552]
 .word 0x1400000d
 .word 0xf9001fa0
 .loc 35 1363 0
-.word 0xd2957e40
+.word 0xd295a400
 bl _p_304
 .word 0xf90033a0
 .word 0xd28571c0
@@ -36701,7 +36701,7 @@ bl _p_304
 bl _mono_create_corlib_exception_2
 bl _p_9
 .loc 35 1327 0
-.word 0xd29572c0
+.word 0xd2959880
 bl _p_304
 .word 0xf90033a0
 .word 0xd28571c0
@@ -36716,7 +36716,7 @@ bl _p_9
 .word 0xd2821380
 bl _p_304
 .word 0xf90037a0
-.word 0xd2801e40
+.word 0xd2801e80
 bl _p_315
 .word 0xb900101a
 .word 0xf9003ba0
@@ -36733,7 +36733,7 @@ bl _p_316
 .word 0xf94033a0
 bl _p_9
 .loc 35 1336 0
-.word 0xd288c460
+.word 0xd288c620
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801340
@@ -36749,7 +36749,7 @@ bl _p_304
 bl _mono_create_corlib_exception_1
 bl _p_9
 .loc 35 1348 0
-.word 0xd2957e40
+.word 0xd295a400
 bl _p_304
 .word 0xf90033a0
 .word 0xd28571c0
@@ -36760,7 +36760,7 @@ bl _p_304
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -36961,7 +36961,7 @@ bl _p_321
 .word 0xd2870e60
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -36969,7 +36969,7 @@ bl _p_9
 .word 0xd2871920
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -37151,7 +37151,7 @@ System_Array_InternalArray__ICollection_Clear:
 .word 0xd2862d20
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -37173,7 +37173,7 @@ System_Array_InternalArray__ICollection_Add_Xamarin_Forms_Xaml_XmlName_Xamarin_F
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -37195,7 +37195,7 @@ System_Array_InternalArray__ICollection_Remove_Xamarin_Forms_Xaml_XmlName_Xamari
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -37314,7 +37314,7 @@ bl _p_96
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -37742,10 +37742,10 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -37809,7 +37809,7 @@ System_Collections_Generic_EqualityComparer_1_Xamarin_Forms_Xaml_XmlName_IndexOf
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -37874,7 +37874,7 @@ System_Collections_Generic_EqualityComparer_1_Xamarin_Forms_Xaml_XmlName_LastInd
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -37947,7 +37947,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -38063,7 +38063,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -38155,7 +38155,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc8
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38231,7 +38231,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38320,7 +38320,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc1
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38389,7 +38389,7 @@ System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38411,7 +38411,7 @@ System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38485,7 +38485,7 @@ bl _p_332
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -38599,7 +38599,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38673,7 +38673,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38756,7 +38756,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -38969,14 +38969,14 @@ ldr x2, [x16, #16]
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 35 894 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -39301,10 +39301,10 @@ ldr x3, [x16, #16]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 35 930 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39342,10 +39342,10 @@ System_Collections_Generic_Dictionary_2_Enumerator_Xamarin_Forms_Xaml_XmlName_Xa
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 948 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39464,10 +39464,10 @@ ldr x2, [x16, #16]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 35 961 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39544,10 +39544,10 @@ ldr x3, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 35 974 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39586,10 +39586,10 @@ ldr x1, [x16, #840]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 987 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -39743,7 +39743,7 @@ bl _p_333
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -39998,7 +39998,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40072,7 +40072,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40155,7 +40155,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40233,7 +40233,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40311,7 +40311,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40389,7 +40389,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40463,7 +40463,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40546,7 +40546,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40624,7 +40624,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40694,7 +40694,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40772,7 +40772,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40848,7 +40848,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40926,7 +40926,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -40996,7 +40996,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -41074,7 +41074,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -41092,7 +41092,7 @@ System_Array_InternalArray__ICollection_Add_System_Reflection_CustomAttributeTyp
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41114,7 +41114,7 @@ System_Array_InternalArray__ICollection_Remove_System_Reflection_CustomAttribute
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41233,7 +41233,7 @@ bl _p_335
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41287,7 +41287,7 @@ System_Array_InternalArray__Insert_System_Reflection_CustomAttributeTypedArgumen
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41308,7 +41308,7 @@ System_Array_InternalArray__RemoveAt_int:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41443,7 +41443,7 @@ bl _p_335
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41718,7 +41718,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -41815,7 +41815,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffb6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -41834,7 +41834,7 @@ System_Array_InternalArray__Insert_T_REF_int_T_REF:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -41928,7 +41928,7 @@ bl _p_336
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42079,7 +42079,7 @@ System_Array_InternalArray__ICollection_Add_System_Collections_Generic_KeyValueP
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42100,7 +42100,7 @@ System_Array_InternalArray__ICollection_Remove_System_Collections_Generic_KeyVal
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42296,7 +42296,7 @@ ldr x4, [x16, #16]
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -42723,10 +42723,10 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -42803,7 +42803,7 @@ System_Collections_Generic_EqualityComparer_1_System_Collections_Generic_KeyValu
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -42881,7 +42881,7 @@ System_Collections_Generic_EqualityComparer_1_System_Collections_Generic_KeyValu
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -42961,7 +42961,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -43091,7 +43091,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -43200,7 +43200,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffb6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -43293,7 +43293,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffba
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -43416,7 +43416,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffff9d
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -43435,7 +43435,7 @@ System_Array_InternalArray__ICollection_Add_T_INST_T_INST:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -43458,7 +43458,7 @@ System_Array_InternalArray__ICollection_Remove_T_INST_T_INST:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -43657,7 +43657,7 @@ ldr x3, [x16, #16]
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -44083,10 +44083,10 @@ bl _p_351
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44149,7 +44149,7 @@ System_Collections_Generic_EqualityComparer_1_T_INST_IndexOf_T_INST___T_INST_int
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44213,7 +44213,7 @@ System_Collections_Generic_EqualityComparer_1_T_INST_LastIndexOf_T_INST___T_INST
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44281,7 +44281,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -44387,7 +44387,7 @@ bl _p_329
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -44479,7 +44479,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc8
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44555,7 +44555,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44644,7 +44644,7 @@ bl _p_301
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc1
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44722,7 +44722,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44796,7 +44796,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44879,7 +44879,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -44955,7 +44955,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -45033,7 +45033,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -45107,7 +45107,7 @@ bl _p_301
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -45190,7 +45190,7 @@ bl _p_301
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -45360,7 +45360,7 @@ bl _p_356
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -45618,7 +45618,7 @@ System_Array_InternalArray__Insert_T_INST_int_T_INST:
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -45833,7 +45833,7 @@ ldr x3, [x16, #16]
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -46083,7 +46083,7 @@ System_Array_InternalArray__Insert_System_Collections_Generic_KeyValuePair_2_Xam
 .word 0xd2863320
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -46294,7 +46294,7 @@ ldr x4, [x16, #16]
 .word 0xd2863aa0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -46671,7 +46671,7 @@ bl _p_301
 .word 0xaa0003f5
 .word 0xb5ffff80
 .word 0x17ffffc2
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -46899,7 +46899,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
 
@@ -47046,7 +47046,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -47121,7 +47121,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -47327,7 +47327,7 @@ bl _p_376
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -47557,7 +47557,7 @@ bl _p_379
 .word 0xd2870e60
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -47565,7 +47565,7 @@ bl _p_9
 .word 0xd2871920
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -47741,7 +47741,7 @@ bl _p_371
 .word 0xf9400c00
 .word 0x14000005
 .loc 35 223 0
-.word 0xd28098a0
+.word 0xd28099c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -47749,7 +47749,7 @@ bl _p_9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -47844,7 +47844,7 @@ bl _p_382
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -48138,7 +48138,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -48227,7 +48227,7 @@ System_Collections_Generic_Dictionary_2_Xamarin_Forms_Xaml_XmlName_Xamarin_Forms
 .word 0xf90023a2
 .word 0x14000008
 .loc 35 548 0
-.word 0xd2952c20
+.word 0xd29551e0
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801360
@@ -48484,13 +48484,13 @@ ldr x15, [x16, #1112]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802160
+.word 0xd28021c0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801780
+.word 0xd28017a0
 .word 0xaa1103e1
 bl _p_10
 
@@ -48845,14 +48845,14 @@ ldr x2, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 35 1173 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -48949,10 +48949,10 @@ ldr x3, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 35 1206 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -48989,10 +48989,10 @@ System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_Xamarin_Forms_X
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1217 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -49149,14 +49149,14 @@ ldr x2, [x16, #16]
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1402 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -49208,10 +49208,10 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_Xamarin_Forms
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1434 0
-.word 0xd295b0e0
+.word 0xd295d6a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -49246,10 +49246,10 @@ System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_Xamarin_Forms
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 35 1445 0
-.word 0xd295bfe0
+.word 0xd295e5a0
 bl _p_304
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
@@ -49356,7 +49356,7 @@ bl _p_391
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -49629,7 +49629,7 @@ bl _p_96
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -49758,7 +49758,7 @@ bl _p_96
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -50302,7 +50302,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -50513,7 +50513,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -50652,10 +50652,10 @@ ldr x1, [x16, #16]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 35 78 0
-.word 0xd2951c20
+.word 0xd29541e0
 bl _p_304
 .word 0xf9001fa0
-.word 0xd2801e40
+.word 0xd2801e80
 bl _p_315
 .word 0xb9001019
 .word 0xf90023a0
@@ -50687,7 +50687,7 @@ System_Collections_Generic_Dictionary_2_Xamarin_Forms_Xaml_XmlName_Xamarin_Forms
 .word 0xf9001ba2
 .word 0x14000008
 .loc 35 363 0
-.word 0xd2952c20
+.word 0xd29551e0
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801360
@@ -50829,13 +50829,13 @@ ldr x15, [x16, #1112]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802160
+.word 0xd28021c0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801780
+.word 0xd28017a0
 .word 0xaa1103e1
 bl _p_10
 
@@ -50908,7 +50908,7 @@ System_Collections_Generic_Dictionary_2_Xamarin_Forms_Xaml_XmlName_Xamarin_Forms
 .word 0xaa0403fa
 .word 0x14000008
 .loc 35 390 0
-.word 0xd2952c20
+.word 0xd29551e0
 bl _p_304
 .word 0xaa0003e1
 .word 0xd2801360
@@ -51356,7 +51356,7 @@ bl _p_396
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 35 411 0
-.word 0xd281c760
+.word 0xd2823320
 .word 0xf2a00040
 bl _p_304
 .word 0xf9004ba0
@@ -51403,16 +51403,16 @@ bl _p_397
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_9
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802160
+.word 0xd28021c0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801780
+.word 0xd28017a0
 .word 0xaa1103e1
 bl _p_10
 
@@ -52220,7 +52220,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -52332,7 +52332,7 @@ bl _p_227
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -52775,7 +52775,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -52966,7 +52966,7 @@ bl _p_227
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -54429,7 +54429,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -55068,7 +55068,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -55407,13 +55407,13 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802160
+.word 0xd28021c0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801780
+.word 0xd28017a0
 .word 0xaa1103e1
 bl _p_10
 
@@ -55531,7 +55531,7 @@ bl _p_5
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -55653,7 +55653,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -55853,7 +55853,7 @@ bl _p_419
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -56044,7 +56044,7 @@ bl _p_420
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -56230,7 +56230,7 @@ bl _p_422
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -56463,10 +56463,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2802080
+.word 0xd28020e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -56541,7 +56541,7 @@ System_Linq_OrderedEnumerable_1__GetEnumeratord__3_System_Collections_Generic_Ke
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -57019,7 +57019,7 @@ ldr x0, [x16, #1088]
 bl _p_8
 bl _p_385
 bl _p_9
-.word 0xd2802160
+.word 0xd28021c0
 .word 0xaa1103e1
 bl _p_10
 
@@ -57328,10 +57328,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2802080
+.word 0xd28020e0
 .word 0xaa1103e1
 bl _p_10
 
@@ -57406,7 +57406,7 @@ System_Linq_OrderedEnumerable_1__GetEnumeratord__7_System_Collections_Generic_Ke
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_9
@@ -58463,7 +58463,7 @@ ldr x0, [x16, #1336]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_10
 
@@ -63820,7 +63820,7 @@ _mono_aot_file_info:
 	.long 1392,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 240,243,170,5,159,36,43,104,56,252,31,47,246,185,171,82
+	.byte 17,255,172,45,72,179,159,160,148,112,65,236,196,171,134,92
 	.globl _mono_aot_module_Xamarin_Forms_Xaml_info
 	.align 3
 _mono_aot_module_Xamarin_Forms_Xaml_info:

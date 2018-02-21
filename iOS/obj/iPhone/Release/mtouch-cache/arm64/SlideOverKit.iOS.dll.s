@@ -1110,7 +1110,7 @@ bl _p_16
 .word 0xf940ffa2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0x14000155
 
@@ -1171,7 +1171,7 @@ bl _p_16
 .word 0xf9410ba2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xf9402f40
 .word 0xf90103a0
@@ -1503,7 +1503,7 @@ bl _p_29
 .word 0xaa0203e0
 .word 0xf9400fa1
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0x140000b3
 
@@ -1531,7 +1531,7 @@ ldr x2, [x16, #16]
 .word 0xaa0203e0
 .word 0xf9400fa1
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xf9402f20
 .word 0xf90073a0
@@ -4391,7 +4391,7 @@ bl _p_74
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -4469,7 +4469,7 @@ bl _p_74
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -4548,10 +4548,10 @@ System_Nullable_1_bool_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -4895,7 +4895,7 @@ bl _p_79
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_9
 
@@ -4992,7 +4992,7 @@ System_Array_InternalArray__ICollection_Clear:
 .word 0xd2862d20
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -5014,7 +5014,7 @@ System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
 .word 0xd2863320
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -5036,7 +5036,7 @@ System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
 .word 0xd2863320
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -5110,7 +5110,7 @@ bl _p_82
 .word 0xd2863aa0
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -5224,7 +5224,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5298,7 +5298,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5381,7 +5381,7 @@ bl _p_74
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5455,7 +5455,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5529,7 +5529,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5611,7 +5611,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffc8
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -5788,7 +5788,7 @@ bl _p_85
 .word 0xd2870e60
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -5796,7 +5796,7 @@ bl _p_73
 .word 0xd2871920
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -6030,7 +6030,7 @@ bl _p_74
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc3
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -6108,7 +6108,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -6182,7 +6182,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -6261,10 +6261,10 @@ System_Nullable_1_Xamarin_Forms_Point_get_Value:
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_75
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_73
@@ -6658,7 +6658,7 @@ bl _p_96
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_9
 
@@ -6736,7 +6736,7 @@ bl _p_74
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_9
 
@@ -7085,7 +7085,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 2279
+.word 2281
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
@@ -7093,7 +7093,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 2284
+.word 2286
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_Init_SlideOverKit_iOS_ISlideOverKitPageRendereriOS
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_Init_SlideOverKit_iOS_ISlideOverKitPageRendereriOS:
 _p_3:
@@ -7101,7 +7101,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 2292
+.word 2294
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_VisualElementChangedEventArgs
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_OnElementChanged_Xamarin_Forms_Platform_iOS_VisualElementChangedEventArgs:
 _p_4:
@@ -7109,7 +7109,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 2294
+.word 2296
 	.no_dead_strip plt_UIKit_UIViewController_ViewDidLayoutSubviews
 plt_UIKit_UIViewController_ViewDidLayoutSubviews:
 _p_5:
@@ -7117,7 +7117,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 2299
+.word 2301
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewDidAppear_bool
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewDidAppear_bool:
 _p_6:
@@ -7125,7 +7125,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 2304
+.word 2306
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewDidDisappear_bool
 plt_Xamarin_Forms_Platform_iOS_PageRenderer_ViewDidDisappear_bool:
 _p_7:
@@ -7133,7 +7133,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 2309
+.word 2311
 	.no_dead_strip plt_UIKit_UIViewController_ViewWillTransitionToSize_CoreGraphics_CGSize_UIKit_IUIViewControllerTransitionCoordinator
 plt_UIKit_UIViewController_ViewWillTransitionToSize_CoreGraphics_CGSize_UIKit_IUIViewControllerTransitionCoordinator:
 _p_8:
@@ -7141,7 +7141,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 2314
+.word 2316
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_9:
@@ -7149,7 +7149,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 2319
+.word 2321
 	.no_dead_strip plt_UIKit_UIView_RemoveFromSuperview
 plt_UIKit_UIView_RemoveFromSuperview:
 _p_10:
@@ -7157,7 +7157,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 2354
+.word 2356
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_11:
@@ -7165,7 +7165,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 2359
+.word 2361
 	.no_dead_strip plt_UIKit_UIView_UITextField_EndEditing_UIKit_UIView_bool
 plt_UIKit_UIView_UITextField_EndEditing_UIKit_UIView_bool:
 _p_12:
@@ -7173,7 +7173,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 2364
+.word 2366
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_CheckPageAndMenu
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_CheckPageAndMenu:
 _p_13:
@@ -7181,7 +7181,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 2369
+.word 2371
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_get_BackgroundViewColor
 plt_SlideOverKit_SlideMenuView_get_BackgroundViewColor:
 _p_14:
@@ -7189,7 +7189,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 2371
+.word 2373
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_ColorExtensions_ToUIColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_Platform_iOS_ColorExtensions_ToUIColor_Xamarin_Forms_Color:
 _p_15:
@@ -7197,7 +7197,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 2376
+.word 2378
 	.no_dead_strip plt_UIKit_UIColor_ColorWithAlpha_System_nfloat
 plt_UIKit_UIColor_ColorWithAlpha_System_nfloat:
 _p_16:
@@ -7205,7 +7205,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 2381
+.word 2383
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_17:
@@ -7213,7 +7213,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 2386
+.word 2388
 	.no_dead_strip plt_UIKit_UIView__ctor
 plt_UIKit_UIView__ctor:
 _p_18:
@@ -7221,7 +7221,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 2418
+.word 2420
 	.no_dead_strip plt_UIKit_UITapGestureRecognizer__ctor_System_Action
 plt_UIKit_UITapGestureRecognizer__ctor_System_Action:
 _p_19:
@@ -7229,7 +7229,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 2423
+.word 2425
 	.no_dead_strip plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer
 plt_UIKit_UIView_AddGestureRecognizer_UIKit_UIGestureRecognizer:
 _p_20:
@@ -7237,7 +7237,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 2428
+.word 2430
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_get_IsFullScreen
 plt_SlideOverKit_SlideMenuView_get_IsFullScreen:
 _p_21:
@@ -7245,7 +7245,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 2433
+.word 2435
 	.no_dead_strip plt_UIKit_UIApplication_get_SharedApplication
 plt_UIKit_UIApplication_get_SharedApplication:
 _p_22:
@@ -7253,7 +7253,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 2438
+.word 2440
 	.no_dead_strip plt_UIKit_UIApplication_get_KeyWindow
 plt_UIKit_UIApplication_get_KeyWindow:
 _p_23:
@@ -7261,7 +7261,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 2443
+.word 2445
 	.no_dead_strip plt_UIKit_UIView_get_Frame
 plt_UIKit_UIView_get_Frame:
 _p_24:
@@ -7269,7 +7269,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 2448
+.word 2450
 	.no_dead_strip plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize
 plt_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize:
 _p_25:
@@ -7277,7 +7277,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 2453
+.word 2455
 	.no_dead_strip plt_UIKit_UIView_set_Frame_CoreGraphics_CGRect
 plt_UIKit_UIView_set_Frame_CoreGraphics_CGRect:
 _p_26:
@@ -7285,7 +7285,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 2458
+.word 2460
 	.no_dead_strip plt_UIKit_UIView_InsertSubviewBelow_UIKit_UIView_UIKit_UIView
 plt_UIKit_UIView_InsertSubviewBelow_UIKit_UIView_UIKit_UIView:
 _p_27:
@@ -7293,7 +7293,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 2463
+.word 2465
 	.no_dead_strip plt_UIKit_UIViewController_get_View
 plt_UIKit_UIViewController_get_View:
 _p_28:
@@ -7301,7 +7301,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 2468
+.word 2470
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_CheckPageAndPopup
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_CheckPageAndPopup:
 _p_29:
@@ -7309,7 +7309,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 2473
+.word 2475
 	.no_dead_strip plt_UIKit_UIView_AddSubview_UIKit_UIView
 plt_UIKit_UIView_AddSubview_UIKit_UIView:
 _p_30:
@@ -7317,7 +7317,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 2475
+.word 2477
 	.no_dead_strip plt_SlideOverKit_DragGestureFactory_GetGestureByView_SlideOverKit_SlideMenuView_double
 plt_SlideOverKit_DragGestureFactory_GetGestureByView_SlideOverKit_SlideMenuView_double:
 _p_31:
@@ -7325,7 +7325,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 2480
+.word 2482
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_Platform_CreateRenderer_Xamarin_Forms_VisualElement
 plt_Xamarin_Forms_Platform_iOS_Platform_CreateRenderer_Xamarin_Forms_VisualElement:
 _p_32:
@@ -7333,7 +7333,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 2485
+.word 2487
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_Platform_SetRenderer_Xamarin_Forms_VisualElement_Xamarin_Forms_Platform_iOS_IVisualElementRenderer
 plt_Xamarin_Forms_Platform_iOS_Platform_SetRenderer_Xamarin_Forms_VisualElement_Xamarin_Forms_Platform_iOS_IVisualElementRenderer:
 _p_33:
@@ -7341,7 +7341,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 2490
+.word 2492
 	.no_dead_strip plt_UIKit_UIPanGestureRecognizer__ctor_System_Action
 plt_UIKit_UIPanGestureRecognizer__ctor_System_Action:
 _p_34:
@@ -7349,7 +7349,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 2495
+.word 2497
 	.no_dead_strip plt_Xamarin_Forms_Rectangle__ctor_double_double_double_double
 plt_Xamarin_Forms_Rectangle__ctor_double_double_double_double:
 _p_35:
@@ -7357,7 +7357,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 2500
+.word 2502
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle
 plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle:
 _p_36:
@@ -7365,7 +7365,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 2505
+.word 2507
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_IsVisible
 plt_Xamarin_Forms_VisualElement_get_IsVisible:
 _p_37:
@@ -7373,7 +7373,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 2510
+.word 2512
 	.no_dead_strip plt_UIKit_UIView_set_Hidden_bool
 plt_UIKit_UIView_set_Hidden_bool:
 _p_38:
@@ -7381,7 +7381,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 2515
+.word 2517
 	.no_dead_strip plt_CoreGraphics_CGRect__ctor_double_double_double_double
 plt_CoreGraphics_CGRect__ctor_double_double_double_double:
 _p_39:
@@ -7389,7 +7389,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 2520
+.word 2522
 	.no_dead_strip plt_UIKit_UIView_SetNeedsLayout
 plt_UIKit_UIView_SetNeedsLayout:
 _p_40:
@@ -7397,7 +7397,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 2525
+.word 2527
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_get_Item_string:
 _p_41:
@@ -7405,7 +7405,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 2530
+.word 2532
 	.no_dead_strip plt_SlideOverKit_SlidePopupView_CalucatePosition_System_Nullable_1_Xamarin_Forms_Point
 plt_SlideOverKit_SlidePopupView_CalucatePosition_System_Nullable_1_Xamarin_Forms_Point:
 _p_42:
@@ -7413,7 +7413,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 2541
+.word 2543
 	.no_dead_strip plt_SlideOverKit_SlidePopupView_get_TopMargin
 plt_SlideOverKit_SlidePopupView_get_TopMargin:
 _p_43:
@@ -7421,7 +7421,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 2546
+.word 2548
 	.no_dead_strip plt_SlideOverKit_SlidePopupView_get_LeftMargin
 plt_SlideOverKit_SlidePopupView_get_LeftMargin:
 _p_44:
@@ -7429,7 +7429,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 2551
+.word 2553
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_WidthRequest
 plt_Xamarin_Forms_VisualElement_get_WidthRequest:
 _p_45:
@@ -7437,7 +7437,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 2556
+.word 2558
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_HeightRequest
 plt_Xamarin_Forms_VisualElement_get_HeightRequest:
 _p_46:
@@ -7445,7 +7445,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 2561
+.word 2563
 	.no_dead_strip plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat
 plt_CoreGraphics_CGRect__ctor_System_nfloat_System_nfloat_System_nfloat_System_nfloat:
 _p_47:
@@ -7453,7 +7453,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 2566
+.word 2568
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_RectangleExtensions_ToRectangle_CoreGraphics_CGRect
 plt_Xamarin_Forms_Platform_iOS_RectangleExtensions_ToRectangle_CoreGraphics_CGRect:
 _p_48:
@@ -7461,7 +7461,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 2571
+.word 2573
 	.no_dead_strip plt_UIKit_UIScreen_get_MainScreen
 plt_UIKit_UIScreen_get_MainScreen:
 _p_49:
@@ -7469,7 +7469,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 2576
+.word 2578
 	.no_dead_strip plt_UIKit_UIScreen_get_Bounds
 plt_UIKit_UIScreen_get_Bounds:
 _p_50:
@@ -7477,7 +7477,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 2581
+.word 2583
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_LayoutMenu
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_LayoutMenu:
 _p_51:
@@ -7485,7 +7485,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 2586
+.word 2588
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_LayoutPopup
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_LayoutPopup:
 _p_52:
@@ -7493,7 +7493,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 2588
+.word 2590
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_GetPopupPositionAndLayout
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_GetPopupPositionAndLayout:
 _p_53:
@@ -7501,7 +7501,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 2590
+.word 2592
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_HideBackgroundOverlay
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_HideBackgroundOverlay:
 _p_54:
@@ -7509,7 +7509,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 2592
+.word 2594
 	.no_dead_strip plt_UIKit_UIView_CommitAnimations
 plt_UIKit_UIView_CommitAnimations:
 _p_55:
@@ -7517,7 +7517,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 2594
+.word 2596
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_ShowBackgroundOverlay_double
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_ShowBackgroundOverlay_double:
 _p_56:
@@ -7525,7 +7525,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 2599
+.word 2601
 	.no_dead_strip plt_UIKit_UIGestureRecognizer_LocationInView_UIKit_UIView
 plt_UIKit_UIGestureRecognizer_LocationInView_UIKit_UIView:
 _p_57:
@@ -7533,7 +7533,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 2601
+.word 2603
 	.no_dead_strip plt_UIKit_UIGestureRecognizer_get_State
 plt_UIKit_UIGestureRecognizer_get_State:
 _p_58:
@@ -7541,7 +7541,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 2606
+.word 2608
 	.no_dead_strip plt_UIKit_UIGestureRecognizer_get_NumberOfTouches
 plt_UIKit_UIGestureRecognizer_get_NumberOfTouches:
 _p_59:
@@ -7549,7 +7549,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 2611
+.word 2613
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_ContainsKey_string:
 _p_60:
@@ -7557,7 +7557,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 2616
+.word 2618
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_get_Values
 plt_System_Collections_Generic_Dictionary_2_string_SlideOverKit_SlidePopupView_get_Values:
 _p_61:
@@ -7565,7 +7565,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 2627
+.word 2629
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_ValueCollection_string_SlideOverKit_SlidePopupView_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_ValueCollection_string_SlideOverKit_SlidePopupView_GetEnumerator:
 _p_62:
@@ -7573,7 +7573,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 2638
+.word 2640
 	.no_dead_strip plt_CoreGraphics_CGRect_get_IsEmpty
 plt_CoreGraphics_CGRect_get_IsEmpty:
 _p_63:
@@ -7581,7 +7581,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 2649
+.word 2651
 	.no_dead_strip plt_SlideOverKit_SlidePopupView_get_BackgroundViewColor
 plt_SlideOverKit_SlidePopupView_get_BackgroundViewColor:
 _p_64:
@@ -7589,7 +7589,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 2654
+.word 2656
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKitiOSHandler_ShowBackgroundForPopup_UIKit_UIColor
 plt_SlideOverKit_iOS_SlideOverKitiOSHandler_ShowBackgroundForPopup_UIKit_UIColor:
 _p_65:
@@ -7597,7 +7597,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 2659
+.word 2661
 	.no_dead_strip plt_System_Linq_Enumerable_Where_SlideOverKit_SlidePopupView_System_Collections_Generic_IEnumerable_1_SlideOverKit_SlidePopupView_System_Func_2_SlideOverKit_SlidePopupView_bool
 plt_System_Linq_Enumerable_Where_SlideOverKit_SlidePopupView_System_Collections_Generic_IEnumerable_1_SlideOverKit_SlidePopupView_System_Func_2_SlideOverKit_SlidePopupView_bool:
 _p_66:
@@ -7605,7 +7605,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 2661
+.word 2663
 	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_SlideOverKit_SlidePopupView_System_Collections_Generic_IEnumerable_1_SlideOverKit_SlidePopupView
 plt_System_Linq_Enumerable_FirstOrDefault_SlideOverKit_SlidePopupView_System_Collections_Generic_IEnumerable_1_SlideOverKit_SlidePopupView:
 _p_67:
@@ -7613,7 +7613,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 2673
+.word 2675
 	.no_dead_strip plt_SlideOverKit_iOS_MenuContainerPageiOSRenderer__ctor
 plt_SlideOverKit_iOS_MenuContainerPageiOSRenderer__ctor:
 _p_68:
@@ -7621,7 +7621,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 2685
+.word 2687
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_VisualElementRenderer_1_SlideOverKit_SlidePopupView__ctor
 plt_Xamarin_Forms_Platform_iOS_VisualElementRenderer_1_SlideOverKit_SlidePopupView__ctor:
 _p_69:
@@ -7629,7 +7629,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 2687
+.word 2689
 	.no_dead_strip plt_UIKit_UIView_BeginAnimations_string
 plt_UIKit_UIView_BeginAnimations_string:
 _p_70:
@@ -7637,7 +7637,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 2698
+.word 2700
 	.no_dead_strip plt_SlideOverKit_SlideMenuView_get_AnimationDurationMillisecond
 plt_SlideOverKit_SlideMenuView_get_AnimationDurationMillisecond:
 _p_71:
@@ -7645,7 +7645,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 2703
+.word 2705
 	.no_dead_strip plt_UIKit_UIView_SetAnimationDuration_double
 plt_UIKit_UIView_SetAnimationDuration_double:
 _p_72:
@@ -7653,7 +7653,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 2708
+.word 2710
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_73:
@@ -7661,7 +7661,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 2713
+.word 2715
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_74:
@@ -7669,7 +7669,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 2741
+.word 2743
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_75:
@@ -7677,7 +7677,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 2779
+.word 2781
 	.no_dead_strip plt_System_Nullable_1_bool_Unbox_object
 plt_System_Nullable_1_bool_Unbox_object:
 _p_76:
@@ -7685,7 +7685,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 2808
+.word 2810
 	.no_dead_strip plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool
 plt_System_Nullable_1_bool_Equals_System_Nullable_1_bool:
 _p_77:
@@ -7693,7 +7693,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 2828
+.word 2830
 	.no_dead_strip plt_bool_Equals_object
 plt_bool_Equals_object:
 _p_78:
@@ -7701,7 +7701,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 2848
+.word 2850
 	.no_dead_strip plt_System_Nullable_1_bool__ctor_bool
 plt_System_Nullable_1_bool__ctor_bool:
 _p_79:
@@ -7709,7 +7709,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 2853
+.word 2855
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_80:
@@ -7717,7 +7717,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 2899
+.word 2901
 	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_81:
@@ -7725,7 +7725,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 2907
+.word 2909
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_82:
@@ -7733,7 +7733,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 2944
+.word 2946
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_83:
@@ -7741,7 +7741,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 2967
+.word 2969
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_84:
@@ -7749,7 +7749,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 2990
+.word 2992
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_85:
@@ -7757,7 +7757,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 3013
+.word 3015
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_86:
@@ -7765,7 +7765,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 3054
+.word 3056
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_87:
@@ -7773,7 +7773,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 3062
+.word 3064
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_88:
@@ -7781,7 +7781,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 3085
+.word 3087
 	.no_dead_strip plt__rgctx_fetch_7
 plt__rgctx_fetch_7:
 _p_89:
@@ -7789,7 +7789,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 3119
+.word 3121
 	.no_dead_strip plt__rgctx_fetch_8
 plt__rgctx_fetch_8:
 _p_90:
@@ -7797,7 +7797,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 3127
+.word 3129
 	.no_dead_strip plt_System_Nullable_1_Xamarin_Forms_Point_Unbox_object
 plt_System_Nullable_1_Xamarin_Forms_Point_Unbox_object:
 _p_91:
@@ -7805,7 +7805,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 3150
+.word 3152
 	.no_dead_strip plt_System_Nullable_1_Xamarin_Forms_Point_Equals_System_Nullable_1_Xamarin_Forms_Point
 plt_System_Nullable_1_Xamarin_Forms_Point_Equals_System_Nullable_1_Xamarin_Forms_Point:
 _p_92:
@@ -7813,7 +7813,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 3172
+.word 3174
 	.no_dead_strip plt_Xamarin_Forms_Point_Equals_object
 plt_Xamarin_Forms_Point_Equals_object:
 _p_93:
@@ -7821,7 +7821,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 3194
+.word 3196
 	.no_dead_strip plt_Xamarin_Forms_Point_GetHashCode
 plt_Xamarin_Forms_Point_GetHashCode:
 _p_94:
@@ -7829,7 +7829,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 3199
+.word 3201
 	.no_dead_strip plt_Xamarin_Forms_Point_ToString
 plt_Xamarin_Forms_Point_ToString:
 _p_95:
@@ -7837,7 +7837,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 3204
+.word 3206
 	.no_dead_strip plt_System_Nullable_1_Xamarin_Forms_Point__ctor_Xamarin_Forms_Point
 plt_System_Nullable_1_Xamarin_Forms_Point__ctor_Xamarin_Forms_Point:
 _p_96:
@@ -7845,7 +7845,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 3209
+.word 3211
 	.no_dead_strip plt__rgctx_fetch_9
 plt__rgctx_fetch_9:
 _p_97:
@@ -7853,7 +7853,7 @@ adrp x16, mono_aot_SlideOverKit_iOS_got@PAGE+0
 add x16, x16, mono_aot_SlideOverKit_iOS_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 3249
+.word 3251
 plt_end:
 .section __DATA, __bss
 	.align 3
@@ -7965,13 +7965,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 133,1848,98,133,66,391195135,0,4598
-	.long 128,8,8,10,0,24,7984,3376
+	.long 133,1848,98,133,66,391195135,0,4604
+	.long 128,8,8,10,0,24,7992,3376
 	.long 2784,2248,0,2528,2752,2336,0,1664
 	.long 224,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 186,132,211,183,89,193,124,81,133,45,82,37,133,31,151,201
+	.byte 4,167,191,180,191,9,155,65,231,155,1,176,131,188,195,17
 	.globl _mono_aot_module_SlideOverKit_iOS_info
 	.align 3
 _mono_aot_module_SlideOverKit_iOS_info:

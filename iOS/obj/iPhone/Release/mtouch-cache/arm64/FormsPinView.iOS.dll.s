@@ -194,7 +194,7 @@ ldr x2, [x16, #16]
 .word 0xf9402321
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xf9400bb9
 .word 0x910003bf
@@ -244,7 +244,7 @@ ldr x3, [x16, #16]
 .word 0xf9401802
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -619,7 +619,7 @@ bl FormsPinView_iOS_ZFRippleButton_SetupRippleView
 .word 0xf9402741
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xf9401f40
 .word 0xf90057a0
@@ -854,7 +854,7 @@ bl _p_5
 .word 0xf9402341
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xfd4063a0
 .word 0xfd4067a1
@@ -1265,7 +1265,7 @@ bl _p_44
 .word 0xd2801340
 .word 0xaa1103e1
 bl _p_45
-.word 0xd2802080
+.word 0xd28020e0
 .word 0xaa1103e1
 bl _p_45
 
@@ -1926,7 +1926,7 @@ bl _p_53
 .word 0xf94083a2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf9419c50
+.word 0xf941a050
 .word 0xd63f0200
 .word 0xf9406320
 .word 0xf9007fa0
@@ -2330,10 +2330,10 @@ System_Nullable_1_CoreGraphics_CGPoint_get_Value:
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -2727,7 +2727,7 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_45
 
@@ -2798,10 +2798,10 @@ System_Nullable_1_bool_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd2966200
+.word 0xd29687c0
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2801ea0
+.word 0xd2801ee0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -3145,7 +3145,7 @@ bl _p_83
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e80
+.word 0xd2801ec0
 .word 0xaa1103e1
 bl _p_45
 
@@ -3223,7 +3223,7 @@ bl _p_84
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_45
 
@@ -3301,7 +3301,7 @@ bl _p_84
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_45
 
@@ -3398,7 +3398,7 @@ System_Array_InternalArray__ICollection_Clear:
 .word 0xd2862d20
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -3420,7 +3420,7 @@ System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
 .word 0xd2863320
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -3442,7 +3442,7 @@ System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
 .word 0xd2863320
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802060
+.word 0xd28020c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -3516,7 +3516,7 @@ bl _p_87
 .word 0xd2863aa0
 bl _p_73
 .word 0xaa0003e1
-.word 0xd2802200
+.word 0xd2802260
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_74
@@ -3630,7 +3630,7 @@ bl _p_84
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffca
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_45
 
@@ -3704,7 +3704,7 @@ bl _p_84
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_45
 
@@ -3787,7 +3787,7 @@ bl _p_84
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_45
 
@@ -4793,13 +4793,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 72,1288,89,75,66,391195135,0,3247
-	.long 128,8,8,10,0,24,5456,2200
+	.long 72,1288,89,75,66,391195135,0,3251
+	.long 128,8,8,10,0,24,5464,2200
 	.long 1680,1360,0,1528,1656,1408,0,1064
 	.long 120,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 88,150,133,230,126,205,37,92,248,85,144,31,210,220,240,165
+	.byte 196,173,164,219,187,158,78,91,171,38,109,234,49,193,152,43
 	.globl _mono_aot_module_FormsPinView_iOS_info
 	.align 3
 _mono_aot_module_FormsPinView_iOS_info:

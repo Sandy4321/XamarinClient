@@ -25,6 +25,13 @@ extern void *mono_aot_module_zxing_portable_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Core_info;
 extern void *mono_aot_module_Plugin_Messaging_Abstractions_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
+extern void *mono_aot_module_Xamarin_Auth_info;
+extern void *mono_aot_module_PCLCrypto_info;
+extern void *mono_aot_module_PInvoke_BCrypt_info;
+extern void *mono_aot_module_PInvoke_Windows_Core_info;
+extern void *mono_aot_module_PInvoke_Kernel32_info;
+extern void *mono_aot_module_Validation_info;
+extern void *mono_aot_module_System_Json_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_Platform_info;
 extern void *mono_aot_module_Rg_Plugins_Popup_IOS_info;
@@ -71,6 +78,13 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Core_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Messaging_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
+	mono_aot_register_module (mono_aot_module_Xamarin_Auth_info);
+	mono_aot_register_module (mono_aot_module_PCLCrypto_info);
+	mono_aot_register_module (mono_aot_module_PInvoke_BCrypt_info);
+	mono_aot_register_module (mono_aot_module_PInvoke_Windows_Core_info);
+	mono_aot_register_module (mono_aot_module_PInvoke_Kernel32_info);
+	mono_aot_register_module (mono_aot_module_Validation_info);
+	mono_aot_register_module (mono_aot_module_System_Json_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_Platform_info);
 	mono_aot_register_module (mono_aot_module_Rg_Plugins_Popup_IOS_info);
@@ -96,6 +110,8 @@ void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Xamarin.Auth.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Rg.Plugins.Popup.IOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

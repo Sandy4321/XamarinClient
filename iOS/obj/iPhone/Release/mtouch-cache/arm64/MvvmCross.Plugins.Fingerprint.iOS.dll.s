@@ -332,7 +332,7 @@ bl _p_6
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801dc0
+.word 0xd2801e00
 .word 0xaa1103e1
 bl _p_3
 
@@ -535,7 +535,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 71,48,35,86,101,38,33,232,43,208,239,88,229,185,209,103
+	.byte 192,182,115,113,60,163,101,61,248,68,176,189,58,234,58,195
 	.globl _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info
 	.align 3
 _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info:

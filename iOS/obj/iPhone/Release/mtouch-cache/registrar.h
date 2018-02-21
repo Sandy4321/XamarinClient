@@ -6,13 +6,16 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/QuartzCore.h>
-#import <CoreSpotlight/CoreSpotlight.h>
 #import <UIKit/UIKit.h>
+#import <CoreSpotlight/CoreSpotlight.h>
+#import <SafariServices/SafariServices.h>
 #import <MessageUI/MessageUI.h>
 #import <CloudKit/CloudKit.h>
 #import <Intents/Intents.h>
+#import <Accounts/Accounts.h>
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCall.h>
 #import <CoreTelephony/CTCallCenter.h>
@@ -36,6 +39,7 @@
 @class AppDelegate;
 @class UIKit_UIView_UIViewAppearance;
 @class UIKit_UIControl_UIControlAppearance;
+@class UIKit_UIAlertView__UIAlertViewDelegate;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
@@ -127,6 +131,17 @@
 @class Xamarin_Forms_Platform_iOS_ToolbarItemExtensions_SecondaryToolbarItem;
 @class Xamarin_Forms_Platform_iOS_NavigationMenuRenderer_DataSource;
 @class Xamarin_Forms_Platform_iOS_NavigationRenderer_SecondaryToolbar;
+@class Xamarin_Controls_ProgressLabel;
+@class Xamarin_Auth_NativeAuthSafariViewControllerDelegate;
+@class Xamarin_Auth_FormAuthenticatorController_FormDelegate;
+@class Xamarin_Auth_FormAuthenticatorController;
+@class Xamarin_Auth_WebAuthenticatorController_UIWebViewDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewUIDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewNavigationDelegate;
+@class Xamarin_Auth_WebAuthenticatorController_WKWebViewJacascriptMessageHandler;
+@class Xamarin_Auth_WebAuthenticatorController;
+@class Xamarin_Auth_FormAuthenticatorController_FieldCell;
+@class Xamarin_Auth_FormAuthenticatorController_FormDataSource;
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
@@ -510,6 +525,28 @@
 	-(void) layoutSubviews;
 	-(BOOL) conformsToProtocol:(void *)p0;
 	-(id) init;
+@end
+
+@interface Xamarin_Auth_NativeAuthSafariViewControllerDelegate : NSObject<SFSafariViewControllerDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) safariViewController:(SFSafariViewController *)p0 didCompleteInitialLoad:(BOOL)p1;
+	-(void) safariViewControllerDidFinish:(SFSafariViewController *)p0;
+	-(NSArray *) safariViewController:(SFSafariViewController *)p0 activityItemsForURL:(NSURL *)p1 title:(NSString *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Xamarin_Auth_WebAuthenticatorController_WKWebViewJacascriptMessageHandler : NSObject<WKScriptMessageHandler> {
+}
+	-(void) release;
+	-(id) retain;
+	-(int) xamarinGetGCHandle;
+	-(void) xamarinSetGCHandle: (int) gchandle;
+	-(void) userContentController:(WKUserContentController *)p0 didReceiveScriptMessage:(WKScriptMessage *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
 @interface Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
