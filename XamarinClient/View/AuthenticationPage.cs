@@ -20,6 +20,8 @@ namespace XamarinClient
 
         public PinViewModel PinViewModel { get; private set; }
 
+        public Account acc;
+
         public AuthenticationPage()
         {
             string pin = "";
@@ -35,7 +37,7 @@ namespace XamarinClient
             }
             else
             {
-                Account acc = Credentials[0];
+                acc = Credentials[0];
                 pin = acc.Username;
                 App.Current.Properties.TryAdd("Pin",acc);
 
@@ -77,7 +79,7 @@ namespace XamarinClient
                     }
 
                     if(m.Equals(pin)){
-                        App.Current.MainPage = new RootView();
+                        GoToHome();
                         return true;
                     } else {
                         DisplayAlert("Error","Wrong Passcode","OK");
@@ -106,10 +108,19 @@ namespace XamarinClient
             var result = await CrossFingerprint.Current.AuthenticateAsync("Please authenticate yourself");
             if (result.Authenticated)
             {
-                App.Current.MainPage = new RootView();
+                GoToHome();
             } else {
                 return;
             }
+        }
+
+        public void GoToHome(){
+            if(acc.Properties.ContainsKey("PrivateKey")){
+                string pk = acc.Properties["PrivateKey"];
+                BlockchainTools.Account account = new BlockchainTools.Account(pk);
+                Application.Current.Properties.Add("Account", account);
+            }
+            App.Current.MainPage = new RootView();
         }
     }
 }

@@ -343,14 +343,9 @@ namespace XamarinClient
             if (App.Current.Properties.ContainsKey("Account"))
             {
                 App.Current.Properties.Remove("Account");
-                try
-                {
-                    File.Delete(App.AccountPath);
-                }
-                catch (Exception e)
-                {
-                    File.WriteAllText(App.AccountPath, "");
-                }
+                Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
+                pinAccount.Properties.Remove("PrivateKey");
+                Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
             }
             return;
         }
@@ -359,7 +354,13 @@ namespace XamarinClient
         {
             try
             {
-                File.WriteAllText(App.AccountPath, Convert.ToBase64String(account.privateKey));
+                Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
+                if(!pinAccount.Properties.ContainsKey("PrivateKey")){
+                    pinAccount.Properties.Add("PrivateKey",Convert.ToBase64String(account.privateKey));
+                } else {
+                    pinAccount.Properties["PrivateKey"] = Convert.ToBase64String(account.privateKey);
+                }
+                Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
             }
             catch (Exception e)
             {
@@ -484,6 +485,12 @@ namespace XamarinClient
                 PrivKey.Text = Convert.ToBase64String(acc.privateKey);
             }
             pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
+            if (pinAccount.Properties["FingerPrint"].Equals("True"))
+            {
+                FPswitch.IsToggled = true;
+            } else {
+                FPswitch.IsToggled = false;
+            }
         }
     }
 

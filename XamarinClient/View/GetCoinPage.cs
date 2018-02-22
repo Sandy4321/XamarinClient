@@ -23,6 +23,8 @@ namespace XamarinClient
 
         public GetCoinPage()
         {
+            Title = "Red Belly Blockchain";
+
             Role = new Picker
             {
                 Title = "Role",

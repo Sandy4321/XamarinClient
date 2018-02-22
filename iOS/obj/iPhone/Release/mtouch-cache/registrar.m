@@ -7352,14 +7352,14 @@ exception_handling:;
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0xE500);
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0xD600);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_4 (self, _cmd, &managed_method, &call_super, 0xE600);
+		id rv = native_to_managed_trampoline_4 (self, _cmd, &managed_method, &call_super, 0xD700);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [Xamarin_Forms_Platform_iOS_FormsApplicationDelegate class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -13516,7 +13516,7 @@ exception_handling:;
 		{ NULL, 0x2951E /* 'UITabBarController' => 'UIKit.UITabBarController, Xamarin.iOS' */ },
 		{ NULL, 0x2F31E /* 'UIWebView' => 'UIKit.UIWebView, Xamarin.iOS' */ },
 		{ NULL, 0x1126 /* 'Xamarin_Forms_Platform_iOS_FormsApplicationDelegate' => 'Xamarin.Forms.Platform.iOS.FormsApplicationDelegate, Xamarin.Forms.Platform.iOS' */ },
-		{ NULL, 0x2500 /* 'AppDelegate' => 'XamarinClient.iOS.AppDelegate, XamarinClient.iOS' */ },
+		{ NULL, 0x2100 /* 'AppDelegate' => 'XamarinClient.iOS.AppDelegate, XamarinClient.iOS' */ },
 		{ NULL, 0xB81E /* 'UIKit_UIView_UIViewAppearance' => 'UIKit.UIView+UIViewAppearance, Xamarin.iOS' */ },
 		{ NULL, 0x6C1E /* 'UIKit_UIControl_UIControlAppearance' => 'UIKit.UIControl+UIControlAppearance, Xamarin.iOS' */ },
 		{ NULL, 0x731E /* 'UIKit_UIAlertView__UIAlertViewDelegate' => 'UIKit.UIAlertView+_UIAlertViewDelegate, Xamarin.iOS' */ },

@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using BlockchainTools;
 using Newtonsoft.Json;
+
 using System;
 using System.IO;
 using System.Net.Http;
@@ -14,6 +15,7 @@ namespace XamarinClient
         public static readonly string AppName = "RBBCWallet";
 
         public static string AccountPath;
+
         public static string ServersPath;
 
         public App()
@@ -37,16 +39,13 @@ namespace XamarinClient
 
             if (File.Exists(AccountPath))
             {
-                string content = File.ReadAllText(AccountPath);
-                if(!string.IsNullOrEmpty(content)){
-                    try
-                    {
-                        Account account = new Account(content);
-                        Application.Current.Properties.Add("Account", account);
-                    }
-                    catch (Exception e) { }
+                try{
+                    File.Delete(AccountPath);
+                } catch(Exception e){
+                    Console.WriteLine(e.Message);
                 }
             }
+
 
             if (File.Exists(ServersPath))
             {

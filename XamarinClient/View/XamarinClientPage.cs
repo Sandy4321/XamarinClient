@@ -193,6 +193,7 @@ namespace XamarinClient
                 acc = null;
                 Acc.Text = "N/A";
                 Balance.Text = "-1";
+                UtxoTable.Clear();
             }
         }
 
