@@ -11,9 +11,13 @@ void xamarin_register_assemblies_impl ()
 	guint32 exception_gchandle = 0;
 	xamarin_open_and_register ("Xamarin.Forms.Platform.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Xamarin.Auth.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Rg.Plugins.Popup.IOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("SlideOverKit.iOS.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("FormsPinView.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("ZXing.Net.Mobile.Forms.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);

@@ -9,28 +9,58 @@ namespace XamarinClient
 {
     public class UtxoDisplay
     {
-        public string DisplayName;
         public UtxoOutput utxo;
+        public string Header { get; set; }
+        public string Detail { get; set; }
 
         public UtxoDisplay(UtxoOutput u){
             this.utxo = u;
-            this.DisplayName = "Value: " + u.value + " Script: "+Convert.ToBase64String(u.script);
+            this.Header = "Value: " + u.value;
+            this.Detail = "Script: " + Convert.ToBase64String(u.script);
         }
+    }
 
-        public override string ToString()
-        {
-            return DisplayName;
+    public class TxInDisplay
+    {
+        public string Header { get; set; }
+        public string Detail { get; set; }
+
+        public TxInDisplay(Tuple<string,int> tuple){
+            Header = "From: " + tuple.Item1;
+            Detail = "Value:" + tuple.Item2;
         }
+    }
 
-        public override bool Equals(System.Object obj)
+    public class TxOutDisplay
+    {
+        public string Header { get; set; }
+        public string Detail { get; set; }
+
+        public TxOutDisplay(TxOut txOut)
         {
-            if (obj == null)
+            Header = "To: " + txOut.address;
+            Detail = "Value:" + txOut.value;
+        }
+    }
+
+    public class DetailCell : ViewCell
+    {
+        public DetailCell()
+        {
+            var header = new Label();
+            var detail = new Label();
+
+            header.SetBinding(Label.TextProperty, "Header");
+            detail.SetBinding(Label.TextProperty, "Detail");
+
+            var s = new StackLayout
             {
-                return false;
-            }
-            UtxoDisplay otherUtxo = obj as UtxoDisplay;
-            if (otherUtxo.utxo.ToString().Equals(this.utxo.ToString())) return true;
-            return false;
+                Children ={
+                    header,
+                    detail,
+                }
+            };
+            this.View = s;
         }
     }
     
@@ -46,6 +76,12 @@ namespace XamarinClient
         public ListView Utxos;
         public static ObservableCollection<UtxoDisplay> UtxoTable;
 
+        public ListView TxOutHistory;
+        public static ObservableCollection<TxOutDisplay> TxOutHistoryTable;
+
+        public ListView TxInHistory;
+        public static ObservableCollection<TxInDisplay> TxInHistoryTable;
+
         public Button Refresh;
 
         public XamarinClientPage()
@@ -54,7 +90,10 @@ namespace XamarinClient
             Icon = "homepage.png";
 
             Acc = new Label { Text = "N/A" };
+
             UtxoTable = new ObservableCollection<UtxoDisplay>();
+            TxOutHistoryTable = new ObservableCollection<TxOutDisplay>();
+            TxInHistoryTable = new ObservableCollection<TxInDisplay>();
 
             Balance = new Label {
                 Text = "-1",
@@ -66,7 +105,7 @@ namespace XamarinClient
 
             Refresh = new Button {
                 Image = "refresh.png",
-                HorizontalOptions = LayoutOptions.EndAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.CenterAndExpand,
             };
             Refresh.Clicked += RefreshPage;
@@ -80,7 +119,10 @@ namespace XamarinClient
             };
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
-            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(10, GridUnitType.Star) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
 
             userView.Children.Add(new StackLayout
             {
@@ -117,42 +159,119 @@ namespace XamarinClient
                 }
             }, 0, 1);
 
-            Utxos = new ListView();
+            //UTXO TABLE
+            Utxos = new ListView
+            {
+                RowHeight = 130,
+                SeparatorVisibility = SeparatorVisibility.None,
+            };
+            Utxos.ItemTemplate = new DataTemplate(typeof(DetailCell));
             Utxos.ItemsSource = UtxoTable;
             Utxos.ItemTapped += OnItemTapped;
-            Utxos.SeparatorVisibility = SeparatorVisibility.None;
 
             ScrollView UtxoDetail = new ScrollView();
             UtxoDetail.Content = Utxos;
 
-            StackLayout stack = new StackLayout
+            Grid UtxoGrid = new Grid
             {
                 BackgroundColor = Color.White,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                Children = {
-                    new StackLayout{
-                        Orientation = StackOrientation.Horizontal,
-                        HorizontalOptions = LayoutOptions.FillAndExpand,
-                        VerticalOptions = LayoutOptions.FillAndExpand,
-                        Children = {
-                            new Label{
-                                Text = "UTXO: ",
-                                FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
-                                FontAttributes = FontAttributes.Bold,
-                                HorizontalTextAlignment = TextAlignment.Start,
-                                VerticalTextAlignment = TextAlignment.Center,
-                            },
-                            Refresh,
-                        }
-                    },
-                    Utxos,
-                }
             };
+            UtxoGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            UtxoGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(5, GridUnitType.Star) });
+            UtxoGrid.Children.Add(
+                new Label{
+                Text = "UTXO:",
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                HorizontalTextAlignment = TextAlignment.Start,
+                VerticalTextAlignment = TextAlignment.Center,
+            },0,0);
+            UtxoGrid.Children.Add(Utxos,0,1);
 
-            userView.Children.Add(stack, 0, 2);
+            userView.Children.Add(UtxoGrid, 0, 2);
 
-            Content = userView;
+            //TransactionOut Table
+            TxOutHistory = new ListView
+            {
+                RowHeight = 70,
+                SeparatorVisibility = SeparatorVisibility.None,
+            };
+            TxOutHistory.ItemTemplate = new DataTemplate(typeof(DetailCell));
+            TxOutHistory.ItemsSource = TxOutHistoryTable;
+
+            Grid TxOutGrid = new Grid
+            {
+                BackgroundColor = Color.White,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+            };
+            TxOutGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            TxOutGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(5, GridUnitType.Star) });
+            TxOutGrid.Children.Add(
+            new Label
+            {
+                Text = "Outgoing Transactions:",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Start,
+                VerticalTextAlignment = TextAlignment.Center,
+            }, 0, 0);
+            TxOutGrid.Children.Add(TxOutHistory, 0, 1);
+
+            userView.Children.Add(TxOutGrid, 0, 3);
+
+            //TransactionIn Table
+            TxInHistory = new ListView
+            {
+                RowHeight = 70,
+                SeparatorVisibility = SeparatorVisibility.None,
+            };
+            TxInHistory.ItemTemplate = new DataTemplate(typeof(DetailCell));
+            TxInHistory.ItemsSource = TxInHistoryTable;
+
+            Grid TxInGrid = new Grid
+            {
+                BackgroundColor = Color.White,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+            };
+            TxInGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            TxInGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(5, GridUnitType.Star) });
+            TxInGrid.Children.Add(
+                new Label
+            {
+                Text = "Incoming Transactions:",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                FontAttributes = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                HorizontalTextAlignment = TextAlignment.Start,
+                VerticalTextAlignment = TextAlignment.Center,
+            }, 0, 0);
+            TxInGrid.Children.Add(TxInHistory, 0, 1);
+
+            userView.Children.Add(TxInGrid, 0, 4);
+
+            userView.Children.Add(new StackLayout
+            {
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                BackgroundColor = Color.White,
+                Children = {
+                    Refresh,
+                },
+            },0,5);
+
+            ScrollView mainView = new ScrollView();
+            mainView.Content = userView;
+
+            Content = mainView;
         }
 
         public void Load()
@@ -162,7 +281,6 @@ namespace XamarinClient
                 acc = Application.Current.Properties["Account"] as Account;
                 servers = Application.Current.Properties["Servers"] as ObservableCollection<ServerDisplay>;
 
-                List<UtxoOutput> list = new List<UtxoOutput>();
                 Acc.Text = Convert.ToBase64String(acc.address);
 
                 client = new RpcClient(false);
@@ -184,16 +302,32 @@ namespace XamarinClient
 
                 Balance.Text = client.GetBalance().ToString();
 
-                list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
                 UtxoTable.Clear();
                 foreach(UtxoOutput u in list){
                     if(u!=null) UtxoTable.Add(new UtxoDisplay(u));
+                }
+
+                List<TxOut> TxOuts = client.GetTransactionFromAccount();
+                TxOutHistoryTable.Clear();
+                foreach(TxOut txOut in TxOuts)
+                {
+                    TxOutHistoryTable.Add(new TxOutDisplay(txOut));
+                }
+
+                List<Tuple<string, int>> TxIns = client.GetTransactionToAccount();
+                TxInHistoryTable.Clear();
+                foreach(Tuple<string,int> tuple in TxIns)
+                {
+                    TxInHistoryTable.Add(new TxInDisplay(tuple));
                 }
             } else {
                 acc = null;
                 Acc.Text = "N/A";
                 Balance.Text = "-1";
                 UtxoTable.Clear();
+                TxOutHistoryTable.Clear();
+                TxInHistoryTable.Clear();
             }
         }
 
@@ -202,9 +336,13 @@ namespace XamarinClient
             await Navigation.PushAsync(new UtxoView(utxo.utxo));
         }
 
-        async void RefreshPage(Object sender, EventArgs args)
+        void RefreshPage(Object sender, EventArgs args)
         {
-            Load();
+            Refresh.IsEnabled = false;
+            Task.Run(() => {
+                Load();
+            });
+            Refresh.IsEnabled = true;
         }
 
         protected override void OnAppearing()

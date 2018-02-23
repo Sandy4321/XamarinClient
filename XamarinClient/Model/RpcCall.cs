@@ -5,6 +5,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Security;
 using System.Security.Authentication;
@@ -57,14 +59,33 @@ namespace BlockchainTools
                 } while (bufferLength != 0);
                 recv = recv.Substring(0, recv.IndexOf("\n"));
                 recvJson = JObject.Parse(recv);
-                // Console.WriteLine(recvJson);
-                Console.WriteLine(recv.Length);
+                Console.WriteLine(recvJson);
             }
             string result = recvJson.GetValue("result");
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
             byte[] b = Convert.FromBase64String(result);
-            Console.WriteLine(Encoding.UTF8.GetString(b));
 
+
+            string Txs = Encoding.UTF8.GetString(b);
+            Console.WriteLine(Txs);
+            Txs = Txs.Substring(1, Txs.Length - 2);
+            List<string> list = Txs.Split(',').ToList();
+            foreach (string str in list)
+            {
+                Console.WriteLine();
+
+                string tx = str.Substring(1, str.Length - 2);
+                //Console.WriteLine("Signed Transaction Hash: "+tx);
+
+                Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
+                Console.WriteLine("From address: " + Convert.ToBase64String(transaction.FromAddress));
+                Console.WriteLine("TxOuts:");
+
+                foreach (TxOut txOut in transaction.TxOuts)
+                {
+                    Console.WriteLine("To address: " + txOut.address + "\nValue: " + txOut.value);
+                }
+            }
         }
 
         public byte[] InvokeAndReadResponse(string method, object[] parameters, TcpClient client, int sleepTime)
@@ -102,13 +123,12 @@ namespace BlockchainTools
                     return InvokeAndReadResponse(method, parameters, client, sleepTime + 100);
                 }
             }
-            return GetResultFromServerResponse(Encoding.UTF8.GetBytes(recv));
+            return GetResultFromServerResponse(recv);
         }
 
-        public byte[] GetResultFromServerResponse(byte[] response)
+        public byte[] GetResultFromServerResponse(string response)
         {
-            string res = Encoding.UTF8.GetString(response);
-            JObject responseJson = JObject.Parse(res);
+            JObject responseJson = JObject.Parse(response);
             string result = responseJson.GetValue("result").ToString();
             //File.WriteAllText(@"C:\Users\Peter Hua\Desktop\TestServer\BlockchainTools\BlockchainTools\7622.txt",result);
             result = result.Replace("\0", "");
@@ -139,7 +159,7 @@ namespace BlockchainTools
             return false;
         }
 
-        public static byte[] InvokeAndReadResponse(string method, object[] parameters, TcpClient client)
+        public static string InvokeAndReadResponse(string method, object[] parameters, TcpClient client)
         {
             client = new TcpClient("129.78.10.53", 7522);
             Console.WriteLine("Server Connected");
@@ -172,7 +192,7 @@ namespace BlockchainTools
             return readResponse(sslStream, 50);
         }
 
-        public static byte[] readResponse(SslStream sslStream, int sleepTime)
+        public static string readResponse(SslStream sslStream, int sleepTime)
         {
             string recv = "";
             int bufferLength = 0;
@@ -187,7 +207,7 @@ namespace BlockchainTools
                 }
             } while (bufferLength != 0);
             recv = recv.Substring(0, recv.IndexOf("\n"));
-            return Encoding.UTF8.GetBytes(recv);
+            return recv;
         }
     }
 }

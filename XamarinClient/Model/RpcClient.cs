@@ -227,6 +227,210 @@ namespace BlockchainTools
             }
         }
 
+        public List<TxOut> GetTransactionFromAccount()
+        {
+            if (ServerList.Count == 0)
+            {
+                return null;
+            }
+            results = new Dictionary<byte[], int>(new ByteArrayComparer());
+            int bizantine = ServerList.Count / 3;
+            List<Thread> threads = new List<Thread>();
+            for (int i = 0; i < 2 * bizantine + 1; i++)
+            {
+                Thread t = new Thread(GetTransactionFromAccountThread);
+                t.Start(i);
+                threads.Add(t);
+            }
+            foreach (Thread t in threads)
+            {
+                t.Join();
+            }
+            if (results.Keys.Count == 0)
+            {
+                return null;
+            }
+            byte[] value = results.Keys.First();
+            int occurence = results[value];
+            foreach (byte[] b in results.Keys)
+            {
+                if (results[b] > occurence)
+                {
+                    value = b;
+                    occurence = results[b];
+                }
+            }
+            Console.WriteLine("Occurence:" + results[value]);
+
+            string Txs = Encoding.UTF8.GetString(value);
+            Txs = Txs.Substring(1, Txs.Length - 2);
+            List<string> list = Txs.Split(',').ToList();
+            List<TxOut> txOuts = new List<TxOut>();
+            foreach (string str in list)
+            {
+                string tx = str.Substring(1, str.Length - 2);
+                Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
+                foreach (TxOut txOut in transaction.TxOuts)
+                {
+                    if (!txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                    {
+                        txOuts.Add(txOut);
+                    }
+                }
+            }
+            return txOuts;
+        }
+
+        public void GetTransactionFromAccountThread(object param)
+        {
+            int i = (int)param;
+            try
+            {
+                TcpClient Client = new TcpClient();
+                Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetTxForAccount",
+                    new object[] { this.Account.address }, Client, 50);
+                if (result == null)
+                {
+                    return;
+                }
+                if (results.ContainsKey(result))
+                {
+                    results[result]++;
+                }
+                else
+                {
+                    results.Add(result, 1);
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    TcpClient Client = new TcpClient();
+                    Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                    Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                    byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetTxForAccount", new object[] { this.Account.address }, Client, 50);
+                    if (result == null)
+                    {
+                        return;
+                    }
+                    if (results.ContainsKey(result))
+                    {
+                        results[result]++;
+                    }
+                    else
+                    {
+                        results.Add(result, 1);
+                    }
+                }
+                catch (Exception exception) { }
+            }
+        }
+
+        public List<Tuple<string, int>> GetTransactionToAccount()
+        {
+            if (ServerList.Count == 0)
+            {
+                return null;
+            }
+            results = new Dictionary<byte[], int>(new ByteArrayComparer());
+            int bizantine = ServerList.Count / 3;
+            List<Thread> threads = new List<Thread>();
+            for (int i = 0; i < 2 * bizantine + 1; i++)
+            {
+                Thread t = new Thread(GetTransactionToAccountThread);
+                t.Start(i);
+                threads.Add(t);
+            }
+            foreach (Thread t in threads)
+            {
+                t.Join();
+            }
+            if (results.Keys.Count == 0)
+            {
+                return null;
+            }
+            byte[] value = results.Keys.First();
+            int occurence = results[value];
+            foreach (byte[] b in results.Keys)
+            {
+                if (results[b] > occurence)
+                {
+                    value = b;
+                    occurence = results[b];
+                }
+            }
+            Console.WriteLine("Occurence:" + results[value]);
+
+            string Txs = Encoding.UTF8.GetString(value);
+            Txs = Txs.Substring(1, Txs.Length - 2);
+            List<string> list = Txs.Split(',').ToList();
+            List<Tuple<string, int>> txOuts = new List<Tuple<string, int>>();
+            foreach (string str in list)
+            {
+                string tx = str.Substring(1, str.Length - 2);
+                Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
+                foreach (TxOut txOut in transaction.TxOuts)
+                {
+                    if (txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                    {
+                        txOuts.Add(new Tuple<string, int>(Convert.ToBase64String(transaction.FromAddress), txOut.value));
+                    }
+                }
+            }
+            return txOuts;
+        }
+
+        public void GetTransactionToAccountThread(object param)
+        {
+            int i = (int)param;
+            try
+            {
+                TcpClient Client = new TcpClient();
+                Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetReceiveTxForAccount",
+                    new object[] { this.Account.address }, Client, 50);
+                if (result == null)
+                {
+                    return;
+                }
+                if (results.ContainsKey(result))
+                {
+                    results[result]++;
+                }
+                else
+                {
+                    results.Add(result, 1);
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    TcpClient Client = new TcpClient();
+                    Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                    Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                    byte[] result = Rpc.InvokeAndReadResponse("RpcNode.GetReceiveTxForAccount", new object[] { this.Account.address }, Client, 50);
+                    if (result == null)
+                    {
+                        return;
+                    }
+                    if (results.ContainsKey(result))
+                    {
+                        results[result]++;
+                    }
+                    else
+                    {
+                        results.Add(result, 1);
+                    }
+                }
+                catch (Exception exception) { }
+            }
+        }
+
         //Initialize From BootStrapTable
         public void InitFromBootstrap()
         {
