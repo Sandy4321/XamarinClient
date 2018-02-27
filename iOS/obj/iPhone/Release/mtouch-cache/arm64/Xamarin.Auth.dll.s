@@ -59620,7 +59620,7 @@ _mono_aot_file_info:
 	.long 1408,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 127,44,226,147,209,36,22,42,88,52,35,211,218,24,212,216
+	.byte 64,132,78,47,166,12,45,71,96,248,201,193,109,167,51,212
 	.globl _mono_aot_module_Xamarin_Auth_info
 	.align 3
 _mono_aot_module_Xamarin_Auth_info:

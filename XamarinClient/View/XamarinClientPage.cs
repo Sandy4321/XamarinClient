@@ -310,16 +310,22 @@ namespace XamarinClient
 
                 List<TxOut> TxOuts = client.GetTransactionFromAccount();
                 TxOutHistoryTable.Clear();
-                foreach(TxOut txOut in TxOuts)
+                if (TxOuts != null)
                 {
-                    TxOutHistoryTable.Add(new TxOutDisplay(txOut));
+                    foreach (TxOut txOut in TxOuts)
+                    {
+                        TxOutHistoryTable.Add(new TxOutDisplay(txOut));
+                    }
                 }
 
                 List<Tuple<string, int>> TxIns = client.GetTransactionToAccount();
                 TxInHistoryTable.Clear();
-                foreach(Tuple<string,int> tuple in TxIns)
+                if (TxIns != null)
                 {
-                    TxInHistoryTable.Add(new TxInDisplay(tuple));
+                    foreach (Tuple<string, int> tuple in TxIns)
+                    {
+                        TxInHistoryTable.Add(new TxInDisplay(tuple));
+                    }
                 }
             } else {
                 acc = null;

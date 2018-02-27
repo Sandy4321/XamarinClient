@@ -17,8 +17,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Transaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\TransactionService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\UTXO.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\UtxoOutput.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\UtxoReturn.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\HexHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\BarCodePage.cs" />

@@ -4071,7 +4071,7 @@ ldr x0, [x16, #792]
 .word 0xaa1a03e0
 .word 0xd2800f61
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 145 0
 .word 0xd2800018
@@ -4117,13 +4117,13 @@ add x16, x16, mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #808]
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 149 0
 .word 0xaa1a03e0
 .word 0xd2800441
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 150 0
 
@@ -4136,7 +4136,7 @@ bl _p_50
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 151 0
 
@@ -4145,7 +4145,7 @@ add x16, x16, mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #816]
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 152 0
 
@@ -4161,7 +4161,7 @@ add x16, x16, mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #824]
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .word 0x14000009
 .loc 4 155 0
@@ -4212,7 +4212,7 @@ ldr x15, [x16, #272]
 .word 0xaa1a03e0
 .word 0xd2800fa1
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 159 0
 .word 0x140000a5
@@ -4220,7 +4220,7 @@ ldr x15, [x16, #272]
 .word 0xaa1a03e0
 .word 0xd2800b61
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 162 0
 .word 0xd2800018
@@ -4270,7 +4270,7 @@ add x16, x16, mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #808]
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 166 0
 .word 0xb40000d9
@@ -4287,7 +4287,7 @@ add x16, x16, mono_aot_System_Json_got@PAGEOFF
 ldr x1, [x16, #824]
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 170 0
 .word 0xd2800038
@@ -4327,7 +4327,7 @@ ldr x15, [x16, #272]
 .word 0xaa1a03e0
 .word 0xd2800ba1
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 173 0
 .word 0x14000045
@@ -4349,7 +4349,7 @@ ldr x26, [x16, #544]
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xf9400322
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 176 0
 .word 0x14000033
@@ -4357,7 +4357,7 @@ ldr x26, [x16, #544]
 .word 0xaa1a03e0
 .word 0xd2800441
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 179 0
 .word 0xb4000179
@@ -4380,13 +4380,13 @@ bl _p_50
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 180 0
 .word 0xaa1a03e0
 .word 0xd2800441
 .word 0xf9400342
-.word 0xf9407450
+.word 0xf9406c50
 .word 0xd63f0200
 .loc 4 181 0
 .word 0x14000013
@@ -4408,7 +4408,7 @@ bl _p_52
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf9400342
-.word 0xf9406450
+.word 0xf9406050
 .word 0xd63f0200
 .loc 4 186 0
 .word 0xa94167b8
@@ -16061,7 +16061,7 @@ _mono_aot_file_info:
 	.long 344,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 255,131,222,175,81,80,243,147,152,154,11,92,58,191,128,108
+	.byte 85,170,170,83,183,72,253,201,161,196,153,234,173,99,97,208
 	.globl _mono_aot_module_System_Json_info
 	.align 3
 _mono_aot_module_System_Json_info:
