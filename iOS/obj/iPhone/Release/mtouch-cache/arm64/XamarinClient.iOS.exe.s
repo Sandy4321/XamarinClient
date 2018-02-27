@@ -32424,7 +32424,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 126 0
+.loc 20 127 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -32490,11 +32490,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 134 0
+.loc 20 135 0
 .word 0xf940e721
 .word 0xaa1903e0
 bl _p_205
-.loc 20 135 0
+.loc 20 136 0
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8ca7bfd
@@ -46846,7 +46846,7 @@ ldr x15, [x16, #272]
 .word 0xf940005e
 bl _p_96
 .word 0x53001c00
-.word 0x34000fe0
+.word 0x34001540
 .loc 20 99 0
 .word 0xf9400f20
 .word 0xf9002fa0
@@ -46894,6 +46894,53 @@ bl _p_292
 .word 0xf940007e
 bl _p_434
 .loc 20 101 0
+.word 0xf9401320
+.word 0xf9400801
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9403430
+.word 0xd63f0200
+.word 0xaa0003e2
+
+adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
+add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
+ldr x1, [x16, #80]
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_326
+.word 0x53001c00
+.word 0x340003a0
+.word 0xaa1a03e0
+.word 0xf9400341
+.word 0xf9403430
+.word 0xd63f0200
+.word 0xf90027a0
+
+adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
+add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xf90023a0
+.word 0xf9401320
+.word 0xf9400801
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9403430
+.word 0xd63f0200
+.word 0xaa0003e2
+
+adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
+add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
+ldr x1, [x16, #80]
+.word 0xaa0203e0
+.word 0xf940005e
+bl _p_292
+.word 0xaa0003e2
+.word 0xf94023a1
+.word 0xf94027a3
+.word 0xaa0303e0
+.word 0xf940007e
+bl _p_434
+.loc 20 102 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -46919,7 +46966,7 @@ ldr x0, [x16, #2968]
 .word 0xf9400063
 .word 0xf9403c70
 .word 0xd63f0200
-.loc 20 102 0
+.loc 20 103 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -46944,7 +46991,7 @@ ldr x0, [x16, #2968]
 .word 0xf9400063
 .word 0xf9404070
 .word 0xd63f0200
-.loc 20 103 0
+.loc 20 104 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -46976,7 +47023,7 @@ ldr x15, [x16, #3416]
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
-.loc 20 104 0
+.loc 20 105 0
 .word 0xf9401320
 .word 0xf9400c00
 bl _p_266
@@ -46991,10 +47038,10 @@ ldr x15, [x16, #1392]
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.loc 20 105 0
+.loc 20 106 0
 .word 0xd2800020
 .word 0x14000057
-.loc 20 109 0
+.loc 20 110 0
 .word 0xf9400f22
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
@@ -47005,7 +47052,7 @@ ldr x1, [x16, #200]
 bl _p_96
 .word 0x53001c00
 .word 0x34000340
-.loc 20 111 0
+.loc 20 112 0
 .word 0xf9400f20
 .word 0xf9400b21
 bl _p_6
@@ -47022,7 +47069,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 112 0
+.loc 20 113 0
 .word 0xf9401320
 .word 0xf9400c00
 .word 0xf940e402
@@ -47033,9 +47080,9 @@ ldr x1, [x16, #1368]
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_331
-.loc 20 113 0
+.loc 20 114 0
 .word 0x14000034
-.loc 20 116 0
+.loc 20 117 0
 .word 0xf9401320
 .word 0xf9400c00
 
@@ -47051,7 +47098,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x3, [x16, #488]
 bl _p_393
-.loc 20 117 0
+.loc 20 118 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -47069,7 +47116,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 118 0
+.loc 20 119 0
 
 adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+0
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
@@ -47087,7 +47134,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 20 119 0
+.loc 20 120 0
 .word 0xf9401320
 .word 0xf9400c00
 .word 0xf940e402
@@ -47098,7 +47145,7 @@ ldr x1, [x16, #136]
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_331
-.loc 20 121 0
+.loc 20 122 0
 .word 0xd2800000
 .word 0xa9416bb9
 .word 0x910003bf
@@ -91733,7 +91780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 27984
+.word 27990
 	.no_dead_strip plt_System_Net_Sockets_TcpClient_GetStream
 plt_System_Net_Sockets_TcpClient_GetStream:
 _p_2:
@@ -91741,7 +91788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 27992
+.word 27998
 	.no_dead_strip plt_Newtonsoft_Json_JsonConvert_SerializeObject_object
 plt_Newtonsoft_Json_JsonConvert_SerializeObject_object:
 _p_3:
@@ -91749,7 +91796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 27997
+.word 28003
 	.no_dead_strip plt_System_Text_Encoding_get_UTF8
 plt_System_Text_Encoding_get_UTF8:
 _p_4:
@@ -91757,7 +91804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 28002
+.word 28008
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_5:
@@ -91765,7 +91812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 28007
+.word 28013
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_6:
@@ -91773,7 +91820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 28015
+.word 28021
 	.no_dead_strip plt_string_IndexOf_string
 plt_string_IndexOf_string:
 _p_7:
@@ -91781,7 +91828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 28020
+.word 28026
 	.no_dead_strip plt_string_Substring_int_int
 plt_string_Substring_int_int:
 _p_8:
@@ -91789,7 +91836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 28025
+.word 28031
 	.no_dead_strip plt_Newtonsoft_Json_Linq_JObject_Parse_string
 plt_Newtonsoft_Json_Linq_JObject_Parse_string:
 _p_9:
@@ -91797,7 +91844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 28030
+.word 28036
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string
 plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string:
 _p_10:
@@ -91805,7 +91852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 28035
+.word 28041
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_11:
@@ -91813,7 +91860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 28040
+.word 28046
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Action_3_System_Runtime_CompilerServices_CallSite_System_Type_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Action_3_System_Runtime_CompilerServices_CallSite_System_Type_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_12:
@@ -91821,7 +91868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 28045
+.word 28051
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type
 plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type:
 _p_13:
@@ -91829,7 +91876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 28056
+.word 28062
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_14:
@@ -91837,7 +91884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 28061
+.word 28067
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_15:
@@ -91845,7 +91892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 28072
+.word 28078
 	.no_dead_strip plt_System_Convert_FromBase64String_string
 plt_System_Convert_FromBase64String_string:
 _p_16:
@@ -91853,7 +91900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 28083
+.word 28089
 	.no_dead_strip plt_System_Console_WriteLine_string
 plt_System_Console_WriteLine_string:
 _p_17:
@@ -91861,7 +91908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 28088
+.word 28094
 	.no_dead_strip plt_string_Split_char__
 plt_string_Split_char__:
 _p_18:
@@ -91869,7 +91916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 28093
+.word 28099
 	.no_dead_strip plt_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string
 plt_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string:
 _p_19:
@@ -91877,7 +91924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 28098
+.word 28104
 	.no_dead_strip plt_System_Collections_Generic_List_1_string_GetEnumerator
 plt_System_Collections_Generic_List_1_string_GetEnumerator:
 _p_20:
@@ -91885,7 +91932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 28110
+.word 28116
 	.no_dead_strip plt_System_Console_WriteLine
 plt_System_Console_WriteLine:
 _p_21:
@@ -91893,7 +91940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 28121
+.word 28127
 	.no_dead_strip plt_BlockchainTools_Tx_DeserializeSignedTx_byte__
 plt_BlockchainTools_Tx_DeserializeSignedTx_byte__:
 _p_22:
@@ -91901,7 +91948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 28126
+.word 28132
 	.no_dead_strip plt_System_Convert_ToBase64String_byte__
 plt_System_Convert_ToBase64String_byte__:
 _p_23:
@@ -91909,7 +91956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 28128
+.word 28134
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetEnumerator
 plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetEnumerator:
 _p_24:
@@ -91917,7 +91964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 28133
+.word 28139
 	.no_dead_strip plt_string_Concat_object__
 plt_string_Concat_object__:
 _p_25:
@@ -91925,7 +91972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 28144
+.word 28150
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_TxOut_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_TxOut_MoveNext:
 _p_26:
@@ -91933,7 +91980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 28149
+.word 28155
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_string_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_string_MoveNext:
 _p_27:
@@ -91941,7 +91988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 28160
+.word 28166
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_28:
@@ -91949,7 +91996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 28171
+.word 28177
 	.no_dead_strip plt_System_Net_Sockets_Socket_get_RemoteEndPoint
 plt_System_Net_Sockets_Socket_get_RemoteEndPoint:
 _p_29:
@@ -91957,7 +92004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 28206
+.word 28212
 	.no_dead_strip plt_BlockchainTools_TlsClient_InvokeAndReadResponse_string_object___System_Net_Sockets_TcpClient
 plt_BlockchainTools_TlsClient_InvokeAndReadResponse_string_object___System_Net_Sockets_TcpClient:
 _p_30:
@@ -91965,7 +92012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 28211
+.word 28217
 	.no_dead_strip plt_BlockchainTools_RpcCall_GetResultFromServerResponse_string
 plt_BlockchainTools_RpcCall_GetResultFromServerResponse_string:
 _p_31:
@@ -91973,7 +92020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 28213
+.word 28219
 	.no_dead_strip plt_System_Threading_Thread_Sleep_int
 plt_System_Threading_Thread_Sleep_int:
 _p_32:
@@ -91981,7 +92028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 28215
+.word 28221
 	.no_dead_strip plt_System_Net_Sockets_NetworkStream_get_DataAvailable
 plt_System_Net_Sockets_NetworkStream_get_DataAvailable:
 _p_33:
@@ -91989,7 +92036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 28220
+.word 28226
 	.no_dead_strip plt_BlockchainTools_RpcCall_InvokeAndReadResponse_string_object___System_Net_Sockets_TcpClient_int
 plt_BlockchainTools_RpcCall_InvokeAndReadResponse_string_object___System_Net_Sockets_TcpClient_int:
 _p_34:
@@ -91997,7 +92044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 28225
+.word 28231
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_35:
@@ -92005,7 +92052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 28227
+.word 28233
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_36:
@@ -92013,7 +92060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 28266
+.word 28272
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_37:
@@ -92021,7 +92068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 28294
+.word 28300
 	.no_dead_strip plt_Newtonsoft_Json_Linq_JObject_GetValue_string
 plt_Newtonsoft_Json_Linq_JObject_GetValue_string:
 _p_38:
@@ -92029,7 +92076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 28314
+.word 28320
 	.no_dead_strip plt_string_Replace_string_string
 plt_string_Replace_string_string:
 _p_39:
@@ -92037,7 +92084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 28319
+.word 28325
 	.no_dead_strip plt_string_Concat_object_object
 plt_string_Concat_object_object:
 _p_40:
@@ -92045,7 +92092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 28324
+.word 28330
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_41:
@@ -92053,7 +92100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 28329
+.word 28335
 	.no_dead_strip plt_System_Net_Sockets_TcpClient__ctor_string_int
 plt_System_Net_Sockets_TcpClient__ctor_string_int:
 _p_42:
@@ -92061,7 +92108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 28361
+.word 28367
 	.no_dead_strip plt_System_Net_Security_SslStream__ctor_System_IO_Stream_bool_System_Net_Security_RemoteCertificateValidationCallback_System_Net_Security_LocalCertificateSelectionCallback
 plt_System_Net_Security_SslStream__ctor_System_IO_Stream_bool_System_Net_Security_RemoteCertificateValidationCallback_System_Net_Security_LocalCertificateSelectionCallback:
 _p_43:
@@ -92069,7 +92116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 28366
+.word 28372
 	.no_dead_strip plt_System_Net_Security_SslStream_AuthenticateAsClient_string
 plt_System_Net_Security_SslStream_AuthenticateAsClient_string:
 _p_44:
@@ -92077,7 +92124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 28371
+.word 28377
 	.no_dead_strip plt_System_Console_WriteLine_string_object
 plt_System_Console_WriteLine_string_object:
 _p_45:
@@ -92085,7 +92132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 28376
+.word 28382
 	.no_dead_strip plt_System_Net_Sockets_TcpClient_Close
 plt_System_Net_Sockets_TcpClient_Close:
 _p_46:
@@ -92093,7 +92140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 28381
+.word 28387
 	.no_dead_strip plt_BlockchainTools_TlsClient_readResponse_System_Net_Security_SslStream_int
 plt_BlockchainTools_TlsClient_readResponse_System_Net_Security_SslStream_int:
 _p_47:
@@ -92101,7 +92148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 28386
+.word 28392
 	.no_dead_strip plt_System_Collections_Hashtable__ctor
 plt_System_Collections_Hashtable__ctor:
 _p_48:
@@ -92109,7 +92156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 28388
+.word 28394
 	.no_dead_strip plt_BlockchainTools_Account__ctor
 plt_BlockchainTools_Account__ctor:
 _p_49:
@@ -92117,7 +92164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 28393
+.word 28399
 	.no_dead_strip plt_BlockchainTools_TransactionService__ctor
 plt_BlockchainTools_TransactionService__ctor:
 _p_50:
@@ -92125,7 +92172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 28396
+.word 28402
 	.no_dead_strip plt_System_Tuple_2_string_int__ctor_string_int
 plt_System_Tuple_2_string_int__ctor_string_int:
 _p_51:
@@ -92133,7 +92180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 28398
+.word 28404
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Tuple_2_string_int_Add_System_Tuple_2_string_int
 plt_System_Collections_Generic_List_1_System_Tuple_2_string_int_Add_System_Tuple_2_string_int:
 _p_52:
@@ -92141,7 +92188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 28409
+.word 28415
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_byte___System_Func_1_byte__
 plt_System_Threading_Tasks_Task_Run_byte___System_Func_1_byte__:
 _p_53:
@@ -92149,7 +92196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 28420
+.word 28426
 	.no_dead_strip plt_System_Net_Sockets_TcpClient__ctor
 plt_System_Net_Sockets_TcpClient__ctor:
 _p_54:
@@ -92157,7 +92204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 28432
+.word 28438
 	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException
 plt_System_ThrowHelper_ThrowArgumentOutOfRangeException:
 _p_55:
@@ -92165,7 +92212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 28437
+.word 28443
 	.no_dead_strip plt_System_Net_Sockets_TcpClient_Connect_string_int
 plt_System_Net_Sockets_TcpClient_Connect_string_int:
 _p_56:
@@ -92173,7 +92220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 28442
+.word 28448
 	.no_dead_strip plt__jit_icall_mono_monitor_enter_v4_internal
 plt__jit_icall_mono_monitor_enter_v4_internal:
 _p_57:
@@ -92181,7 +92228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 28447
+.word 28453
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int_ContainsKey_byte__
 plt_System_Collections_Generic_Dictionary_2_byte___int_ContainsKey_byte__:
 _p_58:
@@ -92189,7 +92236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 28480
+.word 28486
 	.no_dead_strip plt_string_Concat_object_object_object
 plt_string_Concat_object_object_object:
 _p_59:
@@ -92197,7 +92244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 28491
+.word 28497
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int_get_Item_byte__
 plt_System_Collections_Generic_Dictionary_2_byte___int_get_Item_byte__:
 _p_60:
@@ -92205,7 +92252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 28496
+.word 28502
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int_set_Item_byte___int
 plt_System_Collections_Generic_Dictionary_2_byte___int_set_Item_byte___int:
 _p_61:
@@ -92213,7 +92260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 28507
+.word 28513
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int_Add_byte___int
 plt_System_Collections_Generic_Dictionary_2_byte___int_Add_byte___int:
 _p_62:
@@ -92221,7 +92268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 28518
+.word 28524
 	.no_dead_strip plt_System_Threading_Monitor_Exit_object
 plt_System_Threading_Monitor_Exit_object:
 _p_63:
@@ -92229,7 +92276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 28529
+.word 28535
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_System_Collections_Generic_List_1_BlockchainTools_TxOut_System_Func_1_System_Collections_Generic_List_1_BlockchainTools_TxOut
 plt_System_Threading_Tasks_Task_Run_System_Collections_Generic_List_1_BlockchainTools_TxOut_System_Func_1_System_Collections_Generic_List_1_BlockchainTools_TxOut:
 _p_64:
@@ -92237,7 +92284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 28534
+.word 28540
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_System_Collections_Generic_List_1_System_Tuple_2_string_int_System_Func_1_System_Collections_Generic_List_1_System_Tuple_2_string_int
 plt_System_Threading_Tasks_Task_Run_System_Collections_Generic_List_1_System_Tuple_2_string_int_System_Func_1_System_Collections_Generic_List_1_System_Tuple_2_string_int:
 _p_65:
@@ -92245,7 +92292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 28546
+.word 28552
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_BlockchainTools_RpcClient__InitFromBootstrapd__47_BlockchainTools_RpcClient__InitFromBootstrapd__47_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_BlockchainTools_RpcClient__InitFromBootstrapd__47_BlockchainTools_RpcClient__InitFromBootstrapd__47_:
 _p_66:
@@ -92253,7 +92300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 28558
+.word 28564
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task:
 _p_67:
@@ -92261,7 +92308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 28570
+.word 28576
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_Start_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_Start_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_:
 _p_68:
@@ -92269,7 +92316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 28575
+.word 28581
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_get_Task:
 _p_69:
@@ -92277,7 +92324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 28587
+.word 28593
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_ContainsKey_string:
 _p_70:
@@ -92285,7 +92332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 28598
+.word 28604
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_get_Item_string:
 _p_71:
@@ -92293,7 +92340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 28609
+.word 28615
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_string_int_GetEnumerator:
 _p_72:
@@ -92301,7 +92348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 28620
+.word 28626
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_get_Item_string:
 _p_73:
@@ -92309,7 +92356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 28631
+.word 28637
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_Enumerator_string_int_MoveNext
 plt_System_Collections_Generic_Dictionary_2_Enumerator_string_int_MoveNext:
 _p_74:
@@ -92317,7 +92364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 28642
+.word 28648
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_int_System_Func_1_System_Threading_Tasks_Task_1_int
 plt_System_Threading_Tasks_Task_Run_int_System_Func_1_System_Threading_Tasks_Task_1_int:
 _p_75:
@@ -92325,7 +92372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 28653
+.word 28659
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_int_get_Result
 plt_System_Threading_Tasks_Task_1_int_get_Result:
 _p_76:
@@ -92333,7 +92380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 28665
+.word 28671
 	.no_dead_strip plt_Org_BouncyCastle_Utilities_Encoders_Base64_ToBase64String_byte__
 plt_Org_BouncyCastle_Utilities_Encoders_Base64_ToBase64String_byte__:
 _p_77:
@@ -92341,7 +92388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 28676
+.word 28682
 	.no_dead_strip plt_BlockchainTools_HexHelper_StringToByteArray_string
 plt_BlockchainTools_HexHelper_StringToByteArray_string:
 _p_78:
@@ -92349,7 +92396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 28681
+.word 28687
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_Add_BlockchainTools_TxIn
 plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_Add_BlockchainTools_TxIn:
 _p_79:
@@ -92357,7 +92404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 28684
+.word 28690
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_ToArray
 plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_ToArray:
 _p_80:
@@ -92365,7 +92412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 28695
+.word 28701
 	.no_dead_strip plt_BlockchainTools_HexHelper_ByteArrayToString_byte__
 plt_BlockchainTools_HexHelper_ByteArrayToString_byte__:
 _p_81:
@@ -92373,7 +92420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 28706
+.word 28712
 	.no_dead_strip plt_BlockchainTools_TransactionService_MakeSignedTransaction_BlockchainTools_TxIn___byte___BlockchainTools_Account_int
 plt_BlockchainTools_TransactionService_MakeSignedTransaction_BlockchainTools_TxIn___byte___BlockchainTools_Account_int:
 _p_82:
@@ -92381,7 +92428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 28709
+.word 28715
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_bool_System_Func_1_System_Threading_Tasks_Task_1_bool
 plt_System_Threading_Tasks_Task_Run_bool_System_Func_1_System_Threading_Tasks_Task_1_bool:
 _p_83:
@@ -92389,7 +92436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 28711
+.word 28717
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_bool_get_Result
 plt_System_Threading_Tasks_Task_1_bool_get_Result:
 _p_84:
@@ -92397,7 +92444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 28723
+.word 28729
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int__ctor_System_Collections_Generic_IEqualityComparer_1_byte__
 plt_System_Collections_Generic_Dictionary_2_byte___int__ctor_System_Collections_Generic_IEqualityComparer_1_byte__:
 _p_85:
@@ -92405,7 +92452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 28734
+.word 28740
 	.no_dead_strip plt_System_Threading_Thread__ctor_System_Threading_ParameterizedThreadStart
 plt_System_Threading_Thread__ctor_System_Threading_ParameterizedThreadStart:
 _p_86:
@@ -92413,7 +92460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 28745
+.word 28751
 	.no_dead_strip plt_System_Threading_Thread_Start_object
 plt_System_Threading_Thread_Start_object:
 _p_87:
@@ -92421,7 +92468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 28750
+.word 28756
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Threading_Thread_Add_System_Threading_Thread
 plt_System_Collections_Generic_List_1_System_Threading_Thread_Add_System_Threading_Thread:
 _p_88:
@@ -92429,7 +92476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 28755
+.word 28761
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Threading_Thread_GetEnumerator
 plt_System_Collections_Generic_List_1_System_Threading_Thread_GetEnumerator:
 _p_89:
@@ -92437,7 +92484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 28766
+.word 28772
 	.no_dead_strip plt_System_Threading_Thread_Join
 plt_System_Threading_Thread_Join:
 _p_90:
@@ -92445,7 +92492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 28777
+.word 28783
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_Threading_Thread_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_System_Threading_Thread_MoveNext:
 _p_91:
@@ -92453,7 +92500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 28782
+.word 28788
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_byte___int_get_Keys
 plt_System_Collections_Generic_Dictionary_2_byte___int_get_Keys:
 _p_92:
@@ -92461,7 +92508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 28793
+.word 28799
 	.no_dead_strip plt_System_Linq_Enumerable_First_byte___System_Collections_Generic_IEnumerable_1_byte__
 plt_System_Linq_Enumerable_First_byte___System_Collections_Generic_IEnumerable_1_byte__:
 _p_93:
@@ -92469,7 +92516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 28804
+.word 28810
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_KeyCollection_byte___int_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_KeyCollection_byte___int_GetEnumerator:
 _p_94:
@@ -92477,7 +92524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 28816
+.word 28822
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_byte___int_MoveNext
 plt_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_byte___int_MoveNext:
 _p_95:
@@ -92485,7 +92532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 28827
+.word 28833
 	.no_dead_strip plt_string_Equals_string
 plt_string_Equals_string:
 _p_96:
@@ -92493,7 +92540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 28838
+.word 28844
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_Add_BlockchainTools_TxOut
 plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_Add_BlockchainTools_TxOut:
 _p_97:
@@ -92501,7 +92548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 28843
+.word 28849
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_Start_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_Start_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_:
 _p_98:
@@ -92509,7 +92556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 28854
+.word 28860
 	.no_dead_strip plt_System_Linq_Enumerable_SequenceEqual_byte_System_Collections_Generic_IEnumerable_1_byte_System_Collections_Generic_IEnumerable_1_byte
 plt_System_Linq_Enumerable_SequenceEqual_byte_System_Collections_Generic_IEnumerable_1_byte_System_Collections_Generic_IEnumerable_1_byte:
 _p_99:
@@ -92517,7 +92564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 28866
+.word 28872
 	.no_dead_strip plt_System_Linq_Enumerable_Sum_byte_System_Collections_Generic_IEnumerable_1_byte_System_Func_2_byte_int
 plt_System_Linq_Enumerable_Sum_byte_System_Collections_Generic_IEnumerable_1_byte_System_Func_2_byte_int:
 _p_100:
@@ -92525,7 +92572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 28878
+.word 28884
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int__ctor
 plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int__ctor:
 _p_101:
@@ -92533,7 +92580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 28890
+.word 28896
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int_ContainsKey_BlockchainTools_TxIn
 plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int_ContainsKey_BlockchainTools_TxIn:
 _p_102:
@@ -92541,7 +92588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 28901
+.word 28907
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int_Add_BlockchainTools_TxIn_int
 plt_System_Collections_Generic_Dictionary_2_BlockchainTools_TxIn_int_Add_BlockchainTools_TxIn_int:
 _p_103:
@@ -92549,7 +92596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 28912
+.word 28918
 	.no_dead_strip plt_System_Linq_Enumerable_Reverse_byte_System_Collections_Generic_IEnumerable_1_byte
 plt_System_Linq_Enumerable_Reverse_byte_System_Collections_Generic_IEnumerable_1_byte:
 _p_104:
@@ -92557,7 +92604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 28923
+.word 28929
 	.no_dead_strip plt_System_Linq_Enumerable_ToArray_byte_System_Collections_Generic_IEnumerable_1_byte
 plt_System_Linq_Enumerable_ToArray_byte_System_Collections_Generic_IEnumerable_1_byte:
 _p_105:
@@ -92565,7 +92612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 28935
+.word 28941
 	.no_dead_strip plt_System_BitConverter_GetBytes_int
 plt_System_BitConverter_GetBytes_int:
 _p_106:
@@ -92573,7 +92620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 28947
+.word 28953
 	.no_dead_strip plt_System_BitConverter_GetBytes_long
 plt_System_BitConverter_GetBytes_long:
 _p_107:
@@ -92581,7 +92628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 28952
+.word 28958
 	.no_dead_strip plt_System_Array_Reverse_byte_byte__
 plt_System_Array_Reverse_byte_byte__:
 _p_108:
@@ -92589,7 +92636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 28957
+.word 28963
 	.no_dead_strip plt_System_Collections_Generic_List_1_byte__ctor_System_Collections_Generic_IEnumerable_1_byte
 plt_System_Collections_Generic_List_1_byte__ctor_System_Collections_Generic_IEnumerable_1_byte:
 _p_109:
@@ -92597,7 +92644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 28969
+.word 28975
 	.no_dead_strip plt_System_Collections_Generic_List_1_byte_AddRange_System_Collections_Generic_IEnumerable_1_byte
 plt_System_Collections_Generic_List_1_byte_AddRange_System_Collections_Generic_IEnumerable_1_byte:
 _p_110:
@@ -92605,7 +92652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 28980
+.word 28986
 	.no_dead_strip plt_System_Collections_Generic_List_1_byte_ToArray
 plt_System_Collections_Generic_List_1_byte_ToArray:
 _p_111:
@@ -92613,7 +92660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 28991
+.word 28997
 	.no_dead_strip plt_BlockchainTools_Tx_SubArray_byte___int_int
 plt_BlockchainTools_Tx_SubArray_byte___int_int:
 _p_112:
@@ -92621,7 +92668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 29002
+.word 29008
 	.no_dead_strip plt_System_BitConverter_ToInt32_byte___int
 plt_System_BitConverter_ToInt32_byte___int:
 _p_113:
@@ -92629,7 +92676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 29004
+.word 29010
 	.no_dead_strip plt_System_BitConverter_ToInt64_byte___int
 plt_System_BitConverter_ToInt64_byte___int:
 _p_114:
@@ -92637,7 +92684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 29009
+.word 29015
 	.no_dead_strip plt_BlockchainTools_TxIn_Deserialize_byte__
 plt_BlockchainTools_TxIn_Deserialize_byte__:
 _p_115:
@@ -92645,7 +92692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 29014
+.word 29020
 	.no_dead_strip plt_BlockchainTools_TxOut_Deserialize_byte__
 plt_BlockchainTools_TxOut_Deserialize_byte__:
 _p_116:
@@ -92653,7 +92700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 29016
+.word 29022
 	.no_dead_strip plt_BlockchainTools_Tx_Serialize
 plt_BlockchainTools_Tx_Serialize:
 _p_117:
@@ -92661,7 +92708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 29018
+.word 29024
 	.no_dead_strip plt_System_Console_Write_string
 plt_System_Console_Write_string:
 _p_118:
@@ -92669,7 +92716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 29020
+.word 29026
 	.no_dead_strip plt_Org_BouncyCastle_Crypto_Digests_Sha256Digest__ctor
 plt_Org_BouncyCastle_Crypto_Digests_Sha256Digest__ctor:
 _p_119:
@@ -92677,7 +92724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 29025
+.word 29031
 	.no_dead_strip plt_Org_BouncyCastle_Crypto_Signers_HMacDsaKCalculator__ctor_Org_BouncyCastle_Crypto_IDigest
 plt_Org_BouncyCastle_Crypto_Signers_HMacDsaKCalculator__ctor_Org_BouncyCastle_Crypto_IDigest:
 _p_120:
@@ -92685,7 +92732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 29030
+.word 29036
 	.no_dead_strip plt_Org_BouncyCastle_Crypto_Signers_ECDsaSigner__ctor_Org_BouncyCastle_Crypto_Signers_IDsaKCalculator
 plt_Org_BouncyCastle_Crypto_Signers_ECDsaSigner__ctor_Org_BouncyCastle_Crypto_Signers_IDsaKCalculator:
 _p_121:
@@ -92693,7 +92740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 29035
+.word 29041
 	.no_dead_strip plt_NBitcoin_BitcoinSerializableExtensions_ToBytes_NBitcoin_IBitcoinSerializable_NBitcoin_Protocol_ProtocolVersion
 plt_NBitcoin_BitcoinSerializableExtensions_ToBytes_NBitcoin_IBitcoinSerializable_NBitcoin_Protocol_ProtocolVersion:
 _p_122:
@@ -92701,7 +92748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 29040
+.word 29046
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_123:
@@ -92709,7 +92756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 29045
+.word 29051
 	.no_dead_strip plt_Org_BouncyCastle_Math_BigInteger__ctor_int_byte__
 plt_Org_BouncyCastle_Math_BigInteger__ctor_int_byte__:
 _p_124:
@@ -92717,7 +92764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 29071
+.word 29077
 	.no_dead_strip plt_Org_BouncyCastle_Crypto_Parameters_ECPrivateKeyParameters__ctor_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters
 plt_Org_BouncyCastle_Crypto_Parameters_ECPrivateKeyParameters__ctor_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters:
 _p_125:
@@ -92725,7 +92772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 29076
+.word 29082
 	.no_dead_strip plt_BlockchainTools_Tx_ECDSASignature_ToCanonicalised
 plt_BlockchainTools_Tx_ECDSASignature_ToCanonicalised:
 _p_126:
@@ -92733,7 +92780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 29081
+.word 29087
 	.no_dead_strip plt_BlockchainTools_Tx_ECDSASignature_EncodeToDER
 plt_BlockchainTools_Tx_ECDSASignature_EncodeToDER:
 _p_127:
@@ -92741,7 +92788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 29084
+.word 29090
 	.no_dead_strip plt_NBitcoin_Key_get_PubKey
 plt_NBitcoin_Key_get_PubKey:
 _p_128:
@@ -92749,7 +92796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 29087
+.word 29093
 	.no_dead_strip plt_NBitcoin_PubKey_ToBytes
 plt_NBitcoin_PubKey_ToBytes:
 _p_129:
@@ -92757,7 +92804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 29092
+.word 29098
 	.no_dead_strip plt_System_Collections_Generic_List_1_byte_GetEnumerator
 plt_System_Collections_Generic_List_1_byte_GetEnumerator:
 _p_130:
@@ -92765,7 +92812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 29097
+.word 29103
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_byte_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_byte_MoveNext:
 _p_131:
@@ -92773,7 +92820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 29108
+.word 29114
 	.no_dead_strip plt_BlockchainTools_Account_ToAddr_byte__
 plt_BlockchainTools_Account_ToAddr_byte__:
 _p_132:
@@ -92781,7 +92828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+4096
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 29119
+.word 29125
 	.no_dead_strip plt_BlockchainTools_Tx_Deserialize_byte__
 plt_BlockchainTools_Tx_Deserialize_byte__:
 _p_133:
@@ -92789,7 +92836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 29122
+.word 29128
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_GetEnumerator
 plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_GetEnumerator:
 _p_134:
@@ -92797,7 +92844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 29124
+.word 29130
 	.no_dead_strip plt_BlockchainTools_TxIn_Serialize
 plt_BlockchainTools_TxIn_Serialize:
 _p_135:
@@ -92805,7 +92852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 29135
+.word 29141
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_TxIn_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_TxIn_MoveNext:
 _p_136:
@@ -92813,7 +92860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 29137
+.word 29143
 	.no_dead_strip plt_BlockchainTools_TxOut_Serialize
 plt_BlockchainTools_TxOut_Serialize:
 _p_137:
@@ -92821,7 +92868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 29148
+.word 29154
 	.no_dead_strip plt_System_Security_Cryptography_HashAlgorithm_ComputeHash_byte__
 plt_System_Security_Cryptography_HashAlgorithm_ComputeHash_byte__:
 _p_138:
@@ -92829,7 +92876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 29150
+.word 29156
 	.no_dead_strip plt_BlockchainTools_TxIn_DeserializeTxIns_byte__
 plt_BlockchainTools_TxIn_DeserializeTxIns_byte__:
 _p_139:
@@ -92837,7 +92884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 29155
+.word 29161
 	.no_dead_strip plt_BlockchainTools_TxOut_DeserializeTxOuts_byte__
 plt_BlockchainTools_TxOut_DeserializeTxOuts_byte__:
 _p_140:
@@ -92845,7 +92892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 29157
+.word 29163
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_141:
@@ -92853,7 +92900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 29159
+.word 29165
 	.no_dead_strip plt_Org_BouncyCastle_Asn1_Sec_SecNamedCurves_GetByName_string
 plt_Org_BouncyCastle_Asn1_Sec_SecNamedCurves_GetByName_string:
 _p_142:
@@ -92861,7 +92908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 29164
+.word 29170
 	.no_dead_strip plt_Org_BouncyCastle_Asn1_X9_X9ECParameters_get_G
 plt_Org_BouncyCastle_Asn1_X9_X9ECParameters_get_G:
 _p_143:
@@ -92869,7 +92916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 29169
+.word 29175
 	.no_dead_strip plt_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters__ctor_Org_BouncyCastle_Math_EC_ECCurve_Org_BouncyCastle_Math_EC_ECPoint_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger
 plt_Org_BouncyCastle_Crypto_Parameters_ECDomainParameters__ctor_Org_BouncyCastle_Math_EC_ECCurve_Org_BouncyCastle_Math_EC_ECPoint_Org_BouncyCastle_Math_BigInteger_Org_BouncyCastle_Math_BigInteger:
 _p_144:
@@ -92877,7 +92924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 29174
+.word 29180
 	.no_dead_strip plt_Org_BouncyCastle_Math_BigInteger_ShiftRight_int
 plt_Org_BouncyCastle_Math_BigInteger_ShiftRight_int:
 _p_145:
@@ -92885,7 +92932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 29179
+.word 29185
 	.no_dead_strip plt_BlockchainTools_UtxoTable_LookUpEntry_string_int_byte__
 plt_BlockchainTools_UtxoTable_LookUpEntry_string_int_byte__:
 _p_146:
@@ -92893,7 +92940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 29184
+.word 29190
 	.no_dead_strip plt_BlockchainTools_Tx__ctor
 plt_BlockchainTools_Tx__ctor:
 _p_147:
@@ -92901,7 +92948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 29186
+.word 29192
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_TxIn
 plt_System_Collections_Generic_List_1_BlockchainTools_TxIn_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_TxIn:
 _p_148:
@@ -92909,7 +92956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 29188
+.word 29194
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_TxOut
 plt_System_Collections_Generic_List_1_BlockchainTools_TxOut_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_TxOut:
 _p_149:
@@ -92917,7 +92964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 29199
+.word 29205
 	.no_dead_strip plt_BlockchainTools_Tx_getHash
 plt_BlockchainTools_Tx_getHash:
 _p_150:
@@ -92925,7 +92972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 29210
+.word 29216
 	.no_dead_strip plt_BlockchainTools_Tx_SignTx_NBitcoin_Key
 plt_BlockchainTools_Tx_SignTx_NBitcoin_Key:
 _p_151:
@@ -92933,7 +92980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 29212
+.word 29218
 	.no_dead_strip plt_string_Concat_string_string_string_string
 plt_string_Concat_string_string_string_string:
 _p_152:
@@ -92941,7 +92988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 29214
+.word 29220
 	.no_dead_strip plt_string_Concat_string_string_string
 plt_string_Concat_string_string_string:
 _p_153:
@@ -92949,7 +92996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 29219
+.word 29225
 	.no_dead_strip plt_BlockchainTools_UtxoTable_Init
 plt_BlockchainTools_UtxoTable_Init:
 _p_154:
@@ -92957,7 +93004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 29224
+.word 29230
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int__ctor
 plt_System_Collections_Generic_Dictionary_2_string_int__ctor:
 _p_155:
@@ -92965,7 +93012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 29226
+.word 29232
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_Add_string_System_Collections_Generic_Dictionary_2_string_int
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_Add_string_System_Collections_Generic_Dictionary_2_string_int:
 _p_156:
@@ -92973,7 +93020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 29237
+.word 29243
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_int_ContainsKey_string:
 _p_157:
@@ -92981,7 +93028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 29248
+.word 29254
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_Add_string_int
 plt_System_Collections_Generic_Dictionary_2_string_int_Add_string_int:
 _p_158:
@@ -92989,7 +93036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 29259
+.word 29265
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_ContainsKey_string:
 _p_159:
@@ -92997,7 +93044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 29270
+.word 29276
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_set_Item_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_set_Item_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput:
 _p_160:
@@ -93005,7 +93052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 29281
+.word 29287
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_UtxoOutput
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_AddRange_System_Collections_Generic_IEnumerable_1_BlockchainTools_UtxoOutput:
 _p_161:
@@ -93013,7 +93060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 29292
+.word 29298
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_Add_BlockchainTools_UtxoOutput
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_Add_BlockchainTools_UtxoOutput:
 _p_162:
@@ -93021,7 +93068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 29303
+.word 29309
 	.no_dead_strip plt_BlockchainTools_UtxoTable_AddToUser_string_string_int
 plt_BlockchainTools_UtxoTable_AddToUser_string_string_int:
 _p_163:
@@ -93029,7 +93076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 29314
+.word 29320
 	.no_dead_strip plt_BlockchainTools_UtxoTable_AddUtxo_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput
 plt_BlockchainTools_UtxoTable_AddUtxo_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput:
 _p_164:
@@ -93037,7 +93084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 29316
+.word 29322
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput__ctor
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput__ctor:
 _p_165:
@@ -93045,7 +93092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 29318
+.word 29324
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int__ctor
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int__ctor:
 _p_166:
@@ -93053,7 +93100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 29329
+.word 29335
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_GetEnumerator
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_GetEnumerator:
 _p_167:
@@ -93061,7 +93108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 29340
+.word 29346
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_GetEnumerator
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_GetEnumerator:
 _p_168:
@@ -93069,7 +93116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 29351
+.word 29357
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_IndexOf_BlockchainTools_UtxoOutput
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_IndexOf_BlockchainTools_UtxoOutput:
 _p_169:
@@ -93077,7 +93124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 29362
+.word 29368
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_UtxoOutput_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_BlockchainTools_UtxoOutput_MoveNext:
 _p_170:
@@ -93085,7 +93132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 29373
+.word 29379
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_Enumerator_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_MoveNext
 plt_System_Collections_Generic_Dictionary_2_Enumerator_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_MoveNext:
 _p_171:
@@ -93093,7 +93140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 29384
+.word 29390
 	.no_dead_strip plt_Newtonsoft_Json_JsonConvert_DeserializeObject_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_string
 plt_Newtonsoft_Json_JsonConvert_DeserializeObject_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_string:
 _p_172:
@@ -93101,7 +93148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 29395
+.word 29401
 	.no_dead_strip plt_BlockchainTools_UtxoTable_InitUserTable
 plt_BlockchainTools_UtxoTable_InitUserTable:
 _p_173:
@@ -93109,7 +93156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 29407
+.word 29413
 	.no_dead_strip plt_System_IO_File_ReadAllText_string
 plt_System_IO_File_ReadAllText_string:
 _p_174:
@@ -93117,7 +93164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 29409
+.word 29415
 	.no_dead_strip plt_System_Linq_Enumerable_Count_BlockchainTools_UtxoOutput_System_Collections_Generic_IEnumerable_1_BlockchainTools_UtxoOutput
 plt_System_Linq_Enumerable_Count_BlockchainTools_UtxoOutput_System_Collections_Generic_IEnumerable_1_BlockchainTools_UtxoOutput:
 _p_175:
@@ -93125,7 +93172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 29414
+.word 29420
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_set_Item_int_BlockchainTools_UtxoOutput
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_set_Item_int_BlockchainTools_UtxoOutput:
 _p_176:
@@ -93133,7 +93180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 29426
+.word 29432
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_int_Remove_string
 plt_System_Collections_Generic_Dictionary_2_string_int_Remove_string:
 _p_177:
@@ -93141,7 +93188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 29437
+.word 29443
 	.no_dead_strip plt_System_Linq_Enumerable_Any_System_Collections_Generic_KeyValuePair_2_string_int_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_int
 plt_System_Linq_Enumerable_Any_System_Collections_Generic_KeyValuePair_2_string_int_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_int:
 _p_178:
@@ -93149,7 +93196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 29448
+.word 29454
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_Remove_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_Dictionary_2_string_int_Remove_string:
 _p_179:
@@ -93157,7 +93204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 29460
+.word 29466
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_Remove_string
 plt_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_BlockchainTools_UtxoOutput_Remove_string:
 _p_180:
@@ -93165,7 +93212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 29471
+.word 29477
 	.no_dead_strip plt_System_Collections_Generic_List_1_BlockchainTools_UtxoReturn_Add_BlockchainTools_UtxoReturn
 plt_System_Collections_Generic_List_1_BlockchainTools_UtxoReturn_Add_BlockchainTools_UtxoReturn:
 _p_181:
@@ -93173,7 +93220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 29482
+.word 29488
 	.no_dead_strip plt_object_MemberwiseClone
 plt_object_MemberwiseClone:
 _p_182:
@@ -93181,7 +93228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 29493
+.word 29499
 	.no_dead_strip plt_System_Convert_ToByte_string_int
 plt_System_Convert_ToByte_string_int:
 _p_183:
@@ -93189,7 +93236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 29498
+.word 29504
 	.no_dead_strip plt_System_Text_StringBuilder__ctor_int
 plt_System_Text_StringBuilder__ctor_int:
 _p_184:
@@ -93197,7 +93244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 29503
+.word 29509
 	.no_dead_strip plt_System_Text_StringBuilder_AppendFormat_string_object
 plt_System_Text_StringBuilder_AppendFormat_string_object:
 _p_185:
@@ -93205,7 +93252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 29508
+.word 29514
 	.no_dead_strip plt_NBitcoin_UnsecureRandom__ctor
 plt_NBitcoin_UnsecureRandom__ctor:
 _p_186:
@@ -93213,7 +93260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 29513
+.word 29519
 	.no_dead_strip plt_NBitcoin_RandomUtils_set_Random_NBitcoin_IRandom
 plt_NBitcoin_RandomUtils_set_Random_NBitcoin_IRandom:
 _p_187:
@@ -93221,7 +93268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 29518
+.word 29524
 	.no_dead_strip plt_NBitcoin_Key__ctor_bool
 plt_NBitcoin_Key__ctor_bool:
 _p_188:
@@ -93229,7 +93276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 29523
+.word 29529
 	.no_dead_strip plt_NBitcoin_BitcoinSerializableExtensions_FromBytes_NBitcoin_IBitcoinSerializable_byte___NBitcoin_Protocol_ProtocolVersion
 plt_NBitcoin_BitcoinSerializableExtensions_FromBytes_NBitcoin_IBitcoinSerializable_byte___NBitcoin_Protocol_ProtocolVersion:
 _p_189:
@@ -93237,7 +93284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 29528
+.word 29534
 	.no_dead_strip plt_System_Security_Cryptography_RIPEMD160_Create
 plt_System_Security_Cryptography_RIPEMD160_Create:
 _p_190:
@@ -93245,7 +93292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 29533
+.word 29539
 	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
 plt_Xamarin_Forms_ContentPage__ctor:
 _p_191:
@@ -93253,7 +93300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 29538
+.word 29544
 	.no_dead_strip plt_Xamarin_Forms_Page_set_Title_string
 plt_Xamarin_Forms_Page_set_Title_string:
 _p_192:
@@ -93261,7 +93308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 29543
+.word 29549
 	.no_dead_strip plt_Xamarin_Forms_FileImageSource_op_Implicit_string
 plt_Xamarin_Forms_FileImageSource_op_Implicit_string:
 _p_193:
@@ -93269,7 +93316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 29548
+.word 29554
 	.no_dead_strip plt_Xamarin_Forms_Page_set_Icon_Xamarin_Forms_FileImageSource
 plt_Xamarin_Forms_Page_set_Icon_Xamarin_Forms_FileImageSource:
 _p_194:
@@ -93277,7 +93324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 29553
+.word 29559
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView__ctor
 plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView__ctor:
 _p_195:
@@ -93285,7 +93332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 29558
+.word 29564
 	.no_dead_strip plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions:
 _p_196:
@@ -93293,7 +93340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 29563
+.word 29569
 	.no_dead_strip plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions:
 _p_197:
@@ -93301,7 +93348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 29568
+.word 29574
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_set_BarcodeFormat_ZXing_BarcodeFormat
 plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_set_BarcodeFormat_ZXing_BarcodeFormat:
 _p_198:
@@ -93309,7 +93356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 29573
+.word 29579
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_get_BarcodeOptions
 plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_get_BarcodeOptions:
 _p_199:
@@ -93317,7 +93364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 29578
+.word 29584
 	.no_dead_strip plt_ZXing_Common_EncodingOptions_set_Width_int
 plt_ZXing_Common_EncodingOptions_set_Width_int:
 _p_200:
@@ -93325,7 +93372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 29583
+.word 29589
 	.no_dead_strip plt_ZXing_Common_EncodingOptions_set_Height_int
 plt_ZXing_Common_EncodingOptions_set_Height_int:
 _p_201:
@@ -93333,7 +93380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 29588
+.word 29594
 	.no_dead_strip plt_ZXing_Common_EncodingOptions_set_Margin_int
 plt_ZXing_Common_EncodingOptions_set_Margin_int:
 _p_202:
@@ -93341,7 +93388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 29593
+.word 29599
 	.no_dead_strip plt_Xamarin_Forms_Application_get_Properties
 plt_Xamarin_Forms_Application_get_Properties:
 _p_203:
@@ -93349,7 +93396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 29598
+.word 29604
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_set_BarcodeValue_string
 plt_ZXing_Net_Mobile_Forms_ZXingBarcodeImageView_set_BarcodeValue_string:
 _p_204:
@@ -93357,7 +93404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 29603
+.word 29609
 	.no_dead_strip plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View
 plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View:
 _p_205:
@@ -93365,7 +93412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 29608
+.word 29614
 	.no_dead_strip plt_Xamarin_Forms_Label__ctor
 plt_Xamarin_Forms_Label__ctor:
 _p_206:
@@ -93373,7 +93420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 29613
+.word 29619
 	.no_dead_strip plt_Xamarin_Forms_Label_set_Text_string
 plt_Xamarin_Forms_Label_set_Text_string:
 _p_207:
@@ -93381,7 +93428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 29618
+.word 29624
 	.no_dead_strip plt_Xamarin_Forms_Entry__ctor
 plt_Xamarin_Forms_Entry__ctor:
 _p_208:
@@ -93389,7 +93436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 29623
+.word 29629
 	.no_dead_strip plt_Xamarin_Forms_Entry_set_Text_string
 plt_Xamarin_Forms_Entry_set_Text_string:
 _p_209:
@@ -93397,7 +93444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 29628
+.word 29634
 	.no_dead_strip plt_Xamarin_Forms_Button__ctor
 plt_Xamarin_Forms_Button__ctor:
 _p_210:
@@ -93405,7 +93452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 29633
+.word 29639
 	.no_dead_strip plt_Xamarin_Forms_Button_set_Text_string
 plt_Xamarin_Forms_Button_set_Text_string:
 _p_211:
@@ -93413,7 +93460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 29638
+.word 29644
 	.no_dead_strip plt_Xamarin_Forms_Button_add_Clicked_System_EventHandler
 plt_Xamarin_Forms_Button_add_Clicked_System_EventHandler:
 _p_212:
@@ -93421,7 +93468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 29643
+.word 29649
 	.no_dead_strip plt_Xamarin_Forms_ListView__ctor
 plt_Xamarin_Forms_ListView__ctor:
 _p_213:
@@ -93429,7 +93476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 29648
+.word 29654
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable:
 _p_214:
@@ -93437,7 +93484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 29653
+.word 29659
 	.no_dead_strip plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs
 plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs:
 _p_215:
@@ -93445,7 +93492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 29664
+.word 29670
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_SeparatorVisibility_Xamarin_Forms_SeparatorVisibility
 plt_Xamarin_Forms_ListView_set_SeparatorVisibility_Xamarin_Forms_SeparatorVisibility:
 _p_216:
@@ -93453,7 +93500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 29669
+.word 29675
 	.no_dead_strip plt_Xamarin_Forms_StackLayout__ctor
 plt_Xamarin_Forms_StackLayout__ctor:
 _p_217:
@@ -93461,7 +93508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 29674
+.word 29680
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Spacing_double
 plt_Xamarin_Forms_StackLayout_set_Spacing_double:
 _p_218:
@@ -93469,7 +93516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 29679
+.word 29685
 	.no_dead_strip plt_Xamarin_Forms_Device_GetNamedSize_Xamarin_Forms_NamedSize_System_Type
 plt_Xamarin_Forms_Device_GetNamedSize_Xamarin_Forms_NamedSize_System_Type:
 _p_219:
@@ -93477,7 +93524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 29684
+.word 29690
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontSize_double
 plt_Xamarin_Forms_Label_set_FontSize_double:
 _p_220:
@@ -93485,7 +93532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 29689
+.word 29695
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation
 plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation:
 _p_221:
@@ -93493,7 +93540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 29694
+.word 29700
 	.no_dead_strip plt_string_memset_byte__int_int
 plt_string_memset_byte__int_int:
 _p_222:
@@ -93501,7 +93548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 29699
+.word 29705
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_223:
@@ -93509,7 +93556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 29704
+.word 29710
 	.no_dead_strip plt_string_memcpy_byte__byte__int
 plt_string_memcpy_byte__byte__int:
 _p_224:
@@ -93517,7 +93564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 29709
+.word 29715
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServersPage__OnItemTappedd__9_XamarinClient_ServersPage__OnItemTappedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServersPage__OnItemTappedd__9_XamarinClient_ServersPage__OnItemTappedd__9_:
 _p_225:
@@ -93525,7 +93572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 29714
+.word 29720
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServersPage__AddServerClickedd__10_XamarinClient_ServersPage__AddServerClickedd__10_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServersPage__AddServerClickedd__10_XamarinClient_ServersPage__AddServerClickedd__10_:
 _p_226:
@@ -93533,7 +93580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 29726
+.word 29732
 	.no_dead_strip plt_System_IO_File_WriteAllText_string_string
 plt_System_IO_File_WriteAllText_string_string:
 _p_227:
@@ -93541,7 +93588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 29738
+.word 29744
 	.no_dead_strip plt_Xamarin_Forms_Editor__ctor
 plt_Xamarin_Forms_Editor__ctor:
 _p_228:
@@ -93549,7 +93596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 29743
+.word 29749
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_HeightRequest_double
 plt_Xamarin_Forms_VisualElement_set_HeightRequest_double:
 _p_229:
@@ -93557,7 +93604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 29748
+.word 29754
 	.no_dead_strip plt_Xamarin_Forms_Picker__ctor
 plt_Xamarin_Forms_Picker__ctor:
 _p_230:
@@ -93565,7 +93612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 29753
+.word 29759
 	.no_dead_strip plt_Xamarin_Forms_Picker_set_Title_string
 plt_Xamarin_Forms_Picker_set_Title_string:
 _p_231:
@@ -93573,7 +93620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 29758
+.word 29764
 	.no_dead_strip plt_Xamarin_Forms_ScrollView__ctor
 plt_Xamarin_Forms_ScrollView__ctor:
 _p_232:
@@ -93581,7 +93628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 29763
+.word 29769
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color:
 _p_233:
@@ -93589,7 +93636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 29768
+.word 29774
 	.no_dead_strip plt_Xamarin_Forms_Thickness_op_Implicit_double
 plt_Xamarin_Forms_Thickness_op_Implicit_double:
 _p_234:
@@ -93597,7 +93644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 29773
+.word 29779
 	.no_dead_strip plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness
 plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness:
 _p_235:
@@ -93605,7 +93652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 29778
+.word 29784
 	.no_dead_strip plt_Xamarin_Forms_ScrollView_set_Content_Xamarin_Forms_View
 plt_Xamarin_Forms_ScrollView_set_Content_Xamarin_Forms_View:
 _p_236:
@@ -93613,7 +93660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 29783
+.word 29789
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_GetCoinPage__Submit_Clickedd__9_XamarinClient_GetCoinPage__Submit_Clickedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_GetCoinPage__Submit_Clickedd__9_XamarinClient_GetCoinPage__Submit_Clickedd__9_:
 _p_237:
@@ -93621,7 +93668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 29788
+.word 29794
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_GetCoinPage__Cancel_Clickedd__10_XamarinClient_GetCoinPage__Cancel_Clickedd__10_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_GetCoinPage__Cancel_Clickedd__10_XamarinClient_GetCoinPage__Cancel_Clickedd__10_:
 _p_238:
@@ -93629,7 +93676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 29800
+.word 29806
 	.no_dead_strip plt_Xamarin_Forms_Button_set_TextColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_Button_set_TextColor_Xamarin_Forms_Color:
 _p_239:
@@ -93637,7 +93684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 29812
+.word 29818
 	.no_dead_strip plt_Xamarin_Forms_Button_ButtonContentLayout__ctor_Xamarin_Forms_Button_ButtonContentLayout_ImagePosition_double
 plt_Xamarin_Forms_Button_ButtonContentLayout__ctor_Xamarin_Forms_Button_ButtonContentLayout_ImagePosition_double:
 _p_240:
@@ -93645,7 +93692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 29817
+.word 29823
 	.no_dead_strip plt_Xamarin_Forms_Button_set_ContentLayout_Xamarin_Forms_Button_ButtonContentLayout
 plt_Xamarin_Forms_Button_set_ContentLayout_Xamarin_Forms_Button_ButtonContentLayout:
 _p_241:
@@ -93653,7 +93700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 29822
+.word 29828
 	.no_dead_strip plt_Xamarin_Forms_Button_set_BorderRadius_int
 plt_Xamarin_Forms_Button_set_BorderRadius_int:
 _p_242:
@@ -93661,7 +93708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 29827
+.word 29833
 	.no_dead_strip plt_Xamarin_Forms_Button_set_Image_Xamarin_Forms_FileImageSource
 plt_Xamarin_Forms_Button_set_Image_Xamarin_Forms_FileImageSource:
 _p_243:
@@ -93669,7 +93716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 29832
+.word 29838
 	.no_dead_strip plt_Xamarin_Forms_Command__ctor_System_Action
 plt_Xamarin_Forms_Command__ctor_System_Action:
 _p_244:
@@ -93677,7 +93724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 29837
+.word 29843
 	.no_dead_strip plt_Xamarin_Forms_Button_set_Command_System_Windows_Input_ICommand
 plt_Xamarin_Forms_Button_set_Command_System_Windows_Input_ICommand:
 _p_245:
@@ -93685,7 +93732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 29842
+.word 29848
 	.no_dead_strip plt_Xamarin_Forms_Grid__ctor
 plt_Xamarin_Forms_Grid__ctor:
 _p_246:
@@ -93693,7 +93740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 29847
+.word 29853
 	.no_dead_strip plt_Xamarin_Forms_Grid_set_ColumnSpacing_double
 plt_Xamarin_Forms_Grid_set_ColumnSpacing_double:
 _p_247:
@@ -93701,7 +93748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 29852
+.word 29858
 	.no_dead_strip plt_Xamarin_Forms_Grid_get_ColumnDefinitions
 plt_Xamarin_Forms_Grid_get_ColumnDefinitions:
 _p_248:
@@ -93709,7 +93756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 29857
+.word 29863
 	.no_dead_strip plt_Xamarin_Forms_ColumnDefinition__ctor
 plt_Xamarin_Forms_ColumnDefinition__ctor:
 _p_249:
@@ -93717,7 +93764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 29862
+.word 29868
 	.no_dead_strip plt_Xamarin_Forms_GridLength__ctor_double_Xamarin_Forms_GridUnitType
 plt_Xamarin_Forms_GridLength__ctor_double_Xamarin_Forms_GridUnitType:
 _p_250:
@@ -93725,7 +93772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 29867
+.word 29873
 	.no_dead_strip plt_Xamarin_Forms_ColumnDefinition_set_Width_Xamarin_Forms_GridLength
 plt_Xamarin_Forms_ColumnDefinition_set_Width_Xamarin_Forms_GridLength:
 _p_251:
@@ -93733,7 +93780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 29872
+.word 29878
 	.no_dead_strip plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_ColumnDefinition_Add_Xamarin_Forms_ColumnDefinition
 plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_ColumnDefinition_Add_Xamarin_Forms_ColumnDefinition:
 _p_252:
@@ -93741,7 +93788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 29877
+.word 29883
 	.no_dead_strip plt_Xamarin_Forms_Grid_set_RowSpacing_double
 plt_Xamarin_Forms_Grid_set_RowSpacing_double:
 _p_253:
@@ -93749,7 +93796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 29888
+.word 29894
 	.no_dead_strip plt_Xamarin_Forms_Grid_get_RowDefinitions
 plt_Xamarin_Forms_Grid_get_RowDefinitions:
 _p_254:
@@ -93757,7 +93804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 29893
+.word 29899
 	.no_dead_strip plt_Xamarin_Forms_RowDefinition__ctor
 plt_Xamarin_Forms_RowDefinition__ctor:
 _p_255:
@@ -93765,7 +93812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 29898
+.word 29904
 	.no_dead_strip plt_Xamarin_Forms_RowDefinition_set_Height_Xamarin_Forms_GridLength
 plt_Xamarin_Forms_RowDefinition_set_Height_Xamarin_Forms_GridLength:
 _p_256:
@@ -93773,7 +93820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 29903
+.word 29909
 	.no_dead_strip plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_RowDefinition_Add_Xamarin_Forms_RowDefinition
 plt_Xamarin_Forms_DefinitionCollection_1_Xamarin_Forms_RowDefinition_Add_Xamarin_Forms_RowDefinition:
 _p_257:
@@ -93781,7 +93828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 29908
+.word 29914
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes
 plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes:
 _p_258:
@@ -93789,7 +93836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 29919
+.word 29925
 	.no_dead_strip plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_259:
@@ -93797,7 +93844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 29924
+.word 29930
 	.no_dead_strip plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_260:
@@ -93805,7 +93852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 29929
+.word 29935
 	.no_dead_strip plt_XamarinClient_ClientPage_Init
 plt_XamarinClient_ClientPage_Init:
 _p_261:
@@ -93813,7 +93860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 29934
+.word 29940
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__Initd__21_XamarinClient_ClientPage__Initd__21_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__Initd__21_XamarinClient_ClientPage__Initd__21_:
 _p_262:
@@ -93821,7 +93868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 29937
+.word 29943
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_XamarinClient_ClientPage__Loadd__22_XamarinClient_ClientPage__Loadd__22_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_XamarinClient_ClientPage__Loadd__22_XamarinClient_ClientPage__Loadd__22_:
 _p_263:
@@ -93829,7 +93876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 29949
+.word 29955
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__GetCoinsd__23_XamarinClient_ClientPage__GetCoinsd__23_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__GetCoinsd__23_XamarinClient_ClientPage__GetCoinsd__23_:
 _p_264:
@@ -93837,7 +93884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 29961
+.word 29967
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__RefreshPaged__24_XamarinClient_ClientPage__RefreshPaged__24_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage__RefreshPaged__24_XamarinClient_ClientPage__RefreshPaged__24_:
 _p_265:
@@ -93845,7 +93892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 29973
+.word 29979
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Navigation
 plt_Xamarin_Forms_VisualElement_get_Navigation:
 _p_266:
@@ -93853,7 +93900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 29985
+.word 29991
 	.no_dead_strip plt_XamarinClient_PaymentPage__ctor
 plt_XamarinClient_PaymentPage__ctor:
 _p_267:
@@ -93861,7 +93908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 29990
+.word 29996
 	.no_dead_strip plt_XamarinClient_BarCodePage__ctor
 plt_XamarinClient_BarCodePage__ctor:
 _p_268:
@@ -93869,7 +93916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 29993
+.word 29999
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage___Loadb__22_0d_XamarinClient_ClientPage___Loadb__22_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ClientPage___Loadb__22_0d_XamarinClient_ClientPage___Loadb__22_0d_:
 _p_269:
@@ -93877,7 +93924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 29996
+.word 30002
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__Payd__7_XamarinClient_PaymentPage__Payd__7_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__Payd__7_XamarinClient_PaymentPage__Payd__7_:
 _p_270:
@@ -93885,7 +93932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 30008
+.word 30014
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__OnClickScand__8_XamarinClient_PaymentPage__OnClickScand__8_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__OnClickScand__8_XamarinClient_PaymentPage__OnClickScand__8_:
 _p_271:
@@ -93893,7 +93940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 30020
+.word 30026
 	.no_dead_strip plt_Xamarin_Forms_Application__ctor
 plt_Xamarin_Forms_Application__ctor:
 _p_272:
@@ -93901,7 +93948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 30032
+.word 30038
 	.no_dead_strip plt_XamarinClient_App_InitializeComponent
 plt_XamarinClient_App_InitializeComponent:
 _p_273:
@@ -93909,7 +93956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 30037
+.word 30043
 	.no_dead_strip plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder
 plt_System_Environment_GetFolderPath_System_Environment_SpecialFolder:
 _p_274:
@@ -93917,7 +93964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 30040
+.word 30046
 	.no_dead_strip plt_System_IO_Path_Combine_string_string
 plt_System_IO_Path_Combine_string_string:
 _p_275:
@@ -93925,7 +93972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 30045
+.word 30051
 	.no_dead_strip plt_System_Net_Http_HttpClient__ctor
 plt_System_Net_Http_HttpClient__ctor:
 _p_276:
@@ -93933,7 +93980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 30050
+.word 30056
 	.no_dead_strip plt_System_Threading_Tasks_Task_Run_System_Func_1_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_Run_System_Func_1_System_Threading_Tasks_Task:
 _p_277:
@@ -93941,7 +93988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 30055
+.word 30061
 	.no_dead_strip plt_System_IO_File_Exists_string
 plt_System_IO_File_Exists_string:
 _p_278:
@@ -93949,7 +93996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 30060
+.word 30066
 	.no_dead_strip plt_System_IO_File_Delete_string
 plt_System_IO_File_Delete_string:
 _p_279:
@@ -93957,7 +94004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 30065
+.word 30071
 	.no_dead_strip plt_Newtonsoft_Json_JsonConvert_DeserializeObject_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay_string
 plt_Newtonsoft_Json_JsonConvert_DeserializeObject_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay_string:
 _p_280:
@@ -93965,7 +94012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 30070
+.word 30076
 	.no_dead_strip plt_XamarinClient_AuthenticationPage__ctor
 plt_XamarinClient_AuthenticationPage__ctor:
 _p_281:
@@ -93973,7 +94020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 30082
+.word 30088
 	.no_dead_strip plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page
 plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page:
 _p_282:
@@ -93981,7 +94028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 30085
+.word 30091
 	.no_dead_strip plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_XamarinClient_App_XamarinClient_App_System_Type
 plt_Xamarin_Forms_Xaml_Extensions_LoadFromXaml_XamarinClient_App_XamarinClient_App_System_Type:
 _p_283:
@@ -93989,7 +94036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 30090
+.word 30096
 	.no_dead_strip plt_Xamarin_Forms_TabbedPage__ctor
 plt_Xamarin_Forms_TabbedPage__ctor:
 _p_284:
@@ -93997,7 +94044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 30102
+.word 30108
 	.no_dead_strip plt_XamarinClient_XamarinClientPage__ctor
 plt_XamarinClient_XamarinClientPage__ctor:
 _p_285:
@@ -94005,7 +94052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 30107
+.word 30113
 	.no_dead_strip plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page
 plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page:
 _p_286:
@@ -94013,7 +94060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 30110
+.word 30116
 	.no_dead_strip plt_XamarinClient_GetCoinPage__ctor
 plt_XamarinClient_GetCoinPage__ctor:
 _p_287:
@@ -94021,7 +94068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 30115
+.word 30121
 	.no_dead_strip plt_XamarinClient_SettingsPage__ctor
 plt_XamarinClient_SettingsPage__ctor:
 _p_288:
@@ -94029,7 +94076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 30118
+.word 30124
 	.no_dead_strip plt_Xamarin_Forms_Button_set_FontSize_double
 plt_Xamarin_Forms_Button_set_FontSize_double:
 _p_289:
@@ -94037,7 +94084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 30121
+.word 30127
 	.no_dead_strip plt_Xamarin_Forms_Switch__ctor
 plt_Xamarin_Forms_Switch__ctor:
 _p_290:
@@ -94045,7 +94092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 30126
+.word 30132
 	.no_dead_strip plt_Xamarin_Forms_Switch_set_IsToggled_bool
 plt_Xamarin_Forms_Switch_set_IsToggled_bool:
 _p_291:
@@ -94053,7 +94100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 30131
+.word 30137
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_get_Item_string
 plt_System_Collections_Generic_Dictionary_2_string_string_get_Item_string:
 _p_292:
@@ -94061,7 +94108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 30136
+.word 30142
 	.no_dead_strip plt_Xamarin_Forms_Switch_add_Toggled_System_EventHandler_1_Xamarin_Forms_ToggledEventArgs
 plt_Xamarin_Forms_Switch_add_Toggled_System_EventHandler_1_Xamarin_Forms_ToggledEventArgs:
 _p_293:
@@ -94069,7 +94116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 30147
+.word 30153
 	.no_dead_strip plt_Xamarin_Forms_Entry_set_IsPassword_bool
 plt_Xamarin_Forms_Entry_set_IsPassword_bool:
 _p_294:
@@ -94077,7 +94124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 30152
+.word 30158
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__ChangePin_Clickedd__17_XamarinClient_SettingsPage__ChangePin_Clickedd__17_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__ChangePin_Clickedd__17_XamarinClient_SettingsPage__ChangePin_Clickedd__17_:
 _p_295:
@@ -94085,7 +94132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 30157
+.word 30163
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string
 plt_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string:
 _p_296:
@@ -94093,7 +94140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 30169
+.word 30175
 	.no_dead_strip plt_Xamarin_Forms_Entry_get_IsPassword
 plt_Xamarin_Forms_Entry_get_IsPassword:
 _p_297:
@@ -94101,7 +94148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 30180
+.word 30186
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__SaveKeysd__20_XamarinClient_SettingsPage__SaveKeysd__20_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__SaveKeysd__20_XamarinClient_SettingsPage__SaveKeysd__20_:
 _p_298:
@@ -94109,7 +94156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 30185
+.word 30191
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__CreateNewAccountd__21_XamarinClient_SettingsPage__CreateNewAccountd__21_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__CreateNewAccountd__21_XamarinClient_SettingsPage__CreateNewAccountd__21_:
 _p_299:
@@ -94117,7 +94164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 30197
+.word 30203
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__RemoveKeysd__22_XamarinClient_SettingsPage__RemoveKeysd__22_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__RemoveKeysd__22_XamarinClient_SettingsPage__RemoveKeysd__22_:
 _p_300:
@@ -94125,7 +94172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 30209
+.word 30215
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__SaveAccountd__23_XamarinClient_SettingsPage__SaveAccountd__23_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__SaveAccountd__23_XamarinClient_SettingsPage__SaveAccountd__23_:
 _p_301:
@@ -94133,7 +94180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 30221
+.word 30227
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__OnItemTappedd__24_XamarinClient_SettingsPage__OnItemTappedd__24_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__OnItemTappedd__24_XamarinClient_SettingsPage__OnItemTappedd__24_:
 _p_302:
@@ -94141,7 +94188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 30233
+.word 30239
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__AddServerClickedd__25_XamarinClient_SettingsPage__AddServerClickedd__25_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_SettingsPage__AddServerClickedd__25_XamarinClient_SettingsPage__AddServerClickedd__25_:
 _p_303:
@@ -94149,7 +94196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 30245
+.word 30251
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__ctor
 plt_Rg_Plugins_Popup_Pages_PopupPage__ctor:
 _p_304:
@@ -94157,7 +94204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 30257
+.word 30263
 	.no_dead_strip plt_int_ToString
 plt_int_ToString:
 _p_305:
@@ -94165,7 +94212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 30262
+.word 30268
 	.no_dead_strip plt_Xamarin_Forms_Color__ctor_double_double_double_double
 plt_Xamarin_Forms_Color__ctor_double_double_double_double:
 _p_306:
@@ -94173,7 +94220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 30267
+.word 30273
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServerPopupPage__Yes_Clickedd__4_XamarinClient_ServerPopupPage__Yes_Clickedd__4_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_ServerPopupPage__Yes_Clickedd__4_XamarinClient_ServerPopupPage__Yes_Clickedd__4_:
 _p_307:
@@ -94181,7 +94228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 30272
+.word 30278
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool
 plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool:
 _p_308:
@@ -94189,7 +94236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 30284
+.word 30290
 	.no_dead_strip plt_Xamarin_Forms_ViewCell__ctor
 plt_Xamarin_Forms_ViewCell__ctor:
 _p_309:
@@ -94197,7 +94244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 30289
+.word 30295
 	.no_dead_strip plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string
 plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string:
 _p_310:
@@ -94205,7 +94252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 30294
+.word 30300
 	.no_dead_strip plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View
 plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View:
 _p_311:
@@ -94213,7 +94260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 30299
+.word 30305
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_RowHeight_int
 plt_Xamarin_Forms_ListView_set_RowHeight_int:
 _p_312:
@@ -94221,7 +94268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 30304
+.word 30310
 	.no_dead_strip plt_Xamarin_Forms_DataTemplate__ctor_System_Type
 plt_Xamarin_Forms_DataTemplate__ctor_System_Type:
 _p_313:
@@ -94229,7 +94276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 30309
+.word 30315
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate:
 _p_314:
@@ -94237,7 +94284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 30314
+.word 30320
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_IsEnabled_bool
 plt_Xamarin_Forms_VisualElement_set_IsEnabled_bool:
 _p_315:
@@ -94245,7 +94292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 30325
+.word 30331
 	.no_dead_strip plt_BlockchainTools_RpcClient__ctor_bool
 plt_BlockchainTools_RpcClient__ctor_bool:
 _p_316:
@@ -94253,7 +94300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 30330
+.word 30336
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_GetEnumerator
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_GetEnumerator:
 _p_317:
@@ -94261,7 +94308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 30332
+.word 30338
 	.no_dead_strip plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action
 plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action:
 _p_318:
@@ -94269,7 +94316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 30343
+.word 30349
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_UtxoDisplay_Clear
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_UtxoDisplay_Clear:
 _p_319:
@@ -94277,7 +94324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 30348
+.word 30354
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxOutDisplay_Clear
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxOutDisplay_Clear:
 _p_320:
@@ -94285,7 +94332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 30359
+.word 30365
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxInDisplay_Clear
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxInDisplay_Clear:
 _p_321:
@@ -94293,7 +94340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 30370
+.word 30376
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__OnItemTappedd__23_XamarinClient_XamarinClientPage__OnItemTappedd__23_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__OnItemTappedd__23_XamarinClient_XamarinClientPage__OnItemTappedd__23_:
 _p_322:
@@ -94301,7 +94348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 30381
+.word 30387
 	.no_dead_strip plt_XamarinClient_XamarinClientPage_Load
 plt_XamarinClient_XamarinClientPage_Load:
 _p_323:
@@ -94309,7 +94356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 30393
+.word 30399
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage___Loadb__22_1d_XamarinClient_XamarinClientPage___Loadb__22_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage___Loadb__22_1d_XamarinClient_XamarinClientPage___Loadb__22_1d_:
 _p_324:
@@ -94317,7 +94364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 30396
+.word 30402
 	.no_dead_strip plt_System_Collections_Generic_CollectionExtensions_TryAdd_string_object_System_Collections_Generic_IDictionary_2_string_object_string_object
 plt_System_Collections_Generic_CollectionExtensions_TryAdd_string_object_System_Collections_Generic_IDictionary_2_string_object_string_object:
 _p_325:
@@ -94325,7 +94372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 30408
+.word 30414
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_ContainsKey_string
 plt_System_Collections_Generic_Dictionary_2_string_string_ContainsKey_string:
 _p_326:
@@ -94333,7 +94380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 30420
+.word 30426
 	.no_dead_strip plt_FormsPinView_PCL_PinViewModel__ctor
 plt_FormsPinView_PCL_PinViewModel__ctor:
 _p_327:
@@ -94341,7 +94388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 30431
+.word 30437
 	.no_dead_strip plt_FormsPinView_PCL_PinViewModel_set_TargetPinLength_int
 plt_FormsPinView_PCL_PinViewModel_set_TargetPinLength_int:
 _p_328:
@@ -94349,7 +94396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 30436
+.word 30442
 	.no_dead_strip plt_FormsPinView_PCL_PinViewModel_set_ValidatorFunc_System_Func_2_System_Collections_Generic_IList_1_char_bool
 plt_FormsPinView_PCL_PinViewModel_set_ValidatorFunc_System_Func_2_System_Collections_Generic_IList_1_char_bool:
 _p_329:
@@ -94357,7 +94404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 30441
+.word 30447
 	.no_dead_strip plt_FormsPinView_PCL_PinView__ctor
 plt_FormsPinView_PCL_PinView__ctor:
 _p_330:
@@ -94365,7 +94412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 30446
+.word 30452
 	.no_dead_strip plt_FormsPinView_PCL_PinView_set_Title_string
 plt_FormsPinView_PCL_PinView_set_Title_string:
 _p_331:
@@ -94373,7 +94420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 30451
+.word 30457
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_set_BindingContext_object
 plt_Xamarin_Forms_BindableObject_set_BindingContext_object:
 _p_332:
@@ -94381,7 +94428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 30456
+.word 30462
 	.no_dead_strip plt_XamarinClient_AuthenticationPage_Authenticate
 plt_XamarinClient_AuthenticationPage_Authenticate:
 _p_333:
@@ -94389,7 +94436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 30461
+.word 30467
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_AuthenticationPage__Authenticated__9_XamarinClient_AuthenticationPage__Authenticated__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_AuthenticationPage__Authenticated__9_XamarinClient_AuthenticationPage__Authenticated__9_:
 _p_334:
@@ -94397,7 +94444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 30464
+.word 30470
 	.no_dead_strip plt_BlockchainTools_Account__ctor_string
 plt_BlockchainTools_Account__ctor_string:
 _p_335:
@@ -94405,7 +94452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 30476
+.word 30482
 	.no_dead_strip plt_XamarinClient_RootView__ctor
 plt_XamarinClient_RootView__ctor:
 _p_336:
@@ -94413,7 +94460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 30479
+.word 30485
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_AuthenticationPage____ctorb__8_1d_XamarinClient_AuthenticationPage____ctorb__8_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_AuthenticationPage____ctorb__8_1d_XamarinClient_AuthenticationPage____ctorb__8_1d_:
 _p_337:
@@ -94421,7 +94468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 30482
+.word 30488
 	.no_dead_strip plt_UIKit_UIApplication_Main_string___string_string
 plt_UIKit_UIApplication_Main_string___string_string:
 _p_338:
@@ -94429,7 +94476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 30494
+.word 30500
 	.no_dead_strip plt_SlideOverKit_iOS_SlideOverKit_Init
 plt_SlideOverKit_iOS_SlideOverKit_Init:
 _p_339:
@@ -94437,7 +94484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 30499
+.word 30505
 	.no_dead_strip plt_Xamarin_Forms_Forms_Init
 plt_Xamarin_Forms_Forms_Init:
 _p_340:
@@ -94445,7 +94492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 30504
+.word 30510
 	.no_dead_strip plt_XamarinClient_App__ctor
 plt_XamarinClient_App__ctor:
 _p_341:
@@ -94453,7 +94500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 30509
+.word 30515
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_LoadApplication_Xamarin_Forms_Application:
 _p_342:
@@ -94461,7 +94508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 30512
+.word 30518
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_iOS_Platform_Init
 plt_ZXing_Net_Mobile_Forms_iOS_Platform_Init:
 _p_343:
@@ -94469,7 +94516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 30517
+.word 30523
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate_FinishedLaunching_UIKit_UIApplication_Foundation_NSDictionary:
 _p_344:
@@ -94477,7 +94524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 30522
+.word 30528
 	.no_dead_strip plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor
 plt_Xamarin_Forms_Platform_iOS_FormsApplicationDelegate__ctor:
 _p_345:
@@ -94485,7 +94532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 30527
+.word 30533
 	.no_dead_strip plt_BlockchainTools_RpcClient_GetBootstrapTable
 plt_BlockchainTools_RpcClient_GetBootstrapTable:
 _p_346:
@@ -94493,7 +94540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 30532
+.word 30538
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_byte___GetAwaiter
 plt_System_Threading_Tasks_Task_1_byte___GetAwaiter:
 _p_347:
@@ -94501,7 +94548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 30534
+.word 30540
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__InitFromBootstrapd__47_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__InitFromBootstrapd__47_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__InitFromBootstrapd__47_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__InitFromBootstrapd__47_:
 _p_348:
@@ -94509,7 +94556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 30545
+.word 30551
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_byte___GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_byte___GetResult:
 _p_349:
@@ -94517,7 +94564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 30557
+.word 30563
 	.no_dead_strip plt_BlockchainTools_UtxoTable_InitializeFromBootstrap_byte__
 plt_BlockchainTools_UtxoTable_InitializeFromBootstrap_byte__:
 _p_350:
@@ -94525,7 +94572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 30568
+.word 30574
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception:
 _p_351:
@@ -94533,7 +94580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 30570
+.word 30576
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult:
 _p_352:
@@ -94541,7 +94588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 30575
+.word 30581
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_353:
@@ -94549,7 +94596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 30580
+.word 30586
 	.no_dead_strip plt_BlockchainTools_RpcClient_GetAccountTable
 plt_BlockchainTools_RpcClient_GetAccountTable:
 _p_354:
@@ -94557,7 +94604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 30585
+.word 30591
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__BalanceFromAccountTabled__48_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__BalanceFromAccountTabled__48_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__BalanceFromAccountTabled__48_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__BalanceFromAccountTabled__48_:
 _p_355:
@@ -94565,7 +94612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 30587
+.word 30593
 	.no_dead_strip plt_Newtonsoft_Json_Linq_JArray_Parse_string
 plt_Newtonsoft_Json_Linq_JArray_Parse_string:
 _p_356:
@@ -94573,7 +94620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 30599
+.word 30605
 	.no_dead_strip plt_Newtonsoft_Json_Linq_JArray_GetEnumerator
 plt_Newtonsoft_Json_Linq_JArray_GetEnumerator:
 _p_357:
@@ -94581,7 +94628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 30604
+.word 30610
 	.no_dead_strip plt_Newtonsoft_Json_Linq_JToken_op_Explicit_Newtonsoft_Json_Linq_JToken
 plt_Newtonsoft_Json_Linq_JToken_op_Explicit_Newtonsoft_Json_Linq_JToken:
 _p_358:
@@ -94589,7 +94636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 30609
+.word 30615
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetException_System_Exception:
 _p_359:
@@ -94597,7 +94644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 30614
+.word 30620
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetResult_int
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetResult_int:
 _p_360:
@@ -94605,7 +94652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 30625
+.word 30631
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_361:
@@ -94613,7 +94660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 30636
+.word 30642
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_Start_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_:
 _p_362:
@@ -94621,7 +94668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 30647
+.word 30653
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_get_Task:
 _p_363:
@@ -94629,7 +94676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 30659
+.word 30665
 	.no_dead_strip plt_BlockchainTools_RpcClient_BalanceFromAccountTable
 plt_BlockchainTools_RpcClient_BalanceFromAccountTable:
 _p_364:
@@ -94637,7 +94684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 30670
+.word 30676
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_int_GetAwaiter
 plt_System_Threading_Tasks_Task_1_int_GetAwaiter:
 _p_365:
@@ -94645,7 +94692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 30672
+.word 30678
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_int_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_System_Runtime_CompilerServices_TaskAwaiter_1_int__BlockchainTools_RpcClient___ProposeTransactionb__50_0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_int_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_int_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_System_Runtime_CompilerServices_TaskAwaiter_1_int__BlockchainTools_RpcClient___ProposeTransactionb__50_0d_:
 _p_366:
@@ -94653,7 +94700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 30683
+.word 30689
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_int_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_int_GetResult:
 _p_367:
@@ -94661,7 +94708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 30695
+.word 30701
 	.no_dead_strip plt_Org_BouncyCastle_Math_BigInteger_CompareTo_Org_BouncyCastle_Math_BigInteger
 plt_Org_BouncyCastle_Math_BigInteger_CompareTo_Org_BouncyCastle_Math_BigInteger:
 _p_368:
@@ -94669,7 +94716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 30706
+.word 30712
 	.no_dead_strip plt_BlockchainTools_Tx_ECDSASignature_IsCanonical
 plt_BlockchainTools_Tx_ECDSASignature_IsCanonical:
 _p_369:
@@ -94677,7 +94724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 30711
+.word 30717
 	.no_dead_strip plt_Org_BouncyCastle_Math_BigInteger_Subtract_Org_BouncyCastle_Math_BigInteger
 plt_Org_BouncyCastle_Math_BigInteger_Subtract_Org_BouncyCastle_Math_BigInteger:
 _p_370:
@@ -94685,7 +94732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 30714
+.word 30720
 	.no_dead_strip plt_System_IO_MemoryStream__ctor_int
 plt_System_IO_MemoryStream__ctor_int:
 _p_371:
@@ -94693,7 +94740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 30719
+.word 30725
 	.no_dead_strip plt_Org_BouncyCastle_Asn1_DerSequenceGenerator__ctor_System_IO_Stream
 plt_Org_BouncyCastle_Asn1_DerSequenceGenerator__ctor_System_IO_Stream:
 _p_372:
@@ -94701,7 +94748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 30724
+.word 30730
 	.no_dead_strip plt_Org_BouncyCastle_Asn1_DerInteger__ctor_Org_BouncyCastle_Math_BigInteger
 plt_Org_BouncyCastle_Asn1_DerInteger__ctor_Org_BouncyCastle_Math_BigInteger:
 _p_373:
@@ -94709,7 +94756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 30729
+.word 30735
 	.no_dead_strip plt_Xamarin_Forms_Page_DisplayActionSheet_string_string_string_string__
 plt_Xamarin_Forms_Page_DisplayActionSheet_string_string_string_string__:
 _p_374:
@@ -94717,7 +94764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 30734
+.word 30740
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_GetAwaiter
 plt_System_Threading_Tasks_Task_1_string_GetAwaiter:
 _p_375:
@@ -94725,7 +94772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 30739
+.word 30745
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter_1_string__XamarinClient_ServersPage__OnItemTappedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter_1_string__XamarinClient_ServersPage__OnItemTappedd__9_:
 _p_376:
@@ -94733,7 +94780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 30750
+.word 30756
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult:
 _p_377:
@@ -94741,7 +94788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 30762
+.word 30768
 	.no_dead_strip plt_Xamarin_Forms_Page_DisplayAlert_string_string_string_string
 plt_Xamarin_Forms_Page_DisplayAlert_string_string_string_string:
 _p_378:
@@ -94749,7 +94796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 30773
+.word 30779
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_bool_GetAwaiter
 plt_System_Threading_Tasks_Task_1_bool_GetAwaiter:
 _p_379:
@@ -94757,7 +94804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 30778
+.word 30784
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_ServersPage__OnItemTappedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_ServersPage__OnItemTappedd__9_:
 _p_380:
@@ -94765,7 +94812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 30789
+.word 30795
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_bool_GetResult:
 _p_381:
@@ -94773,7 +94820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 30801
+.word 30807
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Remove_XamarinClient_ServerDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Remove_XamarinClient_ServerDisplay:
 _p_382:
@@ -94781,7 +94828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 30812
+.word 30818
 	.no_dead_strip plt_XamarinClient_ServerPopupPage__ctor_string_int
 plt_XamarinClient_ServerPopupPage__ctor_string_int:
 _p_383:
@@ -94789,7 +94836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 30823
+.word 30829
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
 plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
 _p_384:
@@ -94797,7 +94844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 30826
+.word 30832
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServersPage__OnItemTappedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServersPage__OnItemTappedd__9_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServersPage__OnItemTappedd__9_:
 _p_385:
@@ -94805,7 +94852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 30831
+.word 30837
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
 _p_386:
@@ -94813,7 +94860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 30843
+.word 30849
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_SelectedItem_object
 plt_Xamarin_Forms_ListView_set_SelectedItem_object:
 _p_387:
@@ -94821,7 +94868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 30848
+.word 30854
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_388:
@@ -94829,7 +94876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 30853
+.word 30859
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_389:
@@ -94837,7 +94884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 30858
+.word 30864
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_390:
@@ -94845,7 +94892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 30863
+.word 30869
 	.no_dead_strip plt_Xamarin_Forms_Entry_get_Text
 plt_Xamarin_Forms_Entry_get_Text:
 _p_391:
@@ -94853,7 +94900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 30868
+.word 30874
 	.no_dead_strip plt_string_op_Equality_string_string
 plt_string_op_Equality_string_string:
 _p_392:
@@ -94861,7 +94908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 30873
+.word 30879
 	.no_dead_strip plt_Xamarin_Forms_Page_DisplayAlert_string_string_string
 plt_Xamarin_Forms_Page_DisplayAlert_string_string_string:
 _p_393:
@@ -94869,7 +94916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 30878
+.word 30884
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServersPage__AddServerClickedd__10_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServersPage__AddServerClickedd__10_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServersPage__AddServerClickedd__10_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServersPage__AddServerClickedd__10_:
 _p_394:
@@ -94877,7 +94924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 30883
+.word 30889
 	.no_dead_strip plt_int_Parse_string
 plt_int_Parse_string:
 _p_395:
@@ -94885,7 +94932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 30895
+.word 30901
 	.no_dead_strip plt_System_Net_Sockets_TcpClient_BeginConnect_string_int_System_AsyncCallback_object
 plt_System_Net_Sockets_TcpClient_BeginConnect_string_int_System_AsyncCallback_object:
 _p_396:
@@ -94893,7 +94940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 30900
+.word 30906
 	.no_dead_strip plt_System_TimeSpan_FromSeconds_double
 plt_System_TimeSpan_FromSeconds_double:
 _p_397:
@@ -94901,7 +94948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 30905
+.word 30911
 	.no_dead_strip plt_System_Threading_WaitHandle_WaitOne_System_TimeSpan
 plt_System_Threading_WaitHandle_WaitOne_System_TimeSpan:
 _p_398:
@@ -94909,7 +94956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 30910
+.word 30916
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Contains_XamarinClient_ServerDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Contains_XamarinClient_ServerDisplay:
 _p_399:
@@ -94917,7 +94964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 30915
+.word 30921
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Add_XamarinClient_ServerDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_ServerDisplay_Add_XamarinClient_ServerDisplay:
 _p_400:
@@ -94925,7 +94972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 30926
+.word 30932
 	.no_dead_strip plt_XamarinClient_ServersPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay
 plt_XamarinClient_ServersPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay:
 _p_401:
@@ -94933,7 +94980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 30937
+.word 30943
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_GetCoinPage__Submit_Clickedd__9_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_GetCoinPage__Submit_Clickedd__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_GetCoinPage__Submit_Clickedd__9_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_GetCoinPage__Submit_Clickedd__9_:
 _p_402:
@@ -94941,7 +94988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 30940
+.word 30946
 	.no_dead_strip plt_Xamarin_Forms_Editor_get_Text
 plt_Xamarin_Forms_Editor_get_Text:
 _p_403:
@@ -94949,7 +94996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 30952
+.word 30958
 	.no_dead_strip plt_Xamarin_Forms_Picker_get_SelectedIndex
 plt_Xamarin_Forms_Picker_get_SelectedIndex:
 _p_404:
@@ -94957,7 +95004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 30957
+.word 30963
 	.no_dead_strip plt_string_Concat_string__
 plt_string_Concat_string__:
 _p_405:
@@ -94965,7 +95012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 30962
+.word 30968
 	.no_dead_strip plt_Plugin_Messaging_CrossMessaging_get_Current
 plt_Plugin_Messaging_CrossMessaging_get_Current:
 _p_406:
@@ -94973,7 +95020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 30967
+.word 30973
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_Xamarin_Forms_Page_GetAwaiter
 plt_System_Threading_Tasks_Task_1_Xamarin_Forms_Page_GetAwaiter:
 _p_407:
@@ -94981,7 +95028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 30972
+.word 30978
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_XamarinClient_GetCoinPage__Cancel_Clickedd__10_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page__XamarinClient_GetCoinPage__Cancel_Clickedd__10_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_XamarinClient_GetCoinPage__Cancel_Clickedd__10_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page__XamarinClient_GetCoinPage__Cancel_Clickedd__10_:
 _p_408:
@@ -94989,7 +95036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 30983
+.word 30989
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_GetResult:
 _p_409:
@@ -94997,7 +95044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 30995
+.word 31001
 	.no_dead_strip plt_XamarinClient_ClientPage_Load
 plt_XamarinClient_ClientPage_Load:
 _p_410:
@@ -95005,7 +95052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 31006
+.word 31012
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage__Initd__21_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage__Initd__21_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage__Initd__21_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage__Initd__21_:
 _p_411:
@@ -95013,7 +95060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 31009
+.word 31015
 	.no_dead_strip plt_BlockchainTools_RpcClient_InitFromBootstrap
 plt_BlockchainTools_RpcClient_InitFromBootstrap:
 _p_412:
@@ -95021,7 +95068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 31021
+.word 31027
 	.no_dead_strip plt_BlockchainTools_RpcClient_GetBalance
 plt_BlockchainTools_RpcClient_GetBalance:
 _p_413:
@@ -95029,7 +95076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 31023
+.word 31029
 	.no_dead_strip plt_BlockchainTools_UtxoTable_FindForAccount_byte__
 plt_BlockchainTools_UtxoTable_FindForAccount_byte__:
 _p_414:
@@ -95037,7 +95084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 31025
+.word 31031
 	.no_dead_strip plt_Xamarin_Forms_Label_get_Text
 plt_Xamarin_Forms_Label_get_Text:
 _p_415:
@@ -95045,7 +95092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 31027
+.word 31033
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage__GetCoinsd__23_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage__GetCoinsd__23_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage__GetCoinsd__23_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage__GetCoinsd__23_:
 _p_416:
@@ -95053,7 +95100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 31032
+.word 31038
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage___Loadb__22_0d_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage___Loadb__22_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ClientPage___Loadb__22_0d_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ClientPage___Loadb__22_0d_:
 _p_417:
@@ -95061,7 +95108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 31044
+.word 31050
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_PaymentPage__Payd__7_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_PaymentPage__Payd__7_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_PaymentPage__Payd__7_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_PaymentPage__Payd__7_:
 _p_418:
@@ -95069,7 +95116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 31056
+.word 31062
 	.no_dead_strip plt_BlockchainTools_RpcClient_ProposeTransaction_byte___int
 plt_BlockchainTools_RpcClient_ProposeTransaction_byte___int:
 _p_419:
@@ -95077,7 +95124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 31068
+.word 31074
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingScannerPage_set_IsScanning_bool
 plt_ZXing_Net_Mobile_Forms_ZXingScannerPage_set_IsScanning_bool:
 _p_420:
@@ -95085,7 +95132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 31070
+.word 31076
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_:
 _p_421:
@@ -95093,7 +95140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 31075
+.word 31081
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingScannerPage__ctor_ZXing_Mobile_MobileBarcodeScanningOptions_Xamarin_Forms_View
 plt_ZXing_Net_Mobile_Forms_ZXingScannerPage__ctor_ZXing_Mobile_MobileBarcodeScanningOptions_Xamarin_Forms_View:
 _p_422:
@@ -95101,7 +95148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 31087
+.word 31093
 	.no_dead_strip plt_ZXing_Net_Mobile_Forms_ZXingScannerPage_add_OnScanResult_ZXing_Net_Mobile_Forms_ZXingScannerPage_ScanResultDelegate
 plt_ZXing_Net_Mobile_Forms_ZXingScannerPage_add_OnScanResult_ZXing_Net_Mobile_Forms_ZXingScannerPage_ScanResultDelegate:
 _p_423:
@@ -95109,7 +95156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 31092
+.word 31098
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_PaymentPage__OnClickScand__8_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_PaymentPage__OnClickScand__8_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_PaymentPage__OnClickScand__8_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_PaymentPage__OnClickScand__8_:
 _p_424:
@@ -95117,7 +95164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 31097
+.word 31103
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_:
 _p_425:
@@ -95125,7 +95172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 31109
+.word 31115
 	.no_dead_strip plt_XamarinClient_ChangePinPage__ctor
 plt_XamarinClient_ChangePinPage__ctor:
 _p_426:
@@ -95133,7 +95180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 31121
+.word 31127
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__ChangePin_Clickedd__17_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__ChangePin_Clickedd__17_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__ChangePin_Clickedd__17_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__ChangePin_Clickedd__17_:
 _p_427:
@@ -95141,7 +95188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 31124
+.word 31130
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__SaveKeysd__20_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__SaveKeysd__20_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__SaveKeysd__20_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__SaveKeysd__20_:
 _p_428:
@@ -95149,7 +95196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 31136
+.word 31142
 	.no_dead_strip plt_XamarinClient_SettingsPage_SaveAccount_BlockchainTools_Account
 plt_XamarinClient_SettingsPage_SaveAccount_BlockchainTools_Account:
 _p_429:
@@ -95157,7 +95204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 31148
+.word 31154
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__CreateNewAccountd__21_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__CreateNewAccountd__21_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__CreateNewAccountd__21_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__CreateNewAccountd__21_:
 _p_430:
@@ -95165,7 +95212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 31151
+.word 31157
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__CreateNewAccountd__21_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__CreateNewAccountd__21_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__CreateNewAccountd__21_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__CreateNewAccountd__21_:
 _p_431:
@@ -95173,7 +95220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 31163
+.word 31169
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__RemoveKeysd__22_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__RemoveKeysd__22_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__RemoveKeysd__22_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__RemoveKeysd__22_:
 _p_432:
@@ -95181,7 +95228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 31175
+.word 31181
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_Remove_string
 plt_System_Collections_Generic_Dictionary_2_string_string_Remove_string:
 _p_433:
@@ -95189,7 +95236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 31187
+.word 31193
 	.no_dead_strip plt_System_Collections_Generic_Dictionary_2_string_string_Add_string_string
 plt_System_Collections_Generic_Dictionary_2_string_string_Add_string_string:
 _p_434:
@@ -95197,7 +95244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 31198
+.word 31204
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter_1_string__XamarinClient_SettingsPage__OnItemTappedd__24_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter_1_string__XamarinClient_SettingsPage__OnItemTappedd__24_:
 _p_435:
@@ -95205,7 +95252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 31209
+.word 31215
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__OnItemTappedd__24_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_SettingsPage__OnItemTappedd__24_:
 _p_436:
@@ -95213,7 +95260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 31221
+.word 31227
 	.no_dead_strip plt_XamarinClient_SettingsPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay
 plt_XamarinClient_SettingsPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay:
 _p_437:
@@ -95221,7 +95268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 31233
+.word 31239
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__OnItemTappedd__24_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__OnItemTappedd__24_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__OnItemTappedd__24_:
 _p_438:
@@ -95229,7 +95276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 31236
+.word 31242
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__AddServerClickedd__25_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__AddServerClickedd__25_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_SettingsPage__AddServerClickedd__25_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_SettingsPage__AddServerClickedd__25_:
 _p_439:
@@ -95237,7 +95284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 31248
+.word 31254
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServerPopupPage__Yes_Clickedd__4_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServerPopupPage__Yes_Clickedd__4_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_ServerPopupPage__Yes_Clickedd__4_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_ServerPopupPage__Yes_Clickedd__4_:
 _p_440:
@@ -95245,7 +95292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 31260
+.word 31266
 	.no_dead_strip plt_XamarinClient_ServerPopupPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay
 plt_XamarinClient_ServerPopupPage_SaveServers_System_Collections_ObjectModel_ObservableCollection_1_XamarinClient_ServerDisplay:
 _p_441:
@@ -95253,7 +95300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 31272
+.word 31278
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_0d_XamarinClient_XamarinClientPage__c___Loadb__22_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_0d_XamarinClient_XamarinClientPage__c___Loadb__22_0d_:
 _p_442:
@@ -95261,7 +95308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 31275
+.word 31281
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_2d_XamarinClient_XamarinClientPage__c___Loadb__22_2d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_2d_XamarinClient_XamarinClientPage__c___Loadb__22_2d_:
 _p_443:
@@ -95269,7 +95316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 31287
+.word 31293
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_3d_XamarinClient_XamarinClientPage__c___Loadb__22_3d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_XamarinClientPage__c___Loadb__22_3d_XamarinClient_XamarinClientPage__c___Loadb__22_3d_:
 _p_444:
@@ -95277,7 +95324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 31299
+.word 31305
 	.no_dead_strip plt_XamarinClient_UtxoView__ctor_BlockchainTools_UtxoOutput
 plt_XamarinClient_UtxoView__ctor_BlockchainTools_UtxoOutput:
 _p_445:
@@ -95285,7 +95332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 31311
+.word 31317
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_XamarinClientPage__OnItemTappedd__23_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_XamarinClientPage__OnItemTappedd__23_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_XamarinClientPage__OnItemTappedd__23_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_XamarinClientPage__OnItemTappedd__23_:
 _p_446:
@@ -95293,7 +95340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 31314
+.word 31320
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_XamarinClientPage___Loadb__22_1d_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_XamarinClientPage___Loadb__22_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_XamarinClient_XamarinClientPage___Loadb__22_1d_System_Runtime_CompilerServices_TaskAwaiter__XamarinClient_XamarinClientPage___Loadb__22_1d_:
 _p_447:
@@ -95301,7 +95348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 31326
+.word 31332
 	.no_dead_strip plt_XamarinClient_UtxoDisplay__ctor_BlockchainTools_UtxoOutput
 plt_XamarinClient_UtxoDisplay__ctor_BlockchainTools_UtxoOutput:
 _p_448:
@@ -95309,7 +95356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 31338
+.word 31344
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_UtxoDisplay_Add_XamarinClient_UtxoDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_UtxoDisplay_Add_XamarinClient_UtxoDisplay:
 _p_449:
@@ -95317,7 +95364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 31341
+.word 31347
 	.no_dead_strip plt_string__ctor_char_int
 plt_string__ctor_char_int:
 _p_450:
@@ -95325,7 +95372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 31352
+.word 31358
 	.no_dead_strip plt_XamarinClient_AuthenticationPage_GoToHome
 plt_XamarinClient_AuthenticationPage_GoToHome:
 _p_451:
@@ -95333,7 +95380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 31357
+.word 31363
 	.no_dead_strip plt_XamarinClient_CreateAuthPage__ctor
 plt_XamarinClient_CreateAuthPage__ctor:
 _p_452:
@@ -95341,7 +95388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 31360
+.word 31366
 	.no_dead_strip plt_Plugin_Fingerprint_CrossFingerprint_get_Current
 plt_Plugin_Fingerprint_CrossFingerprint_get_Current:
 _p_453:
@@ -95349,7 +95396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 31363
+.word 31369
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_GetAwaiter
 plt_System_Threading_Tasks_Task_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_GetAwaiter:
 _p_454:
@@ -95357,7 +95404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 31368
+.word 31374
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_XamarinClient_AuthenticationPage__Authenticated__9_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult__XamarinClient_AuthenticationPage__Authenticated__9_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_XamarinClient_AuthenticationPage__Authenticated__9_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult__XamarinClient_AuthenticationPage__Authenticated__9_:
 _p_455:
@@ -95365,7 +95412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 31379
+.word 31385
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_GetResult:
 _p_456:
@@ -95373,7 +95420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 31391
+.word 31397
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_AuthenticationPage____ctorb__8_1d_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_AuthenticationPage____ctorb__8_1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_AuthenticationPage____ctorb__8_1d_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_AuthenticationPage____ctorb__8_1d_:
 _p_457:
@@ -95381,7 +95428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 31402
+.word 31408
 	.no_dead_strip plt_Xamarin_Auth_Account__ctor_string
 plt_Xamarin_Auth_Account__ctor_string:
 _p_458:
@@ -95389,7 +95436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 31414
+.word 31420
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_:
 _p_459:
@@ -95397,7 +95444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 31419
+.word 31425
 	.no_dead_strip plt_XamarinClient_CreateAuthPage__ctor_Xamarin_Auth_Account
 plt_XamarinClient_CreateAuthPage__ctor_Xamarin_Auth_Account:
 _p_460:
@@ -95405,7 +95452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 31431
+.word 31437
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_System_Runtime_CompilerServices_TaskAwaiter__BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_System_Runtime_CompilerServices_TaskAwaiter__BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_:
 _p_461:
@@ -95413,7 +95460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 31434
+.word 31440
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetException_System_Exception:
 _p_462:
@@ -95421,7 +95468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 31446
+.word 31452
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetResult_bool:
 _p_463:
@@ -95429,7 +95476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 31457
+.word 31463
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_bool_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_464:
@@ -95437,7 +95484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 31468
+.word 31474
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page__XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page_XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_Xamarin_Forms_Page__XamarinClient_PaymentPage__c__DisplayClass8_1___OnClickScanb__1d_:
 _p_465:
@@ -95445,7 +95492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 31479
+.word 31485
 	.no_dead_strip plt_System_Uri__ctor_string
 plt_System_Uri__ctor_string:
 _p_466:
@@ -95453,7 +95500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 31491
+.word 31497
 	.no_dead_strip plt_System_Net_Http_HttpClient_GetAsync_System_Uri
 plt_System_Net_Http_HttpClient_GetAsync_System_Uri:
 _p_467:
@@ -95461,7 +95508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 31496
+.word 31502
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Net_Http_HttpResponseMessage_GetAwaiter:
 _p_468:
@@ -95469,7 +95516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 31501
+.word 31507
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage__XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage__XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_:
 _p_469:
@@ -95477,7 +95524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 31512
+.word 31518
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_GetResult:
 _p_470:
@@ -95485,7 +95532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 31524
+.word 31530
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_int_XamarinClient_XamarinClientPage__c___Loadb__22_0d_System_Runtime_CompilerServices_TaskAwaiter_1_int__XamarinClient_XamarinClientPage__c___Loadb__22_0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_int_XamarinClient_XamarinClientPage__c___Loadb__22_0d_System_Runtime_CompilerServices_TaskAwaiter_1_int__XamarinClient_XamarinClientPage__c___Loadb__22_0d_:
 _p_471:
@@ -95493,7 +95540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 31535
+.word 31541
 	.no_dead_strip plt_BlockchainTools_RpcClient_GetTransactionFromAccount
 plt_BlockchainTools_RpcClient_GetTransactionFromAccount:
 _p_472:
@@ -95501,7 +95548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 31547
+.word 31553
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetAwaiter:
 _p_473:
@@ -95509,7 +95556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 31549
+.word 31555
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_XamarinClient_XamarinClientPage__c___Loadb__22_2d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut__XamarinClient_XamarinClientPage__c___Loadb__22_2d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_XamarinClient_XamarinClientPage__c___Loadb__22_2d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut__XamarinClient_XamarinClientPage__c___Loadb__22_2d_:
 _p_474:
@@ -95517,7 +95564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 31560
+.word 31566
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_BlockchainTools_TxOut_GetResult:
 _p_475:
@@ -95525,7 +95572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 31572
+.word 31578
 	.no_dead_strip plt_XamarinClient_TxOutDisplay__ctor_BlockchainTools_TxOut
 plt_XamarinClient_TxOutDisplay__ctor_BlockchainTools_TxOut:
 _p_476:
@@ -95533,7 +95580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 31583
+.word 31589
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxOutDisplay_Add_XamarinClient_TxOutDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxOutDisplay_Add_XamarinClient_TxOutDisplay:
 _p_477:
@@ -95541,7 +95588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 31586
+.word 31592
 	.no_dead_strip plt_BlockchainTools_RpcClient_GetTransactionToAccount
 plt_BlockchainTools_RpcClient_GetTransactionToAccount:
 _p_478:
@@ -95549,7 +95596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 31597
+.word 31603
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetAwaiter:
 _p_479:
@@ -95557,7 +95604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 31599
+.word 31605
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_XamarinClient_XamarinClientPage__c___Loadb__22_3d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int__XamarinClient_XamarinClientPage__c___Loadb__22_3d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_XamarinClient_XamarinClientPage__c___Loadb__22_3d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int__XamarinClient_XamarinClientPage__c___Loadb__22_3d_:
 _p_480:
@@ -95565,7 +95612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 31610
+.word 31616
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetResult:
 _p_481:
@@ -95573,7 +95620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 31622
+.word 31628
 	.no_dead_strip plt_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetEnumerator
 plt_System_Collections_Generic_List_1_System_Tuple_2_string_int_GetEnumerator:
 _p_482:
@@ -95581,7 +95628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 31633
+.word 31639
 	.no_dead_strip plt_XamarinClient_TxInDisplay__ctor_System_Tuple_2_string_int
 plt_XamarinClient_TxInDisplay__ctor_System_Tuple_2_string_int:
 _p_483:
@@ -95589,7 +95636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 31644
+.word 31650
 	.no_dead_strip plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxInDisplay_Add_XamarinClient_TxInDisplay
 plt_System_Collections_ObjectModel_Collection_1_XamarinClient_TxInDisplay_Add_XamarinClient_TxInDisplay:
 _p_484:
@@ -95597,7 +95644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 31647
+.word 31653
 	.no_dead_strip plt_System_Collections_Generic_List_1_Enumerator_System_Tuple_2_string_int_MoveNext
 plt_System_Collections_Generic_List_1_Enumerator_System_Tuple_2_string_int_MoveNext:
 _p_485:
@@ -95605,7 +95652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 31658
+.word 31664
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_bool_XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_System_Runtime_CompilerServices_TaskAwaiter_1_bool__XamarinClient_CreateAuthPage__c__DisplayClass5_1____ctorb__1d_:
 _p_486:
@@ -95613,7 +95660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 31669
+.word 31675
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_487:
@@ -95621,7 +95668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 31681
+.word 31687
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_488:
@@ -95629,7 +95676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 31745
+.word 31751
 	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_489:
@@ -95637,7 +95684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 31757
+.word 31763
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_490:
@@ -95645,7 +95692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 31778
+.word 31784
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_491:
@@ -95653,7 +95700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 31825
+.word 31831
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_492:
@@ -95661,7 +95708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 31871
+.word 31877
 	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
 plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_493:
@@ -95669,7 +95716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 31881
+.word 31887
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_494:
@@ -95677,7 +95724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 31889
+.word 31895
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_495:
@@ -95685,7 +95732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 31920
+.word 31926
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_496:
@@ -95693,7 +95740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 31930
+.word 31936
 	.no_dead_strip plt_SR_Format_string_object
 plt_SR_Format_string_object:
 _p_497:
@@ -95701,7 +95748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 31940
+.word 31946
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_498:
@@ -95709,7 +95756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 31966
+.word 31972
 	.no_dead_strip plt_System_Text_StringBuilder__ctor
 plt_System_Text_StringBuilder__ctor:
 _p_499:
@@ -95717,7 +95764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 31976
+.word 31982
 	.no_dead_strip plt_System_Text_StringBuilder_Append_string
 plt_System_Text_StringBuilder_Append_string:
 _p_500:
@@ -95725,7 +95772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 31981
+.word 31987
 	.no_dead_strip plt_System_Text_StringBuilder_Append_object
 plt_System_Text_StringBuilder_Append_object:
 _p_501:
@@ -95733,7 +95780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 31986
+.word 31992
 	.no_dead_strip plt__rgctx_fetch_7
 plt__rgctx_fetch_7:
 _p_502:
@@ -95741,7 +95788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 32012
+.word 32018
 	.no_dead_strip plt_System_Text_StringBuilder_Append_char
 plt_System_Text_StringBuilder_Append_char:
 _p_503:
@@ -95749,7 +95796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 32022
+.word 32028
 	.no_dead_strip plt__rgctx_fetch_8
 plt__rgctx_fetch_8:
 _p_504:
@@ -95757,7 +95804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 32048
+.word 32054
 	.no_dead_strip plt__rgctx_fetch_9
 plt__rgctx_fetch_9:
 _p_505:
@@ -95765,7 +95812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 32097
+.word 32103
 	.no_dead_strip plt__rgctx_fetch_10
 plt__rgctx_fetch_10:
 _p_506:
@@ -95773,7 +95820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 32146
+.word 32152
 	.no_dead_strip plt__rgctx_fetch_11
 plt__rgctx_fetch_11:
 _p_507:
@@ -95781,7 +95828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 32195
+.word 32201
 	.no_dead_strip plt__rgctx_fetch_12
 plt__rgctx_fetch_12:
 _p_508:
@@ -95789,7 +95836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 32232
+.word 32238
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default
 plt_System_Collections_Generic_EqualityComparer_1_TKey_REF_get_Default:
 _p_509:
@@ -95797,7 +95844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 32244
+.word 32250
 	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
 plt__jit_icall_mono_helper_newobj_mscorlib:
 _p_510:
@@ -95805,7 +95852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 32265
+.word 32271
 	.no_dead_strip plt_System_ArgumentOutOfRangeException__ctor_string_object_string
 plt_System_ArgumentOutOfRangeException__ctor_string_object_string:
 _p_511:
@@ -95813,7 +95860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 32295
+.word 32301
 	.no_dead_strip plt__rgctx_fetch_13
 plt__rgctx_fetch_13:
 _p_512:
@@ -95821,7 +95868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 32321
+.word 32327
 	.no_dead_strip plt__rgctx_fetch_14
 plt__rgctx_fetch_14:
 _p_513:
@@ -95829,7 +95876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 32393
+.word 32399
 	.no_dead_strip plt__rgctx_fetch_15
 plt__rgctx_fetch_15:
 _p_514:
@@ -95837,7 +95884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 32422
+.word 32428
 	.no_dead_strip plt__rgctx_fetch_16
 plt__rgctx_fetch_16:
 _p_515:
@@ -95845,7 +95892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 32450
+.word 32456
 	.no_dead_strip plt__rgctx_fetch_17
 plt__rgctx_fetch_17:
 _p_516:
@@ -95853,7 +95900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 32460
+.word 32466
 	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
 plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
 _p_517:
@@ -95861,7 +95908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 32470
+.word 32476
 	.no_dead_strip plt__rgctx_fetch_18
 plt__rgctx_fetch_18:
 _p_518:
@@ -95869,7 +95916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 32478
+.word 32484
 	.no_dead_strip plt__rgctx_fetch_19
 plt__rgctx_fetch_19:
 _p_519:
@@ -95877,7 +95924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 32517
+.word 32523
 	.no_dead_strip plt__rgctx_fetch_20
 plt__rgctx_fetch_20:
 _p_520:
@@ -95885,7 +95932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 32557
+.word 32563
 	.no_dead_strip plt__rgctx_fetch_21
 plt__rgctx_fetch_21:
 _p_521:
@@ -95893,7 +95940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 32586
+.word 32592
 	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo
 plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Add_object_System_Runtime_Serialization_SerializationInfo:
 _p_522:
@@ -95901,7 +95948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 32612
+.word 32618
 	.no_dead_strip plt__rgctx_fetch_22
 plt__rgctx_fetch_22:
 _p_523:
@@ -95909,7 +95956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 32671
+.word 32677
 	.no_dead_strip plt__rgctx_fetch_23
 plt__rgctx_fetch_23:
 _p_524:
@@ -95917,7 +95964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 32683
+.word 32689
 	.no_dead_strip plt__rgctx_fetch_24
 plt__rgctx_fetch_24:
 _p_525:
@@ -95925,7 +95972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 32734
+.word 32740
 	.no_dead_strip plt__rgctx_fetch_25
 plt__rgctx_fetch_25:
 _p_526:
@@ -95933,7 +95980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 32746
+.word 32752
 	.no_dead_strip plt__rgctx_fetch_26
 plt__rgctx_fetch_26:
 _p_527:
@@ -95941,7 +95988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 32797
+.word 32803
 	.no_dead_strip plt__rgctx_fetch_27
 plt__rgctx_fetch_27:
 _p_528:
@@ -95949,7 +95996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 32809
+.word 32815
 	.no_dead_strip plt__rgctx_fetch_28
 plt__rgctx_fetch_28:
 _p_529:
@@ -95957,7 +96004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 32872
+.word 32878
 	.no_dead_strip plt__rgctx_fetch_29
 plt__rgctx_fetch_29:
 _p_530:
@@ -95965,7 +96012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 32884
+.word 32890
 	.no_dead_strip plt__rgctx_fetch_30
 plt__rgctx_fetch_30:
 _p_531:
@@ -95973,7 +96020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 32935
+.word 32941
 	.no_dead_strip plt__rgctx_fetch_31
 plt__rgctx_fetch_31:
 _p_532:
@@ -95981,7 +96028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 32947
+.word 32953
 	.no_dead_strip plt__rgctx_fetch_32
 plt__rgctx_fetch_32:
 _p_533:
@@ -95989,7 +96036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 32998
+.word 33004
 	.no_dead_strip plt__rgctx_fetch_33
 plt__rgctx_fetch_33:
 _p_534:
@@ -95997,7 +96044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 33010
+.word 33016
 	.no_dead_strip plt__rgctx_fetch_34
 plt__rgctx_fetch_34:
 _p_535:
@@ -96005,7 +96052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 33061
+.word 33067
 	.no_dead_strip plt__rgctx_fetch_35
 plt__rgctx_fetch_35:
 _p_536:
@@ -96013,7 +96060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 33110
+.word 33116
 	.no_dead_strip plt__rgctx_fetch_36
 plt__rgctx_fetch_36:
 _p_537:
@@ -96021,7 +96068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 33159
+.word 33165
 	.no_dead_strip plt__rgctx_fetch_37
 plt__rgctx_fetch_37:
 _p_538:
@@ -96029,7 +96076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 33208
+.word 33214
 	.no_dead_strip plt__rgctx_fetch_38
 plt__rgctx_fetch_38:
 _p_539:
@@ -96037,7 +96084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 33220
+.word 33226
 	.no_dead_strip plt__rgctx_fetch_39
 plt__rgctx_fetch_39:
 _p_540:
@@ -96045,7 +96092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 33269
+.word 33275
 	.no_dead_strip plt__rgctx_fetch_40
 plt__rgctx_fetch_40:
 _p_541:
@@ -96053,7 +96100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 33281
+.word 33287
 	.no_dead_strip plt__rgctx_fetch_41
 plt__rgctx_fetch_41:
 _p_542:
@@ -96061,7 +96108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 33318
+.word 33324
 	.no_dead_strip plt__rgctx_fetch_42
 plt__rgctx_fetch_42:
 _p_543:
@@ -96069,7 +96116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 33330
+.word 33336
 	.no_dead_strip plt__rgctx_fetch_43
 plt__rgctx_fetch_43:
 _p_544:
@@ -96077,7 +96124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 33378
+.word 33384
 	.no_dead_strip plt__rgctx_fetch_44
 plt__rgctx_fetch_44:
 _p_545:
@@ -96085,7 +96132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 33390
+.word 33396
 	.no_dead_strip plt__rgctx_fetch_45
 plt__rgctx_fetch_45:
 _p_546:
@@ -96093,7 +96140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 33418
+.word 33424
 	.no_dead_strip plt__rgctx_fetch_46
 plt__rgctx_fetch_46:
 _p_547:
@@ -96101,7 +96148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 33430
+.word 33436
 	.no_dead_strip plt__rgctx_fetch_47
 plt__rgctx_fetch_47:
 _p_548:
@@ -96109,7 +96156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 33457
+.word 33463
 	.no_dead_strip plt_System_Array_Clear_System_Array_int_int
 plt_System_Array_Clear_System_Array_int_int:
 _p_549:
@@ -96117,7 +96164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 33485
+.word 33491
 	.no_dead_strip plt__rgctx_fetch_48
 plt__rgctx_fetch_48:
 _p_550:
@@ -96125,7 +96172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 33511
+.word 33517
 	.no_dead_strip plt__rgctx_fetch_49
 plt__rgctx_fetch_49:
 _p_551:
@@ -96133,7 +96180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 33560
+.word 33566
 	.no_dead_strip plt__rgctx_fetch_50
 plt__rgctx_fetch_50:
 _p_552:
@@ -96141,7 +96188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 33572
+.word 33578
 	.no_dead_strip plt__rgctx_fetch_51
 plt__rgctx_fetch_51:
 _p_553:
@@ -96149,7 +96196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 33620
+.word 33626
 	.no_dead_strip plt__rgctx_fetch_52
 plt__rgctx_fetch_52:
 _p_554:
@@ -96157,7 +96204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 33632
+.word 33638
 	.no_dead_strip plt__rgctx_fetch_53
 plt__rgctx_fetch_53:
 _p_555:
@@ -96165,7 +96212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 33695
+.word 33701
 	.no_dead_strip plt__rgctx_fetch_54
 plt__rgctx_fetch_54:
 _p_556:
@@ -96173,7 +96220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 33707
+.word 33713
 	.no_dead_strip plt__rgctx_fetch_55
 plt__rgctx_fetch_55:
 _p_557:
@@ -96181,7 +96228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 33758
+.word 33764
 	.no_dead_strip plt__rgctx_fetch_56
 plt__rgctx_fetch_56:
 _p_558:
@@ -96189,7 +96236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 33770
+.word 33776
 	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int
 plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_int:
 _p_559:
@@ -96197,7 +96244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 33800
+.word 33806
 	.no_dead_strip plt__rgctx_fetch_57
 plt__rgctx_fetch_57:
 _p_560:
@@ -96205,7 +96252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 33835
+.word 33841
 	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type
 plt_System_Runtime_Serialization_SerializationInfo_AddValue_string_object_System_Type:
 _p_561:
@@ -96213,7 +96260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 33847
+.word 33853
 	.no_dead_strip plt__rgctx_fetch_58
 plt__rgctx_fetch_58:
 _p_562:
@@ -96221,7 +96268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 33852
+.word 33858
 	.no_dead_strip plt__rgctx_fetch_59
 plt__rgctx_fetch_59:
 _p_563:
@@ -96229,7 +96276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 33866
+.word 33872
 	.no_dead_strip plt__rgctx_fetch_60
 plt__rgctx_fetch_60:
 _p_564:
@@ -96237,7 +96284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 33894
+.word 33900
 	.no_dead_strip plt__rgctx_fetch_61
 plt__rgctx_fetch_61:
 _p_565:
@@ -96245,7 +96292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 33929
+.word 33935
 	.no_dead_strip plt__rgctx_fetch_62
 plt__rgctx_fetch_62:
 _p_566:
@@ -96253,7 +96300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 33956
+.word 33962
 	.no_dead_strip plt_System_Collections_HashHelpers_GetPrime_int
 plt_System_Collections_HashHelpers_GetPrime_int:
 _p_567:
@@ -96261,7 +96308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 33983
+.word 33989
 	.no_dead_strip plt__rgctx_fetch_63
 plt__rgctx_fetch_63:
 _p_568:
@@ -96269,7 +96316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 34021
+.word 34027
 	.no_dead_strip plt__rgctx_fetch_64
 plt__rgctx_fetch_64:
 _p_569:
@@ -96277,7 +96324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 34056
+.word 34062
 	.no_dead_strip plt__rgctx_fetch_65
 plt__rgctx_fetch_65:
 _p_570:
@@ -96285,7 +96332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 34084
+.word 34090
 	.no_dead_strip plt__rgctx_fetch_66
 plt__rgctx_fetch_66:
 _p_571:
@@ -96293,7 +96340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 34111
+.word 34117
 	.no_dead_strip plt__rgctx_fetch_67
 plt__rgctx_fetch_67:
 _p_572:
@@ -96301,7 +96348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 34138
+.word 34144
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_string_get_Default
 plt_System_Collections_Generic_EqualityComparer_1_string_get_Default:
 _p_573:
@@ -96309,7 +96356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 34166
+.word 34172
 	.no_dead_strip plt__rgctx_fetch_68
 plt__rgctx_fetch_68:
 _p_574:
@@ -96317,7 +96364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 34188
+.word 34194
 	.no_dead_strip plt__rgctx_fetch_69
 plt__rgctx_fetch_69:
 _p_575:
@@ -96325,7 +96372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 34200
+.word 34206
 	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_
 plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_TryGetValue_object_System_Runtime_Serialization_SerializationInfo_:
 _p_576:
@@ -96333,7 +96380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 34228
+.word 34234
 	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string
 plt_System_Runtime_Serialization_SerializationInfo_GetInt32_string:
 _p_577:
@@ -96341,7 +96388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 34254
+.word 34260
 	.no_dead_strip plt__rgctx_fetch_70
 plt__rgctx_fetch_70:
 _p_578:
@@ -96349,7 +96396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 34280
+.word 34286
 	.no_dead_strip plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type
 plt_System_Runtime_Serialization_SerializationInfo_GetValue_string_System_Type:
 _p_579:
@@ -96357,7 +96404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 34292
+.word 34298
 	.no_dead_strip plt__rgctx_fetch_71
 plt__rgctx_fetch_71:
 _p_580:
@@ -96365,7 +96412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 34297
+.word 34303
 	.no_dead_strip plt__rgctx_fetch_72
 plt__rgctx_fetch_72:
 _p_581:
@@ -96373,7 +96420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 34309
+.word 34315
 	.no_dead_strip plt__rgctx_fetch_73
 plt__rgctx_fetch_73:
 _p_582:
@@ -96381,7 +96428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 34323
+.word 34329
 	.no_dead_strip plt__rgctx_fetch_74
 plt__rgctx_fetch_74:
 _p_583:
@@ -96389,7 +96436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 34337
+.word 34343
 	.no_dead_strip plt__rgctx_fetch_75
 plt__rgctx_fetch_75:
 _p_584:
@@ -96397,7 +96444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 34351
+.word 34357
 	.no_dead_strip plt__rgctx_fetch_76
 plt__rgctx_fetch_76:
 _p_585:
@@ -96405,7 +96452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 34363
+.word 34369
 	.no_dead_strip plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object
 plt_System_Runtime_CompilerServices_ConditionalWeakTable_2_object_System_Runtime_Serialization_SerializationInfo_Remove_object:
 _p_586:
@@ -96413,7 +96460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 34391
+.word 34397
 	.no_dead_strip plt_System_Collections_HashHelpers_ExpandPrime_int
 plt_System_Collections_HashHelpers_ExpandPrime_int:
 _p_587:
@@ -96421,7 +96468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 34417
+.word 34423
 	.no_dead_strip plt__rgctx_fetch_77
 plt__rgctx_fetch_77:
 _p_588:
@@ -96429,7 +96476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 34443
+.word 34449
 	.no_dead_strip plt__rgctx_fetch_78
 plt__rgctx_fetch_78:
 _p_589:
@@ -96437,7 +96484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 34492
+.word 34498
 	.no_dead_strip plt__rgctx_fetch_79
 plt__rgctx_fetch_79:
 _p_590:
@@ -96445,7 +96492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 34506
+.word 34512
 	.no_dead_strip plt__rgctx_fetch_80
 plt__rgctx_fetch_80:
 _p_591:
@@ -96453,7 +96500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 34554
+.word 34560
 	.no_dead_strip plt__rgctx_fetch_81
 plt__rgctx_fetch_81:
 _p_592:
@@ -96461,7 +96508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 34581
+.word 34587
 	.no_dead_strip plt__rgctx_fetch_82
 plt__rgctx_fetch_82:
 _p_593:
@@ -96469,7 +96516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 34629
+.word 34635
 	.no_dead_strip plt__rgctx_fetch_83
 plt__rgctx_fetch_83:
 _p_594:
@@ -96477,7 +96524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 34678
+.word 34684
 	.no_dead_strip plt__rgctx_fetch_84
 plt__rgctx_fetch_84:
 _p_595:
@@ -96485,7 +96532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 34727
+.word 34733
 	.no_dead_strip plt__rgctx_fetch_85
 plt__rgctx_fetch_85:
 _p_596:
@@ -96493,7 +96540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 34776
+.word 34782
 	.no_dead_strip plt__rgctx_fetch_86
 plt__rgctx_fetch_86:
 _p_597:
@@ -96501,7 +96548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 34790
+.word 34796
 	.no_dead_strip plt__rgctx_fetch_87
 plt__rgctx_fetch_87:
 _p_598:
@@ -96509,7 +96556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 34818
+.word 34824
 	.no_dead_strip plt__rgctx_fetch_88
 plt__rgctx_fetch_88:
 _p_599:
@@ -96517,7 +96564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 34828
+.word 34834
 	.no_dead_strip plt__rgctx_fetch_89
 plt__rgctx_fetch_89:
 _p_600:
@@ -96525,7 +96572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 34840
+.word 34846
 	.no_dead_strip plt__rgctx_fetch_90
 plt__rgctx_fetch_90:
 _p_601:
@@ -96533,7 +96580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 34891
+.word 34897
 	.no_dead_strip plt__rgctx_fetch_91
 plt__rgctx_fetch_91:
 _p_602:
@@ -96541,7 +96588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 34903
+.word 34909
 	.no_dead_strip plt__rgctx_fetch_92
 plt__rgctx_fetch_92:
 _p_603:
@@ -96549,7 +96596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 34954
+.word 34960
 	.no_dead_strip plt__rgctx_fetch_93
 plt__rgctx_fetch_93:
 _p_604:
@@ -96557,7 +96604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 35003
+.word 35009
 	.no_dead_strip plt__rgctx_fetch_94
 plt__rgctx_fetch_94:
 _p_605:
@@ -96565,7 +96612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 35052
+.word 35058
 	.no_dead_strip plt__rgctx_fetch_95
 plt__rgctx_fetch_95:
 _p_606:
@@ -96573,7 +96620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 35062
+.word 35068
 	.no_dead_strip plt__rgctx_fetch_96
 plt__rgctx_fetch_96:
 _p_607:
@@ -96581,7 +96628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 35090
+.word 35096
 	.no_dead_strip plt__rgctx_fetch_97
 plt__rgctx_fetch_97:
 _p_608:
@@ -96589,7 +96636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 35100
+.word 35106
 	.no_dead_strip plt__rgctx_fetch_98
 plt__rgctx_fetch_98:
 _p_609:
@@ -96597,7 +96644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 35128
+.word 35134
 	.no_dead_strip plt__rgctx_fetch_99
 plt__rgctx_fetch_99:
 _p_610:
@@ -96605,7 +96652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 35159
+.word 35165
 	.no_dead_strip plt__rgctx_fetch_100
 plt__rgctx_fetch_100:
 _p_611:
@@ -96613,7 +96660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 35169
+.word 35175
 	.no_dead_strip plt__rgctx_fetch_101
 plt__rgctx_fetch_101:
 _p_612:
@@ -96621,7 +96668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 35179
+.word 35185
 	.no_dead_strip plt__rgctx_fetch_102
 plt__rgctx_fetch_102:
 _p_613:
@@ -96629,7 +96676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 35207
+.word 35213
 	.no_dead_strip plt_SR_Format_string_object_object
 plt_SR_Format_string_object_object:
 _p_614:
@@ -96637,7 +96684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 35217
+.word 35223
 	.no_dead_strip plt__rgctx_fetch_103
 plt__rgctx_fetch_103:
 _p_615:
@@ -96645,7 +96692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 35222
+.word 35228
 	.no_dead_strip plt__rgctx_fetch_104
 plt__rgctx_fetch_104:
 _p_616:
@@ -96653,7 +96700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 35253
+.word 35259
 	.no_dead_strip plt__rgctx_fetch_105
 plt__rgctx_fetch_105:
 _p_617:
@@ -96661,7 +96708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 35284
+.word 35290
 	.no_dead_strip plt__rgctx_fetch_106
 plt__rgctx_fetch_106:
 _p_618:
@@ -96669,7 +96716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 35294
+.word 35300
 	.no_dead_strip plt__rgctx_fetch_107
 plt__rgctx_fetch_107:
 _p_619:
@@ -96677,7 +96724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 35304
+.word 35310
 	.no_dead_strip plt__rgctx_fetch_108
 plt__rgctx_fetch_108:
 _p_620:
@@ -96685,7 +96732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 35332
+.word 35338
 	.no_dead_strip plt__rgctx_fetch_109
 plt__rgctx_fetch_109:
 _p_621:
@@ -96693,7 +96740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 35342
+.word 35348
 	.no_dead_strip plt__rgctx_fetch_110
 plt__rgctx_fetch_110:
 _p_622:
@@ -96701,7 +96748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 35373
+.word 35379
 	.no_dead_strip plt__rgctx_fetch_111
 plt__rgctx_fetch_111:
 _p_623:
@@ -96709,7 +96756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 35383
+.word 35389
 	.no_dead_strip plt__rgctx_fetch_112
 plt__rgctx_fetch_112:
 _p_624:
@@ -96717,7 +96764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 35411
+.word 35417
 	.no_dead_strip plt__rgctx_fetch_113
 plt__rgctx_fetch_113:
 _p_625:
@@ -96725,7 +96772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 35421
+.word 35427
 	.no_dead_strip plt__rgctx_fetch_114
 plt__rgctx_fetch_114:
 _p_626:
@@ -96733,7 +96780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 35470
+.word 35476
 	.no_dead_strip plt__rgctx_fetch_115
 plt__rgctx_fetch_115:
 _p_627:
@@ -96741,7 +96788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 35482
+.word 35488
 	.no_dead_strip plt__rgctx_fetch_116
 plt__rgctx_fetch_116:
 _p_628:
@@ -96749,7 +96796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 35533
+.word 35539
 	.no_dead_strip plt__rgctx_fetch_117
 plt__rgctx_fetch_117:
 _p_629:
@@ -96757,7 +96804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 35543
+.word 35549
 	.no_dead_strip plt__rgctx_fetch_118
 plt__rgctx_fetch_118:
 _p_630:
@@ -96765,7 +96812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 35571
+.word 35577
 	.no_dead_strip plt__rgctx_fetch_119
 plt__rgctx_fetch_119:
 _p_631:
@@ -96773,7 +96820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 35581
+.word 35587
 	.no_dead_strip plt__rgctx_fetch_120
 plt__rgctx_fetch_120:
 _p_632:
@@ -96781,7 +96828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 35642
+.word 35648
 	.no_dead_strip plt__rgctx_fetch_121
 plt__rgctx_fetch_121:
 _p_633:
@@ -96789,7 +96836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 35654
+.word 35660
 	.no_dead_strip plt__rgctx_fetch_122
 plt__rgctx_fetch_122:
 _p_634:
@@ -96797,7 +96844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 35717
+.word 35723
 	.no_dead_strip plt__rgctx_fetch_123
 plt__rgctx_fetch_123:
 _p_635:
@@ -96805,7 +96852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 35768
+.word 35774
 	.no_dead_strip plt__rgctx_fetch_124
 plt__rgctx_fetch_124:
 _p_636:
@@ -96813,7 +96860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 35780
+.word 35786
 	.no_dead_strip plt__rgctx_fetch_125
 plt__rgctx_fetch_125:
 _p_637:
@@ -96821,7 +96868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 35831
+.word 35837
 	.no_dead_strip plt__rgctx_fetch_126
 plt__rgctx_fetch_126:
 _p_638:
@@ -96829,7 +96876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 35843
+.word 35849
 	.no_dead_strip plt__rgctx_fetch_127
 plt__rgctx_fetch_127:
 _p_639:
@@ -96837,7 +96884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 35894
+.word 35900
 	.no_dead_strip plt__rgctx_fetch_128
 plt__rgctx_fetch_128:
 _p_640:
@@ -96845,7 +96892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 35906
+.word 35912
 	.no_dead_strip plt__rgctx_fetch_129
 plt__rgctx_fetch_129:
 _p_641:
@@ -96853,7 +96900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 35967
+.word 35973
 	.no_dead_strip plt__rgctx_fetch_130
 plt__rgctx_fetch_130:
 _p_642:
@@ -96861,7 +96908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 35979
+.word 35985
 	.no_dead_strip plt__rgctx_fetch_131
 plt__rgctx_fetch_131:
 _p_643:
@@ -96869,7 +96916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 36042
+.word 36048
 	.no_dead_strip plt__rgctx_fetch_132
 plt__rgctx_fetch_132:
 _p_644:
@@ -96877,7 +96924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+8192
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 36093
+.word 36099
 	.no_dead_strip plt__rgctx_fetch_133
 plt__rgctx_fetch_133:
 _p_645:
@@ -96885,7 +96932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 36105
+.word 36111
 	.no_dead_strip plt__rgctx_fetch_134
 plt__rgctx_fetch_134:
 _p_646:
@@ -96893,7 +96940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 36156
+.word 36162
 	.no_dead_strip plt__rgctx_fetch_135
 plt__rgctx_fetch_135:
 _p_647:
@@ -96901,7 +96948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 36168
+.word 36174
 	.no_dead_strip plt__rgctx_fetch_136
 plt__rgctx_fetch_136:
 _p_648:
@@ -96909,7 +96956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 36219
+.word 36225
 	.no_dead_strip plt__rgctx_fetch_137
 plt__rgctx_fetch_137:
 _p_649:
@@ -96917,7 +96964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 36231
+.word 36237
 	.no_dead_strip plt__rgctx_fetch_138
 plt__rgctx_fetch_138:
 _p_650:
@@ -96925,7 +96972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 36259
+.word 36265
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_651:
@@ -96933,7 +96980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 36269
+.word 36275
 	.no_dead_strip plt__rgctx_fetch_139
 plt__rgctx_fetch_139:
 _p_652:
@@ -96941,7 +96988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 36301
+.word 36307
 	.no_dead_strip plt__rgctx_fetch_140
 plt__rgctx_fetch_140:
 _p_653:
@@ -96949,7 +96996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 36313
+.word 36319
 	.no_dead_strip plt__rgctx_fetch_141
 plt__rgctx_fetch_141:
 _p_654:
@@ -96957,7 +97004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 36358
+.word 36364
 	.no_dead_strip plt__rgctx_fetch_142
 plt__rgctx_fetch_142:
 _p_655:
@@ -96965,7 +97012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 36368
+.word 36374
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
 plt_System_Threading_Tasks_Task_get_Id:
 _p_656:
@@ -96973,7 +97020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 36393
+.word 36399
 	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
 plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
 _p_657:
@@ -96981,7 +97028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 36398
+.word 36404
 	.no_dead_strip plt__rgctx_fetch_143
 plt__rgctx_fetch_143:
 _p_658:
@@ -96989,7 +97036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 36403
+.word 36409
 	.no_dead_strip plt__rgctx_fetch_144
 plt__rgctx_fetch_144:
 _p_659:
@@ -96997,7 +97044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 36415
+.word 36421
 	.no_dead_strip plt__rgctx_fetch_145
 plt__rgctx_fetch_145:
 _p_660:
@@ -97005,7 +97052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 36460
+.word 36466
 	.no_dead_strip plt__rgctx_fetch_146
 plt__rgctx_fetch_146:
 _p_661:
@@ -97013,7 +97060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 36470
+.word 36476
 	.no_dead_strip plt__rgctx_fetch_147
 plt__rgctx_fetch_147:
 _p_662:
@@ -97021,7 +97068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 36513
+.word 36519
 	.no_dead_strip plt__rgctx_fetch_148
 plt__rgctx_fetch_148:
 _p_663:
@@ -97029,7 +97076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 36523
+.word 36529
 	.no_dead_strip plt__rgctx_fetch_149
 plt__rgctx_fetch_149:
 _p_664:
@@ -97037,7 +97084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 36548
+.word 36554
 	.no_dead_strip plt__rgctx_fetch_150
 plt__rgctx_fetch_150:
 _p_665:
@@ -97045,7 +97092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 36560
+.word 36566
 	.no_dead_strip plt__rgctx_fetch_151
 plt__rgctx_fetch_151:
 _p_666:
@@ -97053,7 +97100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 36587
+.word 36593
 	.no_dead_strip plt__rgctx_fetch_152
 plt__rgctx_fetch_152:
 _p_667:
@@ -97061,7 +97108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 36632
+.word 36638
 	.no_dead_strip plt__rgctx_fetch_153
 plt__rgctx_fetch_153:
 _p_668:
@@ -97069,7 +97116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 36642
+.word 36648
 	.no_dead_strip plt__rgctx_fetch_154
 plt__rgctx_fetch_154:
 _p_669:
@@ -97077,7 +97124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 36652
+.word 36658
 	.no_dead_strip plt_System_Decimal_op_Equality_System_Decimal_System_Decimal
 plt_System_Decimal_op_Equality_System_Decimal_System_Decimal:
 _p_670:
@@ -97085,7 +97132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 36680
+.word 36686
 	.no_dead_strip plt__rgctx_fetch_155
 plt__rgctx_fetch_155:
 _p_671:
@@ -97093,7 +97140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 36685
+.word 36691
 	.no_dead_strip plt__rgctx_fetch_156
 plt__rgctx_fetch_156:
 _p_672:
@@ -97101,7 +97148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 36695
+.word 36701
 	.no_dead_strip plt__rgctx_fetch_157
 plt__rgctx_fetch_157:
 _p_673:
@@ -97109,7 +97156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 36705
+.word 36711
 	.no_dead_strip plt__rgctx_fetch_158
 plt__rgctx_fetch_158:
 _p_674:
@@ -97117,7 +97164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 36717
+.word 36723
 	.no_dead_strip plt__rgctx_fetch_159
 plt__rgctx_fetch_159:
 _p_675:
@@ -97125,7 +97172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 36762
+.word 36768
 	.no_dead_strip plt__rgctx_fetch_160
 plt__rgctx_fetch_160:
 _p_676:
@@ -97133,7 +97180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 36788
+.word 36794
 	.no_dead_strip plt__rgctx_fetch_161
 plt__rgctx_fetch_161:
 _p_677:
@@ -97141,7 +97188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 36814
+.word 36820
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
 plt_System_Threading_Tasks_Task__ctor:
 _p_678:
@@ -97149,7 +97196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 36824
+.word 36830
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_679:
@@ -97157,7 +97204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 36829
+.word 36835
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_680:
@@ -97165,7 +97212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 36834
+.word 36840
 	.no_dead_strip plt__rgctx_fetch_162
 plt__rgctx_fetch_162:
 _p_681:
@@ -97173,7 +97220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 36857
+.word 36863
 	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
 _p_682:
@@ -97181,7 +97228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 36882
+.word 36888
 	.no_dead_strip plt__rgctx_fetch_163
 plt__rgctx_fetch_163:
 _p_683:
@@ -97189,7 +97236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 36905
+.word 36911
 	.no_dead_strip plt__rgctx_fetch_164
 plt__rgctx_fetch_164:
 _p_684:
@@ -97197,7 +97244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 36948
+.word 36954
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_685:
@@ -97205,7 +97252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 36973
+.word 36979
 	.no_dead_strip plt__rgctx_fetch_165
 plt__rgctx_fetch_165:
 _p_686:
@@ -97213,7 +97260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 36996
+.word 37002
 	.no_dead_strip plt__rgctx_fetch_166
 plt__rgctx_fetch_166:
 _p_687:
@@ -97221,7 +97268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 37039
+.word 37045
 	.no_dead_strip plt__rgctx_fetch_167
 plt__rgctx_fetch_167:
 _p_688:
@@ -97229,7 +97276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 37049
+.word 37055
 	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
 plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_689:
@@ -97237,7 +97284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 37074
+.word 37080
 	.no_dead_strip plt__rgctx_fetch_168
 plt__rgctx_fetch_168:
 _p_690:
@@ -97245,7 +97292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 37097
+.word 37103
 	.no_dead_strip plt__rgctx_fetch_169
 plt__rgctx_fetch_169:
 _p_691:
@@ -97253,7 +97300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 37107
+.word 37113
 	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
 plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_692:
@@ -97261,7 +97308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 37132
+.word 37138
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
 plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_693:
@@ -97269,7 +97316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 37137
+.word 37143
 	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
 plt_System_Threading_Tasks_Task_FinishStageThree:
 _p_694:
@@ -97277,7 +97324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 37142
+.word 37148
 	.no_dead_strip plt__rgctx_fetch_170
 plt__rgctx_fetch_170:
 _p_695:
@@ -97285,7 +97332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 37165
+.word 37171
 	.no_dead_strip plt__rgctx_fetch_171
 plt__rgctx_fetch_171:
 _p_696:
@@ -97293,7 +97340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 37208
+.word 37214
 	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_697:
@@ -97301,7 +97348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 37233
+.word 37239
 	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
 plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
 _p_698:
@@ -97309,7 +97356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 37238
+.word 37244
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
 plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
 _p_699:
@@ -97317,7 +97364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 37243
+.word 37249
 	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
 plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_700:
@@ -97325,7 +97372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 37248
+.word 37254
 	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
 plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
 _p_701:
@@ -97333,7 +97380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 37253
+.word 37259
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
 plt_System_Threading_Tasks_Task_AddException_object:
 _p_702:
@@ -97341,7 +97388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 37258
+.word 37264
 	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
 plt_System_Threading_Tasks_Task_Finish_bool:
 _p_703:
@@ -97349,7 +97396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 37263
+.word 37269
 	.no_dead_strip plt__rgctx_fetch_172
 plt__rgctx_fetch_172:
 _p_704:
@@ -97357,7 +97404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 37286
+.word 37292
 	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
 plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
 _p_705:
@@ -97365,7 +97412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 37311
+.word 37317
 	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
 plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
 _p_706:
@@ -97373,7 +97420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 37316
+.word 37322
 	.no_dead_strip plt__rgctx_fetch_173
 plt__rgctx_fetch_173:
 _p_707:
@@ -97381,7 +97428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 37339
+.word 37345
 	.no_dead_strip plt__rgctx_fetch_174
 plt__rgctx_fetch_174:
 _p_708:
@@ -97389,7 +97436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 37349
+.word 37355
 	.no_dead_strip plt__rgctx_fetch_175
 plt__rgctx_fetch_175:
 _p_709:
@@ -97397,7 +97444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 37386
+.word 37392
 	.no_dead_strip plt__rgctx_fetch_176
 plt__rgctx_fetch_176:
 _p_710:
@@ -97405,7 +97452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 37411
+.word 37417
 	.no_dead_strip plt__rgctx_fetch_177
 plt__rgctx_fetch_177:
 _p_711:
@@ -97413,7 +97460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 37450
+.word 37456
 	.no_dead_strip plt__rgctx_fetch_178
 plt__rgctx_fetch_178:
 _p_712:
@@ -97421,7 +97468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 37462
+.word 37468
 	.no_dead_strip plt__rgctx_fetch_179
 plt__rgctx_fetch_179:
 _p_713:
@@ -97429,7 +97476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 37516
+.word 37522
 	.no_dead_strip plt__rgctx_fetch_180
 plt__rgctx_fetch_180:
 _p_714:
@@ -97437,7 +97484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 37528
+.word 37534
 	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
 plt_System_Threading_Tasks_TaskScheduler_get_Current:
 _p_715:
@@ -97445,7 +97492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 37555
+.word 37561
 	.no_dead_strip plt__rgctx_fetch_181
 plt__rgctx_fetch_181:
 _p_716:
@@ -97453,7 +97500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 37578
+.word 37584
 	.no_dead_strip plt__rgctx_fetch_182
 plt__rgctx_fetch_182:
 _p_717:
@@ -97461,7 +97508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 37621
+.word 37627
 	.no_dead_strip plt__rgctx_fetch_183
 plt__rgctx_fetch_183:
 _p_718:
@@ -97469,7 +97516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 37664
+.word 37670
 	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
 plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_719:
@@ -97477,7 +97524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 37689
+.word 37695
 	.no_dead_strip plt__rgctx_fetch_184
 plt__rgctx_fetch_184:
 _p_720:
@@ -97485,7 +97532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 37721
+.word 37727
 	.no_dead_strip plt__rgctx_fetch_185
 plt__rgctx_fetch_185:
 _p_721:
@@ -97493,7 +97540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 37733
+.word 37739
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_722:
@@ -97501,7 +97548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 37760
+.word 37766
 	.no_dead_strip plt__rgctx_fetch_186
 plt__rgctx_fetch_186:
 _p_723:
@@ -97509,7 +97556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 37792
+.word 37798
 	.no_dead_strip plt__rgctx_fetch_187
 plt__rgctx_fetch_187:
 _p_724:
@@ -97517,7 +97564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 37804
+.word 37810
 	.no_dead_strip plt__rgctx_fetch_188
 plt__rgctx_fetch_188:
 _p_725:
@@ -97525,7 +97572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 37831
+.word 37837
 	.no_dead_strip plt__rgctx_fetch_189
 plt__rgctx_fetch_189:
 _p_726:
@@ -97533,7 +97580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 37850
+.word 37856
 	.no_dead_strip plt__rgctx_fetch_190
 plt__rgctx_fetch_190:
 _p_727:
@@ -97541,7 +97588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 37862
+.word 37868
 	.no_dead_strip plt__rgctx_fetch_191
 plt__rgctx_fetch_191:
 _p_728:
@@ -97549,7 +97596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 37874
+.word 37880
 	.no_dead_strip plt__jit_icall_mono_ldftn
 plt__jit_icall_mono_ldftn:
 _p_729:
@@ -97557,7 +97604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 37901
+.word 37907
 	.no_dead_strip plt__rgctx_fetch_192
 plt__rgctx_fetch_192:
 _p_730:
@@ -97565,7 +97612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 37926
+.word 37932
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
 _p_731:
@@ -97573,7 +97620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 37938
+.word 37944
 	.no_dead_strip plt__rgctx_fetch_193
 plt__rgctx_fetch_193:
 _p_732:
@@ -97581,7 +97628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 37980
+.word 37986
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
 _p_733:
@@ -97589,7 +97636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 38005
+.word 38011
 	.no_dead_strip plt__rgctx_fetch_194
 plt__rgctx_fetch_194:
 _p_734:
@@ -97597,7 +97644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 38037
+.word 38043
 	.no_dead_strip plt__rgctx_fetch_195
 plt__rgctx_fetch_195:
 _p_735:
@@ -97605,7 +97652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 38049
+.word 38055
 	.no_dead_strip plt__rgctx_fetch_196
 plt__rgctx_fetch_196:
 _p_736:
@@ -97613,7 +97660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 38094
+.word 38100
 	.no_dead_strip plt__rgctx_fetch_197
 plt__rgctx_fetch_197:
 _p_737:
@@ -97621,7 +97668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 38106
+.word 38112
 	.no_dead_strip plt__rgctx_fetch_198
 plt__rgctx_fetch_198:
 _p_738:
@@ -97629,7 +97676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 38151
+.word 38157
 	.no_dead_strip plt__rgctx_fetch_199
 plt__rgctx_fetch_199:
 _p_739:
@@ -97637,7 +97684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 38163
+.word 38169
 	.no_dead_strip plt__rgctx_fetch_200
 plt__rgctx_fetch_200:
 _p_740:
@@ -97645,7 +97692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 38190
+.word 38196
 	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
 plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
 _p_741:
@@ -97653,7 +97700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 38217
+.word 38223
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
 _p_742:
@@ -97661,7 +97708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 38222
+.word 38228
 	.no_dead_strip plt__rgctx_fetch_201
 plt__rgctx_fetch_201:
 _p_743:
@@ -97669,7 +97716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 38227
+.word 38233
 	.no_dead_strip plt__rgctx_fetch_202
 plt__rgctx_fetch_202:
 _p_744:
@@ -97677,7 +97724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 38254
+.word 38260
 	.no_dead_strip plt__rgctx_fetch_203
 plt__rgctx_fetch_203:
 _p_745:
@@ -97685,7 +97732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 38299
+.word 38305
 	.no_dead_strip plt__rgctx_fetch_204
 plt__rgctx_fetch_204:
 _p_746:
@@ -97693,7 +97740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 38309
+.word 38315
 	.no_dead_strip plt__rgctx_fetch_205
 plt__rgctx_fetch_205:
 _p_747:
@@ -97701,7 +97748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 38361
+.word 38367
 	.no_dead_strip plt__rgctx_fetch_206
 plt__rgctx_fetch_206:
 _p_748:
@@ -97709,7 +97756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 38373
+.word 38379
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_749:
@@ -97717,7 +97764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 38400
+.word 38406
 	.no_dead_strip plt__rgctx_fetch_207
 plt__rgctx_fetch_207:
 _p_750:
@@ -97725,7 +97772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 38405
+.word 38411
 	.no_dead_strip plt__rgctx_fetch_208
 plt__rgctx_fetch_208:
 _p_751:
@@ -97733,7 +97780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 38417
+.word 38423
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
 _p_752:
@@ -97741,7 +97788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 38444
+.word 38450
 	.no_dead_strip plt__rgctx_fetch_209
 plt__rgctx_fetch_209:
 _p_753:
@@ -97749,7 +97796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 38458
+.word 38464
 	.no_dead_strip plt__rgctx_fetch_210
 plt__rgctx_fetch_210:
 _p_754:
@@ -97757,7 +97804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 38470
+.word 38476
 	.no_dead_strip plt__rgctx_fetch_211
 plt__rgctx_fetch_211:
 _p_755:
@@ -97765,7 +97812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 38497
+.word 38503
 	.no_dead_strip plt__rgctx_fetch_212
 plt__rgctx_fetch_212:
 _p_756:
@@ -97773,7 +97820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 38524
+.word 38530
 	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
 plt_System_Threading_AtomicBoolean_TryRelaxedSet:
 _p_757:
@@ -97781,7 +97828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 38551
+.word 38557
 	.no_dead_strip plt__rgctx_fetch_213
 plt__rgctx_fetch_213:
 _p_758:
@@ -97789,7 +97836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 38556
+.word 38562
 	.no_dead_strip plt__rgctx_fetch_214
 plt__rgctx_fetch_214:
 _p_759:
@@ -97797,7 +97844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 38566
+.word 38572
 	.no_dead_strip plt__rgctx_fetch_215
 plt__rgctx_fetch_215:
 _p_760:
@@ -97805,7 +97852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 38591
+.word 38597
 	.no_dead_strip plt__rgctx_fetch_216
 plt__rgctx_fetch_216:
 _p_761:
@@ -97813,7 +97860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 38618
+.word 38624
 	.no_dead_strip plt__rgctx_fetch_217
 plt__rgctx_fetch_217:
 _p_762:
@@ -97821,7 +97868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 38645
+.word 38651
 	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
 plt__jit_icall_mono_arch_rethrow_exception:
 _p_763:
@@ -97829,7 +97876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 38672
+.word 38678
 	.no_dead_strip plt__rgctx_fetch_218
 plt__rgctx_fetch_218:
 _p_764:
@@ -97837,7 +97884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 38720
+.word 38726
 	.no_dead_strip plt__rgctx_fetch_219
 plt__rgctx_fetch_219:
 _p_765:
@@ -97845,7 +97892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 38745
+.word 38751
 	.no_dead_strip plt__rgctx_fetch_220
 plt__rgctx_fetch_220:
 _p_766:
@@ -97853,7 +97900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 38788
+.word 38794
 	.no_dead_strip plt__rgctx_fetch_221
 plt__rgctx_fetch_221:
 _p_767:
@@ -97861,7 +97908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 38798
+.word 38804
 	.no_dead_strip plt__rgctx_fetch_222
 plt__rgctx_fetch_222:
 _p_768:
@@ -97869,7 +97916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 38823
+.word 38829
 	.no_dead_strip plt__rgctx_fetch_223
 plt__rgctx_fetch_223:
 _p_769:
@@ -97877,7 +97924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 38859
+.word 38865
 	.no_dead_strip plt__rgctx_fetch_224
 plt__rgctx_fetch_224:
 _p_770:
@@ -97885,7 +97932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 38871
+.word 38877
 	.no_dead_strip plt__rgctx_fetch_225
 plt__rgctx_fetch_225:
 _p_771:
@@ -97893,7 +97940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 38931
+.word 38937
 	.no_dead_strip plt__rgctx_fetch_226
 plt__rgctx_fetch_226:
 _p_772:
@@ -97901,7 +97948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 38943
+.word 38949
 	.no_dead_strip plt__rgctx_fetch_227
 plt__rgctx_fetch_227:
 _p_773:
@@ -97909,7 +97956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 38994
+.word 39000
 	.no_dead_strip plt__rgctx_fetch_228
 plt__rgctx_fetch_228:
 _p_774:
@@ -97917,7 +97964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 39006
+.word 39012
 	.no_dead_strip plt__rgctx_fetch_229
 plt__rgctx_fetch_229:
 _p_775:
@@ -97925,7 +97972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 39016
+.word 39022
 	.no_dead_strip plt__rgctx_fetch_230
 plt__rgctx_fetch_230:
 _p_776:
@@ -97933,7 +97980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 39067
+.word 39073
 	.no_dead_strip plt__rgctx_fetch_231
 plt__rgctx_fetch_231:
 _p_777:
@@ -97941,7 +97988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 39079
+.word 39085
 	.no_dead_strip plt__rgctx_fetch_232
 plt__rgctx_fetch_232:
 _p_778:
@@ -97949,7 +97996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 39110
+.word 39116
 	.no_dead_strip plt__rgctx_fetch_233
 plt__rgctx_fetch_233:
 _p_779:
@@ -97957,7 +98004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 39143
+.word 39149
 	.no_dead_strip plt__rgctx_fetch_234
 plt__rgctx_fetch_234:
 _p_780:
@@ -97965,7 +98012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 39155
+.word 39161
 	.no_dead_strip plt__rgctx_fetch_235
 plt__rgctx_fetch_235:
 _p_781:
@@ -97973,7 +98020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 39186
+.word 39192
 	.no_dead_strip plt__rgctx_fetch_236
 plt__rgctx_fetch_236:
 _p_782:
@@ -97981,7 +98028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 39196
+.word 39202
 	.no_dead_strip plt_System_Collections_Generic_KeyValuePair_PairToString_object_object
 plt_System_Collections_Generic_KeyValuePair_PairToString_object_object:
 _p_783:
@@ -97989,7 +98036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 39206
+.word 39212
 	.no_dead_strip plt__rgctx_fetch_237
 plt__rgctx_fetch_237:
 _p_784:
@@ -97997,7 +98044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 39229
+.word 39235
 	.no_dead_strip plt__rgctx_fetch_238
 plt__rgctx_fetch_238:
 _p_785:
@@ -98005,7 +98052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 39272
+.word 39278
 	.no_dead_strip plt__rgctx_fetch_239
 plt__rgctx_fetch_239:
 _p_786:
@@ -98013,7 +98060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 39315
+.word 39321
 	.no_dead_strip plt__rgctx_fetch_240
 plt__rgctx_fetch_240:
 _p_787:
@@ -98021,7 +98068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 39358
+.word 39364
 	.no_dead_strip plt__rgctx_fetch_241
 plt__rgctx_fetch_241:
 _p_788:
@@ -98029,7 +98076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 39401
+.word 39407
 	.no_dead_strip plt__rgctx_fetch_242
 plt__rgctx_fetch_242:
 _p_789:
@@ -98037,7 +98084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 39411
+.word 39417
 	.no_dead_strip plt__rgctx_fetch_243
 plt__rgctx_fetch_243:
 _p_790:
@@ -98045,7 +98092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 39454
+.word 39460
 	.no_dead_strip plt__rgctx_fetch_244
 plt__rgctx_fetch_244:
 _p_791:
@@ -98053,7 +98100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 39464
+.word 39470
 	.no_dead_strip plt__rgctx_fetch_245
 plt__rgctx_fetch_245:
 _p_792:
@@ -98061,7 +98108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 39507
+.word 39513
 	.no_dead_strip plt__rgctx_fetch_246
 plt__rgctx_fetch_246:
 _p_793:
@@ -98069,7 +98116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 39550
+.word 39556
 	.no_dead_strip plt__rgctx_fetch_247
 plt__rgctx_fetch_247:
 _p_794:
@@ -98077,7 +98124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 39593
+.word 39599
 	.no_dead_strip plt__rgctx_fetch_248
 plt__rgctx_fetch_248:
 _p_795:
@@ -98085,7 +98132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 39636
+.word 39642
 	.no_dead_strip plt__rgctx_fetch_249
 plt__rgctx_fetch_249:
 _p_796:
@@ -98093,7 +98140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 39646
+.word 39652
 	.no_dead_strip plt__rgctx_fetch_250
 plt__rgctx_fetch_250:
 _p_797:
@@ -98101,7 +98148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 39683
+.word 39689
 	.no_dead_strip plt__rgctx_fetch_251
 plt__rgctx_fetch_251:
 _p_798:
@@ -98109,7 +98156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 39708
+.word 39714
 	.no_dead_strip plt__rgctx_fetch_252
 plt__rgctx_fetch_252:
 _p_799:
@@ -98117,7 +98164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 39747
+.word 39753
 	.no_dead_strip plt__rgctx_fetch_253
 plt__rgctx_fetch_253:
 _p_800:
@@ -98125,7 +98172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 39759
+.word 39765
 	.no_dead_strip plt__rgctx_fetch_254
 plt__rgctx_fetch_254:
 _p_801:
@@ -98133,7 +98180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 39813
+.word 39819
 	.no_dead_strip plt__rgctx_fetch_255
 plt__rgctx_fetch_255:
 _p_802:
@@ -98141,7 +98188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 39825
+.word 39831
 	.no_dead_strip plt__rgctx_fetch_256
 plt__rgctx_fetch_256:
 _p_803:
@@ -98149,7 +98196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 39870
+.word 39876
 	.no_dead_strip plt__rgctx_fetch_257
 plt__rgctx_fetch_257:
 _p_804:
@@ -98157,7 +98204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 39913
+.word 39919
 	.no_dead_strip plt__rgctx_fetch_258
 plt__rgctx_fetch_258:
 _p_805:
@@ -98165,7 +98212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 39956
+.word 39962
 	.no_dead_strip plt__rgctx_fetch_259
 plt__rgctx_fetch_259:
 _p_806:
@@ -98173,7 +98220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 40008
+.word 40014
 	.no_dead_strip plt__rgctx_fetch_260
 plt__rgctx_fetch_260:
 _p_807:
@@ -98181,7 +98228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 40020
+.word 40026
 	.no_dead_strip plt__rgctx_fetch_261
 plt__rgctx_fetch_261:
 _p_808:
@@ -98189,7 +98236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 40074
+.word 40080
 	.no_dead_strip plt__rgctx_fetch_262
 plt__rgctx_fetch_262:
 _p_809:
@@ -98197,7 +98244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 40086
+.word 40092
 	.no_dead_strip plt__rgctx_fetch_263
 plt__rgctx_fetch_263:
 _p_810:
@@ -98205,7 +98252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 40113
+.word 40119
 	.no_dead_strip plt__rgctx_fetch_264
 plt__rgctx_fetch_264:
 _p_811:
@@ -98213,7 +98260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 40132
+.word 40138
 	.no_dead_strip plt__rgctx_fetch_265
 plt__rgctx_fetch_265:
 _p_812:
@@ -98221,7 +98268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 40144
+.word 40150
 	.no_dead_strip plt__rgctx_fetch_266
 plt__rgctx_fetch_266:
 _p_813:
@@ -98229,7 +98276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 40156
+.word 40162
 	.no_dead_strip plt__rgctx_fetch_267
 plt__rgctx_fetch_267:
 _p_814:
@@ -98237,7 +98284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 40195
+.word 40201
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
 _p_815:
@@ -98245,7 +98292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 40207
+.word 40213
 	.no_dead_strip plt__rgctx_fetch_268
 plt__rgctx_fetch_268:
 _p_816:
@@ -98253,7 +98300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 40249
+.word 40255
 	.no_dead_strip plt__rgctx_fetch_269
 plt__rgctx_fetch_269:
 _p_817:
@@ -98261,7 +98308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 40301
+.word 40307
 	.no_dead_strip plt__rgctx_fetch_270
 plt__rgctx_fetch_270:
 _p_818:
@@ -98269,7 +98316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 40313
+.word 40319
 	.no_dead_strip plt__rgctx_fetch_271
 plt__rgctx_fetch_271:
 _p_819:
@@ -98277,7 +98324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 40358
+.word 40364
 	.no_dead_strip plt__rgctx_fetch_272
 plt__rgctx_fetch_272:
 _p_820:
@@ -98285,7 +98332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 40370
+.word 40376
 	.no_dead_strip plt__rgctx_fetch_273
 plt__rgctx_fetch_273:
 _p_821:
@@ -98293,7 +98340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 40415
+.word 40421
 	.no_dead_strip plt__rgctx_fetch_274
 plt__rgctx_fetch_274:
 _p_822:
@@ -98301,7 +98348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 40427
+.word 40433
 	.no_dead_strip plt__rgctx_fetch_275
 plt__rgctx_fetch_275:
 _p_823:
@@ -98309,7 +98356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 40454
+.word 40460
 	.no_dead_strip plt__rgctx_fetch_276
 plt__rgctx_fetch_276:
 _p_824:
@@ -98317,7 +98364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 40481
+.word 40487
 	.no_dead_strip plt__rgctx_fetch_277
 plt__rgctx_fetch_277:
 _p_825:
@@ -98325,7 +98372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 40508
+.word 40514
 	.no_dead_strip plt__rgctx_fetch_278
 plt__rgctx_fetch_278:
 _p_826:
@@ -98333,7 +98380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 40553
+.word 40559
 	.no_dead_strip plt__rgctx_fetch_279
 plt__rgctx_fetch_279:
 _p_827:
@@ -98341,7 +98388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 40563
+.word 40569
 	.no_dead_strip plt__rgctx_fetch_280
 plt__rgctx_fetch_280:
 _p_828:
@@ -98349,7 +98396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 40615
+.word 40621
 	.no_dead_strip plt__rgctx_fetch_281
 plt__rgctx_fetch_281:
 _p_829:
@@ -98357,7 +98404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 40627
+.word 40633
 	.no_dead_strip plt__rgctx_fetch_282
 plt__rgctx_fetch_282:
 _p_830:
@@ -98365,7 +98412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 40654
+.word 40660
 	.no_dead_strip plt__rgctx_fetch_283
 plt__rgctx_fetch_283:
 _p_831:
@@ -98373,7 +98420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 40666
+.word 40672
 	.no_dead_strip plt__rgctx_fetch_284
 plt__rgctx_fetch_284:
 _p_832:
@@ -98381,7 +98428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 40702
+.word 40708
 	.no_dead_strip plt__rgctx_fetch_285
 plt__rgctx_fetch_285:
 _p_833:
@@ -98389,7 +98436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 40714
+.word 40720
 	.no_dead_strip plt__rgctx_fetch_286
 plt__rgctx_fetch_286:
 _p_834:
@@ -98397,7 +98444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 40741
+.word 40747
 	.no_dead_strip plt__rgctx_fetch_287
 plt__rgctx_fetch_287:
 _p_835:
@@ -98405,7 +98452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 40768
+.word 40774
 	.no_dead_strip plt__rgctx_fetch_288
 plt__rgctx_fetch_288:
 _p_836:
@@ -98413,7 +98460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 40795
+.word 40801
 	.no_dead_strip plt__rgctx_fetch_289
 plt__rgctx_fetch_289:
 _p_837:
@@ -98421,7 +98468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 40805
+.word 40811
 	.no_dead_strip plt__rgctx_fetch_290
 plt__rgctx_fetch_290:
 _p_838:
@@ -98429,7 +98476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 40830
+.word 40836
 	.no_dead_strip plt__rgctx_fetch_291
 plt__rgctx_fetch_291:
 _p_839:
@@ -98437,7 +98484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 40857
+.word 40863
 	.no_dead_strip plt__rgctx_fetch_292
 plt__rgctx_fetch_292:
 _p_840:
@@ -98445,7 +98492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 40884
+.word 40890
 	.no_dead_strip plt__rgctx_fetch_293
 plt__rgctx_fetch_293:
 _p_841:
@@ -98453,7 +98500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 40929
+.word 40935
 	.no_dead_strip plt__rgctx_fetch_294
 plt__rgctx_fetch_294:
 _p_842:
@@ -98461,7 +98508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 40939
+.word 40945
 	.no_dead_strip plt__rgctx_fetch_295
 plt__rgctx_fetch_295:
 _p_843:
@@ -98469,7 +98516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 40967
+.word 40973
 	.no_dead_strip plt__rgctx_fetch_296
 plt__rgctx_fetch_296:
 _p_844:
@@ -98477,7 +98524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 40977
+.word 40983
 	.no_dead_strip plt__rgctx_fetch_297
 plt__rgctx_fetch_297:
 _p_845:
@@ -98485,7 +98532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 40987
+.word 40993
 	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
 plt_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
 _p_846:
@@ -98493,7 +98540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 40999
+.word 41005
 	.no_dead_strip plt__rgctx_fetch_298
 plt__rgctx_fetch_298:
 _p_847:
@@ -98501,7 +98548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 41031
+.word 41037
 	.no_dead_strip plt__rgctx_fetch_299
 plt__rgctx_fetch_299:
 _p_848:
@@ -98509,7 +98556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 41043
+.word 41049
 	.no_dead_strip plt__rgctx_fetch_300
 plt__rgctx_fetch_300:
 _p_849:
@@ -98517,7 +98564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 41070
+.word 41076
 	.no_dead_strip plt__rgctx_fetch_301
 plt__rgctx_fetch_301:
 _p_850:
@@ -98525,7 +98572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 41080
+.word 41086
 	.no_dead_strip plt__rgctx_fetch_302
 plt__rgctx_fetch_302:
 _p_851:
@@ -98533,7 +98580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 41090
+.word 41096
 	.no_dead_strip plt__rgctx_fetch_303
 plt__rgctx_fetch_303:
 _p_852:
@@ -98541,7 +98588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 41102
+.word 41108
 	.no_dead_strip plt__rgctx_fetch_304
 plt__rgctx_fetch_304:
 _p_853:
@@ -98549,7 +98596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 41138
+.word 41144
 	.no_dead_strip plt__rgctx_fetch_305
 plt__rgctx_fetch_305:
 _p_854:
@@ -98557,7 +98604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 41174
+.word 41180
 	.no_dead_strip plt__rgctx_fetch_306
 plt__rgctx_fetch_306:
 _p_855:
@@ -98565,7 +98612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 41201
+.word 41207
 	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
 plt_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
 _p_856:
@@ -98573,7 +98620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 41226
+.word 41232
 	.no_dead_strip plt__rgctx_fetch_307
 plt__rgctx_fetch_307:
 _p_857:
@@ -98581,7 +98628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 41249
+.word 41255
 	.no_dead_strip plt__rgctx_fetch_308
 plt__rgctx_fetch_308:
 _p_858:
@@ -98589,7 +98636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 41261
+.word 41267
 	.no_dead_strip plt__rgctx_fetch_309
 plt__rgctx_fetch_309:
 _p_859:
@@ -98597,7 +98644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 41271
+.word 41277
 	.no_dead_strip plt__rgctx_fetch_310
 plt__rgctx_fetch_310:
 _p_860:
@@ -98605,7 +98652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 41299
+.word 41305
 	.no_dead_strip plt__rgctx_fetch_311
 plt__rgctx_fetch_311:
 _p_861:
@@ -98613,7 +98660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 41309
+.word 41315
 	.no_dead_strip plt__rgctx_fetch_312
 plt__rgctx_fetch_312:
 _p_862:
@@ -98621,7 +98668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 41337
+.word 41343
 	.no_dead_strip plt__rgctx_fetch_313
 plt__rgctx_fetch_313:
 _p_863:
@@ -98629,7 +98676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 41362
+.word 41368
 	.no_dead_strip plt__rgctx_fetch_314
 plt__rgctx_fetch_314:
 _p_864:
@@ -98637,7 +98684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 41390
+.word 41396
 	.no_dead_strip plt__rgctx_fetch_315
 plt__rgctx_fetch_315:
 _p_865:
@@ -98645,7 +98692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 41416
+.word 41422
 	.no_dead_strip plt__rgctx_fetch_316
 plt__rgctx_fetch_316:
 _p_866:
@@ -98653,7 +98700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 41442
+.word 41448
 	.no_dead_strip plt__rgctx_fetch_317
 plt__rgctx_fetch_317:
 _p_867:
@@ -98661,7 +98708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 41452
+.word 41458
 	.no_dead_strip plt__rgctx_fetch_318
 plt__rgctx_fetch_318:
 _p_868:
@@ -98669,7 +98716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 41477
+.word 41483
 	.no_dead_strip plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type
 plt_System_ThrowHelper_ThrowWrongValueTypeArgumentException_object_System_Type:
 _p_869:
@@ -98677,7 +98724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 41487
+.word 41493
 	.no_dead_strip plt__rgctx_fetch_319
 plt__rgctx_fetch_319:
 _p_870:
@@ -98685,7 +98732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 41510
+.word 41516
 	.no_dead_strip plt__rgctx_fetch_320
 plt__rgctx_fetch_320:
 _p_871:
@@ -98693,7 +98740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 41553
+.word 41559
 	.no_dead_strip plt__rgctx_fetch_321
 plt__rgctx_fetch_321:
 _p_872:
@@ -98701,7 +98748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 41579
+.word 41585
 	.no_dead_strip plt__rgctx_fetch_322
 plt__rgctx_fetch_322:
 _p_873:
@@ -98709,7 +98756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 41605
+.word 41611
 	.no_dead_strip plt__rgctx_fetch_323
 plt__rgctx_fetch_323:
 _p_874:
@@ -98717,7 +98764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 41615
+.word 41621
 	.no_dead_strip plt__rgctx_fetch_324
 plt__rgctx_fetch_324:
 _p_875:
@@ -98725,7 +98772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 41640
+.word 41646
 	.no_dead_strip plt__rgctx_fetch_325
 plt__rgctx_fetch_325:
 _p_876:
@@ -98733,7 +98780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 41650
+.word 41656
 	.no_dead_strip plt__rgctx_fetch_326
 plt__rgctx_fetch_326:
 _p_877:
@@ -98741,7 +98788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 41693
+.word 41699
 	.no_dead_strip plt__rgctx_fetch_327
 plt__rgctx_fetch_327:
 _p_878:
@@ -98749,7 +98796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 41745
+.word 41751
 	.no_dead_strip plt__rgctx_fetch_328
 plt__rgctx_fetch_328:
 _p_879:
@@ -98757,7 +98804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 41757
+.word 41763
 	.no_dead_strip plt__rgctx_fetch_329
 plt__rgctx_fetch_329:
 _p_880:
@@ -98765,7 +98812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 41811
+.word 41817
 	.no_dead_strip plt__rgctx_fetch_330
 plt__rgctx_fetch_330:
 _p_881:
@@ -98773,7 +98820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 41823
+.word 41829
 	.no_dead_strip plt__rgctx_fetch_331
 plt__rgctx_fetch_331:
 _p_882:
@@ -98781,7 +98828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 41868
+.word 41874
 	.no_dead_strip plt__rgctx_fetch_332
 plt__rgctx_fetch_332:
 _p_883:
@@ -98789,7 +98836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 41878
+.word 41884
 	.no_dead_strip plt__rgctx_fetch_333
 plt__rgctx_fetch_333:
 _p_884:
@@ -98797,7 +98844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 41903
+.word 41909
 	.no_dead_strip plt__rgctx_fetch_334
 plt__rgctx_fetch_334:
 _p_885:
@@ -98805,7 +98852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 41913
+.word 41919
 	.no_dead_strip plt__rgctx_fetch_335
 plt__rgctx_fetch_335:
 _p_886:
@@ -98813,7 +98860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 41956
+.word 41962
 	.no_dead_strip plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource
 plt_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource:
 _p_887:
@@ -98821,7 +98868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 41981
+.word 41987
 	.no_dead_strip plt__rgctx_fetch_336
 plt__rgctx_fetch_336:
 _p_888:
@@ -98829,7 +98876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 42004
+.word 42010
 	.no_dead_strip plt__rgctx_fetch_337
 plt__rgctx_fetch_337:
 _p_889:
@@ -98837,7 +98884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 42047
+.word 42053
 	.no_dead_strip plt_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource
 plt_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource:
 _p_890:
@@ -98845,7 +98892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 42072
+.word 42078
 	.no_dead_strip plt__rgctx_fetch_338
 plt__rgctx_fetch_338:
 _p_891:
@@ -98853,7 +98900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 42104
+.word 42110
 	.no_dead_strip plt__rgctx_fetch_339
 plt__rgctx_fetch_339:
 _p_892:
@@ -98861,7 +98908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 42116
+.word 42122
 	.no_dead_strip plt__rgctx_fetch_340
 plt__rgctx_fetch_340:
 _p_893:
@@ -98869,7 +98916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 42161
+.word 42167
 	.no_dead_strip plt__rgctx_fetch_341
 plt__rgctx_fetch_341:
 _p_894:
@@ -98877,7 +98924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 42173
+.word 42179
 	.no_dead_strip plt__rgctx_fetch_342
 plt__rgctx_fetch_342:
 _p_895:
@@ -98885,7 +98932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 42218
+.word 42224
 	.no_dead_strip plt__rgctx_fetch_343
 plt__rgctx_fetch_343:
 _p_896:
@@ -98893,7 +98940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 42230
+.word 42236
 	.no_dead_strip plt__rgctx_fetch_344
 plt__rgctx_fetch_344:
 _p_897:
@@ -98901,7 +98948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 42275
+.word 42281
 	.no_dead_strip plt__rgctx_fetch_345
 plt__rgctx_fetch_345:
 _p_898:
@@ -98909,7 +98956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 42285
+.word 42291
 	.no_dead_strip plt__rgctx_fetch_346
 plt__rgctx_fetch_346:
 _p_899:
@@ -98917,7 +98964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 42328
+.word 42334
 	.no_dead_strip plt__rgctx_fetch_347
 plt__rgctx_fetch_347:
 _p_900:
@@ -98925,7 +98972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 42353
+.word 42359
 	.no_dead_strip plt__rgctx_fetch_348
 plt__rgctx_fetch_348:
 _p_901:
@@ -98933,7 +98980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 42396
+.word 42402
 	.no_dead_strip plt__rgctx_fetch_349
 plt__rgctx_fetch_349:
 _p_902:
@@ -98941,7 +98988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 42406
+.word 42412
 	.no_dead_strip plt__rgctx_fetch_350
 plt__rgctx_fetch_350:
 _p_903:
@@ -98949,7 +98996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 42431
+.word 42437
 	.no_dead_strip plt__rgctx_fetch_351
 plt__rgctx_fetch_351:
 _p_904:
@@ -98957,7 +99004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 42441
+.word 42447
 	.no_dead_strip plt__rgctx_fetch_352
 plt__rgctx_fetch_352:
 _p_905:
@@ -98965,7 +99012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 42484
+.word 42490
 	.no_dead_strip plt__rgctx_fetch_353
 plt__rgctx_fetch_353:
 _p_906:
@@ -98973,7 +99020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 42509
+.word 42515
 	.no_dead_strip plt__rgctx_fetch_354
 plt__rgctx_fetch_354:
 _p_907:
@@ -98981,7 +99028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 42552
+.word 42558
 	.no_dead_strip plt__rgctx_fetch_355
 plt__rgctx_fetch_355:
 _p_908:
@@ -98989,7 +99036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 42577
+.word 42583
 	.no_dead_strip plt__rgctx_fetch_356
 plt__rgctx_fetch_356:
 _p_909:
@@ -98997,7 +99044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 42620
+.word 42626
 	.no_dead_strip plt__rgctx_fetch_357
 plt__rgctx_fetch_357:
 _p_910:
@@ -99005,7 +99052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 42663
+.word 42669
 	.no_dead_strip plt__rgctx_fetch_358
 plt__rgctx_fetch_358:
 _p_911:
@@ -99013,7 +99060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 42689
+.word 42695
 	.no_dead_strip plt__rgctx_fetch_359
 plt__rgctx_fetch_359:
 _p_912:
@@ -99021,7 +99068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 42715
+.word 42721
 	.no_dead_strip plt__rgctx_fetch_360
 plt__rgctx_fetch_360:
 _p_913:
@@ -99029,7 +99076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 42725
+.word 42731
 	.no_dead_strip plt__rgctx_fetch_361
 plt__rgctx_fetch_361:
 _p_914:
@@ -99037,7 +99084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 42750
+.word 42756
 	.no_dead_strip plt__rgctx_fetch_362
 plt__rgctx_fetch_362:
 _p_915:
@@ -99045,7 +99092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 42778
+.word 42784
 	.no_dead_strip plt__rgctx_fetch_363
 plt__rgctx_fetch_363:
 _p_916:
@@ -99053,7 +99100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 42790
+.word 42796
 	.no_dead_strip plt__rgctx_fetch_364
 plt__rgctx_fetch_364:
 _p_917:
@@ -99061,7 +99108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 42817
+.word 42823
 	.no_dead_strip plt__rgctx_fetch_365
 plt__rgctx_fetch_365:
 _p_918:
@@ -99069,7 +99116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 42842
+.word 42848
 	.no_dead_strip plt__rgctx_fetch_366
 plt__rgctx_fetch_366:
 _p_919:
@@ -99077,7 +99124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 42854
+.word 42860
 	.no_dead_strip plt_System_Array_CopyTo_System_Array_int
 plt_System_Array_CopyTo_System_Array_int:
 _p_920:
@@ -99085,7 +99132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 42881
+.word 42887
 	.no_dead_strip plt__rgctx_fetch_367
 plt__rgctx_fetch_367:
 _p_921:
@@ -99093,7 +99140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 42886
+.word 42892
 	.no_dead_strip plt__rgctx_fetch_368
 plt__rgctx_fetch_368:
 _p_922:
@@ -99101,7 +99148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 42913
+.word 42919
 	.no_dead_strip plt__rgctx_fetch_369
 plt__rgctx_fetch_369:
 _p_923:
@@ -99109,7 +99156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 42940
+.word 42946
 	.no_dead_strip plt__rgctx_fetch_370
 plt__rgctx_fetch_370:
 _p_924:
@@ -99117,7 +99164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 42983
+.word 42989
 	.no_dead_strip plt__rgctx_fetch_371
 plt__rgctx_fetch_371:
 _p_925:
@@ -99125,7 +99172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 43008
+.word 43014
 	.no_dead_strip plt__rgctx_fetch_372
 plt__rgctx_fetch_372:
 _p_926:
@@ -99133,7 +99180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 43051
+.word 43057
 	.no_dead_strip plt__rgctx_fetch_373
 plt__rgctx_fetch_373:
 _p_927:
@@ -99141,7 +99188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 43061
+.word 43067
 	.no_dead_strip plt__rgctx_fetch_374
 plt__rgctx_fetch_374:
 _p_928:
@@ -99149,7 +99196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 43086
+.word 43092
 	.no_dead_strip plt__rgctx_fetch_375
 plt__rgctx_fetch_375:
 _p_929:
@@ -99157,7 +99204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 43096
+.word 43102
 	.no_dead_strip plt__rgctx_fetch_376
 plt__rgctx_fetch_376:
 _p_930:
@@ -99165,7 +99212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 43139
+.word 43145
 	.no_dead_strip plt__rgctx_fetch_377
 plt__rgctx_fetch_377:
 _p_931:
@@ -99173,7 +99220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 43164
+.word 43170
 	.no_dead_strip plt__rgctx_fetch_378
 plt__rgctx_fetch_378:
 _p_932:
@@ -99181,7 +99228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 43207
+.word 43213
 	.no_dead_strip plt__rgctx_fetch_379
 plt__rgctx_fetch_379:
 _p_933:
@@ -99189,7 +99236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 43232
+.word 43238
 	.no_dead_strip plt__rgctx_fetch_380
 plt__rgctx_fetch_380:
 _p_934:
@@ -99197,7 +99244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 43275
+.word 43281
 	.no_dead_strip plt__rgctx_fetch_381
 plt__rgctx_fetch_381:
 _p_935:
@@ -99205,7 +99252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 43300
+.word 43306
 	.no_dead_strip plt__rgctx_fetch_382
 plt__rgctx_fetch_382:
 _p_936:
@@ -99213,7 +99260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 43343
+.word 43349
 	.no_dead_strip plt__rgctx_fetch_383
 plt__rgctx_fetch_383:
 _p_937:
@@ -99221,7 +99268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 43368
+.word 43374
 	.no_dead_strip plt__rgctx_fetch_384
 plt__rgctx_fetch_384:
 _p_938:
@@ -99229,7 +99276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 43411
+.word 43417
 	.no_dead_strip plt__rgctx_fetch_385
 plt__rgctx_fetch_385:
 _p_939:
@@ -99237,7 +99284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 43436
+.word 43442
 	.no_dead_strip plt__rgctx_fetch_386
 plt__rgctx_fetch_386:
 _p_940:
@@ -99245,7 +99292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 43487
+.word 43493
 	.no_dead_strip plt__rgctx_fetch_387
 plt__rgctx_fetch_387:
 _p_941:
@@ -99253,7 +99300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 43499
+.word 43505
 	.no_dead_strip plt__rgctx_fetch_388
 plt__rgctx_fetch_388:
 _p_942:
@@ -99261,7 +99308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 43526
+.word 43532
 	.no_dead_strip plt__rgctx_fetch_389
 plt__rgctx_fetch_389:
 _p_943:
@@ -99269,7 +99316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 43551
+.word 43557
 	.no_dead_strip plt__rgctx_fetch_390
 plt__rgctx_fetch_390:
 _p_944:
@@ -99277,7 +99324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 43594
+.word 43600
 	.no_dead_strip plt__rgctx_fetch_391
 plt__rgctx_fetch_391:
 _p_945:
@@ -99285,7 +99332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 43624
+.word 43630
 	.no_dead_strip plt__rgctx_fetch_392
 plt__rgctx_fetch_392:
 _p_946:
@@ -99293,7 +99340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 43667
+.word 43673
 	.no_dead_strip plt__rgctx_fetch_393
 plt__rgctx_fetch_393:
 _p_947:
@@ -99301,7 +99348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 43679
+.word 43685
 	.no_dead_strip plt__rgctx_fetch_394
 plt__rgctx_fetch_394:
 _p_948:
@@ -99309,7 +99356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 43707
+.word 43713
 	.no_dead_strip plt__rgctx_fetch_395
 plt__rgctx_fetch_395:
 _p_949:
@@ -99317,7 +99364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 43717
+.word 43723
 	.no_dead_strip plt__rgctx_fetch_396
 plt__rgctx_fetch_396:
 _p_950:
@@ -99325,7 +99372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 43760
+.word 43766
 	.no_dead_strip plt__rgctx_fetch_397
 plt__rgctx_fetch_397:
 _p_951:
@@ -99333,7 +99380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 43770
+.word 43776
 	.no_dead_strip plt__rgctx_fetch_398
 plt__rgctx_fetch_398:
 _p_952:
@@ -99341,7 +99388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 43798
+.word 43804
 	.no_dead_strip plt__rgctx_fetch_399
 plt__rgctx_fetch_399:
 _p_953:
@@ -99349,7 +99396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 43841
+.word 43847
 	.no_dead_strip plt__rgctx_fetch_400
 plt__rgctx_fetch_400:
 _p_954:
@@ -99357,7 +99404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 43884
+.word 43890
 	.no_dead_strip plt__rgctx_fetch_401
 plt__rgctx_fetch_401:
 _p_955:
@@ -99365,7 +99412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 43930
+.word 43936
 	.no_dead_strip plt__rgctx_fetch_402
 plt__rgctx_fetch_402:
 _p_956:
@@ -99373,7 +99420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 43940
+.word 43946
 	.no_dead_strip plt__rgctx_fetch_403
 plt__rgctx_fetch_403:
 _p_957:
@@ -99381,7 +99428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 43950
+.word 43956
 	.no_dead_strip plt__rgctx_fetch_404
 plt__rgctx_fetch_404:
 _p_958:
@@ -99389,7 +99436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 43981
+.word 43987
 	.no_dead_strip plt__rgctx_fetch_405
 plt__rgctx_fetch_405:
 _p_959:
@@ -99397,7 +99444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 43991
+.word 43997
 	.no_dead_strip plt__rgctx_fetch_406
 plt__rgctx_fetch_406:
 _p_960:
@@ -99405,7 +99452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 44001
+.word 44007
 	.no_dead_strip plt__rgctx_fetch_407
 plt__rgctx_fetch_407:
 _p_961:
@@ -99413,7 +99460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 44032
+.word 44038
 	.no_dead_strip plt__rgctx_fetch_408
 plt__rgctx_fetch_408:
 _p_962:
@@ -99421,7 +99468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 44042
+.word 44048
 	.no_dead_strip plt__rgctx_fetch_409
 plt__rgctx_fetch_409:
 _p_963:
@@ -99429,7 +99476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 44073
+.word 44079
 	.no_dead_strip plt__rgctx_fetch_410
 plt__rgctx_fetch_410:
 _p_964:
@@ -99437,7 +99484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 44083
+.word 44089
 	.no_dead_strip plt__rgctx_fetch_411
 plt__rgctx_fetch_411:
 _p_965:
@@ -99445,7 +99492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 44111
+.word 44117
 	.no_dead_strip plt__rgctx_fetch_412
 plt__rgctx_fetch_412:
 _p_966:
@@ -99453,7 +99500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 44136
+.word 44142
 	.no_dead_strip plt__rgctx_fetch_413
 plt__rgctx_fetch_413:
 _p_967:
@@ -99461,7 +99508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 44146
+.word 44152
 	.no_dead_strip plt__rgctx_fetch_414
 plt__rgctx_fetch_414:
 _p_968:
@@ -99469,7 +99516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 44162
+.word 44168
 	.no_dead_strip plt__rgctx_fetch_415
 plt__rgctx_fetch_415:
 _p_969:
@@ -99477,7 +99524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 44205
+.word 44211
 	.no_dead_strip plt__rgctx_fetch_416
 plt__rgctx_fetch_416:
 _p_970:
@@ -99485,7 +99532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 44217
+.word 44223
 	.no_dead_strip plt__rgctx_fetch_417
 plt__rgctx_fetch_417:
 _p_971:
@@ -99493,7 +99540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 44262
+.word 44268
 	.no_dead_strip plt__rgctx_fetch_418
 plt__rgctx_fetch_418:
 _p_972:
@@ -99501,7 +99548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 44272
+.word 44278
 	.no_dead_strip plt__rgctx_fetch_419
 plt__rgctx_fetch_419:
 _p_973:
@@ -99509,7 +99556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 44297
+.word 44303
 	.no_dead_strip plt__rgctx_fetch_420
 plt__rgctx_fetch_420:
 _p_974:
@@ -99517,7 +99564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 44309
+.word 44315
 	.no_dead_strip plt__rgctx_fetch_421
 plt__rgctx_fetch_421:
 _p_975:
@@ -99525,7 +99572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 44354
+.word 44360
 	.no_dead_strip plt__rgctx_fetch_422
 plt__rgctx_fetch_422:
 _p_976:
@@ -99533,7 +99580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 44364
+.word 44370
 	.no_dead_strip plt__rgctx_fetch_423
 plt__rgctx_fetch_423:
 _p_977:
@@ -99541,7 +99588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 44407
+.word 44413
 	.no_dead_strip plt__rgctx_fetch_424
 plt__rgctx_fetch_424:
 _p_978:
@@ -99549,7 +99596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 44417
+.word 44423
 	.no_dead_strip plt__rgctx_fetch_425
 plt__rgctx_fetch_425:
 _p_979:
@@ -99557,7 +99604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 44442
+.word 44448
 	.no_dead_strip plt__rgctx_fetch_426
 plt__rgctx_fetch_426:
 _p_980:
@@ -99565,7 +99612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 44454
+.word 44460
 	.no_dead_strip plt__rgctx_fetch_427
 plt__rgctx_fetch_427:
 _p_981:
@@ -99573,7 +99620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 44481
+.word 44487
 	.no_dead_strip plt__rgctx_fetch_428
 plt__rgctx_fetch_428:
 _p_982:
@@ -99581,7 +99628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 44526
+.word 44532
 	.no_dead_strip plt__rgctx_fetch_429
 plt__rgctx_fetch_429:
 _p_983:
@@ -99589,7 +99636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 44536
+.word 44542
 	.no_dead_strip plt__rgctx_fetch_430
 plt__rgctx_fetch_430:
 _p_984:
@@ -99597,7 +99644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 44546
+.word 44552
 	.no_dead_strip plt__rgctx_fetch_431
 plt__rgctx_fetch_431:
 _p_985:
@@ -99605,7 +99652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 44574
+.word 44580
 	.no_dead_strip plt__rgctx_fetch_432
 plt__rgctx_fetch_432:
 _p_986:
@@ -99613,7 +99660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 44584
+.word 44590
 	.no_dead_strip plt__rgctx_fetch_433
 plt__rgctx_fetch_433:
 _p_987:
@@ -99621,7 +99668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 44594
+.word 44600
 	.no_dead_strip plt__rgctx_fetch_434
 plt__rgctx_fetch_434:
 _p_988:
@@ -99629,7 +99676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 44606
+.word 44612
 	.no_dead_strip plt__rgctx_fetch_435
 plt__rgctx_fetch_435:
 _p_989:
@@ -99637,7 +99684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 44651
+.word 44657
 	.no_dead_strip plt__rgctx_fetch_436
 plt__rgctx_fetch_436:
 _p_990:
@@ -99645,7 +99692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 44677
+.word 44683
 	.no_dead_strip plt__rgctx_fetch_437
 plt__rgctx_fetch_437:
 _p_991:
@@ -99653,7 +99700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 44703
+.word 44709
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
 plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
 _p_992:
@@ -99661,7 +99708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 44713
+.word 44719
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
 plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
 _p_993:
@@ -99669,7 +99716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 44718
+.word 44724
 	.no_dead_strip plt__rgctx_fetch_438
 plt__rgctx_fetch_438:
 _p_994:
@@ -99677,7 +99724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 44750
+.word 44756
 	.no_dead_strip plt__rgctx_fetch_439
 plt__rgctx_fetch_439:
 _p_995:
@@ -99685,7 +99732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 44762
+.word 44768
 	.no_dead_strip plt__rgctx_fetch_440
 plt__rgctx_fetch_440:
 _p_996:
@@ -99693,7 +99740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 44816
+.word 44822
 	.no_dead_strip plt__rgctx_fetch_441
 plt__rgctx_fetch_441:
 _p_997:
@@ -99701,7 +99748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 44828
+.word 44834
 	.no_dead_strip plt__rgctx_fetch_442
 plt__rgctx_fetch_442:
 _p_998:
@@ -99709,7 +99756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 44873
+.word 44879
 	.no_dead_strip plt__rgctx_fetch_443
 plt__rgctx_fetch_443:
 _p_999:
@@ -99717,7 +99764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 44898
+.word 44904
 	.no_dead_strip plt__rgctx_fetch_444
 plt__rgctx_fetch_444:
 _p_1000:
@@ -99725,7 +99772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 44941
+.word 44947
 	.no_dead_strip plt__rgctx_fetch_445
 plt__rgctx_fetch_445:
 _p_1001:
@@ -99733,7 +99780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 44951
+.word 44957
 	.no_dead_strip plt__rgctx_fetch_446
 plt__rgctx_fetch_446:
 _p_1002:
@@ -99741,7 +99788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 44976
+.word 44982
 	.no_dead_strip plt__rgctx_fetch_447
 plt__rgctx_fetch_447:
 _p_1003:
@@ -99749,7 +99796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 45012
+.word 45018
 	.no_dead_strip plt__rgctx_fetch_448
 plt__rgctx_fetch_448:
 _p_1004:
@@ -99757,7 +99804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 45024
+.word 45030
 	.no_dead_strip plt__rgctx_fetch_449
 plt__rgctx_fetch_449:
 _p_1005:
@@ -99765,7 +99812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 45071
+.word 45077
 	.no_dead_strip plt__rgctx_fetch_450
 plt__rgctx_fetch_450:
 _p_1006:
@@ -99773,7 +99820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 45098
+.word 45104
 	.no_dead_strip plt__rgctx_fetch_451
 plt__rgctx_fetch_451:
 _p_1007:
@@ -99781,7 +99828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 45110
+.word 45116
 	.no_dead_strip plt__rgctx_fetch_452
 plt__rgctx_fetch_452:
 _p_1008:
@@ -99789,7 +99836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 45128
+.word 45134
 	.no_dead_strip plt__rgctx_fetch_453
 plt__rgctx_fetch_453:
 _p_1009:
@@ -99797,7 +99844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 45166
+.word 45172
 	.no_dead_strip plt__rgctx_fetch_454
 plt__rgctx_fetch_454:
 _p_1010:
@@ -99805,7 +99852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 45213
+.word 45219
 	.no_dead_strip plt__rgctx_fetch_455
 plt__rgctx_fetch_455:
 _p_1011:
@@ -99813,7 +99860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 45225
+.word 45231
 	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
 plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_1012:
@@ -99821,7 +99868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 45252
+.word 45258
 	.no_dead_strip plt_BlockchainTools_RpcClient__InitFromBootstrapd__47_MoveNext
 plt_BlockchainTools_RpcClient__InitFromBootstrapd__47_MoveNext:
 _p_1013:
@@ -99829,7 +99876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 45257
+.word 45263
 	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
 plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_1014:
@@ -99837,7 +99884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 45260
+.word 45266
 	.no_dead_strip plt_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_MoveNext
 plt_BlockchainTools_RpcClient__BalanceFromAccountTabled__48_MoveNext:
 _p_1015:
@@ -99845,7 +99892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 45265
+.word 45271
 	.no_dead_strip plt__rgctx_fetch_456
 plt__rgctx_fetch_456:
 _p_1016:
@@ -99853,7 +99900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 45289
+.word 45295
 	.no_dead_strip plt__rgctx_fetch_457
 plt__rgctx_fetch_457:
 _p_1017:
@@ -99861,7 +99908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 45317
+.word 45323
 	.no_dead_strip plt__rgctx_fetch_458
 plt__rgctx_fetch_458:
 _p_1018:
@@ -99869,7 +99916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 45366
+.word 45372
 	.no_dead_strip plt__rgctx_fetch_459
 plt__rgctx_fetch_459:
 _p_1019:
@@ -99877,7 +99924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 45394
+.word 45400
 	.no_dead_strip plt_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_MoveNext
 plt_BlockchainTools_RpcClient___ProposeTransactionb__50_0d_MoveNext:
 _p_1020:
@@ -99885,7 +99932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 45422
+.word 45428
 	.no_dead_strip plt__rgctx_fetch_460
 plt__rgctx_fetch_460:
 _p_1021:
@@ -99893,7 +99940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 45445
+.word 45451
 	.no_dead_strip plt__rgctx_fetch_461
 plt__rgctx_fetch_461:
 _p_1022:
@@ -99901,7 +99948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 45472
+.word 45478
 	.no_dead_strip plt__rgctx_fetch_462
 plt__rgctx_fetch_462:
 _p_1023:
@@ -99909,7 +99956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 45521
+.word 45527
 	.no_dead_strip plt__rgctx_fetch_463
 plt__rgctx_fetch_463:
 _p_1024:
@@ -99917,7 +99964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 45548
+.word 45554
 	.no_dead_strip plt__rgctx_fetch_464
 plt__rgctx_fetch_464:
 _p_1025:
@@ -99925,7 +99972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 45597
+.word 45603
 	.no_dead_strip plt__rgctx_fetch_465
 plt__rgctx_fetch_465:
 _p_1026:
@@ -99933,7 +99980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 45609
+.word 45615
 	.no_dead_strip plt__rgctx_fetch_466
 plt__rgctx_fetch_466:
 _p_1027:
@@ -99941,7 +99988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 45638
+.word 45644
 	.no_dead_strip plt__rgctx_fetch_467
 plt__rgctx_fetch_467:
 _p_1028:
@@ -99949,7 +99996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 45680
+.word 45686
 	.no_dead_strip plt__rgctx_fetch_468
 plt__rgctx_fetch_468:
 _p_1029:
@@ -99957,7 +100004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 45692
+.word 45698
 	.no_dead_strip plt__rgctx_fetch_469
 plt__rgctx_fetch_469:
 _p_1030:
@@ -99965,7 +100012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 45752
+.word 45758
 	.no_dead_strip plt__rgctx_fetch_470
 plt__rgctx_fetch_470:
 _p_1031:
@@ -99973,7 +100020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 45792
+.word 45798
 	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
 plt_System_Linq_Error_ArgumentNull_string:
 _p_1032:
@@ -99981,7 +100028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 45821
+.word 45827
 	.no_dead_strip plt__rgctx_fetch_471
 plt__rgctx_fetch_471:
 _p_1033:
@@ -99989,7 +100036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 45846
+.word 45852
 	.no_dead_strip plt__rgctx_fetch_472
 plt__rgctx_fetch_472:
 _p_1034:
@@ -99997,7 +100044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 45873
+.word 45879
 	.no_dead_strip plt__rgctx_fetch_473
 plt__rgctx_fetch_473:
 _p_1035:
@@ -100005,7 +100052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 45885
+.word 45891
 	.no_dead_strip plt__rgctx_fetch_474
 plt__rgctx_fetch_474:
 _p_1036:
@@ -100013,7 +100060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 45903
+.word 45909
 	.no_dead_strip plt__rgctx_fetch_475
 plt__rgctx_fetch_475:
 _p_1037:
@@ -100021,7 +100068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 45941
+.word 45947
 	.no_dead_strip plt__rgctx_fetch_476
 plt__rgctx_fetch_476:
 _p_1038:
@@ -100029,7 +100076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 45968
+.word 45974
 	.no_dead_strip plt__rgctx_fetch_477
 plt__rgctx_fetch_477:
 _p_1039:
@@ -100037,7 +100084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 46025
+.word 46031
 	.no_dead_strip plt__rgctx_fetch_478
 plt__rgctx_fetch_478:
 _p_1040:
@@ -100045,7 +100092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 46037
+.word 46043
 	.no_dead_strip plt__rgctx_fetch_479
 plt__rgctx_fetch_479:
 _p_1041:
@@ -100053,7 +100100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 46065
+.word 46071
 	.no_dead_strip plt__rgctx_fetch_480
 plt__rgctx_fetch_480:
 _p_1042:
@@ -100061,7 +100108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 46093
+.word 46099
 	.no_dead_strip plt__rgctx_fetch_481
 plt__rgctx_fetch_481:
 _p_1043:
@@ -100069,7 +100116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 46152
+.word 46158
 	.no_dead_strip plt__rgctx_fetch_482
 plt__rgctx_fetch_482:
 _p_1044:
@@ -100077,7 +100124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 46164
+.word 46170
 	.no_dead_strip plt__rgctx_fetch_483
 plt__rgctx_fetch_483:
 _p_1045:
@@ -100085,7 +100132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 46224
+.word 46230
 	.no_dead_strip plt__rgctx_fetch_484
 plt__rgctx_fetch_484:
 _p_1046:
@@ -100093,7 +100140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 46275
+.word 46281
 	.no_dead_strip plt__rgctx_fetch_485
 plt__rgctx_fetch_485:
 _p_1047:
@@ -100101,7 +100148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 46302
+.word 46308
 	.no_dead_strip plt__rgctx_fetch_486
 plt__rgctx_fetch_486:
 _p_1048:
@@ -100109,7 +100156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 46351
+.word 46357
 	.no_dead_strip plt__rgctx_fetch_487
 plt__rgctx_fetch_487:
 _p_1049:
@@ -100117,7 +100164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 46363
+.word 46369
 	.no_dead_strip plt__rgctx_fetch_488
 plt__rgctx_fetch_488:
 _p_1050:
@@ -100125,7 +100172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 46392
+.word 46398
 	.no_dead_strip plt__rgctx_fetch_489
 plt__rgctx_fetch_489:
 _p_1051:
@@ -100133,7 +100180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 46434
+.word 46440
 	.no_dead_strip plt__rgctx_fetch_490
 plt__rgctx_fetch_490:
 _p_1052:
@@ -100141,7 +100188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 46446
+.word 46452
 	.no_dead_strip plt__rgctx_fetch_491
 plt__rgctx_fetch_491:
 _p_1053:
@@ -100149,7 +100196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 46496
+.word 46502
 	.no_dead_strip plt__rgctx_fetch_492
 plt__rgctx_fetch_492:
 _p_1054:
@@ -100157,7 +100204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 46557
+.word 46563
 	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
 plt_wrapper_alloc_object_Alloc_intptr:
 _p_1055:
@@ -100165,7 +100212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 46569
+.word 46575
 	.no_dead_strip plt__rgctx_fetch_493
 plt__rgctx_fetch_493:
 _p_1056:
@@ -100173,7 +100220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 46577
+.word 46583
 	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
 plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
 _p_1057:
@@ -100181,7 +100228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 46589
+.word 46595
 	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
 plt__jit_icall_mono_gsharedvt_constrained_call:
 _p_1058:
@@ -100189,7 +100236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 46594
+.word 46600
 	.no_dead_strip plt_XamarinClient_ClientPage__Loadd__22_MoveNext
 plt_XamarinClient_ClientPage__Loadd__22_MoveNext:
 _p_1059:
@@ -100197,7 +100244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 46628
+.word 46634
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__InitFromBootstrapd__47_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__InitFromBootstrapd__47_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_byte___BlockchainTools_RpcClient__InitFromBootstrapd__47_System_Runtime_CompilerServices_TaskAwaiter_1_byte____BlockchainTools_RpcClient__InitFromBootstrapd__47_:
 _p_1060:
@@ -100205,7 +100252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 46631
+.word 46637
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_1061:
@@ -100213,7 +100260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 46658
+.word 46664
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_1062:
@@ -100221,7 +100268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 46663
+.word 46669
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_byte___UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_byte___UnsafeOnCompleted_System_Action:
 _p_1063:
@@ -100229,7 +100276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 46668
+.word 46674
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_1064:
@@ -100237,7 +100284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 46692
+.word 46698
 	.no_dead_strip plt_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_MoveNext
 plt_BlockchainTools_RpcClient__c__DisplayClass50_0___ProposeTransactionb__1d_MoveNext:
 _p_1065:
@@ -100245,7 +100292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 46697
+.word 46703
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_int_UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_int_UnsafeOnCompleted_System_Action:
 _p_1066:
@@ -100253,7 +100300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 46700
+.word 46706
 	.no_dead_strip plt__rgctx_fetch_494
 plt__rgctx_fetch_494:
 _p_1067:
@@ -100261,7 +100308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 46748
+.word 46754
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
 plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
 _p_1068:
@@ -100269,7 +100316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 46814
+.word 46820
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
 _p_1069:
@@ -100277,7 +100324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 46819
+.word 46825
 	.no_dead_strip plt__rgctx_fetch_495
 plt__rgctx_fetch_495:
 _p_1070:
@@ -100285,7 +100332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 46824
+.word 46830
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
 _p_1071:
@@ -100293,7 +100340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 46836
+.word 46842
 	.no_dead_strip plt__rgctx_fetch_496
 plt__rgctx_fetch_496:
 _p_1072:
@@ -100301,7 +100348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 46841
+.word 46847
 	.no_dead_strip plt__rgctx_fetch_497
 plt__rgctx_fetch_497:
 _p_1073:
@@ -100309,7 +100356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 46853
+.word 46859
 	.no_dead_strip plt_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_MoveNext
 plt_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_MoveNext:
 _p_1074:
@@ -100317,7 +100364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 46865
+.word 46871
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
 _p_1075:
@@ -100325,7 +100372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 46868
+.word 46874
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage__XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage__XamarinClient_App__c__DisplayClass4_0___OnStartb__0d_:
 _p_1076:
@@ -100333,7 +100380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 46873
+.word 46879
 	.no_dead_strip plt__rgctx_fetch_498
 plt__rgctx_fetch_498:
 _p_1077:
@@ -100341,7 +100388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 46922
+.word 46928
 	.no_dead_strip plt__rgctx_fetch_499
 plt__rgctx_fetch_499:
 _p_1078:
@@ -100349,7 +100396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 46934
+.word 46940
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer
 plt_System_Collections_Generic_EqualityComparer_1_T_REF_CreateComparer:
 _p_1079:
@@ -100357,7 +100404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 46946
+.word 46952
 	.no_dead_strip plt__rgctx_fetch_500
 plt__rgctx_fetch_500:
 _p_1080:
@@ -100365,7 +100412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 46991
+.word 46997
 	.no_dead_strip plt__rgctx_fetch_501
 plt__rgctx_fetch_501:
 _p_1081:
@@ -100373,7 +100420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 47003
+.word 47009
 	.no_dead_strip plt__rgctx_fetch_502
 plt__rgctx_fetch_502:
 _p_1082:
@@ -100381,7 +100428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 47015
+.word 47021
 	.no_dead_strip plt__rgctx_fetch_503
 plt__rgctx_fetch_503:
 _p_1083:
@@ -100389,7 +100436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 47076
+.word 47082
 	.no_dead_strip plt__rgctx_fetch_504
 plt__rgctx_fetch_504:
 _p_1084:
@@ -100397,7 +100444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 47088
+.word 47094
 	.no_dead_strip plt__rgctx_fetch_505
 plt__rgctx_fetch_505:
 _p_1085:
@@ -100405,7 +100452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 47150
+.word 47156
 	.no_dead_strip plt__rgctx_fetch_506
 plt__rgctx_fetch_506:
 _p_1086:
@@ -100413,7 +100460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 47162
+.word 47168
 	.no_dead_strip plt__rgctx_fetch_507
 plt__rgctx_fetch_507:
 _p_1087:
@@ -100421,7 +100468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 47211
+.word 47217
 	.no_dead_strip plt__rgctx_fetch_508
 plt__rgctx_fetch_508:
 _p_1088:
@@ -100429,7 +100476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 47271
+.word 47277
 	.no_dead_strip plt__rgctx_fetch_509
 plt__rgctx_fetch_509:
 _p_1089:
@@ -100437,7 +100484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 47283
+.word 47289
 	.no_dead_strip plt__rgctx_fetch_510
 plt__rgctx_fetch_510:
 _p_1090:
@@ -100445,7 +100492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 47334
+.word 47340
 	.no_dead_strip plt__rgctx_fetch_511
 plt__rgctx_fetch_511:
 _p_1091:
@@ -100453,7 +100500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 47346
+.word 47352
 	.no_dead_strip plt__rgctx_fetch_512
 plt__rgctx_fetch_512:
 _p_1092:
@@ -100461,7 +100508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 47358
+.word 47364
 	.no_dead_strip plt__rgctx_fetch_513
 plt__rgctx_fetch_513:
 _p_1093:
@@ -100469,7 +100516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 47407
+.word 47413
 	.no_dead_strip plt__rgctx_fetch_514
 plt__rgctx_fetch_514:
 _p_1094:
@@ -100477,7 +100524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 47434
+.word 47440
 	.no_dead_strip plt__rgctx_fetch_515
 plt__rgctx_fetch_515:
 _p_1095:
@@ -100485,7 +100532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 47492
+.word 47498
 	.no_dead_strip plt__rgctx_fetch_516
 plt__rgctx_fetch_516:
 _p_1096:
@@ -100493,7 +100540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 47504
+.word 47510
 	.no_dead_strip plt__rgctx_fetch_517
 plt__rgctx_fetch_517:
 _p_1097:
@@ -100501,7 +100548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 47565
+.word 47571
 	.no_dead_strip plt__rgctx_fetch_518
 plt__rgctx_fetch_518:
 _p_1098:
@@ -100509,7 +100556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 47577
+.word 47583
 	.no_dead_strip plt_System_Threading_CancellationToken_ThrowIfSourceDisposed
 plt_System_Threading_CancellationToken_ThrowIfSourceDisposed:
 _p_1099:
@@ -100517,7 +100564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 47606
+.word 47612
 	.no_dead_strip plt_System_Threading_CancellationToken_get_IsCancellationRequested
 plt_System_Threading_CancellationToken_get_IsCancellationRequested:
 _p_1100:
@@ -100525,7 +100572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 47611
+.word 47617
 	.no_dead_strip plt__rgctx_fetch_519
 plt__rgctx_fetch_519:
 _p_1101:
@@ -100533,7 +100580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 47637
+.word 47643
 	.no_dead_strip plt__rgctx_fetch_520
 plt__rgctx_fetch_520:
 _p_1102:
@@ -100541,7 +100588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 47665
+.word 47671
 	.no_dead_strip plt__rgctx_fetch_521
 plt__rgctx_fetch_521:
 _p_1103:
@@ -100549,7 +100596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 47715
+.word 47721
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory:
 _p_1104:
@@ -100557,7 +100604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 47727
+.word 47733
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Func_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Func_1_System_Threading_Tasks_Task_1_TResult_BOOL_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler:
 _p_1105:
@@ -100565,7 +100612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 47761
+.word 47767
 	.no_dead_strip plt__rgctx_fetch_522
 plt__rgctx_fetch_522:
 _p_1106:
@@ -100573,7 +100620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 47795
+.word 47801
 	.no_dead_strip plt__rgctx_fetch_523
 plt__rgctx_fetch_523:
 _p_1107:
@@ -100581,7 +100628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 47807
+.word 47813
 	.no_dead_strip plt__rgctx_fetch_524
 plt__rgctx_fetch_524:
 _p_1108:
@@ -100589,7 +100636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 47857
+.word 47863
 	.no_dead_strip plt__rgctx_fetch_525
 plt__rgctx_fetch_525:
 _p_1109:
@@ -100597,7 +100644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 47885
+.word 47891
 	.no_dead_strip plt__rgctx_fetch_526
 plt__rgctx_fetch_526:
 _p_1110:
@@ -100605,7 +100652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 47935
+.word 47941
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_INT_get_Factory
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_INT_get_Factory:
 _p_1111:
@@ -100613,7 +100660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 47947
+.word 47953
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Func_1_System_Threading_Tasks_Task_1_TResult_INT_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Func_1_System_Threading_Tasks_Task_1_TResult_INT_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler:
 _p_1112:
@@ -100621,7 +100668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 47981
+.word 47987
 	.no_dead_strip plt__rgctx_fetch_527
 plt__rgctx_fetch_527:
 _p_1113:
@@ -100629,7 +100676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 48015
+.word 48021
 	.no_dead_strip plt__rgctx_fetch_528
 plt__rgctx_fetch_528:
 _p_1114:
@@ -100637,7 +100684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 48027
+.word 48033
 	.no_dead_strip plt__rgctx_fetch_529
 plt__rgctx_fetch_529:
 _p_1115:
@@ -100645,7 +100692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 48087
+.word 48093
 	.no_dead_strip plt__rgctx_fetch_530
 plt__rgctx_fetch_530:
 _p_1116:
@@ -100653,7 +100700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 48099
+.word 48105
 	.no_dead_strip plt__rgctx_fetch_531
 plt__rgctx_fetch_531:
 _p_1117:
@@ -100661,7 +100708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 48139
+.word 48145
 	.no_dead_strip plt__rgctx_fetch_532
 plt__rgctx_fetch_532:
 _p_1118:
@@ -100669,7 +100716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 48151
+.word 48157
 	.no_dead_strip plt__rgctx_fetch_533
 plt__rgctx_fetch_533:
 _p_1119:
@@ -100677,7 +100724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 48191
+.word 48197
 	.no_dead_strip plt__rgctx_fetch_534
 plt__rgctx_fetch_534:
 _p_1120:
@@ -100685,7 +100732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 48231
+.word 48237
 	.no_dead_strip plt__rgctx_fetch_535
 plt__rgctx_fetch_535:
 _p_1121:
@@ -100693,7 +100740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 48271
+.word 48277
 	.no_dead_strip plt__rgctx_fetch_536
 plt__rgctx_fetch_536:
 _p_1122:
@@ -100701,7 +100748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 48320
+.word 48326
 	.no_dead_strip plt__rgctx_fetch_537
 plt__rgctx_fetch_537:
 _p_1123:
@@ -100709,7 +100756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 48379
+.word 48385
 	.no_dead_strip plt__rgctx_fetch_538
 plt__rgctx_fetch_538:
 _p_1124:
@@ -100717,7 +100764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 48391
+.word 48397
 	.no_dead_strip plt__rgctx_fetch_539
 plt__rgctx_fetch_539:
 _p_1125:
@@ -100725,7 +100772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 48420
+.word 48426
 	.no_dead_strip plt__rgctx_fetch_540
 plt__rgctx_fetch_540:
 _p_1126:
@@ -100733,7 +100780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 48458
+.word 48464
 	.no_dead_strip plt__rgctx_fetch_541
 plt__rgctx_fetch_541:
 _p_1127:
@@ -100741,7 +100788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 48470
+.word 48476
 	.no_dead_strip plt__rgctx_fetch_542
 plt__rgctx_fetch_542:
 _p_1128:
@@ -100749,7 +100796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 48482
+.word 48488
 	.no_dead_strip plt__rgctx_fetch_543
 plt__rgctx_fetch_543:
 _p_1129:
@@ -100757,7 +100804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 48496
+.word 48502
 	.no_dead_strip plt__rgctx_fetch_544
 plt__rgctx_fetch_544:
 _p_1130:
@@ -100765,7 +100812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 48536
+.word 48542
 	.no_dead_strip plt__rgctx_fetch_545
 plt__rgctx_fetch_545:
 _p_1131:
@@ -100773,7 +100820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 48548
+.word 48554
 	.no_dead_strip plt__rgctx_fetch_546
 plt__rgctx_fetch_546:
 _p_1132:
@@ -100781,7 +100828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 48577
+.word 48583
 	.no_dead_strip plt__rgctx_fetch_547
 plt__rgctx_fetch_547:
 _p_1133:
@@ -100789,7 +100836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 48606
+.word 48612
 	.no_dead_strip plt__rgctx_fetch_548
 plt__rgctx_fetch_548:
 _p_1134:
@@ -100797,7 +100844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 48667
+.word 48673
 	.no_dead_strip plt__rgctx_fetch_549
 plt__rgctx_fetch_549:
 _p_1135:
@@ -100805,7 +100852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 48716
+.word 48722
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
 _p_1136:
@@ -100813,7 +100860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 48743
+.word 48749
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_1137:
@@ -100821,7 +100868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 48754
+.word 48760
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_1138:
@@ -100829,7 +100876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 48774
+.word 48780
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
 _p_1139:
@@ -100837,7 +100884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 48794
+.word 48800
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
 _p_1140:
@@ -100845,7 +100892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 48814
+.word 48820
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
 _p_1141:
@@ -100853,7 +100900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 48834
+.word 48840
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
 _p_1142:
@@ -100861,7 +100908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 48854
+.word 48860
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object:
 _p_1143:
@@ -100869,7 +100916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 48874
+.word 48880
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
 _p_1144:
@@ -100877,7 +100924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 48894
+.word 48900
 	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
 plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_1145:
@@ -100885,7 +100932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 48916
+.word 48922
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_:
 _p_1146:
@@ -100893,7 +100940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 48938
+.word 48944
 	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
 _p_1147:
@@ -100901,7 +100948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 48958
+.word 48964
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
 _p_1148:
@@ -100909,7 +100956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 48980
+.word 48986
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
 _p_1149:
@@ -100917,7 +100964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 49002
+.word 49008
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
 _p_1150:
@@ -100925,7 +100972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 49024
+.word 49030
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
 _p_1151:
@@ -100933,7 +100980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 49044
+.word 49050
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object:
 _p_1152:
@@ -100941,7 +100988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 49064
+.word 49070
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
 _p_1153:
@@ -100949,7 +100996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 49084
+.word 49090
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
 _p_1154:
@@ -100957,7 +101004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 49104
+.word 49110
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
 _p_1155:
@@ -100965,7 +101012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 49126
+.word 49132
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
 plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_1156:
@@ -100973,7 +101020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+12288
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 49146
+.word 49152
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
 _p_1157:
@@ -100981,7 +101028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 49168
+.word 49174
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
 _p_1158:
@@ -100989,7 +101036,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 49188
+.word 49194
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
 _p_1159:
@@ -100997,7 +101044,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 49208
+.word 49214
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
 _p_1160:
@@ -101005,7 +101052,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 49228
+.word 49234
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
 plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
 _p_1161:
@@ -101013,7 +101060,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 49248
+.word 49254
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Net_Http_HttpResponseMessage_UnsafeOnCompleted_System_Action:
 _p_1162:
@@ -101021,7 +101068,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 49269
+.word 49275
 	.no_dead_strip plt__rgctx_fetch_550
 plt__rgctx_fetch_550:
 _p_1163:
@@ -101029,7 +101076,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 49312
+.word 49318
 	.no_dead_strip plt__rgctx_fetch_551
 plt__rgctx_fetch_551:
 _p_1164:
@@ -101037,7 +101084,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 49324
+.word 49330
 	.no_dead_strip plt__rgctx_fetch_552
 plt__rgctx_fetch_552:
 _p_1165:
@@ -101045,7 +101092,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 49347
+.word 49353
 	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
 plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
 _p_1166:
@@ -101053,7 +101100,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 49359
+.word 49365
 	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
 plt_System_Enum_GetUnderlyingType_System_Type:
 _p_1167:
@@ -101061,7 +101108,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 49364
+.word 49370
 	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
 plt_System_Type_GetTypeCode_System_Type:
 _p_1168:
@@ -101069,7 +101116,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 49369
+.word 49375
 	.no_dead_strip plt__rgctx_fetch_553
 plt__rgctx_fetch_553:
 _p_1169:
@@ -101077,7 +101124,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 49385
+.word 49391
 	.no_dead_strip plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor
 plt_System_Collections_Generic_ObjectEqualityComparer_1_T_REF__ctor:
 _p_1170:
@@ -101085,7 +101132,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 49397
+.word 49403
 	.no_dead_strip plt__rgctx_fetch_554
 plt__rgctx_fetch_554:
 _p_1171:
@@ -101093,7 +101140,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 49442
+.word 49448
 	.no_dead_strip plt__rgctx_fetch_555
 plt__rgctx_fetch_555:
 _p_1172:
@@ -101101,7 +101148,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 49454
+.word 49460
 	.no_dead_strip plt__rgctx_fetch_556
 plt__rgctx_fetch_556:
 _p_1173:
@@ -101109,7 +101156,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 49477
+.word 49483
 	.no_dead_strip plt__rgctx_fetch_557
 plt__rgctx_fetch_557:
 _p_1174:
@@ -101117,7 +101164,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 49500
+.word 49506
 	.no_dead_strip plt__rgctx_fetch_558
 plt__rgctx_fetch_558:
 _p_1175:
@@ -101125,7 +101172,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 49512
+.word 49518
 	.no_dead_strip plt__rgctx_fetch_559
 plt__rgctx_fetch_559:
 _p_1176:
@@ -101133,7 +101180,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 49563
+.word 49569
 	.no_dead_strip plt__rgctx_fetch_560
 plt__rgctx_fetch_560:
 _p_1177:
@@ -101141,7 +101188,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 49575
+.word 49581
 	.no_dead_strip plt__rgctx_fetch_561
 plt__rgctx_fetch_561:
 _p_1178:
@@ -101149,7 +101196,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 49598
+.word 49604
 	.no_dead_strip plt__rgctx_fetch_562
 plt__rgctx_fetch_562:
 _p_1179:
@@ -101157,7 +101204,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 49621
+.word 49627
 	.no_dead_strip plt__rgctx_fetch_563
 plt__rgctx_fetch_563:
 _p_1180:
@@ -101165,7 +101212,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 49633
+.word 49639
 	.no_dead_strip plt__rgctx_fetch_564
 plt__rgctx_fetch_564:
 _p_1181:
@@ -101173,7 +101220,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 49693
+.word 49699
 	.no_dead_strip plt__rgctx_fetch_565
 plt__rgctx_fetch_565:
 _p_1182:
@@ -101181,7 +101228,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 49705
+.word 49711
 	.no_dead_strip plt__rgctx_fetch_566
 plt__rgctx_fetch_566:
 _p_1183:
@@ -101189,7 +101236,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 49767
+.word 49773
 	.no_dead_strip plt__rgctx_fetch_567
 plt__rgctx_fetch_567:
 _p_1184:
@@ -101197,7 +101244,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 49779
+.word 49785
 	.no_dead_strip plt__rgctx_fetch_568
 plt__rgctx_fetch_568:
 _p_1185:
@@ -101205,7 +101252,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 49819
+.word 49825
 	.no_dead_strip plt__jit_icall_mono_ldvirtfn_gshared
 plt__jit_icall_mono_ldvirtfn_gshared:
 _p_1186:
@@ -101213,7 +101260,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 49848
+.word 49854
 	.no_dead_strip plt__rgctx_fetch_569
 plt__rgctx_fetch_569:
 _p_1187:
@@ -101221,7 +101268,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 49883
+.word 49889
 	.no_dead_strip plt__rgctx_fetch_570
 plt__rgctx_fetch_570:
 _p_1188:
@@ -101229,7 +101276,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 49895
+.word 49901
 	.no_dead_strip plt__rgctx_fetch_571
 plt__rgctx_fetch_571:
 _p_1189:
@@ -101237,7 +101284,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 49924
+.word 49930
 	.no_dead_strip plt__rgctx_fetch_572
 plt__rgctx_fetch_572:
 _p_1190:
@@ -101245,7 +101292,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 49936
+.word 49942
 	.no_dead_strip plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object
 plt_System_Collections_Generic_IntrospectiveSortUtilities_ThrowOrIgnoreBadComparer_object:
 _p_1191:
@@ -101253,7 +101300,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 49965
+.word 49971
 	.no_dead_strip plt_System_InvalidOperationException__ctor_string_System_Exception
 plt_System_InvalidOperationException__ctor_string_System_Exception:
 _p_1192:
@@ -101261,7 +101308,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 49970
+.word 49976
 	.no_dead_strip plt__rgctx_fetch_573
 plt__rgctx_fetch_573:
 _p_1193:
@@ -101269,7 +101316,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 50008
+.word 50014
 	.no_dead_strip plt__rgctx_fetch_574
 plt__rgctx_fetch_574:
 _p_1194:
@@ -101277,7 +101324,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 50020
+.word 50026
 	.no_dead_strip plt__rgctx_fetch_575
 plt__rgctx_fetch_575:
 _p_1195:
@@ -101285,7 +101332,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 50049
+.word 50055
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction
 plt_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction:
 _p_1196:
@@ -101293,7 +101340,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 50078
+.word 50084
 	.no_dead_strip plt__rgctx_fetch_576
 plt__rgctx_fetch_576:
 _p_1197:
@@ -101301,7 +101348,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 50115
+.word 50121
 	.no_dead_strip plt__rgctx_fetch_577
 plt__rgctx_fetch_577:
 _p_1198:
@@ -101309,7 +101356,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 50127
+.word 50133
 	.no_dead_strip plt__rgctx_fetch_578
 plt__rgctx_fetch_578:
 _p_1199:
@@ -101317,7 +101364,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 50189
+.word 50195
 	.no_dead_strip plt__rgctx_fetch_579
 plt__rgctx_fetch_579:
 _p_1200:
@@ -101325,7 +101372,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 50201
+.word 50207
 	.no_dead_strip plt__rgctx_fetch_580
 plt__rgctx_fetch_580:
 _p_1201:
@@ -101333,7 +101380,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 50230
+.word 50236
 	.no_dead_strip plt__rgctx_fetch_581
 plt__rgctx_fetch_581:
 _p_1202:
@@ -101341,7 +101388,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 50291
+.word 50297
 	.no_dead_strip plt__rgctx_fetch_582
 plt__rgctx_fetch_582:
 _p_1203:
@@ -101349,7 +101396,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 50303
+.word 50309
 	.no_dead_strip plt__rgctx_fetch_583
 plt__rgctx_fetch_583:
 _p_1204:
@@ -101357,7 +101404,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 50354
+.word 50360
 	.no_dead_strip plt__rgctx_fetch_584
 plt__rgctx_fetch_584:
 _p_1205:
@@ -101365,7 +101412,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 50366
+.word 50372
 	.no_dead_strip plt__rgctx_fetch_585
 plt__rgctx_fetch_585:
 _p_1206:
@@ -101373,7 +101420,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 50395
+.word 50401
 	.no_dead_strip plt__rgctx_fetch_586
 plt__rgctx_fetch_586:
 _p_1207:
@@ -101381,7 +101428,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 50409
+.word 50415
 	.no_dead_strip plt__rgctx_fetch_587
 plt__rgctx_fetch_587:
 _p_1208:
@@ -101389,7 +101436,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 50471
+.word 50477
 	.no_dead_strip plt__rgctx_fetch_588
 plt__rgctx_fetch_588:
 _p_1209:
@@ -101397,7 +101444,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 50500
+.word 50506
 	.no_dead_strip plt__rgctx_fetch_589
 plt__rgctx_fetch_589:
 _p_1210:
@@ -101405,7 +101452,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 50512
+.word 50518
 	.no_dead_strip plt__rgctx_fetch_590
 plt__rgctx_fetch_590:
 _p_1211:
@@ -101413,7 +101460,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 50552
+.word 50558
 	.no_dead_strip plt__rgctx_fetch_591
 plt__rgctx_fetch_591:
 _p_1212:
@@ -101421,7 +101468,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 50603
+.word 50609
 	.no_dead_strip plt__rgctx_fetch_592
 plt__rgctx_fetch_592:
 _p_1213:
@@ -101429,7 +101476,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 50615
+.word 50621
 	.no_dead_strip plt_System_Environment_get_CurrentManagedThreadId
 plt_System_Environment_get_CurrentManagedThreadId:
 _p_1214:
@@ -101437,7 +101484,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 50644
+.word 50650
 	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
 plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
 _p_1215:
@@ -101445,7 +101492,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 50649
+.word 50655
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_1216:
@@ -101453,7 +101500,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 50671
+.word 50677
 	.no_dead_strip plt__rgctx_fetch_593
 plt__rgctx_fetch_593:
 _p_1217:
@@ -101461,7 +101508,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 50713
+.word 50719
 	.no_dead_strip plt__rgctx_fetch_594
 plt__rgctx_fetch_594:
 _p_1218:
@@ -101469,7 +101516,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 50725
+.word 50731
 	.no_dead_strip plt__rgctx_fetch_595
 plt__rgctx_fetch_595:
 _p_1219:
@@ -101477,7 +101524,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 50776
+.word 50782
 	.no_dead_strip plt__rgctx_fetch_596
 plt__rgctx_fetch_596:
 _p_1220:
@@ -101485,7 +101532,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 50788
+.word 50794
 	.no_dead_strip plt__rgctx_fetch_597
 plt__rgctx_fetch_597:
 _p_1221:
@@ -101493,7 +101540,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 50800
+.word 50806
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Status
 plt_System_Threading_Tasks_Task_get_Status:
 _p_1222:
@@ -101501,7 +101548,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 50829
+.word 50835
 	.no_dead_strip plt__rgctx_fetch_598
 plt__rgctx_fetch_598:
 _p_1223:
@@ -101509,7 +101556,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 50856
+.word 50862
 	.no_dead_strip plt__rgctx_fetch_599
 plt__rgctx_fetch_599:
 _p_1224:
@@ -101517,7 +101564,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 50896
+.word 50902
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
 _p_1225:
@@ -101525,7 +101572,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 50908
+.word 50914
 	.no_dead_strip plt__rgctx_fetch_600
 plt__rgctx_fetch_600:
 _p_1226:
@@ -101533,7 +101580,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 50928
+.word 50934
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_BOOL_get_Result
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_BOOL_get_Result:
 _p_1227:
@@ -101541,7 +101588,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 50940
+.word 50946
 	.no_dead_strip plt__rgctx_fetch_601
 plt__rgctx_fetch_601:
 _p_1228:
@@ -101549,7 +101596,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 50963
+.word 50969
 	.no_dead_strip plt__rgctx_fetch_602
 plt__rgctx_fetch_602:
 _p_1229:
@@ -101557,7 +101604,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 51014
+.word 51020
 	.no_dead_strip plt__rgctx_fetch_603
 plt__rgctx_fetch_603:
 _p_1230:
@@ -101565,7 +101612,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 51054
+.word 51060
 	.no_dead_strip plt__rgctx_fetch_604
 plt__rgctx_fetch_604:
 _p_1231:
@@ -101573,7 +101620,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 51066
+.word 51072
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_INT_get_Result
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_1_TResult_INT_get_Result:
 _p_1232:
@@ -101581,7 +101628,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 51078
+.word 51084
 	.no_dead_strip plt__rgctx_fetch_605
 plt__rgctx_fetch_605:
 _p_1233:
@@ -101589,7 +101636,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 51101
+.word 51107
 	.no_dead_strip plt__rgctx_fetch_606
 plt__rgctx_fetch_606:
 _p_1234:
@@ -101597,7 +101644,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 51152
+.word 51158
 	.no_dead_strip plt__rgctx_fetch_607
 plt__rgctx_fetch_607:
 _p_1235:
@@ -101605,7 +101652,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 51164
+.word 51170
 	.no_dead_strip plt__rgctx_fetch_608
 plt__rgctx_fetch_608:
 _p_1236:
@@ -101613,7 +101660,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 51215
+.word 51221
 	.no_dead_strip plt__rgctx_fetch_609
 plt__rgctx_fetch_609:
 _p_1237:
@@ -101621,7 +101668,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 51242
+.word 51248
 	.no_dead_strip plt_System_Collections_Generic_ArrayBuilder_1_T_BYTE___Add_T_BYTE__
 plt_System_Collections_Generic_ArrayBuilder_1_T_BYTE___Add_T_BYTE__:
 _p_1238:
@@ -101629,7 +101676,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 51254
+.word 51260
 	.no_dead_strip plt__rgctx_fetch_610
 plt__rgctx_fetch_610:
 _p_1239:
@@ -101637,7 +101684,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 51301
+.word 51307
 	.no_dead_strip plt__rgctx_fetch_611
 plt__rgctx_fetch_611:
 _p_1240:
@@ -101645,7 +101692,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 51339
+.word 51345
 	.no_dead_strip plt__rgctx_fetch_612
 plt__rgctx_fetch_612:
 _p_1241:
@@ -101653,7 +101700,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 51351
+.word 51357
 	.no_dead_strip plt__rgctx_fetch_613
 plt__rgctx_fetch_613:
 _p_1242:
@@ -101661,7 +101708,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 51385
+.word 51391
 	.no_dead_strip plt__rgctx_fetch_614
 plt__rgctx_fetch_614:
 _p_1243:
@@ -101669,7 +101716,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 51397
+.word 51403
 	.no_dead_strip plt__rgctx_fetch_615
 plt__rgctx_fetch_615:
 _p_1244:
@@ -101677,7 +101724,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 51426
+.word 51432
 	.no_dead_strip plt__rgctx_fetch_616
 plt__rgctx_fetch_616:
 _p_1245:
@@ -101685,7 +101732,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 51455
+.word 51461
 	.no_dead_strip plt__rgctx_fetch_617
 plt__rgctx_fetch_617:
 _p_1246:
@@ -101693,7 +101740,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 51484
+.word 51490
 	.no_dead_strip plt__rgctx_fetch_618
 plt__rgctx_fetch_618:
 _p_1247:
@@ -101701,7 +101748,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 51513
+.word 51519
 	.no_dead_strip plt__rgctx_fetch_619
 plt__rgctx_fetch_619:
 _p_1248:
@@ -101709,7 +101756,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 51564
+.word 51570
 	.no_dead_strip plt__rgctx_fetch_620
 plt__rgctx_fetch_620:
 _p_1249:
@@ -101717,7 +101764,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 51587
+.word 51593
 	.no_dead_strip plt__rgctx_fetch_621
 plt__rgctx_fetch_621:
 _p_1250:
@@ -101725,7 +101772,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 51599
+.word 51605
 	.no_dead_strip plt__rgctx_fetch_622
 plt__rgctx_fetch_622:
 _p_1251:
@@ -101733,7 +101780,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 51622
+.word 51628
 	.no_dead_strip plt__rgctx_fetch_623
 plt__rgctx_fetch_623:
 _p_1252:
@@ -101741,7 +101788,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 51634
+.word 51640
 	.no_dead_strip plt__rgctx_fetch_624
 plt__rgctx_fetch_624:
 _p_1253:
@@ -101749,7 +101796,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 51685
+.word 51691
 	.no_dead_strip plt__rgctx_fetch_625
 plt__rgctx_fetch_625:
 _p_1254:
@@ -101757,7 +101804,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 51697
+.word 51703
 	.no_dead_strip plt__rgctx_fetch_626
 plt__rgctx_fetch_626:
 _p_1255:
@@ -101765,7 +101812,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 51726
+.word 51732
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_CancellationToken
 plt_System_Threading_Tasks_Task_get_CancellationToken:
 _p_1256:
@@ -101773,7 +101820,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 51755
+.word 51761
 	.no_dead_strip plt_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo
 plt_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo:
 _p_1257:
@@ -101781,7 +101828,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 51760
+.word 51766
 	.no_dead_strip plt__rgctx_fetch_627
 plt__rgctx_fetch_627:
 _p_1258:
@@ -101789,7 +101836,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 51787
+.word 51793
 	.no_dead_strip plt__rgctx_fetch_628
 plt__rgctx_fetch_628:
 _p_1259:
@@ -101797,7 +101844,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 51799
+.word 51805
 	.no_dead_strip plt_System_Threading_Tasks_Task_GetExceptionDispatchInfos
 plt_System_Threading_Tasks_Task_GetExceptionDispatchInfos:
 _p_1260:
@@ -101805,7 +101852,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 51828
+.word 51834
 	.no_dead_strip plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Runtime_ExceptionServices_ExceptionDispatchInfo_get_Count
 plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Runtime_ExceptionServices_ExceptionDispatchInfo_get_Count:
 _p_1261:
@@ -101813,7 +101860,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 51843
+.word 51849
 	.no_dead_strip plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Runtime_ExceptionServices_ExceptionDispatchInfo_get_Item_int
 plt_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Runtime_ExceptionServices_ExceptionDispatchInfo_get_Item_int:
 _p_1262:
@@ -101821,7 +101868,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 51865
+.word 51871
 	.no_dead_strip plt__rgctx_fetch_629
 plt__rgctx_fetch_629:
 _p_1263:
@@ -101829,7 +101876,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 51887
+.word 51893
 	.no_dead_strip plt__rgctx_fetch_630
 plt__rgctx_fetch_630:
 _p_1264:
@@ -101837,7 +101884,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 51916
+.word 51922
 	.no_dead_strip plt__rgctx_fetch_631
 plt__rgctx_fetch_631:
 _p_1265:
@@ -101845,7 +101892,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 51928
+.word 51934
 	.no_dead_strip plt__rgctx_fetch_632
 plt__rgctx_fetch_632:
 _p_1266:
@@ -101853,7 +101900,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 51957
+.word 51963
 	.no_dead_strip plt__rgctx_fetch_633
 plt__rgctx_fetch_633:
 _p_1267:
@@ -101861,7 +101908,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 52008
+.word 52014
 	.no_dead_strip plt__rgctx_fetch_634
 plt__rgctx_fetch_634:
 _p_1268:
@@ -101869,7 +101916,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 52020
+.word 52026
 	.no_dead_strip plt__rgctx_fetch_635
 plt__rgctx_fetch_635:
 _p_1269:
@@ -101877,7 +101924,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 52049
+.word 52055
 	.no_dead_strip plt__rgctx_fetch_636
 plt__rgctx_fetch_636:
 _p_1270:
@@ -101885,7 +101932,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 52100
+.word 52106
 	.no_dead_strip plt__rgctx_fetch_637
 plt__rgctx_fetch_637:
 _p_1271:
@@ -101893,7 +101940,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 52112
+.word 52118
 	.no_dead_strip plt__rgctx_fetch_638
 plt__rgctx_fetch_638:
 _p_1272:
@@ -101901,7 +101948,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 52141
+.word 52147
 	.no_dead_strip plt__rgctx_fetch_639
 plt__rgctx_fetch_639:
 _p_1273:
@@ -101909,7 +101956,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 52170
+.word 52176
 	.no_dead_strip plt__rgctx_fetch_640
 plt__rgctx_fetch_640:
 _p_1274:
@@ -101917,7 +101964,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 52182
+.word 52188
 	.no_dead_strip plt__rgctx_fetch_641
 plt__rgctx_fetch_641:
 _p_1275:
@@ -101925,7 +101972,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 52211
+.word 52217
 	.no_dead_strip plt__rgctx_fetch_642
 plt__rgctx_fetch_642:
 _p_1276:
@@ -101933,7 +101980,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 52262
+.word 52268
 	.no_dead_strip plt__rgctx_fetch_643
 plt__rgctx_fetch_643:
 _p_1277:
@@ -101941,7 +101988,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 52296
+.word 52302
 	.no_dead_strip plt__rgctx_fetch_644
 plt__rgctx_fetch_644:
 _p_1278:
@@ -101949,7 +101996,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 52308
+.word 52314
 	.no_dead_strip plt__rgctx_fetch_645
 plt__rgctx_fetch_645:
 _p_1279:
@@ -101957,7 +102004,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 52337
+.word 52343
 	.no_dead_strip plt__rgctx_fetch_646
 plt__rgctx_fetch_646:
 _p_1280:
@@ -101965,7 +102012,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 52388
+.word 52394
 	.no_dead_strip plt__rgctx_fetch_647
 plt__rgctx_fetch_647:
 _p_1281:
@@ -101973,7 +102020,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 52400
+.word 52406
 	.no_dead_strip plt__rgctx_fetch_648
 plt__rgctx_fetch_648:
 _p_1282:
@@ -101981,7 +102028,7 @@ adrp x16, mono_aot_XamarinClient_iOS_got@PAGE+16384
 add x16, x16, mono_aot_XamarinClient_iOS_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 52429
+.word 52435
 plt_end:
 .section __DATA, __bss
 	.align 3
@@ -102016,7 +102063,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "5365ACAE-0942-4A2B-92F4-6EE0BAD67083"
+	.asciz "295B2DB1-078D-4AEC-8AC5-7416467672A0"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -102093,13 +102140,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 891,17392,1283,1009,66,391195135,0,75342
-	.long 128,8,8,10,0,24,105344,29992
+	.long 891,17392,1283,1009,66,391195135,0,75348
+	.long 128,8,8,10,0,24,105352,29992
 	.long 27912,24016,0,26112,27744,24752,0,18784
 	.long 1408,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 208,18,231,204,29,211,195,63,61,2,184,26,75,159,207,124
+	.byte 175,248,198,237,130,225,161,57,164,142,65,90,106,1,64,38
 	.globl _mono_aot_module_XamarinClient_iOS_info
 	.align 3
 _mono_aot_module_XamarinClient_iOS_info:

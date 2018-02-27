@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/XamarinClientPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/CreateAuthPage.cs">
     <Files>
       <File FileName="XamarinClient/View/XamarinClientPage.cs" Line="110" Column="15" />
       <File FileName="XamarinClient/View/PaymentPage.cs" Line="29" Column="35" />
+      <File FileName="XamarinClient/View/SettingsPage.cs" Line="256" Column="57" />
+      <File FileName="XamarinClient/View/ChangePinPage.cs" Line="37" Column="64" />
+      <File FileName="XamarinClient/View/CreateAuthPage.cs" Line="34" Column="38" />
       <File FileName="XamarinClient/Model/RpcClient.cs" Line="497" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

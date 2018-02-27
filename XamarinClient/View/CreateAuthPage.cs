@@ -98,6 +98,7 @@ namespace XamarinClient
                     {
                         Account acc = new Account(first);
                         acc.Properties.Add("FingerPrint",OldAccount.Properties["FingerPrint"]);
+                        if(OldAccount.Properties.ContainsKey("PrivateKey")) acc.Properties.Add("PrivateKey",OldAccount.Properties["PrivateKey"]);
                         AccountStore.Create().Delete(OldAccount, App.AppName);
                         AccountStore.Create().Save(acc, App.AppName);
                         App.Current.Properties["Pin"] = acc;
