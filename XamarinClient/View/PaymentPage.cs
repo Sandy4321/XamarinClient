@@ -44,6 +44,9 @@ namespace XamarinClient
 
             stack = new StackLayout
             {
+                Margin = 5,
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
                 BackgroundColor = Color.Transparent,
                 Children = {
                     new Label(), 

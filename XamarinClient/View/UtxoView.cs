@@ -14,6 +14,7 @@ namespace XamarinClient
 
             Content = new StackLayout
             {
+                Margin = 5,
                 Children = {
                     new Label{
                         Text = utxo.ToString(),

@@ -268,7 +268,9 @@ namespace XamarinClient
                 },
             },0,5);
 
-            ScrollView mainView = new ScrollView();
+            ScrollView mainView = new ScrollView{
+                Margin = 5,
+            };
             mainView.Content = userView;
 
             Content = mainView;

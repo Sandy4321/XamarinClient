@@ -246,7 +246,9 @@ namespace XamarinClient
                     listView,
                 }
             };
-            ScrollView scroll = new ScrollView();
+            ScrollView scroll = new ScrollView{
+                Margin = 5,
+            };
             scroll.Content = stack;
 
             Content = scroll;

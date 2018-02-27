@@ -20,9 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\HexHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\BarCodePage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\ServersPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\GetCoinPage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\ClientPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\PaymentPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

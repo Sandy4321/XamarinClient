@@ -51,7 +51,9 @@ namespace XamarinClient
             };
             Cancel.Clicked += Cancel_Clicked;
 
-            scroll = new ScrollView();
+            scroll = new ScrollView{
+                Margin = 5,
+            };
             StackLayout stack = new StackLayout
             {
                 VerticalOptions = LayoutOptions.Fill,
