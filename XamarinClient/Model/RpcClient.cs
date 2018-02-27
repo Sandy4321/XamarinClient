@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
-using NBitcoin.DataEncoders;
+using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
-using Org.BouncyCastle.Crypto.Tls;
 using Org.BouncyCastle.Utilities.Encoders;
 
 namespace BlockchainTools
@@ -20,8 +18,16 @@ namespace BlockchainTools
         public Account Account { get; set; }
         public TransactionService TxService { get; set; }
         public RpcCall Rpc { get; set; }
-        public Dictionary<byte[], int> results { get; set; }
-        object mutex = new object();
+
+        public Dictionary<byte[], int> TxInresults { get; set; }
+        public Dictionary<byte[], int> TxOutresults { get; set; }
+        public Dictionary<byte[], int> Bootstrapresults { get; set; }
+        public Dictionary<byte[], int> AccTableresults { get; set; }
+
+        object Bootstrap_mutex = new object();
+        object AccTable_mutex = new object();
+        object TxIn_mutex = new object();
+        object TxOut_mutex = new object();
 
         public RpcClient(bool IsNew)
         {
@@ -46,41 +52,44 @@ namespace BlockchainTools
 
         //TODO
         //Get Bootstrap Table
-        public byte[] GetBootstrapTable()
+        public Task<byte[]> GetBootstrapTable()
         {
-            if (ServerList.Count == 0)
+            return Task.Run(() =>
             {
-                return null;
-            }
-            results = new Dictionary<byte[], int>(new ByteArrayComparer());
-            int bizantine = ServerList.Count / 3;
-            List<Thread> threads = new List<Thread>();
-            for (int i = 0; i < 2 * bizantine + 1; i++)
-            {
-                Thread t = new Thread(GetBootstrapTableThread);
-                t.Start(i);
-                threads.Add(t);
-            }
-            foreach (Thread t in threads)
-            {
-                t.Join();
-            }
-            if (results.Keys.Count == 0)
-            {
-                return null;
-            }
-            byte[] value = results.Keys.First();
-            int occurence = results[value];
-            foreach (byte[] b in results.Keys)
-            {
-                if (results[b] > occurence)
+                if (ServerList.Count == 0)
                 {
-                    value = b;
-                    occurence = results[b];
+                    return null;
                 }
-            }
-            Console.WriteLine("Occurence:" + results[value]);
-            return value;
+                Bootstrapresults = new Dictionary<byte[], int>(new ByteArrayComparer());
+                int bizantine = ServerList.Count / 3;
+                List<Thread> threads = new List<Thread>();
+                for (int i = 0; i < 2 * bizantine + 1; i++)
+                {
+                    Thread t = new Thread(GetBootstrapTableThread);
+                    t.Start(i);
+                    threads.Add(t);
+                }
+                foreach (Thread t in threads)
+                {
+                    t.Join();
+                }
+                if (Bootstrapresults.Keys.Count == 0)
+                {
+                    return null;
+                }
+                byte[] value = Bootstrapresults.Keys.First();
+                int occurence = Bootstrapresults[value];
+                foreach (byte[] b in Bootstrapresults.Keys)
+                {
+                    if (Bootstrapresults[b] > occurence)
+                    {
+                        value = b;
+                        occurence = Bootstrapresults[b];
+                    }
+                }
+                Console.WriteLine("Occurence:" + Bootstrapresults[value]);
+                return value;
+            });
         }
 
         public void GetBootstrapTableThread(object param)
@@ -96,17 +105,17 @@ namespace BlockchainTools
                 {
                     return;
                 }
-                lock (mutex)
+                lock (Bootstrap_mutex)
                 {
-                    if (results.ContainsKey(result))
+                    if (Bootstrapresults.ContainsKey(result))
                     {
                         Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                        results[result]++;
+                        Bootstrapresults[result]++;
                     }
                     else
                     {
                         Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                        results.Add(result, 1);
+                        Bootstrapresults.Add(result, 1);
                     }
                 }
             }
@@ -122,17 +131,17 @@ namespace BlockchainTools
                     {
                         return;
                     }
-                    lock (mutex)
+                    lock (Bootstrap_mutex)
                     {
-                        if (results.ContainsKey(result))
+                        if (Bootstrapresults.ContainsKey(result))
                         {
                             Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                            results[result]++;
+                            Bootstrapresults[result]++;
                         }
                         else
                         {
                             Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
-                            results.Add(result, 1);
+                            Bootstrapresults.Add(result, 1);
                         }
                     }
                 }
@@ -140,43 +149,44 @@ namespace BlockchainTools
             }
         }
 
-        //TODO
-        //GET ACCOUNT TABLE
-        public byte[] GetAccountTable()
+        public Task<byte[]> GetAccountTable()
         {
-            if (ServerList.Count == 0)
+            return Task.Run(() =>
             {
-                return null;
-            }
-            results = new Dictionary<byte[], int>(new ByteArrayComparer());
-            int bizantine = ServerList.Count / 3;
-            List<Thread> threads = new List<Thread>();
-            for (int i = 0; i < 2 * bizantine + 1; i++)
-            {
-                Thread t = new Thread(GetAccountTableThread);
-                t.Start(i);
-                threads.Add(t);
-            }
-            foreach (Thread t in threads)
-            {
-                t.Join();
-            }
-            if (results.Keys.Count == 0)
-            {
-                return null;
-            }
-            byte[] value = results.Keys.First();
-            int occurence = results[value];
-            foreach (byte[] b in results.Keys)
-            {
-                if (results[b] > occurence)
+                if (ServerList.Count == 0)
                 {
-                    value = b;
-                    occurence = results[b];
+                    return null;
                 }
-            }
-            Console.WriteLine("Occurence:" + results[value]);
-            return value;
+                AccTableresults = new Dictionary<byte[], int>(new ByteArrayComparer());
+                int bizantine = ServerList.Count / 3;
+                List<Thread> threads = new List<Thread>();
+                for (int i = 0; i < 2 * bizantine + 1; i++)
+                {
+                    Thread t = new Thread(GetAccountTableThread);
+                    t.Start(i);
+                    threads.Add(t);
+                }
+                foreach (Thread t in threads)
+                {
+                    t.Join();
+                }
+                if (AccTableresults.Keys.Count == 0)
+                {
+                    return null;
+                }
+                byte[] value = AccTableresults.Keys.First();
+                int occurence = AccTableresults[value];
+                foreach (byte[] b in AccTableresults.Keys)
+                {
+                    if (AccTableresults[b] > occurence)
+                    {
+                        value = b;
+                        occurence = AccTableresults[b];
+                    }
+                }
+                Console.WriteLine("Occurence:" + AccTableresults[value]);
+                return value;
+            });
         }
 
         public void GetAccountTableThread(object param)
@@ -193,13 +203,16 @@ namespace BlockchainTools
                 {
                     return;
                 }
-                if (results.ContainsKey(result))
+                lock (AccTable_mutex)
                 {
-                    results[result]++;
-                }
-                else
-                {
-                    results.Add(result, 1);
+                    if (AccTableresults.ContainsKey(result))
+                    {
+                        AccTableresults[result]++;
+                    }
+                    else
+                    {
+                        AccTableresults.Add(result, 1);
+                    }
                 }
             }
             catch (Exception e)
@@ -214,71 +227,80 @@ namespace BlockchainTools
                     {
                         return;
                     }
-                    if (results.ContainsKey(result))
+                    lock (AccTable_mutex)
                     {
-                        results[result]++;
-                    }
-                    else
-                    {
-                        results.Add(result, 1);
+                        if (AccTableresults.ContainsKey(result))
+                        {
+                            AccTableresults[result]++;
+                        }
+                        else
+                        {
+                            AccTableresults.Add(result, 1);
+                        }
                     }
                 }
                 catch (Exception exception) { }
             }
         }
 
-        public List<TxOut> GetTransactionFromAccount()
+        public Task<List<TxOut>> GetTransactionFromAccount()
         {
-            if (ServerList.Count == 0)
+            return Task.Run(() =>
             {
-                return null;
-            }
-            results = new Dictionary<byte[], int>(new ByteArrayComparer());
-            int bizantine = ServerList.Count / 3;
-            List<Thread> threads = new List<Thread>();
-            for (int i = 0; i < 2 * bizantine + 1; i++)
-            {
-                Thread t = new Thread(GetTransactionFromAccountThread);
-                t.Start(i);
-                threads.Add(t);
-            }
-            foreach (Thread t in threads)
-            {
-                t.Join();
-            }
-            if (results.Keys.Count == 0)
-            {
-                return null;
-            }
-            byte[] value = results.Keys.First();
-            int occurence = results[value];
-            foreach (byte[] b in results.Keys)
-            {
-                if (results[b] > occurence)
+                if (ServerList.Count == 0)
                 {
-                    value = b;
-                    occurence = results[b];
+                    return null;
                 }
-            }
-            Console.WriteLine("Occurence:" + results[value]);
-
-            string Txs = Encoding.UTF8.GetString(value);
-            Txs = Txs.Substring(1, Txs.Length - 2);
-            List<string> list = Txs.Split(',').ToList();
-            List<TxOut> txOuts = new List<TxOut>();
-            foreach (string str in list)
-            {
-                string tx = str.Substring(1, str.Length - 2);
-                Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
-                foreach (TxOut txOut in transaction.TxOuts)
+                TxOutresults = new Dictionary<byte[], int>(new ByteArrayComparer());
+                int bizantine = ServerList.Count / 3;
+                List<Thread> threads = new List<Thread>();
+                for (int i = 0; i < 2 * bizantine + 1; i++)
                 {
-                    if (!txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                    Thread t = new Thread(GetTransactionFromAccountThread);
+                    t.Start(i);
+                    threads.Add(t);
+                }
+                foreach (Thread t in threads)
+                {
+                    t.Join();
+                }
+                if (TxOutresults.Keys.Count == 0)
+                {
+                    return null;
+                }
+                byte[] value = TxOutresults.Keys.First();
+                int occurence = TxOutresults[value];
+                foreach (byte[] b in TxOutresults.Keys)
+                {
+                    if (TxOutresults[b] > occurence)
                     {
-                        txOuts.Add(txOut);
+                        value = b;
+                        occurence = TxOutresults[b];
                     }
                 }
-            }
-            return txOuts;
+                Console.WriteLine("Occurence:" + TxOutresults[value]);
+
+                string Txs = Encoding.UTF8.GetString(value);
+                Txs = Txs.Substring(1, Txs.Length - 2);
+                List<string> list = Txs.Split(',').ToList();
+                List<TxOut> txOuts = new List<TxOut>();
+                foreach (string str in list)
+                {
+                    string tx = str.Substring(1, str.Length - 2);
+                    Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
+                    if (transaction != null)
+                    {
+                        foreach (TxOut txOut in transaction.TxOuts)
+                        {
+                            if (!txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                            {
+                                txOuts.Add(txOut);
+                            }
+                        }
+                    }
+                }
+                return txOuts;
+            });
         }
 
         public void GetTransactionFromAccountThread(object param)
@@ -295,13 +317,16 @@ namespace BlockchainTools
                 {
                     return;
                 }
-                if (results.ContainsKey(result))
+                lock (TxOut_mutex)
                 {
-                    results[result]++;
-                }
-                else
-                {
-                    results.Add(result, 1);
+                    if (TxOutresults.ContainsKey(result))
+                    {
+                        TxOutresults[result]++;
+                    }
+                    else
+                    {
+                        TxOutresults.Add(result, 1);
+                    }
                 }
             }
             catch (Exception e)
@@ -316,71 +341,79 @@ namespace BlockchainTools
                     {
                         return;
                     }
-                    if (results.ContainsKey(result))
+                    lock (TxOut_mutex)
                     {
-                        results[result]++;
-                    }
-                    else
-                    {
-                        results.Add(result, 1);
+                        if (TxOutresults.ContainsKey(result))
+                        {
+                            TxOutresults[result]++;
+                        }
+                        else
+                        {
+                            TxOutresults.Add(result, 1);
+                        }
                     }
                 }
                 catch (Exception exception) { }
             }
         }
 
-        public List<Tuple<string, int>> GetTransactionToAccount()
+        public Task<List<Tuple<string, int>>> GetTransactionToAccount()
         {
-            if (ServerList.Count == 0)
+            return Task.Run(() =>
             {
-                return null;
-            }
-            results = new Dictionary<byte[], int>(new ByteArrayComparer());
-            int bizantine = ServerList.Count / 3;
-            List<Thread> threads = new List<Thread>();
-            for (int i = 0; i < 2 * bizantine + 1; i++)
-            {
-                Thread t = new Thread(GetTransactionToAccountThread);
-                t.Start(i);
-                threads.Add(t);
-            }
-            foreach (Thread t in threads)
-            {
-                t.Join();
-            }
-            if (results.Keys.Count == 0)
-            {
-                return null;
-            }
-            byte[] value = results.Keys.First();
-            int occurence = results[value];
-            foreach (byte[] b in results.Keys)
-            {
-                if (results[b] > occurence)
+                if (ServerList.Count == 0)
                 {
-                    value = b;
-                    occurence = results[b];
+                    return null;
                 }
-            }
-            Console.WriteLine("Occurence:" + results[value]);
-
-            string Txs = Encoding.UTF8.GetString(value);
-            Txs = Txs.Substring(1, Txs.Length - 2);
-            List<string> list = Txs.Split(',').ToList();
-            List<Tuple<string, int>> txOuts = new List<Tuple<string, int>>();
-            foreach (string str in list)
-            {
-                string tx = str.Substring(1, str.Length - 2);
-                Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
-                foreach (TxOut txOut in transaction.TxOuts)
+                TxInresults = new Dictionary<byte[], int>(new ByteArrayComparer());
+                int bizantine = ServerList.Count / 3;
+                List<Thread> threads = new List<Thread>();
+                for (int i = 0; i < 2 * bizantine + 1; i++)
                 {
-                    if (txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                    Thread t = new Thread(GetTransactionToAccountThread);
+                    t.Start(i);
+                    threads.Add(t);
+                }
+                foreach (Thread t in threads)
+                {
+                    t.Join();
+                }
+                if (TxInresults.Keys.Count == 0)
+                {
+                    return null;
+                }
+                byte[] value = TxInresults.Keys.First();
+                int occurence = TxInresults[value];
+                foreach (byte[] b in TxInresults.Keys)
+                {
+                    if (TxInresults[b] > occurence)
                     {
-                        txOuts.Add(new Tuple<string, int>(Convert.ToBase64String(transaction.FromAddress), txOut.value));
+                        value = b;
+                        occurence = TxInresults[b];
                     }
                 }
-            }
-            return txOuts;
+                Console.WriteLine("Occurence:" + TxInresults[value]);
+
+                string Txs = Encoding.UTF8.GetString(value);
+                Txs = Txs.Substring(1, Txs.Length - 2);
+                List<string> list = Txs.Split(',').ToList();
+                List<Tuple<string, int>> txOuts = new List<Tuple<string, int>>();
+                foreach (string str in list)
+                {
+                    string tx = str.Substring(1, str.Length - 2);
+                    Tx transaction = Tx.DeserializeSignedTx(Convert.FromBase64String(tx));
+                    if(transaction!=null){
+                        foreach (TxOut txOut in transaction.TxOuts)
+                        {
+                            if (txOut.address.Equals(Convert.ToBase64String(this.Account.address)))
+                            {
+                                txOuts.Add(new Tuple<string, int>(Convert.ToBase64String(transaction.FromAddress), txOut.value));
+                            }
+                        }
+                    }
+                }
+                return txOuts;
+            });
         }
 
         public void GetTransactionToAccountThread(object param)
@@ -397,13 +430,16 @@ namespace BlockchainTools
                 {
                     return;
                 }
-                if (results.ContainsKey(result))
+                lock (TxIn_mutex)
                 {
-                    results[result]++;
-                }
-                else
-                {
-                    results.Add(result, 1);
+                    if (TxInresults.ContainsKey(result))
+                    {
+                        TxInresults[result]++;
+                    }
+                    else
+                    {
+                        TxInresults.Add(result, 1);
+                    }
                 }
             }
             catch (Exception e)
@@ -418,13 +454,16 @@ namespace BlockchainTools
                     {
                         return;
                     }
-                    if (results.ContainsKey(result))
+                    lock (TxIn_mutex)
                     {
-                        results[result]++;
-                    }
-                    else
-                    {
-                        results.Add(result, 1);
+                        if (TxInresults.ContainsKey(result))
+                        {
+                            TxInresults[result]++;
+                        }
+                        else
+                        {
+                            TxInresults.Add(result, 1);
+                        }
                     }
                 }
                 catch (Exception exception) { }
@@ -432,16 +471,16 @@ namespace BlockchainTools
         }
 
         //Initialize From BootStrapTable
-        public void InitFromBootstrap()
+        public async Task InitFromBootstrap()
         {
-            byte[] results = GetBootstrapTable();
+            byte[] results = await GetBootstrapTable();
             TxService.UtxoTable.InitializeFromBootstrap(results);
         }
 
         //Balance from account table
-        public int BalanceFromAccountTable()
+        public async Task<int> BalanceFromAccountTable()
         {
-            byte[] results = GetAccountTable();
+            byte[] results = await GetAccountTable();
             if (results != null)
             {
                 String str = Encoding.UTF8.GetString(results);
@@ -485,7 +524,7 @@ namespace BlockchainTools
             {
                 return false;
             }
-            int oldBalance = BalanceFromAccountTable();
+            int oldBalance = Task.Run(async ()=>await BalanceFromAccountTable()).Result;
             int newBalance = oldBalance - value;
 
             List<TxIn> ins = new List<TxIn>();
@@ -531,15 +570,23 @@ namespace BlockchainTools
             for (int i = 0; i < 3; i++)
             {
                 Thread.Sleep(300);
-                TxService.UtxoTable = new UtxoTable();
-                InitFromBootstrap();
-                List<UtxoOutput> list = TxService.UtxoTable.FindForAccount(this.Account.address);
-                foreach (UtxoOutput u in list)
+                Task<bool> task = Task.Run(async () =>
                 {
-                    if (u.ToString().Equals(utxo.ToString()))
+                    TxService.UtxoTable = new UtxoTable();
+                    await InitFromBootstrap();
+                    List<UtxoOutput> list = TxService.UtxoTable.FindForAccount(this.Account.address);
+                    foreach (UtxoOutput u in list)
                     {
-                        return true;
+                        if (u.ToString().Equals(utxo.ToString()))
+                        {
+                            return true;
+                        }
                     }
+                    return false;
+                });
+                if (task.Result)
+                {
+                    return true;
                 }
             }
             return false;

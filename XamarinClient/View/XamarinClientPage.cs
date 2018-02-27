@@ -71,7 +71,7 @@ namespace XamarinClient
         public static RpcClient client { get; set; }
 
         public Label Acc;
-        public Label Balance;
+        public static Label Balance;
 
         public ListView Utxos;
         public static ObservableCollection<UtxoDisplay> UtxoTable;
@@ -122,7 +122,7 @@ namespace XamarinClient
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
             userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(250, GridUnitType.Absolute) });
-            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
+            userView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(50, GridUnitType.Absolute) });
 
             userView.Children.Add(new StackLayout
             {
@@ -276,6 +276,7 @@ namespace XamarinClient
 
         public void Load()
         {
+            Refresh.IsEnabled = false;
             if (Application.Current.Properties.ContainsKey("Account") && Application.Current.Properties.ContainsKey("Servers"))
             {
                 acc = Application.Current.Properties["Account"] as Account;
@@ -291,42 +292,47 @@ namespace XamarinClient
                     client.ServerList.Add(new Tuple<string, int>(server.host, server.port));
                 }
 
-                try
-                {
-                    client.InitFromBootstrap();
-                }
-                catch (Exception e)
-                {
-                    Device.BeginInvokeOnMainThread(async () => await DisplayAlert("Fatal", e.Message, "OK"));
-                }
+                Device.BeginInvokeOnMainThread(async () =>{
+                    int balance = await client.BalanceFromAccountTable();
+                    Balance.Text = balance.ToString();
+                });
 
-                Balance.Text = client.GetBalance().ToString();
-
-                List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
-                UtxoTable.Clear();
-                foreach(UtxoOutput u in list){
-                    if(u!=null) UtxoTable.Add(new UtxoDisplay(u));
-                }
-
-                List<TxOut> TxOuts = client.GetTransactionFromAccount();
-                TxOutHistoryTable.Clear();
-                if (TxOuts != null)
-                {
-                    foreach (TxOut txOut in TxOuts)
+                Device.BeginInvokeOnMainThread(async () => 
+                { 
+                    await client.InitFromBootstrap();
+                    List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                    UtxoTable.Clear();
+                    foreach (UtxoOutput u in list)
                     {
-                        TxOutHistoryTable.Add(new TxOutDisplay(txOut));
+                        if (u != null) UtxoTable.Add(new UtxoDisplay(u));
                     }
-                }
+                    Refresh.IsEnabled = true;
+                });
 
-                List<Tuple<string, int>> TxIns = client.GetTransactionToAccount();
-                TxInHistoryTable.Clear();
-                if (TxIns != null)
+                Device.BeginInvokeOnMainThread(async ()=>
                 {
-                    foreach (Tuple<string, int> tuple in TxIns)
+                    List<TxOut> TxOuts = await client.GetTransactionFromAccount();
+                    TxOutHistoryTable.Clear();
+                    if (TxOuts != null)
                     {
-                        TxInHistoryTable.Add(new TxInDisplay(tuple));
+                        foreach (TxOut txOut in TxOuts)
+                        {
+                            TxOutHistoryTable.Add(new TxOutDisplay(txOut));
+                        }
                     }
-                }
+                });
+
+                Device.BeginInvokeOnMainThread(async () => {
+                    List<Tuple<string, int>> TxIns = await client.GetTransactionToAccount();
+                    TxInHistoryTable.Clear();
+                    if (TxIns != null)
+                    {
+                        foreach (Tuple<string, int> tuple in TxIns)
+                        {
+                            TxInHistoryTable.Add(new TxInDisplay(tuple));
+                        }
+                    }
+                });
             } else {
                 acc = null;
                 Acc.Text = "N/A";
@@ -344,11 +350,7 @@ namespace XamarinClient
 
         void RefreshPage(Object sender, EventArgs args)
         {
-            Refresh.IsEnabled = false;
-            Task.Run(() => {
-                Load();
-            });
-            Refresh.IsEnabled = true;
+            Load();
         }
 
         protected override void OnAppearing()
