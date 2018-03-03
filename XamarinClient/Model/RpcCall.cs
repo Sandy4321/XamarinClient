@@ -14,10 +14,15 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace BlockchainTools
 {
+    //Json Object for Rpc call
     class JsonObj
     {
+        //Method name
         public string Method { get; set; }
+
+        //Parameters are an array of objects
         public object[] Params { get; set; }
+
         public int id { get; set; }
 
         public JsonObj(string m, object[] p, int id)
@@ -88,49 +93,68 @@ namespace BlockchainTools
             }
         }
 
+        //Invoke RPC method and get response
         public byte[] InvokeAndReadResponse(string method, object[] parameters, TcpClient client, int sleepTime)
         {
+            //If the server is TSL Server,
+            //Use TSLClient to create secure communication channel
             if (((IPEndPoint)client.Client.RemoteEndPoint).Port == 7522)
             {
                 return GetResultFromServerResponse(TlsClient.InvokeAndReadResponse(method, parameters, client));
             }
 
+            //If the wait time is too long, throw network error exception
             if (sleepTime > 200)
             {
                 throw new Exception("Network Error");
             }
 
+            //Create json object
             JsonObj json = new JsonObj(method, parameters, 0);
             String recv = "";
+
+            //Create network stream
             using (NetworkStream networkStream = client.GetStream())
             {
+                //Serialize json data
                 String jsonData = JsonConvert.SerializeObject(json);
                 Byte[] jsonByte = Encoding.UTF8.GetBytes(jsonData);
+
+                //Send json to server
                 networkStream.Write(jsonByte, 0, jsonByte.Length);
+
+                //Get server response
                 Byte[] buffer = new Byte[10240];
                 do
                 {
                     networkStream.Read(buffer, 0, buffer.Length);
                     recv += Encoding.UTF8.GetString(buffer);
+
+                    //Sleep for a while for the data to be transmitted from server
                     Thread.Sleep(sleepTime);
                 } while (networkStream.DataAvailable);
+
+                //Try if we get all the data
                 try
                 {
                     recv = recv.Substring(0, recv.IndexOf("\n"));
                 }
                 catch (Exception e)
                 {
+                    //Increase sleep time if not all the data is received
                     return InvokeAndReadResponse(method, parameters, client, sleepTime + 100);
                 }
             }
             return GetResultFromServerResponse(recv);
         }
 
+        //Internal method to get result from server response
         public byte[] GetResultFromServerResponse(string response)
         {
             JObject responseJson = JObject.Parse(response);
             string result = responseJson.GetValue("result").ToString();
-            //File.WriteAllText(@"C:\Users\Peter Hua\Desktop\TestServer\BlockchainTools\BlockchainTools\7622.txt",result);
+
+            //Remove "\0" in the received data
             result = result.Replace("\0", "");
             return Convert.FromBase64String(result);
         }
@@ -141,17 +165,22 @@ namespace BlockchainTools
     {
         private static Hashtable certificateErrors = new Hashtable();
 
+        //Method to validate certificate
         public static bool ValidateServerCertificate(
             object sender,
             X509Certificate certificate,
             X509Chain chain,
             SslPolicyErrors sslPolicyErrors)
         {
+            //If there are no SSL policy errors, return true.
             if (sslPolicyErrors == SslPolicyErrors.None)
             {
                 return true;
             }
             Console.WriteLine("Certificate error: " + sslPolicyErrors);
+
+            //Suppress RemoteCertificateChainErrors
+            //Since the server currently is self encrypted and will generate RemoteCertificateChainErrors
             if (sslPolicyErrors == SslPolicyErrors.RemoteCertificateChainErrors)
             {
                 return true;
@@ -161,8 +190,7 @@ namespace BlockchainTools
 
         public static string InvokeAndReadResponse(string method, object[] parameters, TcpClient client)
         {
-            client = new TcpClient("129.78.10.53", 7522);
-            Console.WriteLine("Server Connected");
+            //Get SSL stream
             SslStream sslStream = new SslStream(
                 client.GetStream(),
                 false,
@@ -170,6 +198,7 @@ namespace BlockchainTools
                 null);
             try
             {
+                //Authenticate SSL stream
                 sslStream.AuthenticateAsClient("3-192.168.1.115:9123SSL");
             }
             catch (AuthenticationException e)
@@ -187,11 +216,16 @@ namespace BlockchainTools
             string jsonData = JsonConvert.SerializeObject(json);
             Console.WriteLine(jsonData);
             byte[] jsonByte = Encoding.UTF8.GetBytes(jsonData);
+
+            //Write to server
             sslStream.Write(jsonByte, 0, jsonByte.Length);
             sslStream.Flush();
+
+            //Get response from server
             return readResponse(sslStream, 50);
         }
 
+        //Method to read from server
         public static string readResponse(SslStream sslStream, int sleepTime)
         {
             string recv = "";
@@ -201,6 +235,8 @@ namespace BlockchainTools
             {
                 bufferLength = sslStream.Read(buffer, 0, buffer.Length);
                 recv += Encoding.UTF8.GetString(buffer);
+
+                //Read data until, "\n" is gotten
                 if (recv.IndexOf("\n") != -1)
                 {
                     break;

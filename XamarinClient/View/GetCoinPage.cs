@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using BlockchainTools;
 
 using Xamarin.Forms;
 using Plugin.Messaging;
-
 
 namespace XamarinClient
 {

@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 
 namespace BlockchainTools
 {
+    //UTXO Output class
     public class UtxoOutput
     {
         public int value { get; set; }
@@ -33,6 +34,7 @@ namespace BlockchainTools
         }
     }
 
+    //UTXO Return class
     public class UtxoReturn
     {
         public int value { get; set; }
@@ -47,12 +49,13 @@ namespace BlockchainTools
         }
     }
 
+    //UTXO Table
 	public class UtxoTable : ICloneable
 	{
         //Format: <Transation hash: a list of UtxoOutputs in the transaction>
 		public Dictionary<String, List<UtxoOutput>> Entries;
 
-        //Key
+        //Format: <User address:<Transaction hash: index of that UTXO>>
 		public Dictionary<String, Dictionary<String,int>> UserTxTable;
 		
 		//Table is initialized during construction;
@@ -96,12 +99,14 @@ namespace BlockchainTools
 			AddUtxo(hash, OutputList);
 		}
 		
+        //Initialize Entries and UserTxTable
 		public void Init()
 		{
 			Entries = new Dictionary<string, List<UtxoOutput>>();
 			UserTxTable = new Dictionary<string, Dictionary<String,int>>();
 		}
 		
+        //Initialize UserTxTable from Utxo Entries
 		public void InitUserTable()
 		{
 			foreach (KeyValuePair<String, List<UtxoOutput>> entry in Entries)
@@ -117,6 +122,7 @@ namespace BlockchainTools
 			}
 		}
 
+        //Initialize UTXO Entries from Bootstrap Table
 		public void InitializeFromBootstrap(byte[] received)
 		{
 			if (received == null)
@@ -127,7 +133,7 @@ namespace BlockchainTools
 			try
 			{
 				string content = Encoding.UTF8.GetString(received);
-				//Console.WriteLine(content);
+                //Get Dictionary from json string
 				Dictionary<string,List<UtxoOutput>> bootMap = JsonConvert.DeserializeObject<Dictionary<string,List<UtxoOutput>>>(content);
 				foreach (KeyValuePair<string, List<UtxoOutput>> entry in bootMap)
 				{
@@ -139,9 +145,11 @@ namespace BlockchainTools
 				Console.WriteLine("Invalid data");
 				return;
 			}
+            //Initialize userTxTable from UTXO entries
 			InitUserTable();
 		}
 
+        //Initialize From saved json string
 		public void InitializeFromJson(string filePath)
 		{
 			try
@@ -161,6 +169,7 @@ namespace BlockchainTools
 			InitUserTable();
 		}
 
+        //Get total balance from UTXO entries
 		public int GetTotalBalance()
 		{
 			int total = 0;
@@ -212,6 +221,7 @@ namespace BlockchainTools
 			return -1;
 		}
 
+        //Look up UTXO entry from UserTxTable
 		public UtxoOutput LookUpEntry(string hash, int id, byte[] addr)
 		{
 			List<UtxoOutput> list = Entries[hash];
@@ -235,6 +245,7 @@ namespace BlockchainTools
 			return utxo;
 		}
 
+        //Consume UTXO from UTXO Entries and UserTxTable
 		public bool ConsumeUtxo(string hash, int id, byte[] addr)
 		{
 			List<UtxoOutput> list = Entries[hash];
@@ -275,6 +286,7 @@ namespace BlockchainTools
 			return false;
 		}
 
+        //Get jsonstring from UTXO entries
 		public byte[] GetBootstrap()
 		{
 			byte[] json = null;
@@ -289,6 +301,7 @@ namespace BlockchainTools
 			return json;
 		}
 
+        //Get UTXO Entries for a user
 		public byte[] GetAddressUtxos(byte[] addr)
 		{
 			List<UtxoReturn> list = new List<UtxoReturn>();

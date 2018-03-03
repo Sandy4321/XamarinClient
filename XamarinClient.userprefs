@@ -1,15 +1,7 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/GetCoinPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/Model/RpcClient.cs">
     <Files>
-      <File FileName="XamarinClient/View/XamarinClientPage.cs" Line="257" Column="26" />
-      <File FileName="XamarinClient/View/PaymentPage.cs" Line="47" Column="28" />
-      <File FileName="XamarinClient/View/SettingsPage.cs" Line="249" Column="48" />
-      <File FileName="XamarinClient/View/ChangePinPage.cs" Line="37" Column="64" />
-      <File FileName="XamarinClient/View/CreateAuthPage.cs" Line="100" Column="48" />
-      <File FileName="XamarinClient/View/UtxoView.cs" Line="17" Column="28" />
-      <File FileName="XamarinClient/View/RootView.cs" Line="33" Column="42" />
-      <File FileName="XamarinClient/View/GetCoinPage.cs" Line="45" Column="46" />
-      <File FileName="XamarinClient/Model/RpcClient.cs" Line="497" Column="1" NotebookId="1" />
+      <File FileName="XamarinClient/Model/RpcClient.cs" Line="12" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />

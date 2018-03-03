@@ -3,6 +3,7 @@ using System.Text;
 
 namespace BlockchainTools
 {
+    //Helper Class to convert to and from hex string
     public class HexHelper
     {
         public static byte[] StringToByteArray(string hex)

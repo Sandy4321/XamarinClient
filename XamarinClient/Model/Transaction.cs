@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+
 using NBitcoin;
 using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.Sec;
-using Org.BouncyCastle.Asn1.X509;
 using Org.BouncyCastle.Asn1.X9;
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto.Signers;
 using Org.BouncyCastle.Math;
 using Org.BouncyCastle.Crypto.Digests;
-using Org.BouncyCastle.Crypto.Tls;
 
 namespace BlockchainTools
 {
+    //Class TxIn;
     public class TxIn
     {
         public byte[] hash { get; set; }
@@ -29,6 +29,7 @@ namespace BlockchainTools
             this.script = script;
         }
 
+        //Check if this TxIn is in the array of TxIns;
         public static bool CheckDuplicateIns(TxIn[] TxIns)
         {
             Dictionary<TxIn, int> dic = new Dictionary<TxIn, int>();
@@ -43,13 +44,16 @@ namespace BlockchainTools
             return true;
         }
 
+        //Serialize TxIn;
+        //Format: totalLength + hashLength + hash + indexBytes + script;
         public byte[] Serialize()
         {
             byte[] hash = this.hash.Reverse().ToArray();
             byte[] hashLen = BitConverter.GetBytes(hash.Length);
             byte[] indexBytes = BitConverter.GetBytes((long)index);
-            byte[] totalLen =
-                BitConverter.GetBytes(hash.Length + hashLen.Length + indexBytes.Length + script.Length);
+            byte[] totalLen = BitConverter.GetBytes(hash.Length + hashLen.Length + indexBytes.Length + script.Length);
+
+            //Convert to Big Endian;
             if (BitConverter.IsLittleEndian)
             {
                 Array.Reverse(hashLen);
@@ -66,12 +70,15 @@ namespace BlockchainTools
             return list.ToArray();
         }
 
-        //TODO
+        //Deserialize TxIn
         public static TxIn Deserialize(byte[] serializedTxIn)
         {
             int length = serializedTxIn.Length;
             int current = 0;
             byte[] bytes;
+
+            //Check if the system uses little endian;
+            //Reverse the array of bytes if it's little endian;
             bool reverse = BitConverter.IsLittleEndian;
 
             if (length < 4)
@@ -107,7 +114,7 @@ namespace BlockchainTools
             return new TxIn(hash, index, script);
         }
 
-        //TODO
+        //Deserialize the byte array of a list of TxIns;
         public static List<TxIn> DeserializeTxIns(byte[] serializedTxIns)
         {
             List<TxIn> TxIns = new List<TxIn>();
@@ -138,7 +145,6 @@ namespace BlockchainTools
                 {
                     return null;
                 }
-
                 serializedTxIns = Tx.SubArray(serializedTxIns, 4 + inLen, length - 4 - inLen);
 
                 TxIns.Add(txIn);
@@ -148,6 +154,7 @@ namespace BlockchainTools
         }
     }
 
+    //Class TxOut
     public class TxOut
     {
         public int value { get; set; }
@@ -161,6 +168,8 @@ namespace BlockchainTools
             this.address = address;
         }
 
+        //Serialize TxOut;
+        //Format: totalLength + value + scriptLength + script + address of receiver;
         public byte[] Serialize()
         {
             byte[] value = BitConverter.GetBytes((long)this.value);
@@ -168,6 +177,7 @@ namespace BlockchainTools
             byte[] addr = Convert.FromBase64String(this.address);
             byte[] totalLen = BitConverter.GetBytes(value.Length + scriptLen.Length + script.Length + addr.Length);
 
+            //Convert to big endian;
             if (BitConverter.IsLittleEndian)
             {
                 Array.Reverse(value);
@@ -184,12 +194,16 @@ namespace BlockchainTools
             return list.ToArray();
         }
 
-        //TODO
+        //Deserialize TxOut;
         public static TxOut Deserialize(byte[] serializedTxOut)
         {
             int length = serializedTxOut.Length;
             int current = 0;
             byte[] bytes;
+
+
+            //Check if the system uses little endian;
+            //Reverse the array of bytes if it's little endian;
             bool reverse = BitConverter.IsLittleEndian;
 
             if (length < 4)
@@ -230,7 +244,7 @@ namespace BlockchainTools
             return new TxOut(value, script, Convert.ToBase64String(addr));
         }
 
-        //TODO
+        //Deserialize the byte array of a list of TxOuts;
         public static List<TxOut> DeserializeTxOuts(byte[] serializedTxOuts)
         {
             List<TxOut> txOuts = new List<TxOut>();
@@ -261,7 +275,6 @@ namespace BlockchainTools
                 {
                     return null;
                 }
-
                 serializedTxOuts = Tx.SubArray(serializedTxOuts, 4 + outLen, length - outLen - 4);
 
                 txOuts.Add(txOut);
@@ -270,22 +283,7 @@ namespace BlockchainTools
         }
     }
 
-    public class TxSigned
-    {
-        public byte[] SerializedTx;
-        public byte[] PubKey;
-        public byte[] Sig;
-        public byte[] addr;
-
-        public TxSigned(byte[] SerializedTx, byte[] PubKey, byte[] Sig, byte[] addr)
-        {
-            this.SerializedTx = SerializedTx;
-            this.PubKey = PubKey;
-            this.Sig = Sig;
-            this.addr = addr;
-        }
-    }
-
+    //Class transaction
     public class Tx
     {
         private static readonly X9ECParameters curve = SecNamedCurves.GetByName("secp256k1");
@@ -309,10 +307,13 @@ namespace BlockchainTools
             this.TxOuts = TxOuts;
         }
 
+        //Sign transaction using private key
         public byte[] SignTx(Key priv)
         {
+            //Get serialized transaction
             byte[] tx = this.Serialize();
 
+            //Debugging
             Console.WriteLine("Serialized Tx: ");
             foreach (byte b in tx)
             {
@@ -320,10 +321,13 @@ namespace BlockchainTools
             }
             Console.WriteLine();
 
+            //Generate ECDSA signature
             ECDsaSigner signer = new ECDsaSigner(new HMacDsaKCalculator(new Sha256Digest()));
             ECPrivateKeyParameters privateKey = new ECPrivateKeyParameters(new BigInteger(1, priv.ToBytes()), domain);
             signer.Init(true, privateKey);
             BigInteger[] components = signer.GenerateSignature(this.Hash);
+
+            //Debugging
             Console.WriteLine("Hash value: ");
             foreach (byte b in this.Hash)
             {
@@ -333,8 +337,10 @@ namespace BlockchainTools
             Console.WriteLine(components[0] + " " + components[1]);
             ECDSASignature ecdsaSignature = new ECDSASignature(components[0], components[1]).ToCanonicalised();
 
+            //Encode to DER
             byte[] sigs = ecdsaSignature.EncodeToDER();
 
+            //Debugging
             Console.WriteLine("Signature: ");
             foreach (byte b in sigs)
             {
@@ -346,12 +352,14 @@ namespace BlockchainTools
             byte[] pubKey = priv.PubKey.ToBytes();
             byte[] pubKeyLen = BitConverter.GetBytes(pubKey.Length);
 
+            //Reverse to big endian
             if (BitConverter.IsLittleEndian)
             {
                 Array.Reverse(sigsLen);
                 Array.Reverse(pubKeyLen);
             }
 
+            //Format: sigLen + sigs + pubKeyLen + pubKey + serialized Tx
             List<byte> result = new List<byte>();
 
             result.AddRange(sigsLen);
@@ -372,7 +380,7 @@ namespace BlockchainTools
             return result.ToArray();
         }
 
-        //TODO: Deserialize SignedTX
+        //Deserialize SignedTX
         public static Tx DeserializeSignedTx(byte[] signedTx)
         {
             int length = signedTx.Length;
@@ -426,6 +434,8 @@ namespace BlockchainTools
             return tx;
         }
 
+        //Get the hash of a transaction
+        //Format: SHA256(SHA256(Serialized TxIns Size + Serialized TxIns + Serialized TxOuts Size + Serialized TxOuts))
         public byte[] getHash()
         {
             List<byte> ins = new List<byte>();
@@ -489,6 +499,8 @@ namespace BlockchainTools
             return hash;
         }
 
+        //Serializd Tx
+        //Format: hashSize + hash + Serialized TxIns Size + Serialized TxIns + Serialized TxOuts Size + Serialized TxOuts
         public byte[] Serialize()
         {
             List<byte> ins = new List<byte>();
@@ -525,7 +537,7 @@ namespace BlockchainTools
             return serializedTransaction.ToArray();
         }
 
-        //TODO: Deserialzie serialized Tx
+        //Deserialzie serialized Tx
         public static Tx Deserialize(byte[] serializedTx)
         {
             int current = 0;
@@ -601,6 +613,7 @@ namespace BlockchainTools
             return new Tx(txIns, txOuts);
         }
 
+        //Helper method to get subarray of an array
         public static byte[] SubArray(byte[] array, int start, int length)
         {
             byte[] subarray = new byte[length];
@@ -608,6 +621,7 @@ namespace BlockchainTools
             return subarray;
         }
 
+        //Helper Class to generate ECDSASignature
         public class ECDSASignature
         {
             private readonly BigInteger r;
