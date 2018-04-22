@@ -11559,7 +11559,7 @@ _mono_aot_file_info:
 	.long 272,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 29,231,109,103,144,165,236,55,208,73,83,49,167,24,233,191
+	.byte 171,52,130,230,129,39,66,153,183,212,221,119,1,234,96,179
 	.globl _mono_aot_module_FormsPinView_PCL_info
 	.align 3
 _mono_aot_module_FormsPinView_PCL_info:

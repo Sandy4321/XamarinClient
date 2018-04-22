@@ -12,7 +12,13 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5bbb8e5d2928631fa7276827c449c8050.ZxingActivity" />
+    <service android:name="md59f70a99687498e7ba187118950981d26.KeepAliveService" />
+    <activity android:label="Web Authenticator" android:name="md5719e249934bca077b67d8f77dc6da002.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md5719e249934bca077b67d8f77dc6da002.WebAuthenticatorActivity" />
+    <activity android:label="@string/title_activity_webview" android:theme="@android:style/Theme.DeviceDefault" android:name="md5719e249934bca077b67d8f77dc6da002.WebViewActivity" />
+    <activity android:label="Web Authenticator Native Broswer" android:launchMode="singleTop" android:name="md5719e249934bca077b67d8f77dc6da002.WebAuthenticatorNativeBrowserActivity" />
+    <receiver android:name="md5719e249934bca077b67d8f77dc6da002.CustomTabsActionsBroadcastReceiver" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md54ac47efa3340b2f00c939eadd8c37639.ZxingActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.RedbellyBlockchain.XamarinClient.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -22,5 +28,13 @@
       </intent-filter>
     </receiver>
     <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <activity android:name="net.hockeyapp.android.UpdateActivity" />
+    <activity android:name="net.hockeyapp.android.FeedbackActivity" android:windowSoftInputMode="adjustResize|stateVisible" />
+    <activity android:name="net.hockeyapp.android.PaintActivity" />
+    <activity android:name="net.hockeyapp.android.LoginActivity" />
+    <activity android:name="net.hockeyapp.android.ExpiryInfoActivity" />
   </application>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18" />
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 </manifest>

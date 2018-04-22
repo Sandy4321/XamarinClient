@@ -11,6 +11,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 #import <CoreSpotlight/CoreSpotlight.h>
+#import <QuickLook/QuickLook.h>
 #import <SafariServices/SafariServices.h>
 #import <MessageUI/MessageUI.h>
 #import <CloudKit/CloudKit.h>
@@ -158,6 +159,30 @@
 @class ZXing_Mobile_ZXingDefaultOverlayView;
 @class ZXing_Mobile_ZXingScannerView_OutputRecorder;
 @class ZXing_Mobile_ZXingScannerView;
+@class BITHockeyBaseManager;
+@class BITAuthenticator;
+@protocol BITAuthenticatorDelegate;
+@class BITHockeyAttachment;
+@class BITCrashAttachment;
+@class BITCrashDetails;
+@class BITCrashManager;
+@protocol BITCrashManagerDelegate;
+@class BITCrashMetaData;
+@protocol BITFeedbackComposeViewControllerDelegate;
+@class BITFeedbackActivity;
+@class BITFeedbackComposeViewController;
+@class BITHockeyBaseViewController;
+@class BITFeedbackListViewController;
+@class BITFeedbackManager;
+@protocol BITFeedbackManagerDelegate;
+@protocol BITHockeyManagerDelegate;
+@class BITMetricsManager;
+@class BITStoreUpdateManager;
+@protocol BITStoreUpdateManagerDelegate;
+@class BITUpdateManager;
+@protocol BITUpdateManagerDelegate;
+@class BITUpdateViewController;
+@class BITHockeyManager;
 
 @protocol UIPickerViewModel<UIPickerViewDataSource, UIPickerViewDelegate>
 @end
@@ -686,6 +711,350 @@
 	-(int) xamarinGetGCHandle;
 	-(void) xamarinSetGCHandle: (int) gchandle;
 	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface BITHockeyBaseManager : NSObject {
+}
+	-(NSInteger) barStyle;
+	-(void) setBarStyle:(NSInteger)p0;
+	-(NSInteger) modalPresentationStyle;
+	-(void) setModalPresentationStyle:(NSInteger)p0;
+	-(UIColor *) navigationBarTintColor;
+	-(void) setNavigationBarTintColor:(UIColor *)p0;
+	-(NSString *) serverURL;
+	-(void) setServerURL:(NSString *)p0;
+	-(id) init;
+@end
+
+@interface BITAuthenticator : BITHockeyBaseManager {
+}
+	-(void) authenticateInstallation;
+	-(void) cleanupInternalStorage;
+	-(BOOL) handleOpenURL:(NSURL *)p0 sourceApplication:(NSString *)p1 annotation:(NSObject *)p2;
+	-(void) identifyWithCompletion:(id)p0;
+	-(BOOL) validateWithCompletion:(id)p0;
+	-(NSString *) authenticationSecret;
+	-(void) setAuthenticationSecret:(NSString *)p0;
+	-(NSURL *) deviceAuthenticationURL;
+	-(NSUInteger) identificationType;
+	-(void) setIdentificationType:(NSUInteger)p0;
+	-(BOOL) isIdentified;
+	-(NSString *) publicInstallationIdentifier;
+	-(BOOL) restrictApplicationUsage;
+	-(void) setRestrictApplicationUsage:(BOOL)p0;
+	-(NSUInteger) restrictionEnforcementFrequency;
+	-(void) setRestrictionEnforcementFrequency:(NSUInteger)p0;
+	-(NSString *) urlScheme;
+	-(void) setUrlScheme:(NSString *)p0;
+	-(BOOL) isValidated;
+	-(NSURL *) webpageURL;
+	-(void) setWebpageURL:(NSURL *)p0;
+	-(id) init;
+@end
+
+@protocol BITAuthenticatorDelegate
+	@optional -(void) authenticator:(id)p0 willShowAuthenticationController:(UIViewController *)p1;
+@end
+
+@interface BITHockeyAttachment : NSObject {
+}
+	-(void) encodeWithCoder:(NSCoder *)p0;
+	-(NSString *) contentType;
+	-(NSString *) filename;
+	-(NSData *) hockeyAttachmentData;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFilename:(NSString *)p0 hockeyAttachmentData:(NSData *)p1 contentType:(NSString *)p2;
+@end
+
+@interface BITCrashAttachment : BITHockeyAttachment {
+}
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithFilename:(NSString *)p0 crashAttachmentData:(NSData *)p1 contentType:(NSString *)p2;
+@end
+
+@interface BITCrashDetails : NSObject {
+}
+	-(NSString *) appBuild;
+	-(NSUInteger) appProcessIdentifier;
+	-(NSDate *) appStartTime;
+	-(NSString *) appVersion;
+	-(NSDate *) crashTime;
+	-(NSString *) exceptionName;
+	-(NSString *) exceptionReason;
+	-(NSString *) incidentIdentifier;
+	-(BOOL) isAppKill;
+	-(NSString *) osBuild;
+	-(NSString *) osVersion;
+	-(NSString *) reporterKey;
+	-(NSString *) signal;
+	-(id) init;
+@end
+
+@interface BITCrashManager : BITHockeyBaseManager {
+}
+	-(void) generateTestCrash;
+	-(BOOL) handleUserInput:(NSUInteger)p0 withUserProvidedMetaData:(id)p1;
+	-(BOOL) isDebuggerAttached;
+	-(void) setAlertViewHandler:(id)p0;
+	-(NSUInteger) crashManagerStatus;
+	-(void) setCrashManagerStatus:(NSUInteger)p0;
+	-(BOOL) didCrashInLastSession;
+	-(BOOL) didReceiveMemoryWarningInLastSession;
+	-(BOOL) isAppNotTerminatingCleanlyDetectionEnabled;
+	-(void) setEnableAppNotTerminatingCleanlyDetection:(BOOL)p0;
+	-(BOOL) isMachExceptionHandlerEnabled;
+	-(void) setEnableMachExceptionHandler:(BOOL)p0;
+	-(BOOL) isOnDeviceSymbolicationEnabled;
+	-(void) setEnableOnDeviceSymbolication:(BOOL)p0;
+	-(id) lastSessionCrashDetails;
+	-(BOOL) shouldShowAlwaysButton;
+	-(void) setShowAlwaysButton:(BOOL)p0;
+	-(double) timeIntervalCrashInLastSessionOccurred;
+	-(id) init;
+@end
+
+@protocol BITCrashManagerDelegate
+	@optional -(NSString *) applicationLogForCrashManager:(id)p0;
+	@optional -(id) attachmentForCrashManager:(id)p0;
+	@optional -(void) crashManagerWillShowSubmitCrashReportAlert:(id)p0;
+	@optional -(void) crashManagerWillCancelSendingCrashReport:(id)p0;
+	@optional -(void) crashManagerWillSendCrashReportsAlways:(id)p0;
+	@optional -(void) crashManagerWillSendCrashReport:(id)p0;
+	@optional -(void) crashManager:(id)p0 didFailWithError:(NSError *)p1;
+	@optional -(void) crashManagerDidFinishSendingCrashReport:(id)p0;
+	@optional -(BOOL) considerAppNotTerminatedCleanlyReportForCrashManager:(id)p0;
+@end
+
+@interface BITCrashMetaData : NSObject {
+}
+	-(NSString *) userEmail;
+	-(void) setUserEmail:(NSString *)p0;
+	-(NSString *) userID;
+	-(void) setUserID:(NSString *)p0;
+	-(NSString *) userName;
+	-(void) setUserName:(NSString *)p0;
+	-(NSString *) userProvidedDescription;
+	-(void) setUserProvidedDescription:(NSString *)p0;
+	-(id) init;
+@end
+
+@protocol BITFeedbackComposeViewControllerDelegate
+	@optional -(void) feedbackComposeViewController:(id)p0 didFinishWithResult:(NSUInteger)p1;
+	@optional -(void) feedbackComposeViewControllerDidFinish:(id)p0;
+@end
+
+@interface BITFeedbackActivity : UIActivity {
+}
+	-(void) feedbackComposeViewControllerDidFinish:(id)p0;
+	-(void) feedbackComposeViewController:(id)p0 didFinishWithResult:(NSUInteger)p1;
+	-(UIImage *) customActivityImage;
+	-(void) setCustomActivityImage:(UIImage *)p0;
+	-(NSString *) customActivityTitle;
+	-(void) setCustomActivityTitle:(NSString *)p0;
+	-(id) init;
+@end
+
+@interface BITFeedbackComposeViewController : UIViewController {
+}
+	-(void) prepareWithItems:(NSArray *)p0;
+	-(BOOL) hideImageAttachmentButton;
+	-(void) setHideImageAttachmentButton:(BOOL)p0;
+	-(NSObject *) delegate;
+	-(void) setDelegate:(NSObject *)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface BITHockeyBaseViewController : UITableViewController {
+}
+	-(BOOL) modalAnimated;
+	-(void) setModalAnimated:(BOOL)p0;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+	-(id) initWithModalStyle:(BOOL)p0;
+	-(id) initWithStyle:(NSInteger)p0 modal:(BOOL)p1;
+@end
+
+@interface BITFeedbackListViewController : BITHockeyBaseViewController {
+}
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(id) previewController:(QLPreviewController *)p0 previewItemAtIndex:(NSInteger)p1;
+	-(NSInteger) numberOfPreviewItemsInPreviewController:(QLPreviewController *)p0;
+	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface BITFeedbackManager : BITHockeyBaseManager {
+}
+	-(id) feedbackComposeViewController;
+	-(UITableViewController *) feedbackListViewController:(BOOL)p0;
+	-(UIImage *) screenshot;
+	-(void) showFeedbackComposeView;
+	-(void) showFeedbackComposeViewWithGeneratedScreenshot;
+	-(void) showFeedbackComposeViewWithPreparedItems:(NSArray *)p0;
+	-(void) showFeedbackListView;
+	-(BOOL) feedbackComposeHideImageAttachmentButton;
+	-(void) setFeedbackComposeHideImageAttachmentButton:(BOOL)p0;
+	-(NSInteger) feedbackObservationMode;
+	-(void) setFeedbackObservationMode:(NSInteger)p0;
+	-(NSInteger) requireUserEmail;
+	-(void) setRequireUserEmail:(NSInteger)p0;
+	-(NSInteger) requireUserName;
+	-(void) setRequireUserName:(NSInteger)p0;
+	-(BOOL) showAlertOnIncomingMessages;
+	-(void) setShowAlertOnIncomingMessages:(BOOL)p0;
+	-(BOOL) showFirstRequiredPresentationModal;
+	-(void) setShowFirstRequiredPresentationModal:(BOOL)p0;
+	-(id) init;
+@end
+
+@protocol BITFeedbackManagerDelegate
+	@optional -(void) feedbackManagerDidReceiveNewFeedback:(id)p0;
+	@optional -(BOOL) allowAutomaticFetchingForNewFeedbackForManager:(id)p0;
+	@optional -(NSArray *) preparedItemsForFeedbackManager:(id)p0;
+	@optional -(BOOL) forceNewFeedbackThreadForFeedbackManager:(id)p0;
+@end
+
+@protocol BITHockeyManagerDelegate
+	@optional -(BOOL) shouldUseLiveIdentifierForHockeyManager:(id)p0;
+	@optional -(UIViewController *) viewControllerForHockeyManager:(id)p0 componentManager:(id)p1;
+	@optional -(NSString *) userIDForHockeyManager:(id)p0 componentManager:(id)p1;
+	@optional -(NSString *) userNameForHockeyManager:(id)p0 componentManager:(id)p1;
+	@optional -(NSString *) userEmailForHockeyManager:(id)p0 componentManager:(id)p1;
+	@optional -(NSString *) applicationLogForCrashManager:(id)p0;
+	@optional -(id) attachmentForCrashManager:(id)p0;
+	@optional -(void) crashManagerWillShowSubmitCrashReportAlert:(id)p0;
+	@optional -(void) crashManagerWillCancelSendingCrashReport:(id)p0;
+	@optional -(void) crashManagerWillSendCrashReportsAlways:(id)p0;
+	@optional -(void) crashManagerWillSendCrashReport:(id)p0;
+	@optional -(void) crashManager:(id)p0 didFailWithError:(NSError *)p1;
+	@optional -(void) crashManagerDidFinishSendingCrashReport:(id)p0;
+	@optional -(BOOL) considerAppNotTerminatedCleanlyReportForCrashManager:(id)p0;
+	@optional -(BOOL) shouldDisplayUpdateAlertForUpdateManager:(id)p0 forShortVersion:(NSString *)p1 forVersion:(NSString *)p2;
+	@optional -(BOOL) shouldDisplayExpiryAlertForUpdateManager:(id)p0;
+	@optional -(void) didDisplayExpiryAlertForUpdateManager:(id)p0;
+	@optional -(BOOL) updateManagerShouldSendUsageData:(id)p0;
+	@optional -(void) updateManagerWillExitApp:(id)p0;
+	@optional -(BOOL) willStartDownloadAndUpdate:(id)p0;
+	@optional -(void) feedbackManagerDidReceiveNewFeedback:(id)p0;
+	@optional -(BOOL) allowAutomaticFetchingForNewFeedbackForManager:(id)p0;
+	@optional -(NSArray *) preparedItemsForFeedbackManager:(id)p0;
+	@optional -(BOOL) forceNewFeedbackThreadForFeedbackManager:(id)p0;
+	@optional -(void) authenticator:(id)p0 willShowAuthenticationController:(UIViewController *)p1;
+@end
+
+@interface BITMetricsManager : BITHockeyBaseManager {
+}
+	-(void) trackEventWithName:(NSString *)p0;
+	-(void) trackEventWithName:(NSString *)p0 properties:(NSDictionary *)p1 measurements:(NSDictionary *)p2;
+	-(BOOL) disabled;
+	-(void) setDisabled:(BOOL)p0;
+	-(NSString *) serverURL;
+	-(void) setServerURL:(NSString *)p0;
+	-(id) init;
+@end
+
+@interface BITStoreUpdateManager : BITHockeyBaseManager {
+}
+	-(void) checkForUpdate;
+	-(BOOL) isCheckingForUpdateOnLaunch;
+	-(void) setCheckForUpdateOnLaunch:(BOOL)p0;
+	-(NSString *) countryCode;
+	-(void) setCountryCode:(NSString *)p0;
+	-(NSUInteger) updateSetting;
+	-(void) setUpdateSetting:(NSUInteger)p0;
+	-(BOOL) isUpdateUIEnabled;
+	-(void) setUpdateUIEnabled:(BOOL)p0;
+	-(id) init;
+@end
+
+@protocol BITStoreUpdateManagerDelegate
+	@optional -(void) detectedUpdateFromStoreUpdateManager:(id)p0 newVersion:(NSString *)p1 storeURL:(NSURL *)p2;
+@end
+
+@interface BITUpdateManager : BITHockeyBaseManager {
+}
+	-(void) checkForUpdate;
+	-(UIViewController *) hockeyViewController:(BOOL)p0;
+	-(void) showUpdateView;
+	-(BOOL) alwaysShowUpdateReminder;
+	-(void) setAlwaysShowUpdateReminder:(BOOL)p0;
+	-(BOOL) isCheckForUpdateOnLaunch;
+	-(void) setCheckForUpdateOnLaunch:(BOOL)p0;
+	-(BOOL) disableUpdateCheckOptionWhenExpired;
+	-(void) setDisableUpdateCheckOptionWhenExpired:(BOOL)p0;
+	-(NSDate *) expiryDate;
+	-(void) setExpiryDate:(NSDate *)p0;
+	-(BOOL) isShowingDirectInstallOption;
+	-(void) setShowDirectInstallOption:(BOOL)p0;
+	-(NSUInteger) updateSetting;
+	-(void) setUpdateSetting:(NSUInteger)p0;
+	-(id) init;
+@end
+
+@protocol BITUpdateManagerDelegate
+	@optional -(BOOL) shouldDisplayUpdateAlertForUpdateManager:(id)p0 forShortVersion:(NSString *)p1 forVersion:(NSString *)p2;
+	@optional -(BOOL) shouldDisplayExpiryAlertForUpdateManager:(id)p0;
+	@optional -(void) didDisplayExpiryAlertForUpdateManager:(id)p0;
+	@optional -(BOOL) updateManagerShouldSendUsageData:(id)p0;
+	@optional -(void) updateManagerWillExitApp:(id)p0;
+	@optional -(BOOL) willStartDownloadAndUpdate:(id)p0;
+@end
+
+@interface BITUpdateViewController : BITHockeyBaseViewController {
+}
+	-(id) init;
+	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface BITHockeyManager : NSObject {
+}
+	-(NSString *) build;
+	-(void) configureWithIdentifier:(NSString *)p0;
+	-(void) configureWithIdentifier:(NSString *)p0 delegate:(NSObject *)p1;
+	-(void) configureWithBetaIdentifier:(NSString *)p0 liveIdentifier:(NSString *)p1 delegate:(NSObject *)p2;
+	-(void) startManager;
+	-(void) setLogHandler:(id)p0;
+	-(void) testIdentifier;
+	-(NSString *) version;
+	-(NSInteger) appEnvironment;
+	-(id) authenticator;
+	-(id) crashManager;
+	-(BOOL) isDebugLogEnabled;
+	-(void) setDebugLogEnabled:(BOOL)p0;
+	-(BOOL) isCrashManagerDisabled;
+	-(void) setDisableCrashManager:(BOOL)p0;
+	-(BOOL) isFeedbackManagerDisabled;
+	-(void) setDisableFeedbackManager:(BOOL)p0;
+	-(BOOL) isInstallTrackingDisabled;
+	-(void) setDisableInstallTracking:(BOOL)p0;
+	-(BOOL) isMetricsManagerDisabled;
+	-(void) setDisableMetricsManager:(BOOL)p0;
+	-(BOOL) isUpdateManagerDisabled;
+	-(void) setDisableUpdateManager:(BOOL)p0;
+	-(BOOL) isStoreUpdateManagerEnabled;
+	-(void) setEnableStoreUpdateManager:(BOOL)p0;
+	-(id) feedbackManager;
+	-(NSString *) installString;
+	-(NSUInteger) logLevel;
+	-(void) setLogLevel:(NSUInteger)p0;
+	-(id) metricsManager;
+	-(NSString *) serverURL;
+	-(void) setServerURL:(NSString *)p0;
+	-(id) storeUpdateManager;
+	-(id) updateManager;
+	-(NSString *) userEmail;
+	-(void) setUserEmail:(NSString *)p0;
+	-(NSString *) userID;
+	-(void) setUserID:(NSString *)p0;
+	-(NSString *) userName;
+	-(void) setUserName:(NSString *)p0;
+	-(NSObject *) delegate;
+	-(void) setDelegate:(NSObject *)p0;
 	-(id) init;
 @end
 

@@ -14,15 +14,12 @@ namespace XamarinClient
     {
         public static readonly string AppName = "RBBCWallet";
 
-        public static string AccountPath;
-
         public static string ServersPath;
 
         public App()
         {
             InitializeComponent();
             var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            AccountPath = Path.Combine(path, "account.txt");
             ServersPath = Path.Combine(path, "servers.txt");
         }
 
@@ -36,16 +33,6 @@ namespace XamarinClient
                     await http.GetAsync(new Uri("http://www.google.com"));
                 });
             }
-
-            if (File.Exists(AccountPath))
-            {
-                try{
-                    File.Delete(AccountPath);
-                } catch(Exception e){
-                    Console.WriteLine(e.Message);
-                }
-            }
-
 
             if (File.Exists(ServersPath))
             {

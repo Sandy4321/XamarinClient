@@ -8,6 +8,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using FormsPinView.Droid;
+
 namespace XamarinClient.Droid
 {
     [Activity(Label = "XamarinClient.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -21,6 +23,9 @@ namespace XamarinClient.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            PinItemViewRenderer.Init();
+           
+            ZXing.Net.Mobile.Forms.Android.Platform.Init();
 
             LoadApplication(new App());
         }

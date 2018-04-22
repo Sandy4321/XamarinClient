@@ -26,6 +26,10 @@
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.PCL.dll \
 	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/HockeySDK.Xamarin.5.1.2/lib/Xamarin.iOS10/HockeySDK.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/HockeySDK.Xamarin.5.1.2/lib/Xamarin.iOS10/HockeySDK.iOSBindings.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Microsoft.CSharp.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
@@ -397,6 +401,10 @@
 	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.iOS.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.PCL.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/HockeySDK.Xamarin.5.1.2/lib/Xamarin.iOS10/HockeySDK.dll \
+	-r \
+	/Users/Yiding/Documents/XamarinClient/packages/HockeySDK.Xamarin.5.1.2/lib/Xamarin.iOS10/HockeySDK.iOSBindings.dll \
 	-r \
 	/Users/Yiding/Documents/XamarinClient/packages/MvvmCross.Platform.4.0.0/lib/Xamarin.iOS10/MvvmCross.Platform.dll \
 	-r \

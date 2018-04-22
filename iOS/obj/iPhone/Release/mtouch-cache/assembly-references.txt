@@ -102,4 +102,5 @@
 /Users/Yiding/Documents/XamarinClient/packages/FormsPinView.1.1.0/lib/Xamarin.iOS10/FormsPinView.iOS.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.Forms.2.3.2/lib/Xamarin.iOS10/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/packages/ZXing.Net.Mobile.2.3.2/lib/Xamarin.iOS10/ZXingNetMobile.dll
+/Users/Yiding/Documents/XamarinClient/packages/HockeySDK.Xamarin.5.1.2/lib/Xamarin.iOS10/HockeySDK.iOSBindings.dll
 /Users/Yiding/Documents/XamarinClient/packages/Xam.Plugins.Messaging.5.1.0/lib/Xamarin.iOS10/Plugin.Messaging.dll

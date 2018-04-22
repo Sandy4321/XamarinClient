@@ -939,6 +939,50 @@ Function=xamarin_simd__Vector2_objc_msgSend_stret_nint
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nint
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/Xamarin.iOS.dll
+ObjectiveCClass=OBJC_CLASS_$_BITHockeyManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITAuthenticator
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITCrashAttachment
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITCrashDetails
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITCrashManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITCrashMetaData
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITFeedbackActivity
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITFeedbackComposeViewController
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITFeedbackListViewController
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITFeedbackManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITHockeyAttachment
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITHockeyBaseManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITHockeyBaseViewController
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITMetricsManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITStoreUpdateManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITUpdateManager
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+ObjectiveCClass=OBJC_CLASS_$_BITUpdateViewController
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+Field=kBITAuthenticatorErrorDomain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+Field=kBITCrashErrorDomain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+Field=kBITFeedbackErrorDomain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+Field=kBITHockeyErrorDomain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
+Field=kBITUpdateErrorDomain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-11.2/mtouch-cache/Link/HockeySDK.iOSBindings.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

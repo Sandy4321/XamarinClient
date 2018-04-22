@@ -4,8 +4,6 @@ using BlockchainTools;
 
 using Xamarin.Forms;
 
-using SlideOverKit;
-
 namespace XamarinClient
 {
     public class PaymentPage : ContentPage

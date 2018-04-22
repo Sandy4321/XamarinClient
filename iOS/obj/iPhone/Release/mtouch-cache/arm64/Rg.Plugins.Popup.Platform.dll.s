@@ -295,7 +295,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 143,75,255,18,229,0,61,247,98,141,238,12,19,126,0,226
+	.byte 27,235,75,47,6,11,89,162,148,68,229,72,204,18,75,185
 	.globl _mono_aot_module_Rg_Plugins_Popup_Platform_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_Platform_info:

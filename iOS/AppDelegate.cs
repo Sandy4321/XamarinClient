@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
 using FormsPinView.iOS;
+using HockeyApp.iOS;
 
 namespace XamarinClient.iOS
 {
@@ -15,8 +12,6 @@ namespace XamarinClient.iOS
         {
             Rg.Plugins.Popup.IOS.Popup.Init();
 
-            SlideOverKit.iOS.SlideOverKit.Init();
-
             global::Xamarin.Forms.Forms.Init();
 
             PinItemViewRenderer.Init();
@@ -24,6 +19,14 @@ namespace XamarinClient.iOS
             LoadApplication(new App());
 
             ZXing.Net.Mobile.Forms.iOS.Platform.Init();
+
+            var manager = BITHockeyManager.SharedHockeyManager;
+            manager.Configure("$com.RedbellyBlockchain.XamarinRbbcClient");
+            manager.DisableMetricsManager = true;
+
+            manager.StartManager();
+            //manager.Authenticator.AuthenticateInstallation(); // This line is obsolete in crash only builds
+  
 
             return base.FinishedLaunching(app, options);
         }

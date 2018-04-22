@@ -47,4 +47,5 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/FormsPinView.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/ZXingNetMobile.dll
+/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/HockeySDK.iOSBindings.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Plugin.Messaging.dll

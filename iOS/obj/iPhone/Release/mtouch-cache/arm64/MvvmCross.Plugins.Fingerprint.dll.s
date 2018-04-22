@@ -349,7 +349,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 158,40,57,84,64,59,94,111,115,16,85,65,192,215,176,251
+	.byte 171,58,201,72,123,235,9,12,217,86,174,82,223,205,148,197
 	.globl _mono_aot_module_MvvmCross_Plugins_Fingerprint_info
 	.align 3
 _mono_aot_module_MvvmCross_Plugins_Fingerprint_info:
