@@ -44,6 +44,7 @@ namespace XamarinClient
 
     public class SettingsPage : ContentPage
     {
+        public Button passPhrase;
         public Button changePin;
         public Switch FPswitch;
         public Entry PrivKey;
@@ -66,6 +67,15 @@ namespace XamarinClient
             Icon = "settings.png";
 
             pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
+
+            passPhrase = new Button
+            {
+                Text = "Passphrase",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black,
+            };
+            passPhrase.Clicked += pass_phrase;
 
             changePin = new Button
             {
@@ -198,7 +208,13 @@ namespace XamarinClient
                         Text = ""
                     },
 
+                    passPhrase,
+
                     changePin,
+
+                    new Label{
+                        Text = ""
+                    },
 
                     new StackLayout{
                         Orientation = StackOrientation.Horizontal,
@@ -252,6 +268,10 @@ namespace XamarinClient
             scroll.Content = stack;
 
             Content = scroll;
+        }
+
+        async void pass_phrase(object sender, EventArgs args){
+            await Navigation.PushAsync(new Passphrase());
         }
 
         async void ChangePin_Clicked(object sender, EventArgs args){

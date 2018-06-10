@@ -12,7 +12,7 @@ namespace XamarinClient
         public Entry LastName = new Entry{ HorizontalOptions = LayoutOptions.FillAndExpand };
         public Entry Email = new Entry{ HorizontalOptions = LayoutOptions.FillAndExpand };
         public Picker Role;
-        public Editor Detail = new Editor { HeightRequest = 100,  };
+        public Editor Detail = new Editor { HeightRequest = 100, };
         public Button Submit;
         public Button Cancel;
 
@@ -143,7 +143,7 @@ namespace XamarinClient
             string emailaddr = Email.Text;
             string detail = Detail.Text;
 
-            Account acc = App.Current.Properties["Account"] as Account;
+            Account acc = new Account();
             string body = "Address: " + Convert.ToBase64String(acc.address)
                                                        + "\nRole: " + role
                                                        + "\nReason: " + detail

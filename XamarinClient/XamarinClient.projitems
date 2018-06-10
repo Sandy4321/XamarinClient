@@ -32,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)View\AuthenticationPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\CreateAuthPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\ChangePinPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)View\Passphrase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />

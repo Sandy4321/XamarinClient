@@ -121,7 +121,7 @@ namespace XamarinClient
                 Application.Current.Properties.Add("Account", account);
             }
             App.Current.MainPage = new RootView();
-        }
+           }
     }
 }
 

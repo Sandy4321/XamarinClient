@@ -24,6 +24,8 @@ namespace XamarinClient.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             PinItemViewRenderer.Init();
+
+            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
            
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
 
