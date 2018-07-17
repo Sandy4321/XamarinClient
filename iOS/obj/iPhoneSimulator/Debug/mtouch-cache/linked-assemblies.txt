@@ -1,3 +1,4 @@
+RemoveDynamicRegistrar:false
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/mscorlib.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
@@ -82,12 +83,10 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/netstandard.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Data.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Transactions.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Mono.Data.Tds.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Diagnostics.StackTrace.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/OpenTK-1.0.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.IO.Compression.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.IO.Compression.FileSystem.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.InteropServices.RuntimeInformation.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Runtime.Serialization.Xml.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Security.SecureString.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhoneSimulator/Debug/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.Web.Services.dll

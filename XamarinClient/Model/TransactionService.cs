@@ -58,4 +58,52 @@ namespace BlockchainTools
             return tx.SignTx(from.key);
         }
     }
+
+    public class UserTxService
+    {
+        public UserUtxo userUtxo { get; set; }
+
+        public UserTxService()
+        {
+            userUtxo = new UserUtxo();
+        }
+
+        public void setUTXO(UserUtxo table)
+        {
+            this.userUtxo = (UserUtxo)table.Clone();
+        }
+
+        public byte[] MakeSignedTransaction(TxIn[] ins, byte[] to, Account from, int value)
+        {
+            List<TxOut> outs = new List<TxOut>();
+            int total = 0;
+
+            foreach (UtxoOutput utxoOut in userUtxo.UtxoOutputs)
+            {
+                Console.WriteLine("UtxoOut: " + utxoOut);
+                if (utxoOut != null && !utxoOut.spent)
+                {
+                    total += utxoOut.value;
+                }
+            }
+
+            if (total < value)
+            {
+                Console.WriteLine("Insufficient balance");
+                return null;
+            }
+
+            int change = total - value;
+
+            outs.Add(new TxOut(value, from.publicKey, Convert.ToBase64String(to)));
+            outs.Add(new TxOut(change, from.publicKey, Convert.ToBase64String(from.address)));
+
+            Tx tx = new Tx();
+            tx.TxIns.AddRange(ins);
+            tx.TxOuts.AddRange(outs);
+            tx.getHash();
+
+            return tx.SignTx(from.key);
+        }
+    }
 }

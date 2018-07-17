@@ -324,4 +324,35 @@ namespace BlockchainTools
 			return this.MemberwiseClone();
 		}
 	}
+
+    public class UserUtxo : ICloneable
+    {
+        public List<UtxoReturn> UtxoReturns { get; set; }
+        public List<UtxoOutput> UtxoOutputs { get; set; }
+
+        public UserUtxo()
+        {
+            UtxoReturns = new List<UtxoReturn>();
+            UtxoOutputs = new List<UtxoOutput>();
+        }
+
+        public void InitUtxoReturns(byte[] received)
+        {
+            string content = Encoding.UTF8.GetString(received);
+            List<UtxoReturn> receivedUtxoReturns = JsonConvert.DeserializeObject<List<UtxoReturn>>(content);
+            UtxoReturns.AddRange(receivedUtxoReturns);
+        }
+
+        public void InitUtxoOutputs(byte[] received)
+        {
+            string content = Encoding.UTF8.GetString(received);
+            List<UtxoOutput> receivedUtxoOutputs = JsonConvert.DeserializeObject<List<UtxoOutput>>(content);
+            UtxoOutputs.AddRange(receivedUtxoOutputs);
+        }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
+    }
 }

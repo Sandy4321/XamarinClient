@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "Rg.Plugins.Popup.dll"
 	.asciz ""
 
@@ -128,14 +128,14 @@ Rg_Plugins_Popup_Services_PopupNavigation_get_PopupStack:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -152,14 +152,14 @@ Rg_Plugins_Popup_Services_PopupNavigation__cctor:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2800501
 bl _p_2
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9400000
 .word 0xf9000820
 .word 0x91004022
@@ -177,18 +177,22 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9000001
 .word 0xd2800000
+.word 0x53001c00
+.word 0xd280003e
+.word 0x6b1e001f
+.word 0x9a9f17e0
 .word 0x34000120
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 bl _p_3
 bl _p_4
 .word 0x910003bf
@@ -209,7 +213,7 @@ Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_Popup
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800401
 bl _p_2
 .word 0xaa0003f8
@@ -232,7 +236,7 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xd2800301
 bl _p_2
 .word 0xf9001ba0
@@ -254,7 +258,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x394083a0
-.word 0x34000740
+.word 0x340007a0
 .word 0xf9400b01
 .word 0xaa0103e0
 .word 0xf940003e
@@ -263,14 +267,17 @@ bl _p_6
 .word 0xf9001ba0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54000bc0
+.word 0x54000c80
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #264]
 .word 0xd2800e01
 bl _p_2
 .word 0xf9401ba2
+.word 0xeb1f031f
+.word 0x10000011
+.word 0x54000b00
 .word 0xf9001018
 .word 0x91008001
 .word 0xd349fc21
@@ -287,17 +294,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #264]
+ldr x1, [x16, #272]
 .word 0xf9001401
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #272]
+ldr x1, [x16, #280]
 .word 0xf9002001
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #288]
 .word 0xf9401423
 .word 0xf9000c03
 .word 0xf9401021
@@ -321,7 +328,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0xd2800000
 bl _p_7
 .word 0xaa0003e2
@@ -331,7 +338,7 @@ bl _p_7
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #296]
+ldr x15, [x16, #304]
 .word 0x928001f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -339,14 +346,14 @@ ldr x15, [x16, #296]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9400002
 .word 0xf9400b01
 .word 0xaa0203e0
@@ -367,7 +374,10 @@ bl _p_9
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -387,7 +397,7 @@ bl _p_11
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #304]
+ldr x15, [x16, #312]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -398,7 +408,7 @@ bl _p_11
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #312]
+ldr x15, [x16, #320]
 bl _p_12
 .word 0x394043a1
 bl _p_13
@@ -412,7 +422,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_14
 .word 0xaa0003e1
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -423,23 +433,23 @@ Lme_3:
 	.no_dead_strip Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool
 Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool:
 .loc 1 1 0
-.word 0xa9b57bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800000
-.word 0xf9003fa0
-.word 0xf90043a0
-.word 0xf90047a0
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xd2800000
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0xf9002fa0
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0xf9003ba0
+.word 0xd2800000
+.word 0xf9001ba0
+.word 0xf9001fa0
+.word 0xf90023a0
 .word 0x394043a0
-.word 0x390263a0
-.word 0x9101e3a0
+.word 0x3901a3a0
+.word 0x910123a0
 .word 0xd2800001
 .word 0xf9000fa1
 .word 0xf90013a1
@@ -489,39 +499,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9007bbe
-.word 0xf9403fa0
-.word 0xf9001ba0
-.word 0xf94043a0
-.word 0xf9001fa0
-.word 0xf94047a0
-.word 0xf90023a0
-.word 0xf9404ba0
-.word 0xf90027a0
-.word 0xf9404fa0
-.word 0xf9002ba0
-.word 0xf94053a0
-.word 0xf9002fa0
-.word 0x9100c3a0
+.word 0xb9004bbe
+.word 0x910123a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90033a1
+.word 0xf9001ba1
 .word 0xf9400401
-.word 0xf90037a1
+.word 0xf9001fa1
 .word 0xf9400800
-.word 0xf9003ba0
-.word 0x910183a0
-.word 0x9101e3a1
+.word 0xf90023a0
+.word 0x9100c3a0
+.word 0x910123a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #320]
+ldr x15, [x16, #328]
 bl _p_16
-.word 0x9101e3a0
+.word 0x910123a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_4:
@@ -530,25 +528,25 @@ Lme_4:
 	.no_dead_strip Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
 Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
 .loc 1 1 0
-.word 0xa9b47bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800000
-.word 0xf90047a0
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
 .word 0xf9003ba0
 .word 0xf9003fa0
 .word 0xf90043a0
-.word 0x910223a1
+.word 0xd2800000
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0x910143a1
 .word 0xf9400ba0
-.word 0xf90057a0
+.word 0xf9003ba0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -562,8 +560,8 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x394063a0
-.word 0x3902c3a0
-.word 0x910223a0
+.word 0x3901e3a0
+.word 0x910143a0
 .word 0xd2800001
 .word 0xf90013a1
 .word 0xf90017a1
@@ -613,41 +611,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9008bbe
-.word 0xf94047a0
-.word 0xf9001fa0
-.word 0xf9404ba0
-.word 0xf90023a0
-.word 0xf9404fa0
-.word 0xf90027a0
-.word 0xf94053a0
-.word 0xf9002ba0
-.word 0xf94057a0
-.word 0xf9002fa0
-.word 0xf9405ba0
-.word 0xf90033a0
-.word 0xf9405fa0
-.word 0xf90037a0
-.word 0x9100e3a0
+.word 0xb90053be
+.word 0x910143a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf9003ba1
+.word 0xf9001fa1
 .word 0xf9400401
-.word 0xf9003fa1
+.word 0xf90023a1
 .word 0xf9400800
-.word 0xf90043a0
-.word 0x9101c3a0
-.word 0x910223a1
+.word 0xf90027a0
+.word 0x9100e3a0
+.word 0x910143a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #328]
+ldr x15, [x16, #336]
 bl _p_18
-.word 0x910223a0
+.word 0x910143a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8cc7bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
 
 Lme_5:
@@ -662,7 +646,7 @@ Rg_Plugins_Popup_Services_PopupNavigation_RemovePopup_Rg_Plugins_Popup_Pages_Pop
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e1
@@ -686,7 +670,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
@@ -694,7 +678,7 @@ bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #200]
+ldr x1, [x16, #208]
 .word 0xf9400022
 .word 0xf9400801
 .word 0xaa0203e0
@@ -705,14 +689,17 @@ bl _p_19
 .word 0xf90013a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x540004e0
+.word 0x540005a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #264]
 .word 0xd2800e01
 bl _p_2
 .word 0xf94013a1
+.word 0xeb1f003f
+.word 0x10000011
+.word 0x54000420
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -729,17 +716,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xf9001401
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #352]
+ldr x1, [x16, #360]
 .word 0xf9002001
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #360]
+ldr x1, [x16, #368]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -749,7 +736,10 @@ bl _p_20
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -772,25 +762,25 @@ Lme_7:
 	.no_dead_strip Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0__PushAsyncb__0
 Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0__PushAsyncb__0:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
 .word 0xf9003ba0
 .word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
-.word 0x910243a1
+.word 0xd2800000
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -803,11 +793,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910243a0
-.word 0xf9006ba0
+.word 0x910163a0
+.word 0xf9004ba0
 .word 0x910063a8
 bl _p_21
-.word 0xf9406ba0
+.word 0xf9404ba0
 .word 0x91002002
 .word 0xaa0203e0
 .word 0xf9400fa1
@@ -867,40 +857,26 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb90093be
-.word 0xf9404ba0
-.word 0xf9001fa0
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0x9100e3a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf9003ba1
+.word 0xf9001fa1
 .word 0xf9400401
-.word 0xf9003fa1
+.word 0xf90023a1
 .word 0xf9400801
-.word 0xf90043a1
+.word 0xf90027a1
 .word 0xf9400c00
-.word 0xf90047a0
-.word 0x9101c3a0
-.word 0x910243a1
+.word 0xf9002ba0
+.word 0x9100e3a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #368]
+ldr x15, [x16, #376]
 bl _p_22
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_8:
@@ -958,7 +934,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf9003ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9403ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -993,7 +969,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 bl _p_24
 .word 0x14000030
 .word 0xf9400fa0
@@ -1119,11 +1095,11 @@ Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_MoveNext:
 .word 0xf9001fbf
 .word 0xf9400fa0
 .word 0xb980001a
-.word 0x34000fda
+.word 0x3400103a
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #392]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003fa
@@ -1133,32 +1109,35 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9400000
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #392]
+ldr x15, [x16, #400]
 bl _p_30
 .word 0xf9003fa0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x540011e0
+.word 0x540012a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #408]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf9403fa0
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54001100
 .word 0xf900103a
 .word 0x91008022
 .word 0xd349fc42
@@ -1175,17 +1154,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #408]
+ldr x2, [x16, #416]
 .word 0xf9001422
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #416]
+ldr x2, [x16, #424]
 .word 0xf9002022
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #424]
+ldr x2, [x16, #432]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
@@ -1194,7 +1173,7 @@ ldr x2, [x16, #424]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #432]
+ldr x15, [x16, #440]
 bl _p_31
 bl _p_32
 .word 0xaa0003e1
@@ -1220,7 +1199,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf9003ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9403ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -1255,7 +1234,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #440]
+ldr x15, [x16, #448]
 bl _p_33
 .word 0x14000029
 .word 0xf9400fa0
@@ -1302,7 +1281,10 @@ bl _p_35
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -1360,7 +1342,7 @@ ldr x0, [x16, #0]
 .word 0xd2800821
 bl _p_14
 .word 0xaa0003e1
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -1399,7 +1381,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -1434,7 +1416,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #456]
 bl _p_38
 .word 0x1400007c
 .word 0xf9400fa0
@@ -1479,7 +1461,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -1515,7 +1497,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #448]
+ldr x15, [x16, #456]
 bl _p_38
 .word 0x1400002e
 .word 0xf9400fa0
@@ -1615,7 +1597,7 @@ Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass8_0__RemovePopupb__0:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #288]
+ldr x15, [x16, #296]
 .word 0xd2800000
 bl _p_7
 .word 0xaa0003e2
@@ -1626,7 +1608,7 @@ bl _p_7
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #456]
+ldr x15, [x16, #464]
 .word 0x928011f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -1662,7 +1644,7 @@ bl _p_42
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #464]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540004c1
@@ -1674,13 +1656,13 @@ ldr x1, [x16, #464]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #480]
 .word 0xc85f7c30
 .word 0xeb18021f
 .word 0x54000061
 .word 0xc811fc36
 .word 0x35ffff91
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa1003e0
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1702,10 +1684,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -1736,7 +1718,7 @@ bl _p_43
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #464]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540004c1
@@ -1748,13 +1730,13 @@ ldr x1, [x16, #464]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #480]
 .word 0xc85f7c30
 .word 0xeb18021f
 .word 0x54000061
 .word 0xc811fc36
 .word 0x35ffff91
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa1003e0
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -1776,10 +1758,10 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -1795,7 +1777,7 @@ Rg_Plugins_Popup_Pages_PopupPage_get_IsAnimating:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 .word 0xf9400001
 .word 0xf9400ba0
 bl _p_44
@@ -1809,7 +1791,7 @@ bl _p_44
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #488]
+ldr x2, [x16, #496]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540000a1
@@ -1817,7 +1799,7 @@ ldr x2, [x16, #488]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -1834,13 +1816,13 @@ Rg_Plugins_Popup_Pages_PopupPage_set_IsAnimating_bool:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 .word 0xf9400000
 .word 0xf90013a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e2
@@ -1865,7 +1847,7 @@ Rg_Plugins_Popup_Pages_PopupPage_get_HasSystemPadding:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #512]
 .word 0xf9400001
 .word 0xf9400ba0
 bl _p_44
@@ -1879,7 +1861,7 @@ bl _p_44
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #488]
+ldr x2, [x16, #496]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540000a1
@@ -1887,7 +1869,7 @@ ldr x2, [x16, #488]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -1904,13 +1886,13 @@ Rg_Plugins_Popup_Pages_PopupPage_set_HasSystemPadding_bool:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #512]
 .word 0xf9400000
 .word 0xf90013a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e2
@@ -1936,7 +1918,7 @@ Rg_Plugins_Popup_Pages_PopupPage_get_Animation:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #520]
 .word 0xf9400001
 .word 0xaa1a03e0
 bl _p_44
@@ -1947,7 +1929,7 @@ bl _p_44
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #520]
+ldr x2, [x16, #528]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540002a3
@@ -1955,7 +1937,7 @@ ldr x2, [x16, #520]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #528]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -1972,7 +1954,7 @@ ldr x1, [x16, #520]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -1989,7 +1971,7 @@ Rg_Plugins_Popup_Pages_PopupPage_set_Animation_Rg_Plugins_Popup_Interfaces_Anima
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #520]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xf9400fa2
@@ -2010,7 +1992,7 @@ Rg_Plugins_Popup_Pages_PopupPage_get_SystemPadding:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #528]
+ldr x15, [x16, #536]
 .word 0xd2800000
 bl _p_46
 .word 0xaa0003e1
@@ -2021,7 +2003,7 @@ bl _p_46
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #536]
+ldr x15, [x16, #544]
 .word 0x928011f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2051,7 +2033,7 @@ Rg_Plugins_Popup_Pages_PopupPage_get_CloseWhenBackgroundIsClicked:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #552]
 .word 0xf9400001
 .word 0xf9400ba0
 bl _p_44
@@ -2065,7 +2047,7 @@ bl _p_44
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #488]
+ldr x2, [x16, #496]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540000a1
@@ -2073,7 +2055,7 @@ ldr x2, [x16, #488]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -2090,13 +2072,13 @@ Rg_Plugins_Popup_Pages_PopupPage_set_CloseWhenBackgroundIsClicked_bool:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #552]
 .word 0xf9400000
 .word 0xf90013a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e2
@@ -2123,7 +2105,7 @@ bl _p_47
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #560]
 .word 0x9100e3a8
 bl _p_48
 .word 0xf9400ba0
@@ -2140,14 +2122,14 @@ bl _p_49
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #568]
 .word 0xd2800e01
 bl _p_2
 .word 0xf90033a0
-bl Rg_Plugins_Popup_Animations_ScaleAnimation__ctor
+bl _p_50
 .word 0xf94033a1
 .word 0xf9400ba0
-bl _p_50
+bl _p_51
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
@@ -2189,25 +2171,25 @@ Rg_Plugins_Popup_Pages_PopupPage_OnPropertyChanged_string:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_51
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #568]
-.word 0xf9400fa0
 bl _p_52
-.word 0x53001c00
-.word 0x35000100
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x1, [x16, #576]
 .word 0xf9400fa0
-bl _p_52
+bl _p_53
+.word 0x53001c00
+.word 0x35000100
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x1, [x16, #584]
+.word 0xf9400fa0
+bl _p_53
 .word 0x53001c00
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_53
+bl _p_54
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2269,13 +2251,13 @@ Rg_Plugins_Popup_Pages_PopupPage_OnSizeAllocated_double_double:
 .word 0xfd400fa0
 .word 0xfd4013a1
 .word 0xf9400ba0
-bl _p_54
 bl _p_55
+bl _p_56
 .word 0x93407c00
 .word 0xd280005e
 .word 0x6b1e001f
 .word 0x540000c0
-bl _p_55
+bl _p_56
 .word 0x93407c00
 .word 0xd280009e
 .word 0x6b1e001f
@@ -2283,7 +2265,7 @@ bl _p_55
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #528]
+ldr x15, [x16, #536]
 .word 0xd2800000
 bl _p_46
 .word 0xaa0003e1
@@ -2294,7 +2276,7 @@ bl _p_46
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #584]
+ldr x15, [x16, #592]
 .word 0x92800bf0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2309,7 +2291,7 @@ ldr x15, [x16, #584]
 .word 0xfd401ba1
 .word 0xfd401fa2
 .word 0xfd4023a3
-bl _p_56
+bl _p_57
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -2334,7 +2316,7 @@ Rg_Plugins_Popup_Pages_PopupPage_LayoutChildren_double_double_double_double:
 .word 0xf90027a0
 .word 0xf9002ba0
 .word 0xaa1a03e0
-bl _p_57
+bl _p_58
 .word 0x53001c00
 .word 0x35000100
 .word 0xfd400fa0
@@ -2342,12 +2324,12 @@ bl _p_57
 .word 0xfd4017a2
 .word 0xfd401ba3
 .word 0xaa1a03e0
-bl _p_58
+bl _p_59
 .word 0x14000024
 .word 0x9100e3a0
 .word 0xf9002fa0
 .word 0xaa1a03e0
-bl _p_59
+bl _p_60
 .word 0xf9402fbe
 .word 0xfd0003c0
 .word 0xfd0007c1
@@ -2378,7 +2360,7 @@ bl _p_59
 .word 0xfd4017a2
 .word 0xfd401ba3
 .word 0xaa1a03e0
-bl _p_58
+bl _p_59
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -2395,16 +2377,16 @@ Rg_Plugins_Popup_Pages_PopupPage_PreparingAnimation:
 .word 0xa9016bb9
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_60
+bl _p_61
 .word 0x53001c00
 .word 0x34000260
 .word 0xaa1a03e0
-bl _p_61
+bl _p_62
 .word 0xaa0003f9
 .word 0xb5000040
 .word 0x1400000e
 .word 0xaa1a03e0
-bl _p_62
+bl _p_63
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xaa1a03e2
@@ -2412,7 +2394,7 @@ bl _p_62
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #592]
+ldr x15, [x16, #600]
 .word 0x928001f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -2433,16 +2415,16 @@ Rg_Plugins_Popup_Pages_PopupPage_DisposingAnimation:
 .word 0xa9016bb9
 .word 0xaa0003fa
 .word 0xaa1a03e0
-bl _p_60
+bl _p_61
 .word 0x53001c00
 .word 0x34000260
 .word 0xaa1a03e0
-bl _p_61
+bl _p_62
 .word 0xaa0003f9
 .word 0xb5000040
 .word 0x1400000e
 .word 0xaa1a03e0
-bl _p_62
+bl _p_63
 .word 0xaa0003e1
 .word 0xaa1903e0
 .word 0xaa1a03e2
@@ -2450,7 +2432,7 @@ bl _p_62
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #600]
+ldr x15, [x16, #608]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -2466,23 +2448,23 @@ Lme_26:
 	.no_dead_strip Rg_Plugins_Popup_Pages_PopupPage_AppearingAnimation
 Rg_Plugins_Popup_Pages_PopupPage_AppearingAnimation:
 .loc 1 1 0
-.word 0xa9b57bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800000
-.word 0xf9003fa0
-.word 0xf90043a0
-.word 0xf90047a0
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xd2800000
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0xf9002fa0
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0xf9003ba0
-.word 0x9101e3a1
+.word 0xd2800000
+.word 0xf9001ba0
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0x910123a1
 .word 0xf9400ba0
-.word 0xf9004fa0
+.word 0xf90037a0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -2495,7 +2477,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x9101e3a0
+.word 0x910123a0
 .word 0xd2800001
 .word 0xf9000fa1
 .word 0xf90013a1
@@ -2545,39 +2527,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9007bbe
-.word 0xf9403fa0
-.word 0xf9001ba0
-.word 0xf94043a0
-.word 0xf9001fa0
-.word 0xf94047a0
-.word 0xf90023a0
-.word 0xf9404ba0
-.word 0xf90027a0
-.word 0xf9404fa0
-.word 0xf9002ba0
-.word 0xf94053a0
-.word 0xf9002fa0
-.word 0x9100c3a0
+.word 0xb9004bbe
+.word 0x910123a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90033a1
+.word 0xf9001ba1
 .word 0xf9400401
-.word 0xf90037a1
+.word 0xf9001fa1
 .word 0xf9400800
-.word 0xf9003ba0
-.word 0x910183a0
-.word 0x9101e3a1
+.word 0xf90023a0
+.word 0x9100c3a0
+.word 0x910123a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #608]
-bl _p_63
-.word 0x9101e3a0
+ldr x15, [x16, #616]
+bl _p_64
+.word 0x910123a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_27:
@@ -2586,23 +2556,23 @@ Lme_27:
 	.no_dead_strip Rg_Plugins_Popup_Pages_PopupPage_DisappearingAnimation
 Rg_Plugins_Popup_Pages_PopupPage_DisappearingAnimation:
 .loc 1 1 0
-.word 0xa9b57bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800000
-.word 0xf9003fa0
-.word 0xf90043a0
-.word 0xf90047a0
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xd2800000
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0xf9002fa0
 .word 0xf90033a0
 .word 0xf90037a0
 .word 0xf9003ba0
-.word 0x9101e3a1
+.word 0xd2800000
+.word 0xf9001ba0
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0x910123a1
 .word 0xf9400ba0
-.word 0xf9004fa0
+.word 0xf90037a0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -2615,7 +2585,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x9101e3a0
+.word 0x910123a0
 .word 0xd2800001
 .word 0xf9000fa1
 .word 0xf90013a1
@@ -2665,39 +2635,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9007bbe
-.word 0xf9403fa0
-.word 0xf9001ba0
-.word 0xf94043a0
-.word 0xf9001fa0
-.word 0xf94047a0
-.word 0xf90023a0
-.word 0xf9404ba0
-.word 0xf90027a0
-.word 0xf9404fa0
-.word 0xf9002ba0
-.word 0xf94053a0
-.word 0xf9002fa0
-.word 0x9100c3a0
+.word 0xb9004bbe
+.word 0x910123a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90033a1
+.word 0xf9001ba1
 .word 0xf9400401
-.word 0xf90037a1
+.word 0xf9001fa1
 .word 0xf9400800
-.word 0xf9003ba0
-.word 0x910183a0
-.word 0x9101e3a1
+.word 0xf90023a0
+.word 0x9100c3a0
+.word 0x910123a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #616]
-bl _p_64
-.word 0x9101e3a0
+ldr x15, [x16, #624]
+bl _p_65
+.word 0x910123a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_28:
@@ -2712,9 +2670,9 @@ Rg_Plugins_Popup_Pages_PopupPage_OnAppearingAnimationEnd:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2731,9 +2689,9 @@ Rg_Plugins_Popup_Pages_PopupPage_OnDisappearingAnimationBegin:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2748,7 +2706,7 @@ Rg_Plugins_Popup_Pages_PopupPage_OnBackgroundClicked:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_66
+bl _p_67
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2760,25 +2718,25 @@ Lme_2b:
 	.no_dead_strip Rg_Plugins_Popup_Pages_PopupPage_SendBackgroundClick
 Rg_Plugins_Popup_Pages_PopupPage_SendBackgroundClick:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xd2800000
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
 .word 0xf9003ba0
 .word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
-.word 0x910243a1
+.word 0xd2800000
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -2791,11 +2749,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910243a0
-.word 0xf9006ba0
+.word 0x910163a0
+.word 0xf9004ba0
 .word 0x910063a8
 bl _p_21
-.word 0xf9406ba0
+.word 0xf9404ba0
 .word 0x91002002
 .word 0xaa0203e0
 .word 0xf9400fa1
@@ -2855,40 +2813,26 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb90093be
-.word 0xf9404ba0
-.word 0xf9001fa0
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0x9100e3a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf9003ba1
+.word 0xf9001fa1
 .word 0xf9400401
-.word 0xf9003fa1
+.word 0xf90023a1
 .word 0xf9400801
-.word 0xf90043a1
+.word 0xf90027a1
 .word 0xf9400c00
-.word 0xf90047a0
-.word 0x9101c3a0
-.word 0x910243a1
+.word 0xf9002ba0
+.word 0x9100e3a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #632]
-bl _p_67
+ldr x15, [x16, #640]
+bl _p_68
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_2c:
@@ -2906,22 +2850,22 @@ Rg_Plugins_Popup_Pages_PopupPage__cctor:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #640]
+ldr x0, [x16, #648]
 .word 0xf90023a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #656]
 .word 0xf90027a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #664]
 .word 0xf9002ba0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e3
@@ -2936,32 +2880,32 @@ bl _p_2
 .word 0xd2800007
 .word 0xf90003ff
 .word 0xf90007ff
-bl _p_68
+bl _p_69
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 .word 0xf9000001
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #576]
+ldr x0, [x16, #584]
 .word 0xf90017a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #656]
 .word 0xf9001ba0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #664]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e3
@@ -2976,33 +2920,7 @@ bl _p_2
 .word 0xd2800007
 .word 0xf90003ff
 .word 0xf90007ff
-bl _p_68
-.word 0xaa0003e1
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #504]
-.word 0xf9000001
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #664]
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #672]
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #656]
-.word 0xd2800003
-.word 0xd2800044
-.word 0xd2800005
-.word 0xd2800006
-.word 0xd2800007
-.word 0xf90003ff
-.word 0xf90007ff
-bl _p_68
+bl _p_69
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
@@ -3012,22 +2930,48 @@ ldr x0, [x16, #512]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #680]
+ldr x0, [x16, #672]
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x1, [x16, #680]
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x2, [x16, #664]
+.word 0xd2800003
+.word 0xd2800044
+.word 0xd2800005
+.word 0xd2800006
+.word 0xd2800007
+.word 0xf90003ff
+.word 0xf90007ff
+bl _p_69
+.word 0xaa0003e1
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x0, [x16, #520]
+.word 0xf9000001
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x0, [x16, #688]
 .word 0xf9000ba0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #648]
+ldr x0, [x16, #656]
 .word 0xf9000fa0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #656]
+ldr x0, [x16, #664]
 .word 0xf90013a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e3
@@ -3042,12 +2986,12 @@ bl _p_2
 .word 0xd2800007
 .word 0xf90003ff
 .word 0xf90007ff
-bl _p_68
+bl _p_69
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #552]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -3083,26 +3027,26 @@ Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_MoveNext:
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_60
+bl _p_61
 .word 0x53001c00
 .word 0x34000ce0
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_61
+bl _p_62
 .word 0xb4000c20
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_61
+bl _p_62
 .word 0xf90047a0
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_62
+bl _p_63
 .word 0xaa0003e1
 .word 0xf94047a3
 .word 0xf9400fa0
@@ -3112,7 +3056,7 @@ bl _p_62
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #688]
+ldr x15, [x16, #696]
 .word 0x928012f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -3140,7 +3084,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -3175,8 +3119,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #696]
-bl _p_69
+ldr x15, [x16, #704]
+bl _p_70
 .word 0x1400007b
 .word 0xf9400fa0
 .word 0x9100a000
@@ -3221,7 +3165,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -3257,8 +3201,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #696]
-bl _p_69
+ldr x15, [x16, #704]
+bl _p_70
 .word 0x1400002c
 .word 0xf9400fa0
 .word 0x9100a000
@@ -3385,7 +3329,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -3420,8 +3364,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #704]
-bl _p_70
+ldr x15, [x16, #712]
+bl _p_71
 .word 0x1400009a
 .word 0xf9400fa0
 .word 0x9100a000
@@ -3441,26 +3385,26 @@ bl _p_25
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_60
+bl _p_61
 .word 0x53001c00
 .word 0x34000d00
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_61
+bl _p_62
 .word 0xb4000c40
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_61
+bl _p_62
 .word 0xf90047a0
 .word 0xf9400fa0
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_62
+bl _p_63
 .word 0xaa0003e1
 .word 0xf94047a3
 .word 0xf9400fa0
@@ -3470,7 +3414,7 @@ bl _p_62
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #712]
+ldr x15, [x16, #720]
 .word 0x92800df0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -3498,7 +3442,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -3534,8 +3478,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #704]
-bl _p_70
+ldr x15, [x16, #712]
+bl _p_71
 .word 0x1400002c
 .word 0xf9400fa0
 .word 0x9100a000
@@ -3637,7 +3581,7 @@ Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_MoveNext:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #720]
+ldr x0, [x16, #728]
 .word 0xf9400002
 .word 0xaa1a03e0
 .word 0xf9400f50
@@ -3677,7 +3621,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf9003ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9403ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -3712,8 +3656,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #728]
-bl _p_71
+ldr x15, [x16, #736]
+bl _p_72
 .word 0x14000029
 .word 0xf9400fa0
 .word 0x9100c000
@@ -3795,7 +3739,7 @@ Rg_Plugins_Popup_Extensions_NavigationExtension_PushPopupAsync_Xamarin_Forms_INa
 .word 0xf90013a2
 .word 0xf9400fa0
 .word 0x394083a1
-bl _p_72
+bl _p_73
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3811,7 +3755,7 @@ Rg_Plugins_Popup_Extensions_NavigationExtension_PopPopupAsync_Xamarin_Forms_INav
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0x394063a0
-bl _p_73
+bl _p_74
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3827,7 +3771,7 @@ Rg_Plugins_Popup_Extensions_NavigationExtension_PopAllPopupAsync_Xamarin_Forms_I
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0x394063a0
-bl _p_74
+bl _p_75
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3865,7 +3809,7 @@ Rg_Plugins_Popup_Converters_TypeConverters_EasingTypeConverter_ConvertFromInvari
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #744]
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003f9
@@ -3883,26 +3827,29 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf9400800
-.word 0xb4000920
-
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #744]
-bl _p_75
-.word 0xaa0003fa
-.word 0xb5000060
-.word 0xd280001a
-.word 0x1400002c
-.word 0xeb1f033f
-.word 0x10000011
-.word 0x54000da0
+.word 0xb4000980
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x0, [x16, #752]
+bl _p_76
+.word 0xaa0003fa
+.word 0xb5000060
+.word 0xd280001a
+.word 0x1400002f
+.word 0xeb1f033f
+.word 0x10000011
+.word 0x54000e60
+
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x0, [x16, #760]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
+.word 0xeb1f033f
+.word 0x10000011
+.word 0x54000ce0
 .word 0xf9001039
 .word 0x91008020
 .word 0xd349fc00
@@ -3919,17 +3866,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #760]
+ldr x0, [x16, #768]
 .word 0xf9001420
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #768]
+ldr x0, [x16, #776]
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #776]
+ldr x0, [x16, #784]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -3938,9 +3885,9 @@ ldr x0, [x16, #776]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #784]
+ldr x15, [x16, #792]
 .word 0xaa1a03e0
-bl _p_76
+bl _p_77
 .word 0xaa0003fa
 .word 0xaa1a03f8
 .word 0xb400029a
@@ -3958,7 +3905,7 @@ bl _p_76
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #792]
+ldr x1, [x16, #800]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540005e1
@@ -3974,9 +3921,9 @@ bl _p_14
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #808]
 .word 0xd2800041
-bl _p_77
+bl _p_78
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9002ba0
@@ -3992,7 +3939,7 @@ bl _p_77
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #744]
+ldr x2, [x16, #752]
 .word 0xaa0303e0
 .word 0xd2800021
 .word 0xf9400063
@@ -4000,9 +3947,9 @@ ldr x2, [x16, #744]
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_78
+bl _p_79
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -4011,10 +3958,13 @@ bl _p_15
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -4057,7 +4007,7 @@ Rg_Plugins_Popup_Converters_TypeConverters_EasingTypeConverter__c__DisplayClass0
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_79
+bl _p_80
 .word 0x53001c00
 .word 0x34000140
 .word 0xaa1a03e0
@@ -4066,7 +4016,7 @@ bl _p_79
 .word 0xd63f0200
 .word 0xf9400fa1
 .word 0xf9400821
-bl _p_52
+bl _p_53
 .word 0x53001c00
 .word 0x14000002
 .word 0xd2800000
@@ -4086,12 +4036,12 @@ Rg_Plugins_Popup_Converters_TypeConverters_UintTypeConverter_ConvertFromInvarian
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
-bl _p_80
+bl _p_81
 .word 0xf90033a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #808]
+ldr x0, [x16, #816]
 .word 0xd2800281
 bl _p_2
 .word 0xf94033a1
@@ -4109,9 +4059,9 @@ bl _p_14
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #800]
+ldr x0, [x16, #808]
 .word 0xd2800041
-bl _p_77
+bl _p_78
 .word 0xf9001ba0
 .word 0xf9401ba0
 .word 0xf9003ba0
@@ -4130,7 +4080,7 @@ bl _p_77
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #816]
+ldr x2, [x16, #824]
 .word 0xaa0303e0
 .word 0xd2800021
 .word 0xf9400063
@@ -4138,9 +4088,9 @@ ldr x2, [x16, #816]
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl _p_78
+bl _p_79
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -4212,24 +4162,24 @@ Rg_Plugins_Popup_Animations_FadeAnimation_Preparing_Xamarin_Forms_View_Rg_Plugin
 .word 0x34000160
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_81
+bl _p_82
 .word 0xf94013a0
 .word 0xfd001400
 .word 0xaa1a03e0
 .word 0x9e6703e0
 .word 0xf940035e
-bl _p_82
+bl _p_83
 .word 0x1400000b
 .word 0xb4000159
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_81
+bl _p_82
 .word 0xf94013a0
 .word 0xfd001400
 .word 0xaa1903e0
 .word 0x9e6703e0
 .word 0xf940033e
-bl _p_82
+bl _p_83
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -4254,7 +4204,7 @@ Rg_Plugins_Popup_Animations_FadeAnimation_Disposing_Xamarin_Forms_View_Rg_Plugin
 .word 0xfd401400
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_82
+bl _p_83
 .word 0x14000008
 .word 0xf94013a0
 .word 0xb40000c0
@@ -4262,7 +4212,7 @@ bl _p_82
 .word 0xfd401400
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_82
+bl _p_83
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -4288,7 +4238,7 @@ Rg_Plugins_Popup_Animations_FadeAnimation_Appearing_Xamarin_Forms_View_Rg_Plugin
 .word 0xd280001e
 .word 0xf2e7fe1e
 .word 0x9e6703c0
-bl _p_83
+bl _p_84
 .word 0x14000010
 .word 0xf9400fa0
 .word 0xb4000120
@@ -4298,14 +4248,14 @@ bl _p_83
 .word 0xd280001e
 .word 0xf2e7fe1e
 .word 0x9e6703c0
-bl _p_83
+bl _p_84
 .word 0x14000006
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -4326,7 +4276,7 @@ Rg_Plugins_Popup_Animations_FadeAnimation_Disappearing_Xamarin_Forms_View_Rg_Plu
 .word 0xaa0203fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_81
+bl _p_82
 .word 0xfd001700
 .word 0x3940c300
 .word 0x340000e0
@@ -4334,7 +4284,7 @@ bl _p_81
 .word 0xf9400f02
 .word 0xaa1a03e0
 .word 0x9e6703e0
-bl _p_83
+bl _p_84
 .word 0x1400000e
 .word 0xf94013a0
 .word 0xb40000e0
@@ -4342,14 +4292,14 @@ bl _p_83
 .word 0xf9400f02
 .word 0xf94013a0
 .word 0x9e6703e0
-bl _p_83
+bl _p_84
 .word 0x14000006
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0xf9400bb8
 .word 0xf9400fba
 .word 0x910003bf
@@ -4368,7 +4318,7 @@ Rg_Plugins_Popup_Animations_FadeAnimation__ctor:
 .word 0xf9400ba0
 .word 0xd280003e
 .word 0x3900c01e
-bl _p_84
+bl _p_85
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4449,7 +4399,7 @@ Rg_Plugins_Popup_Animations_MoveAnimation__ctor:
 .word 0xf9400ba0
 .word 0xd2800081
 .word 0xd2800082
-bl _p_85
+bl _p_86
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4467,7 +4417,7 @@ Rg_Plugins_Popup_Animations_MoveAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnima
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xaa1803e0
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__ctor
+bl _p_87
 .word 0xb9801ba0
 .word 0xb9006300
 .word 0xb98023a0
@@ -4479,14 +4429,14 @@ bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__ctor
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #824]
+ldr x0, [x16, #832]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #832]
+ldr x0, [x16, #840]
 .word 0xf9400000
 .word 0xf9000b00
 .word 0x91004301
@@ -4504,7 +4454,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #840]
+ldr x0, [x16, #848]
 .word 0xf9400000
 .word 0xf9000f00
 .word 0x91006301
@@ -4539,16 +4489,16 @@ Rg_Plugins_Popup_Animations_MoveAnimation_Preparing_Xamarin_Forms_View_Rg_Plugin
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xaa1a03e2
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_88
 .word 0xaa1a03e0
 .word 0xd2800001
 .word 0xf940035e
-bl _p_86
+bl _p_89
 .word 0xf94013a0
 .word 0xb4000080
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_Forms_View
+bl _p_90
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -4569,22 +4519,22 @@ Rg_Plugins_Popup_Animations_MoveAnimation_Disposing_Xamarin_Forms_View_Rg_Plugin
 .word 0xf94013a0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_91
 .word 0xaa1a03e0
 .word 0xd2800021
 .word 0xf940035e
-bl _p_86
+bl _p_89
 .word 0xb4000179
 .word 0xf94013a0
 .word 0xfd402800
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_87
+bl _p_92
 .word 0xf94013a0
 .word 0xfd402c00
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_88
+bl _p_93
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -4596,27 +4546,27 @@ Lme_54:
 	.no_dead_strip Rg_Plugins_Popup_Animations_MoveAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 Rg_Plugins_Popup_Animations_MoveAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xd2800000
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xf90067a0
-.word 0xf9006ba0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
 .word 0xf9004ba0
-.word 0x910263a1
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf9003fa0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4629,9 +4579,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf9400fa0
-.word 0xf90063a0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4644,9 +4594,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf94013a0
-.word 0xf90067a0
+.word 0xf90047a0
 .word 0x9100c021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4659,7 +4609,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a0
+.word 0x910163a0
 .word 0xd2800001
 .word 0xf90017a1
 .word 0xf9001ba1
@@ -4709,43 +4659,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9009bbe
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0xf94067a0
-.word 0xf9003ba0
-.word 0xf9406ba0
-.word 0xf9003fa0
-.word 0x910103a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90043a1
+.word 0xf90023a1
 .word 0xf9400401
-.word 0xf90047a1
+.word 0xf90027a1
 .word 0xf9400800
-.word 0xf9004ba0
-.word 0x910203a0
-.word 0x910263a1
+.word 0xf9002ba0
+.word 0x910103a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #848]
-bl _p_89
-.word 0x910263a0
+ldr x15, [x16, #856]
+bl _p_94
+.word 0x910163a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_55:
@@ -4754,27 +4688,27 @@ Lme_55:
 	.no_dead_strip Rg_Plugins_Popup_Animations_MoveAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 Rg_Plugins_Popup_Animations_MoveAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xd2800000
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xf90067a0
-.word 0xf9006ba0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
 .word 0xf9004ba0
-.word 0x910263a1
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf9003fa0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4787,9 +4721,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf9400fa0
-.word 0xf90063a0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4802,9 +4736,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf94013a0
-.word 0xf90067a0
+.word 0xf90047a0
 .word 0x9100c021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -4817,7 +4751,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a0
+.word 0x910163a0
 .word 0xd2800001
 .word 0xf90017a1
 .word 0xf9001ba1
@@ -4867,43 +4801,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9009bbe
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0xf94067a0
-.word 0xf9003ba0
-.word 0xf9406ba0
-.word 0xf9003fa0
-.word 0x910103a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90043a1
+.word 0xf90023a1
 .word 0xf9400401
-.word 0xf90047a1
+.word 0xf90027a1
 .word 0xf9400800
-.word 0xf9004ba0
-.word 0x910203a0
-.word 0x910263a1
+.word 0xf9002ba0
+.word 0x910103a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #856]
-bl _p_90
-.word 0x910263a0
+ldr x15, [x16, #864]
+bl _p_95
+.word 0x910163a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_56:
@@ -4919,12 +4837,12 @@ Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_Form
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_91
+bl _p_96
 .word 0xf9400fa0
 .word 0xfd002800
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_92
+bl _p_97
 .word 0xf9400fa0
 .word 0xfd002c00
 .word 0xf9400bba
@@ -4946,7 +4864,7 @@ Rg_Plugins_Popup_Animations_MoveAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Po
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_93
+bl _p_98
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4965,7 +4883,7 @@ Rg_Plugins_Popup_Animations_MoveAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Po
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_94
+bl _p_99
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -4993,13 +4911,13 @@ Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_MoveNext:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xd2800501
 bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #880]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -5024,12 +4942,12 @@ ldr x3, [x16, #16]
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_MoveAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_100
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_95
+bl _p_101
 .word 0xf94017a0
 .word 0xf9401400
 .word 0xb4000d60
@@ -5041,7 +4959,7 @@ bl _p_95
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_102
 .word 0x93407c00
 .word 0xaa0003f9
 .word 0xf94017a0
@@ -5052,7 +4970,7 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_Vie
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_103
 .word 0x93407c00
 .word 0xaa0003f8
 .word 0xf94017a0
@@ -5069,7 +4987,7 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_Vi
 .word 0x1e620000
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
+bl _p_93
 .word 0x1400002e
 .word 0xf94017a0
 .word 0xf9401000
@@ -5084,7 +5002,7 @@ bl _p_88
 .word 0x1e620320
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
+bl _p_93
 .word 0x1400001f
 .word 0xf94017a0
 .word 0xf9401000
@@ -5100,7 +5018,7 @@ bl _p_88
 .word 0x1e620000
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_87
+bl _p_92
 .word 0x1400000f
 .word 0xf94017a0
 .word 0xf9401000
@@ -5115,7 +5033,7 @@ bl _p_87
 .word 0x1e620300
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_87
+bl _p_92
 .word 0xf94017a0
 .word 0xf9401400
 .word 0xf94017a1
@@ -5134,17 +5052,17 @@ bl _p_87
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400842
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xf94017a0
 .word 0xf9401802
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_86
+bl _p_89
 .word 0xaa1a03e0
 bl _p_32
 .word 0xaa0003e1
@@ -5170,7 +5088,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -5205,8 +5123,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #880]
-bl _p_97
+ldr x15, [x16, #888]
+bl _p_105
 .word 0x14000029
 .word 0xf94017a0
 .word 0x9100e000
@@ -5299,13 +5217,13 @@ Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_MoveNext:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xd2800501
 bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #880]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -5330,12 +5248,12 @@ ldr x3, [x16, #16]
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_MoveAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_106
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_95
+bl _p_101
 .word 0xf94017a0
 .word 0xf9401400
 .word 0xb40012e0
@@ -5345,7 +5263,7 @@ bl _p_95
 .word 0xf9401401
 .word 0xaa0203e0
 .word 0xf940005e
-bl Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_Forms_View
+bl _p_90
 .word 0xf94017a0
 .word 0xf9401003
 .word 0xf94017a0
@@ -5354,7 +5272,7 @@ bl Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_F
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_102
 .word 0x93407c00
 .word 0xaa0003f9
 .word 0xf94017a0
@@ -5365,7 +5283,7 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_Vie
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_103
 .word 0x93407c00
 .word 0xaa0003f8
 .word 0xf94017a0
@@ -5393,11 +5311,11 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_Vi
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400005b
 .word 0xf94017a0
 .word 0xf9401000
@@ -5423,11 +5341,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400003d
 .word 0xf94017a0
 .word 0xf9401000
@@ -5454,11 +5372,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400001e
 .word 0xf94017a0
 .word 0xf9401000
@@ -5484,11 +5402,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xaa1a03e0
 bl _p_32
 .word 0xaa0003e1
@@ -5514,7 +5432,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -5549,8 +5467,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #888]
-bl _p_98
+ldr x15, [x16, #896]
+bl _p_107
 .word 0x14000029
 .word 0xf94017a0
 .word 0x9100e000
@@ -5760,7 +5678,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__ctor:
 .word 0xf9400ba0
 .word 0xd2800001
 .word 0xd2800002
-bl _p_99
+bl _p_108
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -5790,7 +5708,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnim
 .word 0x9e6703c0
 .word 0xfd003300
 .word 0xaa1803e0
-bl Rg_Plugins_Popup_Animations_FadeAnimation__ctor
+bl _p_109
 .word 0xb9801ba0
 .word 0xb9006b00
 .word 0xb98023a0
@@ -5798,14 +5716,14 @@ bl Rg_Plugins_Popup_Animations_FadeAnimation__ctor
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #824]
+ldr x0, [x16, #832]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #832]
+ldr x0, [x16, #840]
 .word 0xf9400000
 .word 0xf9000b00
 .word 0x91004301
@@ -5823,7 +5741,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #840]
+ldr x0, [x16, #848]
 .word 0xf9400000
 .word 0xf9000f00
 .word 0x91006301
@@ -5869,21 +5787,21 @@ Rg_Plugins_Popup_Animations_ScaleAnimation_Preparing_Xamarin_Forms_View_Rg_Plugi
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl Rg_Plugins_Popup_Animations_FadeAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_110
 .word 0xaa1a03e0
 .word 0xd2800001
 .word 0xf940035e
-bl _p_86
+bl _p_89
 .word 0xb4000159
 .word 0xaa1803e0
 .word 0xaa1903e1
-bl Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Forms_View
+bl _p_111
 .word 0x3940c300
 .word 0x350000a0
 .word 0xaa1903e0
 .word 0x9e6703e0
 .word 0xf940033e
-bl _p_82
+bl _p_83
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -5908,28 +5826,28 @@ Rg_Plugins_Popup_Animations_ScaleAnimation_Disposing_Xamarin_Forms_View_Rg_Plugi
 .word 0xaa1803e0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl Rg_Plugins_Popup_Animations_FadeAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_112
 .word 0xaa1a03e0
 .word 0xd2800021
 .word 0xf940035e
-bl _p_86
+bl _p_89
 .word 0xb4000239
 .word 0xfd401f00
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_100
+bl _p_113
 .word 0xfd402300
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_82
+bl _p_83
 .word 0xfd402700
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_87
+bl _p_92
 .word 0xfd402b00
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_88
+bl _p_93
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -5942,27 +5860,27 @@ Lme_69:
 	.no_dead_strip Rg_Plugins_Popup_Animations_ScaleAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 Rg_Plugins_Popup_Animations_ScaleAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xd2800000
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xf90067a0
-.word 0xf9006ba0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
 .word 0xf9004ba0
-.word 0x910263a1
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf9003fa0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5975,9 +5893,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf9400fa0
-.word 0xf90063a0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -5990,9 +5908,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf94013a0
-.word 0xf90067a0
+.word 0xf90047a0
 .word 0x9100c021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6005,7 +5923,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a0
+.word 0x910163a0
 .word 0xd2800001
 .word 0xf90017a1
 .word 0xf9001ba1
@@ -6055,43 +5973,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9009bbe
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0xf94067a0
-.word 0xf9003ba0
-.word 0xf9406ba0
-.word 0xf9003fa0
-.word 0x910103a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90043a1
+.word 0xf90023a1
 .word 0xf9400401
-.word 0xf90047a1
+.word 0xf90027a1
 .word 0xf9400800
-.word 0xf9004ba0
-.word 0x910203a0
-.word 0x910263a1
+.word 0xf9002ba0
+.word 0x910103a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #896]
-bl _p_101
-.word 0x910263a0
+ldr x15, [x16, #904]
+bl _p_114
+.word 0x910163a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_6a:
@@ -6100,27 +6002,27 @@ Lme_6a:
 	.no_dead_strip Rg_Plugins_Popup_Animations_ScaleAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 Rg_Plugins_Popup_Animations_ScaleAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
 .loc 1 1 0
-.word 0xa9b27bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xd2800000
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0xf90063a0
-.word 0xf90067a0
-.word 0xf9006ba0
-.word 0xd2800000
+.word 0xf9002fa0
+.word 0xf90033a0
+.word 0xf90037a0
+.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xf90043a0
 .word 0xf90047a0
 .word 0xf9004ba0
-.word 0x910263a1
+.word 0xd2800000
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0x910163a1
 .word 0xf9400ba0
-.word 0xf9005fa0
+.word 0xf9003fa0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6133,9 +6035,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf9400fa0
-.word 0xf90063a0
+.word 0xf90043a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6148,9 +6050,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a1
+.word 0x910163a1
 .word 0xf94013a0
-.word 0xf90067a0
+.word 0xf90047a0
 .word 0x9100c021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -6163,7 +6065,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910263a0
+.word 0x910163a0
 .word 0xd2800001
 .word 0xf90017a1
 .word 0xf9001ba1
@@ -6213,43 +6115,27 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb9009bbe
-.word 0xf9404fa0
-.word 0xf90023a0
-.word 0xf94053a0
-.word 0xf90027a0
-.word 0xf94057a0
-.word 0xf9002ba0
-.word 0xf9405ba0
-.word 0xf9002fa0
-.word 0xf9405fa0
-.word 0xf90033a0
-.word 0xf94063a0
-.word 0xf90037a0
-.word 0xf94067a0
-.word 0xf9003ba0
-.word 0xf9406ba0
-.word 0xf9003fa0
-.word 0x910103a0
+.word 0xb9005bbe
+.word 0x910163a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90043a1
+.word 0xf90023a1
 .word 0xf9400401
-.word 0xf90047a1
+.word 0xf90027a1
 .word 0xf9400800
-.word 0xf9004ba0
-.word 0x910203a0
-.word 0x910263a1
+.word 0xf9002ba0
+.word 0x910103a0
+.word 0x910163a1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #904]
-bl _p_102
-.word 0x910263a0
+ldr x15, [x16, #912]
+bl _p_115
+.word 0x910163a0
 .word 0x91002000
 bl _p_17
 .word 0x910003bf
-.word 0xa8ce7bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_6b:
@@ -6272,7 +6158,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation_Scale_Xamarin_Forms_View_Xamarin_Form
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #920]
 .word 0xd2800401
 bl _p_2
 .word 0xaa0003f6
@@ -6294,7 +6180,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xd2800301
 bl _p_2
 .word 0xf9004ba0
@@ -6320,19 +6206,22 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #920]
+ldr x0, [x16, #928]
 .word 0xf90043a0
 .word 0xeb1f02df
 .word 0x10000011
-.word 0x54000f60
+.word 0x54001080
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #928]
+ldr x0, [x16, #936]
 .word 0xd2800e01
 bl _p_2
 .word 0xf94043a1
 .word 0xf94047a2
+.word 0xeb1f02df
+.word 0x10000011
+.word 0x54000ee0
 .word 0xf9001016
 .word 0x91008003
 .word 0xd349fc63
@@ -6349,17 +6238,17 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #936]
+ldr x3, [x16, #944]
 .word 0xf9001403
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #944]
+ldr x3, [x16, #952]
 .word 0xf9002003
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #952]
+ldr x3, [x16, #960]
 .word 0xf9401464
 .word 0xf9000c04
 .word 0xf9401063
@@ -6397,16 +6286,19 @@ ldr x3, [x16, #952]
 .word 0xfd005ba0
 .word 0xeb1f02df
 .word 0x10000011
-.word 0x540006e0
+.word 0x540007a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e6
 .word 0xfd4057a0
 .word 0xfd405ba1
+.word 0xeb1f02df
+.word 0x10000011
+.word 0x540005e0
 .word 0xf90010d6
 .word 0x910080c0
 .word 0xd349fc00
@@ -6423,17 +6315,17 @@ ldr x1, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #976]
 .word 0xf90014c0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #984]
 .word 0xf90020c0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #992]
 .word 0xf9401401
 .word 0xf9000cc1
 .word 0xf9401000
@@ -6446,7 +6338,7 @@ ldr x0, [x16, #984]
 .word 0xaa1a03e4
 .word 0xaa1803e5
 .word 0xd2800007
-bl _p_103
+bl _p_116
 .word 0xf9400ec0
 .word 0xaa0003e1
 .word 0xf940003e
@@ -6457,7 +6349,10 @@ bl _p_103
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -6474,19 +6369,19 @@ Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Forms
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_104
+bl _p_117
 .word 0xfd001f20
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_81
+bl _p_82
 .word 0xfd002320
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_91
+bl _p_96
 .word 0xfd002720
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_92
+bl _p_97
 .word 0xfd002b20
 .word 0xa9416bb9
 .word 0x910003bf
@@ -6507,7 +6402,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_P
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_105
+bl _p_118
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6526,7 +6421,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_P
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_106
+bl _p_119
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6553,13 +6448,13 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_MoveNext:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xd2800501
 bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #880]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -6584,12 +6479,12 @@ ldr x3, [x16, #16]
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_ScaleAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_120
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_95
+bl _p_101
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xb4001ae0
@@ -6601,7 +6496,7 @@ bl _p_95
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_102
 .word 0x93407c00
 .word 0x1e620000
 .word 0xf9400fa0
@@ -6619,7 +6514,7 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_Vie
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_103
 .word 0x93407c00
 .word 0x1e620000
 .word 0xf9400fa0
@@ -6649,11 +6544,11 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_Vi
 .word 0xaa0403e0
 .word 0xd2800023
 .word 0xf940009e
-bl _p_107
+bl _p_121
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xf9400fa0
 .word 0xf9401000
 .word 0xaa0003e1
@@ -6668,7 +6563,7 @@ bl _p_95
 .word 0x1e614000
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
+bl _p_93
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9400fa1
@@ -6687,11 +6582,11 @@ bl _p_88
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400842
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x14000073
 .word 0xf9400fa0
 .word 0xf9401000
@@ -6706,7 +6601,7 @@ bl _p_95
 .word 0xfd4023a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_88
+bl _p_93
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9400fa1
@@ -6725,11 +6620,11 @@ bl _p_88
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400842
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400004d
 .word 0xf9400fa0
 .word 0xf9401000
@@ -6745,7 +6640,7 @@ bl _p_95
 .word 0x1e614000
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_87
+bl _p_92
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9400fa1
@@ -6764,11 +6659,11 @@ bl _p_87
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400842
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x14000026
 .word 0xf9400fa0
 .word 0xf9401000
@@ -6783,7 +6678,7 @@ bl _p_95
 .word 0xfd4027a0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_87
+bl _p_92
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xf9400fa1
@@ -6802,17 +6697,17 @@ bl _p_87
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400842
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xf9400fa0
 .word 0xf9401802
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_86
+bl _p_89
 .word 0xaa1a03e0
 bl _p_32
 .word 0xaa0003e1
@@ -6838,7 +6733,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -6873,8 +6768,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #992]
-bl _p_108
+ldr x15, [x16, #1000]
+bl _p_122
 .word 0x14000029
 .word 0xf9400fa0
 .word 0x9100e000
@@ -6965,13 +6860,13 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_MoveNext:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xd2800501
 bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #872]
+ldr x1, [x16, #880]
 .word 0xf9400021
 .word 0xf9000801
 .word 0x91004002
@@ -6996,12 +6891,12 @@ ldr x3, [x16, #16]
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_ScaleAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+bl _p_123
 .word 0xaa0003e1
 .word 0xf94043a2
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_95
+bl _p_101
 .word 0xf9400fa0
 .word 0xf9401400
 .word 0xb40017c0
@@ -7011,7 +6906,7 @@ bl _p_95
 .word 0xf9401401
 .word 0xaa0203e0
 .word 0xf940005e
-bl Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Forms_View
+bl _p_111
 .word 0xf9400fa0
 .word 0xf9401003
 .word 0xf9400fa0
@@ -7020,7 +6915,7 @@ bl Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Fo
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_102
 .word 0x93407c00
 .word 0x1e620000
 .word 0xf9400fa0
@@ -7038,7 +6933,7 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_Vie
 .word 0xf9401802
 .word 0xaa0303e0
 .word 0xf940007e
-bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+bl _p_103
 .word 0x93407c00
 .word 0x1e620000
 .word 0xf9400fa0
@@ -7068,11 +6963,11 @@ bl Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_Vi
 .word 0xaa0403e0
 .word 0xd2800003
 .word 0xf940009e
-bl _p_107
+bl _p_121
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xf9400fa0
 .word 0xf9401000
 .word 0xaa0003e1
@@ -7098,11 +6993,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400005b
 .word 0xf9400fa0
 .word 0xf9401000
@@ -7128,11 +7023,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400003d
 .word 0xf9400fa0
 .word 0xf9401000
@@ -7159,11 +7054,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0x1400001e
 .word 0xf9400fa0
 .word 0xf9401000
@@ -7189,11 +7084,11 @@ bl _p_95
 .word 0xaa0203e3
 .word 0xf940007e
 .word 0xf9400c42
-bl _p_96
+bl _p_104
 .word 0xaa0003e1
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_95
+bl _p_101
 .word 0xaa1a03e0
 bl _p_32
 .word 0xaa0003e1
@@ -7219,7 +7114,7 @@ ldr x2, [x16, #16]
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90043a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94043a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -7254,8 +7149,8 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1000]
-bl _p_109
+ldr x15, [x16, #1008]
+bl _p_124
 .word 0x14000029
 .word 0xf9400fa0
 .word 0x9100e000
@@ -7352,7 +7247,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__c__DisplayClass26_0__Scaleb__0_doubl
 .word 0xfd400fa0
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_100
+bl _p_113
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -7373,7 +7268,7 @@ Rg_Plugins_Popup_Animations_ScaleAnimation__c__DisplayClass26_0__Scaleb__1_doubl
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_110
+bl _p_125
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -7544,12 +7439,12 @@ Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_X
 .word 0xf9400fa0
 .word 0xf9400fa1
 .word 0xf940003e
-bl _p_111
+bl _p_126
 .word 0xfd001ba0
 .word 0xf94013a0
 .word 0xf94013a1
 .word 0xf940003e
-bl _p_111
+bl _p_126
 .word 0x1e604001
 .word 0xfd401ba0
 .word 0x1e612800
@@ -7576,12 +7471,12 @@ Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_
 .word 0xf9400fa0
 .word 0xf9400fa1
 .word 0xf940003e
-bl _p_112
+bl _p_127
 .word 0xfd001ba0
 .word 0xf94013a0
 .word 0xf94013a1
 .word 0xf940003e
-bl _p_112
+bl _p_127
 .word 0x1e604001
 .word 0xfd401ba0
 .word 0x1e612800
@@ -7611,14 +7506,14 @@ Rg_Plugins_Popup_Animations_Base_BaseAnimation__ctor:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #824]
+ldr x0, [x16, #832]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9400000
 .word 0xf9000b40
 .word 0x91004341
@@ -7636,7 +7531,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9400000
 .word 0xf9000f40
 .word 0x91006341
@@ -7705,12 +7600,12 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Preparing_Xamarin_Forms
 .word 0x34000540
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_113
+bl _p_128
 .word 0xb50004c0
 .word 0x9101a3a8
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_114
+bl _p_129
 .word 0xf9400fa0
 .word 0x9100a001
 .word 0xb9806ba2
@@ -7731,7 +7626,7 @@ bl _p_114
 .word 0xb9001c22
 .word 0x910123a8
 .word 0x9e6703e0
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double
+bl _p_130
 .word 0xaa1a03e0
 .word 0x9100a3a1
 .word 0xf94027a2
@@ -7766,7 +7661,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disposing_Xamarin_Forms
 .word 0x34000460
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_113
+bl _p_128
 .word 0xb50003e0
 .word 0xf9400fa0
 .word 0x9100a000
@@ -7819,7 +7714,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Appearing_Xamarin_Forms
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1024]
 .word 0xd2800401
 bl _p_2
 .word 0xaa0003f8
@@ -7850,16 +7745,16 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .word 0x39412320
-.word 0x34001160
+.word 0x34001220
 .word 0xf9400b01
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_113
-.word 0xb50010c0
+bl _p_128
+.word 0xb5001180
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1032]
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003fa
@@ -7868,7 +7763,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xd2800301
 bl _p_2
 .word 0xf9002fa0
@@ -7894,17 +7789,20 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9001fa0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54000d20
+.word 0x54000e40
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #928]
+ldr x0, [x16, #936]
 .word 0xd2800e01
 bl _p_2
+.word 0xeb1f031f
+.word 0x10000011
+.word 0x54000ce0
 .word 0xf9001018
 .word 0x91008001
 .word 0xd349fc21
@@ -7921,17 +7819,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1040]
+ldr x1, [x16, #1048]
 .word 0xf9001401
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1048]
+ldr x1, [x16, #1056]
 .word 0xf9002001
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1056]
+ldr x1, [x16, #1064]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -7948,11 +7846,11 @@ ldr x1, [x16, #1056]
 .word 0xf90027a0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54000780
+.word 0x54000840
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e6
@@ -7961,6 +7859,9 @@ bl _p_2
 .word 0xf94023a2
 .word 0xf94027a4
 .word 0xfd402ba1
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54000620
 .word 0xf90010da
 .word 0x910080c3
 .word 0xd349fc63
@@ -7977,17 +7878,17 @@ ldr x5, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1064]
+ldr x3, [x16, #1072]
 .word 0xf90014c3
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1072]
+ldr x3, [x16, #1080]
 .word 0xf90020c3
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1080]
+ldr x3, [x16, #1088]
 .word 0xf9401465
 .word 0xf9000cc5
 .word 0xf9401063
@@ -7997,7 +7898,7 @@ ldr x3, [x16, #1080]
 .word 0xd2800203
 .word 0xd2800005
 .word 0xd2800007
-bl _p_103
+bl _p_116
 .word 0xf9400b40
 .word 0xaa0003e1
 .word 0xf940003e
@@ -8006,18 +7907,18 @@ bl _p_103
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd28020e0
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -8037,7 +7938,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disappearing_Xamarin_Fo
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1088]
+ldr x0, [x16, #1096]
 .word 0xd2800401
 bl _p_2
 .word 0xaa0003f8
@@ -8068,16 +7969,16 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .word 0x39412320
-.word 0x34001420
+.word 0x340014e0
 .word 0xf9400b01
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_113
-.word 0xb5001380
+bl _p_128
+.word 0xb5001440
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1104]
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003fa
@@ -8086,7 +7987,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xd2800301
 bl _p_2
 .word 0xf9003fa0
@@ -8111,7 +8012,7 @@ ldr x2, [x16, #16]
 .word 0x9100c3a8
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_114
+bl _p_129
 .word 0x9100a320
 .word 0xb98033a1
 .word 0xb9000001
@@ -8134,17 +8035,20 @@ bl _p_114
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9002fa0
 .word 0xeb1f031f
 .word 0x10000011
-.word 0x54000d20
+.word 0x54000e40
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #928]
+ldr x0, [x16, #936]
 .word 0xd2800e01
 bl _p_2
+.word 0xeb1f031f
+.word 0x10000011
+.word 0x54000ce0
 .word 0xf9001018
 .word 0x91008001
 .word 0xd349fc21
@@ -8161,17 +8065,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1104]
+ldr x1, [x16, #1112]
 .word 0xf9001401
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1112]
+ldr x1, [x16, #1120]
 .word 0xf9002001
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1120]
+ldr x1, [x16, #1128]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -8188,11 +8092,11 @@ ldr x1, [x16, #1120]
 .word 0xf90037a0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54000780
+.word 0x54000840
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e6
@@ -8201,6 +8105,9 @@ bl _p_2
 .word 0xf94033a2
 .word 0xf94037a4
 .word 0xfd403ba0
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54000620
 .word 0xf90010da
 .word 0x910080c3
 .word 0xd349fc63
@@ -8217,17 +8124,17 @@ ldr x5, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1128]
+ldr x3, [x16, #1136]
 .word 0xf90014c3
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1136]
+ldr x3, [x16, #1144]
 .word 0xf90020c3
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1144]
+ldr x3, [x16, #1152]
 .word 0xf9401465
 .word 0xf9000cc5
 .word 0xf9401063
@@ -8237,7 +8144,7 @@ ldr x3, [x16, #1144]
 .word 0xd2800203
 .word 0xd2800005
 .word 0xd2800007
-bl _p_103
+bl _p_116
 .word 0xf9400b40
 .word 0xaa0003e1
 .word 0xf940003e
@@ -8246,18 +8153,18 @@ bl _p_103
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0xd2800000
-bl _p_65
+bl _p_66
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd28020e0
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -8298,7 +8205,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double:
 .word 0xb90063bf
 .word 0xb90067bf
 .word 0x910123a0
-bl _p_115
+bl _p_131
 .word 0xb9804ba0
 .word 0xb9002ba0
 .word 0xb9804fa0
@@ -8336,7 +8243,7 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
 
@@ -8352,7 +8259,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__ctor:
 .word 0xf9400ba0
 .word 0xd280003e
 .word 0x3901201e
-bl _p_84
+bl _p_85
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -8386,7 +8293,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__c__DisplayClass7_0__Ap
 .word 0xf9400c00
 .word 0xfd400fa0
 .word 0x910103a8
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double
+bl _p_130
 .word 0xf94033a2
 .word 0xaa0203e0
 .word 0x910083a1
@@ -8433,7 +8340,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__c__DisplayClass7_1__Ap
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_110
+bl _p_125
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -8467,7 +8374,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__c__DisplayClass8_0__Di
 .word 0xf9400c00
 .word 0xfd400fa0
 .word 0x910103a8
-bl Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double
+bl _p_130
 .word 0xf94033a2
 .word 0xaa0203e0
 .word 0x910083a1
@@ -8514,7 +8421,7 @@ Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__c__DisplayClass8_1__Di
 .word 0xaa0203e0
 .word 0xd2800021
 .word 0xf940005e
-bl _p_110
+bl _p_125
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -8524,29 +8431,43 @@ Lme_95:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/corlib/System/Array.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/corlib/System/Array.cs"
 .loc 2 71 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xb9801800
+.word 0x35000140
+.loc 2 72 0
+.word 0xf9401fa0
+bl _p_132
+.word 0x3980b410
+.word 0xb5000050
+bl _p_1
+.word 0xf9401fa0
+bl _p_133
+.word 0xf9400000
+.word 0x14000025
+.loc 2 74 0
 .word 0xd2800000
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_116
+bl _p_134
 .word 0xaa0003ef
 .word 0xf94023a0
 .word 0xf9400ba1
-bl _p_117
+bl _p_135
 .word 0xf94017a0
 .word 0xf9000fa0
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_116
+bl _p_134
 .word 0xd2800401
 bl _p_2
 .word 0x91004003
@@ -8605,14 +8526,14 @@ Lme_99:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Clear
 System_Array_InternalArray__ICollection_Clear:
-.loc 2 76 0 prologue_end
+.loc 2 79 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2862d20
-bl _p_118
+.word 0xd288fe40
+bl _p_136
 .word 0xaa0003e1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -8625,16 +8546,16 @@ Lme_9a:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Add_T_REF_T_REF
 System_Array_InternalArray__ICollection_Add_T_REF_T_REF:
-.loc 2 81 0 prologue_end
+.loc 2 84 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2863320
-bl _p_118
+.word 0xd2890440
+bl _p_136
 .word 0xaa0003e1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -8647,16 +8568,16 @@ Lme_9b:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
 System_Array_InternalArray__ICollection_Remove_T_REF_T_REF:
-.loc 2 86 0 prologue_end
+.loc 2 89 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd2863320
-bl _p_118
+.word 0xd2890440
+bl _p_136
 .word 0xaa0003e1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -8669,7 +8590,7 @@ Lme_9c:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
 System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
-.loc 2 91 0 prologue_end
+.loc 2 94 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xa9015fb6
@@ -8683,27 +8604,27 @@ System_Array_InternalArray__ICollection_Contains_T_REF_T_REF:
 .word 0xd280003e
 .word 0x6b1e001f
 .word 0x5400044c
-.loc 2 94 0
+.loc 2 97 0
 .word 0xb9801b38
-.loc 2 95 0
+.loc 2 98 0
 .word 0xd2800017
 .word 0x14000016
-.loc 2 97 0
+.loc 2 100 0
 .word 0xf9401fa0
-bl _p_119
+bl _p_137
 .word 0x93407ee0
 .word 0xd37df000
 .word 0x8b000320
 .word 0x91008000
 .word 0xf9400016
-.loc 2 98 0
+.loc 2 101 0
 .word 0xb500009a
-.loc 2 99 0
+.loc 2 102 0
 .word 0xb5000196
-.loc 2 100 0
+.loc 2 103 0
 .word 0xd2800020
 .word 0x1400000e
-.loc 2 106 0
+.loc 2 109 0
 .word 0xaa1a03e0
 .word 0xaa1603e1
 .word 0xf9400342
@@ -8711,14 +8632,14 @@ bl _p_119
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000060
-.loc 2 107 0
+.loc 2 110 0
 .word 0xd2800020
 .word 0x14000005
-.loc 2 95 0
+.loc 2 98 0
 .word 0x110006f7
 .word 0x6b1802ff
 .word 0x54fffd4b
-.loc 2 111 0
+.loc 2 114 0
 .word 0xd2800000
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -8726,11 +8647,11 @@ bl _p_119
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 2 92 0
-.word 0xd2863aa0
-bl _p_118
+.loc 2 95 0
+.word 0xd2890bc0
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2802260
+.word 0xd2802360
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -8740,7 +8661,7 @@ Lme_9d:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
-.loc 2 116 0 prologue_end
+.loc 2 119 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bb6
@@ -8763,8 +8684,8 @@ System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int:
 .word 0xaa1603e1
 .word 0xf94013a2
 .word 0xb9802ba3
-bl _p_120
-.loc 2 117 0
+bl _p_138
+.loc 2 120 0
 .word 0xf9400bb6
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -8785,9 +8706,9 @@ wrapper_delegate_invoke_System_Predicate_1_Rg_Plugins_Popup_Pages_PopupPage_invo
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
-.word 0x350006a0
+.word 0x350006c0
 .word 0x14000001
 .word 0xf9403738
 .word 0xaa1803e0
@@ -8801,20 +8722,20 @@ ldr x0, [x16, #1152]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x1400001f
+.word 0x14000020
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x14000019
+.word 0x1400001a
 .word 0xb9801b19
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540003c9
+.word 0x540003e9
 .word 0xd37df000
 .word 0x8b000300
 .word 0x91008000
@@ -8826,11 +8747,12 @@ ldr x0, [x16, #1152]
 .word 0xf9400c50
 .word 0xd63f0200
 .word 0xf94023a1
+.word 0x53001c00
 .word 0x53001c16
 .word 0x110006f7
 .word 0xaa1703e0
 .word 0x6b19001f
-.word 0x54fffd8b
+.word 0x54fffd6b
 .word 0xaa1603e0
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -8840,11 +8762,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
-.word 0x17ffffca
-.word 0xd2801e00
+.word 0x17ffffc9
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -8863,7 +8785,7 @@ wrapper_delegate_invoke_System_Action_1_Rg_Plugins_Popup_Pages_PopupPage_invoke_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -8914,11 +8836,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -8938,7 +8860,7 @@ wrapper_delegate_invoke_System_Comparison_1_Rg_Plugins_Popup_Pages_PopupPage_inv
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -8997,11 +8919,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -9010,7 +8932,7 @@ Lme_a1:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL__ctor
 System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL__ctor:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskCompletionSource.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskCompletionSource.cs"
 .loc 3 63 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -9019,19 +8941,19 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL__ctor:
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_122
+bl _p_140
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_122
+bl _p_140
 .word 0xd2800a01
 bl _p_2
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_123
+bl _p_141
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf90013a0
@@ -9085,7 +9007,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_SpinUntilCompleted:
 .word 0x14000003
 .loc 3 139 0
 .word 0x910063a0
-bl _p_124
+bl _p_142
 .loc 3 138 0
 .word 0xf9400ba0
 .word 0xf9400800
@@ -9093,7 +9015,7 @@ bl _p_124
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -9124,7 +9046,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_TrySetException_Syste
 .word 0xf90017a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_125
+bl _p_143
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
@@ -9133,7 +9055,7 @@ bl _p_1
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_126
+bl _p_144
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xaa1a03e1
@@ -9148,7 +9070,7 @@ bl _p_126
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -9161,7 +9083,7 @@ bl _p_126
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_127
+bl _p_145
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -9172,11 +9094,11 @@ bl _p_127
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 162 0
-.word 0xd29958e0
+.word 0xd29a3680
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -9199,7 +9121,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_SetException_System_E
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_128
+bl _p_146
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -9211,20 +9133,20 @@ bl _p_128
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 244 0
-.word 0xd29958e0
+.word 0xd29a3680
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 3 248 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -9245,7 +9167,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_TrySetResult_TResult_
 .word 0xf9001fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_129
+bl _p_147
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
@@ -9254,7 +9176,7 @@ bl _p_1
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_130
+bl _p_148
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0x394083a1
@@ -9269,7 +9191,7 @@ bl _p_130
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -9282,7 +9204,7 @@ bl _p_130
 .word 0xf9001ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_131
+bl _p_149
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xd63f0020
@@ -9308,7 +9230,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_SetResult_TResult_BOO
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_132
+bl _p_150
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0x394063a1
@@ -9320,11 +9242,11 @@ bl _p_132
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 322 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -9344,7 +9266,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_TrySetCanceled:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_133
+bl _p_151
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -9369,7 +9291,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_TrySetCanceled_System
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_134
+bl _p_152
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
@@ -9378,7 +9300,7 @@ bl _p_1
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_135
+bl _p_153
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -9394,7 +9316,7 @@ bl _p_135
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -9407,7 +9329,7 @@ bl _p_135
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_136
+bl _p_154
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xd63f0020
@@ -9431,7 +9353,7 @@ System_Threading_Tasks_TaskCompletionSource_1_TResult_BOOL_SetCanceled:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_137
+bl _p_155
 .word 0xaa0003e1
 .word 0xf94013a0
 .word 0xd63f0020
@@ -9442,11 +9364,11 @@ bl _p_137
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 370 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -9456,13 +9378,13 @@ Lme_ab:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 4 91 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_138
+bl _p_156
 .loc 4 93 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -9483,7 +9405,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_System_Threading_Tasks_T
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_139
+bl _p_157
 .loc 4 99 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -9504,7 +9426,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_TResult_BOOL:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_140
+bl _p_158
 .loc 4 106 0
 .word 0xf9400ba0
 .word 0x394063a1
@@ -9531,7 +9453,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_bool_TResult_BOOL_System_Thread
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_140
+bl _p_158
 .loc 4 112 0
 .word 0x394063a0
 .word 0x35000080
@@ -9561,7 +9483,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_141
+bl _p_159
 .word 0xaa0003e7
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -9577,7 +9499,7 @@ bl _p_141
 .loc 4 165 0
 .word 0xf9400ba0
 .word 0x9100c3a1
-bl _p_142
+bl _p_160
 .loc 4 166 0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -9618,7 +9540,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -9636,7 +9558,7 @@ ldr x1, [x16, #1160]
 .word 0xf94002fe
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_143
+bl _p_161
 .word 0xaa0003e9
 .word 0xaa1703e0
 .word 0xf9402fa1
@@ -9653,7 +9575,7 @@ bl _p_143
 .loc 4 326 0
 .word 0xf94017a0
 .word 0x910143a1
-bl _p_142
+bl _p_160
 .loc 4 327 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -9682,7 +9604,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_144
+bl _p_162
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf9400fa1
@@ -9695,7 +9617,7 @@ bl _p_144
 .loc 4 336 0
 .word 0xf9400ba0
 .word 0xf9402ba1
-bl _p_142
+bl _p_160
 .loc 4 337 0
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -9724,7 +9646,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_1_TResult_BOOL_Syst
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_145
+bl _p_163
 .loc 4 354 0
 .word 0xb98043a0
 .word 0xd281001e
@@ -9735,16 +9657,16 @@ bl _p_145
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 4 356 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf9002ba0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -9772,7 +9694,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Func_2_object_TResult_BO
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_146
+bl _p_164
 .word 0xaa0003e9
 .word 0xf94033a0
 .word 0xf94013a1
@@ -9786,7 +9708,7 @@ bl _p_146
 .loc 4 365 0
 .word 0xf9400fa0
 .word 0xf9400381
-bl _p_142
+bl _p_160
 .loc 4 366 0
 .word 0xf9400bbc
 .word 0x910003bf
@@ -9817,7 +9739,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__ctor_System_Delegate_object_System_T
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_145
+bl _p_163
 .loc 4 384 0
 .word 0xb9804ba0
 .word 0xd281001e
@@ -9828,16 +9750,16 @@ bl _p_145
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 4 386 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -9874,12 +9796,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_147
+bl _p_165
 .word 0xd2800a01
 bl _p_2
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_148
+bl _p_166
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa5
@@ -9898,41 +9820,41 @@ bl _p_148
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_149
+bl _p_167
 .word 0xf94033a0
 .loc 4 413 0
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 4 397 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 401 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 406 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -9974,12 +9896,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_StartNew_System_Threading_Tasks_Task_
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402fa0
-bl _p_150
+bl _p_168
 .word 0xd2800a01
 bl _p_2
 .word 0xf9003ba0
 .word 0xf9402fa0
-bl _p_151
+bl _p_169
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa6
@@ -10000,41 +9922,41 @@ bl _p_151
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_149
+bl _p_167
 .word 0xf94033a0
 .loc 4 437 0
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 4 422 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 426 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 430 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -10053,7 +9975,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL:
 .word 0xf9400fa0
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -10069,7 +9991,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetResult_TResult_BOOL:
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
 .word 0x34000460
 .loc 4 474 0
@@ -10084,7 +10006,7 @@ bl _p_152
 .word 0xf90017a0
 .word 0xf9400fa0
 .word 0xb9804401
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xd280001e
 .word 0xf2a0201e
@@ -10092,23 +10014,23 @@ bl _p_152
 .word 0x885f7c10
 .word 0x8811fc01
 .word 0x35ffffd1
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa1003e0
 .loc 4 485 0
 .word 0xf9400fa0
 .word 0xf9401c00
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xaa0003fa
 .loc 4 486 0
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_153
+bl _p_171
 .loc 4 488 0
 .word 0xf9400fa0
-bl _p_154
+bl _p_172
 .loc 4 490 0
 .word 0xd2800020
 .word 0x14000002
@@ -10118,7 +10040,7 @@ bl _p_154
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
 
@@ -10141,7 +10063,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_DangerousSetResult_TResult_BOOL:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_155
+bl _p_173
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0x394063a1
@@ -10158,12 +10080,12 @@ bl _p_155
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf90017a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xd280001e
 .word 0xf2a0201e
 .word 0x2a1e0001
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xb9004401
 .loc 4 519 0
@@ -10183,7 +10105,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Result:
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a2201e
@@ -10203,7 +10125,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Result:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_156
+bl _p_174
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -10242,7 +10164,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool:
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -10257,20 +10179,20 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetResultCore_bool:
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_157
+bl _p_175
 .loc 4 559 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_158
+bl _p_176
 .loc 4 562 0
 .word 0xf9400ba0
-bl _p_159
+bl _p_177
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_160
+bl _p_178
 .loc 4 567 0
 .word 0xf9400ba0
 .word 0x39412000
@@ -10289,30 +10211,32 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetException_object:
 .word 0xf9000bb9
 .word 0xf9000fa0
 .word 0xf90013a1
-.word 0xd2800019
+.word 0xd2800000
+.word 0x53001c19
 .loc 4 600 0
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_161
+bl _p_179
 .loc 4 601 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 4 604 0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl _p_162
+bl _p_180
 .loc 4 605 0
 .word 0xf9400fa0
 .word 0xd2800001
-bl _p_163
+bl _p_181
 .loc 4 606 0
-.word 0xd2800039
+.word 0xd2800020
+.word 0x53001c19
 .loc 4 609 0
 .word 0xaa1903e0
 .word 0xf9400bb9
@@ -10335,7 +10259,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetCanceled_System_Threading_Cance
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_164
+bl _p_182
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -10358,26 +10282,28 @@ System_Threading_Tasks_Task_1_TResult_BOOL_TrySetCanceled_System_Threading_Cance
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf9001ba2
-.word 0xd2800019
+.word 0xd2800000
+.word 0x53001c19
 .loc 4 648 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 4 652 0
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf9401ba2
-bl _p_165
+bl _p_183
 .loc 4 653 0
 .word 0xf9400fa0
-bl _p_166
+bl _p_184
 .loc 4 654 0
-.word 0xd2800039
+.word 0xd2800020
+.word 0x53001c19
 .loc 4 657 0
 .word 0xaa1903e0
 .word 0xf9400bb9
@@ -10395,12 +10321,12 @@ System_Threading_Tasks_Task_1_TResult_BOOL_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_167
+bl _p_185
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400ba0
-bl _p_168
+bl _p_186
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -10421,11 +10347,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_169
+bl _p_187
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_170
+bl _p_188
 .word 0xaa0003fa
 .loc 4 678 0
 .word 0xaa1a03e0
@@ -10447,11 +10373,11 @@ bl _p_170
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_171
+bl _p_189
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_170
+bl _p_188
 .word 0xaa0003fa
 .loc 4 684 0
 .word 0xaa1a03e0
@@ -10489,11 +10415,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_172
+bl _p_190
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_173
+bl _p_191
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -10525,11 +10451,11 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_174
+bl _p_192
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_175
+bl _p_193
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -10562,7 +10488,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .loc 4 738 0
 .word 0xf9400ba0
 .word 0xf90027a0
-bl _p_176
+bl _p_194
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9001fa1
@@ -10573,7 +10499,7 @@ bl _p_176
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_177
+bl _p_195
 .word 0xaa0003e6
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -10609,7 +10535,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_178
+bl _p_196
 .word 0xaa0003e6
 .word 0xf94023a0
 .word 0xf94027a5
@@ -10646,7 +10572,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_179
+bl _p_197
 .word 0xaa0003e6
 .word 0xf9402ba0
 .word 0xf9402fa5
@@ -10685,7 +10611,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL_ContinueWith_System_Action_1_System_T
 .word 0x910123a1
 .word 0x910143a2
 .word 0xb98043a0
-bl _p_180
+bl _p_198
 .loc 4 901 0
 .word 0xf9400fa0
 .word 0xf9003ba0
@@ -10695,13 +10621,13 @@ bl _p_180
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_181
+bl _p_199
 .word 0xd2800a01
 bl _p_2
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_182
+bl _p_200
 .word 0xaa0003e7
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -10720,7 +10646,7 @@ bl _p_182
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xb98043a4
-bl _p_183
+bl _p_201
 .loc 4 911 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -10728,20 +10654,20 @@ bl _p_183
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 4 891 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2981d60
+.word 0xd298fb00
 .word 0xf2a00020
 .loc 4 886 0
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -10756,54 +10682,54 @@ System_Threading_Tasks_Task_1_TResult_BOOL__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_184
+bl _p_202
 .word 0xd2800501
 bl _p_2
 .word 0xf90023a0
 .word 0xf9400ba0
-bl _p_185
+bl _p_203
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf9001fa0
 .word 0xd63f0020
 .word 0xf9400ba0
-bl _p_186
+bl _p_204
 .word 0xf9401fa1
 .word 0xf9000001
 .loc 4 87 0
 .word 0xf9400ba0
-bl _p_187
+bl _p_205
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400ba0
-bl _p_188
+bl _p_206
 .word 0xf9400000
 .word 0xf90017a0
 .word 0xeb1f001f
 .word 0x10000011
 .word 0x540002a0
 .word 0xf9400ba0
-bl _p_189
-bl _p_190
+bl _p_207
+bl _p_208
 .word 0xf9001ba0
 .word 0xf9400ba0
-bl _p_191
+bl _p_209
 .word 0xd2800e01
 bl _p_2
 .word 0xf94017a1
 .word 0xf9401ba2
 .word 0xf90013a0
-bl _p_192
+bl _p_210
 .word 0xf9400ba0
-bl _p_186
+bl _p_204
 .word 0xf94013a1
 .word 0x91002000
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -10812,7 +10738,7 @@ Lme_c8:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
 System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
 .loc 5 93 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -10823,7 +10749,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_193
+bl _p_211
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -10850,7 +10776,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor_System_Threading_Cancell
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_194
+bl _p_212
 .loc 5 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -10902,11 +10828,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -10945,7 +10871,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -10964,17 +10890,17 @@ ldr x1, [x16, #1160]
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_195
+bl _p_213
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_195
+bl _p_213
 .word 0xf9002fa0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_196
+bl _p_214
 .word 0xaa0003e7
 .word 0xf9402ba6
 .word 0xf9402faf
@@ -11024,7 +10950,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -11043,17 +10969,17 @@ ldr x1, [x16, #1160]
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_197
+bl _p_215
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_197
+bl _p_215
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_198
+bl _p_216
 .word 0xaa0003e9
 .word 0xf94033a7
 .word 0xf94037af
@@ -11076,7 +11002,7 @@ Lme_cc:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
 System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool:
 .loc 5 542 0 prologue_end
-.word 0xa9b17bfd
+.word 0xa9b07bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xf90027af
@@ -11094,12 +11020,13 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsy
 .loc 5 544 0
 .word 0x390183bf
 .loc 5 548 0
-.word 0xb40000f9
+.word 0xb4000119
 .loc 5 550 0
 .word 0xaa1903e0
 .word 0xf9400fa1
 .word 0xf9400f30
 .word 0xd63f0200
+.word 0x53001c00
 .word 0x390183a0
 .loc 5 551 0
 .word 0x14000007
@@ -11111,64 +11038,76 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsy
 .word 0xd63f0200
 .word 0xf94013a0
 .loc 5 556 0
-.word 0x94000018
-.word 0x140000af
-.word 0xf90047a0
-.word 0xf94047a0
-.loc 5 557 0
-.word 0xf9002fa0
-bl _p_27
-.word 0xf90063a0
-.word 0xf94063a0
-.word 0xb4000060
-.word 0xf94063a0
-bl _p_15
-.word 0x9400000d
-.word 0x140000a4
+.word 0xf90037bf
+.word 0x94000023
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_217
+.word 0x140000b7
 .word 0xf9004ba0
 .word 0xf9404ba0
-.loc 5 558 0
-.word 0xf9002ba0
+.loc 5 557 0
+.word 0xf9002fa0
 bl _p_27
 .word 0xf90067a0
 .word 0xf94067a0
 .word 0xb4000060
 .word 0xf94067a0
 bl _p_15
-.word 0x94000002
+.word 0xf90037bf
+.word 0x94000014
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_217
+.word 0x140000a8
+.word 0xf9004fa0
+.word 0xf9404fa0
+.loc 5 558 0
+.word 0xf9002ba0
+bl _p_27
+.word 0xf9006ba0
+.word 0xf9406ba0
+.word 0xb4000060
+.word 0xf9406ba0
+bl _p_15
+.word 0xf90037bf
+.word 0x94000005
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000099
-.word 0xf9005fbe
+.word 0xf90063be
 .loc 5 561 0
 .word 0xf9402fa0
 .word 0xb40003e0
 .loc 5 563 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xf9402fa0
-.word 0xf90043a0
-.word 0xf94043a0
+.word 0xf90047a0
+.word 0xf94047a0
 .word 0xf940001e
-.word 0xf94043a0
+.word 0xf94047a0
 .word 0x91022000
 .word 0xf9400000
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0xf9001fa0
 .word 0xf9402fa0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_199
+bl _p_218
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
-.word 0xf94073a0
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_200
+bl _p_219
 .word 0xaa0003e3
-.word 0xf9406ba0
-.word 0xf9406fa2
+.word 0xf94073a0
+.word 0xf94077a2
 .word 0xf9401fa1
 .word 0xd63f0060
 .loc 5 564 0
@@ -11178,34 +11117,34 @@ bl _p_200
 .word 0xb40006c0
 .loc 5 567 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xf9402ba0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_199
+bl _p_218
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
-.word 0xf94073a0
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_201
+bl _p_220
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .word 0x53001c00
 .loc 5 568 0
 .word 0x34000c00
 .word 0xf9402ba0
-.word 0xf9003ba0
-.word 0xf9403ba0
 .word 0xf9003fa0
-.word 0xf9403ba0
+.word 0xf9403fa0
+.word 0xf90043a0
+.word 0xf9403fa0
 .word 0xeb1f001f
 .word 0x540001a0
-.word 0xf9403ba0
+.word 0xf9403fa0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -11213,105 +11152,105 @@ bl _p_201
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1168]
+ldr x1, [x16, #1176]
 .word 0xeb01001f
 .word 0x54000060
-.word 0xf9003fbf
+.word 0xf90043bf
 .word 0x14000001
-.word 0xf9403fa0
+.word 0xf94043a0
 .word 0xb4000960
 .loc 5 570 0
 .word 0xf94017a0
 .word 0xf9401c00
-.word 0xf9006ba0
-.word 0xd50330bf
-.word 0xf9406ba0
+.word 0xf90073a0
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9401002
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_202
+bl _p_221
 .loc 5 572 0
 .word 0x1400003f
 .loc 5 575 0
-.word 0x3901a3bf
-.word 0x3941a3a0
+.word 0x3901c3bf
+.word 0x3941c3a0
 .word 0x34000140
 .loc 5 576 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800022
-bl _p_204
+bl _p_223
 .loc 5 578 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x340000e0
 .loc 5 580 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
-bl _p_205
+bl _p_224
 .loc 5 582 0
 .word 0x3940c3a0
 .word 0x34000280
 .loc 5 584 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0x394183a0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_199
+bl _p_218
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
-.word 0xf94073a0
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_206
+bl _p_225
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .loc 5 585 0
 .word 0x14000013
 .loc 5 588 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0x394183a0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_199
+bl _p_218
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
-.word 0xf94073a0
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_207
+bl _p_226
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .loc 5 593 0
-.word 0xf9405fbe
+.word 0xf94063be
 .word 0xd61f03c0
 .loc 5 594 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8d07bfd
 .word 0xd65f03c0
 
 Lme_cd:
@@ -11331,11 +11270,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsync_System_Func_3_System
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_208
+bl _p_227
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_209
+bl _p_228
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -11367,12 +11306,12 @@ System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncImpl_System_Func_3_Sy
 .word 0xf90023bf
 .word 0x390123bf
 .word 0xf9401fa0
-bl _p_210
+bl _p_229
 .word 0xd2800501
 bl _p_2
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_211
+bl _p_230
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf90043a0
@@ -11410,33 +11349,33 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 816 0
-.word 0xb40025d6
+.word 0xb4002696
 .loc 5 819 0
 .word 0xf94023a0
 .word 0xf9400800
 .word 0xb5000080
 .word 0xf94023a0
 .word 0xf9400c00
-.word 0xb4002400
+.word 0xb40024c0
 .loc 5 824 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_212
+bl _p_231
 .loc 5 826 0
 .word 0xf94023a0
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_213
+bl _p_232
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9401fa0
-bl _p_213
+bl _p_232
 .word 0xd2800a01
 bl _p_2
 .word 0xf9004ba0
 .word 0xf9401fa0
-bl _p_214
+bl _p_233
 .word 0xaa0003e3
 .word 0xf9404ba0
 .word 0xf90043a0
@@ -11465,28 +11404,28 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x340000a0
 .loc 5 833 0
 .word 0xf94023a0
 .word 0xf9401000
-bl _p_215
+bl _p_234
 .word 0x14000001
 .loc 5 842 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1184]
+ldr x0, [x16, #1192]
 .word 0x39400000
-.word 0x34001080
+.word 0x340010e0
 .word 0xf9401fa0
-bl _p_216
+bl _p_235
 .word 0xd2800401
 bl _p_2
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_217
+bl _p_236
 .word 0xaa0003e1
 .word 0xf94053a0
 .word 0xf9004fa0
@@ -11513,7 +11452,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1200]
 .word 0xd2800281
 bl _p_2
 .word 0xf9404ba1
@@ -11533,13 +11472,16 @@ ldr x2, [x16, #16]
 .loc 5 847 0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001940
+.word 0x54001a60
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 .word 0xd2800e01
 bl _p_2
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54001900
 .word 0xf900101a
 .word 0xf90047a0
 .word 0x91008000
@@ -11555,19 +11497,19 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .word 0xf9401fa0
-bl _p_218
+bl _p_237
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf9001401
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_219
+bl _p_238
 .word 0xf94043a1
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1208]
+ldr x0, [x16, #1216]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -11579,25 +11521,25 @@ ldr x0, [x16, #1208]
 .word 0xd63f0200
 .word 0xaa0003f9
 .loc 5 852 0
-.word 0xb4000b00
+.word 0xb4000b60
 .word 0xaa1903e0
 .word 0xf9400321
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1216]
+ldr x15, [x16, #1224]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x340009a0
+.word 0x34000a00
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_220
+bl _p_239
 .word 0x53001c00
-.word 0x340008e0
+.word 0x34000940
 .loc 5 855 0
 .word 0xf9400f40
 .word 0xf9400800
@@ -11609,10 +11551,10 @@ bl _p_220
 .word 0xf9401000
 .word 0xf9004ba0
 .word 0xf9401fa0
-bl _p_221
+bl _p_240
 .word 0xf9004fa0
 .word 0xf9401fa0
-bl _p_222
+bl _p_241
 .word 0xaa0003e5
 .word 0xf94043a1
 .word 0xf94047a2
@@ -11622,21 +11564,24 @@ bl _p_222
 .word 0xd2800004
 .word 0xd63f00a0
 .loc 5 857 0
-.word 0x14000030
+.word 0x14000033
 .loc 5 861 0
 .word 0xf94023a0
 .word 0xf9004ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000e60
+.word 0x54000f20
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf9404ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000d80
 .word 0xf9001020
 .word 0xf90047a1
 .word 0x91008021
@@ -11652,19 +11597,19 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf9401fa0
-bl _p_223
+bl _p_242
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf9001401
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_224
+bl _p_243
 .word 0xf94043a1
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1208]
+ldr x0, [x16, #1216]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -11686,17 +11631,17 @@ ldr x0, [x16, #1208]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800062
-bl _p_204
+bl _p_223
 .loc 5 872 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x34000100
 .loc 5 874 0
@@ -11704,9 +11649,9 @@ ldr x0, [x16, #1176]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
-bl _p_205
+bl _p_224
 .loc 5 878 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -11715,7 +11660,7 @@ bl _p_205
 .word 0x394123a0
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_213
+bl _p_232
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
@@ -11723,14 +11668,14 @@ bl _p_1
 .word 0xf940001e
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_225
+bl _p_244
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf94047a1
 .word 0xd63f0040
 .loc 5 879 0
 .word 0xf9402ba0
-bl _p_226
+bl _p_245
 .loc 5 882 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -11740,24 +11685,27 @@ bl _p_226
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 .loc 5 820 0
-.word 0xd2982a60
+.word 0xd2990800
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2982760
+.word 0xd2990500
 .word 0xf2a00020
 .loc 5 817 0
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -11774,7 +11722,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -11823,11 +11771,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -11846,7 +11794,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -11899,11 +11847,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -11922,7 +11870,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -11973,11 +11921,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -11996,7 +11944,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -12049,11 +11997,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12072,7 +12020,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -12123,11 +12071,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12147,7 +12095,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -12203,11 +12151,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc9
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12226,7 +12174,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -12279,11 +12227,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12302,7 +12250,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -12355,11 +12303,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12378,7 +12326,7 @@ wrapper_delegate_invoke_System_Func_2_Rg_Plugins_Popup_Pages_PopupPage_System_Th
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -12431,11 +12379,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12454,9 +12402,9 @@ wrapper_delegate_invoke_System_Func_2_System_Reflection_FieldInfo_bool_invoke_TR
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
-.word 0x350006a0
+.word 0x350006c0
 .word 0x14000001
 .word 0xf9403738
 .word 0xaa1803e0
@@ -12470,20 +12418,20 @@ ldr x0, [x16, #1152]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x1400001f
+.word 0x14000020
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x14000019
+.word 0x1400001a
 .word 0xb9801b19
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540003c9
+.word 0x540003e9
 .word 0xd37df000
 .word 0x8b000300
 .word 0x91008000
@@ -12495,11 +12443,12 @@ ldr x0, [x16, #1152]
 .word 0xf9400c50
 .word 0xd63f0200
 .word 0xf94023a1
+.word 0x53001c00
 .word 0x53001c16
 .word 0x110006f7
 .word 0xaa1703e0
 .word 0x6b19001f
-.word 0x54fffd8b
+.word 0x54fffd6b
 .word 0xaa1603e0
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -12509,11 +12458,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
-.word 0x17ffffca
-.word 0xd2801e00
+.word 0x17ffffc9
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12532,9 +12481,9 @@ wrapper_delegate_invoke_System_Predicate_1_System_Threading_Tasks_Task_invoke_bo
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
-.word 0x350006a0
+.word 0x350006c0
 .word 0x14000001
 .word 0xf9403738
 .word 0xaa1803e0
@@ -12548,20 +12497,20 @@ ldr x0, [x16, #1152]
 .word 0xaa1a03e1
 .word 0xd63f0040
 .word 0x53001c00
-.word 0x1400001f
+.word 0x14000020
 .word 0xf9401f20
 .word 0xf9400b21
 .word 0xaa1a03e0
 .word 0xd63f0020
 .word 0x53001c00
-.word 0x14000019
+.word 0x1400001a
 .word 0xb9801b19
 .word 0xd2800017
 .word 0x93407ee0
 .word 0xb9801b01
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540003c9
+.word 0x540003e9
 .word 0xd37df000
 .word 0x8b000300
 .word 0x91008000
@@ -12573,11 +12522,12 @@ ldr x0, [x16, #1152]
 .word 0xf9400c50
 .word 0xd63f0200
 .word 0xf94023a1
+.word 0x53001c00
 .word 0x53001c16
 .word 0x110006f7
 .word 0xaa1703e0
 .word 0x6b19001f
-.word 0x54fffd8b
+.word 0x54fffd6b
 .word 0xaa1603e0
 .word 0xa9415fb6
 .word 0xa94267b8
@@ -12587,11 +12537,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
-.word 0x17ffffca
-.word 0xd2801e00
+.word 0x17ffffc9
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12610,7 +12560,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_invoke_void_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -12661,11 +12611,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12685,7 +12635,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Threading_Tasks_Task_invoke_i
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -12744,11 +12694,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1703e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc6
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12766,7 +12716,7 @@ wrapper_delegate_invoke_System_Action_1_double_invoke_void_T_double:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000600
 .word 0x14000001
@@ -12816,11 +12766,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffcf
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12840,7 +12790,7 @@ wrapper_delegate_invoke_System_Action_2_double_bool_invoke_void_T1_T2_double_boo
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -12894,11 +12844,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcb
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -12911,7 +12861,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 6 304 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
@@ -12936,11 +12886,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Se
 .word 0xf9401400
 .word 0xf90027a0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -12952,19 +12902,23 @@ bl _p_15
 .word 0xf90037a0
 .loc 6 315 0
 .word 0x910143a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_228
+bl _p_247
 .loc 6 317 0
-.word 0x94000002
+.word 0xf9003bbf
+.word 0x94000005
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf90043be
+.word 0xf90047be
 .loc 6 320 0
 .word 0x910143a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf94043be
+.word 0xf94047be
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -12981,7 +12935,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_:
 .loc 6 304 0 prologue_end
-.word 0xa9b77bfd
+.word 0xa9b67bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
@@ -13006,11 +12960,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Se
 .word 0xf9401800
 .word 0xf9002ba0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13022,23 +12976,27 @@ bl _p_15
 .word 0xf9003ba0
 .loc 6 315 0
 .word 0x910163a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_230
+bl _p_249
 .loc 6 317 0
-.word 0x94000002
+.word 0xf9003fbf
+.word 0x94000005
+.word 0xf9403fa0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf90047be
+.word 0xf9004bbe
 .loc 6 320 0
 .word 0x910163a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf94047be
+.word 0xf9404bbe
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
-.word 0xa8c97bfd
+.word 0xa8ca7bfd
 .word 0xd65f03c0
 
 Lme_ec:
@@ -13059,7 +13017,7 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAR
 .word 0xf90017a0
 .word 0xf9001ba1
 .word 0xf9401fa0
-bl _p_231
+bl _p_250
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -13095,8 +13053,8 @@ bl _p_231
 .word 0xeb1e02ff
 .word 0x54000320
 .word 0xf9401fa0
-bl _p_232
-bl _p_233
+bl _p_251
+bl _p_252
 .word 0xb9802b21
 .word 0x8b010301
 .word 0xf9004ba1
@@ -13106,7 +13064,7 @@ bl _p_233
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf9401fa0
-bl _p_234
+bl _p_253
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -13123,7 +13081,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x8b000300
 .word 0xd63f0020
 .word 0xaa0003f9
-.word 0xb4000439
+.word 0xb40004b9
 .loc 6 79 0
 .word 0xd2800000
 .word 0xf90023a0
@@ -13131,33 +13089,37 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9002ba0
 .word 0xf9002fa0
 .loc 6 80 0
-bl _p_235
+bl _p_254
 .loc 6 83 0
 .word 0x910103a0
-bl _p_227
+bl _p_246
 .loc 6 84 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_234
+bl _p_253
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xf9401ba0
 .word 0xd2800003
 .word 0xd2800004
-bl _p_236
+bl _p_255
 .loc 6 85 0
-.word 0x94000002
+.word 0xf90033bf
+.word 0x94000005
+.word 0xf94033a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf9003bbe
+.word 0xf9003fbe
 .loc 6 88 0
 .word 0x910103a0
-bl _p_229
+bl _p_248
 .loc 6 89 0
-.word 0xf9403bbe
+.word 0xf9403fbe
 .word 0xd61f03c0
 .loc 6 90 0
 .word 0xa94163b7
@@ -13166,11 +13128,11 @@ bl _p_229
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .loc 6 72 0
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13196,7 +13158,7 @@ System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TA
 .word 0xf90023a1
 .word 0xaa0203fa
 .word 0xf94027a0
-bl _p_237
+bl _p_256
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0x91003c10
@@ -13218,7 +13180,7 @@ bl _p_237
 .loc 6 162 0
 .word 0x91002300
 .word 0xf90043a0
-bl _p_238
+bl _p_257
 .word 0xf94043a1
 .word 0x53001c00
 .word 0xaa0103f5
@@ -13227,48 +13189,48 @@ bl _p_238
 .word 0xd2800015
 .word 0x14000005
 .word 0xaa1803e0
-bl _p_239
+bl _p_258
 .word 0xaa1503f4
 .word 0xaa0003f5
 .word 0x910143a2
 .word 0xaa1403e0
 .word 0xaa1503e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f5
 .loc 6 166 0
 .word 0xf9400700
 .word 0xb5000b40
 .loc 6 168 0
-bl _p_238
+bl _p_257
 .word 0x53001c00
 .word 0x340004c0
 .loc 6 169 0
 .word 0xaa1803e0
-bl _p_239
+bl _p_258
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
 .word 0xf90043a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf90047a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1240]
+ldr x0, [x16, #1248]
 .word 0xf9004ba0
 .word 0xf94027a0
-bl _p_241
+bl _p_260
 .word 0xaa0003e2
 .word 0xf9404ba1
 .word 0xaa1a03e0
 .word 0xd2800003
 .word 0xd2800004
-bl _p_236
+bl _p_255
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -13276,12 +13238,12 @@ bl _p_236
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94047a0
-bl _p_242
+bl _p_261
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xd2800000
 .word 0xd2800003
-bl _p_243
+bl _p_262
 .loc 6 174 0
 .word 0x91002314
 .word 0xb9802ae0
@@ -13298,8 +13260,8 @@ bl _p_243
 .word 0xeb1e035f
 .word 0x54000320
 .word 0xf94027a0
-bl _p_244
-bl _p_233
+bl _p_263
+bl _p_252
 .word 0xb9802ae1
 .word 0x8b0102c1
 .word 0xf9004ba1
@@ -13309,7 +13271,7 @@ bl _p_233
 .word 0xf9400ee0
 .word 0xf94012e0
 .word 0xf94027a0
-bl _p_241
+bl _p_260
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xf9404ba1
@@ -13331,15 +13293,15 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa1403e0
 .word 0xaa1a03e1
 .word 0xd2800003
-bl _p_245
+bl _p_264
 .loc 6 177 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1248]
+ldr x0, [x16, #1256]
 .word 0xf90043a0
 .word 0xf94027a0
-bl _p_246
+bl _p_265
 .word 0xaa0003e2
 .word 0xf94043a1
 .word 0xd10043ff
@@ -13348,14 +13310,14 @@ bl _p_246
 .word 0xf9000095
 .word 0xf94023a0
 .word 0xd2800003
-bl _p_236
+bl _p_255
 .loc 6 178 0
 .word 0x1400000c
 .word 0xf9002fa0
 .word 0xf9402fa0
 .loc 6 181 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 182 0
 bl _p_27
 .word 0xf9003fa0
@@ -13391,11 +13353,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1256]
+ldr x15, [x16, #1264]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_248
+bl _p_267
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13419,11 +13381,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1264]
+ldr x15, [x16, #1272]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_249
+bl _p_268
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13462,11 +13424,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pa
 .word 0xf9401400
 .word 0xf90027a0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13478,19 +13440,23 @@ bl _p_15
 .word 0xf90037a0
 .loc 6 315 0
 .word 0x910143a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_250
+bl _p_269
 .loc 6 317 0
-.word 0x94000002
+.word 0xf9003bbf
+.word 0x94000005
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf90043be
+.word 0xf90047be
 .loc 6 320 0
 .word 0x910143a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf94043be
+.word 0xf94047be
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -13530,11 +13496,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pa
 .word 0xf9401400
 .word 0xf90027a0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13546,19 +13512,23 @@ bl _p_15
 .word 0xf90037a0
 .loc 6 315 0
 .word 0x910143a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_251
+bl _p_270
 .loc 6 317 0
-.word 0x94000002
+.word 0xf9003bbf
+.word 0x94000005
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf90043be
+.word 0xf90047be
 .loc 6 320 0
 .word 0x910143a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf94043be
+.word 0xf94047be
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -13570,24 +13540,24 @@ Lme_f2:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_FromResult_TResult_INT_TResult_INT
 System_Threading_Tasks_Task_FromResult_TResult_INT_TResult_INT:
-.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
-.loc 7 5532 0 prologue_end
+.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/Task.cs"
+.loc 7 5539 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_252
+bl _p_271
 .word 0x3980b410
 .word 0xb5000050
 bl _p_1
 .word 0xf9400fa0
-bl _p_252
+bl _p_271
 .word 0xd2800a01
 bl _p_2
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_253
+bl _p_272
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf90013a0
@@ -13616,11 +13586,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1272]
+ldr x15, [x16, #1280]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_254
+bl _p_273
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13644,11 +13614,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1280]
+ldr x15, [x16, #1288]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_255
+bl _p_274
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13691,11 +13661,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_An
 .word 0xf9401c00
 .word 0xf9002fa0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13707,19 +13677,23 @@ bl _p_15
 .word 0xf9003fa0
 .loc 6 315 0
 .word 0x910183a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_256
+bl _p_275
 .loc 6 317 0
-.word 0x94000002
+.word 0xf90043bf
+.word 0x94000005
+.word 0xf94043a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf9004bbe
+.word 0xf9004fbe
 .loc 6 320 0
 .word 0x910183a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf9404bbe
+.word 0xf9404fbe
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -13763,11 +13737,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_An
 .word 0xf9401c00
 .word 0xf9002fa0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13779,19 +13753,23 @@ bl _p_15
 .word 0xf9003fa0
 .loc 6 315 0
 .word 0x910183a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_257
+bl _p_276
 .loc 6 317 0
-.word 0x94000002
+.word 0xf90043bf
+.word 0x94000005
+.word 0xf94043a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf9004bbe
+.word 0xf9004fbe
 .loc 6 320 0
 .word 0x910183a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf9404bbe
+.word 0xf9404fbe
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -13816,11 +13794,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1288]
+ldr x15, [x16, #1296]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_258
+bl _p_277
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13844,11 +13822,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_259
+bl _p_278
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -13891,11 +13869,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_An
 .word 0xf9401c00
 .word 0xf9002fa0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13907,19 +13885,23 @@ bl _p_15
 .word 0xf9003fa0
 .loc 6 315 0
 .word 0x910183a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_260
+bl _p_279
 .loc 6 317 0
-.word 0x94000002
+.word 0xf90043bf
+.word 0x94000005
+.word 0xf94043a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf9004bbe
+.word 0xf9004fbe
 .loc 6 320 0
 .word 0x910183a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf9404bbe
+.word 0xf9404fbe
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -13963,11 +13945,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_An
 .word 0xf9401c00
 .word 0xf9002fa0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_118
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -13979,19 +13961,23 @@ bl _p_15
 .word 0xf9003fa0
 .loc 6 315 0
 .word 0x910183a0
-bl _p_227
+bl _p_246
 .loc 6 316 0
 .word 0xf9400fa0
-bl _p_261
+bl _p_280
 .loc 6 317 0
-.word 0x94000002
+.word 0xf90043bf
+.word 0x94000005
+.word 0xf94043a0
+.word 0xb4000040
+bl _p_217
 .word 0x14000006
-.word 0xf9004bbe
+.word 0xf9004fbe
 .loc 6 320 0
 .word 0x910183a0
-bl _p_229
+bl _p_248
 .loc 6 321 0
-.word 0xf9404bbe
+.word 0xf9404fbe
 .word 0xd61f03c0
 .loc 6 322 0
 .word 0x910003bf
@@ -14016,11 +14002,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1304]
+ldr x15, [x16, #1312]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_262
+bl _p_281
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -14044,11 +14030,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_Sy
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1312]
+ldr x15, [x16, #1320]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_263
+bl _p_282
 .loc 6 361 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -14063,7 +14049,7 @@ b System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-.loc 2 215 0 prologue_end
+.loc 2 218 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -14083,11 +14069,11 @@ ldr x3, [x16, #16]
 .word 0x8b030042
 .word 0xd280003e
 .word 0x3900005e
-.loc 2 216 0
+.loc 2 219 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 2 217 0
+.loc 2 220 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -14101,7 +14087,7 @@ b System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Thread
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
 System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL:
-.file 8 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
+.file 8 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
 .loc 8 317 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -14149,10 +14135,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_Sys
 .word 0x9100e3a0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_264
+bl _p_283
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_265
+bl _p_284
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -14191,7 +14177,7 @@ Lme_100:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-.file 9 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
+.file 9 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
 .loc 9 131 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -14224,7 +14210,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -14250,7 +14236,7 @@ ldr x1, [x16, #1160]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_145
+bl _p_163
 .loc 9 135 0
 .word 0xf94013a1
 .word 0xf94017a0
@@ -14270,7 +14256,7 @@ ldr x2, [x16, #16]
 .loc 9 136 0
 .word 0xf94013a0
 .word 0xf94027a1
-bl _p_142
+bl _p_160
 .loc 9 137 0
 .word 0xa9415fb6
 .word 0x910003bf
@@ -14280,8 +14266,8 @@ bl _p_142
 Lme_101:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -14292,8 +14278,8 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor:
 Lme_102:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -14330,15 +14316,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -14347,9 +14333,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -14368,7 +14354,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1328]
+ldr x0, [x16, #1336]
 .word 0xd2800801
 bl _p_2
 .word 0x9100e3a1
@@ -14380,18 +14366,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf9004ba0
@@ -14417,7 +14403,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_138
+bl _p_156
 .loc 4 93 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -14438,7 +14424,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_139
+bl _p_157
 .loc 4 99 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -14459,7 +14445,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94017a3
-bl _p_140
+bl _p_158
 .loc 4 106 0
 .word 0xf9400ba0
 .word 0x91012000
@@ -14487,7 +14473,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_S
 .word 0x394063a1
 .word 0xb98033a2
 .word 0xf9401fa3
-bl _p_140
+bl _p_158
 .loc 4 112 0
 .word 0x394063a0
 .word 0x350000a0
@@ -14520,14 +14506,14 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xd2800004
 .word 0xd2800005
 .word 0xd2800006
-bl _p_268
+bl _p_287
 .loc 4 164 0
 .word 0xd280003e
 .word 0xb90033be
 .loc 4 165 0
 .word 0x9100c3a1
 .word 0xf9400ba0
-bl _p_142
+bl _p_160
 .loc 4 166 0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -14568,7 +14554,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -14591,14 +14577,14 @@ ldr x1, [x16, #1160]
 .word 0xb98043a5
 .word 0xd2800006
 .word 0xd2800007
-bl _p_269
+bl _p_288
 .loc 4 325 0
 .word 0xd280003e
 .word 0xb9004bbe
 .loc 4 326 0
 .word 0x910123a1
 .word 0xf94013a0
-bl _p_142
+bl _p_160
 .loc 4 327 0
 .word 0xa94167b8
 .word 0x910003bf
@@ -14628,11 +14614,11 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb9803ba4
 .word 0xb98043a5
 .word 0xf94027a6
-bl _p_268
+bl _p_287
 .loc 4 336 0
 .word 0xf9400ba0
 .word 0xf9402ba1
-bl _p_142
+bl _p_160
 .loc 4 337 0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -14661,7 +14647,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_145
+bl _p_163
 .loc 4 354 0
 .word 0xb98043a0
 .word 0xd281001e
@@ -14672,16 +14658,16 @@ bl _p_145
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 4 356 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf9002ba0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -14712,11 +14698,11 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb9804ba5
 .word 0xb98053a6
 .word 0xf9402fa7
-bl _p_269
+bl _p_288
 .loc 4 365 0
 .word 0xf9400fa0
 .word 0xf9400381
-bl _p_142
+bl _p_160
 .loc 4 366 0
 .word 0xf9400bbc
 .word 0x910003bf
@@ -14747,7 +14733,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_145
+bl _p_163
 .loc 4 384 0
 .word 0xb9804ba0
 .word 0xd281001e
@@ -14758,16 +14744,16 @@ bl _p_145
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 4 386 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -14805,7 +14791,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_Sys
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf94033a5
@@ -14816,7 +14802,7 @@ bl _p_2
 .word 0xb98033a4
 .word 0xf94023a6
 .word 0xf94027a7
-bl _p_270
+bl _p_289
 .word 0xf9402fa2
 .loc 4 412 0
 .word 0xaa0203e0
@@ -14824,41 +14810,41 @@ bl _p_270
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_149
+bl _p_167
 .word 0xf9402ba0
 .loc 4 413 0
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 4 397 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 401 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 406 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf9002ba0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -14901,7 +14887,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_Sys
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf9403ba6
@@ -14914,7 +14900,7 @@ bl _p_2
 .word 0xf94027a7
 .word 0xf9402ba9
 .word 0xf90003e9
-bl _p_271
+bl _p_290
 .word 0xf94037a2
 .loc 4 436 0
 .word 0xaa0203e0
@@ -14922,41 +14908,41 @@ bl _p_271
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_149
+bl _p_167
 .word 0xf94033a0
 .loc 4 437 0
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 4 422 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 426 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 4 430 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_15
@@ -14974,7 +14960,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult
 .word 0xf90013a1
 .word 0xb9804740
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -14990,7 +14976,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
 .word 0x34000420
 .loc 4 474 0
@@ -15004,7 +14990,7 @@ bl _p_152
 .word 0x91011340
 .word 0xf9001fa0
 .word 0xb9804741
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xd280001e
 .word 0xf2a0201e
@@ -15012,22 +14998,22 @@ bl _p_152
 .word 0x885f7c10
 .word 0x8811fc01
 .word 0x35ffffd1
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa1003e0
 .loc 4 485 0
 .word 0xf9401f40
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xaa0003f9
 .loc 4 486 0
 .word 0xb4000080
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_153
+bl _p_171
 .loc 4 488 0
 .word 0xaa1a03e0
-bl _p_154
+bl _p_172
 .loc 4 490 0
 .word 0xd2800020
 .word 0x14000002
@@ -15037,7 +15023,7 @@ bl _p_154
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_10
 
@@ -15057,7 +15043,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSet
 .loc 4 509 0
 .word 0xaa1a03e0
 .word 0xf9400fa1
-bl _p_272
+bl _p_291
 .loc 4 513 0
 .word 0x1400000f
 .loc 4 516 0
@@ -15067,13 +15053,13 @@ bl _p_272
 .loc 4 517 0
 .word 0xb9804740
 .word 0xf9001fa0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401fa0
 .word 0xd280001e
 .word 0xf2a0201e
 .word 0x2a1e0000
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xb9004740
 .loc 4 519 0
@@ -15094,7 +15080,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
 .word 0xf94013a0
 .word 0xb9804400
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a2201e
@@ -15115,7 +15101,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
 .word 0xf90017a0
 .word 0xf94013a0
 .word 0xd2800021
-bl _p_273
+bl _p_292
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -15155,7 +15141,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCor
 .word 0xf9001fbf
 .word 0xb9804720
 .word 0xf90023a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94023a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -15170,20 +15156,20 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCor
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf9401ba2
-bl _p_157
+bl _p_175
 .loc 4 559 0
 .word 0x3940a3a0
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_158
+bl _p_176
 .loc 4 562 0
 .word 0xaa1903e0
-bl _p_159
+bl _p_177
 .word 0x53001c00
 .word 0x35000080
 .word 0xaa1903e0
 .word 0xd2800021
-bl _p_160
+bl _p_178
 .loc 4 567 0
 .word 0x91012320
 .word 0x39800000
@@ -15205,30 +15191,32 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetExcept
 .word 0xa90167b8
 .word 0xaa0003f9
 .word 0xf90013a1
-.word 0xd2800018
+.word 0xd2800000
+.word 0x53001c18
 .loc 4 600 0
 .word 0xaa1903e0
 .word 0xd2800021
-bl _p_161
+bl _p_179
 .loc 4 601 0
 .word 0xaa1903e0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 4 604 0
 .word 0xaa1903e0
 .word 0xf94013a1
-bl _p_162
+bl _p_180
 .loc 4 605 0
 .word 0xaa1903e0
 .word 0xd2800001
-bl _p_163
+bl _p_181
 .loc 4 606 0
-.word 0xd2800038
+.word 0xd2800020
+.word 0x53001c18
 .loc 4 609 0
 .word 0xaa1803e0
 .word 0xa94167b8
@@ -15249,7 +15237,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCancel
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xd2800002
-bl _p_274
+bl _p_293
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -15267,26 +15255,28 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCancel
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf9001ba2
-.word 0xd2800018
+.word 0xd2800000
+.word 0x53001c18
 .loc 4 648 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_152
+bl _p_170
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 4 652 0
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf9401ba2
-bl _p_165
+bl _p_183
 .loc 4 653 0
 .word 0xf9400fa0
-bl _p_166
+bl _p_184
 .loc 4 654 0
-.word 0xd2800038
+.word 0xd2800020
+.word 0x53001c18
 .loc 4 657 0
 .word 0xaa1803e0
 .word 0xf9400bb8
@@ -15305,7 +15295,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Factory:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1344]
+ldr x0, [x16, #1352]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -15333,7 +15323,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_InnerInvoke:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1352]
+ldr x1, [x16, #1360]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -15358,12 +15348,12 @@ ldr x1, [x16, #1352]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1360]
+ldr x1, [x16, #1368]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1368]
-bl _p_170
+ldr x2, [x16, #1376]
+bl _p_188
 .word 0xaa0003f9
 .loc 4 684 0
 .word 0xaa1903e0
@@ -15401,9 +15391,9 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetAwaiter:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1376]
+ldr x15, [x16, #1384]
 .word 0xf94013a1
-bl _p_275
+bl _p_294
 .word 0xf94017a0
 .word 0xf9000ba0
 .word 0xf9400ba0
@@ -15428,10 +15418,10 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ConfigureAwa
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1384]
+ldr x15, [x16, #1392]
 .word 0xf94013a1
 .word 0x3940a3a2
-bl _p_276
+bl _p_295
 .word 0xf9401ba0
 .word 0xf9000ba0
 .word 0xf9401fa0
@@ -15456,7 +15446,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xd280003e
 .word 0xb9002bbe
 .loc 4 738 0
-bl _p_176
+bl _p_194
 .word 0xaa0003e2
 .word 0xf90013bf
 .word 0x9100a3a5
@@ -15464,7 +15454,7 @@ bl _p_176
 .word 0xf9400fa1
 .word 0xf94013a3
 .word 0xd2800004
-bl _p_277
+bl _p_296
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -15491,7 +15481,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf94013a2
 .word 0xf94017a3
 .word 0xd2800004
-bl _p_277
+bl _p_296
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -15519,7 +15509,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0xf9401fa2
 .word 0xf94013a3
 .word 0xb98033a4
-bl _p_277
+bl _p_296
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
@@ -15550,7 +15540,7 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith
 .word 0x910123a1
 .word 0x910143a2
 .word 0xb98043a0
-bl _p_180
+bl _p_198
 .loc 4 901 0
 .word 0xb9804ba0
 .word 0xf90037a0
@@ -15559,7 +15549,7 @@ bl _p_180
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xd2800a01
 bl _p_2
 .word 0xf94037a4
@@ -15569,7 +15559,7 @@ bl _p_2
 .word 0xf94013a2
 .word 0xd2800003
 .word 0xaa1a03e6
-bl _p_278
+bl _p_297
 .word 0xf94033a0
 .word 0xaa0003fa
 .loc 4 909 0
@@ -15578,7 +15568,7 @@ bl _p_278
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xb98043a4
-bl _p_183
+bl _p_201
 .loc 4 911 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -15586,20 +15576,20 @@ bl _p_183
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 4 891 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2981d60
+.word 0xd298fb00
 .word 0xf2a00020
 .loc 4 886 0
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -15615,35 +15605,38 @@ System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__cctor:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1400]
+ldr x0, [x16, #1408]
 .word 0xd2800501
 bl _p_2
 .word 0xf9000fa0
-bl _p_279
+bl _p_298
 .word 0xf9400fa1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1344]
+ldr x0, [x16, #1352]
 .word 0xf9000001
 .loc 4 87 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1408]
+ldr x0, [x16, #1416]
 .word 0xf9400000
 .word 0xf9000ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000560
+.word 0x54000620
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf9400ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000480
 .word 0xf9001020
 .word 0x91008022
 .word 0xd349fc42
@@ -15660,17 +15653,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1424]
+ldr x0, [x16, #1432]
 .word 0xf9001420
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1432]
+ldr x0, [x16, #1440]
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1440]
+ldr x0, [x16, #1448]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -15679,12 +15672,15 @@ ldr x0, [x16, #1440]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1448]
+ldr x0, [x16, #1456]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -15703,7 +15699,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xd2800002
 .word 0xd2800003
 .word 0xd2800004
-bl _p_280
+bl _p_299
 .loc 5 95 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -15724,7 +15720,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_194
+bl _p_212
 .loc 5 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -15773,11 +15769,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -15816,7 +15812,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -15835,14 +15831,14 @@ ldr x1, [x16, #1160]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1336]
+ldr x15, [x16, #1344]
 .word 0xaa1703e0
 .word 0xf94013a1
 .word 0xf94017a2
 .word 0xb9803ba3
 .word 0xd2800004
 .word 0xf94023a5
-bl _p_281
+bl _p_300
 .word 0xf9400bb7
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -15882,7 +15878,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -15901,7 +15897,7 @@ ldr x1, [x16, #1160]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1336]
+ldr x15, [x16, #1344]
 .word 0xaa1603e0
 .word 0xf94013a1
 .word 0xf94017a2
@@ -15909,7 +15905,7 @@ ldr x15, [x16, #1336]
 .word 0xb98043a4
 .word 0xd2800005
 .word 0xf94027a6
-bl _p_282
+bl _p_301
 .word 0xf9400bb6
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -15941,12 +15937,12 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 .word 0xb4000199
 .loc 5 550 0
 .word 0x910143a0
-.word 0xf9004fa0
+.word 0xf90053a0
 .word 0xaa1903e0
 .word 0xf9400fa1
 .word 0xf9400f30
 .word 0xd63f0200
-.word 0xf9404fbe
+.word 0xf94053be
 .word 0xf90003c0
 .word 0x398143a0
 .word 0x390183a0
@@ -15960,43 +15956,55 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 .word 0xd63f0200
 .word 0xf94013a0
 .loc 5 556 0
-.word 0x94000018
-.word 0x1400007f
-.word 0xf90053a0
-.word 0xf94053a0
-.loc 5 557 0
-.word 0xf9003ba0
-bl _p_27
-.word 0xf9006fa0
-.word 0xf9406fa0
-.word 0xb4000060
-.word 0xf9406fa0
-bl _p_15
-.word 0x9400000d
-.word 0x14000074
+.word 0xf9003fbf
+.word 0x94000023
+.word 0xf9403fa0
+.word 0xb4000040
+bl _p_217
+.word 0x14000087
 .word 0xf90057a0
 .word 0xf94057a0
-.loc 5 558 0
-.word 0xf90037a0
+.loc 5 557 0
+.word 0xf9003ba0
 bl _p_27
 .word 0xf90073a0
 .word 0xf94073a0
 .word 0xb4000060
 .word 0xf94073a0
 bl _p_15
-.word 0x94000002
+.word 0xf9003fbf
+.word 0x94000014
+.word 0xf9403fa0
+.word 0xb4000040
+bl _p_217
+.word 0x14000078
+.word 0xf9005ba0
+.word 0xf9405ba0
+.loc 5 558 0
+.word 0xf90037a0
+bl _p_27
+.word 0xf90077a0
+.word 0xf94077a0
+.word 0xb4000060
+.word 0xf94077a0
+bl _p_15
+.word 0xf9003fbf
+.word 0x94000005
+.word 0xf9403fa0
+.word 0xb4000040
+bl _p_217
 .word 0x14000069
-.word 0xf9006bbe
+.word 0xf9006fbe
 .loc 5 561 0
 .word 0xf9403ba0
 .word 0xb4000240
 .loc 5 563 0
 .word 0xf94017a3
 .word 0xf9403ba0
-.word 0xf9004ba0
-.word 0xf9404ba0
+.word 0xf9004fa0
+.word 0xf9404fa0
 .word 0xf940001e
-.word 0xf9404ba0
+.word 0xf9404fa0
 .word 0x91022000
 .word 0xf9400000
 .word 0xf9002fa0
@@ -16006,7 +16014,7 @@ bl _p_15
 .word 0xaa0303e0
 .word 0xf94027a1
 .word 0xf940007e
-bl _p_274
+bl _p_293
 .loc 5 564 0
 .word 0x14000053
 .loc 5 565 0
@@ -16017,18 +16025,18 @@ bl _p_274
 .word 0xf94037a1
 .word 0xaa0203e0
 .word 0xf940005e
-bl _p_283
+bl _p_302
 .word 0x53001c00
 .loc 5 568 0
 .word 0x34000940
 .word 0xf94037a0
-.word 0xf90043a0
-.word 0xf94043a0
 .word 0xf90047a0
-.word 0xf94043a0
+.word 0xf94047a0
+.word 0xf9004ba0
+.word 0xf94047a0
 .word 0xeb1f001f
 .word 0x540001a0
-.word 0xf94043a0
+.word 0xf94047a0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -16036,55 +16044,55 @@ bl _p_283
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1168]
+ldr x1, [x16, #1176]
 .word 0xeb01001f
 .word 0x54000060
-.word 0xf90047bf
+.word 0xf9004bbf
 .word 0x14000001
-.word 0xf94047a0
+.word 0xf9404ba0
 .word 0xb40006a0
 .loc 5 570 0
 .word 0xf94017a0
 .word 0xf9401c00
 .word 0xf9007ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9407ba0
 .word 0xf9401002
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_202
+bl _p_221
 .loc 5 572 0
 .word 0x14000029
 .loc 5 575 0
-.word 0x3901e3bf
-.word 0x3941e3a0
+.word 0x390203bf
+.word 0x394203a0
 .word 0x34000140
 .loc 5 576 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800022
-bl _p_204
+bl _p_223
 .loc 5 578 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x340000e0
 .loc 5 580 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
-bl _p_205
+bl _p_224
 .loc 5 582 0
 .word 0x3940c3a0
 .word 0x34000120
@@ -16095,7 +16103,7 @@ bl _p_205
 .word 0xaa0203e0
 .word 0xf94023a1
 .word 0xf940005e
-bl _p_272
+bl _p_291
 .loc 5 585 0
 .word 0x14000008
 .loc 5 588 0
@@ -16105,9 +16113,9 @@ bl _p_272
 .word 0xaa0203e0
 .word 0xf9401fa1
 .word 0xf940005e
-bl _p_284
+bl _p_303
 .loc 5 593 0
-.word 0xf9406bbe
+.word 0xf9406fbe
 .word 0xd61f03c0
 .loc 5 594 0
 .word 0xf9400bb9
@@ -16132,12 +16140,12 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1400]
+ldr x15, [x16, #1408]
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xd2800002
 .word 0xf94017a3
-bl _p_285
+bl _p_304
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -16162,7 +16170,7 @@ System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromA
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1456]
+ldr x0, [x16, #1464]
 .word 0xd2800501
 bl _p_2
 .word 0xf90023a0
@@ -16197,31 +16205,31 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 5 816 0
-.word 0xb40020b6
+.word 0xb4002176
 .loc 5 819 0
 .word 0xf94023a0
 .word 0xf9400800
 .word 0xb5000080
 .word 0xf94023a0
 .word 0xf9400c00
-.word 0xb4001ee0
+.word 0xb4001fa0
 .loc 5 824 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_212
+bl _p_231
 .loc 5 826 0
 .word 0xf94023a0
 .word 0xf90047a0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf90043a0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_286
+bl _p_305
 .word 0xf94043a0
 .word 0xf94047a1
 .word 0xf9001020
@@ -16244,25 +16252,25 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x340000a0
 .loc 5 833 0
 .word 0xf94023a0
 .word 0xf9401000
-bl _p_215
+bl _p_234
 .word 0x14000001
 .loc 5 842 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1184]
+ldr x0, [x16, #1192]
 .word 0x39400000
-.word 0x34000e40
+.word 0x34000ea0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1464]
+ldr x0, [x16, #1472]
 .word 0xd2800401
 bl _p_2
 .word 0xaa0003fa
@@ -16286,7 +16294,7 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1200]
 .word 0xd2800281
 bl _p_2
 .word 0xf94043a1
@@ -16307,14 +16315,17 @@ ldr x2, [x16, #16]
 .loc 5 847 0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001600
+.word 0x54001720
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x540015a0
 .word 0xf900103a
 .word 0x91008020
 .word 0xd349fc00
@@ -16331,17 +16342,17 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1472]
+ldr x0, [x16, #1480]
 .word 0xf9001420
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1480]
+ldr x0, [x16, #1488]
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1488]
+ldr x0, [x16, #1496]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -16353,25 +16364,25 @@ ldr x0, [x16, #1488]
 .word 0xd63f0200
 .word 0xaa0003f9
 .loc 5 852 0
-.word 0xb4000960
+.word 0xb40009c0
 .word 0xaa1903e0
 .word 0xf9400321
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1216]
+ldr x15, [x16, #1224]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x34000800
+.word 0x34000860
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_220
+bl _p_239
 .word 0x53001c00
-.word 0x34000740
+.word 0x340007a0
 .loc 5 855 0
 .word 0xf9400f40
 .word 0xf9400801
@@ -16382,26 +16393,29 @@ bl _p_220
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1400]
+ldr x15, [x16, #1408]
 .word 0xaa1903e0
 .word 0xd2800004
-bl _p_287
+bl _p_306
 .loc 5 857 0
-.word 0x1400002d
+.word 0x14000030
 .loc 5 861 0
 .word 0xf94023a0
 .word 0xf90043a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000ca0
+.word 0x54000d60
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf94043a0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000bc0
 .word 0xf9001020
 .word 0x91008022
 .word 0xd349fc42
@@ -16418,17 +16432,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1496]
+ldr x0, [x16, #1504]
 .word 0xf9001420
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1504]
+ldr x0, [x16, #1512]
 .word 0xf9002020
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1512]
+ldr x0, [x16, #1520]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -16450,17 +16464,17 @@ ldr x0, [x16, #1512]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800062
-bl _p_204
+bl _p_223
 .loc 5 872 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x34000100
 .loc 5 874 0
@@ -16468,9 +16482,9 @@ ldr x0, [x16, #1176]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_203
+bl _p_222
 .word 0x93407c00
-bl _p_205
+bl _p_224
 .loc 5 878 0
 .word 0xf94023a0
 .word 0xf9401002
@@ -16480,10 +16494,10 @@ bl _p_205
 .word 0xaa0203e0
 .word 0xf9403ba1
 .word 0xf940005e
-bl _p_272
+bl _p_291
 .loc 5 879 0
 .word 0xf94027a0
-bl _p_226
+bl _p_245
 .loc 5 882 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -16493,24 +16507,27 @@ bl _p_226
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 5 820 0
-.word 0xd2982a60
+.word 0xd2990800
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2982760
+.word 0xd2990500
 .word 0xf2a00020
 .loc 5 817 0
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_10
 
@@ -16529,7 +16546,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -16582,11 +16599,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -16669,7 +16686,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_288
+bl _p_307
 .loc 6 486 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -16697,11 +16714,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf90013a0
-bl _p_289
+bl _p_308
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xaa0103f9
@@ -16749,10 +16766,10 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1a03e0
 .word 0xf94013a1
-bl _p_290
+bl _p_309
 .word 0xf9000b40
 .word 0x91004341
 .word 0xd349fc21
@@ -16775,20 +16792,20 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0x39400000
 .word 0x340000c0
 .loc 6 605 0
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_203
+bl _p_222
 .word 0x93407c00
-bl _p_205
+bl _p_224
 .loc 6 608 0
 .word 0xaa1903e0
 .word 0xf94013a1
 .word 0xf940033e
-bl _p_272
+bl _p_291
 .word 0x53001c00
 .word 0x340000a0
 .loc 6 613 0
@@ -16797,11 +16814,11 @@ bl _p_272
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 6 610 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -16849,10 +16866,10 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1903e0
 .word 0xf94013a1
-bl _p_291
+bl _p_310
 .loc 6 638 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -16885,9 +16902,9 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1903e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f8
 .loc 6 661 0
 .word 0xaa1a03f9
@@ -16900,7 +16917,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1520]
+ldr x1, [x16, #1528]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -16910,7 +16927,7 @@ ldr x1, [x16, #1520]
 .word 0xaa1803e0
 .word 0xaa1a03e1
 .word 0xf940031e
-bl _p_283
+bl _p_302
 .word 0x53001c1a
 .word 0x1400000b
 .word 0xf94002fe
@@ -16921,7 +16938,7 @@ bl _p_283
 .word 0xf9401ba1
 .word 0xaa1703e2
 .word 0xf940031e
-bl _p_274
+bl _p_293
 .word 0x53001c1a
 .loc 6 673 0
 .word 0x340001da
@@ -16932,20 +16949,20 @@ bl _p_274
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 6 649 0
-.word 0xd29958e0
+.word 0xd29a3680
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
 .loc 6 675 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_118
+bl _p_136
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
@@ -16970,11 +16987,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1536]
+ldr x1, [x16, #1544]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340004c0
@@ -16982,7 +16999,7 @@ ldr x1, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -16998,7 +17015,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #488]
+ldr x2, [x16, #496]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54003d61
@@ -17008,30 +17025,30 @@ ldr x2, [x16, #488]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1560]
 .word 0xf940001a
 .word 0x14000005
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1560]
+ldr x0, [x16, #1568]
 .word 0xf940001a
 .loc 6 756 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1568]
+ldr x0, [x16, #1576]
 .word 0xaa1a03e0
 .word 0x140001d7
 .loc 6 759 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1576]
+ldr x1, [x16, #1584]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000660
@@ -17039,7 +17056,7 @@ ldr x1, [x16, #1576]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17055,7 +17072,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1584]
+ldr x2, [x16, #1592]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540037a1
@@ -17073,7 +17090,7 @@ ldr x2, [x16, #1584]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1592]
+ldr x0, [x16, #1600]
 .word 0xf9400000
 .word 0x9280001e
 .word 0xf2bffffe
@@ -17091,24 +17108,24 @@ ldr x0, [x16, #1592]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1568]
+ldr x1, [x16, #1576]
 .word 0x1400019c
 .loc 6 773 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1600]
+ldr x1, [x16, #1608]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17124,7 +17141,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1608]
+ldr x2, [x16, #1616]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54003041
@@ -17133,18 +17150,18 @@ ldr x2, [x16, #1608]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1616]
+ldr x1, [x16, #1624]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17160,7 +17177,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1624]
+ldr x2, [x16, #1632]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002c41
@@ -17169,18 +17186,18 @@ ldr x2, [x16, #1624]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1632]
+ldr x1, [x16, #1640]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17196,7 +17213,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1640]
+ldr x2, [x16, #1648]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002841
@@ -17205,18 +17222,18 @@ ldr x2, [x16, #1640]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1648]
+ldr x1, [x16, #1656]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17232,7 +17249,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1656]
+ldr x2, [x16, #1664]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002441
@@ -17241,18 +17258,18 @@ ldr x2, [x16, #1656]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1664]
+ldr x1, [x16, #1672]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000620
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1672]
+ldr x0, [x16, #1680]
 .word 0xb9800001
 .word 0xb90043a1
 .word 0xb9800401
@@ -17264,7 +17281,7 @@ ldr x0, [x16, #1672]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17280,7 +17297,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1680]
+ldr x2, [x16, #1688]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001ee1
@@ -17297,24 +17314,24 @@ ldr x2, [x16, #1680]
 .word 0xf94027a1
 .word 0xf9401ba2
 .word 0xf9401fa3
-bl _p_292
+bl _p_311
 .word 0x53001c00
 .word 0x350019e0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1688]
+ldr x1, [x16, #1696]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17330,7 +17347,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1696]
+ldr x2, [x16, #1704]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001921
@@ -17339,18 +17356,18 @@ ldr x2, [x16, #1696]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1704]
+ldr x1, [x16, #1712]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17366,7 +17383,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1712]
+ldr x2, [x16, #1720]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001521
@@ -17375,18 +17392,18 @@ ldr x2, [x16, #1712]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1720]
+ldr x1, [x16, #1728]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17402,7 +17419,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1728]
+ldr x2, [x16, #1736]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001121
@@ -17411,18 +17428,18 @@ ldr x2, [x16, #1728]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1736]
+ldr x1, [x16, #1744]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000300
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0x91004001
@@ -17438,7 +17455,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1744]
+ldr x2, [x16, #1752]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000d21
@@ -17447,11 +17464,11 @@ ldr x2, [x16, #1744]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1752]
+ldr x1, [x16, #1760]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340003e0
@@ -17461,7 +17478,7 @@ ldr x1, [x16, #1752]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e1
@@ -17479,7 +17496,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1760]
+ldr x3, [x16, #1768]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x54000881
@@ -17490,11 +17507,11 @@ ldr x3, [x16, #1760]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1768]
+ldr x1, [x16, #1776]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000540
@@ -17504,7 +17521,7 @@ ldr x1, [x16, #1768]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1544]
+ldr x0, [x16, #1552]
 .word 0xd2800221
 bl _p_2
 .word 0xaa0003e1
@@ -17522,7 +17539,7 @@ bl _p_2
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x3, [x16, #1776]
+ldr x3, [x16, #1784]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x540003a1
@@ -17534,7 +17551,7 @@ ldr x3, [x16, #1776]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1784]
+ldr x0, [x16, #1792]
 .word 0xf9400000
 .word 0x14000010
 .loc 6 789 0
@@ -17543,28 +17560,28 @@ ldr x0, [x16, #1784]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1784]
+ldr x0, [x16, #1792]
 .word 0xf9400000
 .word 0x1400000a
 .loc 6 795 0
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf9002ba0
 .word 0xf94013a1
-bl _p_293
+bl _p_312
 .word 0xf9402ba0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -17584,14 +17601,14 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1792]
+ldr x15, [x16, #1800]
 .word 0xf9400ba0
-bl _p_294
+bl _p_313
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1784]
+ldr x0, [x16, #1792]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -17626,15 +17643,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101c3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -17643,9 +17660,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -17666,7 +17683,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1800]
+ldr x0, [x16, #1808]
 .word 0xd2800901
 bl _p_2
 .word 0x9100e3a1
@@ -17678,18 +17695,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403ba2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf9003fa0
 .word 0xf9403fa0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf9004fa0
@@ -17720,7 +17737,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_TResult_INT:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_140
+bl _p_158
 .loc 4 106 0
 .word 0xf9400ba0
 .word 0xb9801ba1
@@ -17759,15 +17776,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -17776,9 +17793,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -17797,7 +17814,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1808]
+ldr x0, [x16, #1816]
 .word 0xd2800801
 bl _p_2
 .word 0x9100e3a1
@@ -17809,18 +17826,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf9004ba0
@@ -17865,15 +17882,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101a3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -17882,9 +17899,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -17903,7 +17920,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1816]
+ldr x0, [x16, #1824]
 .word 0xd2800801
 bl _p_2
 .word 0x9100e3a1
@@ -17915,18 +17932,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf94037a2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf9003ba0
 .word 0xf9403ba0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf9004ba0
@@ -17971,15 +17988,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101e3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -17988,9 +18005,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -18013,7 +18030,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1824]
+ldr x0, [x16, #1832]
 .word 0xd2800a01
 bl _p_2
 .word 0x9100e3a1
@@ -18025,18 +18042,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf90043a0
 .word 0xf94043a0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf90053a0
@@ -18081,15 +18098,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101e3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -18098,9 +18115,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -18123,7 +18140,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1832]
+ldr x0, [x16, #1840]
 .word 0xd2800a01
 bl _p_2
 .word 0x9100e3a1
@@ -18135,18 +18152,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf90043a0
 .word 0xf94043a0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf90053a0
@@ -18191,15 +18208,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101e3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -18208,9 +18225,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -18233,7 +18250,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1840]
+ldr x0, [x16, #1848]
 .word 0xd2800a01
 bl _p_2
 .word 0x9100e3a1
@@ -18245,18 +18262,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf90043a0
 .word 0xf94043a0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf90053a0
@@ -18301,15 +18318,15 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa1703f6
 .word 0xaa0003f7
 .word 0x9101e3a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_240
+bl _p_259
 .word 0xaa0003f7
 .loc 6 547 0
 .word 0xf9400300
@@ -18318,9 +18335,9 @@ bl _p_240
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1320]
+ldr x15, [x16, #1328]
 .word 0xaa1803e0
-bl _p_266
+bl _p_285
 .word 0xaa0003f6
 .loc 6 556 0
 .word 0xf9401ba0
@@ -18343,7 +18360,7 @@ bl _p_266
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1848]
+ldr x0, [x16, #1856]
 .word 0xd2800a01
 bl _p_2
 .word 0x9100e3a1
@@ -18355,18 +18372,18 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9403fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_245
+bl _p_264
 .loc 6 559 0
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_267
+bl _p_286
 .loc 6 560 0
 .word 0x1400000c
 .word 0xf90043a0
 .word 0xf94043a0
 .loc 6 563 0
 .word 0xd2800001
-bl _p_247
+bl _p_266
 .loc 6 564 0
 bl _p_27
 .word 0xf90053a0
@@ -18434,7 +18451,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_VoidTaskResult_invo
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x350007c0
 .word 0x14000001
@@ -18498,11 +18515,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1903e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffc1
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -18522,7 +18539,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_VoidTaskResu
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000840
 .word 0x14000001
@@ -18590,11 +18607,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffbd
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -18650,7 +18667,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -18680,7 +18697,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800023
-bl _p_295
+bl _p_314
 .loc 8 337 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -18705,7 +18722,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf9400fa1
 .word 0xd2800022
 .word 0xd2800003
-bl _p_295
+bl _p_314
 .loc 8 348 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -18726,7 +18743,7 @@ System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskRes
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_296
+bl _p_315
 .loc 8 358 0
 .word 0xf94013a0
 .word 0xf9400000
@@ -18762,10 +18779,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1856]
+ldr x15, [x16, #1864]
 .word 0xf9400fa1
 .word 0x394083a2
-bl _p_297
+bl _p_316
 .word 0xf9401fa0
 .word 0xf90017a0
 .word 0xf94023a0
@@ -18873,7 +18890,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -18903,7 +18920,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402022
 .word 0xf9400fa1
 .word 0xd2800023
-bl _p_295
+bl _p_314
 .loc 8 515 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -18928,7 +18945,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0x39402022
 .word 0xf9400fa1
 .word 0xd2800003
-bl _p_295
+bl _p_314
 .loc 8 526 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -18949,7 +18966,7 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_296
+bl _p_315
 .loc 8 536 0
 .word 0xf94013a0
 .word 0xf9400000
@@ -18978,7 +18995,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -19029,11 +19046,11 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
@@ -19074,7 +19091,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1160]
+ldr x1, [x16, #1168]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -19100,7 +19117,7 @@ ldr x1, [x16, #1160]
 .word 0xb98033a5
 .word 0xb9803ba6
 .word 0xd2800007
-bl _p_145
+bl _p_163
 .loc 9 135 0
 .word 0xf94013a0
 .word 0xf9002680
@@ -19119,7 +19136,7 @@ ldr x2, [x16, #16]
 .loc 9 136 0
 .word 0xaa1403e0
 .word 0xf94023a1
-bl _p_142
+bl _p_160
 .loc 9 137 0
 .word 0xf9400bb4
 .word 0xf9400fb7
@@ -19144,18 +19161,18 @@ System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_V
 .loc 9 152 0
 .word 0xaa1903e0
 .word 0xf940033e
-bl _p_158
+bl _p_176
 .loc 9 156 0
 .word 0xf9400b40
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1864]
+ldr x1, [x16, #1872]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1872]
-bl _p_170
+ldr x2, [x16, #1880]
+bl _p_188
 .word 0xaa0003f8
 .loc 9 157 0
 .word 0xaa1803e0
@@ -19172,12 +19189,12 @@ bl _p_170
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1880]
+ldr x1, [x16, #1888]
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x2, [x16, #1888]
-bl _p_170
+ldr x2, [x16, #1896]
+bl _p_188
 .word 0xaa0003f8
 .loc 9 163 0
 .word 0xaa1803e0
@@ -19205,14 +19222,14 @@ System_Threading_Tasks_Task_1__c_System_Threading_Tasks_VoidTaskResult__cctor:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1896]
+ldr x0, [x16, #1904]
 .word 0xd2800201
 bl _p_2
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1408]
+ldr x0, [x16, #1416]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -19234,7 +19251,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xb9400000
 .word 0x35000840
 .word 0x14000001
@@ -19302,19 +19319,19 @@ ldr x0, [x16, #1152]
 .word 0xd65f03c0
 .word 0xaa1803e0
 bl _p_15
-bl _p_121
+bl _p_139
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffbd
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_10
 
 Lme_159:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -19325,8 +19342,8 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks
 Lme_15a:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult:
 .loc 5 863 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -19339,10 +19356,10 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1400]
+ldr x15, [x16, #1408]
 .word 0xf9400fa0
 .word 0xd2800024
-bl _p_287
+bl _p_306
 .loc 5 864 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -19351,8 +19368,8 @@ bl _p_287
 Lme_15b:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -19363,8 +19380,8 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks
 Lme_15c:
 .text
 	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult:
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult:
 .loc 5 849 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -19374,7 +19391,7 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks
 .word 0xf9400b21
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_220
+bl _p_239
 .word 0x53001c00
 .word 0x340001a0
 .loc 5 850 0
@@ -19387,10 +19404,10 @@ bl _p_220
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x15, [x16, #1400]
+ldr x15, [x16, #1408]
 .word 0xf9400fa0
 .word 0xd2800024
-bl _p_287
+bl _p_306
 .loc 5 851 0
 .word 0xf9400bb9
 .word 0x910003bf
@@ -19410,7 +19427,7 @@ System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Thread
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x0, [x16, #1336]
+ldr x0, [x16, #1344]
 .word 0xd2800a01
 bl _p_2
 .word 0xf9001ba0
@@ -19418,7 +19435,7 @@ bl _p_2
 .word 0xf9400ba2
 .word 0xd2880003
 .word 0xf94013a4
-bl _p_298
+bl _p_317
 .word 0xf9401ba0
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -19449,7 +19466,7 @@ System_Threading_Tasks_Task_1__c_System_Threading_Tasks_VoidTaskResult___cctorb_
 .word 0xaa0103fa
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_299
+bl _p_318
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -19459,7 +19476,7 @@ bl _p_299
 
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x1, [x16, #1904]
+ldr x1, [x16, #1912]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540000c1
@@ -19468,7 +19485,7 @@ ldr x1, [x16, #1904]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_10
 
@@ -19740,8 +19757,8 @@ bl System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 bl System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
 bl System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL_bool
 bl System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
-bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
+bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 bl System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
 bl System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
 bl System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
@@ -19828,10 +19845,10 @@ bl method_addresses
 bl method_addresses
 bl method_addresses
 bl wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_invoke_TResult_T_System_IAsyncResult
-bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
-bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
 bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
 bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
+bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
+bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
 bl System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
 bl System_Threading_Tasks_Task_1__c_System_Threading_Tasks_VoidTaskResult__ctor
 bl System_Threading_Tasks_Task_1__c_System_Threading_Tasks_VoidTaskResult___cctorb__64_0_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task
@@ -19933,45 +19950,43 @@ bl ut_336
 unwind_info:
 
 	.byte 0,13,12,31,0,68,14,16,157,2,158,1,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8
-	.byte 13,12,31,0,68,14,32,157,4,158,3,68,13,29,14,12,31,0,68,14,176,1,157,22,158,21,68,13,29,14,12,31
-	.byte 0,68,14,192,1,157,24,158,23,68,13,29,13,12,31,0,68,14,64,157,8,158,7,68,13,29,14,12,31,0,68,14
-	.byte 224,1,157,28,158,27,68,13,29,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,154,14,17,12,31,0,68
+	.byte 13,12,31,0,68,14,32,157,4,158,3,68,13,29,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,14,12,31
+	.byte 0,68,14,144,1,157,18,158,17,68,13,29,13,12,31,0,68,14,64,157,8,158,7,68,13,29,14,12,31,0,68,14
+	.byte 160,1,157,20,158,19,68,13,29,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,154,14,17,12,31,0,68
 	.byte 14,144,1,157,18,158,17,68,13,29,68,154,16,28,12,31,0,68,14,64,157,8,158,7,68,13,29,68,149,6,150,5
 	.byte 68,151,4,152,3,68,153,2,154,1,13,12,31,0,68,14,48,157,6,158,5,68,13,29,16,12,31,0,68,14,32,157
 	.byte 4,158,3,68,13,29,68,154,2,13,12,31,0,68,14,96,157,12,158,11,68,13,29,13,12,31,0,68,14,112,157,14
 	.byte 158,13,68,13,29,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,13,12,31,0,68,14,80,157,10,158
 	.byte 9,68,13,29,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,18,12,31,0,68,14,32,157,4,158,3
-	.byte 68,13,29,68,153,2,154,1,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,14,12
-	.byte 31,0,68,14,128,1,157,16,158,15,68,13,29,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3
-	.byte 16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68
-	.byte 152,4,19,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3,22,12,31,0,68,14,144,1,157,18
-	.byte 158,17,68,13,29,68,152,16,153,15,68,154,14,21,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3
-	.byte 68,154,2,25,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,150,22,68,152,21,153,20,68,154,19,16,12,31
-	.byte 0,68,14,112,157,14,158,13,68,13,29,68,154,12,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153
-	.byte 11,68,154,10,26,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,16
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,150,6,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150
-	.byte 8,151,7,68,152,6,153,5,68,154,4,28,12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151
-	.byte 6,152,5,68,153,4,154,3,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,21,12,31,0,68,14,96
-	.byte 157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,156,12
-	.byte 16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68
-	.byte 153,6,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,16,12,31,0,68,14,112,157,14,158,13,68,13
-	.byte 29,68,150,12,17,12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28,22,12,31,0,68,14,176,1,157,22
-	.byte 158,21,68,13,29,68,150,20,68,153,19,154,18,23,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5
-	.byte 68,153,4,154,3,23,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,154,5,14,12,31
-	.byte 0,68,14,144,1,157,18,158,17,68,13,29,22,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18,152,17
-	.byte 68,153,16,30,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,148,18,149,17,68,150,16,151,15,68,152,14,68
-	.byte 154,13,14,12,31,0,68,14,160,1,157,20,158,19,68,13,29,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68
-	.byte 150,12,151,11,22,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,150,20,151,19,68,152,18,18,12,31,0,68
-	.byte 14,96,157,12,158,11,68,13,29,68,152,10,153,9,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,156,10,18
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,154,5,16,12,31,0,68,14,80,157,10,158,9,68,13,29
-	.byte 68,153,8,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,16,12,31,0,68,14,64,157,8,158
-	.byte 7,68,13,29,68,152,6,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,16,12,31
-	.byte 0,68,14,64,157,8,158,7,68,13,29,68,151,6,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,16
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68
-	.byte 153,30,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,68,153,15,154,14,22,12,31,0,68,14,192
-	.byte 1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68,151
-	.byte 12,152,11,68,153,10,154,9,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153,9
-	.byte 68,154,8,19,12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,68,151,11
+	.byte 68,13,29,68,153,2,154,1,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,18,12
+	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,154,3,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68
+	.byte 154,4,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,19,12,31,0,68,14,48,157,6,158,5,68,13
+	.byte 29,68,152,4,68,154,3,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,152,16,153,15,68,154,14,21,12
+	.byte 31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,68,154,2,25,12,31,0,68,14,192,1,157,24,158,23
+	.byte 68,13,29,68,150,22,68,152,21,153,20,68,154,19,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,154,12,21
+	.byte 12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,26,12,31,0,68,14,64,157,8,158,7
+	.byte 68,13,29,68,150,6,151,5,68,152,4,153,3,68,154,2,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,150
+	.byte 6,26,12,31,0,68,14,80,157,10,158,9,68,13,29,68,150,8,151,7,68,152,6,153,5,68,154,4,28,12,31,0
+	.byte 68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3,16,12,31,0,68,14,64
+	.byte 157,8,158,7,68,13,29,68,154,6,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8
+	.byte 16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,156,12,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68
+	.byte 153,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,153,6,16,12,31,0,68,14,96,157,12,158,11,68,13
+	.byte 29,68,151,10,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,17,12,31,0,68,14,128,2,157,32,158
+	.byte 31,68,13,29,68,153,30,22,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,150,20,68,153,19,154,18,23,12
+	.byte 31,0,68,14,64,157,8,158,7,68,13,29,68,151,6,152,5,68,153,4,154,3,23,12,31,0,68,14,80,157,10,158
+	.byte 9,68,13,29,68,151,8,152,7,68,153,6,154,5,22,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,151,18
+	.byte 152,17,68,153,16,30,12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,148,18,149,17,68,150,16,151,15,68,152
+	.byte 14,68,154,13,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,22,12,31,0,68,14,176,1,157
+	.byte 22,158,21,68,13,29,68,150,20,151,19,68,152,18,18,12,31,0,68,14,96,157,12,158,11,68,13,29,68,152,10,153
+	.byte 9,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,156,10,18,12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 68,153,6,154,5,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,18,12,31,0,68,14,48,157,6,158
+	.byte 5,68,13,29,68,152,4,153,3,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,21,12,31,0,68,14
+	.byte 64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,151
+	.byte 6,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,16,12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 68,150,10,22,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,68,153,15,154,14,22,12,31,0,68,14
+	.byte 192,1,157,24,158,23,68,13,29,68,150,22,151,21,68,152,20,23,12,31,0,68,14,112,157,14,158,13,68,13,29,68
+	.byte 151,12,152,11,68,153,10,154,9,26,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11,68,152,10,153
+	.byte 9,68,154,8,19,12,31,0,68,14,112,157,14,158,13,68,13,29,68,148,12,68,151,11
 
 .text
 	.align 4
@@ -19982,2397 +19997,2549 @@ plt__jit_icall_mono_generic_class_init:
 _p_1:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1920]
+ldr x16, [x16, #1928]
 br x16
-.word 7313
+.word 7341
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1928]
+ldr x16, [x16, #1936]
 br x16
-.word 7339
+.word 7367
 	.no_dead_strip plt__jit_icall_mono_throw_method_access
 plt__jit_icall_mono_throw_method_access:
 _p_3:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1936]
+ldr x16, [x16, #1944]
 br x16
-.word 7347
+.word 7375
 	.no_dead_strip plt_Rg_Plugins_Popup_Platform_Renderers_Loader_Load
 plt_Rg_Plugins_Popup_Platform_Renderers_Loader_Load:
 _p_4:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1944]
+ldr x16, [x16, #1952]
 br x16
-.word 7374
+.word 7402
 	.no_dead_strip plt_System_Threading_Tasks_TaskCompletionSource_1_bool__ctor
 plt_System_Threading_Tasks_TaskCompletionSource_1_bool__ctor:
 _p_5:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1952]
+ldr x16, [x16, #1960]
 br x16
-.word 7379
+.word 7407
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_PreparingAnimation
 plt_Rg_Plugins_Popup_Pages_PopupPage_PreparingAnimation:
 _p_6:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1960]
+ldr x16, [x16, #1968]
 br x16
-.word 7390
+.word 7418
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_Rg_Plugins_Popup_Contracts_IPopupNavigation_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_Rg_Plugins_Popup_Contracts_IPopupNavigation_Xamarin_Forms_DependencyFetchTarget:
 _p_7:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1968]
+ldr x16, [x16, #1976]
 br x16
-.word 7392
+.word 7420
 	.no_dead_strip plt_System_Collections_Generic_List_1_Rg_Plugins_Popup_Pages_PopupPage_Add_Rg_Plugins_Popup_Pages_PopupPage
 plt_System_Collections_Generic_List_1_Rg_Plugins_Popup_Pages_PopupPage_Add_Rg_Plugins_Popup_Pages_PopupPage:
 _p_8:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1976]
+ldr x16, [x16, #1984]
 br x16
-.word 7404
+.word 7432
 	.no_dead_strip plt_System_Threading_Tasks_TaskCompletionSource_1_bool_TrySetResult_bool
 plt_System_Threading_Tasks_TaskCompletionSource_1_bool_TrySetResult_bool:
 _p_9:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1984]
+ldr x16, [x16, #1992]
 br x16
-.word 7415
+.word 7443
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_10:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #1992]
+ldr x16, [x16, #2000]
 br x16
-.word 7426
+.word 7454
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_get_PopupStack
 plt_Rg_Plugins_Popup_Services_PopupNavigation_get_PopupStack:
 _p_11:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2000]
+ldr x16, [x16, #2008]
 br x16
-.word 7461
+.word 7489
 	.no_dead_strip plt_System_Linq_Enumerable_Last_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage
 plt_System_Linq_Enumerable_Last_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage:
 _p_12:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2008]
+ldr x16, [x16, #2016]
 br x16
-.word 7463
+.word 7491
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
 plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
 _p_13:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2016]
+ldr x16, [x16, #2024]
 br x16
-.word 7475
+.word 7503
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_14:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2024]
+ldr x16, [x16, #2032]
 br x16
-.word 7477
+.word 7505
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_15:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2032]
+ldr x16, [x16, #2040]
 br x16
-.word 7497
+.word 7525
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_:
 _p_16:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2040]
+ldr x16, [x16, #2048]
 br x16
-.word 7525
+.word 7553
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_get_Task:
 _p_17:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2048]
+ldr x16, [x16, #2056]
 br x16
-.word 7537
+.word 7565
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_:
 _p_18:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2056]
+ldr x16, [x16, #2064]
 br x16
-.word 7542
+.word 7570
 	.no_dead_strip plt_System_Collections_Generic_List_1_Rg_Plugins_Popup_Pages_PopupPage_Remove_Rg_Plugins_Popup_Pages_PopupPage
 plt_System_Collections_Generic_List_1_Rg_Plugins_Popup_Pages_PopupPage_Remove_Rg_Plugins_Popup_Pages_PopupPage:
 _p_19:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2064]
+ldr x16, [x16, #2072]
 br x16
-.word 7554
+.word 7582
 	.no_dead_strip plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action
 plt_Xamarin_Forms_Device_BeginInvokeOnMainThread_System_Action:
 _p_20:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2072]
+ldr x16, [x16, #2080]
 br x16
-.word 7565
+.word 7593
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_21:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2080]
+ldr x16, [x16, #2088]
 br x16
-.word 7570
+.word 7598
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_:
 _p_22:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2088]
+ldr x16, [x16, #2096]
 br x16
-.word 7575
+.word 7603
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_AppearingAnimation
 plt_Rg_Plugins_Popup_Pages_PopupPage_AppearingAnimation:
 _p_23:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2096]
+ldr x16, [x16, #2104]
 br x16
-.word 7587
+.word 7615
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0___PushAsyncb__0d_:
 _p_24:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2104]
+ldr x16, [x16, #2112]
 br x16
-.word 7589
+.word 7617
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_GetResult:
 _p_25:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2112]
+ldr x16, [x16, #2120]
 br x16
-.word 7601
+.word 7629
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_26:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2120]
+ldr x16, [x16, #2128]
 br x16
-.word 7606
+.word 7634
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_27:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2128]
+ldr x16, [x16, #2136]
 br x16
-.word 7611
+.word 7639
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_28:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2136]
+ldr x16, [x16, #2144]
 br x16
-.word 7650
+.word 7678
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_29:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2144]
+ldr x16, [x16, #2152]
 br x16
-.word 7655
+.word 7683
 	.no_dead_strip plt_System_Linq_Enumerable_ToList_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage
 plt_System_Linq_Enumerable_ToList_Rg_Plugins_Popup_Pages_PopupPage_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage:
 _p_30:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2152]
+ldr x16, [x16, #2160]
 br x16
-.word 7660
+.word 7688
 	.no_dead_strip plt_System_Linq_Enumerable_Select_Rg_Plugins_Popup_Pages_PopupPage_System_Threading_Tasks_Task_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage_System_Func_2_Rg_Plugins_Popup_Pages_PopupPage_System_Threading_Tasks_Task
 plt_System_Linq_Enumerable_Select_Rg_Plugins_Popup_Pages_PopupPage_System_Threading_Tasks_Task_System_Collections_Generic_IEnumerable_1_Rg_Plugins_Popup_Pages_PopupPage_System_Func_2_Rg_Plugins_Popup_Pages_PopupPage_System_Threading_Tasks_Task:
 _p_31:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2160]
+ldr x16, [x16, #2168]
 br x16
-.word 7672
+.word 7700
 	.no_dead_strip plt_System_Threading_Tasks_Task_WhenAll_System_Collections_Generic_IEnumerable_1_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_WhenAll_System_Collections_Generic_IEnumerable_1_System_Threading_Tasks_Task:
 _p_32:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2168]
+ldr x16, [x16, #2176]
 br x16
-.word 7684
+.word 7712
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_:
 _p_33:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2176]
+ldr x16, [x16, #2184]
 br x16
-.word 7689
+.word 7717
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception:
 _p_34:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2184]
+ldr x16, [x16, #2192]
 br x16
-.word 7701
+.word 7729
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult:
 _p_35:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2192]
+ldr x16, [x16, #2200]
 br x16
-.word 7706
+.word 7734
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_36:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2200]
+ldr x16, [x16, #2208]
 br x16
-.word 7711
+.word 7739
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_DisappearingAnimation
 plt_Rg_Plugins_Popup_Pages_PopupPage_DisappearingAnimation:
 _p_37:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2208]
+ldr x16, [x16, #2216]
 br x16
-.word 7716
+.word 7744
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_:
 _p_38:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2216]
+ldr x16, [x16, #2224]
 br x16
-.word 7718
+.word 7746
 	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePopup_Rg_Plugins_Popup_Pages_PopupPage
 plt_Rg_Plugins_Popup_Services_PopupNavigation_RemovePopup_Rg_Plugins_Popup_Pages_PopupPage:
 _p_39:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2224]
+ldr x16, [x16, #2232]
 br x16
-.word 7730
+.word 7758
 	.no_dead_strip plt_System_Threading_Tasks_Task_Delay_int
 plt_System_Threading_Tasks_Task_Delay_int:
 _p_40:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2232]
+ldr x16, [x16, #2240]
 br x16
-.word 7732
+.word 7760
 	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_DisposingAnimation
 plt_Rg_Plugins_Popup_Pages_PopupPage_DisposingAnimation:
 _p_41:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2240]
+ldr x16, [x16, #2248]
 br x16
-.word 7737
+.word 7765
 	.no_dead_strip plt_System_Delegate_Combine_System_Delegate_System_Delegate
 plt_System_Delegate_Combine_System_Delegate_System_Delegate:
 _p_42:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2248]
+ldr x16, [x16, #2256]
 br x16
-.word 7739
+.word 7767
 	.no_dead_strip plt_System_Delegate_Remove_System_Delegate_System_Delegate
 plt_System_Delegate_Remove_System_Delegate_System_Delegate:
 _p_43:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2256]
+ldr x16, [x16, #2264]
 br x16
-.word 7744
+.word 7772
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_GetValue_Xamarin_Forms_BindableProperty
 plt_Xamarin_Forms_BindableObject_GetValue_Xamarin_Forms_BindableProperty:
 _p_44:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2264]
+ldr x16, [x16, #2272]
 br x16
-.word 7749
+.word 7777
 	.no_dead_strip plt_Xamarin_Forms_BindableObject_SetValue_Xamarin_Forms_BindableProperty_object
 plt_Xamarin_Forms_BindableObject_SetValue_Xamarin_Forms_BindableProperty_object:
 _p_45:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2272]
+ldr x16, [x16, #2280]
 br x16
-.word 7754
+.word 7782
 	.no_dead_strip plt_Xamarin_Forms_DependencyService_Get_Rg_Plugins_Popup_Contracts_IScreenHelper_Xamarin_Forms_DependencyFetchTarget
 plt_Xamarin_Forms_DependencyService_Get_Rg_Plugins_Popup_Contracts_IScreenHelper_Xamarin_Forms_DependencyFetchTarget:
 _p_46:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2280]
+ldr x16, [x16, #2288]
 br x16
-.word 7759
+.word 7787
 	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
 plt_Xamarin_Forms_ContentPage__ctor:
 _p_47:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2288]
+ldr x16, [x16, #2296]
 br x16
-.word 7771
+.word 7799
 	.no_dead_strip plt_Xamarin_Forms_Color_FromHex_string
 plt_Xamarin_Forms_Color_FromHex_string:
 _p_48:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2296]
+ldr x16, [x16, #2304]
 br x16
-.word 7776
+.word 7804
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color:
 _p_49:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
-ldr x16, [x16, #2304]
-br x16
-.word 7781
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_set_Animation_Rg_Plugins_Popup_Interfaces_Animations_IPopupAnimation
-plt_Rg_Plugins_Popup_Pages_PopupPage_set_Animation_Rg_Plugins_Popup_Interfaces_Animations_IPopupAnimation:
-_p_50:
-adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
-add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 7786
-	.no_dead_strip plt_Xamarin_Forms_Element_OnPropertyChanged_string
-plt_Xamarin_Forms_Element_OnPropertyChanged_string:
-_p_51:
+.word 7809
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor:
+_p_50:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 7788
-	.no_dead_strip plt_string_op_Equality_string_string
-plt_string_op_Equality_string_string:
-_p_52:
+.word 7814
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_set_Animation_Rg_Plugins_Popup_Interfaces_Animations_IPopupAnimation
+plt_Rg_Plugins_Popup_Pages_PopupPage_set_Animation_Rg_Plugins_Popup_Interfaces_Animations_IPopupAnimation:
+_p_51:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 7793
-	.no_dead_strip plt_Xamarin_Forms_Page_ForceLayout
-plt_Xamarin_Forms_Page_ForceLayout:
-_p_53:
+.word 7816
+	.no_dead_strip plt_Xamarin_Forms_Element_OnPropertyChanged_string
+plt_Xamarin_Forms_Element_OnPropertyChanged_string:
+_p_52:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 7798
-	.no_dead_strip plt_Xamarin_Forms_Page_OnSizeAllocated_double_double
-plt_Xamarin_Forms_Page_OnSizeAllocated_double_double:
-_p_54:
+.word 7818
+	.no_dead_strip plt_string_op_Equality_string_string
+plt_string_op_Equality_string_string:
+_p_53:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 7803
-	.no_dead_strip plt_Xamarin_Forms_Device_get_OS
-plt_Xamarin_Forms_Device_get_OS:
-_p_55:
+.word 7823
+	.no_dead_strip plt_Xamarin_Forms_Page_ForceLayout
+plt_Xamarin_Forms_Page_ForceLayout:
+_p_54:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 7808
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle
-plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle:
-_p_56:
+.word 7828
+	.no_dead_strip plt_Xamarin_Forms_Page_OnSizeAllocated_double_double
+plt_Xamarin_Forms_Page_OnSizeAllocated_double_double:
+_p_55:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 7813
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_HasSystemPadding
-plt_Rg_Plugins_Popup_Pages_PopupPage_get_HasSystemPadding:
-_p_57:
+.word 7833
+	.no_dead_strip plt_Xamarin_Forms_Device_get_OS
+plt_Xamarin_Forms_Device_get_OS:
+_p_56:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 7818
-	.no_dead_strip plt_Xamarin_Forms_Page_LayoutChildren_double_double_double_double
-plt_Xamarin_Forms_Page_LayoutChildren_double_double_double_double:
-_p_58:
+.word 7838
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle
+plt_Xamarin_Forms_VisualElement_Layout_Xamarin_Forms_Rectangle:
+_p_57:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 7820
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_SystemPadding
-plt_Rg_Plugins_Popup_Pages_PopupPage_get_SystemPadding:
-_p_59:
+.word 7843
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_HasSystemPadding
+plt_Rg_Plugins_Popup_Pages_PopupPage_get_HasSystemPadding:
+_p_58:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 7825
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_IsAnimating
-plt_Rg_Plugins_Popup_Pages_PopupPage_get_IsAnimating:
-_p_60:
+.word 7848
+	.no_dead_strip plt_Xamarin_Forms_Page_LayoutChildren_double_double_double_double
+plt_Xamarin_Forms_Page_LayoutChildren_double_double_double_double:
+_p_59:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 7827
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_Animation
-plt_Rg_Plugins_Popup_Pages_PopupPage_get_Animation:
-_p_61:
+.word 7850
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_SystemPadding
+plt_Rg_Plugins_Popup_Pages_PopupPage_get_SystemPadding:
+_p_60:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 7829
-	.no_dead_strip plt_Xamarin_Forms_ContentPage_get_Content
-plt_Xamarin_Forms_ContentPage_get_Content:
-_p_62:
+.word 7855
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_IsAnimating
+plt_Rg_Plugins_Popup_Pages_PopupPage_get_IsAnimating:
+_p_61:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 7831
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
-_p_63:
+.word 7857
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_Animation
+plt_Rg_Plugins_Popup_Pages_PopupPage_get_Animation:
+_p_62:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 7836
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
-_p_64:
+.word 7859
+	.no_dead_strip plt_Xamarin_Forms_ContentPage_get_Content
+plt_Xamarin_Forms_ContentPage_get_Content:
+_p_63:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 7848
-	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_int_int
-plt_System_Threading_Tasks_Task_FromResult_int_int:
-_p_65:
+.word 7861
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
+_p_64:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 7860
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_CloseWhenBackgroundIsClicked
-plt_Rg_Plugins_Popup_Pages_PopupPage_get_CloseWhenBackgroundIsClicked:
-_p_66:
+.word 7866
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
+_p_65:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 7872
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_:
-_p_67:
+.word 7878
+	.no_dead_strip plt_System_Threading_Tasks_Task_FromResult_int_int
+plt_System_Threading_Tasks_Task_FromResult_int_int:
+_p_66:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 7874
-	.no_dead_strip plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate
-plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate:
-_p_68:
+.word 7890
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage_get_CloseWhenBackgroundIsClicked
+plt_Rg_Plugins_Popup_Pages_PopupPage_get_CloseWhenBackgroundIsClicked:
+_p_67:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 7886
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
-_p_69:
+.word 7902
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_:
+_p_68:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 7891
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
-_p_70:
+.word 7904
+	.no_dead_strip plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate
+plt_Xamarin_Forms_BindableProperty_Create_string_System_Type_System_Type_object_Xamarin_Forms_BindingMode_Xamarin_Forms_BindableProperty_ValidateValueDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangedDelegate_Xamarin_Forms_BindableProperty_BindingPropertyChangingDelegate_Xamarin_Forms_BindableProperty_CoerceValueDelegate_Xamarin_Forms_BindableProperty_CreateDefaultValueDelegate:
+_p_69:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 7903
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_:
-_p_71:
+.word 7916
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
+_p_70:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 7915
-	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
-plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
-_p_72:
+.word 7921
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
+_p_71:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 7927
-	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool
-plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool:
-_p_73:
+.word 7933
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__SendBackgroundClickd__37_:
+_p_72:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 7929
-	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool
-plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool:
-_p_74:
+.word 7945
+	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
+plt_Rg_Plugins_Popup_Services_PopupNavigation_PushAsync_Rg_Plugins_Popup_Pages_PopupPage_bool:
+_p_73:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 7931
-	.no_dead_strip plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type
-plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type:
-_p_75:
+.word 7957
+	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool
+plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAsync_bool:
+_p_74:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 7933
-	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool
-plt_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool:
-_p_76:
+.word 7959
+	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool
+plt_Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool:
+_p_75:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 7938
-	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_77:
+.word 7961
+	.no_dead_strip plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type
+plt_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type:
+_p_76:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 7950
-	.no_dead_strip plt_string_Format_string_object__
-plt_string_Format_string_object__:
-_p_78:
+.word 7963
+	.no_dead_strip plt_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool
+plt_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool:
+_p_77:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 7958
-	.no_dead_strip plt_System_Reflection_FieldInfo_get_IsStatic
-plt_System_Reflection_FieldInfo_get_IsStatic:
-_p_79:
+.word 7968
+	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_78:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 7963
-	.no_dead_strip plt_System_Convert_ToUInt32_string
-plt_System_Convert_ToUInt32_string:
-_p_80:
+.word 7980
+	.no_dead_strip plt_string_Format_string_object__
+plt_string_Format_string_object__:
+_p_79:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 7968
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Opacity
-plt_Xamarin_Forms_VisualElement_get_Opacity:
-_p_81:
+.word 7988
+	.no_dead_strip plt_System_Reflection_FieldInfo_get_IsStatic
+plt_System_Reflection_FieldInfo_get_IsStatic:
+_p_80:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 7973
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_Opacity_double
-plt_Xamarin_Forms_VisualElement_set_Opacity_double:
-_p_82:
+.word 7993
+	.no_dead_strip plt_System_Convert_ToUInt32_string
+plt_System_Convert_ToUInt32_string:
+_p_81:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 7978
-	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing
-plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing:
-_p_83:
+.word 7998
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Opacity
+plt_Xamarin_Forms_VisualElement_get_Opacity:
+_p_82:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 7983
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation__ctor
-plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation__ctor:
-_p_84:
+.word 8003
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_Opacity_double
+plt_Xamarin_Forms_VisualElement_set_Opacity_double:
+_p_83:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 7988
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions
-plt_Rg_Plugins_Popup_Animations_MoveAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions:
-_p_85:
+.word 8008
+	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing
+plt_Xamarin_Forms_ViewExtensions_FadeTo_Xamarin_Forms_VisualElement_double_uint_Xamarin_Forms_Easing:
+_p_84:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 7991
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_IsVisible_bool
-plt_Xamarin_Forms_VisualElement_set_IsVisible_bool:
-_p_86:
+.word 8013
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation__ctor
+plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation__ctor:
+_p_85:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 7993
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_TranslationX_double
-plt_Xamarin_Forms_VisualElement_set_TranslationX_double:
-_p_87:
+.word 8018
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions
+plt_Rg_Plugins_Popup_Animations_MoveAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions:
+_p_86:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 7998
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_TranslationY_double
-plt_Xamarin_Forms_VisualElement_set_TranslationY_double:
-_p_88:
+.word 8021
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__ctor
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation__ctor:
+_p_87:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 8003
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
-_p_89:
+.word 8023
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_88:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 8008
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
-_p_90:
+.word 8026
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_IsVisible_bool
+plt_Xamarin_Forms_VisualElement_set_IsVisible_bool:
+_p_89:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 8020
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_TranslationX
-plt_Xamarin_Forms_VisualElement_get_TranslationX:
-_p_91:
+.word 8029
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_Forms_View
+plt_Rg_Plugins_Popup_Animations_MoveAnimation_UpdateDefaultTranslations_Xamarin_Forms_View:
+_p_90:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 8032
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_TranslationY
-plt_Xamarin_Forms_VisualElement_get_TranslationY:
-_p_92:
+.word 8034
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_91:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 8037
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
-plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
-_p_93:
+.word 8036
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_TranslationX_double
+plt_Xamarin_Forms_VisualElement_set_TranslationX_double:
+_p_92:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 8042
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
-plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
-_p_94:
+.word 8039
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_TranslationY_double
+plt_Xamarin_Forms_VisualElement_set_TranslationY_double:
+_p_93:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 8045
-	.no_dead_strip plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_Add_System_Threading_Tasks_Task
-plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_Add_System_Threading_Tasks_Task:
-_p_95:
+.word 8044
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
+_p_94:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 8048
-	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_TranslateTo_Xamarin_Forms_VisualElement_double_double_uint_Xamarin_Forms_Easing
-plt_Xamarin_Forms_ViewExtensions_TranslateTo_Xamarin_Forms_VisualElement_double_double_uint_Xamarin_Forms_Easing:
-_p_96:
+.word 8049
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
+_p_95:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 8059
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
-_p_97:
+.word 8061
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_TranslationX
+plt_Xamarin_Forms_VisualElement_get_TranslationX:
+_p_96:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 8064
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
-_p_98:
+.word 8073
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_TranslationY
+plt_Xamarin_Forms_VisualElement_get_TranslationY:
+_p_97:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 8076
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions
-plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions:
-_p_99:
+.word 8078
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_98:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 8088
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_Scale_double
-plt_Xamarin_Forms_VisualElement_set_Scale_double:
-_p_100:
+.word 8083
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_99:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 8090
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
-_p_101:
+.word 8086
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_MoveAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_100:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 8095
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
-_p_102:
+.word 8089
+	.no_dead_strip plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_Add_System_Threading_Tasks_Task
+plt_System_Collections_Generic_List_1_System_Threading_Tasks_Task_Add_System_Threading_Tasks_Task:
+_p_101:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 8107
-	.no_dead_strip plt_Xamarin_Forms_AnimationExtensions_Animate_Xamarin_Forms_IAnimatable_string_System_Action_1_double_double_double_uint_uint_Xamarin_Forms_Easing_System_Action_2_double_bool_System_Func_1_bool
-plt_Xamarin_Forms_AnimationExtensions_Animate_Xamarin_Forms_IAnimatable_string_System_Action_1_double_double_double_uint_uint_Xamarin_Forms_Easing_System_Action_2_double_bool_System_Func_1_bool:
-_p_103:
+.word 8091
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetTopOffset_Xamarin_Forms_View_Xamarin_Forms_Page:
+_p_102:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 8119
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Scale
-plt_Xamarin_Forms_VisualElement_get_Scale:
-_p_104:
+.word 8102
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page
+plt_Rg_Plugins_Popup_Animations_Base_BaseAnimation_GetLeftOffset_Xamarin_Forms_View_Xamarin_Forms_Page:
+_p_103:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 8124
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
-plt_Rg_Plugins_Popup_Animations_FadeAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
-_p_105:
+.word 8105
+	.no_dead_strip plt_Xamarin_Forms_ViewExtensions_TranslateTo_Xamarin_Forms_VisualElement_double_double_uint_Xamarin_Forms_Easing
+plt_Xamarin_Forms_ViewExtensions_TranslateTo_Xamarin_Forms_VisualElement_double_double_uint_Xamarin_Forms_Easing:
+_p_104:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 8129
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
-plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
-_p_106:
+.word 8108
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
+_p_105:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 8131
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation_Scale_Xamarin_Forms_View_Xamarin_Forms_Easing_double_double_bool
-plt_Rg_Plugins_Popup_Animations_ScaleAnimation_Scale_Xamarin_Forms_View_Xamarin_Forms_Easing_double_double_bool:
-_p_107:
+.word 8113
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_MoveAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_106:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 8133
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
-_p_108:
+.word 8125
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
+_p_107:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 8135
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
-_p_109:
+.word 8127
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__ctor_Rg_Plugins_Popup_Enums_MoveAnimationOptions_Rg_Plugins_Popup_Enums_MoveAnimationOptions:
+_p_108:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 8147
-	.no_dead_strip plt_System_Threading_Tasks_TaskCompletionSource_1_bool_SetResult_bool
-plt_System_Threading_Tasks_TaskCompletionSource_1_bool_SetResult_bool:
-_p_110:
+.word 8139
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation__ctor
+plt_Rg_Plugins_Popup_Animations_FadeAnimation__ctor:
+_p_109:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 8159
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Height
-plt_Xamarin_Forms_VisualElement_get_Height:
-_p_111:
+.word 8141
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_FadeAnimation_Preparing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_110:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 8170
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Width
-plt_Xamarin_Forms_VisualElement_get_Width:
-_p_112:
+.word 8143
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Forms_View
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation_UpdateDefaultProperties_Xamarin_Forms_View:
+_p_111:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 8175
-	.no_dead_strip plt_Xamarin_Forms_Page_get_BackgroundImage
-plt_Xamarin_Forms_Page_get_BackgroundImage:
-_p_113:
+.word 8145
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disposing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_112:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 8180
-	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_BackgroundColor
-plt_Xamarin_Forms_VisualElement_get_BackgroundColor:
-_p_114:
+.word 8147
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_Scale_double
+plt_Xamarin_Forms_VisualElement_set_Scale_double:
+_p_113:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 8185
-	.no_dead_strip plt_Xamarin_Forms_Color__ctor_double_double_double_double
-plt_Xamarin_Forms_Color__ctor_double_double_double_double:
-_p_115:
+.word 8149
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
+_p_114:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 8190
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_116:
+.word 8154
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
+_p_115:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 8221
-	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
-plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
-_p_117:
+.word 8166
+	.no_dead_strip plt_Xamarin_Forms_AnimationExtensions_Animate_Xamarin_Forms_IAnimatable_string_System_Action_1_double_double_double_uint_uint_Xamarin_Forms_Easing_System_Action_2_double_bool_System_Func_1_bool
+plt_Xamarin_Forms_AnimationExtensions_Animate_Xamarin_Forms_IAnimatable_string_System_Action_1_double_double_double_uint_uint_Xamarin_Forms_Easing_System_Action_2_double_bool_System_Func_1_bool:
+_p_116:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 8229
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_118:
+.word 8178
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Scale
+plt_Xamarin_Forms_VisualElement_get_Scale:
+_p_117:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 8248
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_119:
+.word 8183
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_FadeAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_118:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 8295
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_120:
+.word 8188
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_FadeAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_119:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 8318
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_121:
+.word 8190
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__n__0_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_120:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 8323
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_122:
+.word 8192
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation_Scale_Xamarin_Forms_View_Xamarin_Forms_Easing_double_double_bool
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation_Scale_Xamarin_Forms_View_Xamarin_Forms_Easing_double_double_bool:
+_p_121:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 8388
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_123:
+.word 8194
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
+_p_122:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 8396
-	.no_dead_strip plt_System_Threading_SpinWait_SpinOnce
-plt_System_Threading_SpinWait_SpinOnce:
-_p_124:
+.word 8196
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__n__1_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage:
+_p_123:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 8419
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_125:
+.word 8208
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
+_p_124:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 8442
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_126:
+.word 8210
+	.no_dead_strip plt_System_Threading_Tasks_TaskCompletionSource_1_bool_SetResult_bool
+plt_System_Threading_Tasks_TaskCompletionSource_1_bool_SetResult_bool:
+_p_125:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 8450
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_127:
+.word 8222
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Height
+plt_Xamarin_Forms_VisualElement_get_Height:
+_p_126:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 8473
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_128:
+.word 8233
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Width
+plt_Xamarin_Forms_VisualElement_get_Width:
+_p_127:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 8514
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_129:
+.word 8238
+	.no_dead_strip plt_Xamarin_Forms_Page_get_BackgroundImage
+plt_Xamarin_Forms_Page_get_BackgroundImage:
+_p_128:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 8555
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_130:
+.word 8243
+	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_BackgroundColor
+plt_Xamarin_Forms_VisualElement_get_BackgroundColor:
+_p_129:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 8563
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_131:
+.word 8248
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double
+plt_Rg_Plugins_Popup_Animations_Base_FadeBackgroundAnimation_GetColor_double:
+_p_130:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 8586
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_132:
+.word 8253
+	.no_dead_strip plt_Xamarin_Forms_Color__ctor_double_double_double_double
+plt_Xamarin_Forms_Color__ctor_double_double_double_double:
+_p_131:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 8627
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_133:
+.word 8256
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_132:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 8668
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_134:
+.word 8287
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_133:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 8709
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_135:
+.word 8295
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_134:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 8717
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_136:
+.word 8311
+	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
+plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
+_p_135:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 8740
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_137:
+.word 8319
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_136:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 8781
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
-plt_System_Threading_Tasks_Task__ctor:
-_p_138:
+.word 8338
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_137:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 8804
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
-_p_139:
+.word 8385
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_138:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 8809
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_140:
+.word 8408
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_139:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 8814
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_141:
+.word 8413
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_140:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 8837
-	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
-_p_142:
+.word 8478
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_141:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 8860
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_143:
+.word 8486
+	.no_dead_strip plt_System_Threading_SpinWait_SpinOnce
+plt_System_Threading_SpinWait_SpinOnce:
+_p_142:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 8883
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_144:
+.word 8509
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_143:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 8924
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_145:
+.word 8532
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_144:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 8947
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_146:
+.word 8540
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_145:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 8970
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_147:
+.word 8563
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_146:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 9011
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_148:
+.word 8604
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_147:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 9019
-	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
-plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
-_p_149:
+.word 8645
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_148:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 9042
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_150:
+.word 8653
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_149:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 9065
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_151:
+.word 8676
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_150:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 9073
-	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
-plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
-_p_152:
+.word 8717
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_151:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 9096
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
-plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
-_p_153:
+.word 8758
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_152:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 9101
-	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
-plt_System_Threading_Tasks_Task_FinishStageThree:
-_p_154:
+.word 8799
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_153:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 9106
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_155:
+.word 8807
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_154:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 9129
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_156:
+.word 8830
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_155:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 9170
-	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
-_p_157:
+.word 8871
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
+plt_System_Threading_Tasks_Task__ctor:
+_p_156:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 9193
-	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
-plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
-_p_158:
+.word 8894
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_157:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 9198
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
-plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
-_p_159:
+.word 8899
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_158:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 9203
-	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
-plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
-_p_160:
+.word 8904
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_159:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 9208
-	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
-plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
-_p_161:
+.word 8927
+	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
+_p_160:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 9213
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
-plt_System_Threading_Tasks_Task_AddException_object:
-_p_162:
+.word 8950
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_161:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 9218
-	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
-plt_System_Threading_Tasks_Task_Finish_bool:
-_p_163:
+.word 8973
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_162:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 9223
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_164:
+.word 9014
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_163:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 9246
-	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
-plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
-_p_165:
+.word 9037
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_164:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 9269
-	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
-plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
-_p_166:
+.word 9060
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_165:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 9274
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_167:
+.word 9101
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_166:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 9297
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_168:
+.word 9109
+	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+_p_167:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 9305
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_169:
+.word 9132
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_168:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 9340
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_170:
+.word 9155
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_169:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 9348
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_171:
+.word 9163
+	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+_p_170:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 9369
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_172:
+.word 9186
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+_p_171:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 9404
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_173:
+.word 9191
+	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
+plt_System_Threading_Tasks_Task_FinishStageThree:
+_p_172:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 9412
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_174:
+.word 9196
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_173:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 9462
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_175:
+.word 9219
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_174:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 9470
-	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
-plt_System_Threading_Tasks_TaskScheduler_get_Current:
-_p_176:
+.word 9260
+	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+_p_175:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 9493
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_177:
+.word 9283
+	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
+plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
+_p_176:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 9516
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
-_p_178:
+.word 9288
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
+plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
+_p_177:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 9557
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
-_p_179:
+.word 9293
+	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+_p_178:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 9598
-	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
-plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
-_p_180:
+.word 9298
+	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
+plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
+_p_179:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 9621
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
-_p_181:
+.word 9303
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
+plt_System_Threading_Tasks_Task_AddException_object:
+_p_180:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 9653
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
-_p_182:
+.word 9308
+	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
+plt_System_Threading_Tasks_Task_Finish_bool:
+_p_181:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 9661
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
-_p_183:
+.word 9313
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_182:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 9684
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
-_p_184:
+.word 9336
+	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
+plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
+_p_183:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 9716
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
-_p_185:
+.word 9359
+	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
+plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
+_p_184:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 9724
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
-_p_186:
+.word 9364
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_185:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 9747
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
-_p_187:
+.word 9387
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_186:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 9764
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
-_p_188:
+.word 9395
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_187:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 9772
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
-_p_189:
+.word 9430
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_188:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 9780
-	.no_dead_strip plt__jit_icall_mono_ldftn
-plt__jit_icall_mono_ldftn:
-_p_190:
+.word 9438
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_189:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 9803
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
-_p_191:
+.word 9459
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_190:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 9828
-	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
-plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
-_p_192:
+.word 9494
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_191:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 9836
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
-_p_193:
+.word 9502
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_192:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 9876
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
-_p_194:
+.word 9552
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_193:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 9899
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
-_p_195:
+.word 9560
+	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
+plt_System_Threading_Tasks_TaskScheduler_get_Current:
+_p_194:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 9931
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
-_p_196:
+.word 9583
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_195:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 9939
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
-_p_197:
+.word 9606
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_196:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 9980
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
-_p_198:
+.word 9647
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_197:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 9988
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
-_p_199:
+.word 9688
+	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+_p_198:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 10029
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
-_p_200:
+.word 9711
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_199:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 10037
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
-_p_201:
+.word 9743
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
+_p_200:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 10060
-	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
-plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
-_p_202:
+.word 9751
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+_p_201:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 10083
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
-plt_System_Threading_Tasks_Task_get_Id:
-_p_203:
+.word 9774
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
+_p_202:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 10088
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
-_p_204:
+.word 9806
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
+_p_203:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 10093
-	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
-plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
-_p_205:
+.word 9814
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
+_p_204:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 10098
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
-_p_206:
+.word 9837
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
+_p_205:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 10103
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
-_p_207:
+.word 9854
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
+_p_206:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 10126
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
-_p_208:
+.word 9862
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
+_p_207:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 10167
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
-_p_209:
+.word 9870
+	.no_dead_strip plt__jit_icall_mono_ldftn
+plt__jit_icall_mono_ldftn:
+_p_208:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 10175
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
-_p_210:
+.word 9893
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
+_p_209:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 10225
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
-_p_211:
+.word 9918
+	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
+plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
+_p_210:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 10233
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
-_p_212:
+.word 9926
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
+_p_211:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 10256
-	.no_dead_strip plt__rgctx_fetch_62
-plt__rgctx_fetch_62:
-_p_213:
+.word 9966
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
+_p_212:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 10261
-	.no_dead_strip plt__rgctx_fetch_63
-plt__rgctx_fetch_63:
-_p_214:
+.word 9989
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
+_p_213:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 10269
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
-_p_215:
+.word 10021
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
+_p_214:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 10292
-	.no_dead_strip plt__rgctx_fetch_64
-plt__rgctx_fetch_64:
-_p_216:
+.word 10029
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
+_p_215:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 10306
-	.no_dead_strip plt__rgctx_fetch_65
-plt__rgctx_fetch_65:
-_p_217:
+.word 10070
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
+_p_216:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 10314
-	.no_dead_strip plt__rgctx_fetch_66
-plt__rgctx_fetch_66:
-_p_218:
+.word 10078
+	.no_dead_strip plt__jit_icall_mono_thread_self_abort
+plt__jit_icall_mono_thread_self_abort:
+_p_217:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 10337
-	.no_dead_strip plt__rgctx_fetch_67
-plt__rgctx_fetch_67:
-_p_219:
+.word 10101
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
+_p_218:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 10360
-	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
-plt_System_Threading_AtomicBoolean_TryRelaxedSet:
-_p_220:
+.word 10144
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
+_p_219:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 10383
-	.no_dead_strip plt__rgctx_fetch_68
-plt__rgctx_fetch_68:
-_p_221:
+.word 10152
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
+_p_220:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 10388
-	.no_dead_strip plt__rgctx_fetch_69
-plt__rgctx_fetch_69:
-_p_222:
+.word 10175
+	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
+plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
+_p_221:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 10396
-	.no_dead_strip plt__rgctx_fetch_70
-plt__rgctx_fetch_70:
-_p_223:
+.word 10198
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
+plt_System_Threading_Tasks_Task_get_Id:
+_p_222:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 10419
-	.no_dead_strip plt__rgctx_fetch_71
-plt__rgctx_fetch_71:
-_p_224:
+.word 10203
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
+_p_223:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 10442
-	.no_dead_strip plt__rgctx_fetch_72
-plt__rgctx_fetch_72:
-_p_225:
+.word 10208
+	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
+plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
+_p_224:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 10465
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
-_p_226:
+.word 10213
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
+_p_225:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 10488
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
-_p_227:
+.word 10218
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
+_p_226:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 10518
-	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_MoveNext
-plt_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_MoveNext:
-_p_228:
+.word 10241
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
+_p_227:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 10523
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
-_p_229:
+.word 10282
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
+_p_228:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 10525
-	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_MoveNext
-plt_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_MoveNext:
-_p_230:
+.word 10290
+	.no_dead_strip plt__rgctx_fetch_62
+plt__rgctx_fetch_62:
+_p_229:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 10530
-	.no_dead_strip plt__rgctx_fetch_73
-plt__rgctx_fetch_73:
-_p_231:
+.word 10340
+	.no_dead_strip plt__rgctx_fetch_63
+plt__rgctx_fetch_63:
+_p_230:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 10551
-	.no_dead_strip plt__rgctx_fetch_74
-plt__rgctx_fetch_74:
-_p_232:
+.word 10348
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
+_p_231:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 10598
-	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
-plt_wrapper_alloc_object_Alloc_intptr:
-_p_233:
+.word 10371
+	.no_dead_strip plt__rgctx_fetch_64
+plt__rgctx_fetch_64:
+_p_232:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 10606
-	.no_dead_strip plt__rgctx_fetch_75
-plt__rgctx_fetch_75:
-_p_234:
+.word 10376
+	.no_dead_strip plt__rgctx_fetch_65
+plt__rgctx_fetch_65:
+_p_233:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 10614
-	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
-plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
-_p_235:
+.word 10384
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
+_p_234:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 10622
-	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
-plt__jit_icall_mono_gsharedvt_constrained_call:
-_p_236:
+.word 10407
+	.no_dead_strip plt__rgctx_fetch_66
+plt__rgctx_fetch_66:
+_p_235:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 10627
-	.no_dead_strip plt__rgctx_fetch_76
-plt__rgctx_fetch_76:
-_p_237:
+.word 10421
+	.no_dead_strip plt__rgctx_fetch_67
+plt__rgctx_fetch_67:
+_p_236:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 10683
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
-plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
-_p_238:
+.word 10429
+	.no_dead_strip plt__rgctx_fetch_68
+plt__rgctx_fetch_68:
+_p_237:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 10733
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
-plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
-_p_239:
+.word 10452
+	.no_dead_strip plt__rgctx_fetch_69
+plt__rgctx_fetch_69:
+_p_238:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 10738
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
-_p_240:
+.word 10475
+	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
+plt_System_Threading_AtomicBoolean_TryRelaxedSet:
+_p_239:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 10743
-	.no_dead_strip plt__rgctx_fetch_77
-plt__rgctx_fetch_77:
-_p_241:
+.word 10498
+	.no_dead_strip plt__rgctx_fetch_70
+plt__rgctx_fetch_70:
+_p_240:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 10748
-	.no_dead_strip plt_string_Concat_string_string
-plt_string_Concat_string_string:
-_p_242:
+.word 10503
+	.no_dead_strip plt__rgctx_fetch_71
+plt__rgctx_fetch_71:
+_p_241:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 10756
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
-_p_243:
+.word 10511
+	.no_dead_strip plt__rgctx_fetch_72
+plt__rgctx_fetch_72:
+_p_242:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 10761
-	.no_dead_strip plt__rgctx_fetch_78
-plt__rgctx_fetch_78:
-_p_244:
+.word 10534
+	.no_dead_strip plt__rgctx_fetch_73
+plt__rgctx_fetch_73:
+_p_243:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 10766
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
-_p_245:
+.word 10557
+	.no_dead_strip plt__rgctx_fetch_74
+plt__rgctx_fetch_74:
+_p_244:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 10774
-	.no_dead_strip plt__rgctx_fetch_79
-plt__rgctx_fetch_79:
-_p_246:
+.word 10580
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
+_p_245:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 10779
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
-_p_247:
+.word 10603
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+_p_246:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 10787
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_:
-_p_248:
+.word 10633
+	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_MoveNext
+plt_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_MoveNext:
+_p_247:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 10792
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_:
-_p_249:
+.word 10638
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
+_p_248:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 10818
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_MoveNext
-plt_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_MoveNext:
-_p_250:
+.word 10640
+	.no_dead_strip plt_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_MoveNext
+plt_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_MoveNext:
+_p_249:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 10844
-	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_MoveNext
-plt_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_MoveNext:
-_p_251:
+.word 10645
+	.no_dead_strip plt__rgctx_fetch_75
+plt__rgctx_fetch_75:
+_p_250:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 10846
-	.no_dead_strip plt__rgctx_fetch_80
-plt__rgctx_fetch_80:
-_p_252:
+.word 10666
+	.no_dead_strip plt__rgctx_fetch_76
+plt__rgctx_fetch_76:
+_p_251:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 10876
-	.no_dead_strip plt__rgctx_fetch_81
-plt__rgctx_fetch_81:
-_p_253:
+.word 10713
+	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
+plt_wrapper_alloc_object_Alloc_intptr:
+_p_252:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 10884
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
-_p_254:
+.word 10721
+	.no_dead_strip plt__rgctx_fetch_77
+plt__rgctx_fetch_77:
+_p_253:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 10907
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
-_p_255:
+.word 10729
+	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
+plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
+_p_254:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 10933
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_MoveNext
-plt_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_MoveNext:
-_p_256:
+.word 10737
+	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
+plt__jit_icall_mono_gsharedvt_constrained_call:
+_p_255:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 10959
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_MoveNext
-plt_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_MoveNext:
-_p_257:
+.word 10742
+	.no_dead_strip plt__rgctx_fetch_78
+plt__rgctx_fetch_78:
+_p_256:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 10961
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
-_p_258:
+.word 10798
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
+plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
+_p_257:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 10963
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
-_p_259:
+.word 10848
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
+plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
+_p_258:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 10989
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_MoveNext
-plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_MoveNext:
-_p_260:
+.word 10853
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+_p_259:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 11015
-	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_MoveNext
-plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_MoveNext:
-_p_261:
+.word 10858
+	.no_dead_strip plt__rgctx_fetch_79
+plt__rgctx_fetch_79:
+_p_260:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 11017
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
-_p_262:
+.word 10863
+	.no_dead_strip plt_string_Concat_string_string
+plt_string_Concat_string_string:
+_p_261:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 11019
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
-_p_263:
+.word 10871
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
+_p_262:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 11045
-	.no_dead_strip plt__rgctx_fetch_82
-plt__rgctx_fetch_82:
-_p_264:
+.word 10876
+	.no_dead_strip plt__rgctx_fetch_80
+plt__rgctx_fetch_80:
+_p_263:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 11098
-	.no_dead_strip plt__rgctx_fetch_83
-plt__rgctx_fetch_83:
-_p_265:
+.word 10881
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+_p_264:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 11106
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
-_p_266:
+.word 10889
+	.no_dead_strip plt__rgctx_fetch_81
+plt__rgctx_fetch_81:
+_p_265:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 11129
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
-_p_267:
+.word 10894
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+_p_266:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 11140
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_268:
+.word 10902
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__PopAllAsyncd__6_:
+_p_267:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 11145
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
-_p_269:
+.word 10907
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_:
+_p_268:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 11165
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
-_p_270:
+.word 10933
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_MoveNext
+plt_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_MoveNext:
+_p_269:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 11185
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
-_p_271:
+.word 10959
+	.no_dead_strip plt_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_MoveNext
+plt_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_MoveNext:
+_p_270:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 11205
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
-_p_272:
+.word 10961
+	.no_dead_strip plt__rgctx_fetch_82
+plt__rgctx_fetch_82:
+_p_271:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 11225
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
-_p_273:
+.word 10991
+	.no_dead_strip plt__rgctx_fetch_83
+plt__rgctx_fetch_83:
+_p_272:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 11245
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object:
-_p_274:
+.word 10999
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__AppearingAnimationd__32_:
+_p_273:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 11265
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
-_p_275:
+.word 11022
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Pages_PopupPage__DisappearingAnimationd__33_:
+_p_274:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 11285
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_276:
+.word 11048
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_MoveNext
+plt_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_MoveNext:
+_p_275:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 11305
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_:
-_p_277:
+.word 11074
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_MoveNext
+plt_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_MoveNext:
+_p_276:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 11325
-	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-_p_278:
+.word 11076
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Appearingd__14_:
+_p_277:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 11345
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
-_p_279:
+.word 11078
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_MoveAnimation__Disappearingd__15_:
+_p_278:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 11365
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
-_p_280:
+.word 11104
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_MoveNext
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_MoveNext:
+_p_279:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 11385
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
-_p_281:
+.word 11130
+	.no_dead_strip plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_MoveNext
+plt_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_MoveNext:
+_p_280:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 11405
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
-_p_282:
+.word 11132
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Appearingd__24_:
+_p_281:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 11425
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object:
-_p_283:
+.word 11134
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_System_Runtime_CompilerServices_TaskAwaiter__Rg_Plugins_Popup_Animations_ScaleAnimation__Disappearingd__25_:
+_p_282:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 11445
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
-_p_284:
+.word 11160
+	.no_dead_strip plt__rgctx_fetch_84
+plt__rgctx_fetch_84:
+_p_283:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 11465
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
-_p_285:
+.word 11213
+	.no_dead_strip plt__rgctx_fetch_85
+plt__rgctx_fetch_85:
+_p_284:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 11485
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
-_p_286:
+.word 11221
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_get_Task:
+_p_285:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 11505
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_287:
+.word 11244
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
+_p_286:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 11525
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
-_p_288:
+.word 11255
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_287:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 11545
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
-_p_289:
+.word 11260
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+_p_288:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 11550
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
-_p_290:
+.word 11280
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
+_p_289:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 11570
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
-_p_291:
+.word 11300
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
+_p_290:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 11590
-	.no_dead_strip plt_System_Decimal_op_Equality_System_Decimal_System_Decimal
-plt_System_Decimal_op_Equality_System_Decimal_System_Decimal:
-_p_292:
+.word 11320
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
+_p_291:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 11610
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
-_p_293:
+.word 11340
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
+_p_292:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 11615
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
-_p_294:
+.word 11360
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetCanceled_System_Threading_CancellationToken_object:
+_p_293:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 11635
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
-plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
-_p_295:
+.word 11380
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult:
+_p_294:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 11656
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
-_p_296:
+.word 11400
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_295:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 11661
-	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
-plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
-_p_297:
+.word 11420
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_System_Threading_StackCrawlMark_:
+_p_296:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 11666
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
-_p_298:
+.word 11440
+	.no_dead_strip plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
+_p_297:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 11686
-	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
-plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
-_p_299:
+.word 11460
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor:
+_p_298:
 adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
 add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 11706
+.word 11480
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskScheduler:
+_p_299:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #216]
+br x16
+.word 11500
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
+_p_300:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #224]
+br x16
+.word 11520
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_2_object_System_Threading_Tasks_VoidTaskResult_object_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_System_Threading_StackCrawlMark_:
+_p_301:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #232]
+br x16
+.word 11540
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetException_object:
+_p_302:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #240]
+br x16
+.word 11560
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_DangerousSetResult_System_Threading_Tasks_VoidTaskResult:
+_p_303:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #248]
+br x16
+.word 11580
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncImpl_System_Func_3_System_AsyncCallback_object_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_object_System_Threading_Tasks_TaskCreationOptions:
+_p_304:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #256]
+br x16
+.word 11600
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_object_System_Threading_Tasks_TaskCreationOptions:
+_p_305:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #264]
+br x16
+.word 11620
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Threading_Tasks_TaskFactory_1_System_Threading_Tasks_VoidTaskResult_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_System_Threading_Tasks_VoidTaskResult_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_306:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #272]
+br x16
+.word 11640
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+_p_307:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #280]
+br x16
+.word 11660
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor:
+_p_308:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #288]
+br x16
+.word 11665
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetTaskForResult_System_Threading_Tasks_VoidTaskResult:
+_p_309:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #296]
+br x16
+.word 11685
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetResult_System_Threading_Tasks_VoidTaskResult:
+_p_310:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #304]
+br x16
+.word 11705
+	.no_dead_strip plt_System_Decimal_op_Equality_System_Decimal_System_Decimal
+plt_System_Decimal_op_Equality_System_Decimal_System_Decimal:
+_p_311:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #312]
+br x16
+.word 11725
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
+_p_312:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #320]
+br x16
+.word 11730
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+_p_313:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #328]
+br x16
+.word 11750
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool
+plt_System_Runtime_CompilerServices_TaskAwaiter_OnCompletedInternal_System_Threading_Tasks_Task_System_Action_bool_bool:
+_p_314:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #336]
+br x16
+.word 11771
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_TaskAwaiter_ValidateEnd_System_Threading_Tasks_Task:
+_p_315:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #344]
+br x16
+.word 11776
+	.no_dead_strip plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool
+plt_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_bool:
+_p_316:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #352]
+br x16
+.word 11781
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+_p_317:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #360]
+br x16
+.word 11801
+	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
+plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
+_p_318:
+adrp x16, mono_aot_Rg_Plugins_Popup_got@PAGE+4096
+add x16, x16, mono_aot_Rg_Plugins_Popup_got@PAGEOFF
+ldr x16, [x16, #368]
+br x16
+.word 11821
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Rg_Plugins_Popup_got, 4312
+.lcomm mono_aot_Rg_Plugins_Popup_got, 4472
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -22412,7 +22579,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_Rg_Plugins_Popup_got
 	.align 3
@@ -22429,6 +22596,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -22480,13 +22649,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 239,4312,300,353,66,391195135,0,16133
-	.long 128,8,8,10,0,24,24880,8736
-	.long 8304,7056,0,7720,8232,7392,0,5432
-	.long 504,0,0,0,0,0,0,0
+	.long 240,4472,319,353,66,391195135,0,16392
+	.long 128,8,8,9,0,25,25152,8752
+	.long 8312,7056,0,7728,8240,7392,0,5432
+	.long 504,8744,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 170,106,61,5,115,136,156,40,229,227,153,33,222,35,239,252
+	.long 0,0
+	.byte 70,22,230,63,227,197,88,40,74,129,125,56,193,62,1,12
 	.globl _mono_aot_module_Rg_Plugins_Popup_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_info:
@@ -23152,7 +23321,7 @@ LTDIE_26:
 LDIFF_SYM114=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM114
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM115=LTDIE_24_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM115
@@ -23180,7 +23349,7 @@ LTDIE_27:
 LDIFF_SYM119=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM119
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM120=LTDIE_24_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM120
@@ -23208,47 +23377,47 @@ LTDIE_24:
 LDIFF_SYM124=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM124
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM125=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM125
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM126=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM126
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM127=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM127
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM128=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM128
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM129=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM129
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM130=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM130
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM131=LTDIE_25_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM131
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM132=LTDIE_26_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM132
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM133=LTDIE_27_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM133
@@ -23647,7 +23816,7 @@ LTDIE_39:
 LDIFF_SYM203=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM203
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM204=LTDIE_37_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM204
@@ -23675,7 +23844,7 @@ LTDIE_40:
 LDIFF_SYM208=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM208
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM209=LTDIE_37_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM209
@@ -23703,47 +23872,47 @@ LTDIE_37:
 LDIFF_SYM213=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM213
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM214=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM214
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM215=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM215
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM216=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM216
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM217=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM217
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM218=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM218
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM219=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM219
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM220=LTDIE_38_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM220
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM221=LTDIE_39_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM221
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM222=LTDIE_40_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM222
@@ -24045,7 +24214,7 @@ LTDIE_52:
 LDIFF_SYM271=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM271
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM272=LTDIE_50_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM272
@@ -24073,7 +24242,7 @@ LTDIE_53:
 LDIFF_SYM276=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM276
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM277=LTDIE_50_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM277
@@ -24101,47 +24270,47 @@ LTDIE_50:
 LDIFF_SYM281=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM281
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM282=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM282
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM283=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM283
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM284=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM284
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM285=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM285
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM286=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM286
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM287=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM287
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM288=LTDIE_51_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM288
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM289=LTDIE_52_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM289
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM290=LTDIE_53_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM290
@@ -25274,7 +25443,7 @@ LTDIE_88:
 LDIFF_SYM490=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM490
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM491=LTDIE_86_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM491
@@ -25302,7 +25471,7 @@ LTDIE_89:
 LDIFF_SYM495=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM495
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM496=LTDIE_86_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM496
@@ -25330,47 +25499,47 @@ LTDIE_86:
 LDIFF_SYM500=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM500
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM501=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM501
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM502=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM502
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM503=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM503
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM504=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM504
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM505=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM505
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM506=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM506
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM507=LTDIE_87_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM507
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM508=LTDIE_88_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM508
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM509=LTDIE_89_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM509
@@ -25849,7 +26018,7 @@ LTDIE_109:
 LDIFF_SYM594=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM594
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM595=LTDIE_108_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM595
@@ -25877,7 +26046,7 @@ LTDIE_110:
 LDIFF_SYM599=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM599
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM600=LTDIE_108_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM600
@@ -25905,47 +26074,47 @@ LTDIE_108:
 LDIFF_SYM604=LTDIE_2 - Ldebug_info_start
 	.long LDIFF_SYM604
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM605=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM605
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM606=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM606
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM607=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM607
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM608=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM608
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM609=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM609
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM610=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM610
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM611=LTDIE_51_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM611
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM612=LTDIE_109_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM612
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM613=LTDIE_110_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM613
@@ -26877,12 +27046,12 @@ LDIFF_SYM776=LDIE_BOOLEAN - Ldebug_info_start
 
 LDIFF_SYM777=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM777
-	.byte 3,141,248,0,11
+	.byte 3,141,200,0,11
 	.asciz "V_1"
 
 LDIFF_SYM778=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM778
-	.byte 3,141,224,0,0
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -26897,7 +27066,7 @@ Lfde4_start:
 LDIFF_SYM780=Lme_4 - Rg_Plugins_Popup_Services_PopupNavigation_PopAllAsync_bool
 	.long LDIFF_SYM780
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
 	.align 3
 Lfde4_end:
 
@@ -26926,12 +27095,12 @@ LDIFF_SYM782=LDIE_BOOLEAN - Ldebug_info_start
 
 LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM783
-	.byte 3,141,136,1,11
+	.byte 3,141,208,0,11
 	.asciz "V_1"
 
 LDIFF_SYM784=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM784
-	.byte 3,141,240,0,0
+	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -26946,7 +27115,7 @@ Lfde5_start:
 LDIFF_SYM786=Lme_5 - Rg_Plugins_Popup_Services_PopupNavigation_RemovePageAsync_Rg_Plugins_Popup_Pages_PopupPage_bool
 	.long LDIFF_SYM786
 	.long 0
-	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
 	.align 3
 Lfde5_end:
 
@@ -27070,12 +27239,12 @@ LDIFF_SYM799=LTDIE_69_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM800=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM800
-	.byte 3,141,144,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM801=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM801
-	.byte 3,141,240,0,0
+	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -27090,7 +27259,7 @@ Lfde8_start:
 LDIFF_SYM803=Lme_8 - Rg_Plugins_Popup_Services_PopupNavigation__c__DisplayClass4_0__PushAsyncb__0
 	.long LDIFF_SYM803
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde8_end:
 
@@ -28505,12 +28674,12 @@ LDIFF_SYM965=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM966=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM966
-	.byte 3,141,248,0,11
+	.byte 3,141,200,0,11
 	.asciz "V_1"
 
 LDIFF_SYM967=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM967
-	.byte 3,141,224,0,0
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -28525,7 +28694,7 @@ Lfde39_start:
 LDIFF_SYM969=Lme_27 - Rg_Plugins_Popup_Pages_PopupPage_AppearingAnimation
 	.long LDIFF_SYM969
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
 	.align 3
 Lfde39_end:
 
@@ -28549,12 +28718,12 @@ LDIFF_SYM970=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM971=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM971
-	.byte 3,141,248,0,11
+	.byte 3,141,200,0,11
 	.asciz "V_1"
 
 LDIFF_SYM972=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM972
-	.byte 3,141,224,0,0
+	.byte 2,141,48,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -28569,7 +28738,7 @@ Lfde40_start:
 LDIFF_SYM974=Lme_28 - Rg_Plugins_Popup_Pages_PopupPage_DisappearingAnimation
 	.long LDIFF_SYM974
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
 	.align 3
 Lfde40_end:
 
@@ -28695,12 +28864,12 @@ LDIFF_SYM984=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM985=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM985
-	.byte 3,141,144,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM986=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM986
-	.byte 3,141,240,0,0
+	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -28715,7 +28884,7 @@ Lfde44_start:
 LDIFF_SYM988=Lme_2c - Rg_Plugins_Popup_Pages_PopupPage_SendBackgroundClick
 	.long LDIFF_SYM988
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde44_end:
 
@@ -30718,12 +30887,12 @@ LDIFF_SYM1248=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM1249=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1249
-	.byte 3,141,152,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM1250=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1250
-	.byte 3,141,128,1,0
+	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -30738,7 +30907,7 @@ Lfde77_start:
 LDIFF_SYM1252=Lme_55 - Rg_Plugins_Popup_Animations_MoveAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 	.long LDIFF_SYM1252
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde77_end:
 
@@ -30772,12 +30941,12 @@ LDIFF_SYM1255=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM1256=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1256
-	.byte 3,141,152,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM1257=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1257
-	.byte 3,141,128,1,0
+	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -30792,7 +30961,7 @@ Lfde78_start:
 LDIFF_SYM1259=Lme_56 - Rg_Plugins_Popup_Animations_MoveAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 	.long LDIFF_SYM1259
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde78_end:
 
@@ -31783,12 +31952,12 @@ LDIFF_SYM1380=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM1381=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1381
-	.byte 3,141,152,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM1382=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1382
-	.byte 3,141,128,1,0
+	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -31803,7 +31972,7 @@ Lfde98_start:
 LDIFF_SYM1384=Lme_6a - Rg_Plugins_Popup_Animations_ScaleAnimation_Appearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 	.long LDIFF_SYM1384
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde98_end:
 
@@ -31837,12 +32006,12 @@ LDIFF_SYM1387=LTDIE_3_REFERENCE - Ldebug_info_start
 
 LDIFF_SYM1388=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1388
-	.byte 3,141,152,1,11
+	.byte 3,141,216,0,11
 	.asciz "V_1"
 
 LDIFF_SYM1389=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM1389
-	.byte 3,141,128,1,0
+	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -31857,7 +32026,7 @@ Lfde99_start:
 LDIFF_SYM1391=Lme_6b - Rg_Plugins_Popup_Animations_ScaleAnimation_Disappearing_Xamarin_Forms_View_Rg_Plugins_Popup_Pages_PopupPage
 	.long LDIFF_SYM1391
 	.long 0
-	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde99_end:
 
@@ -33824,7 +33993,7 @@ Lfde140_end:
 	.asciz "System.Array:InternalArray__ICollection_Clear"
 	.asciz "System_Array_InternalArray__ICollection_Clear"
 
-	.byte 1,76
+	.byte 1,79
 	.quad System_Array_InternalArray__ICollection_Clear
 	.quad Lme_9a
 
@@ -33858,7 +34027,7 @@ Lfde141_end:
 	.asciz "System.Array:InternalArray__ICollection_Add<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Add_T_REF_T_REF"
 
-	.byte 1,81
+	.byte 1,84
 	.quad System_Array_InternalArray__ICollection_Add_T_REF_T_REF
 	.quad Lme_9b
 
@@ -33897,7 +34066,7 @@ Lfde142_end:
 	.asciz "System.Array:InternalArray__ICollection_Remove<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Remove_T_REF_T_REF"
 
-	.byte 1,86
+	.byte 1,89
 	.quad System_Array_InternalArray__ICollection_Remove_T_REF_T_REF
 	.quad Lme_9c
 
@@ -33936,7 +34105,7 @@ Lfde143_end:
 	.asciz "System.Array:InternalArray__ICollection_Contains<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_Contains_T_REF_T_REF"
 
-	.byte 1,91
+	.byte 1,94
 	.quad System_Array_InternalArray__ICollection_Contains_T_REF_T_REF
 	.quad Lme_9d
 
@@ -33990,7 +34159,7 @@ Lfde144_end:
 	.asciz "System.Array:InternalArray__ICollection_CopyTo<T_REF>"
 	.asciz "System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int"
 
-	.byte 1,116
+	.byte 1,119
 	.quad System_Array_InternalArray__ICollection_CopyTo_T_REF_T_REF___int
 	.quad Lme_9e
 
@@ -36995,7 +37164,7 @@ Lfde192_start:
 LDIFF_SYM2027=Lme_cd - System_Threading_Tasks_TaskFactory_1_TResult_BOOL_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_BOOL_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_BOOL_bool
 	.long LDIFF_SYM2027
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30
 	.align 3
 Lfde192_end:
 
@@ -37074,7 +37243,7 @@ Lfde193_end:
 LTDIE_185:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM2038=LTDIE_2 - Ldebug_info_start
@@ -37095,7 +37264,7 @@ LDIFF_SYM2040=LTDIE_180_REFERENCE - Ldebug_info_start
 LDIFF_SYM2041=LTDIE_181_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2041
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM2042=LTDIE_185 - Ldebug_info_start
 	.long LDIFF_SYM2042
@@ -37140,7 +37309,7 @@ LDIFF_SYM2049=LTDIE_187 - Ldebug_info_start
 LTDIE_186:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 	.byte 32,16
 LDIFF_SYM2050=LTDIE_2 - Ldebug_info_start
@@ -37156,7 +37325,7 @@ LDIFF_SYM2051=LTDIE_187_REFERENCE - Ldebug_info_start
 LDIFF_SYM2052=LTDIE_185_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2052
 	.byte 2,35,24,0,7
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 LDIFF_SYM2053=LTDIE_186 - Ldebug_info_start
 	.long LDIFF_SYM2053
@@ -38709,7 +38878,7 @@ Lfde211_start:
 LDIFF_SYM2289=Lme_ec - System_Runtime_CompilerServices_AsyncTaskMethodBuilder_Start_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_Rg_Plugins_Popup_Services_PopupNavigation__RemovePageAsyncd__7_
 	.long LDIFF_SYM2289
 	.long 0
-	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29
+	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29
 	.align 3
 Lfde211_end:
 
@@ -39089,7 +39258,7 @@ Lfde217_end:
 	.asciz "System.Threading.Tasks.Task:FromResult<TResult_INT>"
 	.asciz "System_Threading_Tasks_Task_FromResult_TResult_INT_TResult_INT"
 
-	.byte 6,156,43
+	.byte 6,163,43
 	.quad System_Threading_Tasks_Task_FromResult_TResult_INT_TResult_INT
 	.quad Lme_f3
 
@@ -39595,7 +39764,7 @@ LDIFF_SYM2398=LTDIE_207 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_REF>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_REF__ctor_System_Array"
 
-	.byte 1,215,1
+	.byte 1,218,1
 	.quad System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 	.quad Lme_fe
 
@@ -40000,7 +40169,7 @@ LDIFF_SYM2460=LTDIE_217 - Ldebug_info_start
 LTDIE_215:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM2461=LTDIE_2 - Ldebug_info_start
@@ -40021,7 +40190,7 @@ LDIFF_SYM2463=LTDIE_180_REFERENCE - Ldebug_info_start
 LDIFF_SYM2464=LTDIE_217_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2464
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM2465=LTDIE_215 - Ldebug_info_start
 	.long LDIFF_SYM2465
@@ -40038,7 +40207,7 @@ LDIFF_SYM2467=LTDIE_215 - Ldebug_info_start
 LTDIE_214:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 	.byte 32,16
 LDIFF_SYM2468=LTDIE_2 - Ldebug_info_start
@@ -40054,7 +40223,7 @@ LDIFF_SYM2469=LTDIE_187_REFERENCE - Ldebug_info_start
 LDIFF_SYM2470=LTDIE_215_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2470
 	.byte 2,35,24,0,7
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 LDIFF_SYM2471=LTDIE_214 - Ldebug_info_start
 	.long LDIFF_SYM2471
@@ -40069,11 +40238,11 @@ LTDIE_214_REFERENCE:
 LDIFF_SYM2473=LTDIE_214 - Ldebug_info_start
 	.long LDIFF_SYM2473
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<TResult_BOOL>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<TResult_BOOL>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
 	.quad Lme_102
 
 	.byte 2,118,16,3
@@ -40091,9 +40260,9 @@ Lfde233_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
 
-LDIFF_SYM2476=Lme_102 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
+LDIFF_SYM2476=Lme_102 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
 	.long LDIFF_SYM2476
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -40155,7 +40324,7 @@ LDIFF_SYM2485=LTDIE_220 - Ldebug_info_start
 LTDIE_218:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM2486=LTDIE_2 - Ldebug_info_start
@@ -40176,7 +40345,7 @@ LDIFF_SYM2488=LTDIE_180_REFERENCE - Ldebug_info_start
 LDIFF_SYM2489=LTDIE_220_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2489
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM2490=LTDIE_218 - Ldebug_info_start
 	.long LDIFF_SYM2490
@@ -40191,11 +40360,11 @@ LTDIE_218_REFERENCE:
 LDIFF_SYM2492=LTDIE_218 - Ldebug_info_start
 	.long LDIFF_SYM2492
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<TResult_BOOL>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<TResult_BOOL>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 	.quad Lme_103
 
 	.byte 2,118,16,3
@@ -40213,9 +40382,9 @@ Lfde234_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 
-LDIFF_SYM2495=Lme_103 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_BOOL__ctor
+LDIFF_SYM2495=Lme_103 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_BOOL__ctor
 	.long LDIFF_SYM2495
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -42240,7 +42409,7 @@ Lfde270_end:
 LTDIE_228:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM2759=LTDIE_2 - Ldebug_info_start
@@ -42261,7 +42430,7 @@ LDIFF_SYM2761=LTDIE_180_REFERENCE - Ldebug_info_start
 LDIFF_SYM2762=LTDIE_222_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2762
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM2763=LTDIE_228 - Ldebug_info_start
 	.long LDIFF_SYM2763
@@ -42278,7 +42447,7 @@ LDIFF_SYM2765=LTDIE_228 - Ldebug_info_start
 LTDIE_229:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 	.byte 32,16
 LDIFF_SYM2766=LTDIE_2 - Ldebug_info_start
@@ -42294,7 +42463,7 @@ LDIFF_SYM2767=LTDIE_187_REFERENCE - Ldebug_info_start
 LDIFF_SYM2768=LTDIE_228_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM2768
 	.byte 2,35,24,0,7
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 LDIFF_SYM2769=LTDIE_229 - Ldebug_info_start
 	.long LDIFF_SYM2769
@@ -44395,11 +44564,11 @@ Lfde308_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<System.Threading.Tasks.VoidTaskResult>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Threading.Tasks.VoidTaskResult>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
 	.quad Lme_15a
 
 	.byte 2,118,16,3
@@ -44417,9 +44586,9 @@ Lfde309_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
 
-LDIFF_SYM3043=Lme_15a - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
+LDIFF_SYM3043=Lme_15a - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
 	.long LDIFF_SYM3043
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -44429,11 +44598,11 @@ Lfde309_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<System.Threading.Tasks.VoidTaskResult>:<FromAsyncImpl>b__1"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Threading.Tasks.VoidTaskResult>:<FromAsyncImpl>b__0"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult"
 
 	.byte 4,223,6
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
 	.quad Lme_15b
 
 	.byte 2,118,16,3
@@ -44456,9 +44625,9 @@ Lfde310_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
 
-LDIFF_SYM3047=Lme_15b - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
+LDIFF_SYM3047=Lme_15b - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
 	.long LDIFF_SYM3047
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -44468,11 +44637,11 @@ Lfde310_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Threading.Tasks.VoidTaskResult>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<System.Threading.Tasks.VoidTaskResult>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
 	.quad Lme_15c
 
 	.byte 2,118,16,3
@@ -44490,9 +44659,9 @@ Lfde311_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
 
-LDIFF_SYM3050=Lme_15c - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__ctor
+LDIFF_SYM3050=Lme_15c - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__ctor
 	.long LDIFF_SYM3050
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -44502,11 +44671,11 @@ Lfde311_end:
 .section __DWARF, __debug_info,regular,debug
 
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<System.Threading.Tasks.VoidTaskResult>:<FromAsyncImpl>b__0"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<System.Threading.Tasks.VoidTaskResult>:<FromAsyncImpl>b__1"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult"
 
 	.byte 4,209,6
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
 	.quad Lme_15d
 
 	.byte 2,118,16,3
@@ -44529,9 +44698,9 @@ Lfde312_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
 
-LDIFF_SYM3054=Lme_15d - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__0_System_IAsyncResult
+LDIFF_SYM3054=Lme_15d - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_System_Threading_Tasks_VoidTaskResult__FromAsyncImplb__1_System_IAsyncResult
 	.long LDIFF_SYM3054
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2

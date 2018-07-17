@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "PInvoke.Kernel32.dll"
 	.asciz ""
 
@@ -152,7 +152,7 @@ PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xd2800601
 bl _p_1
 .word 0xf9002ba0
@@ -172,7 +172,7 @@ bl _p_3
 .word 0x34000060
 .word 0xf94027a0
 .word 0x1400001a
-bl PInvoke_Kernel32_GetLastError
+bl _p_4
 .word 0x93407c00
 .word 0xd2800f5e
 .word 0x6b1e001f
@@ -185,7 +185,7 @@ bl PInvoke_Kernel32_GetLastError
 .word 0x531e7401
 .word 0xaa1403e0
 .word 0xf940029e
-bl _p_4
+bl _p_5
 .word 0x14000003
 .word 0xd2800000
 .word 0x14000009
@@ -213,7 +213,7 @@ PInvoke_Kernel32_GetLastError:
 .loc 1 1 0
 .word 0xa9bf7bfd
 .word 0x910003fd
-bl _p_5
+bl _p_6
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -237,7 +237,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd280003e
 .word 0x3900b3be
 .word 0xb9002bbf
@@ -247,15 +247,15 @@ ldr x0, [x16, #200]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xb98023a2
-bl _p_6
+bl _p_7
 .word 0x53001c00
 .word 0x34000140
 .word 0x9100a3a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_7
+ldr x15, [x16, #208]
+bl _p_8
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -263,24 +263,24 @@ bl _p_7
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2801201
 bl _p_1
 .word 0xf9001ba0
-bl PInvoke_Win32Exception__ctor
+bl _p_9
 .word 0xf9401ba0
-bl _p_8
+bl _p_10
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd2800021
-bl _p_9
+bl _p_11
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_11:
 .text
@@ -299,7 +299,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xaa0103f9
@@ -320,7 +320,7 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9802ba0
 .word 0x93407c00
 .word 0x8b000321
@@ -328,10 +328,10 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9802fa2
 .word 0xf9400fa0
-bl _p_10
+bl _p_12
 .word 0x93407c00
 .word 0xf9400bb9
 .word 0x910003bf
@@ -342,15 +342,15 @@ adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd2800021
-bl _p_9
+bl _p_11
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
-.word 0xd2801e00
+bl _p_10
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_12:
 .text
@@ -370,7 +370,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd280003e
 .word 0x3900b3be
 .word 0xb9002bbf
@@ -380,15 +380,15 @@ ldr x0, [x16, #200]
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xb98023a2
-bl _p_12
+bl _p_14
 .word 0x53001c00
 .word 0x34000140
 .word 0x9100a3a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_7
+ldr x15, [x16, #208]
+bl _p_8
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -396,24 +396,24 @@ bl _p_7
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2801201
 bl _p_1
 .word 0xf9001ba0
-bl PInvoke_Win32Exception__ctor
+bl _p_9
 .word 0xf9401ba0
-bl _p_8
+bl _p_10
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd2800021
-bl _p_9
+bl _p_11
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_13:
 .text
@@ -430,7 +430,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment_
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xaa0103f9
@@ -451,7 +451,7 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9802ba0
 .word 0x93407c00
 .word 0x8b000321
@@ -459,18 +459,18 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9802fa2
 .word 0xf9400fa0
-bl _p_13
+bl _p_15
 .word 0x93407c00
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_14:
 .text
@@ -488,17 +488,17 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_int:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xb9802ba1
-bl _p_14
+bl _p_16
 .word 0xaa0003e1
 .word 0x910143a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xf90033a1
-bl _p_15
+bl _p_17
 .word 0xf9402ba0
 .word 0xf9001ba0
 .word 0xf9402fa0
@@ -506,7 +506,7 @@ bl _p_15
 .word 0xf94013a0
 .word 0xf9401ba1
 .word 0xf9401fa2
-bl _p_16
+bl _p_18
 .word 0x93407c00
 .word 0xaa0003e3
 .word 0xf94033a1
@@ -517,9 +517,9 @@ bl _p_16
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
-bl _p_17
+bl _p_19
 .word 0xf94023a0
 .word 0xf9000ba0
 .word 0xf94027a0
@@ -550,7 +550,7 @@ PInvoke_Kernel32_TryGetErrorMessage_PInvoke_Kernel32_FormatMessageFlags_void__in
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf9400000
 .word 0xf9000340
 .word 0xd349ff41
@@ -578,19 +578,20 @@ ldr x2, [x16, #16]
 .word 0xaa1703e3
 .word 0xaa1803e4
 .word 0xaa1903e6
-bl _p_18
+bl _p_20
 .word 0x93407c00
 .word 0x6b1f001f
-.word 0x540004ed
+.word 0x5400050d
 .word 0xf940031e
 .word 0xb9802700
 .word 0xb9802301
 .word 0xb010019
-.word 0x1400000e
+.word 0x1400000f
 .word 0x51000721
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_19
+bl _p_21
+.word 0x53003c00
 .word 0x53003c17
 .word 0xaa1703e0
 .word 0xd280041e
@@ -601,12 +602,12 @@ bl _p_19
 .word 0x54000081
 .word 0x51000739
 .word 0x6b1f033f
-.word 0x54fffe4c
+.word 0x54fffe2c
 .word 0xaa1803e0
 .word 0xd2800001
 .word 0xaa1903e2
 .word 0xf940031e
-bl _p_20
+bl _p_22
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -648,7 +649,7 @@ PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInv
 .word 0xf94013a2
 .word 0xb9802ba3
 .word 0xb9803ba5
-bl _p_21
+bl _p_23
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -675,7 +676,7 @@ PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_intptr_int_in
 .word 0xf9401ba4
 .word 0xb9803ba5
 .word 0xf94023a6
-bl _p_18
+bl _p_20
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -693,7 +694,7 @@ PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_intptr:
 .word 0xf9000fa1
 .word 0xf9400fa1
 .word 0xf9400ba0
-bl _p_22
+bl _p_24
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -717,7 +718,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int_intptr_in
 .word 0xf9401ba4
 .word 0xf9400ba0
 .word 0xb98023a2
-bl _p_23
+bl _p_25
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -744,7 +745,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int_System_Nu
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0x35000060
 .word 0xd2800017
@@ -752,9 +753,9 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xaa1903e0
-bl _p_7
+bl _p_8
 .word 0x93407c00
 .word 0xaa0003f7
 .word 0xb90063b7
@@ -762,7 +763,7 @@ bl _p_7
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xf94023ba
 .word 0xaa1503f6
@@ -777,12 +778,12 @@ ldr x0, [x16, #200]
 .word 0xaa1503e2
 .word 0xaa1803e3
 .word 0xaa1703e4
-bl _p_23
+bl _p_25
 .word 0x53001c01
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xaa0103f7
 .word 0x34000220
@@ -793,8 +794,8 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_24
+ldr x15, [x16, #208]
+bl _p_26
 .word 0xb9805ba0
 .word 0xb90053a0
 .word 0xb9805fa0
@@ -831,7 +832,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nul
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0x35000060
 .word 0xd2800015
@@ -839,16 +840,16 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xaa1903e0
-bl _p_7
+bl _p_8
 .word 0x93407c00
 .word 0xaa0003f5
 .word 0xb90063b5
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xf9401fb5
 .word 0xf94023b6
@@ -863,12 +864,12 @@ ldr x0, [x16, #200]
 .word 0xaa1703e2
 .word 0xaa1803e3
 .word 0xf94027a4
-bl _p_23
+bl _p_25
 .word 0x53001c01
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xaa0103f5
 .word 0x34000220
@@ -879,8 +880,8 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_24
+ldr x15, [x16, #208]
+bl _p_26
 .word 0xb9805ba0
 .word 0xb90053a0
 .word 0xb9805fa0
@@ -915,7 +916,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int_intptr_i
 .word 0xf9401ba4
 .word 0xf9400ba0
 .word 0xb98023a2
-bl _p_25
+bl _p_27
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -942,7 +943,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int_System_N
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0x35000060
 .word 0xd2800017
@@ -950,9 +951,9 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xaa1903e0
-bl _p_7
+bl _p_8
 .word 0x93407c00
 .word 0xaa0003f7
 .word 0xb90063b7
@@ -960,7 +961,7 @@ bl _p_7
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xf94023ba
 .word 0xaa1503f6
@@ -975,12 +976,12 @@ ldr x0, [x16, #200]
 .word 0xaa1503e2
 .word 0xaa1803e3
 .word 0xaa1703e4
-bl _p_25
+bl _p_27
 .word 0x53001c01
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xaa0103f7
 .word 0x34000220
@@ -991,8 +992,8 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_24
+ldr x15, [x16, #208]
+bl _p_26
 .word 0xb9805ba0
 .word 0xb90053a0
 .word 0xb9805fa0
@@ -1029,7 +1030,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nu
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0x35000060
 .word 0xd2800015
@@ -1037,16 +1038,16 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xaa1903e0
-bl _p_7
+bl _p_8
 .word 0x93407c00
 .word 0xaa0003f5
 .word 0xb90063b5
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xf9401fb5
 .word 0xf94023b6
@@ -1061,12 +1062,12 @@ ldr x0, [x16, #200]
 .word 0xaa1703e2
 .word 0xaa1803e3
 .word 0xf94027a4
-bl _p_25
+bl _p_27
 .word 0x53001c01
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0x39401320
 .word 0xaa0103f5
 .word 0x34000220
@@ -1077,8 +1078,8 @@ ldr x0, [x16, #200]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_24
+ldr x15, [x16, #208]
+bl _p_26
 .word 0xb9805ba0
 .word 0xb90053a0
 .word 0xb9805fa0
@@ -1115,7 +1116,7 @@ PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_intptr_int_in
 .word 0xb9802ba3
 .word 0xf9401ba4
 .word 0xb9803ba5
-bl _p_26
+bl _p_28
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -1134,7 +1135,7 @@ PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xb98023a2
-bl _p_10
+bl _p_12
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -1154,7 +1155,7 @@ PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_intptr_int:
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xb98023a2
-bl _p_13
+bl _p_15
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -1202,7 +1203,7 @@ PInvoke_Kernel32__cctor:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -1220,11 +1221,11 @@ PInvoke_Kernel32_SafeFindFilesHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_27
+bl _p_29
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1243,11 +1244,11 @@ PInvoke_Kernel32_SafeFindFilesHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_27
+bl _p_29
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -1269,7 +1270,7 @@ PInvoke_Kernel32_SafeFindFilesHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #240]
+ldr x1, [x16, #248]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -1288,7 +1289,7 @@ PInvoke_Kernel32_SafeFindFilesHandle_ReleaseHandle:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400800
-bl _p_28
+bl _p_30
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1305,15 +1306,15 @@ PInvoke_Kernel32_SafeFindFilesHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #256]
-bl _p_29
+ldr x0, [x16, #264]
+bl _p_31
 .word 0xf9000ba0
-bl _p_30
+bl _p_32
 .word 0xf9400ba1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #264]
+ldr x0, [x16, #272]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1331,11 +1332,11 @@ PInvoke_Kernel32_SafeObjectHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_27
+bl _p_29
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1354,11 +1355,11 @@ PInvoke_Kernel32_SafeObjectHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_27
+bl _p_29
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -1380,7 +1381,7 @@ PInvoke_Kernel32_SafeObjectHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #240]
+ldr x1, [x16, #248]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -1390,7 +1391,7 @@ ldr x1, [x16, #240]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -1411,7 +1412,7 @@ PInvoke_Kernel32_SafeObjectHandle_ReleaseHandle:
 .word 0xf9000ba0
 .word 0xf9400ba0
 .word 0xf9400800
-bl _p_31
+bl _p_33
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1428,36 +1429,36 @@ PInvoke_Kernel32_SafeObjectHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_29
+ldr x0, [x16, #280]
+bl _p_31
 .word 0xf90013a0
-bl _p_32
+bl _p_34
 .word 0xf94013a1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #280]
+ldr x0, [x16, #288]
 .word 0xf9000001
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xf9400000
 .word 0xf9000fa0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_29
+ldr x0, [x16, #280]
+bl _p_31
 .word 0xf9400fa1
 .word 0xf9000ba0
 .word 0xd2800002
-bl _p_33
+bl _p_35
 .word 0xf9400ba1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -1835,7 +1836,7 @@ PInvoke_Kernel32_ACCESS_MASK_Equals_object:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #296]
+ldr x1, [x16, #304]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -1850,7 +1851,7 @@ ldr x1, [x16, #296]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #296]
+ldr x1, [x16, #304]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000241
@@ -1871,9 +1872,9 @@ ldr x1, [x16, #296]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_3f:
 .text
@@ -1895,7 +1896,7 @@ PInvoke_Kernel32_ACCESS_MASK_CompareTo_object:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800281
 bl _p_1
 .word 0xaa0003e2
@@ -1907,7 +1908,7 @@ bl _p_1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #312]
+ldr x15, [x16, #320]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -1975,7 +1976,7 @@ PInvoke_Kernel32_ACCESS_MASK_ToString:
 .word 0xb9400000
 .word 0xb9001ba0
 .word 0x910063a0
-bl _p_34
+bl _p_36
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2002,7 +2003,7 @@ PInvoke_Kernel32_ACCESS_MASK_ToString_string_System_IFormatProvider:
 .word 0x9100a3a0
 .word 0xf9400fa1
 .word 0xf94013a2
-bl _p_35
+bl _p_37
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -2024,7 +2025,7 @@ PInvoke_Kernel32Extensions_GetMessage_PInvoke_Win32ErrorCode:
 .word 0xd2800004
 .word 0xd2808005
 .word 0xf2a00025
-bl _p_26
+bl _p_28
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2046,14 +2047,14 @@ PInvoke_Kernel32Extensions_ThrowOnError_PInvoke_Win32ErrorCode:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2801201
 bl _p_1
 .word 0xf90013a0
 .word 0xb98013a1
-bl _p_36
+bl _p_38
 .word 0xf94013a0
-bl _p_8
+bl _p_10
 
 Lme_45:
 .text
@@ -2080,14 +2081,14 @@ PInvoke_Kernel32Extensions_ThrowOnError_PInvoke_NTSTATUS:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0xd2801201
 bl _p_1
 .word 0xf9001ba0
 .word 0xf94013a1
-bl PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS
+bl _p_39
 .word 0xf9401ba0
-bl _p_8
+bl _p_10
 
 Lme_46:
 .text
@@ -2103,7 +2104,7 @@ PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS:
 .word 0xf9400fa1
 .word 0xd2800002
 .word 0xd2800003
-bl PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string_System_Exception
+bl _p_40
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -2123,7 +2124,7 @@ PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string:
 .word 0xf9400fa1
 .word 0xf94017a2
 .word 0xd2800003
-bl PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string_System_Exception
+bl _p_40
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -2147,12 +2148,12 @@ PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string_System_Exception:
 .word 0xf9401ba0
 .word 0xb5000080
 .word 0xf94013a0
-bl _p_37
+bl _p_41
 .word 0xaa0003f6
 .word 0xf94023a0
 .word 0xaa1603e1
 .word 0xf9401fa2
-bl _p_38
+bl _p_42
 .word 0xf9400fa0
 .word 0x91022000
 .word 0xb98023a1
@@ -2193,14 +2194,14 @@ PInvoke_NTStatusException_GetMessage_PInvoke_NTSTATUS:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 .word 0xf9002ba0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800021
-bl _p_14
+bl _p_16
 .word 0xf90037a0
 .word 0xf9002fa0
 .word 0xb98023a0
@@ -2210,7 +2211,7 @@ bl _p_14
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 .word 0xd2800281
 bl _p_1
 .word 0xaa0003e2
@@ -2224,26 +2225,26 @@ bl _p_1
 .word 0xd63f0200
 .word 0xf9402ba0
 .word 0xf9402fa1
-bl _p_39
+bl _p_43
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #360]
 .word 0xf90023a0
 .word 0xb94023a0
 .word 0xf90027a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800281
 bl _p_1
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf94027a2
 .word 0xb9001022
-bl _p_40
+bl _p_44
 .word 0xaa0003f9
 .word 0xaa1903e0
 .word 0xb5000040
@@ -2251,14 +2252,14 @@ bl _p_40
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800041
-bl _p_14
+bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9002ba0
@@ -2279,26 +2280,26 @@ bl _p_14
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_39
+bl _p_43
 .word 0xaa0003fa
 .word 0xaa1a03f9
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #376]
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800041
-bl _p_14
+bl _p_16
 .word 0xf9002fa0
 .word 0xf9002ba0
 .word 0xb98023a0
 .word 0xb90033a0
 .word 0xf9401ba0
-bl _p_41
+bl _p_45
 .word 0xaa0003e2
 .word 0xf9402fa3
 .word 0xaa0303e0
@@ -2317,7 +2318,7 @@ bl _p_41
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_39
+bl _p_43
 .word 0xaa0003fa
 .word 0xd2800019
 .word 0xd2800000
@@ -2327,14 +2328,14 @@ bl _p_39
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800041
-bl _p_14
+bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9002ba0
@@ -2355,7 +2356,7 @@ bl _p_14
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_39
+bl _p_43
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -2398,27 +2399,27 @@ PInvoke_NTStatusException_GetSeverityString_PInvoke_NTSTATUS:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #384]
 .word 0x14000011
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #392]
 .word 0x1400000d
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #400]
 .word 0x14000009
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #408]
 .word 0x14000005
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf9400000
 .word 0xf9400bba
 .word 0x910003bf
@@ -2434,11 +2435,11 @@ PInvoke_Win32Exception__ctor:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-bl _p_5
+bl _p_6
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9400ba0
-bl PInvoke_Win32Exception__ctor_int
+bl _p_46
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2456,7 +2457,7 @@ PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode:
 .word 0xf90013a0
 .word 0xf90017a1
 .word 0xb9802ba0
-bl PInvoke_Kernel32Extensions_GetMessage_PInvoke_Win32ErrorCode
+bl _p_47
 .word 0xaa0003e1
 .word 0xf94013a2
 .word 0xf9001ba2
@@ -2466,20 +2467,20 @@ bl PInvoke_Kernel32Extensions_GetMessage_PInvoke_Win32ErrorCode
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xd2800021
-bl _p_14
+bl _p_16
 .word 0xf9002ba0
 .word 0xf90027a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 .word 0xd2800281
 bl _p_1
 .word 0xaa0003e2
@@ -2493,12 +2494,12 @@ bl _p_1
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_39
+bl _p_43
 .word 0xaa0003f7
 .word 0xf9401ba0
 .word 0xaa1903e1
 .word 0xaa1703e2
-bl PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode_string
+bl _p_48
 .word 0xf9400bb7
 .word 0xf9400fb9
 .word 0x910003bf
@@ -2517,7 +2518,7 @@ PInvoke_Win32Exception__ctor_int:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xb9801ba1
-bl _p_36
+bl _p_38
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2535,7 +2536,7 @@ PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode_string:
 .word 0xf90013a2
 .word 0xf9400ba0
 .word 0xf94013a1
-bl _p_42
+bl _p_49
 .word 0xb9801ba1
 .word 0xf9400ba0
 .word 0xb9008801
@@ -2567,7 +2568,7 @@ b System_Nullable_1_int__ctor_int
 	.align 4
 	.no_dead_strip System_Nullable_1_int__ctor_int
 System_Nullable_1_int__ctor_int:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/corlib/System/Nullable.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/corlib/System/Nullable.cs"
 .loc 2 94 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -2626,13 +2627,13 @@ System_Nullable_1_int_get_Value:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 .loc 2 105 0
-.word 0xd29687c0
-bl _p_43
+.word 0xd287dee0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_55:
 .text
@@ -2668,7 +2669,7 @@ System_Nullable_1_int_Equals_object:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #416]
+ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -2680,20 +2681,20 @@ ldr x1, [x16, #416]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0x9100a3a0
 .word 0xf9001ba0
 .word 0xaa1a03e0
-bl _p_44
+bl _p_51
 .word 0xf9401bbe
 .word 0xf90003c0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_45
+bl _p_52
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -2715,11 +2716,7 @@ System_Nullable_1_int_Equals_System_Nullable_1_int:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xb9801ba0
-.word 0xb9002ba0
-.word 0xb9801fa0
-.word 0xb9002fa0
-.word 0x3940b3a0
+.word 0x394073a0
 .word 0xf9400ba1
 .word 0x39401021
 .word 0x6b01001f
@@ -2743,14 +2740,14 @@ System_Nullable_1_int_Equals_System_Nullable_1_int:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 .word 0xd2800281
 bl _p_1
 .word 0xaa0003e1
 .word 0xf9401ba0
 .word 0xf9401fa2
 .word 0xb9001022
-bl _p_46
+bl _p_53
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -2845,13 +2842,13 @@ System_Nullable_1_int_ToString:
 .word 0x34000080
 .loc 2 153 0
 .word 0xf9400ba0
-bl _p_47
+bl _p_54
 .word 0x14000005
 .loc 2 155 0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -2867,35 +2864,27 @@ b System_Nullable_1_int_Box_System_Nullable_1_int
 	.no_dead_strip System_Nullable_1_int_Box_System_Nullable_1_int
 System_Nullable_1_int_Box_System_Nullable_1_int:
 .loc 2 177 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xb98013a0
-.word 0xb9002ba0
-.word 0xb98017a0
-.word 0xb9002fa0
-.word 0x3940b3a0
+.word 0x394053a0
 .word 0x35000060
 .loc 2 178 0
 .word 0xd2800000
-.word 0x1400000e
+.word 0x1400000a
 .loc 2 180 0
 .word 0xb98013a0
-.word 0xb90023a0
-.word 0xb98017a0
-.word 0xb90027a0
-.word 0xb98023a0
-.word 0xf9001ba0
+.word 0xf90013a0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 .word 0xd2800281
 bl _p_1
-.word 0xf9401ba1
+.word 0xf94013a1
 .word 0xb9001001
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_5c:
@@ -2935,7 +2924,7 @@ System_Nullable_1_int_Unbox_object:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x2, [x16, #416]
+ldr x2, [x16, #424]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000221
@@ -2946,8 +2935,8 @@ ldr x2, [x16, #416]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
-bl _p_24
+ldr x15, [x16, #208]
+bl _p_26
 .word 0xb9802ba0
 .word 0xb90013a0
 .word 0xb9802fa0
@@ -2956,9 +2945,9 @@ bl _p_24
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_5d:
 .text
@@ -2969,7 +2958,7 @@ b System_ArraySegment_1_T_BYTE__ctor_T_BYTE__
 	.align 4
 	.no_dead_strip System_ArraySegment_1_T_BYTE__ctor_T_BYTE__
 System_ArraySegment_1_T_BYTE__ctor_T_BYTE__:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/arraysegment.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/arraysegment.cs"
 .loc 3 39 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -3002,13 +2991,13 @@ ldr x1, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 40 0
-.word 0xd28571c0
-bl _p_43
+.word 0xd2863360
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_5e:
 .text
@@ -3069,45 +3058,45 @@ ldr x1, [x16, #16]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 3 51 0
-.word 0xd28571c0
-bl _p_43
+.word 0xd2863360
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 .loc 3 53 0
-.word 0xd2883aa0
-bl _p_43
+.word 0xd28af700
+bl _p_50
 .word 0xf90023a0
-.word 0xd2857540
-bl _p_43
+.word 0xd285fbc0
+bl _p_50
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_8
+bl _p_10
 .loc 3 55 0
-.word 0xd28607c0
-bl _p_43
+.word 0xd2864060
+bl _p_50
 .word 0xf90023a0
-.word 0xd2857540
-bl _p_43
+.word 0xd285fbc0
+bl _p_50
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_8
+bl _p_10
 .loc 3 57 0
-.word 0xd285b2c0
-bl _p_43
+.word 0xd286f660
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_5f:
 .text
@@ -3219,11 +3208,11 @@ System_ArraySegment_1_T_BYTE_Equals_object:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9401ba0
-bl _p_48
+bl _p_55
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_49
+bl _p_56
 .word 0xb40004c0
 .loc 3 125 0
 .word 0xf9400fa0
@@ -3236,7 +3225,7 @@ bl _p_49
 .word 0xf9400000
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_50
+bl _p_57
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xeb01001f
@@ -3249,12 +3238,12 @@ bl _p_50
 .word 0xf9400400
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_51
+bl _p_58
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf940001e
 .word 0xf9401ba0
-bl _p_52
+bl _p_59
 .word 0xaa0003e3
 .word 0xf94023af
 .word 0xf9400ba0
@@ -3268,9 +3257,9 @@ bl _p_52
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_64:
 .text
@@ -3282,35 +3271,23 @@ b System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 	.no_dead_strip System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE:
 .loc 3 132 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9002faf
+.word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400fa0
-.word 0xf90027a0
-.word 0xf94013a0
-.word 0xf9002ba0
-.word 0xf94027a0
 .word 0xf9400ba1
 .word 0xf9400021
 .word 0xeb01001f
-.word 0x54000281
-.word 0xf9400fa0
-.word 0xf9001fa0
-.word 0xf94013a0
-.word 0xf90023a0
-.word 0xb98043a0
+.word 0x54000181
+.word 0xb98023a0
 .word 0xf9400ba1
 .word 0xb9800821
 .word 0x6b01001f
-.word 0x54000161
-.word 0xf9400fa0
-.word 0xf90017a0
-.word 0xf94013a0
-.word 0xf9001ba0
-.word 0xb98037a0
+.word 0x540000e1
+.word 0xb98027a0
 .word 0xf9400ba1
 .word 0xb9800c21
 .word 0x6b01001f
@@ -3318,7 +3295,7 @@ System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE:
 .word 0x14000002
 .word 0xd2800000
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_65:
@@ -3365,24 +3342,24 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_get_Item_int:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 151 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 .loc 3 153 0
 .word 0xd2821380
-bl _p_43
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
-.word 0xd2801e00
+bl _p_10
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_66:
 .text
@@ -3431,24 +3408,24 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_set_Item_int_T_B
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 162 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 .loc 3 164 0
 .word 0xd2821380
-bl _p_43
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
-.word 0xd2801e00
+bl _p_10
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_67:
 .text
@@ -3476,10 +3453,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_IndexOf_T_BYTE:
 .word 0xb9800f20
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_53
+bl _p_60
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_54
+bl _p_61
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -3503,13 +3480,13 @@ bl _p_54
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 3 174 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_68:
 .text
@@ -3527,10 +3504,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_Insert_int_T_BYT
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3550,10 +3527,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_RemoveAt_int:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3602,24 +3579,24 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IReadOnlyList_T_get_Item
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 202 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 .loc 3 204 0
 .word 0xd2821380
-bl _p_43
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
-.word 0xd2801e00
+bl _p_10
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_6b:
 .text
@@ -3655,10 +3632,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Add_T_BYTE
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3677,10 +3654,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Clear:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3711,10 +3688,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Contains_T
 .word 0xb9800f20
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_55
+bl _p_62
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_56
+bl _p_63
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -3733,13 +3710,13 @@ bl _p_56
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 3 236 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_6f:
 .text
@@ -3766,20 +3743,20 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_CopyTo_T_B
 .word 0xb9800f04
 .word 0xf9400fa2
 .word 0xb98023a3
-bl _p_57
+bl _p_64
 .loc 3 254 0
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 250 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_70:
 .text
@@ -3796,10 +3773,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Remove_T_B
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3828,12 +3805,12 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IEnumerable_T_GetEnumera
 .word 0xf9400400
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_58
+bl _p_65
 .word 0xd2800501
 bl _p_1
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_59
+bl _p_66
 .word 0xaa0003e3
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -3845,13 +3822,13 @@ bl _p_59
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 3 266 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_72:
 .text
@@ -3877,12 +3854,12 @@ System_ArraySegment_1_T_BYTE_System_Collections_IEnumerable_GetEnumerator:
 .word 0xf9400400
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_60
+bl _p_67
 .word 0xd2800501
 bl _p_1
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_61
+bl _p_68
 .word 0xaa0003e3
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -3894,13 +3871,13 @@ bl _p_61
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 3 277 0
-.word 0xd2883c60
-bl _p_43
+.word 0xd28af8c0
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
+bl _p_10
 
 Lme_73:
 .text
@@ -3926,14 +3903,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_bool_object_intptr_int_Nullable_1_
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_62
+bl _p_69
 .word 0xaa0003f8
 .word 0xb4000060
 .word 0xaa1803e0
-bl _p_8
+bl _p_10
 .word 0xf9400320
 .word 0xf90053a0
 .word 0xf9400720
@@ -3946,10 +3923,10 @@ bl _p_8
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0x910143a1
 .word 0xf90037a1
-bl _p_44
+bl _p_51
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94053a0
@@ -3964,7 +3941,7 @@ bl _p_44
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #440]
 .word 0xd2800221
 bl _p_1
 .word 0xf9404fa1
@@ -3979,9 +3956,9 @@ bl _p_1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xf94023a0
-bl _p_63
+bl _p_70
 .word 0xf9404ba1
 .word 0xf9000020
 .word 0xd349fc21
@@ -4019,7 +3996,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000800
 .word 0x14000001
@@ -4035,10 +4012,10 @@ ldr x0, [x16, #424]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0x910123a1
 .word 0xf90037a1
-bl _p_44
+bl _p_51
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94053a0
@@ -4053,7 +4030,7 @@ bl _p_44
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #440]
 .word 0xd2800221
 bl _p_1
 .word 0xf9404fa1
@@ -4068,9 +4045,9 @@ bl _p_1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xf9401fa0
-bl _p_63
+bl _p_70
 .word 0xf9404ba1
 .word 0xf9000020
 .word 0xd349fc21
@@ -4089,11 +4066,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-bl _p_62
+bl _p_69
 .word 0xaa0003f8
 .word 0xb4fff800
 .word 0xaa1803e0
-bl _p_8
+bl _p_10
 
 Lme_76:
 .text
@@ -4119,14 +4096,14 @@ wrapper_runtime_invoke__Module_runtime_invoke_bool_object_void__int_Nullable_1_i
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_62
+bl _p_69
 .word 0xaa0003f8
 .word 0xb4000060
 .word 0xaa1803e0
-bl _p_8
+bl _p_10
 .word 0xf9400320
 .word 0xf90053a0
 .word 0xf9400720
@@ -4138,10 +4115,10 @@ bl _p_8
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0x910143a1
 .word 0xf90037a1
-bl _p_44
+bl _p_51
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94053a0
@@ -4155,7 +4132,7 @@ bl _p_44
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #440]
 .word 0xd2800221
 bl _p_1
 .word 0xf9404fa1
@@ -4170,9 +4147,9 @@ bl _p_1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xf94023a0
-bl _p_63
+bl _p_70
 .word 0xf9404ba1
 .word 0xf9000020
 .word 0xd349fc21
@@ -4210,7 +4187,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350007c0
 .word 0x14000001
@@ -4225,10 +4202,10 @@ ldr x0, [x16, #424]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0x910123a1
 .word 0xf90037a1
-bl _p_44
+bl _p_51
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94053a0
@@ -4242,7 +4219,7 @@ bl _p_44
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #440]
 .word 0xd2800221
 bl _p_1
 .word 0xf9404fa1
@@ -4257,9 +4234,9 @@ bl _p_1
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x15, [x16, #200]
+ldr x15, [x16, #208]
 .word 0xf9401fa0
-bl _p_63
+bl _p_70
 .word 0xf9404ba1
 .word 0xf9000020
 .word 0xd349fc21
@@ -4278,11 +4255,11 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-bl _p_62
+bl _p_69
 .word 0xaa0003f8
 .word 0xb4fff840
 .word 0xaa1803e0
-bl _p_8
+bl _p_10
 
 Lme_77:
 .text
@@ -4319,7 +4296,7 @@ ldr x0, [x16, #112]
 .word 0xf90017a1
 .word 0xf9000280
 .word 0xaa1503e0
-bl _p_64
+bl _p_71
 .word 0xaa0003f5
 .word 0xaa1703f3
 .word 0xd2804a1e
@@ -4351,15 +4328,15 @@ bl _p_64
 .word 0xaa1803e3
 .word 0xf9400fa4
 .word 0xb98023a5
-bl _p_65
+bl _p_72
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #256]
-bl _p_29
+ldr x0, [x16, #264]
+bl _p_31
 .word 0xf9005ba0
-bl _p_30
+bl _p_32
 .word 0xf9405ba0
 .word 0xaa0003f9
 .word 0xaa1903e0
@@ -4368,12 +4345,12 @@ bl _p_30
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000c40
 .word 0x14000001
 .word 0xaa1503e0
-bl _p_66
+bl _p_73
 .word 0xaa1703fa
 .word 0xb4000a37
 .word 0xf94053a0
@@ -4419,7 +4396,7 @@ bl _p_66
 .word 0xaa1a03f7
 .word 0xaa1303e0
 .word 0xd2802081
-bl _p_67
+bl _p_74
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -4438,7 +4415,7 @@ ldr x2, [x16, #16]
 .word 0xaa1a03f7
 .word 0xaa1303e0
 .word 0xd28001c1
-bl _p_67
+bl _p_74
 .word 0xf9000340
 .word 0xd349ff41
 .word 0xd29ffffe
@@ -4456,9 +4433,9 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xf94053a1
-bl _p_68
+bl _p_75
 .word 0xf94017a0
 .word 0xf9000280
 .word 0xaa1903e0
@@ -4470,8 +4447,8 @@ bl _p_68
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17ffff9d
@@ -4512,10 +4489,10 @@ ldr x0, [x16, #112]
 .word 0xf9001fa1
 .word 0xf9000260
 .word 0xf94017a0
-bl _p_70
+bl _p_77
 .word 0xf9005ba0
 .word 0xf9401ba0
-bl _p_71
+bl _p_78
 .word 0xaa0003fa
 .word 0xb98013a0
 .word 0xf9400fa1
@@ -4524,25 +4501,25 @@ bl _p_71
 .word 0xf9405ba4
 .word 0xaa1903e5
 .word 0xaa1a03e6
-bl _p_72
+bl _p_79
 .word 0x93407c00
 .word 0xf90063a0
-bl _p_73
+bl _p_80
 .word 0xf94063a0
 .word 0xaa0003f9
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000260
 .word 0x14000001
 .word 0xf94017a0
 .word 0xf9405ba1
-bl _p_74
+bl _p_81
 .word 0xf9401ba0
 .word 0xaa1a03e1
-bl _p_75
+bl _p_82
 .word 0xf9401fa0
 .word 0xf9000260
 .word 0xaa1903e0
@@ -4553,8 +4530,8 @@ bl _p_75
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffec
@@ -4587,13 +4564,13 @@ ldr x0, [x16, #112]
 .word 0xf9400341
 .word 0xf9000ba1
 .word 0xf9000340
-bl _p_76
+bl _p_83
 .word 0x93407c00
 .word 0xaa0003f9
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4606,8 +4583,8 @@ ldr x0, [x16, #424]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -4640,13 +4617,13 @@ ldr x0, [x16, #112]
 .word 0xf9400341
 .word 0xf9000ba1
 .word 0xf9000340
-bl _p_77
+bl _p_84
 .word 0x93407c00
 .word 0xaa0003f9
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4659,8 +4636,8 @@ ldr x0, [x16, #424]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -4693,15 +4670,15 @@ ldr x0, [x16, #112]
 .word 0xf9400341
 .word 0xf9000ba1
 .word 0xf9000340
-bl _p_78
+bl _p_85
 .word 0xf9004fa0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #272]
-bl _p_29
+ldr x0, [x16, #280]
+bl _p_31
 .word 0xf9004ba0
-bl _p_32
+bl _p_34
 .word 0xf9404ba0
 .word 0xf9404fa1
 .word 0xaa0003f9
@@ -4711,7 +4688,7 @@ bl _p_32
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -4724,8 +4701,8 @@ ldr x0, [x16, #424]
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -4761,31 +4738,32 @@ ldr x0, [x16, #112]
 .word 0xf9400301
 .word 0xf9000ba1
 .word 0xf9000300
-.word 0xb40004b9
-.word 0x390223bf
+.word 0xb40004d9
+.word 0xd2800000
+.word 0x390223a0
 .word 0x910223a1
 .word 0xaa1903e0
-bl _p_79
+bl _p_86
 .word 0xf9400b37
 .word 0xaa1703e0
 .word 0xaa1a03e1
-bl _p_80
+bl _p_87
 .word 0x53001c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
 .word 0x394223a0
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_81
+bl _p_88
 .word 0xf9400ba0
 .word 0xf9000300
 .word 0xaa1a03e0
@@ -4794,15 +4772,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0xaa1703e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_7d:
 .text
@@ -4838,34 +4816,35 @@ ldr x0, [x16, #112]
 .word 0xf94002a1
 .word 0xf90013a1
 .word 0xf90002a0
-.word 0xb4000536
-.word 0x390263bf
+.word 0xb4000556
+.word 0xd2800000
+.word 0x390263a0
 .word 0x910263a1
 .word 0xaa1603e0
-bl _p_79
+bl _p_86
 .word 0xf9400ad4
 .word 0xaa1403e0
 .word 0xf9400ba1
 .word 0xb9801ba2
 .word 0xaa1903e3
 .word 0xaa1a03e4
-bl _p_82
+bl _p_89
 .word 0x53001c00
 .word 0xf90053a0
-bl _p_73
+bl _p_80
 .word 0xf94053a0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001e0
 .word 0x14000001
 .word 0x394263a0
 .word 0x34000060
 .word 0xaa1603e0
-bl _p_81
+bl _p_88
 .word 0xf94013a0
 .word 0xf90002a0
 .word 0xaa1a03e0
@@ -4875,15 +4854,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f9
 .word 0xb4fffe20
 .word 0xaa1903e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_7e:
 .text
@@ -4919,34 +4898,35 @@ ldr x0, [x16, #112]
 .word 0xf94002a1
 .word 0xf90013a1
 .word 0xf90002a0
-.word 0xb4000536
-.word 0x390263bf
+.word 0xb4000556
+.word 0xd2800000
+.word 0x390263a0
 .word 0x910263a1
 .word 0xaa1603e0
-bl _p_79
+bl _p_86
 .word 0xf9400ad4
 .word 0xaa1403e0
 .word 0xf9400ba1
 .word 0xb9801ba2
 .word 0xaa1903e3
 .word 0xaa1a03e4
-bl _p_83
+bl _p_90
 .word 0x53001c00
 .word 0xf90053a0
-bl _p_73
+bl _p_80
 .word 0xf94053a0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001e0
 .word 0x14000001
 .word 0x394263a0
 .word 0x34000060
 .word 0xaa1603e0
-bl _p_81
+bl _p_88
 .word 0xf94013a0
 .word 0xf90002a0
 .word 0xaa1a03e0
@@ -4956,15 +4936,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f9
 .word 0xb4fffe20
 .word 0xaa1903e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_7f:
 .text
@@ -4996,30 +4976,31 @@ ldr x0, [x16, #112]
 .word 0xf9400321
 .word 0xf9000ba1
 .word 0xf9000320
-.word 0xb400049a
-.word 0x390223bf
+.word 0xb40004ba
+.word 0xd2800000
+.word 0x390223a0
 .word 0x910223a1
 .word 0xaa1a03e0
-bl _p_79
+bl _p_86
 .word 0xf9400b58
 .word 0xaa1803e0
-bl _p_84
+bl _p_91
 .word 0x93407c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
 .word 0xaa0003f8
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
 .word 0x394223a0
 .word 0x34000060
 .word 0xaa1a03e0
-bl _p_81
+bl _p_88
 .word 0xf9400ba0
 .word 0xf9000320
 .word 0xaa1803e0
@@ -5028,15 +5009,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0xaa1703e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_80:
 .text
@@ -5068,30 +5049,31 @@ ldr x0, [x16, #112]
 .word 0xf9400321
 .word 0xf9000ba1
 .word 0xf9000320
-.word 0xb400049a
-.word 0x390223bf
+.word 0xb40004ba
+.word 0xd2800000
+.word 0x390223a0
 .word 0x910223a1
 .word 0xaa1a03e0
-bl _p_79
+bl _p_86
 .word 0xf9400b58
 .word 0xaa1803e0
-bl _p_85
+bl _p_92
 .word 0x93407c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
 .word 0xaa0003f8
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
 .word 0x394223a0
 .word 0x34000060
 .word 0xaa1a03e0
-bl _p_81
+bl _p_88
 .word 0xf9400ba0
 .word 0xf9000320
 .word 0xaa1803e0
@@ -5100,15 +5082,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0xaa1703e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_81:
 .text
@@ -5141,30 +5123,31 @@ ldr x0, [x16, #112]
 .word 0xf9400301
 .word 0xf9000ba1
 .word 0xf9000300
-.word 0xb4000499
-.word 0x390223bf
+.word 0xb40004b9
+.word 0xd2800000
+.word 0x390223a0
 .word 0x910223a1
 .word 0xaa1903e0
-bl _p_79
+bl _p_86
 .word 0xf9400b37
 .word 0xaa1703e0
 .word 0xaa1a03e1
-bl _p_86
+bl _p_93
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
 .word 0x394223a0
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_81
+bl _p_88
 .word 0xf9400ba0
 .word 0xf9000300
 .word 0xaa1a03e0
@@ -5173,15 +5156,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0xaa1703e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_82:
 .text
@@ -5213,16 +5196,16 @@ ldr x0, [x16, #112]
 .word 0xf9000ba1
 .word 0xf9000320
 .word 0xaa1a03e0
-bl _p_87
+bl _p_94
 .word 0x53001c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5235,8 +5218,8 @@ ldr x0, [x16, #424]
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5271,30 +5254,31 @@ ldr x0, [x16, #112]
 .word 0xf9400321
 .word 0xf9000ba1
 .word 0xf9000320
-.word 0xb400049a
-.word 0x390223bf
+.word 0xb40004ba
+.word 0xd2800000
+.word 0x390223a0
 .word 0x910223a1
 .word 0xaa1a03e0
-bl _p_79
+bl _p_86
 .word 0xf9400b58
 .word 0xaa1803e0
-bl _p_88
+bl _p_95
 .word 0x53001c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
-.word 0xaa0003f8
+.word 0x53001c18
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
 .word 0x394223a0
 .word 0x34000060
 .word 0xaa1a03e0
-bl _p_81
+bl _p_88
 .word 0xf9400ba0
 .word 0xf9000320
 .word 0xaa1803e0
@@ -5303,15 +5287,15 @@ bl _p_81
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-bl _p_69
+bl _p_76
 .word 0xaa0003f7
 .word 0xb4fffe40
 .word 0xaa1703e0
-bl _p_8
-.word 0xd2801360
+bl _p_10
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_8
+bl _p_10
 
 Lme_84:
 .text
@@ -5343,16 +5327,16 @@ ldr x0, [x16, #112]
 .word 0xf9000ba1
 .word 0xf9000320
 .word 0xaa1a03e0
-bl _p_89
+bl _p_96
 .word 0x53001c00
 .word 0xf9004ba0
-bl _p_73
+bl _p_80
 .word 0xf9404ba0
-.word 0xaa0003fa
+.word 0x53001c1a
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #424]
+ldr x0, [x16, #432]
 .word 0xb9400000
 .word 0x35000180
 .word 0x14000001
@@ -5365,8 +5349,8 @@ ldr x0, [x16, #424]
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_8
-bl _p_69
+bl _p_10
+bl _p_76
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17fffff3
@@ -5535,14 +5519,14 @@ wrapper_unknown_PInvoke_Kernel32_WIN32_FIND_DATA_StructureToPtr_object_intptr_bo
 .word 0xf9400021
 .word 0xf9001ba0
 .word 0xd2802082
-bl _p_90
+bl _p_97
 .word 0xf9401ba0
 .word 0xf9401fa1
 .word 0x91002021
 .word 0x91082000
 .word 0xf9400021
 .word 0xd28001c2
-bl _p_90
+bl _p_97
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -5572,7 +5556,7 @@ wrapper_unknown_PInvoke_Kernel32_WIN32_FIND_DATA_PtrToStructure_intptr_object:
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x2, [x16, #440]
+ldr x2, [x16, #448]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000921
@@ -5613,7 +5597,7 @@ ldr x2, [x16, #440]
 .word 0xf9001ba1
 .word 0xf90017a0
 .word 0xd2802081
-bl _p_67
+bl _p_74
 .word 0xaa0003e2
 .word 0xf94017a0
 .word 0xf9401ba1
@@ -5633,7 +5617,7 @@ ldr x4, [x16, #16]
 .word 0x91002021
 .word 0xf90013a1
 .word 0xd28001c1
-bl _p_67
+bl _p_74
 .word 0xf94013a1
 .word 0xf9000020
 .word 0xd349fc21
@@ -5650,9 +5634,9 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_8b:
 .text
@@ -5705,8 +5689,8 @@ Lme_8d:
 	.align 4
 	.no_dead_strip System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int
 System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/external/corert/src/System.Private.CoreLib/src/System/Array.cs"
-.loc 4 687 0 prologue_end
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/external/corert/src/System.Private.CoreLib/src/System/Array.cs"
+.loc 4 681 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb7
@@ -5717,13 +5701,13 @@ System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xaa0203f9
 .word 0xf90017a3
 .word 0xb4000417
-.loc 4 692 0
+.loc 4 686 0
 .word 0x6b1f033f
 .word 0x540004ab
 .word 0xb9801ae0
 .word 0x6b00033f
 .word 0x5400044c
-.loc 4 697 0
+.loc 4 691 0
 .word 0xb9802ba0
 .word 0x6b1f001f
 .word 0x5400054b
@@ -5732,12 +5716,12 @@ System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xb9802ba0
 .word 0x6b01001f
 .word 0x540004ac
-.loc 4 702 0
+.loc 4 696 0
 .word 0xf9401ba0
-bl _p_91
+bl _p_98
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_92
+bl _p_99
 .word 0xaa0003e4
 .word 0xf94023af
 .word 0xaa1703e0
@@ -5751,38 +5735,38 @@ bl _p_92
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.loc 4 689 0
-.word 0xd28571c0
-bl _p_43
+.loc 4 683 0
+.word 0xd2863360
+bl _p_50
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_8
-.loc 4 694 0
-.word 0xd285ef20
-bl _p_43
+bl _p_10
+.loc 4 688 0
+.word 0xd2865260
+bl _p_50
 .word 0xf90023a0
-.word 0xd285f1e0
-bl _p_43
+.word 0xd285e5e0
+bl _p_50
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_8
-.loc 4 699 0
-.word 0xd28607c0
-bl _p_43
+bl _p_10
+.loc 4 693 0
+.word 0xd2864060
+bl _p_50
 .word 0xf90023a0
-.word 0xd2860940
-bl _p_43
+.word 0xd2868060
+bl _p_50
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_8
+bl _p_10
 
 Lme_8e:
 .text
@@ -5790,17 +5774,13 @@ Lme_8e:
 	.no_dead_strip System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE
 System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE:
 .loc 3 299 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba1
 .word 0xf9400fa0
-.word 0xf90027a0
-.word 0xf94013a0
-.word 0xf9002ba0
-.word 0xf94027a0
 .word 0xf9000820
 .word 0x91004021
 .word 0xd349fc21
@@ -5816,21 +5796,13 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 3 300 0
 .word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xf9001fa1
-.word 0xf94013a1
-.word 0xf90023a1
-.word 0xb98043a1
+.word 0xb98023a1
 .word 0xb9001801
 .loc 3 301 0
 .word 0xf9400ba0
 .word 0xf9400ba1
 .word 0xb9801821
-.word 0xf9400fa2
-.word 0xf90017a2
-.word 0xf94013a2
-.word 0xf9001ba2
-.word 0xb98037a2
+.word 0xb98027a2
 .word 0xb020021
 .word 0xb9001c01
 .loc 3 302 0
@@ -5841,7 +5813,7 @@ ldr x2, [x16, #16]
 .word 0xb9002001
 .loc 3 303 0
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_8f:
@@ -5849,8 +5821,8 @@ Lme_8f:
 	.align 4
 	.no_dead_strip System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int
 System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 5 624 0 prologue_end
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/corlib/System/Array.cs"
+.loc 5 658 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001baf
@@ -5859,10 +5831,10 @@ System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9401ba0
-bl _p_93
+bl _p_100
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_94
+bl _p_101
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003e5
@@ -5884,24 +5856,24 @@ Lme_90:
 	.align 4
 	.no_dead_strip System_Collections_Generic_EqualityComparer_1_T_BYTE_get_Default
 System_Collections_Generic_EqualityComparer_1_T_BYTE_get_Default:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
 .loc 6 32 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_95
+bl _p_102
 .word 0xf940001a
 .loc 6 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 6 34 0
 .word 0xf9400fa0
-bl _p_96
+bl _p_103
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_97
+bl _p_104
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -5909,10 +5881,10 @@ bl _p_97
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_95
+bl _p_102
 .word 0xf90013a0
 .word 0xf94017a1
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000001
 .loc 6 37 0
@@ -5934,7 +5906,7 @@ System_Collections_Generic_EqualityComparer_1_T_BYTE_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_98
+bl _p_105
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -5944,7 +5916,7 @@ bl _p_98
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #456]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540023c1
@@ -5953,7 +5925,7 @@ ldr x1, [x16, #448]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #456]
+ldr x0, [x16, #464]
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -5961,12 +5933,12 @@ ldr x0, [x16, #456]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #472]
 .word 0xd2800201
 bl _p_1
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -5982,7 +5954,7 @@ bl _p_99
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #480]
 .word 0xeb00033f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -5990,12 +5962,12 @@ ldr x0, [x16, #472]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 .word 0xd2800201
 bl _p_1
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6009,12 +5981,12 @@ bl _p_99
 .word 0x140000e6
 .loc 6 62 0
 .word 0xf94017a0
-bl _p_100
+bl _p_107
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0xf9400042
-.word 0xf9408050
+.word 0xf9408450
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000280
@@ -6022,12 +5994,12 @@ bl _p_100
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #496]
 .word 0xaa1903e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6042,25 +6014,25 @@ bl _p_99
 .loc 6 70 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9410430
+.word 0xf9410830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000a60
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940a830
+.word 0xf940ac30
 .word 0xd63f0200
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #496]
+ldr x1, [x16, #504]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000920
 .loc 6 71 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940b030
+.word 0xf940b430
 .word 0xd63f0200
 .word 0xb9801801
 .word 0xeb1f003f
@@ -6075,7 +6047,7 @@ ldr x1, [x16, #496]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x1, [x16, #448]
+ldr x1, [x16, #456]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001541
@@ -6084,14 +6056,14 @@ ldr x1, [x16, #448]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #512]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #520]
 .word 0xd2800021
-bl _p_14
+bl _p_16
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -6105,13 +6077,13 @@ bl _p_14
 .word 0xf9401fa2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf940b850
+.word 0xf940bc50
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf9400042
-.word 0xf9408050
+.word 0xf9408450
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000280
@@ -6119,12 +6091,12 @@ bl _p_14
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #528]
 .word 0xaa1803e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6139,14 +6111,14 @@ bl _p_99
 .loc 6 82 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9411430
+.word 0xf9411830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000be0
 .loc 6 83 0
 .word 0xaa1903e0
-bl _p_102
-bl _p_103
+bl _p_109
+bl _p_110
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 6 88 0
@@ -6160,7 +6132,7 @@ bl _p_103
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #536]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -6168,12 +6140,12 @@ ldr x0, [x16, #528]
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #544]
 .word 0xaa1903e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6189,12 +6161,12 @@ bl _p_99
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #552]
 .word 0xaa1903e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6210,12 +6182,12 @@ bl _p_99
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #552]
+ldr x0, [x16, #560]
 .word 0xaa1903e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6231,12 +6203,12 @@ bl _p_99
 
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x0, [x16, #560]
+ldr x0, [x16, #568]
 .word 0xaa1903e1
-bl _p_101
+bl _p_108
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_99
+bl _p_106
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -6250,12 +6222,12 @@ bl _p_99
 .word 0x1400000d
 .loc 6 120 0
 .word 0xf94017a0
-bl _p_104
+bl _p_111
 .word 0xd2800201
 bl _p_1
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_105
+bl _p_112
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -6266,12 +6238,12 @@ bl _p_105
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_11
-.word 0xd2801e00
+bl _p_13
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_11
+bl _p_13
 
 Lme_92:
 .text
@@ -6542,19 +6514,19 @@ unwind_info:
 	.byte 0,68,14,80,157,10,158,9,68,13,29,68,150,8,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154
 	.byte 11,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,19,12,31,0,68,14,96,157,12,158,11,68,13,29
 	.byte 68,151,10,68,153,9,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,18,12,31,0,68,14,48,157,6
-	.byte 158,5,68,13,29,68,153,4,154,3,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,13,12,31
-	.byte 0,68,14,96,157,12,158,11,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0
-	.byte 68,14,48,157,6,158,5,68,13,29,68,152,4,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7
-	.byte 16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,19,12,31,0,68,14,192,1,157,24,158,23,68,13,29
-	.byte 68,152,22,153,21,39,12,31,0,68,14,192,1,157,24,158,23,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151
-	.byte 12,152,11,68,153,10,154,9,68,155,8,156,7,39,12,31,0,68,14,208,1,157,26,158,25,68,13,29,76,147,16,148
-	.byte 15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,68,155,8,156,7,39,12,31,0,68,14,144,1,157,18,158
-	.byte 17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31
-	.byte 0,68,14,160,1,157,20,158,19,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8
-	.byte 68,155,7,156,6,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151
-	.byte 11,152,10,68,153,9,154,8,68,155,7,156,6,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,19,12
-	.byte 31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,68,153,7,16,12,31,0,68,14,64,157,8,158,7,68,13,29
-	.byte 68,154,6,21,12,31,0,68,14,64,157,8,158,7,68,13,29,68,152,6,153,5,68,154,4
+	.byte 158,5,68,13,29,68,153,4,154,3,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151,8,152,7,16,12,31
+	.byte 0,68,14,48,157,6,158,5,68,13,29,68,153,4,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,18
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,16,12,31,0,68,14,80,157,10,158,9,68,13,29
+	.byte 68,153,8,19,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,152,22,153,21,39,12,31,0,68,14,192,1,157
+	.byte 24,158,23,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10,154,9,68,155,8,156,7,39
+	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29,76,147,16,148,15,68,149,14,150,13,68,151,12,152,11,68,153,10
+	.byte 154,9,68,155,8,156,7,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10
+	.byte 68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,160,1,157,20,158,19,68,13,29,76,147
+	.byte 15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,39,12,31,0,68,14,176,1,157
+	.byte 22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6,16
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,153,2,19,12,31,0,68,14,80,157,10,158,9,68,13,29,68,151
+	.byte 8,68,153,7,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,21,12,31,0,68,14,64,157,8,158,7
+	.byte 68,13,29,68,152,6,153,5,68,154,4
 
 .text
 	.align 4
@@ -6565,845 +6537,901 @@ plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_1:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x16, [x16, #576]
+ldr x16, [x16, #584]
 br x16
-.word 2139
+.word 2166
 	.no_dead_strip plt_System_Text_StringBuilder__ctor_int
 plt_System_Text_StringBuilder__ctor_int:
 _p_2:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x16, [x16, #584]
+ldr x16, [x16, #592]
 br x16
-.word 2147
+.word 2174
 	.no_dead_strip plt_PInvoke_Kernel32_TryGetErrorMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_intptr___string_
 plt_PInvoke_Kernel32_TryGetErrorMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_intptr___string_:
 _p_3:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
-ldr x16, [x16, #592]
-br x16
-.word 2152
-	.no_dead_strip plt_System_Text_StringBuilder_set_Capacity_int
-plt_System_Text_StringBuilder_set_Capacity_int:
-_p_4:
-adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
-add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 2154
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_GetLastWin32Error
-plt_System_Runtime_InteropServices_Marshal_GetLastWin32Error:
-_p_5:
+.word 2179
+	.no_dead_strip plt_PInvoke_Kernel32_GetLastError
+plt_PInvoke_Kernel32_GetLastError:
+_p_4:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 2159
-	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_
-plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_6:
+.word 2181
+	.no_dead_strip plt_System_Text_StringBuilder_set_Capacity_int
+plt_System_Text_StringBuilder_set_Capacity_int:
+_p_5:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 2164
-	.no_dead_strip plt_System_Nullable_1_int_get_Value
-plt_System_Nullable_1_int_get_Value:
-_p_7:
+.word 2183
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_GetLastWin32Error
+plt_System_Runtime_InteropServices_Marshal_GetLastWin32Error:
+_p_6:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 2166
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_8:
+.word 2188
+	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_
+plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_7:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 2177
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_9:
+.word 2193
+	.no_dead_strip plt_System_Nullable_1_int_get_Value
+plt_System_Nullable_1_int_get_Value:
+_p_8:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 2205
-	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int
-plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
-_p_10:
+.word 2195
+	.no_dead_strip plt_PInvoke_Win32Exception__ctor
+plt_PInvoke_Win32Exception__ctor:
+_p_9:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 2225
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_11:
+.word 2206
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_10:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 2227
-	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_
-plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_12:
+.word 2208
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_11:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 2262
-	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int
-plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
-_p_13:
+.word 2236
+	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int
+plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
+_p_12:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 2264
-	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_14:
+.word 2256
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_13:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 2266
-	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte__
-plt_System_ArraySegment_1_byte__ctor_byte__:
-_p_15:
+.word 2258
+	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_
+plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_System_Nullable_1_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_14:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 2274
-	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment_1_byte
-plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment_1_byte:
-_p_16:
+.word 2293
+	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int
+plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int:
+_p_15:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 2285
-	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte___int_int
-plt_System_ArraySegment_1_byte__ctor_byte___int_int:
-_p_17:
+.word 2295
+	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_16:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 2287
-	.no_dead_strip plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__
-plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__:
-_p_18:
+.word 2297
+	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte__
+plt_System_ArraySegment_1_byte__ctor_byte__:
+_p_17:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 2298
-	.no_dead_strip plt_System_Text_StringBuilder_get_Chars_int
-plt_System_Text_StringBuilder_get_Chars_int:
-_p_19:
+.word 2305
+	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment_1_byte
+plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_System_ArraySegment_1_byte:
+_p_18:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 2300
-	.no_dead_strip plt_System_Text_StringBuilder_ToString_int_int
-plt_System_Text_StringBuilder_ToString_int_int:
-_p_20:
+.word 2316
+	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte___int_int
+plt_System_ArraySegment_1_byte__ctor_byte___int_int:
+_p_19:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 2305
-	.no_dead_strip plt_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags
-plt_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags:
-_p_21:
+.word 2318
+	.no_dead_strip plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__
+plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__:
+_p_20:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 2310
-	.no_dead_strip plt_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_
-plt_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_:
-_p_22:
+.word 2329
+	.no_dead_strip plt_System_Text_StringBuilder_get_Chars_int
+plt_System_Text_StringBuilder_get_Chars_int:
+_p_21:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 2312
-	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
-plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_23:
+.word 2331
+	.no_dead_strip plt_System_Text_StringBuilder_ToString_int_int
+plt_System_Text_StringBuilder_ToString_int_int:
+_p_22:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 2314
-	.no_dead_strip plt_System_Nullable_1_int__ctor_int
-plt_System_Nullable_1_int__ctor_int:
-_p_24:
+.word 2336
+	.no_dead_strip plt_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags
+plt_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags:
+_p_23:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 2316
-	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
-plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_25:
+.word 2341
+	.no_dead_strip plt_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_
+plt_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_:
+_p_24:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 2327
-	.no_dead_strip plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_intptr___int
-plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_intptr___int:
-_p_26:
+.word 2343
+	.no_dead_strip plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
+plt_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_25:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 2329
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool
-plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool:
-_p_27:
+.word 2345
+	.no_dead_strip plt_System_Nullable_1_int__ctor_int
+plt_System_Nullable_1_int__ctor_int:
+_p_26:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 2331
-	.no_dead_strip plt_PInvoke_Kernel32_FindClose_intptr
-plt_PInvoke_Kernel32_FindClose_intptr:
-_p_28:
+.word 2347
+	.no_dead_strip plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
+plt_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_27:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 2336
-	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
-plt__jit_icall_ves_icall_object_new_specific:
-_p_29:
+.word 2358
+	.no_dead_strip plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_intptr___int
+plt_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_intptr___int:
+_p_28:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 2338
-	.no_dead_strip plt_PInvoke_Kernel32_SafeFindFilesHandle__ctor
-plt_PInvoke_Kernel32_SafeFindFilesHandle__ctor:
-_p_30:
+.word 2360
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool
+plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool:
+_p_29:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 2370
-	.no_dead_strip plt_PInvoke_Kernel32_CloseHandle_intptr
-plt_PInvoke_Kernel32_CloseHandle_intptr:
-_p_31:
+.word 2362
+	.no_dead_strip plt_PInvoke_Kernel32_FindClose_intptr
+plt_PInvoke_Kernel32_FindClose_intptr:
+_p_30:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 2372
-	.no_dead_strip plt_PInvoke_Kernel32_SafeObjectHandle__ctor
-plt_PInvoke_Kernel32_SafeObjectHandle__ctor:
-_p_32:
+.word 2367
+	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
+plt__jit_icall_ves_icall_object_new_specific:
+_p_31:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 2374
-	.no_dead_strip plt_PInvoke_Kernel32_SafeObjectHandle__ctor_intptr_bool
-plt_PInvoke_Kernel32_SafeObjectHandle__ctor_intptr_bool:
-_p_33:
+.word 2369
+	.no_dead_strip plt_PInvoke_Kernel32_SafeFindFilesHandle__ctor
+plt_PInvoke_Kernel32_SafeFindFilesHandle__ctor:
+_p_32:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 2376
-	.no_dead_strip plt_uint_ToString
-plt_uint_ToString:
-_p_34:
+.word 2401
+	.no_dead_strip plt_PInvoke_Kernel32_CloseHandle_intptr
+plt_PInvoke_Kernel32_CloseHandle_intptr:
+_p_33:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 2378
-	.no_dead_strip plt_uint_ToString_string_System_IFormatProvider
-plt_uint_ToString_string_System_IFormatProvider:
-_p_35:
+.word 2403
+	.no_dead_strip plt_PInvoke_Kernel32_SafeObjectHandle__ctor
+plt_PInvoke_Kernel32_SafeObjectHandle__ctor:
+_p_34:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 2383
-	.no_dead_strip plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode
-plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode:
-_p_36:
+.word 2405
+	.no_dead_strip plt_PInvoke_Kernel32_SafeObjectHandle__ctor_intptr_bool
+plt_PInvoke_Kernel32_SafeObjectHandle__ctor_intptr_bool:
+_p_35:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 2388
-	.no_dead_strip plt_PInvoke_NTStatusException_GetMessage_PInvoke_NTSTATUS
-plt_PInvoke_NTStatusException_GetMessage_PInvoke_NTSTATUS:
-_p_37:
+.word 2407
+	.no_dead_strip plt_uint_ToString
+plt_uint_ToString:
+_p_36:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 2390
-	.no_dead_strip plt_System_Exception__ctor_string_System_Exception
-plt_System_Exception__ctor_string_System_Exception:
-_p_38:
+.word 2409
+	.no_dead_strip plt_uint_ToString_string_System_IFormatProvider
+plt_uint_ToString_string_System_IFormatProvider:
+_p_37:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 2392
-	.no_dead_strip plt_string_Format_string_object__
-plt_string_Format_string_object__:
-_p_39:
+.word 2414
+	.no_dead_strip plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode
+plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode:
+_p_38:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 2397
-	.no_dead_strip plt_System_Enum_GetName_System_Type_object
-plt_System_Enum_GetName_System_Type_object:
-_p_40:
+.word 2419
+	.no_dead_strip plt_PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS
+plt_PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS:
+_p_39:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 2402
-	.no_dead_strip plt_PInvoke_NTStatusException_GetSeverityString_PInvoke_NTSTATUS
-plt_PInvoke_NTStatusException_GetSeverityString_PInvoke_NTSTATUS:
-_p_41:
+.word 2421
+	.no_dead_strip plt_PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string_System_Exception
+plt_PInvoke_NTStatusException__ctor_PInvoke_NTSTATUS_string_System_Exception:
+_p_40:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 2407
-	.no_dead_strip plt_System_Exception__ctor_string
-plt_System_Exception__ctor_string:
-_p_42:
+.word 2423
+	.no_dead_strip plt_PInvoke_NTStatusException_GetMessage_PInvoke_NTSTATUS
+plt_PInvoke_NTStatusException_GetMessage_PInvoke_NTSTATUS:
+_p_41:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 2409
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_43:
+.word 2425
+	.no_dead_strip plt_System_Exception__ctor_string_System_Exception
+plt_System_Exception__ctor_string_System_Exception:
+_p_42:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 2414
-	.no_dead_strip plt_System_Nullable_1_int_Unbox_object
-plt_System_Nullable_1_int_Unbox_object:
-_p_44:
+.word 2427
+	.no_dead_strip plt_string_Format_string_object__
+plt_string_Format_string_object__:
+_p_43:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 2443
-	.no_dead_strip plt_System_Nullable_1_int_Equals_System_Nullable_1_int
-plt_System_Nullable_1_int_Equals_System_Nullable_1_int:
-_p_45:
+.word 2432
+	.no_dead_strip plt_System_Enum_GetName_System_Type_object
+plt_System_Enum_GetName_System_Type_object:
+_p_44:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 2465
-	.no_dead_strip plt_int_Equals_object
-plt_int_Equals_object:
-_p_46:
+.word 2437
+	.no_dead_strip plt_PInvoke_NTStatusException_GetSeverityString_PInvoke_NTSTATUS
+plt_PInvoke_NTStatusException_GetSeverityString_PInvoke_NTSTATUS:
+_p_45:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 2487
-	.no_dead_strip plt_int_ToString
-plt_int_ToString:
-_p_47:
+.word 2442
+	.no_dead_strip plt_PInvoke_Win32Exception__ctor_int
+plt_PInvoke_Win32Exception__ctor_int:
+_p_46:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 2492
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_48:
+.word 2444
+	.no_dead_strip plt_PInvoke_Kernel32Extensions_GetMessage_PInvoke_Win32ErrorCode
+plt_PInvoke_Kernel32Extensions_GetMessage_PInvoke_Win32ErrorCode:
+_p_47:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 2515
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_49:
+.word 2446
+	.no_dead_strip plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode_string
+plt_PInvoke_Win32Exception__ctor_PInvoke_Win32ErrorCode_string:
+_p_48:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 2523
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_50:
+.word 2448
+	.no_dead_strip plt_System_Exception__ctor_string
+plt_System_Exception__ctor_string:
+_p_49:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 2531
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_51:
+.word 2450
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_50:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 2539
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_52:
+.word 2455
+	.no_dead_strip plt_System_Nullable_1_int_Unbox_object
+plt_System_Nullable_1_int_Unbox_object:
+_p_51:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 2547
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_53:
+.word 2484
+	.no_dead_strip plt_System_Nullable_1_int_Equals_System_Nullable_1_int
+plt_System_Nullable_1_int_Equals_System_Nullable_1_int:
+_p_52:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 2588
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_54:
+.word 2506
+	.no_dead_strip plt_int_Equals_object
+plt_int_Equals_object:
+_p_53:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 2611
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_55:
+.word 2528
+	.no_dead_strip plt_int_ToString
+plt_int_ToString:
+_p_54:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 2652
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_56:
+.word 2533
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_55:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 2675
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_57:
+.word 2556
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_56:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 2698
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_58:
+.word 2564
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_57:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 2730
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_59:
+.word 2572
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_58:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 2738
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_60:
+.word 2580
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_59:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 2779
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_61:
+.word 2588
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_60:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 2787
-	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
-plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
-_p_62:
+.word 2629
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_61:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 2810
-	.no_dead_strip plt_System_Nullable_1_int_Box_System_Nullable_1_int
-plt_System_Nullable_1_int_Box_System_Nullable_1_int:
-_p_63:
+.word 2652
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_62:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 2862
-	.no_dead_strip plt__jit_icall_mono_string_to_utf8str
-plt__jit_icall_mono_string_to_utf8str:
-_p_64:
+.word 2693
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_63:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 2884
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags
-plt__icall_native_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags:
-_p_65:
+.word 2716
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_64:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 2909
-	.no_dead_strip plt__jit_icall_mono_marshal_free
-plt__jit_icall_mono_marshal_free:
-_p_66:
+.word 2739
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_65:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 2911
-	.no_dead_strip plt__jit_icall_mono_string_from_byvalwstr
-plt__jit_icall_mono_string_from_byvalwstr:
-_p_67:
+.word 2771
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_66:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 2931
-	.no_dead_strip plt__jit_icall_mono_struct_delete_old
-plt__jit_icall_mono_struct_delete_old:
-_p_68:
+.word 2779
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_67:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 2960
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_69:
+.word 2820
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_68:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 2985
-	.no_dead_strip plt__jit_icall_mono_string_builder_to_utf16
-plt__jit_icall_mono_string_builder_to_utf16:
-_p_70:
+.word 2828
+	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
+plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+_p_69:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3023
-	.no_dead_strip plt__jit_icall_mono_array_to_lparray
-plt__jit_icall_mono_array_to_lparray:
-_p_71:
+.word 2851
+	.no_dead_strip plt_System_Nullable_1_int_Box_System_Nullable_1_int
+plt_System_Nullable_1_int_Box_System_Nullable_1_int:
+_p_70:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3054
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__
-plt__icall_native_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__:
-_p_72:
+.word 2903
+	.no_dead_strip plt__jit_icall_mono_string_to_utf8str
+plt__jit_icall_mono_string_to_utf8str:
+_p_71:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3078
-	.no_dead_strip plt__jit_icall_mono_marshal_set_last_error
-plt__jit_icall_mono_marshal_set_last_error:
-_p_73:
+.word 2925
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags
+plt__icall_native_PInvoke_Kernel32_FindFirstFileEx_string_PInvoke_Kernel32_FINDEX_INFO_LEVELS_PInvoke_Kernel32_WIN32_FIND_DATA__PInvoke_Kernel32_FINDEX_SEARCH_OPS_void__PInvoke_Kernel32_FindFirstFileExFlags:
+_p_72:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3080
-	.no_dead_strip plt__jit_icall_mono_string_utf16_to_builder
-plt__jit_icall_mono_string_utf16_to_builder:
-_p_74:
+.word 2950
+	.no_dead_strip plt__jit_icall_mono_marshal_free
+plt__jit_icall_mono_marshal_free:
+_p_73:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3110
-	.no_dead_strip plt__jit_icall_mono_free_lparray
-plt__jit_icall_mono_free_lparray:
-_p_75:
+.word 2952
+	.no_dead_strip plt__jit_icall_mono_string_from_byvalwstr
+plt__jit_icall_mono_string_from_byvalwstr:
+_p_74:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3141
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentThreadId
-plt__icall_native_PInvoke_Kernel32_GetCurrentThreadId:
-_p_76:
+.word 2972
+	.no_dead_strip plt__jit_icall_mono_struct_delete_old
+plt__jit_icall_mono_struct_delete_old:
+_p_75:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3161
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentProcessId
-plt__icall_native_PInvoke_Kernel32_GetCurrentProcessId:
-_p_77:
+.word 3001
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_76:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3163
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentProcess
-plt__icall_native_PInvoke_Kernel32_GetCurrentProcess:
-_p_78:
+.word 3026
+	.no_dead_strip plt__jit_icall_mono_string_builder_to_utf16
+plt__jit_icall_mono_string_builder_to_utf16:
+_p_77:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3165
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
-plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
-_p_79:
+.word 3064
+	.no_dead_strip plt__jit_icall_mono_array_to_lparray
+plt__jit_icall_mono_array_to_lparray:
+_p_78:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3167
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_
-plt__icall_native_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_:
-_p_80:
+.word 3095
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__
+plt__icall_native_PInvoke_Kernel32_FormatMessage_PInvoke_Kernel32_FormatMessageFlags_void__int_int_System_Text_StringBuilder_int_intptr__:
+_p_79:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3172
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
-plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
-_p_81:
+.word 3119
+	.no_dead_strip plt__jit_icall_mono_marshal_set_last_error
+plt__jit_icall_mono_marshal_set_last_error:
+_p_80:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3174
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
-plt__icall_native_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_82:
+.word 3121
+	.no_dead_strip plt__jit_icall_mono_string_utf16_to_builder
+plt__jit_icall_mono_string_utf16_to_builder:
+_p_81:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 3179
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
-plt__icall_native_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
-_p_83:
+.word 3151
+	.no_dead_strip plt__jit_icall_mono_free_lparray
+plt__jit_icall_mono_free_lparray:
+_p_82:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 3181
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_SuspendThread_PInvoke_Kernel32_SafeObjectHandle
-plt__icall_native_PInvoke_Kernel32_SuspendThread_PInvoke_Kernel32_SafeObjectHandle:
-_p_84:
+.word 3182
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentThreadId
+plt__icall_native_PInvoke_Kernel32_GetCurrentThreadId:
+_p_83:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 3183
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_ResumeThread_PInvoke_Kernel32_SafeObjectHandle
-plt__icall_native_PInvoke_Kernel32_ResumeThread_PInvoke_Kernel32_SafeObjectHandle:
-_p_85:
+.word 3202
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentProcessId
+plt__icall_native_PInvoke_Kernel32_GetCurrentProcessId:
+_p_84:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 3185
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_WaitForSingleObject_System_Runtime_InteropServices_SafeHandle_int
-plt__icall_native_PInvoke_Kernel32_WaitForSingleObject_System_Runtime_InteropServices_SafeHandle_int:
-_p_86:
+.word 3204
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_GetCurrentProcess
+plt__icall_native_PInvoke_Kernel32_GetCurrentProcess:
+_p_85:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 3187
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_CloseHandle_intptr
-plt__icall_native_PInvoke_Kernel32_CloseHandle_intptr:
-_p_87:
+.word 3206
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
+plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
+_p_86:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 3189
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FlushFileBuffers_PInvoke_Kernel32_SafeObjectHandle
-plt__icall_native_PInvoke_Kernel32_FlushFileBuffers_PInvoke_Kernel32_SafeObjectHandle:
-_p_88:
+.word 3208
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_
+plt__icall_native_PInvoke_Kernel32_CancelIoEx_PInvoke_Kernel32_SafeObjectHandle_PInvoke_Kernel32_OVERLAPPED_:
+_p_87:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 3191
-	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FindClose_intptr
-plt__icall_native_PInvoke_Kernel32_FindClose_intptr:
-_p_89:
+.word 3213
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
+plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
+_p_88:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 3193
-	.no_dead_strip plt__jit_icall_mono_string_to_byvalwstr
-plt__jit_icall_mono_string_to_byvalwstr:
-_p_90:
+.word 3215
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
+plt__icall_native_PInvoke_Kernel32_ReadFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_89:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 3195
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_91:
+.word 3220
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_
+plt__icall_native_PInvoke_Kernel32_WriteFile_PInvoke_Kernel32_SafeObjectHandle_void__int_int__PInvoke_Kernel32_OVERLAPPED_:
+_p_90:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 3240
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_92:
+.word 3222
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_SuspendThread_PInvoke_Kernel32_SafeObjectHandle
+plt__icall_native_PInvoke_Kernel32_SuspendThread_PInvoke_Kernel32_SafeObjectHandle:
+_p_91:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 3263
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_93:
+.word 3224
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_ResumeThread_PInvoke_Kernel32_SafeObjectHandle
+plt__icall_native_PInvoke_Kernel32_ResumeThread_PInvoke_Kernel32_SafeObjectHandle:
+_p_92:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 3313
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_94:
+.word 3226
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_WaitForSingleObject_System_Runtime_InteropServices_SafeHandle_int
+plt__icall_native_PInvoke_Kernel32_WaitForSingleObject_System_Runtime_InteropServices_SafeHandle_int:
+_p_93:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 3321
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_95:
+.word 3228
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_CloseHandle_intptr
+plt__icall_native_PInvoke_Kernel32_CloseHandle_intptr:
+_p_94:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 3362
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_96:
+.word 3230
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FlushFileBuffers_PInvoke_Kernel32_SafeObjectHandle
+plt__icall_native_PInvoke_Kernel32_FlushFileBuffers_PInvoke_Kernel32_SafeObjectHandle:
+_p_95:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 3370
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_97:
+.word 3232
+	.no_dead_strip plt__icall_native_PInvoke_Kernel32_FindClose_intptr
+plt__icall_native_PInvoke_Kernel32_FindClose_intptr:
+_p_96:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 3378
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_98:
+.word 3234
+	.no_dead_strip plt__jit_icall_mono_string_to_byvalwstr
+plt__jit_icall_mono_string_to_byvalwstr:
+_p_97:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 3419
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_99:
+.word 3236
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_98:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 3427
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_100:
+.word 3281
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_99:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 3444
-	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
-_p_101:
+.word 3304
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_100:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 3452
-	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
-plt_System_Enum_GetUnderlyingType_System_Type:
-_p_102:
+.word 3354
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_101:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 3457
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
-_p_103:
+.word 3362
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_102:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 3462
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_104:
+.word 3403
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_103:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 3476
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_105:
+.word 3411
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_104:
 adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 3484
+.word 3419
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_105:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1416]
+br x16
+.word 3460
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_106:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1424]
+br x16
+.word 3468
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_107:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1432]
+br x16
+.word 3485
+	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+_p_108:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1440]
+br x16
+.word 3493
+	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
+plt_System_Enum_GetUnderlyingType_System_Type:
+_p_109:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1448]
+br x16
+.word 3498
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
+_p_110:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1456]
+br x16
+.word 3503
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_111:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1464]
+br x16
+.word 3517
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_112:
+adrp x16, mono_aot_PInvoke_Kernel32_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_Kernel32_got@PAGEOFF
+ldr x16, [x16, #1472]
+br x16
+.word 3525
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_PInvoke_Kernel32_got, 1416
+.lcomm mono_aot_PInvoke_Kernel32_got, 1480
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -7443,7 +7471,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_PInvoke_Kernel32_got
 	.align 3
@@ -7460,6 +7488,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -7511,13 +7541,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 71,1416,106,148,66,391195135,0,5994
-	.long 128,8,8,10,0,24,9080,3080
-	.long 2888,2320,0,2616,2840,2504,0,1792
-	.long 224,0,0,0,0,0,0,0
+	.long 72,1480,113,148,66,391195135,0,6036
+	.long 128,8,8,9,0,25,9144,3096
+	.long 2896,2320,0,2624,2848,2504,0,1792
+	.long 224,3088,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 176,87,30,78,164,197,123,201,40,254,129,142,48,37,103,47
+	.long 0,0
+	.byte 9,196,51,44,179,50,113,202,14,192,43,166,21,59,182,100
 	.globl _mono_aot_module_PInvoke_Kernel32_info
 	.align 3
 _mono_aot_module_PInvoke_Kernel32_info:
@@ -17425,7 +17455,7 @@ LTDIE_34:
 LDIFF_SYM428=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM428
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM429=LTDIE_32_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM429
@@ -17453,7 +17483,7 @@ LTDIE_35:
 LDIFF_SYM433=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM433
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM434=LTDIE_32_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM434
@@ -17481,47 +17511,47 @@ LTDIE_32:
 LDIFF_SYM438=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM438
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM439=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM439
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM440=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM440
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM441=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM441
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM442=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM442
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM443=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM443
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM444=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM444
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM445=LTDIE_33_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM445
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM446=LTDIE_34_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM446
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM447=LTDIE_35_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM447
@@ -19133,7 +19163,7 @@ Lfde77_start:
 LDIFF_SYM675=Lme_5c - System_Nullable_1_int_Box_System_Nullable_1_int
 	.long LDIFF_SYM675
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde77_end:
 
@@ -19511,7 +19541,7 @@ Lfde86_start:
 LDIFF_SYM716=Lme_65 - System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 	.long LDIFF_SYM716
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde86_end:
 
@@ -21706,7 +21736,7 @@ Lfde124_end:
 	.asciz "System.Array:IndexOf<T_BYTE>"
 	.asciz "System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int"
 
-	.byte 3,175,5
+	.byte 3,169,5
 	.quad System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int
 	.quad Lme_8e
 
@@ -21826,7 +21856,7 @@ Lfde126_start:
 LDIFF_SYM1021=Lme_8f - System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE
 	.long LDIFF_SYM1021
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde126_end:
 
@@ -21836,7 +21866,7 @@ Lfde126_end:
 	.asciz "System.Array:IndexOfImpl<T_BYTE>"
 	.asciz "System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int"
 
-	.byte 4,240,4
+	.byte 4,146,5
 	.quad System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int
 	.quad Lme_90
 

@@ -16,18 +16,20 @@ namespace BlockchainTools
 
         public List<Tuple<string, int>> ServerList { get; set; }
         public Account Account { get; set; }
-        public TransactionService TxService { get; set; }
+        public UserTxService userTxService { get; set; }
         public RpcCall Rpc { get; set; }
 
         public Dictionary<byte[], int> TxInresults { get; set; }
         public Dictionary<byte[], int> TxOutresults { get; set; }
         public Dictionary<byte[], int> Bootstrapresults { get; set; }
         public Dictionary<byte[], int> AccTableresults { get; set; }
+        public Dictionary<byte[], int> UtxoOutputresults { get; set; }
 
         object Bootstrap_mutex = new object();
         object AccTable_mutex = new object();
         object TxIn_mutex = new object();
         object TxOut_mutex = new object();
+        object UtxoOutput_mutex = new object();
 
         public RpcClient(bool IsNew)
         {
@@ -37,8 +39,7 @@ namespace BlockchainTools
                 {
                     Account = new Account();
                 }
-                TxService = new TransactionService();
-                TxService.UtxoTable = new UtxoTable();
+                userTxService = new UserTxService();
                 Rpc = new RpcCall();
                 ServerList = new List<Tuple<string, int>>();
             }
@@ -242,6 +243,101 @@ namespace BlockchainTools
                 catch (Exception exception) { }
             }
         }
+
+        public Task<byte[]> FindForAccount()
+        {
+            return Task.Run(() =>
+            {
+                if (ServerList.Count == 0)
+                {
+                    return null;
+                }
+                UtxoOutputresults = new Dictionary<byte[], int>(new ByteArrayComparer());
+                int bizantine = ServerList.Count / 3;
+                List<Thread> threads = new List<Thread>();
+                for (int i = 0; i < 2 * bizantine + 1; i++)
+                {
+                    Thread t = new Thread(FindForAccountThread);
+                    t.Start(i);
+                    threads.Add(t);
+                }
+                foreach (Thread t in threads)
+                {
+                    t.Join();
+                }
+                if (UtxoOutputresults.Keys.Count == 0)
+                {
+                    return null;
+                }
+                byte[] value = UtxoOutputresults.Keys.First();
+                int occurence = UtxoOutputresults[value];
+                foreach (byte[] b in UtxoOutputresults.Keys)
+                {
+                    if (UtxoOutputresults[b] > occurence)
+                    {
+                        value = b;
+                        occurence = UtxoOutputresults[b];
+                    }
+                }
+                Console.WriteLine("Occurence:" + UtxoOutputresults[value]);
+                return value;
+            });
+        }
+
+        public void FindForAccountThread(object param)
+        {
+            int i = (int)param;
+            try
+            {
+                TcpClient Client = new TcpClient();
+                Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                byte[] result = Rpc.InvokeAndReadResponse("RpcNode.FindForAccount",
+                    new object[] { this.Account.address }, Client, 50);
+                if (result == null)
+                {
+                    return;
+                }
+                lock (UtxoOutput_mutex)
+                {
+                    if (UtxoOutputresults.ContainsKey(result))
+                    {
+                        UtxoOutputresults[result]++;
+                    }
+                    else
+                    {
+                        UtxoOutputresults.Add(result, 1);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                try
+                {
+                    TcpClient Client = new TcpClient();
+                    Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+                    Console.WriteLine(ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                    byte[] result = Rpc.InvokeAndReadResponse("RpcNode.FindForAccount", new object[] { this.Account.address }, Client, 50);
+                    if (result == null)
+                    {
+                        return;
+                    }
+                    lock (UtxoOutput_mutex)
+                    {
+                        if (UtxoOutputresults.ContainsKey(result))
+                        {
+                            UtxoOutputresults[result]++;
+                        }
+                        else
+                        {
+                            UtxoOutputresults.Add(result, 1);
+                        }
+                    }
+                }
+                catch (Exception exception) { }
+            }
+        }
+
 
         public Task<List<TxOut>> GetTransactionFromAccount()
         {
@@ -471,10 +567,18 @@ namespace BlockchainTools
         }
 
         //Initialize From BootStrapTable
-        public async Task InitFromBootstrap()
+        /**public async Task InitFromBootstrap()
         {
             byte[] results = await GetBootstrapTable();
             TxService.UtxoTable.InitializeFromBootstrap(results);
+        }*/
+
+        public async Task InitUserUtxo()
+        {
+            byte[] results = await GetAccountTable();
+            userTxService.userUtxo.InitUtxoReturns(results);
+            results = await FindForAccount();
+            userTxService.userUtxo.InitUtxoOutputs(results);
         }
 
         //Balance from account table
@@ -502,46 +606,32 @@ namespace BlockchainTools
             int result = 0;
 
             string addr = Convert.ToBase64String(Account.address);
-            if (TxService.UtxoTable.UserTxTable.ContainsKey(addr))
+            foreach (UtxoOutput utxo in userTxService.userUtxo.UtxoOutputs)
             {
-                foreach (KeyValuePair<String, int> entry in TxService.UtxoTable.UserTxTable[addr])
+                if (utxo != null && !utxo.spent)
                 {
-                    UtxoOutput utxo = TxService.UtxoTable.Entries[entry.Key][entry.Value];
-                    if (utxo != null && !utxo.spent)
-                    {
-                        result += utxo.value;
-                    }
+                    result += utxo.value;
                 }
             }
             return result;
         }
 
         //TODO
-        //Propose Transaction
         public bool ProposeTransaction(byte[] to, int value)
         {
             if (ServerList.Count == 0)
             {
                 return false;
             }
-            int oldBalance = Task.Run(async ()=>await BalanceFromAccountTable()).Result;
+            int oldBalance = Task.Run(async () => await BalanceFromAccountTable()).Result;
             int newBalance = oldBalance - value;
 
             List<TxIn> ins = new List<TxIn>();
             String addr = Base64.ToBase64String(Account.address);
             Console.WriteLine(addr);
-            if (TxService.UtxoTable.UserTxTable.ContainsKey(addr))
+            foreach (UtxoReturn utxoReturn in userTxService.userUtxo.UtxoReturns)
             {
-                Dictionary<string, int> list = TxService.UtxoTable.UserTxTable[addr];
-                foreach (KeyValuePair<string, int> entry in list)
-                {
-                    Console.WriteLine("The hash: " + entry.Key);
-                    if (TxService.UtxoTable.Entries[entry.Key][entry.Value] != null)
-                    {
-                        //Hash format
-                        ins.Add(new TxIn(HexHelper.StringToByteArray(entry.Key), entry.Value, TxService.UtxoTable.Entries[entry.Key][entry.Value].script));
-                    }
-                }
+                ins.Add(new TxIn(HexHelper.StringToByteArray(utxoReturn.hash), utxoReturn.index, Account.address));
             }
 
             TxIn[] insArray = ins.ToArray();
@@ -552,7 +642,7 @@ namespace BlockchainTools
                                   Convert.ToBase64String(txIn.script));
             }
 
-            byte[] signedTransaction = TxService.MakeSignedTransaction(insArray, to, this.Account, value);
+            byte[] signedTransaction = userTxService.MakeSignedTransaction(insArray, to, this.Account, value);
             if (signedTransaction == null)
             {
                 return false;
@@ -572,10 +662,9 @@ namespace BlockchainTools
                 Thread.Sleep(300);
                 Task<bool> task = Task.Run(async () =>
                 {
-                    TxService.UtxoTable = new UtxoTable();
-                    await InitFromBootstrap();
-                    List<UtxoOutput> list = TxService.UtxoTable.FindForAccount(this.Account.address);
-                    foreach (UtxoOutput u in list)
+                    userTxService.userUtxo = new UserUtxo();
+                    await InitUserUtxo();
+                    foreach (UtxoOutput u in userTxService.userUtxo.UtxoOutputs)
                     {
                         if (u.ToString().Equals(utxo.ToString()))
                         {

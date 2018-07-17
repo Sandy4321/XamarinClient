@@ -69,7 +69,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/hamburger.png
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/optimized/
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csprojResolveAssemblyReference.cache
-/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csproj.XamarinClient.iOS.exe.config
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.csproj.CoreCompileInputs.cache
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.pdb
@@ -123,3 +122,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/FormsPinView.PCL.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/HockeySDK.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/HockeySDK.iOSBindings.dll
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/coremlc/_PartialAppManifest.items
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/XamarinClient.iOS.exe.config

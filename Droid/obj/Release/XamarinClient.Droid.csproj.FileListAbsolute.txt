@@ -1,7 +1,0 @@
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.csprojResolveAssemblyReference.cache
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.csproj.CoreCompileInputs.cache
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.View.App.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.View.ProposeTransaction.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.View.QRCodePage.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.View.UserAccount.xaml.g.cs
-/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/XamarinClient.Droid.View.XamarinClientPage.xaml.g.cs

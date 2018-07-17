@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "MvvmCross.Plugins.Fingerprint.iOS.dll"
 	.asciz ""
 
@@ -130,26 +130,29 @@ MvvmCross_Plugins_Fingerprint_iOS_Plugin_Load:
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x0, [x16, #192]
-.word 0xf9400000
-.word 0xaa0003fa
-.word 0xb5000600
-
-adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
-add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
 ldr x0, [x16, #200]
 .word 0xf9400000
-.word 0xf90013a0
-.word 0xeb1f001f
-.word 0x10000011
-.word 0x54000620
+.word 0xaa0003fa
+.word 0xb5000660
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
 ldr x0, [x16, #208]
+.word 0xf9400000
+.word 0xf90013a0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x540006e0
+
+adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
+add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
+ldr x0, [x16, #216]
 .word 0xd2800e01
 bl _p_1
 .word 0xf94013a1
+.word 0xeb1f003f
+.word 0x10000011
+.word 0x54000560
 .word 0xf9001001
 .word 0x91008002
 .word 0xd349fc42
@@ -166,17 +169,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xf9001401
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x1, [x16, #224]
+ldr x1, [x16, #232]
 .word 0xf9002001
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -185,20 +188,23 @@ ldr x1, [x16, #232]
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x1, [x16, #192]
+ldr x1, [x16, #200]
 .word 0xf9000020
 .word 0xaa0003fa
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x15, [x16, #240]
+ldr x15, [x16, #248]
 .word 0xaa1a03e0
 bl _p_2
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
+.word 0xaa1103e1
+bl _p_3
+.word 0xd2801440
 .word 0xaa1103e1
 bl _p_3
 
@@ -226,14 +232,14 @@ MvvmCross_Plugins_Fingerprint_iOS_Plugin__c__cctor:
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xd2800201
 bl _p_1
 .word 0xaa0003e1
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -279,7 +285,7 @@ wrapper_delegate_invoke_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerpri
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #264]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -332,7 +338,7 @@ bl _p_6
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_3
 
@@ -383,53 +389,53 @@ plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_1:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #272]
+ldr x16, [x16, #280]
 br x16
-.word 341
+.word 368
 	.no_dead_strip plt_MvvmCross_Platform_Mvx_LazyConstructAndRegisterSingleton_Plugin_Fingerprint_Abstractions_IFingerprint_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint
 plt_MvvmCross_Platform_Mvx_LazyConstructAndRegisterSingleton_Plugin_Fingerprint_Abstractions_IFingerprint_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint:
 _p_2:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #280]
+ldr x16, [x16, #288]
 br x16
-.word 349
+.word 376
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_3:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #288]
+ldr x16, [x16, #296]
 br x16
-.word 361
+.word 388
 	.no_dead_strip plt_Plugin_Fingerprint_CrossFingerprint_get_Current
 plt_Plugin_Fingerprint_CrossFingerprint_get_Current:
 _p_4:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #296]
+ldr x16, [x16, #304]
 br x16
-.word 396
+.word 423
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_5:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #304]
+ldr x16, [x16, #312]
 br x16
-.word 401
+.word 428
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_6:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got@PAGEOFF
-ldr x16, [x16, #312]
+ldr x16, [x16, #320]
 br x16
-.word 429
+.word 456
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got, 320
+.lcomm mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got, 328
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -461,7 +467,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_MvvmCross_Plugins_Fingerprint_iOS_got
 	.align 3
@@ -478,6 +484,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -529,13 +537,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 33,320,7,7,66,391195135,0,540
-	.long 128,8,8,10,0,24,1264,712
+	.long 34,328,7,7,66,391195135,0,567
+	.long 128,8,8,9,0,25,1296,720
 	.long 360,192,0,304,336,240,0,176
-	.long 32,0,0,0,0,0,0,0
+	.long 32,712,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 236,177,191,185,239,89,124,206,211,220,127,29,209,172,98,30
+	.long 0,0
+	.byte 98,120,29,215,8,127,5,28,238,153,222,161,138,147,163,45
 	.globl _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info
 	.align 3
 _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info:

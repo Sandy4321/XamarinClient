@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "PInvoke.BCrypt.dll"
 	.asciz ""
 
@@ -233,7 +233,7 @@ PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeK
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400017
 .word 0xf9001fb7
 .word 0x910183a5
@@ -254,13 +254,13 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003fa
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x2, [x16, #208]
+ldr x2, [x16, #216]
 .word 0xb9801b44
 .word 0x910183a5
 .word 0x910103a0
@@ -282,7 +282,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xaa1a03e1
 .word 0xd2800002
 bl _p_6
@@ -388,7 +388,7 @@ PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_string_byt
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0x9100e3a3
 .word 0xf94013a4
@@ -435,7 +435,7 @@ PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_string_byte___
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf9003ba0
 bl _p_11
@@ -509,7 +509,7 @@ bl _p_13
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf940dfa1
 .word 0xf940e3a2
 bl _p_14
@@ -534,7 +534,7 @@ bl _p_13
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf940cba1
 .word 0xf940cfa2
 bl _p_14
@@ -584,7 +584,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xf90137a0
 .word 0x910403a0
@@ -602,7 +602,7 @@ bl _p_13
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf94083a1
 .word 0xf94087a2
 bl _p_14
@@ -627,7 +627,7 @@ bl _p_13
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf9406fa1
 .word 0xf94073a2
 bl _p_14
@@ -653,7 +653,7 @@ bl _p_13
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf9405ba1
 .word 0xf9405fa2
 bl _p_14
@@ -704,7 +704,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
 bl _p_6
 .word 0xf940e7a0
@@ -770,7 +770,7 @@ PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_Syst
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -784,7 +784,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf90083a0
 .word 0xf94097a0
@@ -803,7 +803,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -817,7 +817,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf9007ba0
 .word 0xf94097a0
@@ -836,7 +836,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -850,7 +850,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf90073a0
 .word 0xf94097a0
@@ -868,12 +868,12 @@ bl _p_16
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf940afa0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98163a1
 .word 0x93407c21
 .word 0xb9801802
@@ -885,12 +885,12 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9409fa0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98143a1
 .word 0x93407c21
 .word 0xb9801802
@@ -902,12 +902,12 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf940a7a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98153a1
 .word 0x93407c21
 .word 0xb9801802
@@ -929,13 +929,13 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9406ba0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -943,7 +943,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000040
@@ -954,7 +954,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98167b7
 .word 0xf9402fa0
 .word 0xf900bba0
@@ -970,13 +970,13 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf94063a0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -984,7 +984,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000040
@@ -995,7 +995,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98157ba
 .word 0xf9409fa0
 .word 0xf90043a0
@@ -1009,13 +1009,13 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9405ba0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -1023,7 +1023,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000060
@@ -1034,7 +1034,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98147a7
 .word 0x910103a0
 .word 0xf900bfa0
@@ -1060,7 +1060,7 @@ bl _p_18
 .word 0x910003bf
 .word 0xa8d97bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -1112,7 +1112,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PI
 .word 0xf90003e9
 .word 0xb98063a9
 .word 0xb9000be9
-bl PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptEncryptFlags
+bl _p_20
 .word 0xf94053be
 .word 0xf90003c0
 .word 0xf9403ba0
@@ -1121,7 +1121,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xf90057a0
 .word 0xb9801ae0
@@ -1150,7 +1150,7 @@ bl _p_5
 .word 0xf90003e9
 .word 0xb98063a9
 .word 0xb9000be9
-bl PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptEncryptFlags
+bl _p_20
 .word 0xf94053be
 .word 0xf90003c0
 .word 0xf94037a0
@@ -1163,7 +1163,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xf94057a1
 .word 0xd2800002
 bl _p_6
@@ -1230,7 +1230,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_Syst
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -1244,7 +1244,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf90083a0
 .word 0xf94097a0
@@ -1263,7 +1263,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -1277,7 +1277,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf9007ba0
 .word 0xf94097a0
@@ -1296,7 +1296,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0x3944c3a0
 .word 0x35000120
 .word 0xd2800000
@@ -1310,7 +1310,7 @@ ldr x0, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #232]
+ldr x0, [x16, #240]
 .word 0xf94093a0
 .word 0xf90073a0
 .word 0xf94097a0
@@ -1328,12 +1328,12 @@ bl _p_16
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf940afa0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98163a1
 .word 0x93407c21
 .word 0xb9801802
@@ -1345,12 +1345,12 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9409fa0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98143a1
 .word 0x93407c21
 .word 0xb9801802
@@ -1362,12 +1362,12 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf940a7a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xb98153a1
 .word 0x93407c21
 .word 0xb9801802
@@ -1389,13 +1389,13 @@ ldr x1, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9406ba0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -1403,7 +1403,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000040
@@ -1414,7 +1414,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98167b7
 .word 0xf9402fa0
 .word 0xf900bba0
@@ -1430,13 +1430,13 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf94063a0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -1444,7 +1444,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000040
@@ -1455,7 +1455,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98157ba
 .word 0xf9409fa0
 .word 0xf90043a0
@@ -1469,13 +1469,13 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9405ba0
 .word 0xf900c3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -1483,7 +1483,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000060
@@ -1494,7 +1494,7 @@ ldr x1, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb98147a7
 .word 0x910103a0
 .word 0xf900bfa0
@@ -1509,7 +1509,7 @@ ldr x0, [x16, #216]
 .word 0xf90003e9
 .word 0xb9807ba9
 .word 0xb9000be9
-bl _p_20
+bl _p_21
 .word 0xf940bfbe
 .word 0xf90003c0
 .word 0xa94157b4
@@ -1520,7 +1520,7 @@ bl _p_20
 .word 0x910003bf
 .word 0xa8d97bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -1537,20 +1537,20 @@ PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_PInvoke_BCrypt_BCr
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #256]
+ldr x1, [x16, #264]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #264]
+ldr x15, [x16, #272]
 .word 0xf9400ba0
 .word 0xd2800002
-bl _p_21
+bl _p_22
 .word 0x93407c00
 .word 0xaa0003e1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003e1
 .word 0xb9801822
@@ -1559,7 +1559,7 @@ bl _p_5
 .word 0xf9400ba0
 .word 0xf9001ba1
 .word 0xb9801ba3
-bl _p_22
+bl _p_23
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf94013a0
@@ -1593,7 +1593,7 @@ PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___void__PInvoke_
 .word 0xd2800004
 .word 0xd2800005
 .word 0xb9803ba7
-bl _p_23
+bl _p_24
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94027a0
@@ -1602,7 +1602,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003e4
 .word 0xb9801b03
@@ -1615,7 +1615,7 @@ bl _p_5
 .word 0xaa1803e2
 .word 0xf9003ba4
 .word 0xb9803ba7
-bl _p_23
+bl _p_24
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf94023a0
@@ -1629,7 +1629,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
 bl _p_6
 .word 0xf9402ba0
@@ -1665,7 +1665,7 @@ PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_byte___byte___
 .word 0xf9400ba0
 .word 0xf94017a1
 .word 0xb98033a6
-bl _p_24
+bl _p_25
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xb98043a0
@@ -1701,7 +1701,7 @@ PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt
 .word 0xf9400ba0
 .word 0xf9400fa1
 .word 0xd2800003
-bl _p_25
+bl _p_26
 .word 0xf9401bbe
 .word 0xf90003c0
 .word 0xf94013a0
@@ -1742,7 +1742,7 @@ PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_strin
 .word 0xaa1803e2
 .word 0xaa1903e3
 .word 0xb9803ba4
-bl _p_26
+bl _p_27
 .word 0xf9402bbe
 .word 0xf90003c0
 .word 0xf94023a0
@@ -1759,7 +1759,7 @@ Lme_10:
 	.no_dead_strip PInvoke_BCrypt_BCryptSetProperty_T_REF_System_Runtime_InteropServices_SafeHandle_string_T_REF_PInvoke_BCrypt_BCryptSetPropertyFlags
 PInvoke_BCrypt_BCryptSetProperty_T_REF_System_Runtime_InteropServices_SafeHandle_string_T_REF_PInvoke_BCrypt_BCryptSetPropertyFlags:
 .loc 1 1 0
-.word 0xa9b67bfd
+.word 0xa9b57bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xf90027af
@@ -1769,14 +1769,14 @@ PInvoke_BCrypt_BCryptSetProperty_T_REF_System_Runtime_InteropServices_SafeHandle
 .word 0xf9001fa3
 .word 0xf9002bbf
 .word 0xf9401ba0
-bl _p_27
+bl _p_28
 .word 0x93407c00
 .word 0xaa0003f6
 .word 0xaa1603e1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003e1
 .word 0xaa0103e0
@@ -1793,14 +1793,14 @@ bl _p_5
 .word 0xb9801aa1
 .word 0xeb00003f
 .word 0x10000011
-.word 0x540005e9
+.word 0x54000669
 .word 0x8b0002a0
 .word 0x91008000
 .word 0xf9002ba0
 .word 0xf9402ba1
 .word 0xf9401ba0
 .word 0xd2800002
-bl _p_28
+bl _p_29
 .word 0xf9402ba2
 .word 0x910103a0
 .word 0xf9002fa0
@@ -1808,39 +1808,43 @@ bl _p_28
 .word 0xf94017a1
 .word 0xaa1603e3
 .word 0xb9803ba4
-bl _p_29
+bl _p_30
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf94023a0
 bl _p_2
-.word 0x94000002
-.word 0x14000013
-.word 0xf90047be
-.word 0xf9402ba0
 .word 0xf90033bf
-.word 0x910183a1
-.word 0xf90037a1
-.word 0xf9003ba0
-.word 0xf94037a0
-.word 0xf9403ba1
-.word 0xf9000001
+.word 0x94000005
 .word 0xf94033a0
-.word 0xf9004ba0
-.word 0xf94027a0
-bl _p_30
-.word 0xaa0003e1
-.word 0xf9404ba0
+.word 0xb4000040
 bl _p_31
-.word 0xf94047be
+.word 0x14000013
+.word 0xf9004bbe
+.word 0xf9402ba0
+.word 0xf90037bf
+.word 0x9101a3a1
+.word 0xf9003ba1
+.word 0xf9003fa0
+.word 0xf9403ba0
+.word 0xf9403fa1
+.word 0xf9000001
+.word 0xf94037a0
+.word 0xf90053a0
+.word 0xf94027a0
+bl _p_32
+.word 0xaa0003e1
+.word 0xf94053a0
+bl _p_33
+.word 0xf9404bbe
 .word 0xd61f03c0
 .word 0xd2800000
 .word 0x2a0003e0
 .word 0xf9002ba0
 .word 0xa9415bb5
 .word 0x910003bf
-.word 0xa8ca7bfd
+.word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -1864,7 +1868,7 @@ PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_strin
 .word 0xd2800002
 .word 0xd2800003
 .word 0xb98033a5
-bl _p_32
+bl _p_34
 .word 0xf94033be
 .word 0xf90003c0
 .word 0xf94023a0
@@ -1873,7 +1877,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003e2
 .word 0xb9801843
@@ -1884,7 +1888,7 @@ bl _p_5
 .word 0xf94017a1
 .word 0xf9003ba2
 .word 0xb98033a5
-bl _p_32
+bl _p_34
 .word 0xf94033be
 .word 0xf90003c0
 .word 0xf9401fa0
@@ -1898,7 +1902,7 @@ bl _p_2
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
 bl _p_6
 .word 0xf94027a0
@@ -1932,14 +1936,14 @@ PInvoke_BCrypt_BCryptGetProperty_T_REF_System_Runtime_InteropServices_SafeHandle
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xaa1a03e2
-bl _p_33
+bl _p_35
 .word 0xf94023be
 .word 0xf90003c0
 .word 0xf90007c1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9401ba1
 .word 0xaa0103e0
 .word 0xaa0103fa
@@ -1960,28 +1964,28 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9803ba0
 .word 0x93407c00
 .word 0x8b000340
 .word 0xf9002fa0
 .word 0xf94017a0
-bl _p_34
+bl _p_36
 .word 0xaa0003e1
 .word 0xf9402fa0
-bl _p_35
+bl _p_37
 .word 0xf9002ba0
 .word 0xf94017a0
-bl _p_36
+bl _p_38
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9400441
-bl _p_37
+bl _p_39
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -1998,13 +2002,13 @@ PInvoke_BCrypt_EnsureNotNullOrEmpty_System_ArraySegment_1_byte_:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9400340
 .word 0xb5000460
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xf9400001
 .word 0xd2800000
 .word 0xf90027a0
@@ -2013,7 +2017,7 @@ ldr x0, [x16, #248]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
 .word 0xd2800003
 bl _p_6
@@ -2041,14 +2045,14 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9400340
 .word 0xb9801800
 .word 0x35000440
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 .word 0xf9400001
 .word 0xd2800000
 .word 0xf9001fa0
@@ -2057,7 +2061,7 @@ ldr x0, [x16, #272]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xd2800002
 .word 0xd2800003
 bl _p_6
@@ -2107,9 +2111,9 @@ PInvoke_BCrypt_ArraySegmentFor_byte__:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xf94013a1
-bl _p_38
+bl _p_40
 .word 0xf94017a0
 .word 0xf9000ba0
 .word 0xf9401ba0
@@ -2142,12 +2146,12 @@ PInvoke_BCrypt_ArrayOrOriginalNull_System_ArraySegment_1_byte_byte_:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9400ba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000060
@@ -2179,7 +2183,7 @@ PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte___intptr_byte___P
 .word 0xf94017a1
 .word 0xf9401fa3
 .word 0xb98043a4
-bl _p_39
+bl _p_41
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -2262,7 +2266,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___intptr_byte___P
 .word 0xf94017a1
 .word 0xf9401fa3
 .word 0xb98043a4
-bl _p_40
+bl _p_42
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -2317,7 +2321,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_Syst
 .word 0xf90037a5
 .word 0xf94027a5
 .word 0xb98053a6
-bl _p_41
+bl _p_43
 .word 0xf94053be
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -2343,7 +2347,7 @@ PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___intptr_PInvoke
 .word 0xf94013a0
 .word 0xf94017a1
 .word 0xb9803ba3
-bl _p_42
+bl _p_44
 .word 0xf94023be
 .word 0xf90003c0
 .word 0xf90007c1
@@ -2371,7 +2375,7 @@ PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_byte___byte___
 .word 0xf9400fa1
 .word 0xf94013a2
 .word 0xb98033a4
-bl PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_byte___byte___void__PInvoke_BCrypt_BCryptSignHashFlags
+bl _p_45
 .word 0x53001c00
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -2396,13 +2400,13 @@ PInvoke_BCrypt_ArrayOrOriginalNull_System_ArraySegment_1_byte_intptr:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf94017a0
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -2410,7 +2414,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000040
@@ -2458,13 +2462,13 @@ PInvoke_BCrypt_ArrayOrOriginalNull_System_ArraySegment_1_byte_byte__:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9401ba0
 .word 0xf90023a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0x3980b410
 .word 0xb5000050
 bl _p_17
@@ -2472,7 +2476,7 @@ bl _p_17
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x54000060
@@ -2485,7 +2489,7 @@ ldr x1, [x16, #248]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -2508,7 +2512,7 @@ PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__intp
 .word 0xb94023a0
 .word 0xf94017a1
 .word 0xb9803ba3
-bl _p_43
+bl _p_46
 .word 0xf9402bbe
 .word 0xf90003c0
 .word 0xf94027a1
@@ -2666,7 +2670,7 @@ bl _p_18
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -2768,7 +2772,7 @@ bl _p_18
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -2808,7 +2812,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_intptr_int_intptr_intp
 .word 0xf90003e9
 .word 0xb9800b89
 .word 0xb9000be9
-bl _p_20
+bl _p_21
 .word 0xf94037be
 .word 0xf90003c0
 .word 0xf9400bbc
@@ -2906,7 +2910,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_intptr_byte
 .word 0xf90003e9
 .word 0xb9800b89
 .word 0xb9000be9
-bl _p_20
+bl _p_21
 .word 0xf94043be
 .word 0xf90003c0
 .word 0xf9400bb5
@@ -2917,7 +2921,7 @@ bl _p_20
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -3008,7 +3012,7 @@ PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_void__byte_
 .word 0xf90003e9
 .word 0xb9800b89
 .word 0xb9000be9
-bl _p_20
+bl _p_21
 .word 0xf9403fbe
 .word 0xf90003c0
 .word 0xf9400bb5
@@ -3019,7 +3023,7 @@ bl _p_20
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -3049,7 +3053,7 @@ PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_intptr_byte___int_byt
 .word 0xb9804ba5
 .word 0xf9402ba6
 .word 0xb9805ba7
-bl _p_23
+bl _p_24
 .word 0xf94033be
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -3081,7 +3085,7 @@ PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_intptr_byte___
 .word 0xf94023a4
 .word 0xb9804ba5
 .word 0xb98053a6
-bl _p_24
+bl _p_25
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -3109,7 +3113,7 @@ PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_strin
 .word 0xf94017a1
 .word 0xb9803ba3
 .word 0xb98043a4
-bl _p_29
+bl _p_30
 .word 0xf94027be
 .word 0xf90003c0
 .word 0xf9400ba0
@@ -3154,7 +3158,7 @@ PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_strin
 .word 0xaa1803e2
 .word 0xb98043a3
 .word 0xb9804ba4
-bl _p_29
+bl _p_30
 .word 0xf9402bbe
 .word 0xf90003c0
 .word 0xf9400bb5
@@ -3163,7 +3167,7 @@ bl _p_29
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -3177,7 +3181,7 @@ PInvoke_BCrypt_BCryptFreeBuffer_intptr:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_44
+bl _p_47
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3193,26 +3197,26 @@ PInvoke_BCrypt__cctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800021
 bl _p_5
 .word 0xaa0003e1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xf9000001
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800021
 bl _p_5
 .word 0xaa0003e1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #272]
+ldr x0, [x16, #280]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -3334,7 +3338,7 @@ PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER_get_Name:
 .word 0xf9400ba0
 .word 0xf9400001
 .word 0xd2800000
-bl _p_45
+bl _p_48
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3395,16 +3399,16 @@ PInvoke_BCrypt_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO_Create:
 .word 0x9101c3a0
 .word 0xd2800001
 .word 0xd2800b02
-bl _p_46
+bl _p_49
 .word 0x9101c3a0
 .word 0xd2800001
 .word 0xd2800b02
-bl _p_46
+bl _p_49
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #280]
-bl _p_47
+ldr x0, [x16, #288]
+bl _p_50
 .word 0x93407c00
 .word 0xb90073a0
 .word 0xd280003e
@@ -3412,11 +3416,11 @@ bl _p_47
 .word 0x9101c3a1
 .word 0x910063a0
 .word 0xd2800b02
-bl _p_48
+bl _p_51
 .word 0xf9400ba0
 .word 0x910063a1
 .word 0xd2800b02
-bl _p_48
+bl _p_51
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
@@ -3597,9 +3601,9 @@ PInvoke_BCrypt_BCRYPT_AUTH_TAG_LENGTHS_STRUCT_GetEnumerator:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xb900101f
 .word 0xf9400ba1
 .word 0xb9800022
@@ -3635,9 +3639,9 @@ PInvoke_BCrypt_BCRYPT_AUTH_TAG_LENGTHS_STRUCT_System_Collections_IEnumerable_Get
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xb900101f
 .word 0xf9400ba1
 .word 0xb9800022
@@ -3706,7 +3710,7 @@ PInvoke_BCrypt_BCRYPT_AUTH_TAG_LENGTHS_STRUCT__GetEnumeratord__3_MoveNext:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -3768,7 +3772,7 @@ ldr x0, [x16, #296]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_19
 
@@ -3796,10 +3800,10 @@ PInvoke_BCrypt_BCRYPT_AUTH_TAG_LENGTHS_STRUCT__GetEnumeratord__3_System_Collecti
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -3819,9 +3823,9 @@ PInvoke_BCrypt_BCRYPT_AUTH_TAG_LENGTHS_STRUCT__GetEnumeratord__3_System_Collecti
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0xf94013a1
 .word 0xb9001001
 .word 0x910003bf
@@ -3888,13 +3892,13 @@ PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_InsertBeforeKey_byte__:
 .word 0xb9801800
 .word 0x910063a1
 .word 0xf90017a1
-bl PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_Create_int
+bl _p_54
 .word 0xf94017be
 .word 0xf90003c0
 .word 0xf90007c1
 .word 0x910063a0
 .word 0xf9400ba1
-bl _p_51
+bl _p_55
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -3903,12 +3907,12 @@ adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x0, [x16, #0]
 .word 0xd28007e1
-bl _p_52
+bl _p_56
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_60:
 .text
@@ -3927,8 +3931,8 @@ PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_AddHeaderToKey_byte__:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #312]
-bl _p_47
+ldr x0, [x16, #320]
+bl _p_50
 .word 0x93407c00
 .word 0xf9001ba0
 .word 0xf9400fa1
@@ -3937,41 +3941,41 @@ bl _p_47
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xf90027a0
 .word 0xf9400ba0
 .word 0xb9400000
-bl _p_53
+bl _p_57
 .word 0xf94027a1
 .word 0xf90023a1
 .word 0xd2800082
-bl _p_54
+bl _p_58
 .word 0xf9400ba0
 .word 0xb9400400
-bl _p_53
+bl _p_57
 .word 0xf94023a2
 .word 0xd2800001
 .word 0xf9001fa2
 .word 0xd2800083
 .word 0xd2800084
-bl _p_55
+bl _p_59
 .word 0xf9400ba0
 .word 0xb9800800
-bl _p_56
+bl _p_60
 .word 0xf9401fa2
 .word 0xd2800001
 .word 0xf90017a2
 .word 0xd2800103
 .word 0xd2800084
-bl _p_55
+bl _p_59
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xf9400fa0
 .word 0xb9801804
 .word 0xd2800001
 .word 0xf90013a2
-bl _p_55
+bl _p_59
 .word 0xf94013a0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -3993,9 +3997,9 @@ PInvoke_BCrypt_BCRYPT_KEY_LENGTHS_STRUCT_GetEnumerator:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xb900101f
 .word 0xf9400ba1
 .word 0xb9800022
@@ -4031,9 +4035,9 @@ PInvoke_BCrypt_BCRYPT_KEY_LENGTHS_STRUCT_System_Collections_IEnumerable_GetEnume
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xb900101f
 .word 0xf9400ba1
 .word 0xb9800022
@@ -4102,7 +4106,7 @@ PInvoke_BCrypt_BCRYPT_KEY_LENGTHS_STRUCT__GetEnumeratord__3_MoveNext:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -4164,7 +4168,7 @@ ldr x0, [x16, #328]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
 bl _p_19
 
@@ -4192,10 +4196,10 @@ PInvoke_BCrypt_BCRYPT_KEY_LENGTHS_STRUCT__GetEnumeratord__3_System_Collections_I
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4215,9 +4219,9 @@ PInvoke_BCrypt_BCRYPT_KEY_LENGTHS_STRUCT__GetEnumeratord__3_System_Collections_I
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0xf94013a1
 .word 0xb9001001
 .word 0x910003bf
@@ -4400,13 +4404,13 @@ PInvoke_BCrypt_EccKeyBlob__ctor_byte__:
 .word 0xf9000fa1
 .word 0xf9400fa0
 .word 0xd2800001
-bl _p_57
+bl _p_61
 .word 0xaa0003e1
 .word 0xf9400ba0
 .word 0xb9000001
 .word 0xf9400fa0
 .word 0xd2800081
-bl _p_58
+bl _p_62
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9400ba0
@@ -4427,11 +4431,11 @@ PInvoke_BCrypt_SafeAlgorithmHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_59
+bl _p_63
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4450,11 +4454,11 @@ PInvoke_BCrypt_SafeAlgorithmHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_59
+bl _p_63
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -4476,7 +4480,7 @@ PInvoke_BCrypt_SafeAlgorithmHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #336]
+ldr x1, [x16, #344]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -4498,7 +4502,7 @@ PInvoke_BCrypt_SafeAlgorithmHandle_ReleaseHandle:
 .word 0x910063a1
 .word 0xf90013a1
 .word 0xd2800001
-bl _p_60
+bl _p_64
 .word 0xf94013be
 .word 0xf90003c0
 .word 0xb9401ba0
@@ -4519,15 +4523,15 @@ PInvoke_BCrypt_SafeAlgorithmHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 bl _p_10
 .word 0xf9000ba0
-bl _p_61
+bl _p_65
 .word 0xf9400ba1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #360]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4545,11 +4549,11 @@ PInvoke_BCrypt_SafeHashHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_59
+bl _p_63
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4568,11 +4572,11 @@ PInvoke_BCrypt_SafeHashHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_59
+bl _p_63
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -4594,7 +4598,7 @@ PInvoke_BCrypt_SafeHashHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #336]
+ldr x1, [x16, #344]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -4615,7 +4619,7 @@ PInvoke_BCrypt_SafeHashHandle_ReleaseHandle:
 .word 0xf9400800
 .word 0x910063a1
 .word 0xf90013a1
-bl _p_62
+bl _p_66
 .word 0xf94013be
 .word 0xf90003c0
 .word 0xb9401ba0
@@ -4636,15 +4640,15 @@ PInvoke_BCrypt_SafeHashHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 bl _p_10
 .word 0xf9000ba0
-bl _p_63
+bl _p_67
 .word 0xf9400ba1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #376]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4662,11 +4666,11 @@ PInvoke_BCrypt_SafeKeyHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_59
+bl _p_63
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4685,11 +4689,11 @@ PInvoke_BCrypt_SafeKeyHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_59
+bl _p_63
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -4711,7 +4715,7 @@ PInvoke_BCrypt_SafeKeyHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #336]
+ldr x1, [x16, #344]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -4732,7 +4736,7 @@ PInvoke_BCrypt_SafeKeyHandle_ReleaseHandle:
 .word 0xf9400800
 .word 0x910063a1
 .word 0xf90013a1
-bl _p_64
+bl _p_68
 .word 0xf94013be
 .word 0xf90003c0
 .word 0xb9401ba0
@@ -4753,7 +4757,7 @@ PInvoke_BCrypt_SafeKeyHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf9000ba0
 bl _p_11
@@ -4761,7 +4765,7 @@ bl _p_11
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4779,11 +4783,11 @@ PInvoke_BCrypt_SafeSecretHandle__ctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xd2800022
-bl _p_59
+bl _p_63
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -4802,11 +4806,11 @@ PInvoke_BCrypt_SafeSecretHandle__ctor_intptr_bool:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0x394083a2
-bl _p_59
+bl _p_63
 .word 0xf9400fa1
 .word 0xf9400ba0
 .word 0xf9000801
@@ -4828,7 +4832,7 @@ PInvoke_BCrypt_SafeSecretHandle_get_IsInvalid:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #336]
+ldr x1, [x16, #344]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -4849,7 +4853,7 @@ PInvoke_BCrypt_SafeSecretHandle_ReleaseHandle:
 .word 0xf9400800
 .word 0x910063a1
 .word 0xf90013a1
-bl _p_65
+bl _p_69
 .word 0xf94013be
 .word 0xf90003c0
 .word 0xb9401ba0
@@ -4870,15 +4874,15 @@ PInvoke_BCrypt_SafeSecretHandle__cctor:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #384]
 bl _p_10
 .word 0xf9000ba0
-bl _p_66
+bl _p_70
 .word 0xf9400ba1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #384]
+ldr x0, [x16, #392]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4913,7 +4917,7 @@ PInvoke_BCrypt_BCryptSetProperty_T_GSHAREDVT_System_Runtime_InteropServices_Safe
 .word 0xf90023a2
 .word 0xf90027a3
 .word 0xf9402fa0
-bl _p_67
+bl _p_71
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0x91003c10
@@ -4945,8 +4949,8 @@ bl _p_67
 .word 0xeb1e02bf
 .word 0x54000320
 .word 0xf9402fa0
-bl _p_68
-bl _p_69
+bl _p_72
+bl _p_73
 .word 0xb9802ae1
 .word 0x8b0102c1
 .word 0xf9005ba1
@@ -4956,7 +4960,7 @@ bl _p_69
 .word 0xf9400ee0
 .word 0xf94012e0
 .word 0xf9402fa0
-bl _p_70
+bl _p_74
 .word 0xaa0003e2
 .word 0xf94057a0
 .word 0xf9405ba1
@@ -4974,14 +4978,14 @@ bl _mono_gsharedvt_value_copy
 .word 0xd63f0020
 .word 0xaa0003f5
 .word 0xaa1503e0
-bl _p_27
+bl _p_28
 .word 0x93407c00
 .word 0xaa0003f5
 .word 0xaa1503e1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 bl _p_5
 .word 0xaa0003e1
 .word 0xaa0103e0
@@ -4998,7 +5002,7 @@ bl _p_5
 .word 0xb9801a81
 .word 0xeb00003f
 .word 0x10000011
-.word 0x54000b49
+.word 0x54000bc9
 .word 0x8b000280
 .word 0x91008000
 .word 0xf90033a0
@@ -5016,8 +5020,8 @@ bl _p_5
 .word 0xeb1e029f
 .word 0x54000320
 .word 0xf9402fa0
-bl _p_68
-bl _p_69
+bl _p_72
+bl _p_73
 .word 0xb98032e1
 .word 0x8b0102c1
 .word 0xf9005ba1
@@ -5027,7 +5031,7 @@ bl _p_69
 .word 0xf9400ee0
 .word 0xf94012e0
 .word 0xf9402fa0
-bl _p_70
+bl _p_74
 .word 0xaa0003e2
 .word 0xf94057a0
 .word 0xf9405ba1
@@ -5047,11 +5051,11 @@ bl _mono_gsharedvt_value_copy
 .word 0xf94033a1
 .word 0xf90037bf
 .word 0x9101a3a0
-bl _p_71
+bl _p_75
 .word 0xf94037a1
 .word 0xaa1703e0
 .word 0xd2800002
-bl _p_28
+bl _p_29
 .word 0xf94033a2
 .word 0x910143a0
 .word 0xf9003ba0
@@ -5059,26 +5063,30 @@ bl _p_28
 .word 0xf9401fa1
 .word 0xaa1503e3
 .word 0xb9804ba4
-bl _p_29
+bl _p_30
 .word 0xf9403bbe
 .word 0xf90003c0
 .word 0xf9402ba0
 bl _p_2
-.word 0x94000002
-.word 0x1400000f
-.word 0xf9004bbe
-.word 0xf94033a1
 .word 0xf9003fbf
-.word 0x9101e3a0
-bl _p_71
+.word 0x94000005
 .word 0xf9403fa0
+.word 0xb4000040
+bl _p_31
+.word 0x1400000f
+.word 0xf9004fbe
+.word 0xf94033a1
+.word 0xf90043bf
+.word 0x910203a0
+bl _p_75
+.word 0xf94043a0
 .word 0xf90053a0
 .word 0xf9402fa0
-bl _p_72
+bl _p_76
 .word 0xaa0003e1
 .word 0xf94053a0
-bl _p_31
-.word 0xf9404bbe
+bl _p_33
+.word 0xf9404fbe
 .word 0xd61f03c0
 .word 0xd2800000
 .word 0x2a0003e0
@@ -5088,7 +5096,7 @@ bl _p_31
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -5108,7 +5116,7 @@ PInvoke_BCrypt_BCryptGetProperty_T_GSHAREDVT_System_Runtime_InteropServices_Safe
 .word 0xaa0103f9
 .word 0xaa0203fa
 .word 0xf94023a0
-bl _p_73
+bl _p_77
 .word 0xaa0003f7
 .word 0xb98002e0
 .word 0x91003c10
@@ -5133,7 +5141,7 @@ bl _p_73
 .word 0xf9401fa0
 .word 0xaa1903e1
 .word 0xaa1a03e2
-bl _p_33
+bl _p_35
 .word 0xf9402fbe
 .word 0xf90003c0
 .word 0xf90007c1
@@ -5142,11 +5150,11 @@ bl _p_33
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9003fa0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_74
+bl _p_78
 .word 0xaa0003e1
 .word 0xf9403ba0
 .word 0xf9403faf
@@ -5173,11 +5181,11 @@ bl _p_74
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf90043a0
 .word 0xf94023a0
 .word 0xf9400000
-bl _p_75
+bl _p_79
 .word 0xaa0003e1
 .word 0xf9403fa0
 .word 0xf94043af
@@ -5187,16 +5195,16 @@ bl _p_75
 .word 0x8b000341
 .word 0xf90033bf
 .word 0x910183a0
-bl _p_71
+bl _p_75
 .word 0xf94033a0
 .word 0xf9003ba0
 .word 0xf94023a0
-bl _p_76
+bl _p_80
 .word 0xaa0003e1
 .word 0xf9403ba0
-bl _p_35
+bl _p_37
 .word 0xf94006e1
-bl _p_77
+bl _p_81
 .word 0xaa0003fa
 .word 0xf9400af9
 .word 0xd280005e
@@ -5232,7 +5240,7 @@ bl _p_77
 .word 0xf94012e0
 .word 0xf94016e0
 .word 0xf94023a0
-bl _p_78
+bl _p_82
 .word 0xaa0003e2
 .word 0xf9403ba0
 .word 0xf9403fa1
@@ -5242,7 +5250,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -5267,14 +5275,14 @@ PInvoke_BCrypt_BCryptGetProperty_T_INT_System_Runtime_InteropServices_SafeHandle
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xaa1a03e2
-bl _p_33
+bl _p_35
 .word 0xf94023be
 .word 0xf90003c0
 .word 0xf90007c1
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xf9401ba1
 .word 0xaa0103e0
 .word 0xaa0103fa
@@ -5295,16 +5303,16 @@ ldr x0, [x16, #216]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xb9803ba0
 .word 0x93407c00
 .word 0x8b000340
 .word 0xf90033a0
 .word 0xf94017a0
-bl _p_79
+bl _p_83
 .word 0xaa0003e1
 .word 0xf94033a0
-bl _p_35
+bl _p_37
 .word 0xf9002ba0
 .word 0xf9400000
 .word 0x3940b001
@@ -5315,7 +5323,7 @@ bl _p_35
 .word 0xf9400000
 .word 0xf9002fa0
 .word 0xf94017a0
-bl _p_80
+bl _p_84
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -5327,10 +5335,10 @@ bl _p_80
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_19
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -5343,7 +5351,7 @@ b System_ArraySegment_1_T_BYTE__ctor_T_BYTE__
 	.align 4
 	.no_dead_strip System_ArraySegment_1_T_BYTE__ctor_T_BYTE__
 System_ArraySegment_1_T_BYTE__ctor_T_BYTE__:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/arraysegment.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/arraysegment.cs"
 .loc 2 39 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -5376,13 +5384,13 @@ ldr x1, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 40 0
-.word 0xd28571c0
-bl _p_81
+.word 0xd2863360
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_8c:
 .text
@@ -5443,45 +5451,45 @@ ldr x1, [x16, #16]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 2 51 0
-.word 0xd28571c0
-bl _p_81
+.word 0xd2863360
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 .loc 2 53 0
-.word 0xd2883aa0
-bl _p_81
+.word 0xd28af700
+bl _p_85
 .word 0xf90023a0
-.word 0xd2857540
-bl _p_81
+.word 0xd285fbc0
+bl _p_85
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_50
+bl _p_53
 .loc 2 55 0
-.word 0xd28607c0
-bl _p_81
+.word 0xd2864060
+bl _p_85
 .word 0xf90023a0
-.word 0xd2857540
-bl _p_81
+.word 0xd285fbc0
+bl _p_85
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_50
+bl _p_53
 .loc 2 57 0
-.word 0xd285b2c0
-bl _p_81
+.word 0xd286f660
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_8d:
 .text
@@ -5593,11 +5601,11 @@ System_ArraySegment_1_T_BYTE_Equals_object:
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9401ba0
-bl _p_82
+bl _p_86
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400fa0
-bl _p_83
+bl _p_87
 .word 0xb40004c0
 .loc 2 125 0
 .word 0xf9400fa0
@@ -5610,7 +5618,7 @@ bl _p_83
 .word 0xf9400000
 .word 0xf90027a0
 .word 0xf9401ba0
-bl _p_84
+bl _p_88
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xeb01001f
@@ -5623,12 +5631,12 @@ bl _p_84
 .word 0xf9400400
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_85
+bl _p_89
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf940001e
 .word 0xf9401ba0
-bl _p_86
+bl _p_90
 .word 0xaa0003e3
 .word 0xf94023af
 .word 0xf9400ba0
@@ -5642,7 +5650,7 @@ bl _p_86
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_19
 
@@ -5656,35 +5664,23 @@ b System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 	.no_dead_strip System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE:
 .loc 2 132 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
-.word 0xf9002faf
+.word 0xf90017af
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400fa0
-.word 0xf90027a0
-.word 0xf94013a0
-.word 0xf9002ba0
-.word 0xf94027a0
 .word 0xf9400ba1
 .word 0xf9400021
 .word 0xeb01001f
-.word 0x54000281
-.word 0xf9400fa0
-.word 0xf9001fa0
-.word 0xf94013a0
-.word 0xf90023a0
-.word 0xb98043a0
+.word 0x54000181
+.word 0xb98023a0
 .word 0xf9400ba1
 .word 0xb9800821
 .word 0x6b01001f
-.word 0x54000161
-.word 0xf9400fa0
-.word 0xf90017a0
-.word 0xf94013a0
-.word 0xf9001ba0
-.word 0xb98037a0
+.word 0x540000e1
+.word 0xb98027a0
 .word 0xf9400ba1
 .word 0xb9800c21
 .word 0x6b01001f
@@ -5692,7 +5688,7 @@ System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE:
 .word 0x14000002
 .word 0xd2800000
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_93:
@@ -5739,22 +5735,22 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_get_Item_int:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 151 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 .loc 2 153 0
 .word 0xd2821380
-bl _p_81
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -5805,22 +5801,22 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_set_Item_int_T_B
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 162 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 .loc 2 164 0
 .word 0xd2821380
-bl _p_81
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -5850,10 +5846,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_IndexOf_T_BYTE:
 .word 0xb9800f20
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_87
+bl _p_91
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_88
+bl _p_92
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -5877,13 +5873,13 @@ bl _p_88
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 2 174 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_96:
 .text
@@ -5901,10 +5897,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_Insert_int_T_BYT
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -5924,10 +5920,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IList_T_RemoveAt_int:
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -5976,22 +5972,22 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IReadOnlyList_T_get_Item
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 202 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 .loc 2 204 0
 .word 0xd2821380
-bl _p_81
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -6029,10 +6025,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Add_T_BYTE
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6051,10 +6047,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Clear:
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -6085,10 +6081,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Contains_T
 .word 0xb9800f20
 .word 0xf90023a0
 .word 0xf94013a0
-bl _p_89
+bl _p_93
 .word 0xf90027a0
 .word 0xf94013a0
-bl _p_90
+bl _p_94
 .word 0xaa0003e4
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -6107,13 +6103,13 @@ bl _p_90
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 2 236 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_9d:
 .text
@@ -6140,20 +6136,20 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_CopyTo_T_B
 .word 0xb9800f04
 .word 0xf9400fa2
 .word 0xb98023a3
-bl _p_55
+bl _p_59
 .loc 2 254 0
 .word 0xf9400bb8
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 2 250 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_9e:
 .text
@@ -6170,10 +6166,10 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_ICollection_T_Remove_T_B
 .word 0xf90013af
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xd28020c0
+.word 0xd28021c0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6202,12 +6198,12 @@ System_ArraySegment_1_T_BYTE_System_Collections_Generic_IEnumerable_T_GetEnumera
 .word 0xf9400400
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_91
+bl _p_95
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_92
+bl _p_96
 .word 0xaa0003e3
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -6219,13 +6215,13 @@ bl _p_92
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 2 266 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_a0:
 .text
@@ -6251,12 +6247,12 @@ System_ArraySegment_1_T_BYTE_System_Collections_IEnumerable_GetEnumerator:
 .word 0xf9400400
 .word 0xf90013a0
 .word 0xf94017a0
-bl _p_93
+bl _p_97
 .word 0xd2800501
-bl _p_49
+bl _p_52
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_94
+bl _p_98
 .word 0xaa0003e3
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -6268,13 +6264,13 @@ bl _p_94
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 2 277 0
-.word 0xd2883c60
-bl _p_81
+.word 0xd28af8c0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_a1:
 .text
@@ -6285,7 +6281,7 @@ b System_Nullable_1_System_ArraySegment_1_byte__ctor_System_ArraySegment_1_byte
 	.align 4
 	.no_dead_strip System_Nullable_1_System_ArraySegment_1_byte__ctor_System_ArraySegment_1_byte
 System_Nullable_1_System_ArraySegment_1_byte__ctor_System_ArraySegment_1_byte:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/corlib/System/Nullable.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/corlib/System/Nullable.cs"
 .loc 3 94 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -6364,13 +6360,13 @@ System_Nullable_1_System_ArraySegment_1_byte_get_Value:
 .word 0xa8c37bfd
 .word 0xd65f03c0
 .loc 3 105 0
-.word 0xd29687c0
-bl _p_81
+.word 0xd287dee0
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_a4:
 .text
@@ -6406,7 +6402,7 @@ System_Nullable_1_System_ArraySegment_1_byte_Equals_object:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #392]
+ldr x1, [x16, #400]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -6418,14 +6414,14 @@ ldr x1, [x16, #392]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910103a8
 .word 0xaa1a03e0
-bl _p_95
+bl _p_99
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf94013a0
 .word 0x9100a3a1
 .word 0xf94023a2
@@ -6434,7 +6430,7 @@ ldr x15, [x16, #232]
 .word 0xf9001ba2
 .word 0xf9402ba2
 .word 0xf9001fa2
-bl _p_96
+bl _p_100
 .word 0x53001c00
 .word 0xf9400bb8
 .word 0xf9400fba
@@ -6452,18 +6448,12 @@ b System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_A
 	.no_dead_strip System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte
 System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte:
 .loc 3 123 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf9400fa0
-.word 0xf9400001
-.word 0xf9001ba1
-.word 0xf9400401
-.word 0xf9001fa1
-.word 0xf9400800
-.word 0xf90023a0
-.word 0x394103a0
+.word 0x39404000
 .word 0xf9400ba1
 .word 0x39404021
 .word 0x6b01001f
@@ -6480,7 +6470,7 @@ System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_Arr
 .word 0x14000025
 .loc 3 129 0
 .word 0xf9400fa0
-.word 0xf9002ba0
+.word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400001
 .word 0xf90013a1
@@ -6489,11 +6479,11 @@ System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_Arr
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xd2800401
-bl _p_49
+bl _p_52
 .word 0xaa0003e1
-.word 0xf9402ba0
+.word 0xf9401ba0
 .word 0x91004024
 .word 0xaa0403e2
 .word 0xf94013a3
@@ -6515,11 +6505,11 @@ ldr x5, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
-bl _p_97
+ldr x15, [x16, #224]
+bl _p_101
 .word 0x53001c00
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c47bfd
 .word 0xd65f03c0
 
 Lme_a6:
@@ -6545,9 +6535,9 @@ System_Nullable_1_System_ArraySegment_1_byte_GetHashCode:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #216]
+ldr x15, [x16, #224]
 .word 0xf9400ba0
-bl _p_98
+bl _p_102
 .word 0x93407c00
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -6636,9 +6626,9 @@ System_Nullable_1_System_ArraySegment_1_byte_ToString:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xd2800401
-bl _p_49
+bl _p_52
 .word 0xaa0003e1
 .word 0x91004023
 .word 0xaa0303e0
@@ -6667,7 +6657,7 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #408]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -6683,30 +6673,17 @@ b System_Nullable_1_System_ArraySegment_1_byte_Box_System_Nullable_1_System_Arra
 	.no_dead_strip System_Nullable_1_System_ArraySegment_1_byte_Box_System_Nullable_1_System_ArraySegment_1_byte
 System_Nullable_1_System_ArraySegment_1_byte_Box_System_Nullable_1_System_ArraySegment_1_byte:
 .loc 3 177 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-.word 0xf9400001
-.word 0xf90023a1
-.word 0xf9400401
-.word 0xf90027a1
-.word 0xf9400800
-.word 0xf9002ba0
-.word 0x394143a0
+.word 0x39404000
 .word 0x35000060
 .loc 3 178 0
 .word 0xd2800000
-.word 0x14000023
+.word 0x1400001c
 .loc 3 180 0
 .word 0xf9400ba0
-.word 0xf9400001
-.word 0xf90017a1
-.word 0xf9400401
-.word 0xf9001ba1
-.word 0xf9400800
-.word 0xf9001fa0
-.word 0x9100a3a0
 .word 0xf9400001
 .word 0xf9000fa1
 .word 0xf9400400
@@ -6714,9 +6691,9 @@ System_Nullable_1_System_ArraySegment_1_byte_Box_System_Nullable_1_System_ArrayS
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xd2800401
-bl _p_49
+bl _p_52
 .word 0x91004003
 .word 0xaa0303e1
 .word 0xf9400fa2
@@ -6736,7 +6713,7 @@ ldr x4, [x16, #16]
 .word 0xf94013a2
 .word 0xf9000022
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_ab:
@@ -6803,7 +6780,7 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x2, [x16, #392]
+ldr x2, [x16, #400]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540005a1
@@ -6820,7 +6797,7 @@ ldr x2, [x16, #392]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0xf9401fa1
 .word 0xf94023a2
 bl _p_14
@@ -6853,7 +6830,7 @@ ldr x3, [x16, #16]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_19
 
@@ -6866,8 +6843,8 @@ b System_Array_InternalEnumerator_1_T_INT__ctor_System_Array
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INT__ctor_System_Array:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/corlib/System/Array.cs"
-.loc 4 215 0 prologue_end
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/corlib/System/Array.cs"
+.loc 4 218 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf90013af
@@ -6887,11 +6864,11 @@ ldr x3, [x16, #16]
 .word 0x8b030042
 .word 0xd280003e
 .word 0x3900005e
-.loc 4 216 0
+.loc 4 219 0
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 4 217 0
+.loc 4 220 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -6905,16 +6882,11 @@ b System_Array_InternalEnumerator_1_T_INT_Dispose
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT_Dispose
 System_Array_InternalEnumerator_1_T_INT_Dispose:
-.loc 4 221 0 prologue_end
+.loc 4 224 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
-.word 0xf9400ba0
-.word 0x9280003e
-.word 0xf2bffffe
-.word 0xb900081e
-.loc 4 222 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -6928,7 +6900,7 @@ b System_Array_InternalEnumerator_1_T_INT_MoveNext
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT_MoveNext
 System_Array_InternalEnumerator_1_T_INT_MoveNext:
-.loc 4 226 0 prologue_end
+.loc 4 228 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -6939,11 +6911,11 @@ System_Array_InternalEnumerator_1_T_INT_MoveNext:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000081
-.loc 4 227 0
+.loc 4 229 0
 .word 0xf9400340
 .word 0xb9801800
 .word 0xb9000b40
-.loc 4 229 0
+.loc 4 231 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
@@ -6975,7 +6947,7 @@ b System_Array_InternalEnumerator_1_T_INT_get_Current
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT_get_Current
 System_Array_InternalEnumerator_1_T_INT_get_Current:
-.loc 4 234 0 prologue_end
+.loc 4 236 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6986,13 +6958,13 @@ System_Array_InternalEnumerator_1_T_INT_get_Current:
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000440
-.loc 4 236 0
+.loc 4 238 0
 .word 0xb9800b40
 .word 0x9280001e
 .word 0xf2bffffe
 .word 0x6b1e001f
 .word 0x54000480
-.loc 4 239 0
+.loc 4 241 0
 .word 0xf9400340
 .word 0xf9001fa0
 .word 0xf9400340
@@ -7002,7 +6974,7 @@ System_Array_InternalEnumerator_1_T_INT_get_Current:
 .word 0x4b010000
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_99
+bl _p_103
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba1
@@ -7010,7 +6982,7 @@ bl _p_99
 .word 0xf940001e
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_100
+bl _p_104
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf94017a1
@@ -7021,22 +6993,22 @@ bl _p_100
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.loc 4 235 0
-.word 0xd2870e60
-bl _p_81
-.word 0xaa0003e1
-.word 0xd2801ee0
-.word 0xf2a04000
-bl _mono_create_corlib_exception_1
-bl _p_50
 .loc 4 237 0
-.word 0xd2871920
-bl _p_81
+.word 0xd289cd40
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
+.loc 4 239 0
+.word 0xd289d800
+bl _p_85
+.word 0xaa0003e1
+.word 0xd2801fe0
+.word 0xf2a04000
+bl _mono_create_corlib_exception_1
+bl _p_53
 
 Lme_b1:
 .text
@@ -7047,7 +7019,7 @@ b System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset
 System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset:
-.loc 4 245 0 prologue_end
+.loc 4 247 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000faf
@@ -7056,7 +7028,7 @@ System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset:
 .word 0x9280003e
 .word 0xf2bffffe
 .word 0xb900081e
-.loc 4 246 0
+.loc 4 248 0
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -7070,18 +7042,18 @@ b System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Cur
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Current
 System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Current:
-.loc 4 250 0 prologue_end
+.loc 4 252 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_101
+bl _p_105
 .word 0xf90017a0
 .word 0xf9400ba0
 .word 0xf940001e
 .word 0xf9400fa0
-bl _p_102
+bl _p_106
 .word 0xaa0003e1
 .word 0xf94017af
 .word 0xf9400ba0
@@ -7089,9 +7061,9 @@ bl _p_102
 .word 0x93407c00
 .word 0xf90013a0
 .word 0xf9400fa0
-bl _p_103
+bl _p_107
 .word 0xd2800301
-bl _p_49
+bl _p_52
 .word 0xf94013a1
 .word 0xb9001001
 .word 0x910003bf
@@ -7108,16 +7080,30 @@ System_Array_InternalArray__IEnumerable_GetEnumerator_T_INT:
 .word 0x910003fd
 .word 0xf9001faf
 .word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xb9801800
+.word 0x35000140
+.loc 4 72 0
+.word 0xf9401fa0
+bl _p_108
+.word 0x3980b410
+.word 0xb5000050
+bl _p_17
+.word 0xf9401fa0
+bl _p_109
+.word 0xf9400000
+.word 0x14000029
+.loc 4 74 0
 .word 0xd2800000
 .word 0xf90017a0
 .word 0xf9001ba0
 .word 0x9100a3a0
 .word 0xf90023a0
 .word 0xf9401fa0
-bl _p_104
+bl _p_110
 .word 0xf90027a0
 .word 0xf9401fa0
-bl _p_105
+bl _p_111
 .word 0xaa0003e2
 .word 0xf94023a0
 .word 0xf94027af
@@ -7128,9 +7114,9 @@ bl _p_105
 .word 0xf9401ba0
 .word 0xf90013a0
 .word 0xf9401fa0
-bl _p_104
+bl _p_110
 .word 0xd2800401
-bl _p_49
+bl _p_52
 .word 0x91004003
 .word 0xaa0303e1
 .word 0xf9400fa2
@@ -7173,39 +7159,39 @@ wrapper_runtime_invoke__Module_runtime_invoke_NTSTATUS_object_Nullable_1_ArraySe
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_106
+bl _p_112
 .word 0xaa0003f8
 .word 0xb4000060
 .word 0xaa1803e0
-bl _p_50
+bl _p_53
 .word 0xf9400320
 .word 0xf900d3a0
 .word 0xf9400720
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910543a8
-bl _p_95
+bl _p_99
 .word 0xf9400b20
 .word 0xf900d7a0
 .word 0xf9400f20
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x9104e3a8
-bl _p_95
+bl _p_99
 .word 0xf9401320
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910483a8
-bl _p_95
+bl _p_99
 .word 0xf940d3a0
 .word 0xf940d7a2
 .word 0xf9401725
@@ -7241,9 +7227,9 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0x91004001
 .word 0xb9811ba2
 .word 0xb9000022
@@ -7272,7 +7258,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350008c0
 .word 0x14000001
@@ -7282,25 +7268,25 @@ ldr x0, [x16, #408]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x9102e3a8
-bl _p_95
+bl _p_99
 .word 0xf9400b20
 .word 0xf900d7a0
 .word 0xf9400f20
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910283a8
-bl _p_95
+bl _p_99
 .word 0xf9401320
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910223a8
-bl _p_95
+bl _p_99
 .word 0xf940d3a0
 .word 0xf940d7a2
 .word 0xf9401725
@@ -7336,9 +7322,9 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0x91004001
 .word 0xb98083a2
 .word 0xb9000022
@@ -7348,11 +7334,11 @@ bl _p_49
 .word 0x910003bf
 .word 0xa8db7bfd
 .word 0xd65f03c0
-bl _p_106
+bl _p_112
 .word 0xaa0003f8
 .word 0xb4fff740
 .word 0xaa1803e0
-bl _p_50
+bl _p_53
 
 Lme_b6:
 .text
@@ -7374,23 +7360,23 @@ wrapper_runtime_invoke__Module_runtime_invoke_NTSTATUS_object_Nullable_1_ArraySe
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x340000c0
-bl _p_106
+bl _p_112
 .word 0xaa0003f8
 .word 0xb4000060
 .word 0xaa1803e0
-bl _p_50
+bl _p_53
 .word 0xf9400320
 .word 0xf900d3a0
 .word 0xf9400720
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910543a8
-bl _p_95
+bl _p_99
 .word 0xf9400b20
 .word 0xf9400000
 .word 0xf900d7a0
@@ -7398,16 +7384,16 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x9104e3a8
-bl _p_95
+bl _p_99
 .word 0xf9401320
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910483a8
-bl _p_95
+bl _p_99
 .word 0xf940d3a0
 .word 0xf940d7a2
 .word 0xf9401725
@@ -7443,9 +7429,9 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0x91004001
 .word 0xb9811ba2
 .word 0xb9000022
@@ -7474,7 +7460,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350008e0
 .word 0x14000001
@@ -7484,9 +7470,9 @@ ldr x0, [x16, #408]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x9102e3a8
-bl _p_95
+bl _p_99
 .word 0xf9400b20
 .word 0xf9400000
 .word 0xf900d7a0
@@ -7494,16 +7480,16 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910283a8
-bl _p_95
+bl _p_99
 .word 0xf9401320
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x15, [x16, #232]
+ldr x15, [x16, #240]
 .word 0x910223a8
-bl _p_95
+bl _p_99
 .word 0xf940d3a0
 .word 0xf940d7a2
 .word 0xf9401725
@@ -7539,9 +7525,9 @@ bl _p_95
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xd2800281
-bl _p_49
+bl _p_52
 .word 0x91004001
 .word 0xb98083a2
 .word 0xb9000022
@@ -7551,11 +7537,11 @@ bl _p_49
 .word 0x910003bf
 .word 0xa8db7bfd
 .word 0xd65f03c0
-bl _p_106
+bl _p_112
 .word 0xaa0003f8
 .word 0xb4fff720
 .word 0xaa1803e0
-bl _p_50
+bl _p_53
 
 Lme_b7:
 .text
@@ -7595,16 +7581,16 @@ ldr x0, [x16, #112]
 .word 0xf94017a1
 .word 0xf9401ba2
 .word 0xaa1a03e3
-bl _p_107
+bl _p_113
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9803ba0
 .word 0xb900bba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
@@ -7619,8 +7605,8 @@ ldr x0, [x16, #408]
 .word 0xa8cd7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff1
@@ -7662,10 +7648,10 @@ ldr x0, [x16, #112]
 .word 0xb4000817
 .word 0xf90057bf
 .word 0xaa1803e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f8
 .word 0xaa1903e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f9
 .word 0x9102a3a0
 .word 0x910083a1
@@ -7673,26 +7659,26 @@ bl _p_110
 .word 0xaa1803e1
 .word 0xaa1903e2
 .word 0xaa1a03e3
-bl _p_111
+bl _p_117
 .word 0xf9405bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000460
 .word 0x14000001
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #344]
+ldr x0, [x16, #352]
 bl _p_10
 .word 0xf90063a0
-bl _p_61
+bl _p_65
 .word 0xf94063a0
 .word 0xf90002e0
 .word 0xd349fee1
@@ -7721,15 +7707,15 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffba0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_b9:
 .text
@@ -7769,20 +7755,21 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf9002ba1
 .word 0xf9000260
-.word 0xb4000b14
-.word 0x390343bf
+.word 0xb4000b34
+.word 0xd2800000
+.word 0x390343a0
 .word 0x910343a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf90073a0
 .word 0xb4000915
 .word 0xf9006fbf
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xaa0003fa
 .word 0xf9401ba0
-bl _p_113
+bl _p_119
 .word 0xf90077a0
 .word 0x910363a1
 .word 0x910123a0
@@ -7793,30 +7780,30 @@ bl _p_113
 .word 0xf94077a4
 .word 0xb9803ba5
 .word 0xb98043a6
-bl _p_114
+bl _p_120
 .word 0xf9407bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9804ba0
 .word 0xb900cba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
 .word 0x394343a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 bl _p_10
 .word 0xf90083a0
-bl _p_63
+bl _p_67
 .word 0xf94083a0
 .word 0xf90002a0
 .word 0xd349fea1
@@ -7836,10 +7823,10 @@ ldr x2, [x16, #16]
 .word 0xf9000001
 .word 0xf94013a0
 .word 0xaa1a03e1
-bl _p_116
+bl _p_122
 .word 0xf9401ba0
 .word 0xf94077a1
-bl _p_116
+bl _p_122
 .word 0xf9402ba0
 .word 0xf9000260
 .word 0xb980cba0
@@ -7851,19 +7838,19 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d17bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fff9e0
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_ba:
 .text
@@ -7909,11 +7896,12 @@ ldr x0, [x16, #112]
 .word 0xf90037a1
 .word 0xf9000340
 .word 0xf94013a0
-.word 0xb4000680
-.word 0x3903a3bf
+.word 0xb40006a0
+.word 0xd2800000
+.word 0x3903a3a0
 .word 0x9103a3a1
 .word 0xf94013a0
-bl _p_112
+bl _p_118
 .word 0xf94013a0
 .word 0xf9400800
 .word 0xf9007ba0
@@ -7930,23 +7918,23 @@ bl _p_112
 .word 0xf90003e9
 .word 0xb9800b89
 .word 0xb9000be9
-bl _p_117
+bl _p_123
 .word 0xf9407fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98063a0
 .word 0xb900e3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000200
 .word 0x14000001
 .word 0x3943a3a0
 .word 0x34000060
 .word 0xf94013a0
-bl _p_115
+bl _p_121
 .word 0xf94037a0
 .word 0xf9000340
 .word 0xb980e3a0
@@ -7957,15 +7945,15 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fffe00
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_bb:
 .text
@@ -8011,11 +7999,12 @@ ldr x0, [x16, #112]
 .word 0xf90037a1
 .word 0xf9000340
 .word 0xf94013a0
-.word 0xb4000680
-.word 0x3903a3bf
+.word 0xb40006a0
+.word 0xd2800000
+.word 0x3903a3a0
 .word 0x9103a3a1
 .word 0xf94013a0
-bl _p_112
+bl _p_118
 .word 0xf94013a0
 .word 0xf9400800
 .word 0xf9007ba0
@@ -8032,23 +8021,23 @@ bl _p_112
 .word 0xf90003e9
 .word 0xb9800b89
 .word 0xb9000be9
-bl _p_118
+bl _p_124
 .word 0xf9407fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98063a0
 .word 0xb900e3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000200
 .word 0x14000001
 .word 0x3943a3a0
 .word 0x34000060
 .word 0xf94013a0
-bl _p_115
+bl _p_121
 .word 0xf94037a0
 .word 0xf9000340
 .word 0xb980e3a0
@@ -8059,15 +8048,15 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fffe00
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_bc:
 .text
@@ -8103,14 +8092,15 @@ ldr x0, [x16, #112]
 .word 0xf94002c1
 .word 0xf9001fa1
 .word 0xf90002c0
-.word 0xb4000657
-.word 0x3902e3bf
+.word 0xb4000677
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1703e0
-bl _p_112
+bl _p_118
 .word 0xf9400af5
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xaa0003f4
 .word 0x9100c3a0
 .word 0xf90063a0
@@ -8118,26 +8108,26 @@ bl _p_113
 .word 0xaa1403e1
 .word 0xb9802ba2
 .word 0xaa1a03e3
-bl _p_119
+bl _p_125
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000280
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1703e0
-bl _p_115
+bl _p_121
 .word 0xf94013a0
 .word 0xaa1403e1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf90002c0
 .word 0xb980b3a0
@@ -8149,15 +8139,15 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffd80
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_bd:
 .text
@@ -8193,14 +8183,15 @@ ldr x0, [x16, #112]
 .word 0xf94002c1
 .word 0xf9001fa1
 .word 0xf90002c0
-.word 0xb4000657
-.word 0x3902e3bf
+.word 0xb4000677
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1703e0
-bl _p_112
+bl _p_118
 .word 0xf9400af5
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xaa0003f4
 .word 0x9100c3a0
 .word 0xf90063a0
@@ -8208,26 +8199,26 @@ bl _p_113
 .word 0xaa1403e1
 .word 0xb9802ba2
 .word 0xaa1a03e3
-bl _p_120
+bl _p_126
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000280
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1703e0
-bl _p_115
+bl _p_121
 .word 0xf94013a0
 .word 0xaa1403e1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf90002c0
 .word 0xb980b3a0
@@ -8239,15 +8230,15 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffd80
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_be:
 .text
@@ -8288,17 +8279,18 @@ ldr x0, [x16, #112]
 .word 0xf9400002
 .word 0xf90033a2
 .word 0xf9000001
-.word 0xb4000793
-.word 0x390383bf
+.word 0xb40007b3
+.word 0xd2800000
+.word 0x390383a0
 .word 0x910383a1
 .word 0xaa1303e0
-bl _p_112
+bl _p_118
 .word 0xf9400a7a
 .word 0xf94017a0
-bl _p_113
+bl _p_119
 .word 0xf9007ba0
 .word 0xf9401fa0
-bl _p_113
+bl _p_119
 .word 0xaa0003f9
 .word 0x910163a0
 .word 0xf9007fa0
@@ -8310,29 +8302,29 @@ bl _p_113
 .word 0xb98043a5
 .word 0xf94027a6
 .word 0xb98053a7
-bl _p_121
+bl _p_127
 .word 0xf9407fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9805ba0
 .word 0xb900dba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350002e0
 .word 0x14000001
 .word 0x394383a0
 .word 0x34000060
 .word 0xaa1303e0
-bl _p_115
+bl _p_121
 .word 0xf94017a0
 .word 0xf9407ba1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xaa1903e1
-bl _p_116
+bl _p_122
 .word 0xf94033a1
 .word 0xf94077a0
 .word 0xf9000001
@@ -8344,15 +8336,15 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffd20
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_bf:
 .text
@@ -8391,18 +8383,19 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf9002fa1
 .word 0xf9000260
-.word 0xb4000774
-.word 0x390363bf
+.word 0xb4000794
+.word 0xd2800000
+.word 0x390363a0
 .word 0x910363a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf90073a0
 .word 0xf94017a0
-bl _p_113
+bl _p_119
 .word 0xaa0003fa
 .word 0xf9401fa0
-bl _p_113
+bl _p_119
 .word 0xf90077a0
 .word 0x910143a0
 .word 0xf9007ba0
@@ -8413,29 +8406,29 @@ bl _p_113
 .word 0xf94077a4
 .word 0xb98043a5
 .word 0xb9804ba6
-bl _p_122
+bl _p_128
 .word 0xf9407bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98053a0
 .word 0xb900d3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350002c0
 .word 0x14000001
 .word 0x394363a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 .word 0xf94017a0
 .word 0xaa1a03e1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf94077a1
-bl _p_116
+bl _p_122
 .word 0xf9402fa0
 .word 0xf9000260
 .word 0xb980d3a0
@@ -8446,15 +8439,15 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fffd40
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c0:
 .text
@@ -8491,11 +8484,12 @@ ldr x0, [x16, #112]
 .word 0xf94002c1
 .word 0xf9001ba1
 .word 0xf90002c0
-.word 0xb4000917
-.word 0x3902c3bf
+.word 0xb4000937
+.word 0xd2800000
+.word 0x3902c3a0
 .word 0x9102c3a1
 .word 0xaa1703e0
-bl _p_112
+bl _p_118
 .word 0xf9400af5
 .word 0xb4000738
 .word 0xf9005fbf
@@ -8505,27 +8499,27 @@ bl _p_112
 .word 0xaa1503e0
 .word 0xb98023a2
 .word 0xaa1a03e3
-bl _p_123
+bl _p_129
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9802ba0
 .word 0xb900aba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000560
 .word 0x14000001
 .word 0x3942c3a0
 .word 0x34000060
 .word 0xaa1703e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf9006ba0
 bl _p_11
@@ -8557,19 +8551,19 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffaa0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c1:
 .text
@@ -8609,20 +8603,21 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf9002ba1
 .word 0xf9000260
-.word 0xb4000b14
-.word 0x390343bf
+.word 0xb4000b34
+.word 0xd2800000
+.word 0x390343a0
 .word 0x910343a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf90073a0
 .word 0xb4000915
 .word 0xf9006fbf
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xaa0003fa
 .word 0xf9401ba0
-bl _p_113
+bl _p_119
 .word 0xf90077a0
 .word 0x910363a1
 .word 0x910123a0
@@ -8633,27 +8628,27 @@ bl _p_113
 .word 0xf94077a4
 .word 0xb9803ba5
 .word 0xb98043a6
-bl _p_124
+bl _p_130
 .word 0xf9407bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9804ba0
 .word 0xb900cba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
 .word 0x394343a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf90083a0
 bl _p_11
@@ -8676,10 +8671,10 @@ ldr x2, [x16, #16]
 .word 0xf9000001
 .word 0xf94013a0
 .word 0xaa1a03e1
-bl _p_116
+bl _p_122
 .word 0xf9401ba0
 .word 0xf94077a1
-bl _p_116
+bl _p_122
 .word 0xf9402ba0
 .word 0xf9000260
 .word 0xb980cba0
@@ -8691,19 +8686,19 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d17bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fff9e0
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c2:
 .text
@@ -8737,33 +8732,34 @@ ldr x0, [x16, #112]
 .word 0xf9400301
 .word 0xf90017a1
 .word 0xf9000300
-.word 0xb4000539
-.word 0x3902a3bf
+.word 0xb4000559
+.word 0xd2800000
+.word 0x3902a3a0
 .word 0x9102a3a1
 .word 0xaa1903e0
-bl _p_112
+bl _p_118
 .word 0xf9400b37
 .word 0xaa1703e0
 .word 0x910083a1
 .word 0xf9005ba1
 .word 0xaa1a03e1
-bl _p_125
+bl _p_131
 .word 0xf9405bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000200
 .word 0x14000001
 .word 0x3942a3a0
 .word 0x34000060
 .word 0xaa1903e0
-bl _p_115
+bl _p_121
 .word 0xf94017a0
 .word 0xf9000300
 .word 0xb980a3a0
@@ -8774,15 +8770,15 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffe00
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c3:
 .text
@@ -8830,30 +8826,32 @@ ldr x0, [x16, #112]
 .word 0xf9002ba1
 .word 0xf9000340
 .word 0xf94013a0
-.word 0xb4000de0
-.word 0x390343bf
+.word 0xb4000e20
+.word 0xd2800000
+.word 0x390343a0
 .word 0x910343a1
 .word 0xf94013a0
-bl _p_112
+bl _p_118
 .word 0xf94013a0
 .word 0xf9400800
 .word 0xf90077a0
-.word 0xb4000b53
-.word 0x390363bf
+.word 0xb4000b73
+.word 0xd2800000
+.word 0x390363a0
 .word 0x910363a1
 .word 0xaa1303e0
-bl _p_112
+bl _p_118
 .word 0xf9400a79
 .word 0xaa1403e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f4
 .word 0xb4000ab5
 .word 0xf90073bf
 .word 0xf94017a0
-bl _p_113
+bl _p_119
 .word 0xf9007ba0
 .word 0xf9401fa0
-bl _p_113
+bl _p_119
 .word 0xaa0003f8
 .word 0x910383a3
 .word 0x910123a0
@@ -8867,31 +8865,31 @@ bl _p_113
 .word 0xb98043a7
 .word 0xb9800389
 .word 0xb90003e9
-bl _p_126
+bl _p_132
 .word 0xf9407fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9804ba0
 .word 0xb900cba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000760
 .word 0x14000001
 .word 0x394343a0
 .word 0x34000060
 .word 0xf94013a0
-bl _p_115
+bl _p_121
 .word 0x394363a0
 .word 0x34000060
 .word 0xaa1303e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf90083a0
 bl _p_11
@@ -8914,10 +8912,10 @@ ldr x2, [x16, #16]
 .word 0xf9000001
 .word 0xf94017a0
 .word 0xf9407ba1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xaa1803e1
-bl _p_116
+bl _p_122
 .word 0xf9402ba0
 .word 0xf9000340
 .word 0xb980cba0
@@ -8931,23 +8929,23 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d17bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003f9
 .word 0xb4fff8a0
 .word 0xaa1903e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c4:
 .text
@@ -8988,26 +8986,28 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf90023a1
 .word 0xf9000260
-.word 0xb4000c94
-.word 0x390303bf
+.word 0xb4000cd4
+.word 0xd2800000
+.word 0x390303a0
 .word 0x910303a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf9006fa0
-.word 0xb4000a15
-.word 0x390323bf
+.word 0xb4000a35
+.word 0xd2800000
+.word 0x390323a0
 .word 0x910323a1
 .word 0xaa1503e0
-bl _p_112
+bl _p_118
 .word 0xf9400aba
 .word 0xaa1603e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f6
 .word 0xb4000977
 .word 0xf9006bbf
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xf90073a0
 .word 0x910343a3
 .word 0x9100e3a0
@@ -9018,31 +9018,31 @@ bl _p_113
 .word 0xf94073a4
 .word 0xb9802ba5
 .word 0xb98033a6
-bl _p_127
+bl _p_133
 .word 0xf94077be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9803ba0
 .word 0xb900bba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350006e0
 .word 0x14000001
 .word 0x394303a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 .word 0x394323a0
 .word 0x34000060
 .word 0xaa1503e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 bl _p_10
 .word 0xf9007ba0
 bl _p_11
@@ -9065,7 +9065,7 @@ ldr x2, [x16, #16]
 .word 0xf9000001
 .word 0xf94013a0
 .word 0xf94073a1
-bl _p_116
+bl _p_122
 .word 0xf94023a0
 .word 0xf9000260
 .word 0xb980bba0
@@ -9078,23 +9078,23 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8d07bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fff920
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c5:
 .text
@@ -9134,24 +9134,26 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf9001fa1
 .word 0xf9000260
-.word 0xb4000b94
-.word 0x3902e3bf
+.word 0xb4000bd4
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf90067a0
-.word 0xb4000995
-.word 0x390303bf
+.word 0xb40009b5
+.word 0xd2800000
+.word 0x390303a0
 .word 0x910303a1
 .word 0xaa1503e0
-bl _p_112
+bl _p_118
 .word 0xf9400aba
 .word 0xaa1603e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f6
 .word 0xaa1703e0
-bl _p_113
+bl _p_119
 .word 0xf9006ba0
 .word 0x9100c3a0
 .word 0xf9006fa0
@@ -9162,27 +9164,27 @@ bl _p_113
 .word 0xaa1803e4
 .word 0xf94013a5
 .word 0xb9802ba6
-bl _p_128
+bl _p_134
 .word 0xf9406fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 .word 0x394303a0
 .word 0x34000060
 .word 0xaa1503e0
-bl _p_115
+bl _p_121
 .word 0xb4000297
 .word 0xf9406bba
 .word 0xd2800019
@@ -9205,7 +9207,7 @@ bl _p_115
 .word 0x17fffff0
 .word 0xaa1703e0
 .word 0xf9406ba1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf9000260
 .word 0xb980b3a0
@@ -9218,20 +9220,20 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fff9e0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -9271,17 +9273,19 @@ ldr x0, [x16, #112]
 .word 0xf94002c1
 .word 0xf90017a1
 .word 0xf90002c0
-.word 0xb4000af7
-.word 0x3902a3bf
+.word 0xb4000b37
+.word 0xd2800000
+.word 0x3902a3a0
 .word 0x9102a3a1
 .word 0xaa1703e0
-bl _p_112
+bl _p_118
 .word 0xf9400af5
-.word 0xb4000898
-.word 0x3902c3bf
+.word 0xb40008b8
+.word 0xd2800000
+.word 0x3902c3a0
 .word 0x9102c3a1
 .word 0xaa1803e0
-bl _p_112
+bl _p_118
 .word 0xf9400b14
 .word 0xb4000859
 .word 0xf9005fbf
@@ -9291,34 +9295,34 @@ bl _p_112
 .word 0xaa1503e0
 .word 0xaa1403e1
 .word 0xaa1a03e3
-bl _p_129
+bl _p_135
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
 .word 0x3942a3a0
 .word 0x34000060
 .word 0xaa1703e0
-bl _p_115
+bl _p_121
 .word 0x3942c3a0
 .word 0x34000060
 .word 0xaa1803e0
-bl _p_115
+bl _p_121
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #376]
+ldr x0, [x16, #384]
 bl _p_10
 .word 0xf9006ba0
-bl _p_66
+bl _p_70
 .word 0xf9406ba0
 .word 0xf9000320
 .word 0xd349ff21
@@ -9348,23 +9352,23 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fff980
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c7:
 .text
@@ -9403,18 +9407,19 @@ ldr x0, [x16, #112]
 .word 0xf9400261
 .word 0xf9001fa1
 .word 0xf9000260
-.word 0xb40009d4
-.word 0x3902e3bf
+.word 0xb40009f4
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1403e0
-bl _p_112
+bl _p_118
 .word 0xf9400a80
 .word 0xf90063a0
 .word 0xaa1503e0
-bl _p_110
+bl _p_116
 .word 0xaa0003fa
 .word 0xaa1703e0
-bl _p_113
+bl _p_119
 .word 0xaa0003f5
 .word 0x9100c3a0
 .word 0xf90067a0
@@ -9425,23 +9430,23 @@ bl _p_113
 .word 0xaa1803e4
 .word 0xaa1903e5
 .word 0xb9802ba6
-bl _p_130
+bl _p_136
 .word 0xf94067be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000520
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1403e0
-bl _p_115
+bl _p_121
 .word 0xb4000297
 .word 0xaa1503fa
 .word 0xd2800019
@@ -9464,7 +9469,7 @@ bl _p_115
 .word 0x17fffff0
 .word 0xaa1703e0
 .word 0xaa1503e1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf9000260
 .word 0xb980b3a0
@@ -9477,16 +9482,16 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffae0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -9525,14 +9530,15 @@ ldr x0, [x16, #112]
 .word 0xf94002a1
 .word 0xf9001fa1
 .word 0xf90002a0
-.word 0xb4000616
-.word 0x3902e3bf
+.word 0xb4000636
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1603e0
-bl _p_112
+bl _p_118
 .word 0xf9400ad4
 .word 0xaa1703e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f7
 .word 0x9100c3a0
 .word 0xf90063a0
@@ -9541,23 +9547,23 @@ bl _p_110
 .word 0xf94013a2
 .word 0xb9802ba3
 .word 0xaa1a03e4
-bl _p_131
+bl _p_137
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000220
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1603e0
-bl _p_115
+bl _p_121
 .word 0xf9401fa0
 .word 0xf90002a0
 .word 0xb980b3a0
@@ -9569,15 +9575,15 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffde0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_c9:
 .text
@@ -9614,17 +9620,18 @@ ldr x0, [x16, #112]
 .word 0xf94002a1
 .word 0xf9001ba1
 .word 0xf90002a0
-.word 0xb4000696
-.word 0x3902c3bf
+.word 0xb40006b6
+.word 0xd2800000
+.word 0x3902c3a0
 .word 0x9102c3a1
 .word 0xaa1603e0
-bl _p_112
+bl _p_118
 .word 0xf9400ad4
 .word 0xaa1703e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f7
 .word 0xaa1803e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f8
 .word 0x9100a3a0
 .word 0xf9005fa0
@@ -9633,23 +9640,23 @@ bl _p_110
 .word 0xaa1803e2
 .word 0xb98023a3
 .word 0xaa1a03e4
-bl _p_132
+bl _p_138
 .word 0xf9405fbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9802ba0
 .word 0xb900aba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000240
 .word 0x14000001
 .word 0x3942c3a0
 .word 0x34000060
 .word 0xaa1603e0
-bl _p_115
+bl _p_121
 .word 0xf9401ba0
 .word 0xf90002a0
 .word 0xb980aba0
@@ -9662,15 +9669,15 @@ bl _p_115
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffdc0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_ca:
 .text
@@ -9708,17 +9715,18 @@ ldr x0, [x16, #112]
 .word 0xf9400281
 .word 0xf9001ba1
 .word 0xf9000280
-.word 0xb4000995
-.word 0x3902c3bf
+.word 0xb40009b5
+.word 0xd2800000
+.word 0x3902c3a0
 .word 0x9102c3a1
 .word 0xaa1503e0
-bl _p_112
+bl _p_118
 .word 0xf9400ab3
 .word 0xaa1603e0
-bl _p_110
+bl _p_116
 .word 0xaa0003f6
 .word 0xaa1703e0
-bl _p_113
+bl _p_119
 .word 0xf9005fa0
 .word 0x9100a3a0
 .word 0xf90063a0
@@ -9728,23 +9736,23 @@ bl _p_113
 .word 0xaa1803e3
 .word 0xaa1903e4
 .word 0xb98023a5
-bl _p_133
+bl _p_139
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9802ba0
 .word 0xb900aba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000520
 .word 0x14000001
 .word 0x3942c3a0
 .word 0x34000060
 .word 0xaa1503e0
-bl _p_115
+bl _p_121
 .word 0xb4000297
 .word 0xf9405fba
 .word 0xd2800019
@@ -9767,7 +9775,7 @@ bl _p_115
 .word 0x17fffff0
 .word 0xaa1703e0
 .word 0xf9405fa1
-bl _p_116
+bl _p_122
 .word 0xf9401ba0
 .word 0xf9000280
 .word 0xb980aba0
@@ -9780,16 +9788,16 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffae0
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
-.word 0xd2801e00
+bl _p_53
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -9827,14 +9835,15 @@ ldr x0, [x16, #112]
 .word 0xf94002c1
 .word 0xf9001fa1
 .word 0xf90002c0
-.word 0xb4000657
-.word 0x3902e3bf
+.word 0xb4000677
+.word 0xd2800000
+.word 0x3902e3a0
 .word 0x9102e3a1
 .word 0xaa1703e0
-bl _p_112
+bl _p_118
 .word 0xf9400af5
 .word 0xf94013a0
-bl _p_113
+bl _p_119
 .word 0xaa0003f4
 .word 0x9100c3a0
 .word 0xf90063a0
@@ -9842,26 +9851,26 @@ bl _p_113
 .word 0xaa1403e1
 .word 0xb9802ba2
 .word 0xaa1a03e3
-bl _p_134
+bl _p_140
 .word 0xf94063be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98033a0
 .word 0xb900b3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000280
 .word 0x14000001
 .word 0x3942e3a0
 .word 0x34000060
 .word 0xaa1703e0
-bl _p_115
+bl _p_121
 .word 0xf94013a0
 .word 0xaa1403e1
-bl _p_116
+bl _p_122
 .word 0xf9401fa0
 .word 0xf90002c0
 .word 0xb980b3a0
@@ -9873,15 +9882,15 @@ bl _p_116
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-bl _p_109
+bl _p_115
 .word 0xaa0003fa
 .word 0xb4fffd80
 .word 0xaa1a03e0
-bl _p_50
-.word 0xd2801360
+bl _p_53
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
-bl _p_50
+bl _p_53
 
 Lme_cc:
 .text
@@ -9913,12 +9922,12 @@ ldr x0, [x16, #112]
 .word 0xf9000ba1
 .word 0xf9000320
 .word 0xaa1a03e0
-bl _p_135
-bl _p_108
+bl _p_141
+bl _p_114
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x35000140
 .word 0x14000001
@@ -9929,8 +9938,8 @@ ldr x0, [x16, #408]
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff5
@@ -9969,16 +9978,16 @@ ldr x0, [x16, #112]
 .word 0xf9005ba0
 .word 0xf94013a0
 .word 0xaa1a03e1
-bl _p_136
+bl _p_142
 .word 0xf9405bbe
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb9802ba0
 .word 0xb900aba0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350001c0
 .word 0x14000001
@@ -9993,8 +10002,8 @@ ldr x0, [x16, #408]
 .word 0xa8cc7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff1
@@ -10031,16 +10040,16 @@ ldr x0, [x16, #112]
 .word 0x910083a0
 .word 0xf90057a0
 .word 0xaa1a03e0
-bl _p_137
+bl _p_143
 .word 0xf94057be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350001a0
 .word 0x14000001
@@ -10054,8 +10063,8 @@ ldr x0, [x16, #408]
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff2
@@ -10092,16 +10101,16 @@ ldr x0, [x16, #112]
 .word 0x910083a0
 .word 0xf90057a0
 .word 0xaa1a03e0
-bl _p_138
+bl _p_144
 .word 0xf94057be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350001a0
 .word 0x14000001
@@ -10115,8 +10124,8 @@ ldr x0, [x16, #408]
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff2
@@ -10153,16 +10162,16 @@ ldr x0, [x16, #112]
 .word 0x910083a0
 .word 0xf90057a0
 .word 0xaa1a03e0
-bl _p_139
+bl _p_145
 .word 0xf94057be
 .word 0xf90003c0
-bl _p_108
+bl _p_114
 .word 0xb98023a0
 .word 0xb900a3a0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #408]
+ldr x0, [x16, #416]
 .word 0xb9400000
 .word 0x350001a0
 .word 0x14000001
@@ -10176,8 +10185,8 @@ ldr x0, [x16, #408]
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 .word 0xaa1a03e0
-bl _p_50
-bl _p_109
+bl _p_53
+bl _p_115
 .word 0xaa0003fa
 .word 0xb5ffff80
 .word 0x17fffff2
@@ -10354,7 +10363,7 @@ wrapper_unknown_PInvoke_BCrypt_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO_StructureTo
 .word 0x91004001
 .word 0xf9400fa0
 .word 0xd2800b02
-bl _p_48
+bl _p_51
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -10377,7 +10386,7 @@ wrapper_unknown_PInvoke_BCrypt_BCRYPT_AUTHENTICATED_CIPHER_MODE_INFO_PtrToStruct
 .word 0x91004000
 .word 0xf9400ba1
 .word 0xd2800b02
-bl _p_48
+bl _p_51
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -10568,7 +10577,7 @@ wrapper_unknown_PInvoke_BCrypt_BCRYPT_DSA_KEY_BLOB_PtrToStructure_intptr_object:
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x2, [x16, #424]
+ldr x2, [x16, #432]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540009c1
@@ -10591,7 +10600,7 @@ ldr x2, [x16, #424]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_5
 .word 0xaa0003e2
@@ -10624,7 +10633,7 @@ ldr x4, [x16, #16]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_5
 .word 0xaa0003e2
@@ -10653,7 +10662,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_19
 
@@ -11170,8 +11179,8 @@ Lme_f3:
 	.align 4
 	.no_dead_strip System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int
 System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/external/corert/src/System.Private.CoreLib/src/System/Array.cs"
-.loc 5 687 0 prologue_end
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/external/corert/src/System.Private.CoreLib/src/System/Array.cs"
+.loc 5 681 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bb7
@@ -11182,13 +11191,13 @@ System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xaa0203f9
 .word 0xf90017a3
 .word 0xb4000417
-.loc 5 692 0
+.loc 5 686 0
 .word 0x6b1f033f
 .word 0x540004ab
 .word 0xb9801ae0
 .word 0x6b00033f
 .word 0x5400044c
-.loc 5 697 0
+.loc 5 691 0
 .word 0xb9802ba0
 .word 0x6b1f001f
 .word 0x5400054b
@@ -11197,12 +11206,12 @@ System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xb9802ba0
 .word 0x6b01001f
 .word 0x540004ac
-.loc 5 702 0
+.loc 5 696 0
 .word 0xf9401ba0
-bl _p_140
+bl _p_146
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_141
+bl _p_147
 .word 0xaa0003e4
 .word 0xf94023af
 .word 0xaa1703e0
@@ -11216,38 +11225,38 @@ bl _p_141
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.loc 5 689 0
-.word 0xd28571c0
-bl _p_81
+.loc 5 683 0
+.word 0xd2863360
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
-.loc 5 694 0
-.word 0xd285ef20
-bl _p_81
+bl _p_53
+.loc 5 688 0
+.word 0xd2865260
+bl _p_85
 .word 0xf90023a0
-.word 0xd285f1e0
-bl _p_81
+.word 0xd285e5e0
+bl _p_85
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_50
-.loc 5 699 0
-.word 0xd28607c0
-bl _p_81
+bl _p_53
+.loc 5 693 0
+.word 0xd2864060
+bl _p_85
 .word 0xf90023a0
-.word 0xd2860940
-bl _p_81
+.word 0xd2868060
+bl _p_85
 .word 0xaa0003e2
 .word 0xf94023a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_50
+bl _p_53
 
 Lme_f4:
 .text
@@ -11255,17 +11264,13 @@ Lme_f4:
 	.no_dead_strip System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE
 System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE:
 .loc 2 299 0 prologue_end
-.word 0xa9ba7bfd
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
 .word 0xf9400ba1
 .word 0xf9400fa0
-.word 0xf90027a0
-.word 0xf94013a0
-.word 0xf9002ba0
-.word 0xf94027a0
 .word 0xf9000820
 .word 0x91004021
 .word 0xd349fc21
@@ -11281,21 +11286,13 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .loc 2 300 0
 .word 0xf9400ba0
-.word 0xf9400fa1
-.word 0xf9001fa1
-.word 0xf94013a1
-.word 0xf90023a1
-.word 0xb98043a1
+.word 0xb98023a1
 .word 0xb9001801
 .loc 2 301 0
 .word 0xf9400ba0
 .word 0xf9400ba1
 .word 0xb9801821
-.word 0xf9400fa2
-.word 0xf90017a2
-.word 0xf94013a2
-.word 0xf9001ba2
-.word 0xb98037a2
+.word 0xb98027a2
 .word 0xb020021
 .word 0xb9001c01
 .loc 2 302 0
@@ -11306,7 +11303,7 @@ ldr x2, [x16, #16]
 .word 0xb9002001
 .loc 2 303 0
 .word 0x910003bf
-.word 0xa8c67bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_f5:
@@ -11314,7 +11311,7 @@ Lme_f5:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__get_Item_T_INT_int
 System_Array_InternalArray__get_Item_T_INT_int:
-.loc 4 173 0 prologue_end
+.loc 4 176 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -11325,36 +11322,36 @@ System_Array_InternalArray__get_Item_T_INT_int:
 .word 0xb9801800
 .word 0x6b00035f
 .word 0x540001c2
-.loc 4 177 0
+.loc 4 180 0
 .word 0xf94013a0
-bl _p_142
+bl _p_148
 .word 0x93407f40
 .word 0xd37ef401
 .word 0xf9400fa0
 .word 0x8b010000
 .word 0x91008000
 .word 0xb980001a
-.loc 4 178 0
+.loc 4 181 0
 .word 0xaa1a03e0
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.loc 4 174 0
+.loc 4 177 0
 .word 0xd2821380
-bl _p_81
+bl _p_85
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_50
+bl _p_53
 
 Lme_f6:
 .text
 	.align 4
 	.no_dead_strip System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int
 System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int:
-.loc 4 624 0 prologue_end
+.loc 4 658 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9001baf
@@ -11363,10 +11360,10 @@ System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int:
 .word 0xf90013a2
 .word 0xf90017a3
 .word 0xf9401ba0
-bl _p_143
+bl _p_149
 .word 0xf90023a0
 .word 0xf9401ba0
-bl _p_144
+bl _p_150
 .word 0xf94023af
 .word 0xd63f0000
 .word 0xaa0003e5
@@ -11388,24 +11385,24 @@ Lme_f7:
 	.align 4
 	.no_dead_strip System_Collections_Generic_EqualityComparer_1_T_BYTE_get_Default
 System_Collections_Generic_EqualityComparer_1_T_BYTE_get_Default:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
 .loc 6 32 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xf9400fa0
-bl _p_145
+bl _p_151
 .word 0xf940001a
 .loc 6 33 0
 .word 0xaa1a03e0
 .word 0xb5000240
 .loc 6 34 0
 .word 0xf9400fa0
-bl _p_146
+bl _p_152
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_147
+bl _p_153
 .word 0xf9401baf
 .word 0xd63f0000
 .word 0xaa0003fa
@@ -11413,10 +11410,10 @@ bl _p_147
 .word 0xaa1a03e0
 .word 0xf90017a0
 .word 0xf9400fa0
-bl _p_145
+bl _p_151
 .word 0xf90013a0
 .word 0xf94017a1
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xf9000001
 .loc 6 37 0
@@ -11438,7 +11435,7 @@ System_Collections_Generic_EqualityComparer_1_T_BYTE_CreateComparer:
 .word 0xf90013ba
 .word 0xf90017af
 .word 0xf94017a0
-bl _p_148
+bl _p_154
 .word 0xaa0003fa
 .word 0xb400017a
 .word 0xf9400340
@@ -11448,7 +11445,7 @@ bl _p_148
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #440]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540023c1
@@ -11457,7 +11454,7 @@ ldr x1, [x16, #432]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xeb00035f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -11465,12 +11462,12 @@ ldr x0, [x16, #440]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #456]
 .word 0xd2800201
-bl _p_49
+bl _p_52
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11486,7 +11483,7 @@ bl _p_149
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #456]
+ldr x0, [x16, #464]
 .word 0xeb00033f
 .word 0x9a9f17e0
 .word 0x34000280
@@ -11494,12 +11491,12 @@ ldr x0, [x16, #456]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #464]
+ldr x0, [x16, #472]
 .word 0xd2800201
-bl _p_49
+bl _p_52
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11513,12 +11510,12 @@ bl _p_149
 .word 0x140000e6
 .loc 6 62 0
 .word 0xf94017a0
-bl _p_150
+bl _p_156
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1903e1
 .word 0xf9400042
-.word 0xf9408050
+.word 0xf9408450
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000280
@@ -11526,12 +11523,12 @@ bl _p_150
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #472]
+ldr x0, [x16, #480]
 .word 0xaa1903e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11546,25 +11543,25 @@ bl _p_149
 .loc 6 70 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9410430
+.word 0xf9410830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000a60
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940a830
+.word 0xf940ac30
 .word 0xd63f0200
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #480]
+ldr x1, [x16, #488]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000920
 .loc 6 71 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940b030
+.word 0xf940b430
 .word 0xd63f0200
 .word 0xb9801801
 .word 0xeb1f003f
@@ -11579,7 +11576,7 @@ ldr x1, [x16, #480]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x1, [x16, #432]
+ldr x1, [x16, #440]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001541
@@ -11588,12 +11585,12 @@ ldr x1, [x16, #432]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #496]
 .word 0xf9001fa0
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #496]
+ldr x0, [x16, #504]
 .word 0xd2800021
 bl _p_5
 .word 0xaa0003e3
@@ -11609,13 +11606,13 @@ bl _p_5
 .word 0xf9401fa2
 .word 0xaa0203e0
 .word 0xf9400042
-.word 0xf940b850
+.word 0xf940bc50
 .word 0xd63f0200
 .word 0xaa0003e2
 .word 0xaa0203e0
 .word 0xaa1a03e1
 .word 0xf9400042
-.word 0xf9408050
+.word 0xf9408450
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000280
@@ -11623,12 +11620,12 @@ bl _p_5
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #504]
+ldr x0, [x16, #512]
 .word 0xaa1803e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11643,14 +11640,14 @@ bl _p_149
 .loc 6 82 0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf9411430
+.word 0xf9411830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x34000be0
 .loc 6 83 0
 .word 0xaa1903e0
-bl _p_152
-bl _p_153
+bl _p_158
+bl _p_159
 .word 0x93407c00
 .word 0xaa0003fa
 .loc 6 88 0
@@ -11664,7 +11661,7 @@ bl _p_153
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #520]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -11672,12 +11669,12 @@ ldr x0, [x16, #512]
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #520]
+ldr x0, [x16, #528]
 .word 0xaa1903e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11693,12 +11690,12 @@ bl _p_149
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #528]
+ldr x0, [x16, #536]
 .word 0xaa1903e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11714,12 +11711,12 @@ bl _p_149
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #536]
+ldr x0, [x16, #544]
 .word 0xaa1903e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11735,12 +11732,12 @@ bl _p_149
 
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x0, [x16, #544]
+ldr x0, [x16, #552]
 .word 0xaa1903e1
-bl _p_151
+bl _p_157
 .word 0xaa0003fa
 .word 0xf94017a0
-bl _p_149
+bl _p_155
 .word 0xaa0003f9
 .word 0xb400011a
 .word 0xf9400340
@@ -11754,12 +11751,12 @@ bl _p_149
 .word 0x1400000d
 .loc 6 120 0
 .word 0xf94017a0
-bl _p_154
+bl _p_160
 .word 0xd2800201
-bl _p_49
+bl _p_52
 .word 0xf9001fa0
 .word 0xf94017a0
-bl _p_155
+bl _p_161
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -11770,10 +11767,10 @@ bl _p_155
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_19
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_19
 
@@ -12194,8 +12191,8 @@ unwind_info:
 	.byte 153,11,14,12,31,0,84,14,240,4,157,78,158,77,68,13,29,30,12,31,0,68,14,144,3,157,50,158,49,68,13,29
 	.byte 84,148,48,149,47,68,150,46,151,45,68,152,44,68,154,43,30,12,31,0,68,14,176,1,157,22,158,21,68,13,29,84
 	.byte 147,20,148,19,68,149,18,68,151,17,68,153,16,154,15,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,152
-	.byte 14,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,19,12,31,0,68,14,160,1,157
-	.byte 20,158,19,68,13,29,68,149,18,150,17,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,16,12,31,0,68,14
+	.byte 14,21,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8,19,12,31,0,68,14,176,1,157
+	.byte 22,158,21,68,13,29,68,149,20,150,19,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,16,12,31,0,68,14
 	.byte 96,157,12,158,11,68,13,29,68,154,10,13,12,31,0,68,14,48,157,6,158,5,68,13,29,14,12,31,0,68,14,176
 	.byte 1,157,22,158,21,68,13,29,16,12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8,18,12,31,0,68,14,80
 	.byte 157,10,158,9,68,13,29,68,153,8,154,7,13,12,31,0,68,14,96,157,12,158,11,68,13,29,16,12,31,0,68,14
@@ -12246,1245 +12243,1293 @@ plt_PInvoke_BCrypt_BCryptOpenAlgorithmProvider_PInvoke_BCrypt_SafeAlgorithmHandl
 _p_1:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #560]
+ldr x16, [x16, #568]
 br x16
-.word 3202
+.word 3229
 	.no_dead_strip plt_PInvoke_Kernel32Extensions_ThrowOnError_PInvoke_NTSTATUS
 plt_PInvoke_Kernel32Extensions_ThrowOnError_PInvoke_NTSTATUS:
 _p_2:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #568]
+ldr x16, [x16, #576]
 br x16
-.word 3204
+.word 3231
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags
 plt_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags:
 _p_3:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #576]
+ldr x16, [x16, #584]
 br x16
-.word 3209
+.word 3236
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags
 plt_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags:
 _p_4:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #584]
+ldr x16, [x16, #592]
 br x16
-.word 3211
+.word 3238
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_5:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #592]
+ldr x16, [x16, #600]
 br x16
-.word 3213
+.word 3240
 	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte___int_int
 plt_System_ArraySegment_1_byte__ctor_byte___int_int:
 _p_6:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #600]
+ldr x16, [x16, #608]
 br x16
-.word 3221
+.word 3248
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags
 plt_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags:
 _p_7:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #608]
+ldr x16, [x16, #616]
 br x16
-.word 3232
+.word 3259
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags
 plt_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags:
 _p_8:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #616]
+ldr x16, [x16, #624]
 br x16
-.word 3234
+.word 3261
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags
 plt_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags:
 _p_9:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #624]
+ldr x16, [x16, #632]
 br x16
-.word 3236
+.word 3263
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_10:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #632]
+ldr x16, [x16, #640]
 br x16
-.word 3238
+.word 3265
 	.no_dead_strip plt_PInvoke_BCrypt_SafeKeyHandle__ctor
 plt_PInvoke_BCrypt_SafeKeyHandle__ctor:
 _p_11:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #640]
+ldr x16, [x16, #648]
 br x16
-.word 3270
+.word 3297
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags
 plt_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags:
 _p_12:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #648]
+ldr x16, [x16, #656]
 br x16
-.word 3272
+.word 3299
 	.no_dead_strip plt_PInvoke_BCrypt_ArraySegmentFor_byte__
 plt_PInvoke_BCrypt_ArraySegmentFor_byte__:
 _p_13:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #656]
+ldr x16, [x16, #664]
 br x16
-.word 3274
+.word 3301
 	.no_dead_strip plt_System_Nullable_1_System_ArraySegment_1_byte__ctor_System_ArraySegment_1_byte
 plt_System_Nullable_1_System_ArraySegment_1_byte__ctor_System_ArraySegment_1_byte:
 _p_14:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #664]
+ldr x16, [x16, #672]
 br x16
-.word 3276
+.word 3303
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags
 plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags:
 _p_15:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #672]
+ldr x16, [x16, #680]
 br x16
-.word 3287
+.word 3314
 	.no_dead_strip plt_PInvoke_BCrypt_EnsureNotNullOrEmpty_System_ArraySegment_1_byte_
 plt_PInvoke_BCrypt_EnsureNotNullOrEmpty_System_ArraySegment_1_byte_:
 _p_16:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #680]
+ldr x16, [x16, #688]
 br x16
-.word 3289
+.word 3316
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_17:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #688]
+ldr x16, [x16, #696]
 br x16
-.word 3291
+.word 3318
 	.no_dead_strip plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
 plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
 _p_18:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #696]
+ldr x16, [x16, #704]
 br x16
-.word 3317
+.word 3344
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_19:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
-ldr x16, [x16, #704]
-br x16
-.word 3319
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
-plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
-_p_20:
-adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
-add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 3354
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_int_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags
-plt_PInvoke_BCrypt_BCryptGetProperty_int_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags:
-_p_21:
+.word 3346
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptEncryptFlags
+plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___int_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptEncryptFlags:
+_p_20:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 3356
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags
-plt_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags:
-_p_22:
+.word 3381
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
+plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
+_p_21:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 3368
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags
-plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags:
-_p_23:
+.word 3383
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_int_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags
+plt_PInvoke_BCrypt_BCryptGetProperty_int_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags:
+_p_22:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 3370
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags
-plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags:
-_p_24:
+.word 3385
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags
+plt_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags:
+_p_23:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 3372
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags
-plt_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags:
-_p_25:
+.word 3397
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags
+plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags:
+_p_24:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 3374
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags
-plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags:
-_p_26:
+.word 3399
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags
+plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags:
+_p_25:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 3376
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_SizeOf_object
-plt_System_Runtime_InteropServices_Marshal_SizeOf_object:
-_p_27:
+.word 3401
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags
+plt_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags:
+_p_26:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 3378
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_StructureToPtr_object_intptr_bool
-plt_System_Runtime_InteropServices_Marshal_StructureToPtr_object_intptr_bool:
-_p_28:
+.word 3403
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags
+plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags:
+_p_27:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 3383
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags
-plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags:
-_p_29:
+.word 3405
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_SizeOf_object
+plt_System_Runtime_InteropServices_Marshal_SizeOf_object:
+_p_28:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 3388
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_30:
+.word 3407
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_StructureToPtr_object_intptr_bool
+plt_System_Runtime_InteropServices_Marshal_StructureToPtr_object_intptr_bool:
+_p_29:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 3413
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_DestroyStructure_intptr_System_Type
-plt_System_Runtime_InteropServices_Marshal_DestroyStructure_intptr_System_Type:
-_p_31:
+.word 3412
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags
+plt_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags:
+_p_30:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 3421
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags
-plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags:
-_p_32:
+.word 3417
+	.no_dead_strip plt__jit_icall_mono_thread_self_abort
+plt__jit_icall_mono_thread_self_abort:
+_p_31:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 3426
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags
-plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags:
-_p_33:
+.word 3419
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_32:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 3428
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_34:
+.word 3467
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_DestroyStructure_intptr_System_Type
+plt_System_Runtime_InteropServices_Marshal_DestroyStructure_intptr_System_Type:
+_p_33:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 3453
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_PtrToStructure_intptr_System_Type
-plt_System_Runtime_InteropServices_Marshal_PtrToStructure_intptr_System_Type:
-_p_35:
+.word 3475
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags
+plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags:
+_p_34:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 3461
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_36:
+.word 3480
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags
+plt_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_PInvoke_BCrypt_BCryptGetPropertyFlags:
+_p_35:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 3466
-	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
-_p_37:
+.word 3482
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_36:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 3474
-	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte__
-plt_System_ArraySegment_1_byte__ctor_byte__:
-_p_38:
+.word 3507
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_PtrToStructure_intptr_System_Type
+plt_System_Runtime_InteropServices_Marshal_PtrToStructure_intptr_System_Type:
+_p_37:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 3482
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags
-plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags:
-_p_39:
+.word 3515
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_38:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 3493
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags
-plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags:
-_p_40:
+.word 3520
+	.no_dead_strip plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr:
+_p_39:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 3495
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags
-plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags:
-_p_41:
+.word 3528
+	.no_dead_strip plt_System_ArraySegment_1_byte__ctor_byte__
+plt_System_ArraySegment_1_byte__ctor_byte__:
+_p_40:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 3497
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___void__PInvoke_BCrypt_BCryptSignHashFlags
-plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___void__PInvoke_BCrypt_BCryptSignHashFlags:
-_p_42:
+.word 3536
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags
+plt_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags:
+_p_41:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 3499
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags
-plt_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags:
-_p_43:
+.word 3547
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags
+plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte___void__byte___PInvoke_BCrypt_BCryptEncryptFlags:
+_p_42:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 3501
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptFreeBuffer_void_
-plt_PInvoke_BCrypt_BCryptFreeBuffer_void_:
-_p_44:
+.word 3549
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags
+plt_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_System_Nullable_1_System_ArraySegment_1_byte_void__System_Nullable_1_System_ArraySegment_1_byte_System_Nullable_1_System_ArraySegment_1_byte_int__PInvoke_BCrypt_BCryptEncryptFlags:
+_p_43:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 3503
-	.no_dead_strip plt_string__ctor_char_
-plt_string__ctor_char_:
-_p_45:
+.word 3551
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___void__PInvoke_BCrypt_BCryptSignHashFlags
+plt_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_byte___void__PInvoke_BCrypt_BCryptSignHashFlags:
+_p_44:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 3505
-	.no_dead_strip plt_string_memset_byte__int_int
-plt_string_memset_byte__int_int:
-_p_46:
+.word 3553
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_byte___byte___void__PInvoke_BCrypt_BCryptSignHashFlags
+plt_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_byte___byte___void__PInvoke_BCrypt_BCryptSignHashFlags:
+_p_45:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 3510
-	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_SizeOf_System_Type
-plt_System_Runtime_InteropServices_Marshal_SizeOf_System_Type:
-_p_47:
+.word 3555
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags
+plt_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags:
+_p_46:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 3515
-	.no_dead_strip plt_string_memcpy_byte__byte__int
-plt_string_memcpy_byte__byte__int:
-_p_48:
+.word 3557
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptFreeBuffer_void_
+plt_PInvoke_BCrypt_BCryptFreeBuffer_void_:
+_p_47:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 3520
-	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
-plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
-_p_49:
+.word 3559
+	.no_dead_strip plt_string__ctor_char_
+plt_string__ctor_char_:
+_p_48:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 3525
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_50:
+.word 3561
+	.no_dead_strip plt_string_memset_byte__int_int
+plt_string_memset_byte__int_int:
+_p_49:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 3533
-	.no_dead_strip plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_AddHeaderToKey_byte__
-plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_AddHeaderToKey_byte__:
-_p_51:
+.word 3566
+	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_SizeOf_System_Type
+plt_System_Runtime_InteropServices_Marshal_SizeOf_System_Type:
+_p_50:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 3561
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_52:
+.word 3571
+	.no_dead_strip plt_string_memcpy_byte__byte__int
+plt_string_memcpy_byte__byte__int:
+_p_51:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 3563
-	.no_dead_strip plt_System_BitConverter_GetBytes_uint
-plt_System_BitConverter_GetBytes_uint:
-_p_53:
+.word 3576
+	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_52:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 3583
-	.no_dead_strip plt_System_Array_Copy_System_Array_System_Array_int
-plt_System_Array_Copy_System_Array_System_Array_int:
-_p_54:
+.word 3581
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_53:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 3588
-	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
-plt_System_Array_Copy_System_Array_int_System_Array_int_int:
-_p_55:
+.word 3589
+	.no_dead_strip plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_Create_int
+plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_Create_int:
+_p_54:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 3593
-	.no_dead_strip plt_System_BitConverter_GetBytes_int
-plt_System_BitConverter_GetBytes_int:
-_p_56:
+.word 3617
+	.no_dead_strip plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_AddHeaderToKey_byte__
+plt_PInvoke_BCrypt_BCRYPT_KEY_DATA_BLOB_HEADER_AddHeaderToKey_byte__:
+_p_55:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 3598
-	.no_dead_strip plt_System_BitConverter_ToUInt32_byte___int
-plt_System_BitConverter_ToUInt32_byte___int:
-_p_57:
+.word 3619
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_56:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 3603
-	.no_dead_strip plt_System_BitConverter_ToInt32_byte___int
-plt_System_BitConverter_ToInt32_byte___int:
-_p_58:
+.word 3621
+	.no_dead_strip plt_System_BitConverter_GetBytes_uint
+plt_System_BitConverter_GetBytes_uint:
+_p_57:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 3608
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool
-plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool:
-_p_59:
+.word 3641
+	.no_dead_strip plt_System_Array_Copy_System_Array_System_Array_int
+plt_System_Array_Copy_System_Array_System_Array_int:
+_p_58:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 3613
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags
-plt_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags:
-_p_60:
+.word 3646
+	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
+plt_System_Array_Copy_System_Array_int_System_Array_int_int:
+_p_59:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 3618
-	.no_dead_strip plt_PInvoke_BCrypt_SafeAlgorithmHandle__ctor
-plt_PInvoke_BCrypt_SafeAlgorithmHandle__ctor:
-_p_61:
+.word 3651
+	.no_dead_strip plt_System_BitConverter_GetBytes_int
+plt_System_BitConverter_GetBytes_int:
+_p_60:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 3620
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroyHash_intptr
-plt_PInvoke_BCrypt_BCryptDestroyHash_intptr:
-_p_62:
+.word 3656
+	.no_dead_strip plt_System_BitConverter_ToUInt32_byte___int
+plt_System_BitConverter_ToUInt32_byte___int:
+_p_61:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 3622
-	.no_dead_strip plt_PInvoke_BCrypt_SafeHashHandle__ctor
-plt_PInvoke_BCrypt_SafeHashHandle__ctor:
-_p_63:
+.word 3661
+	.no_dead_strip plt_System_BitConverter_ToInt32_byte___int
+plt_System_BitConverter_ToInt32_byte___int:
+_p_62:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 3624
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroyKey_intptr
-plt_PInvoke_BCrypt_BCryptDestroyKey_intptr:
-_p_64:
+.word 3666
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool
+plt_System_Runtime_InteropServices_SafeHandle__ctor_intptr_bool:
+_p_63:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 3626
-	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroySecret_intptr
-plt_PInvoke_BCrypt_BCryptDestroySecret_intptr:
-_p_65:
+.word 3671
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags
+plt_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags:
+_p_64:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 3628
-	.no_dead_strip plt_PInvoke_BCrypt_SafeSecretHandle__ctor
-plt_PInvoke_BCrypt_SafeSecretHandle__ctor:
-_p_66:
+.word 3676
+	.no_dead_strip plt_PInvoke_BCrypt_SafeAlgorithmHandle__ctor
+plt_PInvoke_BCrypt_SafeAlgorithmHandle__ctor:
+_p_65:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 3630
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_67:
+.word 3678
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroyHash_intptr
+plt_PInvoke_BCrypt_BCryptDestroyHash_intptr:
+_p_66:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 3650
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_68:
+.word 3680
+	.no_dead_strip plt_PInvoke_BCrypt_SafeHashHandle__ctor
+plt_PInvoke_BCrypt_SafeHashHandle__ctor:
+_p_67:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 3699
-	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
-plt_wrapper_alloc_object_Alloc_intptr:
-_p_69:
+.word 3682
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroyKey_intptr
+plt_PInvoke_BCrypt_BCryptDestroyKey_intptr:
+_p_68:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 3707
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_70:
+.word 3684
+	.no_dead_strip plt_PInvoke_BCrypt_BCryptDestroySecret_intptr
+plt_PInvoke_BCrypt_BCryptDestroySecret_intptr:
+_p_69:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 3715
-	.no_dead_strip plt_intptr__ctor_void_
-plt_intptr__ctor_void_:
-_p_71:
+.word 3686
+	.no_dead_strip plt_PInvoke_BCrypt_SafeSecretHandle__ctor
+plt_PInvoke_BCrypt_SafeSecretHandle__ctor:
+_p_70:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 3723
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_72:
+.word 3688
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_71:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3728
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_73:
+.word 3708
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_72:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3753
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_74:
+.word 3757
+	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
+plt_wrapper_alloc_object_Alloc_intptr:
+_p_73:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3810
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_75:
+.word 3765
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_74:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3834
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_76:
+.word 3773
+	.no_dead_strip plt_intptr__ctor_void_
+plt_intptr__ctor_void_:
+_p_75:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3854
-	.no_dead_strip plt__jit_icall_mono_object_castclass_unbox
-plt__jit_icall_mono_object_castclass_unbox:
-_p_77:
+.word 3781
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_76:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3862
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_78:
+.word 3786
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_77:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3892
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_79:
+.word 3811
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_78:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3917
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_80:
+.word 3868
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_79:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3925
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
-_p_81:
+.word 3892
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_80:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3933
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_82:
+.word 3912
+	.no_dead_strip plt__jit_icall_mono_object_castclass_unbox
+plt__jit_icall_mono_object_castclass_unbox:
+_p_81:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3980
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_83:
+.word 3920
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_82:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3988
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_84:
+.word 3950
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_83:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 3996
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_85:
+.word 3975
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_84:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 4004
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_86:
+.word 3983
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
+_p_85:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 4012
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_87:
+.word 3991
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_86:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 4053
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_88:
+.word 4038
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_87:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 4076
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_89:
+.word 4046
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_88:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 4117
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_90:
+.word 4054
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_89:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 4140
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_91:
+.word 4062
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_90:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 4190
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_92:
+.word 4070
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_91:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 4198
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_93:
+.word 4111
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_92:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 4239
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_94:
+.word 4134
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_93:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 4247
-	.no_dead_strip plt_System_Nullable_1_System_ArraySegment_1_byte_Unbox_object
-plt_System_Nullable_1_System_ArraySegment_1_byte_Unbox_object:
-_p_95:
+.word 4175
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_94:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 4270
-	.no_dead_strip plt_System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte
-plt_System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte:
-_p_96:
+.word 4198
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_95:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 4293
-	.no_dead_strip plt_System_ArraySegment_1_byte_Equals_object
-plt_System_ArraySegment_1_byte_Equals_object:
-_p_97:
+.word 4248
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_96:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 4316
-	.no_dead_strip plt_System_ArraySegment_1_byte_GetHashCode
-plt_System_ArraySegment_1_byte_GetHashCode:
-_p_98:
+.word 4256
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_97:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 4338
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_99:
+.word 4297
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_98:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 4378
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_100:
+.word 4305
+	.no_dead_strip plt_System_Nullable_1_System_ArraySegment_1_byte_Unbox_object
+plt_System_Nullable_1_System_ArraySegment_1_byte_Unbox_object:
+_p_99:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 4401
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_101:
+.word 4328
+	.no_dead_strip plt_System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte
+plt_System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte:
+_p_100:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 4442
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_102:
+.word 4351
+	.no_dead_strip plt_System_ArraySegment_1_byte_Equals_object
+plt_System_ArraySegment_1_byte_Equals_object:
+_p_101:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 4450
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_103:
+.word 4374
+	.no_dead_strip plt_System_ArraySegment_1_byte_GetHashCode
+plt_System_ArraySegment_1_byte_GetHashCode:
+_p_102:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 4473
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_104:
+.word 4396
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_103:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 4507
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_105:
+.word 4436
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_104:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 4515
-	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
-plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
-_p_106:
+.word 4459
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_105:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 4538
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags
-plt__icall_native_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags:
-_p_107:
+.word 4500
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_106:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 4590
-	.no_dead_strip plt__jit_icall_mono_marshal_set_last_error
-plt__jit_icall_mono_marshal_set_last_error:
-_p_108:
+.word 4508
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_107:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 4592
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
-_p_109:
+.word 4531
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_108:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 4622
-	.no_dead_strip plt__jit_icall_mono_marshal_string_to_utf16
-plt__jit_icall_mono_marshal_string_to_utf16:
-_p_110:
+.word 4565
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_109:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 4660
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptOpenAlgorithmProvider_PInvoke_BCrypt_SafeAlgorithmHandle__string_string_PInvoke_BCrypt_BCryptOpenAlgorithmProviderFlags
-plt__icall_native_PInvoke_BCrypt_BCryptOpenAlgorithmProvider_PInvoke_BCrypt_SafeAlgorithmHandle__string_string_PInvoke_BCrypt_BCryptOpenAlgorithmProviderFlags:
-_p_111:
+.word 4573
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_110:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 4691
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
-plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
-_p_112:
+.word 4589
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_111:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 4693
-	.no_dead_strip plt__jit_icall_mono_array_to_lparray
-plt__jit_icall_mono_array_to_lparray:
-_p_113:
+.word 4597
+	.no_dead_strip plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise
+plt__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+_p_112:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 4698
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags
-plt__icall_native_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags:
-_p_114:
+.word 4620
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags
+plt__icall_native_PInvoke_BCrypt_BCryptEnumAlgorithms_PInvoke_BCrypt_AlgorithmOperations_int__PInvoke_BCrypt_BCRYPT_ALGORITHM_IDENTIFIER___PInvoke_BCrypt_BCryptEnumAlgorithmsFlags:
+_p_113:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 4722
-	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
-plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
-_p_115:
+.word 4672
+	.no_dead_strip plt__jit_icall_mono_marshal_set_last_error
+plt__jit_icall_mono_marshal_set_last_error:
+_p_114:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 4724
-	.no_dead_strip plt__jit_icall_mono_free_lparray
-plt__jit_icall_mono_free_lparray:
-_p_116:
+.word 4674
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_115:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 4729
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
-plt__icall_native_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
-_p_117:
+.word 4704
+	.no_dead_strip plt__jit_icall_mono_marshal_string_to_utf16
+plt__jit_icall_mono_marshal_string_to_utf16:
+_p_116:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 4749
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
-plt__icall_native_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
-_p_118:
+.word 4742
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptOpenAlgorithmProvider_PInvoke_BCrypt_SafeAlgorithmHandle__string_string_PInvoke_BCrypt_BCryptOpenAlgorithmProviderFlags
+plt__icall_native_PInvoke_BCrypt_BCryptOpenAlgorithmProvider_PInvoke_BCrypt_SafeAlgorithmHandle__string_string_PInvoke_BCrypt_BCryptOpenAlgorithmProviderFlags:
+_p_117:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 4751
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptHashData_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptHashDataFlags
-plt__icall_native_PInvoke_BCrypt_BCryptHashData_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptHashDataFlags:
-_p_119:
+.word 4773
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_
+plt_System_Runtime_InteropServices_SafeHandle_DangerousAddRef_bool_:
+_p_118:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 4753
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags
-plt__icall_native_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags:
-_p_120:
+.word 4775
+	.no_dead_strip plt__jit_icall_mono_array_to_lparray
+plt__jit_icall_mono_array_to_lparray:
+_p_119:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 4755
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags
-plt__icall_native_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags:
-_p_121:
+.word 4780
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags
+plt__icall_native_PInvoke_BCrypt_BCryptCreateHash_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeHashHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptCreateHashFlags:
+_p_120:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 4757
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags
-plt__icall_native_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags:
-_p_122:
+.word 4804
+	.no_dead_strip plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease
+plt_System_Runtime_InteropServices_SafeHandle_DangerousRelease:
+_p_121:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 4759
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags
-plt__icall_native_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags:
-_p_123:
+.word 4806
+	.no_dead_strip plt__jit_icall_mono_free_lparray
+plt__jit_icall_mono_free_lparray:
+_p_122:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 4761
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags:
-_p_124:
+.word 4811
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
+plt__icall_native_PInvoke_BCrypt_BCryptEncrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
+_p_123:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 4763
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFinalizeKeyPair_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_BCryptFinalizeKeyPairFlags
-plt__icall_native_PInvoke_BCrypt_BCryptFinalizeKeyPair_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_BCryptFinalizeKeyPairFlags:
-_p_125:
+.word 4831
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags
+plt__icall_native_PInvoke_BCrypt_BCryptDecrypt_PInvoke_BCrypt_SafeKeyHandle_byte__int_void__byte__int_byte__int_int__PInvoke_BCrypt_BCryptEncryptFlags:
+_p_124:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 4765
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags:
-_p_126:
+.word 4833
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptHashData_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptHashDataFlags
+plt__icall_native_PInvoke_BCrypt_BCryptHashData_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptHashDataFlags:
+_p_125:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 4767
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags
-plt__icall_native_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags:
-_p_127:
+.word 4835
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags
+plt__icall_native_PInvoke_BCrypt_BCryptFinishHash_PInvoke_BCrypt_SafeHashHandle_byte___int_PInvoke_BCrypt_BCryptFinishHashFlags:
+_p_126:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 4769
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags:
-_p_128:
+.word 4837
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags
+plt__icall_native_PInvoke_BCrypt_BCryptSignHash_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_int__PInvoke_BCrypt_BCryptSignHashFlags:
+_p_127:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 4771
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags
-plt__icall_native_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags:
-_p_129:
+.word 4839
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags
+plt__icall_native_PInvoke_BCrypt_BCryptVerifySignature_PInvoke_BCrypt_SafeKeyHandle_void__byte___int_byte___int_PInvoke_BCrypt_BCryptSignHashFlags:
+_p_128:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 4773
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDeriveKey_PInvoke_BCrypt_SafeSecretHandle_string_PInvoke_BCrypt_BCryptBufferDesc__byte___int_int__PInvoke_BCrypt_BCryptDeriveKeyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptDeriveKey_PInvoke_BCrypt_SafeSecretHandle_string_PInvoke_BCrypt_BCryptBufferDesc__byte___int_int__PInvoke_BCrypt_BCryptDeriveKeyFlags:
-_p_130:
+.word 4841
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags
+plt__icall_native_PInvoke_BCrypt_BCryptGenerateKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__int_PInvoke_BCrypt_BCryptGenerateKeyPairFlags:
+_p_129:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 4775
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags:
-_p_131:
+.word 4843
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptGenerateSymmetricKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptGenerateSymmetricKeyFlags:
+_p_130:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 4777
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags:
-_p_132:
+.word 4845
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFinalizeKeyPair_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_BCryptFinalizeKeyPairFlags
+plt__icall_native_PInvoke_BCrypt_BCryptFinalizeKeyPair_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_BCryptFinalizeKeyPairFlags:
+_p_131:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 4779
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags
-plt__icall_native_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags:
-_p_133:
+.word 4847
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptImportKey_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_byte___int_PInvoke_BCrypt_BCryptImportKeyFlags:
+_p_132:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 4781
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenRandom_PInvoke_BCrypt_SafeAlgorithmHandle_byte___int_PInvoke_BCrypt_BCryptGenRandomFlags
-plt__icall_native_PInvoke_BCrypt_BCryptGenRandom_PInvoke_BCrypt_SafeAlgorithmHandle_byte___int_PInvoke_BCrypt_BCryptGenRandomFlags:
-_p_134:
+.word 4849
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags
+plt__icall_native_PInvoke_BCrypt_BCryptImportKeyPair_PInvoke_BCrypt_SafeAlgorithmHandle_PInvoke_BCrypt_SafeKeyHandle_string_PInvoke_BCrypt_SafeKeyHandle__byte___int_PInvoke_BCrypt_BCryptImportKeyPairFlags:
+_p_133:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 4783
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFreeBuffer_void_
-plt__icall_native_PInvoke_BCrypt_BCryptFreeBuffer_void_:
-_p_135:
+.word 4851
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptExportKey_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_string_byte___int_int__PInvoke_BCrypt_BCryptExportKeyFlags:
+_p_134:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 4785
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags
-plt__icall_native_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags:
-_p_136:
+.word 4853
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags
+plt__icall_native_PInvoke_BCrypt_BCryptSecretAgreement_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeKeyHandle_PInvoke_BCrypt_SafeSecretHandle__PInvoke_BCrypt_BCryptSecretAgreementFlags:
+_p_135:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 4787
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroyHash_intptr
-plt__icall_native_PInvoke_BCrypt_BCryptDestroyHash_intptr:
-_p_137:
+.word 4855
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDeriveKey_PInvoke_BCrypt_SafeSecretHandle_string_PInvoke_BCrypt_BCryptBufferDesc__byte___int_int__PInvoke_BCrypt_BCryptDeriveKeyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptDeriveKey_PInvoke_BCrypt_SafeSecretHandle_string_PInvoke_BCrypt_BCryptBufferDesc__byte___int_int__PInvoke_BCrypt_BCryptDeriveKeyFlags:
+_p_136:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 4789
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroyKey_intptr
-plt__icall_native_PInvoke_BCrypt_BCryptDestroyKey_intptr:
-_p_138:
+.word 4857
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_byte__int_PInvoke_BCrypt_BCryptSetPropertyFlags:
+_p_137:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 4791
-	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroySecret_intptr
-plt__icall_native_PInvoke_BCrypt_BCryptDestroySecret_intptr:
-_p_139:
+.word 4859
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptSetProperty_System_Runtime_InteropServices_SafeHandle_string_string_int_PInvoke_BCrypt_BCryptSetPropertyFlags:
+_p_138:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 4793
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_140:
+.word 4861
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags
+plt__icall_native_PInvoke_BCrypt_BCryptGetProperty_System_Runtime_InteropServices_SafeHandle_string_byte___int_int__PInvoke_BCrypt_BCryptGetPropertyFlags:
+_p_139:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 4813
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_141:
+.word 4863
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptGenRandom_PInvoke_BCrypt_SafeAlgorithmHandle_byte___int_PInvoke_BCrypt_BCryptGenRandomFlags
+plt__icall_native_PInvoke_BCrypt_BCryptGenRandom_PInvoke_BCrypt_SafeAlgorithmHandle_byte___int_PInvoke_BCrypt_BCryptGenRandomFlags:
+_p_140:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 4836
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_142:
+.word 4865
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptFreeBuffer_void_
+plt__icall_native_PInvoke_BCrypt_BCryptFreeBuffer_void_:
+_p_141:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 4877
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_143:
+.word 4867
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags
+plt__icall_native_PInvoke_BCrypt_BCryptCloseAlgorithmProvider_intptr_PInvoke_BCrypt_BCryptCloseAlgorithmProviderFlags:
+_p_142:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 4927
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
-_p_144:
+.word 4869
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroyHash_intptr
+plt__icall_native_PInvoke_BCrypt_BCryptDestroyHash_intptr:
+_p_143:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 4935
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
-_p_145:
+.word 4871
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroyKey_intptr
+plt__icall_native_PInvoke_BCrypt_BCryptDestroyKey_intptr:
+_p_144:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 4976
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
-_p_146:
+.word 4873
+	.no_dead_strip plt__icall_native_PInvoke_BCrypt_BCryptDestroySecret_intptr
+plt__icall_native_PInvoke_BCrypt_BCryptDestroySecret_intptr:
+_p_145:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 4984
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
-_p_147:
+.word 4875
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_146:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 4992
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
-_p_148:
+.word 4895
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_147:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 5033
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
-_p_149:
+.word 4918
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_148:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 5041
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
-_p_150:
+.word 4959
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_149:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 5058
-	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
-plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
-_p_151:
+.word 5009
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_150:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 5066
-	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
-plt_System_Enum_GetUnderlyingType_System_Type:
-_p_152:
+.word 5017
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_151:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 5071
-	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
-plt_System_Type_GetTypeCode_System_Type:
-_p_153:
+.word 5058
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_152:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 5076
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
-_p_154:
+.word 5066
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
+_p_153:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 5090
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
-_p_155:
+.word 5074
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
+_p_154:
 adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 5098
+.word 5115
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
+_p_155:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1800]
+br x16
+.word 5123
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
+_p_156:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1808]
+br x16
+.word 5140
+	.no_dead_strip plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType
+plt_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType:
+_p_157:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1816]
+br x16
+.word 5148
+	.no_dead_strip plt_System_Enum_GetUnderlyingType_System_Type
+plt_System_Enum_GetUnderlyingType_System_Type:
+_p_158:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1824]
+br x16
+.word 5153
+	.no_dead_strip plt_System_Type_GetTypeCode_System_Type
+plt_System_Type_GetTypeCode_System_Type:
+_p_159:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1832]
+br x16
+.word 5158
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
+_p_160:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1840]
+br x16
+.word 5172
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
+_p_161:
+adrp x16, mono_aot_PInvoke_BCrypt_got@PAGE+0
+add x16, x16, mono_aot_PInvoke_BCrypt_got@PAGEOFF
+ldr x16, [x16, #1848]
+br x16
+.word 5180
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_PInvoke_BCrypt_got, 1800
+.lcomm mono_aot_PInvoke_BCrypt_got, 1856
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -13524,7 +13569,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_PInvoke_BCrypt_got
 	.align 3
@@ -13541,6 +13586,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -13592,13 +13639,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 69,1800,156,251,66,391195135,0,11105
-	.long 128,8,8,10,0,24,17488,6376
+	.long 70,1856,162,251,66,391195135,0,11202
+	.long 128,8,8,9,0,25,17592,6384
 	.long 5992,4912,0,5520,5888,5408,0,3992
-	.long 368,0,0,0,0,0,0,0
+	.long 368,6376,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 77,35,73,221,46,143,198,93,16,219,155,100,192,158,85,51
+	.long 0,0
+	.byte 128,120,41,116,76,193,73,3,137,48,45,148,4,94,69,95
 	.globl _mono_aot_module_PInvoke_BCrypt_info
 	.align 3
 _mono_aot_module_PInvoke_BCrypt_info:
@@ -15226,7 +15273,7 @@ Lfde17_start:
 LDIFF_SYM238=Lme_11 - PInvoke_BCrypt_BCryptSetProperty_T_REF_System_Runtime_InteropServices_SafeHandle_string_T_REF_PInvoke_BCrypt_BCryptSetPropertyFlags
 	.long LDIFF_SYM238
 	.long 0
-	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,149,18,150,17
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19
 	.align 3
 Lfde17_end:
 
@@ -20843,7 +20890,7 @@ Lfde120_start:
 LDIFF_SYM927=Lme_93 - System_ArraySegment_1_T_BYTE_Equals_System_ArraySegment_1_T_BYTE
 	.long LDIFF_SYM927
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde120_end:
 
@@ -21606,7 +21653,7 @@ Lfde139_start:
 LDIFF_SYM1007=Lme_a6 - System_Nullable_1_System_ArraySegment_1_byte_Equals_System_Nullable_1_System_ArraySegment_1_byte
 	.long LDIFF_SYM1007
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
 	.align 3
 Lfde139_end:
 
@@ -21781,7 +21828,7 @@ Lfde144_start:
 LDIFF_SYM1023=Lme_ab - System_Nullable_1_System_ArraySegment_1_byte_Box_System_Nullable_1_System_ArraySegment_1_byte
 	.long LDIFF_SYM1023
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde144_end:
 
@@ -21885,7 +21932,7 @@ LDIFF_SYM1037=LTDIE_50 - Ldebug_info_start
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:.ctor"
 	.asciz "System_Array_InternalEnumerator_1_T_INT__ctor_System_Array"
 
-	.byte 3,215,1
+	.byte 3,218,1
 	.quad System_Array_InternalEnumerator_1_T_INT__ctor_System_Array
 	.quad Lme_ae
 
@@ -21924,7 +21971,7 @@ Lfde146_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:Dispose"
 	.asciz "System_Array_InternalEnumerator_1_T_INT_Dispose"
 
-	.byte 3,221,1
+	.byte 3,224,1
 	.quad System_Array_InternalEnumerator_1_T_INT_Dispose
 	.quad Lme_af
 
@@ -21958,7 +22005,7 @@ Lfde147_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:MoveNext"
 	.asciz "System_Array_InternalEnumerator_1_T_INT_MoveNext"
 
-	.byte 3,226,1
+	.byte 3,228,1
 	.quad System_Array_InternalEnumerator_1_T_INT_MoveNext
 	.quad Lme_b0
 
@@ -21997,7 +22044,7 @@ Lfde148_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INT_get_Current"
 
-	.byte 3,234,1
+	.byte 3,236,1
 	.quad System_Array_InternalEnumerator_1_T_INT_get_Current
 	.quad Lme_b1
 
@@ -22031,7 +22078,7 @@ Lfde149_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:System.Collections.IEnumerator.Reset"
 	.asciz "System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset"
 
-	.byte 3,245,1
+	.byte 3,247,1
 	.quad System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_Reset
 	.quad Lme_b2
 
@@ -22065,7 +22112,7 @@ Lfde150_end:
 	.asciz "System.Array/InternalEnumerator`1<T_INT>:System.Collections.IEnumerator.get_Current"
 	.asciz "System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Current"
 
-	.byte 3,250,1
+	.byte 3,252,1
 	.quad System_Array_InternalEnumerator_1_T_INT_System_Collections_IEnumerator_get_Current
 	.quad Lme_b3
 
@@ -26532,7 +26579,7 @@ Lfde214_end:
 	.asciz "System.Array:IndexOf<T_BYTE>"
 	.asciz "System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int"
 
-	.byte 4,175,5
+	.byte 4,169,5
 	.quad System_Array_IndexOf_T_BYTE_T_BYTE___T_BYTE_int_int
 	.quad Lme_f4
 
@@ -26652,7 +26699,7 @@ Lfde216_start:
 LDIFF_SYM1705=Lme_f5 - System_ArraySegment_1_ArraySegmentEnumerator_T_BYTE__ctor_System_ArraySegment_1_T_BYTE
 	.long LDIFF_SYM1705
 	.long 0
-	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde216_end:
 
@@ -26662,7 +26709,7 @@ Lfde216_end:
 	.asciz "System.Array:InternalArray__get_Item<T_INT>"
 	.asciz "System_Array_InternalArray__get_Item_T_INT_int"
 
-	.byte 3,173,1
+	.byte 3,176,1
 	.quad System_Array_InternalArray__get_Item_T_INT_int
 	.quad Lme_f6
 
@@ -26706,7 +26753,7 @@ Lfde217_end:
 	.asciz "System.Array:IndexOfImpl<T_BYTE>"
 	.asciz "System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int"
 
-	.byte 3,240,4
+	.byte 3,146,5
 	.quad System_Array_IndexOfImpl_T_BYTE_T_BYTE___T_BYTE_int_int
 	.quad Lme_f7
 

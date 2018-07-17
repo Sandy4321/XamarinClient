@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "PInvoke.Windows.Core.dll"
 	.asciz ""
 
@@ -697,7 +697,7 @@ PInvoke_HResult_Equals_object:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x1, [x16, #192]
+ldr x1, [x16, #200]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -712,7 +712,7 @@ ldr x1, [x16, #192]
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x1, [x16, #192]
+ldr x1, [x16, #200]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000241
@@ -733,7 +733,7 @@ ldr x1, [x16, #192]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_5
 
@@ -757,7 +757,7 @@ PInvoke_HResult_CompareTo_object:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e2
@@ -769,7 +769,7 @@ bl _p_6
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x15, [x16, #208]
+ldr x15, [x16, #216]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -801,7 +801,7 @@ PInvoke_HResult_CompareTo_PInvoke_HResult:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e1
@@ -813,7 +813,7 @@ bl _p_6
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e2
@@ -847,7 +847,7 @@ PInvoke_HResult_ToString:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e1
@@ -914,7 +914,7 @@ PInvoke_IMAGE_OPTIONAL_HEADER_DIRECTORIES_get_Item_int:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -1013,7 +1013,7 @@ ldr x0, [x16, #216]
 .word 0xb9800400
 .word 0xb9001fa0
 .word 0x14000005
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_10
@@ -1051,7 +1051,7 @@ PInvoke_IMAGE_OPTIONAL_HEADER_DIRECTORIES_set_Item_int_PInvoke_IMAGE_DATA_DIRECT
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -1150,7 +1150,7 @@ ldr x0, [x16, #224]
 .word 0xb98027a1
 .word 0xb9000401
 .word 0x14000005
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_10
@@ -1637,7 +1637,7 @@ PInvoke_NTSTATUS_Equals_object:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800018
@@ -1652,7 +1652,7 @@ ldr x1, [x16, #232]
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000241
@@ -1673,7 +1673,7 @@ ldr x1, [x16, #232]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
 bl _p_5
 
@@ -1697,7 +1697,7 @@ PInvoke_NTSTATUS_CompareTo_object:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e2
@@ -1709,7 +1709,7 @@ bl _p_6
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x15, [x16, #208]
+ldr x15, [x16, #216]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -1741,7 +1741,7 @@ PInvoke_NTSTATUS_CompareTo_PInvoke_NTSTATUS:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e1
@@ -1753,7 +1753,7 @@ bl _p_6
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e2
@@ -1787,7 +1787,7 @@ PInvoke_NTSTATUS_ToString:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800281
 bl _p_6
 .word 0xaa0003e1
@@ -1904,7 +1904,7 @@ PInvoke_PInvokeExtensions_ToCharArrayWithNullTerminator_string:
 
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 bl _p_11
 .word 0xaa0003e2
 .word 0xb9801344
@@ -2691,109 +2691,109 @@ plt_System_Runtime_InteropServices_Marshal_ThrowExceptionForHR_int:
 _p_1:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #264]
+ldr x16, [x16, #272]
 br x16
-.word 729
+.word 756
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_ThrowExceptionForHR_int_intptr
 plt_System_Runtime_InteropServices_Marshal_ThrowExceptionForHR_int_intptr:
 _p_2:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #272]
+ldr x16, [x16, #280]
 br x16
-.word 734
+.word 761
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_GetExceptionForHR_int
 plt_System_Runtime_InteropServices_Marshal_GetExceptionForHR_int:
 _p_3:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #280]
+ldr x16, [x16, #288]
 br x16
-.word 739
+.word 766
 	.no_dead_strip plt_System_Runtime_InteropServices_Marshal_GetExceptionForHR_int_intptr
 plt_System_Runtime_InteropServices_Marshal_GetExceptionForHR_int_intptr:
 _p_4:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #288]
+ldr x16, [x16, #296]
 br x16
-.word 744
+.word 771
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_5:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #296]
+ldr x16, [x16, #304]
 br x16
-.word 749
+.word 776
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_6:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #304]
+ldr x16, [x16, #312]
 br x16
-.word 784
+.word 811
 	.no_dead_strip plt_System_Enum_CompareTo_object
 plt_System_Enum_CompareTo_object:
 _p_7:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #312]
+ldr x16, [x16, #320]
 br x16
-.word 792
+.word 819
 	.no_dead_strip plt_System_Enum_ToString
 plt_System_Enum_ToString:
 _p_8:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #320]
+ldr x16, [x16, #328]
 br x16
-.word 797
+.word 824
 	.no_dead_strip plt_uint_ToString_string_System_IFormatProvider
 plt_uint_ToString_string_System_IFormatProvider:
 _p_9:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #328]
+ldr x16, [x16, #336]
 br x16
-.word 802
+.word 829
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_10:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #336]
+ldr x16, [x16, #344]
 br x16
-.word 807
+.word 834
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_11:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #344]
+ldr x16, [x16, #352]
 br x16
-.word 835
+.word 862
 	.no_dead_strip plt_string_CopyTo_int_char___int_int
 plt_string_CopyTo_int_char___int_int:
 _p_12:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #352]
+ldr x16, [x16, #360]
 br x16
-.word 843
+.word 870
 	.no_dead_strip plt_string_memcpy_byte__byte__int
 plt_string_memcpy_byte__byte__int:
 _p_13:
 adrp x16, mono_aot_PInvoke_Windows_Core_got@PAGE+0
 add x16, x16, mono_aot_PInvoke_Windows_Core_got@PAGEOFF
-ldr x16, [x16, #360]
+ldr x16, [x16, #368]
 br x16
-.word 848
+.word 875
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_PInvoke_Windows_Core_got, 368
+.lcomm mono_aot_PInvoke_Windows_Core_got, 376
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -2833,7 +2833,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_PInvoke_Windows_Core_got
 	.align 3
@@ -2850,6 +2850,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -2901,13 +2903,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 32,368,14,90,66,391195135,0,2740
-	.long 128,8,8,10,0,24,4576,1824
+	.long 33,376,14,90,66,391195135,0,2767
+	.long 128,8,8,9,0,25,4608,1832
 	.long 1632,1048,0,1432,1576,1368,0,832
-	.long 136,0,0,0,0,0,0,0
+	.long 136,1824,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 55,14,118,82,103,11,11,143,96,89,232,15,76,130,232,31
+	.long 0,0
+	.byte 63,131,238,41,178,152,140,158,116,113,211,234,90,68,244,252
 	.globl _mono_aot_module_PInvoke_Windows_Core_info
 	.align 3
 _mono_aot_module_PInvoke_Windows_Core_info:

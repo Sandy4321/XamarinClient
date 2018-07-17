@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "Validation.dll"
 	.asciz ""
 
@@ -154,18 +154,18 @@ Validation_Strings_get_ResourceManager:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400000
 .word 0xb50003a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xf9000fa0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 bl _p_1
 .word 0xaa0003e1
 .word 0xaa0103e0
@@ -176,7 +176,7 @@ bl _p_1
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xd2801101
 bl _p_2
 .word 0xf9400fa1
@@ -187,12 +187,12 @@ bl _p_3
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9000001
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -209,7 +209,7 @@ Validation_Strings_get_Culture:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -227,7 +227,7 @@ Validation_Strings_set_Culture_System_Globalization_CultureInfo:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400ba1
 .word 0xf9000001
 .word 0x910003bf
@@ -247,11 +247,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -273,11 +273,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #240]
+ldr x1, [x16, #248]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -299,11 +299,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #248]
+ldr x1, [x16, #256]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -325,11 +325,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #256]
+ldr x1, [x16, #264]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -351,11 +351,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #264]
+ldr x1, [x16, #272]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -377,11 +377,11 @@ bl _p_4
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #272]
+ldr x1, [x16, #280]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9400002
 .word 0xaa0303e0
 .word 0xf940007e
@@ -421,7 +421,7 @@ Validation_Assumes_NotNull_T_REF_T_REF:
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -439,14 +439,14 @@ Validation_Assumes_NotNullOrEmpty_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #280]
+ldr x15, [x16, #288]
 .word 0xaa1a03e0
-bl _p_7
+bl _p_8
 .word 0xb9801340
 .word 0x6b1f001f
 .word 0x9a9fd7e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0xd2800000
 .word 0x93407c00
 .word 0xb9801341
@@ -459,14 +459,14 @@ bl Validation_Assumes_True_bool_string
 .word 0x6b1f001f
 .word 0x9a9f97e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_8
+bl _p_9
 
 Lme_d:
 .text
@@ -479,12 +479,12 @@ Validation_Assumes_NotNullOrEmpty_T_REF_System_Collections_Generic_ICollection_1
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_9
+bl _p_10
 .word 0xaa0003ef
 .word 0xf9400ba0
-bl _p_10
-.word 0xf9400fa0
 bl _p_11
+.word 0xf9400fa0
+bl _p_12
 .word 0xaa0003ef
 .word 0xf9400ba0
 .word 0xf9400ba1
@@ -497,7 +497,7 @@ bl _p_11
 .word 0x6b1f001f
 .word 0x9a9fd7e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -513,18 +513,18 @@ Validation_Assumes_NotNullOrEmpty_T_REF_System_Collections_Generic_IEnumerable_1
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_12
-.word 0xaa0003ef
-.word 0xf9400ba0
 bl _p_13
-.word 0xf9400fa0
-bl _p_14
 .word 0xaa0003ef
 .word 0xf9400ba0
+bl _p_14
+.word 0xf9400fa0
 bl _p_15
+.word 0xaa0003ef
+.word 0xf9400ba0
+bl _p_16
 .word 0x53001c00
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -543,7 +543,7 @@ Validation_Assumes_Null_T_REF_T_REF:
 .word 0xeb1f001f
 .word 0x9a9f17e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -559,15 +559,15 @@ Validation_Assumes_Is_T_REF_object:
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_16
+bl _p_17
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400ba0
-bl _p_17
+bl _p_18
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -586,7 +586,7 @@ Validation_Assumes_False_bool_string:
 .word 0x34000080
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -607,9 +607,9 @@ Validation_Assumes_False_bool_string_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -621,9 +621,9 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf9400fa0
-bl Validation_Assumes_Format_string_object__
+bl _p_21
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -643,9 +643,9 @@ Validation_Assumes_False_bool_string_object__:
 .word 0x340000c0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Validation_Assumes_Format_string_object__
+bl _p_21
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -664,7 +664,7 @@ Validation_Assumes_True_bool_string:
 .word 0x35000080
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -685,9 +685,9 @@ Validation_Assumes_True_bool_string_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -699,9 +699,9 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf9400fa0
-bl Validation_Assumes_Format_string_object__
+bl _p_21
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -721,9 +721,9 @@ Validation_Assumes_True_bool_string_object__:
 .word 0x350000c0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Validation_Assumes_Format_string_object__
+bl _p_21
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -739,15 +739,15 @@ Validation_Assumes_NotReachable:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xd2801101
 bl _p_2
 .word 0xf9000ba0
 .word 0xd2800001
 .word 0xd2800022
-bl Validation_Assumes_InternalErrorException__ctor_string_bool
+bl _p_22
 .word 0xf9400ba0
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -765,23 +765,23 @@ Validation_Assumes_Present_T_REF_T_REF:
 .word 0xaa0003fa
 .word 0xb500049a
 .word 0xf9400fa0
-bl _p_21
+bl _p_24
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #304]
-bl Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type
+ldr x1, [x16, #312]
+bl _p_25
 .word 0xaa0003fa
-bl _p_22
+bl _p_26
 .word 0xf90013a0
-bl _p_23
+bl _p_27
 .word 0xf90017a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xf9001fa0
 .word 0xf9001ba0
 .word 0xaa1a03e0
@@ -798,9 +798,9 @@ bl _p_19
 .word 0xf94013a0
 .word 0xf94017a1
 .word 0xf9401ba2
-bl _p_24
+bl _p_28
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -819,15 +819,15 @@ Validation_Assumes_Fail_string_bool:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xd2801101
 bl _p_2
 .word 0xf90013a0
 .word 0xf9400ba1
 .word 0x394063a2
-bl Validation_Assumes_InternalErrorException__ctor_string_bool
+bl _p_22
 .word 0xf94013a0
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -846,16 +846,16 @@ Validation_Assumes_Fail_string_System_Exception_bool:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xd2801101
 bl _p_2
 .word 0xf9001ba0
 .word 0xf9400ba1
 .word 0xf9400fa2
 .word 0x394083a3
-bl Validation_Assumes_InternalErrorException__ctor_string_System_Exception_bool
+bl _p_29
 .word 0xf9401ba0
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -872,7 +872,7 @@ Validation_Assumes_Format_string_object__:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -894,14 +894,14 @@ Validation_Assumes_InternalErrorException__ctor_string_bool:
 .word 0xf94013b6
 .word 0xf94013a0
 .word 0xb5000060
-bl _p_25
+bl _p_31
 .word 0xaa0003f6
 .word 0xf9401ba0
 .word 0xaa1603e1
-bl _p_26
+bl _p_32
 .word 0xf9400fa0
 .word 0x3940a3a1
-bl _p_27
+bl _p_33
 .word 0xf9400bb6
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -925,15 +925,15 @@ Validation_Assumes_InternalErrorException__ctor_string_System_Exception_bool:
 .word 0xf94013b5
 .word 0xf94013a0
 .word 0xb5000060
-bl _p_25
+bl _p_31
 .word 0xaa0003f5
 .word 0xf9401fa0
 .word 0xaa1503e1
 .word 0xf94017a2
-bl _p_28
+bl _p_34
 .word 0xf9400fa0
 .word 0x3940c3a1
-bl _p_27
+bl _p_33
 .word 0xf9400bb5
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -961,17 +961,17 @@ Validation_Assumes_InternalErrorException_ShowAssertDialog_bool:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #312]
+ldr x1, [x16, #320]
 .word 0xf9401722
 .word 0xaa1a03e0
-bl _p_29
+bl _p_35
 .word 0xaa0003fa
 .word 0xaa1a03f9
 .word 0xb500009a
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x25, [x16, #320]
+ldr x25, [x16, #328]
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -993,19 +993,19 @@ bl _p_1
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9410430
+.word 0xf9410830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x340002e0
 .word 0xaa1903e0
 .word 0xf9400321
-.word 0xf940a830
+.word 0xf940ac30
 .word 0xd63f0200
 .word 0xeb1a001f
 .word 0x54000221
 .word 0xaa1903e0
 bl _p_1
-bl Validation_TypeInfoExtensions_GetGenericArguments_System_Reflection_TypeInfo
+bl _p_36
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xaa0103fa
@@ -1024,9 +1024,9 @@ bl Validation_TypeInfoExtensions_GetGenericArguments_System_Reflection_TypeInfo
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_8
+bl _p_9
 
 Lme_21:
 .text
@@ -1038,10 +1038,10 @@ Validation_PrivateErrorHelpers_Format_string_object__:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-bl _p_22
+bl _p_26
 .word 0xf9400ba1
 .word 0xf9400fa2
-bl _p_24
+bl _p_28
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1059,21 +1059,21 @@ Validation_Report_IfNotPresent_T_REF_T_REF:
 .word 0xaa0003fa
 .word 0xb50003fa
 .word 0xf9400fa0
-bl _p_30
+bl _p_37
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #328]
-bl Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type
+ldr x1, [x16, #336]
+bl _p_25
 .word 0xaa0003fa
-bl _p_23
+bl _p_27
 .word 0xf90013a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xf9001ba0
 .word 0xf90017a0
 .word 0xaa1a03e0
@@ -1089,7 +1089,7 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94013a0
 .word 0xf94017a1
-bl _p_31
+bl _p_38
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -1112,7 +1112,7 @@ Validation_Report_If_bool_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x25, [x16, #320]
+ldr x25, [x16, #328]
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1135,7 +1135,7 @@ Validation_Report_IfNot_bool_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x25, [x16, #320]
+ldr x25, [x16, #328]
 .word 0xf9400bb9
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1158,9 +1158,9 @@ Validation_Report_IfNot_bool_string_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -1172,13 +1172,13 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf94013a0
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003fa
 .word 0xb500009a
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x26, [x16, #320]
+ldr x26, [x16, #328]
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -1202,9 +1202,9 @@ Validation_Report_IfNot_bool_string_object_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800041
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001fa0
@@ -1225,13 +1225,13 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf94013a0
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003fa
 .word 0xb500009a
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x26, [x16, #320]
+ldr x26, [x16, #328]
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -1253,13 +1253,13 @@ Validation_Report_IfNot_bool_string_object__:
 .word 0x35000120
 .word 0xf94013a0
 .word 0xaa1a03e1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003fa
 .word 0xb500009a
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x26, [x16, #320]
+ldr x26, [x16, #328]
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -1279,7 +1279,7 @@ Validation_Report_Fail_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0xf9000ba0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1298,13 +1298,13 @@ Validation_Report_Fail_string_object__:
 .word 0xaa0103fa
 .word 0xf9400fa0
 .word 0xaa1a03e1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003fa
 .word 0xb500009a
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x26, [x16, #320]
+ldr x26, [x16, #328]
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -1327,11 +1327,11 @@ Validation_Requires_NotNull_T_REF_T_REF_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_2b:
 .text
@@ -1346,7 +1346,7 @@ Validation_Requires_NotNull_intptr_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 .word 0xf9400001
 .word 0xf9400ba0
 .word 0xeb01001f
@@ -1356,11 +1356,11 @@ ldr x0, [x16, #336]
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_2c:
 .text
@@ -1377,11 +1377,11 @@ Validation_Requires_NotNull_System_Threading_Tasks_Task_string:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_2d:
 .text
@@ -1399,11 +1399,11 @@ Validation_Requires_NotNull_T_REF_System_Threading_Tasks_Task_1_T_REF_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_2e:
 .text
@@ -1422,11 +1422,11 @@ Validation_Requires_NotNullAllowStructs_T_REF_T_REF_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_2f:
 .text
@@ -1456,19 +1456,19 @@ Validation_Requires_NotNullOrEmpty_string_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
-bl _p_32
+bl _p_23
+bl _p_39
 .word 0xf90013a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90017a0
@@ -1480,16 +1480,16 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94013a0
 .word 0xf94017a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
-.word 0xd2801e00
+bl _p_23
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_8
+bl _p_9
 
 Lme_30:
 .text
@@ -1516,26 +1516,26 @@ Validation_Requires_NotNullOrWhiteSpace_string_string:
 .word 0x79402800
 .word 0x340001c0
 .word 0xaa1903e0
-bl _p_33
+bl _p_41
 .word 0x53001c00
 .word 0x35000460
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xaa1a03e1
 bl _mono_create_corlib_exception_1
-bl _p_20
-bl _p_32
+bl _p_23
+bl _p_39
 .word 0xf90013a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90017a0
@@ -1547,21 +1547,21 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94013a0
 .word 0xf94017a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
-bl _p_34
+bl _p_23
+bl _p_42
 .word 0xf90013a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90017a0
@@ -1573,15 +1573,15 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94013a0
 .word 0xf94017a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
-.word 0xd2801e00
+bl _p_23
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_8
+bl _p_9
 
 Lme_31:
 .text
@@ -1597,7 +1597,7 @@ Validation_Requires_NotNullOrEmpty_System_Collections_IEnumerable_string:
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf9001fbf
-.word 0xb4001459
+.word 0xb4001559
 .word 0xaa1903f8
 .word 0xeb1f033f
 .word 0x540002c0
@@ -1606,14 +1606,14 @@ Validation_Requires_NotNullOrEmpty_System_Collections_IEnumerable_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf94012e0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -1631,22 +1631,22 @@ ldr x1, [x16, #344]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #352]
+ldr x15, [x16, #360]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x6b1f001f
-.word 0x54000ecc
-bl _p_35
+.word 0x54000fcc
+bl _p_43
 .word 0xf90033a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90037a0
@@ -1658,19 +1658,19 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xaa1903e0
 .word 0xf9400321
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #360]
+ldr x15, [x16, #368]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -1685,14 +1685,14 @@ ldr x15, [x16, #360]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #368]
+ldr x1, [x16, #376]
 .word 0xeb01001f
 .word 0x540001c3
 .word 0xf94012c0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #368]
+ldr x1, [x16, #376]
 .word 0x9343fc22
 .word 0x8b020000
 .word 0x39400000
@@ -1709,18 +1709,26 @@ ldr x1, [x16, #368]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x34000060
-.word 0x94000004
-.word 0x1400002c
-.word 0x94000002
+.word 0x340000e0
+.word 0xf90023bf
+.word 0x9400000b
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_44
+.word 0x14000030
+.word 0xf90023bf
+.word 0x94000005
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_44
 .word 0x14000011
-.word 0xf9002bbe
+.word 0xf9002fbe
 .word 0xf9401fa0
 .word 0xb4000160
 .word 0xf9401fa1
@@ -1729,22 +1737,22 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9402bbe
+.word 0xf9402fbe
 .word 0xd61f03c0
 .word 0x14000001
-bl _p_35
+bl _p_43
 .word 0xf90033a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90037a0
@@ -1756,24 +1764,24 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xaa1a03e1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_32:
 .text
@@ -1790,46 +1798,48 @@ Validation_Requires_NotNullEmptyOrNullElements_T_REF_System_Collections_Generic_
 .word 0xaa0103fa
 .word 0xf9001fbf
 .word 0xf9401ba0
-bl _p_36
+bl _p_45
 .word 0xf94017b8
 .word 0xaa1a03f7
-.word 0xb4000b38
+.word 0xb4000bf8
 .word 0xaa1803f7
-.word 0xd2800018
+.word 0xd2800000
+.word 0x53001c18
 .word 0xf9401ba0
-bl _p_37
+bl _p_46
 .word 0xaa0003ef
 .word 0xf94017a0
 .word 0xf94017a1
 .word 0xf9400021
-.word 0x92800cf0
+.word 0x928007f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf9001fa0
-.word 0x14000028
+.word 0x14000029
 .word 0xf9401fa0
 .word 0xf90033a0
 .word 0xf9401ba0
-bl _p_38
+bl _p_47
 .word 0xaa0003ef
 .word 0xf94033a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0x92800ef0
+.word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xd2800038
+.word 0xd2800021
+.word 0x53001c38
 .word 0xb5000340
-bl _p_39
+bl _p_48
 .word 0xf90033a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90037a0
@@ -1841,29 +1851,33 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xf9401fa1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35fff9c0
-.word 0x94000002
+.word 0x35fff9a0
+.word 0xf90023bf
+.word 0x94000005
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_44
 .word 0x14000010
-.word 0xf9002bbe
+.word 0xf9002fbe
 .word 0xf9401fa0
 .word 0xb4000160
 .word 0xf9401fa1
@@ -1872,12 +1886,12 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9402bbe
+.word 0xf9402fbe
 .word 0xd61f03c0
 .word 0x34000198
 .word 0xa94163b7
@@ -1885,20 +1899,20 @@ ldr x15, [x16, #384]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xaa1703e1
 bl _mono_create_corlib_exception_1
-bl _p_20
-.word 0x17ffffa3
-bl _p_35
+bl _p_23
+.word 0x17ffff9d
+bl _p_43
 .word 0xf90033a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90037a0
@@ -1910,13 +1924,13 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_33:
 .text
@@ -1931,14 +1945,14 @@ Validation_Requires_NullOrNotNullElements_T_REF_System_Collections_Generic_IEnum
 .word 0xf9000fa1
 .word 0xf90017bf
 .word 0xf9400ba0
-.word 0xb4000a00
+.word 0xb4000a80
 .word 0xf94013a0
-bl _p_40
+bl _p_49
 .word 0xaa0003ef
 .word 0xf9400ba0
 .word 0xf9400ba1
 .word 0xf9400021
-.word 0x92800cf0
+.word 0x928007f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -1947,24 +1961,24 @@ bl _p_40
 .word 0xf94017a0
 .word 0xf9002ba0
 .word 0xf94013a0
-bl _p_41
+bl _p_50
 .word 0xaa0003ef
 .word 0xf9402ba1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0x92800ef0
+.word 0x928005f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xb5000340
-bl _p_39
+bl _p_48
 .word 0xf9002ba0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9002fa0
@@ -1976,29 +1990,33 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9402ba0
 .word 0xf9402fa1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x35fff9e0
-.word 0x94000002
+.word 0xf9001bbf
+.word 0x94000005
+.word 0xf9401ba0
+.word 0xb4000040
+bl _p_44
 .word 0x14000010
-.word 0xf90023be
+.word 0xf90027be
 .word 0xf94017a0
 .word 0xb4000160
 .word 0xf94017a1
@@ -2007,12 +2025,12 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf94023be
+.word 0xf94027be
 .word 0xd61f03c0
 .word 0x910003bf
 .word 0xa8c67bfd
@@ -2033,7 +2051,7 @@ Validation_Requires_Range_bool_string_string:
 .word 0x35000080
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Validation_Requires_FailRange_string_string
+bl _p_51
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -2062,18 +2080,18 @@ Validation_Requires_FailRange_string_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x14000001
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 .word 0xf9400fa1
 .word 0xf94013a2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_36:
 .text
@@ -2091,12 +2109,12 @@ Validation_Requires_Argument_bool_string_string:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf94013a1
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_37:
 .text
@@ -2118,9 +2136,9 @@ Validation_Requires_Argument_bool_string_string_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -2132,13 +2150,13 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf94013a0
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_38:
 .text
@@ -2161,9 +2179,9 @@ Validation_Requires_Argument_bool_string_string_object_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800041
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90027a0
@@ -2184,13 +2202,13 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94023a1
 .word 0xf94013a0
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_39:
 .text
@@ -2211,13 +2229,13 @@ Validation_Requires_Argument_bool_string_string_object__:
 .word 0xd65f03c0
 .word 0xf94013a0
 .word 0xf94017a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_3a:
 .text
@@ -2236,16 +2254,16 @@ Validation_Requires_That_bool_string_string_object__:
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-bl _p_22
+bl _p_26
 .word 0xf94013a1
 .word 0xf94017a2
-bl _p_24
+bl _p_28
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400fa2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_3b:
 .text
@@ -2262,11 +2280,11 @@ Validation_Requires_ValidState_bool_string:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_3c:
 .text
@@ -2277,11 +2295,11 @@ Validation_Requires_Fail_string:
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf9400ba1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2298,14 +2316,14 @@ Validation_Requires_Fail_string_object__:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0xd2800000
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2323,16 +2341,16 @@ Validation_Requires_Fail_System_Exception_string_object__:
 .word 0xf90013a2
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xf9001fa0
-.word 0xd2801340
-bl _p_42
+.word 0xd2801440
+bl _p_52
 .word 0xf9401fa1
 .word 0xf9001ba0
 .word 0xf9400ba2
-bl _p_43
+bl _p_53
 .word 0xf9401ba0
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -2349,7 +2367,7 @@ Validation_Requires_Format_string_object__:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2382,11 +2400,11 @@ Validation_Verify_Operation_bool_string:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_42:
 .text
@@ -2407,9 +2425,9 @@ Validation_Verify_Operation_bool_string_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001ba0
@@ -2421,12 +2439,12 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf9400fa0
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_43:
 .text
@@ -2448,9 +2466,9 @@ Validation_Verify_Operation_bool_string_object_object:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800041
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf9001fa0
@@ -2471,12 +2489,12 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf9401ba1
 .word 0xf9400fa0
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_44:
 .text
@@ -2496,12 +2514,12 @@ Validation_Verify_Operation_bool_string_object__:
 .word 0xd65f03c0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_45:
 .text
@@ -2515,12 +2533,12 @@ Validation_Verify_FailOperation_string_object__:
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl Validation_PrivateErrorHelpers_Format_string_object__
+bl _p_30
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -2540,11 +2558,11 @@ Validation_Verify_NotDisposed_Validation_IDisposableObservable_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #392]
+ldr x0, [x16, #400]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #400]
+ldr x1, [x16, #408]
 .word 0xaa1903f8
 .word 0xaa0003f7
 .word 0xb4000479
@@ -2554,7 +2572,7 @@ ldr x1, [x16, #400]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #408]
+ldr x15, [x16, #416]
 .word 0x928001f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -2565,7 +2583,7 @@ ldr x15, [x16, #408]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xf9400019
 .word 0x14000008
 .word 0xf9400320
@@ -2584,23 +2602,23 @@ ldr x0, [x16, #416]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xaa1703e1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x17ffffd9
-.word 0xd2802140
+.word 0xd2802240
 .word 0xf2a04000
 .word 0xaa1803e1
 bl _mono_create_corlib_exception_1
-bl _p_20
-.word 0xd2802140
+bl _p_23
+.word 0xd2802240
 .word 0xf2a04000
 .word 0xaa1803e1
 .word 0xf94017a2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0x17fffff5
 
 Lme_47:
@@ -2620,7 +2638,7 @@ Validation_Verify_NotDisposed_bool_object_string:
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0xf9400019
 .word 0x14000008
 .word 0xf9400320
@@ -2638,18 +2656,18 @@ ldr x0, [x16, #416]
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2802140
+.word 0xd2802240
 .word 0xf2a04000
 .word 0xaa1803e1
 .word 0xf94013a2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0x14000001
-.word 0xd2802140
+.word 0xd2802240
 .word 0xf2a04000
 .word 0xaa1803e1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x17fffff0
 
 Lme_48:
@@ -2667,11 +2685,11 @@ Validation_Verify_NotDisposed_bool_string:
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
-.word 0xd2802140
+.word 0xd2802240
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_49:
 .text
@@ -2686,7 +2704,7 @@ Validation_Assumes_NotNull_T_GSHAREDVT_T_GSHAREDVT:
 .word 0xf9001baf
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_44
+bl _p_54
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -2717,8 +2735,8 @@ bl _p_44
 .word 0xeb1e031f
 .word 0x54000320
 .word 0xf9401ba0
-bl _p_45
-bl _p_46
+bl _p_55
+bl _p_56
 .word 0xb9802b41
 .word 0x8b010321
 .word 0xf9002ba1
@@ -2728,7 +2746,7 @@ bl _p_46
 .word 0xf9400f40
 .word 0xf9401340
 .word 0xf9401ba0
-bl _p_47
+bl _p_57
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -2748,7 +2766,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xeb1f035f
 .word 0x9a9f97e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -2766,25 +2784,25 @@ Validation_Assumes_NotNullOrEmpty_T_GSHAREDVT_System_Collections_Generic_ICollec
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_48
+bl _p_58
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xb9800000
 .word 0xf90013bf
 .word 0xf9400fa0
-bl _p_49
+bl _p_59
 .word 0xf9001fa0
 .word 0xf9400fa0
-bl _p_50
+bl _p_60
 .word 0xaa0003e1
 .word 0xf9401faf
 .word 0xf9400ba0
 .word 0xd63f0020
 .word 0xf9400fa0
-bl _p_51
+bl _p_61
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_52
+bl _p_62
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xf9400ba0
@@ -2793,7 +2811,7 @@ bl _p_52
 .word 0x6b1f001f
 .word 0x9a9fd7e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -2809,32 +2827,32 @@ Validation_Assumes_NotNullOrEmpty_T_GSHAREDVT_System_Collections_Generic_IEnumer
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_53
+bl _p_63
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xb9800000
 .word 0xf90013bf
 .word 0xf9400fa0
-bl _p_54
+bl _p_64
 .word 0xf9001fa0
 .word 0xf9400fa0
-bl _p_55
+bl _p_65
 .word 0xaa0003e1
 .word 0xf9401faf
 .word 0xf9400ba0
 .word 0xd63f0020
 .word 0xf9400fa0
-bl _p_56
+bl _p_66
 .word 0xf9001ba0
 .word 0xf9400fa0
-bl _p_57
+bl _p_67
 .word 0xaa0003e1
 .word 0xf9401baf
 .word 0xf9400ba0
 .word 0xd63f0020
 .word 0x53001c00
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
@@ -2852,7 +2870,7 @@ Validation_Assumes_Null_T_GSHAREDVT_T_GSHAREDVT:
 .word 0xf9001baf
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_58
+bl _p_68
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -2883,8 +2901,8 @@ bl _p_58
 .word 0xeb1e031f
 .word 0x54000320
 .word 0xf9401ba0
-bl _p_59
-bl _p_46
+bl _p_69
+bl _p_56
 .word 0xb9802b41
 .word 0x8b010321
 .word 0xf9002ba1
@@ -2894,7 +2912,7 @@ bl _p_46
 .word 0xf9400f40
 .word 0xf9401340
 .word 0xf9401ba0
-bl _p_60
+bl _p_70
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -2914,7 +2932,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xeb1f035f
 .word 0x9a9f17e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -2932,21 +2950,21 @@ Validation_Assumes_Is_T_GSHAREDVT_object:
 .word 0xf9000faf
 .word 0xf9000ba0
 .word 0xf9400fa0
-bl _p_61
+bl _p_71
 .word 0xf90013a0
 .word 0xf94013a0
 .word 0xb9800000
 .word 0xf90013bf
 .word 0xf9400fa0
-bl _p_62
+bl _p_72
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xf9400ba0
-bl _p_17
+bl _p_18
 .word 0xeb1f001f
 .word 0x9a9f97e0
 .word 0xd2800001
-bl Validation_Assumes_True_bool_string
+bl _p_7
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -2964,7 +2982,7 @@ Validation_Assumes_Present_T_GSHAREDVT_T_GSHAREDVT:
 .word 0xf9001baf
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_63
+bl _p_73
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -2995,8 +3013,8 @@ bl _p_63
 .word 0xeb1e031f
 .word 0x54000320
 .word 0xf9401ba0
-bl _p_64
-bl _p_46
+bl _p_74
+bl _p_56
 .word 0xb9802b41
 .word 0x8b010321
 .word 0xf9002ba1
@@ -3006,7 +3024,7 @@ bl _p_46
 .word 0xf9400f40
 .word 0xf9401340
 .word 0xf9401ba0
-bl _p_65
+bl _p_75
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -3025,23 +3043,23 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003fa
 .word 0xb500049a
 .word 0xf9401ba0
-bl _p_66
+bl _p_76
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #424]
-bl Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type
+ldr x1, [x16, #432]
+bl _p_25
 .word 0xaa0003fa
-bl _p_22
+bl _p_26
 .word 0xf90023a0
-bl _p_23
+bl _p_27
 .word 0xf90027a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xf9002fa0
 .word 0xf9002ba0
 .word 0xaa1a03e0
@@ -3058,9 +3076,9 @@ bl _p_19
 .word 0xf94023a0
 .word 0xf94027a1
 .word 0xf9402ba2
-bl _p_24
+bl _p_28
 .word 0xd2800021
-bl _p_18
+bl _p_19
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -3080,7 +3098,7 @@ Validation_Report_IfNotPresent_T_GSHAREDVT_T_GSHAREDVT:
 .word 0xf9001baf
 .word 0xf90017a0
 .word 0xf9401ba0
-bl _p_67
+bl _p_77
 .word 0xaa0003fa
 .word 0xb9800340
 .word 0x91003c10
@@ -3111,8 +3129,8 @@ bl _p_67
 .word 0xeb1e031f
 .word 0x54000320
 .word 0xf9401ba0
-bl _p_68
-bl _p_46
+bl _p_78
+bl _p_56
 .word 0xb9802b41
 .word 0x8b010321
 .word 0xf9002ba1
@@ -3122,7 +3140,7 @@ bl _p_46
 .word 0xf9400f40
 .word 0xf9401340
 .word 0xf9401ba0
-bl _p_69
+bl _p_79
 .word 0xaa0003e2
 .word 0xf94027a0
 .word 0xf9402ba1
@@ -3141,21 +3159,21 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003fa
 .word 0xb50003fa
 .word 0xf9401ba0
-bl _p_70
+bl _p_80
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x1, [x16, #432]
-bl Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type
+ldr x1, [x16, #440]
+bl _p_25
 .word 0xaa0003fa
-bl _p_23
+bl _p_27
 .word 0xf90023a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xf9002ba0
 .word 0xf90027a0
 .word 0xaa1a03e0
@@ -3171,7 +3189,7 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94023a0
 .word 0xf94027a1
-bl _p_31
+bl _p_38
 .word 0xa94167b8
 .word 0xf94013ba
 .word 0x910003bf
@@ -3193,7 +3211,7 @@ Validation_Requires_NotNull_T_GSHAREDVT_T_GSHAREDVT_string:
 .word 0xf9001ba0
 .word 0xf9001fa1
 .word 0xf94023a0
-bl _p_71
+bl _p_81
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -3224,8 +3242,8 @@ bl _p_71
 .word 0xeb1e02ff
 .word 0x54000320
 .word 0xf94023a0
-bl _p_72
-bl _p_46
+bl _p_82
+bl _p_56
 .word 0xb9802b21
 .word 0x8b010301
 .word 0xf90033a1
@@ -3235,7 +3253,7 @@ bl _p_46
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf94023a0
-bl _p_73
+bl _p_83
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf94033a1
@@ -3260,7 +3278,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf94023a0
-bl _p_73
+bl _p_83
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -3270,11 +3288,11 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9401fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_52:
 .text
@@ -3288,7 +3306,7 @@ Validation_Requires_NotNull_T_GSHAREDVT_System_Threading_Tasks_Task_1_T_GSHAREDV
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf94013a0
-bl _p_74
+bl _p_84
 .word 0xf90017a0
 .word 0xf94017a0
 .word 0xb9800000
@@ -3298,11 +3316,11 @@ bl _p_74
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9400fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 .word 0x17fffff8
 
 Lme_53:
@@ -3320,7 +3338,7 @@ Validation_Requires_NotNullAllowStructs_T_GSHAREDVT_T_GSHAREDVT_string:
 .word 0xf9001ba0
 .word 0xf9001fa1
 .word 0xf94023a0
-bl _p_75
+bl _p_85
 .word 0xaa0003f9
 .word 0xb9800320
 .word 0x91003c10
@@ -3351,8 +3369,8 @@ bl _p_75
 .word 0xeb1e02ff
 .word 0x54000320
 .word 0xf94023a0
-bl _p_76
-bl _p_46
+bl _p_86
+bl _p_56
 .word 0xb9802b21
 .word 0x8b010301
 .word 0xf90033a1
@@ -3362,7 +3380,7 @@ bl _p_46
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf94023a0
-bl _p_77
+bl _p_87
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf94033a1
@@ -3387,7 +3405,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xf9400f20
 .word 0xf9401320
 .word 0xf94023a0
-bl _p_77
+bl _p_87
 .word 0xaa0003e2
 .word 0xf9402ba0
 .word 0xf9402fa1
@@ -3397,11 +3415,11 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 .word 0xf9401fa1
 bl _mono_create_corlib_exception_1
-bl _p_20
+bl _p_23
 
 Lme_54:
 .text
@@ -3409,7 +3427,7 @@ Lme_54:
 	.no_dead_strip Validation_Requires_NotNullEmptyOrNullElements_T_GSHAREDVT_System_Collections_Generic_IEnumerable_1_T_GSHAREDVT_string
 Validation_Requires_NotNullEmptyOrNullElements_T_GSHAREDVT_System_Collections_Generic_IEnumerable_1_T_GSHAREDVT_string:
 .loc 1 1 0
-.word 0xa9b87bfd
+.word 0xa9b77bfd
 .word 0x910003fd
 .word 0xa9015fb6
 .word 0xa90267b8
@@ -3418,7 +3436,7 @@ Validation_Requires_NotNullEmptyOrNullElements_T_GSHAREDVT_System_Collections_Ge
 .word 0xaa0003f9
 .word 0xaa0103fa
 .word 0xf9401fa0
-bl _p_78
+bl _p_88
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -3437,41 +3455,43 @@ bl _p_78
 .word 0x910003f7
 .word 0xf90023bf
 .word 0xf9401fa0
-bl _p_79
-.word 0xf90037a0
+bl _p_89
+.word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_80
+bl _p_90
 .word 0xaa0003e2
-.word 0xf94037af
+.word 0xf9403faf
 .word 0xaa1903e0
 .word 0xaa1a03e1
 .word 0xd63f0040
-.word 0xd2800016
+.word 0xd2800000
+.word 0x53001c16
 .word 0xf9401fa0
-bl _p_81
-.word 0xf90033a0
+bl _p_91
+.word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_82
+bl _p_92
 .word 0xaa0003e1
-.word 0xf94033af
+.word 0xf9403baf
 .word 0xaa1903e0
 .word 0xd63f0020
 .word 0xf90023a0
-.word 0x1400004e
+.word 0x1400004f
 .word 0xf94023a0
-.word 0xf90033a0
+.word 0xf9003ba0
 .word 0xf9401fa0
-bl _p_83
-.word 0xf90037a0
+bl _p_93
+.word 0xf9003fa0
 .word 0xf9401fa0
-bl _p_84
+bl _p_94
 .word 0xaa0003e1
-.word 0xf94033a0
-.word 0xf94037af
+.word 0xf9403ba0
+.word 0xf9403faf
 .word 0xb9802b02
 .word 0x8b0202e8
 .word 0xd63f0020
-.word 0xd2800036
+.word 0xd2800020
+.word 0x53001c16
 .word 0xf9400719
 .word 0xd280005e
 .word 0xeb1e033f
@@ -3480,23 +3500,23 @@ bl _p_84
 .word 0xeb1e033f
 .word 0x54000320
 .word 0xf9401fa0
-bl _p_85
-bl _p_46
+bl _p_95
+bl _p_56
 .word 0xb9802b01
 .word 0x8b0102e1
-.word 0xf9003ba1
-.word 0xf90033a0
+.word 0xf90043a1
+.word 0xf9003ba0
 .word 0x91004000
-.word 0xf90037a0
+.word 0xf9003fa0
 .word 0xf9400f00
 .word 0xf9401300
 .word 0xf9401fa0
-bl _p_86
+bl _p_96
 .word 0xaa0003e2
-.word 0xf94037a0
-.word 0xf9403ba1
+.word 0xf9403fa0
+.word 0xf94043a1
 bl _mono_gsharedvt_value_copy
-.word 0xf94033a0
+.word 0xf9403ba0
 .word 0xaa0003f9
 .word 0x1400000b
 .word 0xb9802b00
@@ -3510,48 +3530,52 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f9
 .word 0x14000001
 .word 0xb5000359
-bl _p_39
-.word 0xf90033a0
+bl _p_48
+.word 0xf9003ba0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf90037a0
+.word 0xf9003fa0
 .word 0xaa0303e0
 .word 0xd2800001
 .word 0xaa1a03e2
 .word 0xf9400063
 .word 0xf9408070
 .word 0xd63f0200
-.word 0xf94033a0
-.word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+.word 0xf9403ba0
+.word 0xf9403fa1
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xf94023a1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x35fff500
-.word 0x94000002
+.word 0x35fff4e0
+.word 0xf90027bf
+.word 0x94000005
+.word 0xf94027a0
+.word 0xb4000040
+bl _p_44
 .word 0x14000010
-.word 0xf9002fbe
+.word 0xf90033be
 .word 0xf94023a0
 .word 0xb4000160
 .word 0xf94023a1
@@ -3560,46 +3584,46 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9402fbe
+.word 0xf94033be
 .word 0xd61f03c0
 .word 0x340000f6
 .word 0xa9415fb6
 .word 0xa94267b8
 .word 0xf9401bba
 .word 0x910003bf
-.word 0xa8c87bfd
+.word 0xa8c97bfd
 .word 0xd65f03c0
-bl _p_35
-.word 0xf90033a0
+bl _p_43
+.word 0xf9003ba0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
-.word 0xf90037a0
+.word 0xf9003fa0
 .word 0xaa0303e0
 .word 0xd2800001
 .word 0xaa1a03e2
 .word 0xf9400063
 .word 0xf9408070
 .word 0xd63f0200
-.word 0xf94033a0
-.word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+.word 0xf9403ba0
+.word 0xf9403fa1
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xaa1a03e2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 
 Lme_55:
 .text
@@ -3615,7 +3639,7 @@ Validation_Requires_NullOrNotNullElements_T_GSHAREDVT_System_Collections_Generic
 .word 0xaa0003f9
 .word 0xf90017a1
 .word 0xf9401ba0
-bl _p_87
+bl _p_97
 .word 0xaa0003f8
 .word 0xb9800300
 .word 0x91003c10
@@ -3633,12 +3657,12 @@ bl _p_87
 .word 0x17fffffc
 .word 0x910003f7
 .word 0xf9001fbf
-.word 0xb4000eb9
+.word 0xb4000f39
 .word 0xf9401ba0
-bl _p_88
+bl _p_98
 .word 0xf90033a0
 .word 0xf9401ba0
-bl _p_89
+bl _p_99
 .word 0xaa0003e1
 .word 0xf94033af
 .word 0xaa1903e0
@@ -3648,10 +3672,10 @@ bl _p_89
 .word 0xf9401fa0
 .word 0xf90033a0
 .word 0xf9401ba0
-bl _p_90
+bl _p_100
 .word 0xf90037a0
 .word 0xf9401ba0
-bl _p_91
+bl _p_101
 .word 0xaa0003e1
 .word 0xf94033a0
 .word 0xf94037af
@@ -3666,8 +3690,8 @@ bl _p_91
 .word 0xeb1e033f
 .word 0x54000320
 .word 0xf9401ba0
-bl _p_92
-bl _p_46
+bl _p_102
+bl _p_56
 .word 0xb9802b01
 .word 0x8b0102e1
 .word 0xf9003ba1
@@ -3677,7 +3701,7 @@ bl _p_46
 .word 0xf9400f00
 .word 0xf9401300
 .word 0xf9401ba0
-bl _p_93
+bl _p_103
 .word 0xaa0003e2
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -3696,14 +3720,14 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f9
 .word 0x14000001
 .word 0xb5000359
-bl _p_39
+bl _p_48
 .word 0xf90033a0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #288]
+ldr x0, [x16, #296]
 .word 0xd2800021
-bl _p_19
+bl _p_20
 .word 0xaa0003e3
 .word 0xaa0303e0
 .word 0xf90037a0
@@ -3715,29 +3739,33 @@ bl _p_19
 .word 0xd63f0200
 .word 0xf94033a0
 .word 0xf94037a1
-bl Validation_Requires_Format_string_object__
+bl _p_40
 .word 0xaa0003e1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 .word 0xf94017a2
 bl _mono_create_corlib_exception_2
-bl _p_20
+bl _p_23
 .word 0xf9401fa1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x35fff520
-.word 0x94000002
+.word 0xf90023bf
+.word 0x94000005
+.word 0xf94023a0
+.word 0xb4000040
+bl _p_44
 .word 0x14000010
-.word 0xf9002bbe
+.word 0xf9002fbe
 .word 0xf9401fa0
 .word 0xb4000160
 .word 0xf9401fa1
@@ -3746,12 +3774,12 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9402bbe
+.word 0xf9402fbe
 .word 0xd61f03c0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -3764,22 +3792,22 @@ Lme_56:
 	.align 4
 	.no_dead_strip System_Linq_Enumerable_Any_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 System_Linq_Enumerable_Any_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/external/corefx/src/System.Linq/src/System/Linq/AnyAll.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/external/corefx/src/System.Linq/src/System/Linq/AnyAll.cs"
 .loc 2 13 0 prologue_end
-.word 0xa9bc7bfd
+.word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xf9000bba
 .word 0xf9000faf
 .word 0xaa0003fa
 .word 0xf90013bf
-.word 0xb400059a
+.word 0xb400063a
 .loc 2 18 0
 .word 0xf9400fa0
-bl _p_94
+bl _p_104
 .word 0xaa0003ef
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0x92800cf0
+.word 0x928007f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3791,15 +3819,20 @@ bl _p_94
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #376]
+ldr x15, [x16, #384]
 .word 0x92800ef0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
+.word 0x53001c00
 .word 0x53001c1a
-.word 0x94000002
+.word 0xf90017bf
+.word 0x94000005
+.word 0xf94017a0
+.word 0xb4000040
+bl _p_44
 .word 0x14000010
-.word 0xf9001fbe
+.word 0xf90023be
 .word 0xf94013a0
 .word 0xb4000160
 .word 0xf94013a1
@@ -3808,28 +3841,28 @@ ldr x15, [x16, #376]
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x15, [x16, #384]
+ldr x15, [x16, #392]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9401fbe
+.word 0xf94023be
 .word 0xd61f03c0
 .loc 2 22 0
 .word 0xaa1a03e0
 .word 0xf9400bba
 .word 0x910003bf
-.word 0xa8c47bfd
+.word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 2 15 0
 
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xd2812d01
-bl _p_95
-bl _p_96
-bl _p_20
+bl _p_105
+bl _p_106
+bl _p_23
 
 Lme_57:
 .text
@@ -3958,8 +3991,9 @@ unwind_info:
 	.byte 13,29,68,152,4,13,12,31,0,68,14,80,157,10,158,9,68,13,29,21,12,31,0,68,14,48,157,6,158,5,68,13
 	.byte 29,68,151,4,152,3,68,153,2,18,12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,153,3,21,12,31,0
 	.byte 68,14,96,157,12,158,11,68,13,29,68,152,10,153,9,68,154,8,21,12,31,0,68,14,112,157,14,158,13,68,13,29
-	.byte 68,151,12,152,11,68,153,10,27,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153
-	.byte 11,68,154,10,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12
+	.byte 68,151,12,152,11,68,153,10,27,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153
+	.byte 13,68,154,12,22,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,151,14,152,13,68,153,12,16,12,31,0,68
+	.byte 14,80,157,10,158,9,68,13,29,68,154,8
 
 .text
 	.align 4
@@ -3970,773 +4004,853 @@ plt_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type:
 _p_1:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #456]
+ldr x16, [x16, #464]
 br x16
-.word 1206
+.word 1233
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #464]
+ldr x16, [x16, #472]
 br x16
-.word 1211
+.word 1238
 	.no_dead_strip plt_System_Resources_ResourceManager__ctor_string_System_Reflection_Assembly
 plt_System_Resources_ResourceManager__ctor_string_System_Reflection_Assembly:
 _p_3:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #472]
+ldr x16, [x16, #480]
 br x16
-.word 1219
+.word 1246
 	.no_dead_strip plt_Validation_Strings_get_ResourceManager
 plt_Validation_Strings_get_ResourceManager:
 _p_4:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #480]
+ldr x16, [x16, #488]
 br x16
-.word 1224
+.word 1251
 	.no_dead_strip plt_System_Resources_ResourceManager_GetString_string_System_Globalization_CultureInfo
 plt_System_Resources_ResourceManager_GetString_string_System_Globalization_CultureInfo:
 _p_5:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #488]
+ldr x16, [x16, #496]
 br x16
-.word 1226
+.word 1253
 	.no_dead_strip plt_System_Type_get_GenericTypeArguments
 plt_System_Type_get_GenericTypeArguments:
 _p_6:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
-ldr x16, [x16, #496]
-br x16
-.word 1231
-	.no_dead_strip plt_Validation_Assumes_NotNull_string_string
-plt_Validation_Assumes_NotNull_string_string:
-_p_7:
-adrp x16, mono_aot_Validation_got@PAGE+0
-add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 1236
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
-_p_8:
+.word 1258
+	.no_dead_strip plt_Validation_Assumes_True_bool_string
+plt_Validation_Assumes_True_bool_string:
+_p_7:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 1248
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
-_p_9:
+.word 1263
+	.no_dead_strip plt_Validation_Assumes_NotNull_string_string
+plt_Validation_Assumes_NotNull_string_string:
+_p_8:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 1315
-	.no_dead_strip plt_Validation_Assumes_NotNull_System_Collections_Generic_ICollection_1_T_REF_System_Collections_Generic_ICollection_1_T_REF
-plt_Validation_Assumes_NotNull_System_Collections_Generic_ICollection_1_T_REF_System_Collections_Generic_ICollection_1_T_REF:
-_p_10:
+.word 1265
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_9:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 1337
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
-_p_11:
+.word 1277
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
+_p_10:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 1355
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
-_p_12:
+.word 1344
+	.no_dead_strip plt_Validation_Assumes_NotNull_System_Collections_Generic_ICollection_1_T_REF_System_Collections_Generic_ICollection_1_T_REF
+plt_Validation_Assumes_NotNull_System_Collections_Generic_ICollection_1_T_REF_System_Collections_Generic_ICollection_1_T_REF:
+_p_11:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 1410
-	.no_dead_strip plt_Validation_Assumes_NotNull_System_Collections_Generic_IEnumerable_1_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
-plt_Validation_Assumes_NotNull_System_Collections_Generic_IEnumerable_1_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
-_p_13:
+.word 1366
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
+_p_12:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 1432
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
-_p_14:
+.word 1384
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
+_p_13:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 1450
-	.no_dead_strip plt_System_Linq_Enumerable_Any_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
-plt_System_Linq_Enumerable_Any_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
-_p_15:
+.word 1439
+	.no_dead_strip plt_Validation_Assumes_NotNull_System_Collections_Generic_IEnumerable_1_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
+plt_Validation_Assumes_NotNull_System_Collections_Generic_IEnumerable_1_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
+_p_14:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 1473
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
-_p_16:
+.word 1461
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
+_p_15:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 1515
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
-_p_17:
+.word 1479
+	.no_dead_strip plt_System_Linq_Enumerable_Any_T_REF_System_Collections_Generic_IEnumerable_1_T_REF
+plt_System_Linq_Enumerable_Any_T_REF_System_Collections_Generic_IEnumerable_1_T_REF:
+_p_16:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 1523
-	.no_dead_strip plt_Validation_Assumes_Fail_string_bool
-plt_Validation_Assumes_Fail_string_bool:
-_p_18:
+.word 1502
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
+_p_17:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 1531
-	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_19:
+.word 1544
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+_p_18:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 1533
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
-_p_20:
+.word 1552
+	.no_dead_strip plt_Validation_Assumes_Fail_string_bool
+plt_Validation_Assumes_Fail_string_bool:
+_p_19:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 1541
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
-_p_21:
+.word 1560
+	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_20:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 1586
-	.no_dead_strip plt_System_Globalization_CultureInfo_get_CurrentCulture
-plt_System_Globalization_CultureInfo_get_CurrentCulture:
-_p_22:
+.word 1562
+	.no_dead_strip plt_Validation_Assumes_Format_string_object__
+plt_Validation_Assumes_Format_string_object__:
+_p_21:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 1594
-	.no_dead_strip plt_Validation_Strings_get_ServiceMissing
-plt_Validation_Strings_get_ServiceMissing:
-_p_23:
+.word 1570
+	.no_dead_strip plt_Validation_Assumes_InternalErrorException__ctor_string_bool
+plt_Validation_Assumes_InternalErrorException__ctor_string_bool:
+_p_22:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 1599
-	.no_dead_strip plt_string_Format_System_IFormatProvider_string_object__
-plt_string_Format_System_IFormatProvider_string_object__:
-_p_24:
+.word 1572
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
+_p_23:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 1601
-	.no_dead_strip plt_Validation_Strings_get_InternalExceptionMessage
-plt_Validation_Strings_get_InternalExceptionMessage:
-_p_25:
+.word 1574
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
+_p_24:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 1606
-	.no_dead_strip plt_System_Exception__ctor_string
-plt_System_Exception__ctor_string:
-_p_26:
+.word 1619
+	.no_dead_strip plt_Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type
+plt_Validation_PrivateErrorHelpers_TrimGenericWrapper_System_Type_System_Type:
+_p_25:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 1608
-	.no_dead_strip plt_Validation_Assumes_InternalErrorException_ShowAssertDialog_bool
-plt_Validation_Assumes_InternalErrorException_ShowAssertDialog_bool:
-_p_27:
+.word 1627
+	.no_dead_strip plt_System_Globalization_CultureInfo_get_CurrentCulture
+plt_System_Globalization_CultureInfo_get_CurrentCulture:
+_p_26:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 1613
-	.no_dead_strip plt_System_Exception__ctor_string_System_Exception
-plt_System_Exception__ctor_string_System_Exception:
-_p_28:
+.word 1629
+	.no_dead_strip plt_Validation_Strings_get_ServiceMissing
+plt_Validation_Strings_get_ServiceMissing:
+_p_27:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 1615
-	.no_dead_strip plt_string_Concat_object_object_object
-plt_string_Concat_object_object_object:
-_p_29:
+.word 1634
+	.no_dead_strip plt_string_Format_System_IFormatProvider_string_object__
+plt_string_Format_System_IFormatProvider_string_object__:
+_p_28:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 1620
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
-_p_30:
+.word 1636
+	.no_dead_strip plt_Validation_Assumes_InternalErrorException__ctor_string_System_Exception_bool
+plt_Validation_Assumes_InternalErrorException__ctor_string_System_Exception_bool:
+_p_29:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 1642
-	.no_dead_strip plt_Validation_Report_Fail_string_object__
-plt_Validation_Report_Fail_string_object__:
-_p_31:
+.word 1641
+	.no_dead_strip plt_Validation_PrivateErrorHelpers_Format_string_object__
+plt_Validation_PrivateErrorHelpers_Format_string_object__:
+_p_30:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 1650
-	.no_dead_strip plt_Validation_Strings_get_Argument_EmptyString
-plt_Validation_Strings_get_Argument_EmptyString:
-_p_32:
+.word 1643
+	.no_dead_strip plt_Validation_Strings_get_InternalExceptionMessage
+plt_Validation_Strings_get_InternalExceptionMessage:
+_p_31:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 1652
-	.no_dead_strip plt_string_IsNullOrWhiteSpace_string
-plt_string_IsNullOrWhiteSpace_string:
-_p_33:
+.word 1645
+	.no_dead_strip plt_System_Exception__ctor_string
+plt_System_Exception__ctor_string:
+_p_32:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 1654
-	.no_dead_strip plt_Validation_Strings_get_Argument_Whitespace
-plt_Validation_Strings_get_Argument_Whitespace:
-_p_34:
+.word 1647
+	.no_dead_strip plt_Validation_Assumes_InternalErrorException_ShowAssertDialog_bool
+plt_Validation_Assumes_InternalErrorException_ShowAssertDialog_bool:
+_p_33:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 1659
-	.no_dead_strip plt_Validation_Strings_get_Argument_EmptyArray
-plt_Validation_Strings_get_Argument_EmptyArray:
-_p_35:
+.word 1652
+	.no_dead_strip plt_System_Exception__ctor_string_System_Exception
+plt_System_Exception__ctor_string_System_Exception:
+_p_34:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 1661
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
-_p_36:
+.word 1654
+	.no_dead_strip plt_string_Concat_object_object_object
+plt_string_Concat_object_object_object:
+_p_35:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 1695
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
-_p_37:
+.word 1659
+	.no_dead_strip plt_Validation_TypeInfoExtensions_GetGenericArguments_System_Reflection_TypeInfo
+plt_Validation_TypeInfoExtensions_GetGenericArguments_System_Reflection_TypeInfo:
+_p_36:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 1717
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
-_p_38:
+.word 1664
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
+_p_37:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 1749
-	.no_dead_strip plt_Validation_Strings_get_Argument_NullElement
-plt_Validation_Strings_get_Argument_NullElement:
-_p_39:
+.word 1683
+	.no_dead_strip plt_Validation_Report_Fail_string_object__
+plt_Validation_Report_Fail_string_object__:
+_p_38:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 1772
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
-_p_40:
+.word 1691
+	.no_dead_strip plt_Validation_Strings_get_Argument_EmptyString
+plt_Validation_Strings_get_Argument_EmptyString:
+_p_39:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 1806
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
-_p_41:
+.word 1693
+	.no_dead_strip plt_Validation_Requires_Format_string_object__
+plt_Validation_Requires_Format_string_object__:
+_p_40:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 1838
-	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
-plt__jit_icall_mono_helper_newobj_mscorlib:
-_p_42:
+.word 1695
+	.no_dead_strip plt_string_IsNullOrWhiteSpace_string
+plt_string_IsNullOrWhiteSpace_string:
+_p_41:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 1861
-	.no_dead_strip plt_System_ArgumentException__ctor_string_System_Exception
-plt_System_ArgumentException__ctor_string_System_Exception:
-_p_43:
+.word 1697
+	.no_dead_strip plt_Validation_Strings_get_Argument_Whitespace
+plt_Validation_Strings_get_Argument_Whitespace:
+_p_42:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 1891
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
-_p_44:
+.word 1702
+	.no_dead_strip plt_Validation_Strings_get_Argument_EmptyArray
+plt_Validation_Strings_get_Argument_EmptyArray:
+_p_43:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 1913
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
-_p_45:
+.word 1704
+	.no_dead_strip plt__jit_icall_mono_thread_self_abort
+plt__jit_icall_mono_thread_self_abort:
+_p_44:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 1958
-	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
-plt_wrapper_alloc_object_Alloc_intptr:
-_p_46:
+.word 1706
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
+_p_45:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 1966
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
-_p_47:
+.word 1763
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
+_p_46:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 1974
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
-_p_48:
+.word 1785
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
+_p_47:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 1999
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
-_p_49:
+.word 1817
+	.no_dead_strip plt_Validation_Strings_get_Argument_NullElement
+plt_Validation_Strings_get_Argument_NullElement:
+_p_48:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 2033
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
-_p_50:
+.word 1840
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
+_p_49:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 2055
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
-_p_51:
+.word 1874
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
+_p_50:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 2092
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
-_p_52:
+.word 1906
+	.no_dead_strip plt_Validation_Requires_FailRange_string_string
+plt_Validation_Requires_FailRange_string_string:
+_p_51:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 2115
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
-_p_53:
+.word 1929
+	.no_dead_strip plt__jit_icall_mono_helper_newobj_mscorlib
+plt__jit_icall_mono_helper_newobj_mscorlib:
+_p_52:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 2160
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
-_p_54:
+.word 1931
+	.no_dead_strip plt_System_ArgumentException__ctor_string_System_Exception
+plt_System_ArgumentException__ctor_string_System_Exception:
+_p_53:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 2194
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
-_p_55:
+.word 1961
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
+_p_54:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 2216
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
-_p_56:
+.word 1983
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
+_p_55:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 2253
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
-_p_57:
+.word 2028
+	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
+plt_wrapper_alloc_object_Alloc_intptr:
+_p_56:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 2276
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
-_p_58:
+.word 2036
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
+_p_57:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 2331
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
-_p_59:
+.word 2044
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
+_p_58:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 2376
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
-_p_60:
+.word 2069
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
+_p_59:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 2384
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
-_p_61:
+.word 2103
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
+_p_60:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 2409
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
-_p_62:
+.word 2125
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
+_p_61:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 2434
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
-_p_63:
+.word 2162
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
+_p_62:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 2459
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
-_p_64:
+.word 2185
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
+_p_63:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 2504
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
-_p_65:
+.word 2230
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
+_p_64:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 2512
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
-_p_66:
+.word 2264
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
+_p_65:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 2520
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
-_p_67:
+.word 2286
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
+_p_66:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 2545
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
-_p_68:
+.word 2323
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
+_p_67:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 2590
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
-_p_69:
+.word 2346
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
+_p_68:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 2598
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
-_p_70:
+.word 2401
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
+_p_69:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 2606
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
-_p_71:
+.word 2446
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
+_p_70:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 2631
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
-_p_72:
+.word 2454
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
+_p_71:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 2676
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
-_p_73:
+.word 2479
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
+_p_72:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 2684
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
-_p_74:
+.word 2504
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
+_p_73:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 2709
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
-_p_75:
+.word 2529
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
+_p_74:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 2751
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
-_p_76:
+.word 2574
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
+_p_75:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 2796
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
-_p_77:
+.word 2582
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
+_p_76:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 2804
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
-_p_78:
+.word 2590
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
+_p_77:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 2829
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
-_p_79:
+.word 2615
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
+_p_78:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 2883
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
-_p_80:
+.word 2660
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
+_p_79:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 2905
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
-_p_81:
+.word 2668
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
+_p_80:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 2951
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
-_p_82:
+.word 2676
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
+_p_81:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 2974
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
-_p_83:
+.word 2701
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
+_p_82:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 3019
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
-_p_84:
+.word 2746
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
+_p_83:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 3042
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
-_p_85:
+.word 2754
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
+_p_84:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3073
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
-_p_86:
+.word 2779
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
+_p_85:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3081
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
-_p_87:
+.word 2821
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
+_p_86:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3106
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
-_p_88:
+.word 2866
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
+_p_87:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3160
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
-_p_89:
+.word 2874
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
+_p_88:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3183
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
-_p_90:
+.word 2899
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
+_p_89:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3228
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
-_p_91:
+.word 2953
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
+_p_90:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3251
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
-_p_92:
+.word 2975
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
+_p_91:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3282
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
-_p_93:
+.word 3021
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
+_p_92:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3290
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
-_p_94:
+.word 3044
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
+_p_93:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3325
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr
-plt__jit_icall_mono_helper_ldstr:
-_p_95:
+.word 3089
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
+_p_94:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3348
-	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
-plt_System_Linq_Error_ArgumentNull_string:
-_p_96:
+.word 3112
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
+_p_95:
 adrp x16, mono_aot_Validation_got@PAGE+0
 add x16, x16, mono_aot_Validation_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3368
+.word 3143
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
+_p_96:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1224]
+br x16
+.word 3151
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
+_p_97:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1232]
+br x16
+.word 3176
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
+_p_98:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1240]
+br x16
+.word 3230
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
+_p_99:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1248]
+br x16
+.word 3253
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
+_p_100:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1256]
+br x16
+.word 3298
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
+_p_101:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1264]
+br x16
+.word 3321
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
+_p_102:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1272]
+br x16
+.word 3352
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
+_p_103:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1280]
+br x16
+.word 3360
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
+_p_104:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1288]
+br x16
+.word 3395
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr
+plt__jit_icall_mono_helper_ldstr:
+_p_105:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1296]
+br x16
+.word 3418
+	.no_dead_strip plt_System_Linq_Error_ArgumentNull_string
+plt_System_Linq_Error_ArgumentNull_string:
+_p_106:
+adrp x16, mono_aot_Validation_got@PAGE+0
+add x16, x16, mono_aot_Validation_got@PAGEOFF
+ldr x16, [x16, #1304]
+br x16
+.word 3438
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Validation_got, 1224
+.lcomm mono_aot_Validation_got, 1312
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -4768,7 +4882,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_Validation_got
 	.align 3
@@ -4785,6 +4899,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -4836,13 +4952,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 56,1224,97,88,66,391195135,0,4604
-	.long 128,8,8,10,0,24,5800,1184
+	.long 57,1312,107,88,66,391195135,0,4737
+	.long 128,8,8,9,0,25,5936,1192
 	.long 912,536,0,728,872,632,0,424
-	.long 136,0,0,0,0,0,0,0
+	.long 136,1184,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 106,112,239,42,101,239,173,141,106,173,117,157,167,19,153,111
+	.long 0,0
+	.byte 138,141,149,6,186,235,7,156,195,139,158,149,75,104,146,233
 	.globl _mono_aot_module_Validation_info
 	.align 3
 _mono_aot_module_Validation_info:
@@ -7099,7 +7215,7 @@ LTDIE_30:
 LDIFF_SYM339=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM339
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM340=LTDIE_28_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM340
@@ -7127,7 +7243,7 @@ LTDIE_31:
 LDIFF_SYM344=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM344
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM345=LTDIE_28_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM345
@@ -7155,47 +7271,47 @@ LTDIE_28:
 LDIFF_SYM349=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM349
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM350=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM350
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM351=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM351
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM352=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM352
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM353=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM353
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM354=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM354
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM355=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM355
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM356=LTDIE_29_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM356
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM357=LTDIE_30_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM357
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM358=LTDIE_31_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM358
@@ -9066,7 +9182,7 @@ LTDIE_60:
 LDIFF_SYM634=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM634
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM635=LTDIE_58_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM635
@@ -9094,7 +9210,7 @@ LTDIE_61:
 LDIFF_SYM639=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM639
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM640=LTDIE_58_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM640
@@ -9122,47 +9238,47 @@ LTDIE_58:
 LDIFF_SYM644=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM644
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM645=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM645
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM646=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM646
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM647=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM647
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM648=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM648
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM649=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM649
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM650=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM650
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM651=LTDIE_59_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM651
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM652=LTDIE_60_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM652
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM653=LTDIE_61_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM653
@@ -11851,7 +11967,7 @@ Lfde83_start:
 LDIFF_SYM1016=Lme_55 - Validation_Requires_NotNullEmptyOrNullElements_T_GSHAREDVT_System_Collections_Generic_IEnumerable_1_T_GSHAREDVT_string
 	.long LDIFF_SYM1016
 	.long 0
-	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,150,14,151,13,68,152,12,153,11,68,154,10
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,150,16,151,15,68,152,14,153,13,68,154,12
 	.align 3
 Lfde83_end:
 
@@ -12017,7 +12133,7 @@ Lfde85_start:
 LDIFF_SYM1038=Lme_57 - System_Linq_Enumerable_Any_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 	.long LDIFF_SYM1038
 	.long 0
-	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,154,8
 	.align 3
 Lfde85_end:
 

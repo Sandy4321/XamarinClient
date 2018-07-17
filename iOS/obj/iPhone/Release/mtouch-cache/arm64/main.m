@@ -44,8 +44,6 @@ extern void *mono_aot_module_MvvmCross_Platform_info;
 extern void *mono_aot_module_MvvmCross_Plugins_Fingerprint_info;
 extern void *mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info;
 extern void *mono_aot_module_Plugin_Fingerprint_info;
-extern void *mono_aot_module_SlideOverKit_iOS_info;
-extern void *mono_aot_module_SlideOverKit_info;
 extern void *mono_aot_module_FormsPinView_iOS_info;
 extern void *mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info;
 extern void *mono_aot_module_ZXingNetMobile_info;
@@ -98,8 +96,6 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_MvvmCross_Plugins_Fingerprint_info);
 	mono_aot_register_module (mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Fingerprint_info);
-	mono_aot_register_module (mono_aot_module_SlideOverKit_iOS_info);
-	mono_aot_register_module (mono_aot_module_SlideOverKit_info);
 	mono_aot_register_module (mono_aot_module_FormsPinView_iOS_info);
 	mono_aot_register_module (mono_aot_module_ZXing_Net_Mobile_Forms_iOS_info);
 	mono_aot_register_module (mono_aot_module_ZXingNetMobile_info);
@@ -116,8 +112,6 @@ void xamarin_register_assemblies_impl ()
 	xamarin_open_and_register ("Xamarin.Auth.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Rg.Plugins.Popup.IOS.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
-	xamarin_open_and_register ("SlideOverKit.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("FormsPinView.iOS.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
@@ -141,6 +135,7 @@ void xamarin_setup_impl ()
 	xamarin_arch_name = "arm64";
 	xamarin_marshal_objectivec_exception_mode = MarshalObjectiveCExceptionModeDisable;
 	setenv ("MONO_GC_PARAMS", "nursery-size=512k,major=marksweep", 1);
+	xamarin_supports_dynamic_registration = TRUE;
 }
 
 int main (int argc, char **argv)

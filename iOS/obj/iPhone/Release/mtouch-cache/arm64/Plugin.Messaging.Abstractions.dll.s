@@ -61,7 +61,7 @@ mono_aot_Plugin_Messaging_Abstractions_plt:
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Plugin_Messaging_Abstractions_got, 200
+.lcomm mono_aot_Plugin_Messaging_Abstractions_got, 208
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -93,7 +93,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_Plugin_Messaging_Abstractions_got
 	.align 3
@@ -110,6 +110,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -161,13 +163,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 24,200,1,24,66,391195135,0,306
-	.long 128,8,8,10,0,24,800,488
+	.long 25,208,1,24,66,391195135,0,333
+	.long 128,8,8,9,0,25,840,496
 	.long 384,200,0,304,352,256,0,192
-	.long 48,0,0,0,0,0,0,0
+	.long 48,488,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 32,85,125,244,132,149,218,99,240,61,238,36,85,235,101,205
+	.long 0,0
+	.byte 54,121,96,251,98,252,218,39,211,195,17,97,48,156,240,143
 	.globl _mono_aot_module_Plugin_Messaging_Abstractions_info
 	.align 3
 _mono_aot_module_Plugin_Messaging_Abstractions_info:

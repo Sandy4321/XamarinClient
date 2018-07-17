@@ -21,33 +21,7 @@ Function=WriteZStream
 Function=xamarin_start_wwan
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/System.dll
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_1
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_2
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_3
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_4
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_5
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_6
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_7
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_8
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_localized_string_format_9
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_init_nsthread
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=UIApplicationMain
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+Function=xamarin_find_protocol_wrapper_type
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
@@ -127,13 +101,9 @@ Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Int64
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Int64
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__Vector2_objc_msgSend
+Function=xamarin_simd__void_objc_msgSend_NMatrix4
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__Vector2_objc_msgSendSuper
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__Vector2_objc_msgSend_stret
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__Vector2_objc_msgSendSuper_stret
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__NMatrix4x3_objc_msgSend
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
@@ -170,6 +140,14 @@ Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt32_nint_UInt32
 Function=xamarin_IntPtr_objc_msgSend_IntPtr_UInt64_nint_UInt64
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UInt64_nint_UInt64
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSend_Vector2
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
@@ -571,10 +549,6 @@ Function=xamarin_simd__void_objc_msgSend_Matrix4
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__void_objc_msgSendSuper_Matrix4
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSend_NMatrix4
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4
-	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UInt32_Vector2
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UInt32_Vector2
@@ -938,6 +912,34 @@ Function=xamarin_simd__Vector2_objc_msgSendSuper_nint
 Function=xamarin_simd__Vector2_objc_msgSend_stret_nint
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_nint
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_1
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_2
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_3
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_4
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_5
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_6
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_7
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_8
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_9
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_init_nsthread
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/Xamarin.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_BITHockeyManager
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Debug/mtouch-cache/Link/HockeySDK.iOSBindings.dll

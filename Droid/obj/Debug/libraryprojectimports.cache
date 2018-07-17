@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj/Debug/lp/4/jl/formsviewgroup.jar</Jar>
-    <Jar>obj/Debug/lp/10/jl/__reference__sdk-v1.0.0.jar</Jar>
-    <Jar>obj/Debug/lp/10/jl/__reference__pass-v1.2.0.jar</Jar>
-    <Jar>obj/Debug/lp/24/jl/support-annotations.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/10/jl/__reference__pass-v1.2.0.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/10/jl/__reference__sdk-v1.0.0.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/23/jl/bin/classes.jar</Jar>
@@ -27,71 +23,8 @@
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/4/jl/formsviewgroup.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/5/jl/bin/classes.jar</Jar>
   </Jars>
-  <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/1/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/2/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/5/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/6/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/11/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/15/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/16/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/17/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/18/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/19/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/20/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/21/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/29/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/32/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/33/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/34/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/35/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/36/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/38/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/40/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/46/jl/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/49/jl/res</ResolvedResourceDirectory>
-  </ResolvedResourceDirectories>
-  <ResolvedAssetDirectories>
-    <ResolvedAssetDirectory>obj/Debug/lp/1/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/2/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/5/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/6/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/11/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/15/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/16/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/17/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/18/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/19/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/20/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/21/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/33/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/40/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/46/jl/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/lp/49/jl/assets</ResolvedAssetDirectory>
-  </ResolvedAssetDirectories>
+  <ResolvedResourceDirectories />
+  <ResolvedAssetDirectories />
   <ResolvedEnvironmentFiles />
-  <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/1.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/2.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/5.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/6.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/11.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/15.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/16.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/17.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/18.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/19.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/20.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/21.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/29.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/32.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/33.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/34.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/35.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/36.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/38.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/40.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/46.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/Yiding/Documents/XamarinClient/Droid/obj/Debug/lp/49.stamp</ResolvedResourceDirectoryStamp>
-  </ResolvedResourceDirectoryStamps>
+  <ResolvedResourceDirectoryStamps />
 </Paths>

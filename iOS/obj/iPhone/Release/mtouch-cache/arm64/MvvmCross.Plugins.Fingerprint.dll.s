@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "MvvmCross.Plugins.Fingerprint.dll"
 	.asciz ""
 
@@ -129,17 +129,17 @@ MvvmCross_Plugins_Fingerprint_PluginLoader_EnsureLoaded:
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #192]
+ldr x15, [x16, #200]
 bl _p_1
 .word 0xaa0003e1
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #208]
+ldr x15, [x16, #216]
 .word 0xaa0103e0
 .word 0xf9400021
 .word 0x928006f0
@@ -174,14 +174,14 @@ MvvmCross_Plugins_Fingerprint_PluginLoader__cctor:
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #216]
+ldr x0, [x16, #224]
 .word 0xd2800201
 bl _p_2
 .word 0xaa0003e1
 
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #224]
+ldr x0, [x16, #232]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c17bfd
@@ -229,21 +229,21 @@ plt_MvvmCross_Platform_Mvx_Resolve_MvvmCross_Platform_Plugins_IMvxPluginManager:
 _p_1:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x16, [x16, #240]
+ldr x16, [x16, #248]
 br x16
-.word 317
+.word 344
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
 adrp x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_MvvmCross_Plugins_Fingerprint_got@PAGEOFF
-ldr x16, [x16, #248]
+ldr x16, [x16, #256]
 br x16
-.word 329
+.word 356
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_MvvmCross_Plugins_Fingerprint_got, 256
+.lcomm mono_aot_MvvmCross_Plugins_Fingerprint_got, 264
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -275,7 +275,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_MvvmCross_Plugins_Fingerprint_got
 	.align 3
@@ -292,6 +292,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -343,13 +345,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 29,256,3,4,66,391195135,0,378
-	.long 128,8,8,10,0,24,1000,616
+	.long 30,264,3,4,66,391195135,0,405
+	.long 128,8,8,9,0,25,1040,624
 	.long 344,184,0,288,320,232,0,176
-	.long 32,0,0,0,0,0,0,0
+	.long 32,616,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 171,58,201,72,123,235,9,12,217,86,174,82,223,205,148,197
+	.long 0,0
+	.byte 232,24,74,4,137,20,74,31,139,107,122,73,39,135,243,119
 	.globl _mono_aot_module_MvvmCross_Plugins_Fingerprint_info
 	.align 3
 _mono_aot_module_MvvmCross_Plugins_Fingerprint_info:

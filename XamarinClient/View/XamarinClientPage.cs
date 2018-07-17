@@ -294,21 +294,19 @@ namespace XamarinClient
                     client.ServerList.Add(new Tuple<string, int>(server.host, server.port));
                 }
 
-                Device.BeginInvokeOnMainThread(async () =>{
-                    int balance = await client.BalanceFromAccountTable();
-                    Balance.Text = balance.ToString();
-                });
-
                 Device.BeginInvokeOnMainThread(async () => 
                 { 
-                    await client.InitFromBootstrap();
-                    List<UtxoOutput> list = client.TxService.UtxoTable.FindForAccount(acc.address);
+                    await client.InitUserUtxo();
+                    List<UtxoOutput> list = client.userTxService.userUtxo.UtxoOutputs;
                     UtxoTable.Clear();
                     foreach (UtxoOutput u in list)
                     {
                         if (u != null) UtxoTable.Add(new UtxoDisplay(u));
                     }
                     Refresh.IsEnabled = true;
+
+                    int balance = client.GetBalance();
+                    Balance.Text = balance.ToString();
                 });
 
                 Device.BeginInvokeOnMainThread(async ()=>

@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "Rg.Plugins.Popup.Platform.dll"
 	.asciz ""
 
@@ -128,7 +128,7 @@ Rg_Plugins_Popup_Platform_Renderers_Loader_Load:
 
 adrp x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 bl _p_1
 bl _p_2
 .word 0x910003bf
@@ -175,21 +175,21 @@ plt__jit_icall_ves_icall_object_new_specific:
 _p_1:
 adrp x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGEOFF
-ldr x16, [x16, #208]
+ldr x16, [x16, #216]
 br x16
-.word 264
+.word 291
 	.no_dead_strip plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__ctor
 plt_Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer__ctor:
 _p_2:
 adrp x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGE+0
 add x16, x16, mono_aot_Rg_Plugins_Popup_Platform_got@PAGEOFF
-ldr x16, [x16, #216]
+ldr x16, [x16, #224]
 br x16
-.word 296
+.word 323
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Rg_Plugins_Popup_Platform_got, 224
+.lcomm mono_aot_Rg_Plugins_Popup_Platform_got, 232
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -221,7 +221,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_Rg_Plugins_Popup_Platform_got
 	.align 3
@@ -238,6 +238,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -289,13 +291,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 25,224,3,2,66,391195135,0,357
-	.long 128,8,8,10,0,24,976,608
+	.long 26,232,3,2,66,391195135,0,384
+	.long 128,8,8,9,0,25,1008,616
 	.long 344,184,0,288,320,232,0,176
-	.long 32,0,0,0,0,0,0,0
+	.long 32,608,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 27,235,75,47,6,11,89,162,148,68,229,72,204,18,75,185
+	.long 0,0
+	.byte 36,235,204,105,116,169,204,44,80,218,155,163,119,160,153,221
 	.globl _mono_aot_module_Rg_Plugins_Popup_Platform_info
 	.align 3
 _mono_aot_module_Rg_Plugins_Popup_Platform_info:

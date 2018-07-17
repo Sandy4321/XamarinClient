@@ -16,13 +16,15 @@ Function=WriteZStream
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
 Function=xamarin_start_wwan
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
-Function=UIApplicationMain
+Function=xamarin_find_protocol_wrapper_type
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_IntPtr_objc_msgSend_IntPtr
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr
+	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Xamarin.iOS.dll
 ObjectiveCClass=OBJC_CLASS_$_BITHockeyManager
 	/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/HockeySDK.iOSBindings.dll

@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "Plugin.Fingerprint.dll"
 	.asciz ""
 
@@ -128,7 +128,7 @@ Plugin_Fingerprint_CrossFingerprint_get_Current:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf940003e
@@ -148,11 +148,11 @@ Plugin_Fingerprint_CrossFingerprint_CreateFingerprint:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #200]
+ldr x0, [x16, #208]
 .word 0xd2800301
 bl _p_2
 .word 0xf9000ba0
-bl Plugin_Fingerprint_FingerprintImplementation__ctor
+bl _p_3
 .word 0xf9400ba0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -169,39 +169,39 @@ Plugin_Fingerprint_CrossFingerprint_Dispose:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400000
 .word 0xb40005c0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9400001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_3
+bl _p_4
 .word 0x53001c00
 .word 0x340004a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2800e01
 bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xf9001401
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #224]
+ldr x1, [x16, #232]
 .word 0xf9002001
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -211,18 +211,18 @@ ldr x1, [x16, #232]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800501
 bl _p_2
 .word 0xf9400fa1
 .word 0xf9000ba0
 .word 0xd2800022
-bl _p_4
+bl _p_5
 .word 0xf9400ba1
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -239,17 +239,17 @@ Plugin_Fingerprint_CrossFingerprint_NotImplementedInReferenceAssembly:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #248]
+ldr x0, [x16, #256]
 .word 0xf9000fa0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #256]
+ldr x0, [x16, #264]
 .word 0xd2801101
 bl _p_2
 .word 0xf9400fa1
 .word 0xf9000ba0
-bl _p_5
+bl _p_6
 .word 0xf9400ba0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -279,23 +279,23 @@ Plugin_Fingerprint_CrossFingerprint__cctor:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #208]
+ldr x0, [x16, #216]
 .word 0xd2800e01
 bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #216]
+ldr x1, [x16, #224]
 .word 0xf9001401
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #224]
+ldr x1, [x16, #232]
 .word 0xf9002001
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #232]
+ldr x1, [x16, #240]
 .word 0xf9401422
 .word 0xf9000c02
 .word 0xf9401021
@@ -305,18 +305,18 @@ ldr x1, [x16, #232]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #240]
+ldr x0, [x16, #248]
 .word 0xd2800501
 bl _p_2
 .word 0xf9400fa1
 .word 0xf9000ba0
 .word 0xd2800022
-bl _p_4
+bl _p_5
 .word 0xf9400ba1
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #192]
+ldr x0, [x16, #200]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -332,7 +332,7 @@ Plugin_Fingerprint_FingerprintImplementation__ctor:
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_6
+bl _p_7
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -343,22 +343,22 @@ Lme_6:
 	.no_dead_strip Plugin_Fingerprint_FingerprintImplementation_NativeAuthenticateAsync_Plugin_Fingerprint_Abstractions_AuthenticationRequestConfiguration_System_Threading_CancellationToken
 Plugin_Fingerprint_FingerprintImplementation_NativeAuthenticateAsync_Plugin_Fingerprint_Abstractions_AuthenticationRequestConfiguration_System_Threading_CancellationToken:
 .loc 1 1 0
-.word 0xa9ae7bfd
+.word 0xa9b47bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xf90013a2
-.word 0x910303a0
+.word 0x910183a0
 .word 0xd2800001
 .word 0xd2800c02
-bl _p_7
+bl _p_8
 .word 0xd2800000
-.word 0xf90057a0
-.word 0xf9005ba0
-.word 0xf9005fa0
-.word 0x910303a1
+.word 0xf90027a0
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0x910183a1
 .word 0xf9400ba0
-.word 0xf90073a0
+.word 0xf90043a0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -371,9 +371,9 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910303a1
+.word 0x910183a1
 .word 0xf9400fa0
-.word 0xf90077a0
+.word 0xf90047a0
 .word 0x9100a021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -386,7 +386,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910303a0
+.word 0x910183a0
 .word 0x9100c002
 .word 0xaa0203e1
 .word 0xf94013a0
@@ -402,11 +402,11 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0x910303a0
+.word 0x910183a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #264]
+ldr x1, [x16, #272]
 .word 0xd2800001
 .word 0xf9001ba1
 .word 0xf9001fa1
@@ -456,35 +456,31 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb900c3be
-.word 0x910303a1
-.word 0x910123a0
-.word 0xd2800c02
-bl _p_8
-.word 0x910123a0
+.word 0xb90063be
+.word 0x910183a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90057a1
+.word 0xf90027a1
 .word 0xf9400401
-.word 0xf9005ba1
+.word 0xf9002ba1
 .word 0xf9400800
-.word 0xf9005fa0
-.word 0x9102a3a0
-.word 0x910303a1
+.word 0xf9002fa0
+.word 0x910123a0
+.word 0x910183a1
+
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x15, [x16, #280]
+bl _p_9
+.word 0x910183a0
+.word 0x91002000
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x15, [x16, #272]
-bl _p_9
-.word 0x910303a0
-.word 0x91002000
-
-adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
-add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
 bl _p_10
 .word 0x910003bf
-.word 0xa8d27bfd
+.word 0xa8cc7bfd
 .word 0xd65f03c0
 
 Lme_7:
@@ -493,24 +489,24 @@ Lme_7:
 	.no_dead_strip Plugin_Fingerprint_FingerprintImplementation_GetAvailabilityAsync_bool
 Plugin_Fingerprint_FingerprintImplementation_GetAvailabilityAsync_bool:
 .loc 1 1 0
-.word 0xa9b57bfd
+.word 0xa9b87bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
 .word 0xd2800000
-.word 0xf90043a0
-.word 0xf90047a0
-.word 0xf9004ba0
-.word 0xf9004fa0
-.word 0xf90053a0
-.word 0xf90057a0
-.word 0xd2800000
+.word 0xf9002ba0
+.word 0xf9002fa0
+.word 0xf90033a0
 .word 0xf90037a0
 .word 0xf9003ba0
 .word 0xf9003fa0
-.word 0x910203a1
+.word 0xd2800000
+.word 0xf9001fa0
+.word 0xf90023a0
+.word 0xf90027a0
+.word 0x910143a1
 .word 0xf9400ba0
-.word 0xf90053a0
+.word 0xf9003ba0
 .word 0x91008021
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -524,12 +520,12 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x394063a0
-.word 0x3902a3a0
-.word 0x910203a0
+.word 0x3901e3a0
+.word 0x910143a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #280]
+ldr x1, [x16, #288]
 .word 0xd2800001
 .word 0xf90013a1
 .word 0xf90017a1
@@ -579,43 +575,31 @@ ldr x2, [x16, #16]
 .word 0x3900003e
 .word 0x9280001e
 .word 0xf2bffffe
-.word 0xb90083be
-.word 0xf94043a0
-.word 0xf9001fa0
-.word 0xf94047a0
-.word 0xf90023a0
-.word 0xf9404ba0
-.word 0xf90027a0
-.word 0xf9404fa0
-.word 0xf9002ba0
-.word 0xf94053a0
-.word 0xf9002fa0
-.word 0xf94057a0
-.word 0xf90033a0
-.word 0x9100e3a0
+.word 0xb90053be
+.word 0x910143a0
 .word 0x91002000
 .word 0xf9400001
-.word 0xf90037a1
+.word 0xf9001fa1
 .word 0xf9400401
-.word 0xf9003ba1
+.word 0xf90023a1
 .word 0xf9400800
-.word 0xf9003fa0
-.word 0x9101a3a0
-.word 0x910203a1
+.word 0xf90027a0
+.word 0x9100e3a0
+.word 0x910143a1
+
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x15, [x16, #296]
+bl _p_11
+.word 0x910143a0
+.word 0x91002000
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x15, [x16, #288]
-bl _p_11
-.word 0x910203a0
-.word 0x91002000
-
-adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
-add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #280]
 bl _p_12
 .word 0x910003bf
-.word 0xa8cb7bfd
+.word 0xa8c87bfd
 .word 0xd65f03c0
 
 Lme_8:
@@ -634,12 +618,12 @@ Plugin_Fingerprint_FingerprintImplementation_SetupContextProperties_Plugin_Finge
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #296]
+ldr x0, [x16, #304]
 .word 0xf9001ba0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800401
 bl _p_2
 .word 0xf9401ba1
@@ -664,12 +648,12 @@ bl _p_14
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #312]
+ldr x0, [x16, #320]
 .word 0xf9001ba0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800401
 bl _p_2
 .word 0xf9401ba1
@@ -745,12 +729,12 @@ Plugin_Fingerprint_FingerprintImplementation_CreateNewContext:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #320]
+ldr x0, [x16, #328]
 .word 0xf9001ba0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #304]
+ldr x0, [x16, #312]
 .word 0xd2800401
 bl _p_2
 .word 0xf9401ba1
@@ -773,7 +757,7 @@ bl _p_17
 .word 0xf940003e
 bl _p_18
 .word 0xaa1a03e0
-bl _p_6
+bl _p_7
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8c47bfd
@@ -791,7 +775,7 @@ Plugin_Fingerprint_FingerprintImplementation_CreateLaContext:
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #328]
+ldr x0, [x16, #336]
 bl _p_19
 bl _p_20
 bl _p_21
@@ -806,12 +790,12 @@ bl _p_22
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #336]
+ldr x0, [x16, #344]
 bl _p_23
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #344]
+ldr x1, [x16, #352]
 .word 0xf9400021
 .word 0xeb01001f
 .word 0x9a9f17e0
@@ -819,7 +803,7 @@ ldr x1, [x16, #344]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #352]
+ldr x0, [x16, #360]
 bl _p_19
 .word 0xf90013a0
 bl _p_24
@@ -873,13 +857,13 @@ Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_MoveNe
 .word 0xf9401ba0
 .word 0xf940101a
 .word 0xb98063a0
-.word 0x34000ca0
+.word 0x34000d00
 .word 0xf9401ba0
 .word 0xf9006ba0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #360]
+ldr x0, [x16, #368]
 .word 0xd2800401
 bl _p_2
 .word 0xf9406ba1
@@ -907,15 +891,18 @@ bl _p_25
 .word 0xf90067a0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54002a60
+.word 0x54002c20
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #368]
+ldr x0, [x16, #376]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf94067a0
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54002a80
 .word 0xf900103a
 .word 0x91008022
 .word 0xd349fc42
@@ -932,17 +919,17 @@ ldr x3, [x16, #16]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #376]
+ldr x2, [x16, #384]
 .word 0xf9001422
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #384]
+ldr x2, [x16, #392]
 .word 0xf9002022
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #392]
+ldr x2, [x16, #400]
 .word 0xf9401443
 .word 0xf9000c23
 .word 0xf9401042
@@ -984,7 +971,7 @@ ldr x3, [x16, #16]
 .word 0xf9402ba1
 .word 0xf9000001
 .word 0xb98063a0
-.word 0x34000980
+.word 0x34000a00
 .word 0xf9401ba0
 .word 0xf9401400
 .word 0xaa0003e1
@@ -1008,29 +995,29 @@ ldr x3, [x16, #16]
 bl _p_27
 .word 0xaa0003e1
 .word 0x910163a0
-.word 0xf9003ba0
+.word 0xf9003fa0
 .word 0xaa0103e0
 .word 0xf940003e
 bl _p_28
-.word 0xf9403bbe
+.word 0xf9403fbe
 .word 0xf90003c0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #400]
+ldr x0, [x16, #408]
 .word 0xf9402fa0
 .word 0xaa0003e1
 .word 0xf940003e
 .word 0xb9804400
 .word 0xf90063a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94063a0
 .word 0xd280001e
 .word 0xf2a02c1e
 .word 0xa1e0000
 .word 0x6b1f001f
 .word 0x9a9f97e0
-.word 0x350005a0
+.word 0x35000620
 .word 0xf9401ba0
 .word 0xb90063bf
 .word 0xb900001f
@@ -1059,10 +1046,14 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #408]
+ldr x15, [x16, #416]
 bl _p_29
-.word 0x94000019
-.word 0x140000bd
+.word 0xf9003bbf
+.word 0x94000020
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_30
+.word 0x140000c1
 .word 0xf9401ba0
 .word 0x91016000
 .word 0xf9400000
@@ -1081,20 +1072,24 @@ bl _p_29
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #400]
-bl _p_30
+ldr x15, [x16, #408]
+bl _p_31
 .word 0xf9002fbf
 .word 0xaa0003f9
-.word 0x94000002
+.word 0xf9003bbf
+.word 0x94000005
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_30
 .word 0x1400000a
-.word 0xf90053be
+.word 0xf90057be
 .word 0xb98063a0
 .word 0x6b1f001f
 .word 0x5400008a
 .word 0xf9401ba0
 .word 0x91010000
-bl _p_31
-.word 0xf94053be
+bl _p_32
+.word 0xf94057be
 .word 0xd61f03c0
 .word 0xf9401ba0
 .word 0x91010000
@@ -1115,7 +1110,7 @@ bl _p_31
 .word 0xf9400b21
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_32
+bl _p_33
 .word 0x93407c00
 .word 0x93407c18
 .word 0xaa1803e0
@@ -1136,7 +1131,7 @@ bl _p_32
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #416]
+ldr x0, [x16, #424]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -1153,10 +1148,10 @@ ldr x0, [x16, #416]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #424]
+ldr x1, [x16, #432]
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_33
+bl _p_34
 .word 0x53001c00
 .word 0x340000e0
 .word 0xf9401ba0
@@ -1201,7 +1196,7 @@ bl _p_33
 .word 0xf9400b21
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_34
+bl _p_35
 .word 0xf94063a2
 .word 0xaa0203e1
 .word 0xf940003e
@@ -1223,8 +1218,8 @@ bl _p_16
 .word 0xf9401ba0
 .word 0xf9401c1a
 .word 0x14000016
-.word 0xf9003fa0
-.word 0xf9403fa0
+.word 0xf90043a0
+.word 0xf94043a0
 .word 0xf90037a0
 .word 0xf9401ba0
 .word 0x9280003e
@@ -1236,14 +1231,14 @@ bl _p_16
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
-bl _p_35
+ldr x15, [x16, #272]
 bl _p_36
-.word 0xf9005ba0
-.word 0xf9405ba0
-.word 0xb4000060
-.word 0xf9405ba0
 bl _p_37
+.word 0xf9005fa0
+.word 0xf9405fa0
+.word 0xb4000060
+.word 0xf9405fa0
+bl _p_38
 .word 0x1400000c
 .word 0xf9401ba0
 .word 0x9280003e
@@ -1254,17 +1249,20 @@ bl _p_37
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
+ldr x15, [x16, #272]
 .word 0xaa1a03e1
-bl _p_38
+bl _p_39
 .word 0xa94163b7
 .word 0xa9426bb9
 .word 0x910003bf
 .word 0xa8ce7bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd28021e0
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
+.word 0xd2801440
+.word 0xaa1103e1
+bl _p_40
 
 Lme_e:
 .text
@@ -1285,9 +1283,9 @@ Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_SetSta
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
+ldr x15, [x16, #272]
 .word 0xf9400fa1
-bl _p_40
+bl _p_41
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1327,7 +1325,7 @@ Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_MoveNext:
 .word 0xaa0303e0
 .word 0xaa1903e1
 .word 0xf940007e
-bl _p_41
+bl _p_42
 .word 0x53001c00
 .word 0x34000060
 .word 0xd280001a
@@ -1335,7 +1333,7 @@ bl _p_41
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_32
+bl _p_33
 .word 0x93407c00
 .word 0x93407c1a
 .word 0xaa1a03e0
@@ -1356,7 +1354,7 @@ bl _p_32
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #432]
+ldr x0, [x16, #440]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -1380,14 +1378,14 @@ ldr x0, [x16, #432]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #280]
-bl _p_42
-bl _p_36
+ldr x15, [x16, #288]
+bl _p_43
+bl _p_37
 .word 0xf90033a0
 .word 0xf94033a0
 .word 0xb4000060
 .word 0xf94033a0
-bl _p_37
+bl _p_38
 .word 0x1400000c
 .word 0xf94013a0
 .word 0x9280003e
@@ -1398,9 +1396,9 @@ bl _p_37
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #280]
+ldr x15, [x16, #288]
 .word 0xaa1a03e1
-bl _p_43
+bl _p_44
 .word 0xa9416bb9
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -1425,9 +1423,9 @@ Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_SetStateM
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #280]
+ldr x15, [x16, #288]
 .word 0xf9400fa1
-bl _p_44
+bl _p_45
 .word 0x910003bf
 .word 0xa8c27bfd
 .word 0xd65f03c0
@@ -1445,7 +1443,7 @@ wrapper_delegate_invoke_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerpri
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -1493,14 +1491,14 @@ ldr x0, [x16, #440]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_13:
 .text
@@ -1515,7 +1513,7 @@ wrapper_delegate_invoke_System_Func_1_Plugin_Fingerprint_Abstractions_Fingerprin
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -1563,14 +1561,14 @@ ldr x0, [x16, #440]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_14:
 .text
@@ -1587,7 +1585,7 @@ wrapper_delegate_invoke_System_Func_2_object_Plugin_Fingerprint_Abstractions_Fin
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -1639,14 +1637,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_15:
 .text
@@ -1663,7 +1661,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_Plugin_Fin
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -1713,14 +1711,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_16:
 .text
@@ -1737,7 +1735,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_Plugin_Fingerprint_Abs
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -1789,14 +1787,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_17:
 .text
@@ -1813,7 +1811,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -1863,14 +1861,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_18:
 .text
@@ -1888,7 +1886,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -1943,14 +1941,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1703e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f7
 .word 0xb5ffff80
 .word 0x17ffffc9
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_19:
 .text
@@ -1965,7 +1963,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -2013,14 +2011,14 @@ ldr x0, [x16, #440]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1a:
 .text
@@ -2037,7 +2035,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -2089,14 +2087,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1b:
 .text
@@ -2113,7 +2111,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -2163,14 +2161,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1c:
 .text
@@ -2187,7 +2185,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -2239,14 +2237,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1d:
 .text
@@ -2263,7 +2261,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -2315,14 +2313,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1e:
 .text
@@ -2339,7 +2337,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -2391,14 +2389,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_1f:
 .text
@@ -2409,7 +2407,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_Create:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 2 444 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -2482,7 +2480,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_SetStateMac
 .word 0xf9000fa1
 .word 0xf9400ba0
 .word 0xf9400fa1
-bl _p_46
+bl _p_47
 .loc 2 486 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -2509,17 +2507,17 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_get_Task:
 .word 0xaa1903e0
 .word 0xb5000420
 .word 0xf94013a0
-bl _p_47
+bl _p_48
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf94013a0
-bl _p_47
+bl _p_48
 .word 0xd2800a01
 bl _p_2
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_49
+bl _p_50
 .word 0xaa0003e1
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -2570,11 +2568,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_SetResult_T
 .word 0xb5000320
 .loc 2 593 0
 .word 0xf94017a0
-bl _p_50
+bl _p_51
 .word 0xf9001ba0
 .word 0xf940033e
 .word 0xf94017a0
-bl _p_51
+bl _p_52
 .word 0xaa0003e2
 .word 0xf9401baf
 .word 0xaa1903e0
@@ -2602,24 +2600,24 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #456]
 .word 0x39400000
 .word 0x340000c0
 .loc 2 605 0
 .word 0xaa1803e0
 .word 0xf940031e
-bl _p_52
-.word 0x93407c00
 bl _p_53
+.word 0x93407c00
+bl _p_54
 .loc 2 608 0
 .word 0xf94017a0
-bl _p_54
+bl _p_55
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf940031e
 .word 0xf94017a0
-bl _p_55
+bl _p_56
 .word 0xaa0003e2
 .word 0xaa1803e0
 .word 0xb98023a1
@@ -2632,14 +2630,14 @@ bl _p_55
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .loc 2 610 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 
 Lme_23:
 .text
@@ -2679,11 +2677,11 @@ ldr x2, [x16, #16]
 .word 0x1400000c
 .loc 2 636 0
 .word 0xf94013a0
-bl _p_57
+bl _p_58
 .word 0xf9001ba0
 .word 0xf940033e
 .word 0xf94013a0
-bl _p_58
+bl _p_59
 .word 0xaa0003e2
 .word 0xf9401baf
 .word 0xaa1903e0
@@ -2720,11 +2718,11 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_SetExceptio
 .word 0xb5000180
 .loc 2 657 0
 .word 0xf9401fa0
-bl _p_59
+bl _p_60
 .word 0xf90023a0
 .word 0xf940033e
 .word 0xf9401fa0
-bl _p_60
+bl _p_61
 .word 0xaa0003e1
 .word 0xf94023af
 .word 0xaa1903e0
@@ -2741,7 +2739,7 @@ bl _p_60
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #456]
+ldr x1, [x16, #464]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -2749,13 +2747,13 @@ ldr x1, [x16, #456]
 .loc 2 662 0
 .word 0xb50001f9
 .word 0xf9401fa0
-bl _p_61
+bl _p_62
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf940031e
 .word 0xf9401fa0
-bl _p_62
+bl _p_63
 .word 0xaa0003e2
 .word 0xaa1803e0
 .word 0xaa1a03e1
@@ -2767,13 +2765,13 @@ bl _p_62
 .word 0xf9400000
 .word 0xf9001ba0
 .word 0xf9401fa0
-bl _p_61
+bl _p_62
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf940031e
 .word 0xf9401fa0
-bl _p_63
+bl _p_64
 .word 0xaa0003e3
 .word 0xaa1803e0
 .word 0xf9401ba1
@@ -2789,23 +2787,23 @@ bl _p_63
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .loc 2 649 0
-.word 0xd29958e0
+.word 0xd29a3680
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 2 675 0
-.word 0xd299bf60
+.word 0xd29a9d00
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801ee0
+.word 0xd2801fe0
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 
 Lme_25:
 .text
@@ -2826,17 +2824,17 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT_GetTaskForR
 .word 0x14000001
 .loc 2 752 0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #464]
+ldr x1, [x16, #472]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000440
 .loc 2 754 0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -2850,7 +2848,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #472]
+ldr x2, [x16, #480]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540039a1
@@ -2860,32 +2858,32 @@ ldr x2, [x16, #472]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #480]
+ldr x0, [x16, #488]
 .word 0xf940001a
 .word 0x14000005
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #488]
+ldr x0, [x16, #496]
 .word 0xf940001a
 .word 0xf94027a0
 .loc 2 756 0
-bl _p_66
+bl _p_67
 .word 0xaa1a03e0
 .word 0x140001ba
 .loc 2 759 0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #496]
+ldr x1, [x16, #504]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000640
 .loc 2 764 0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -2899,7 +2897,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #504]
+ldr x2, [x16, #512]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54003481
@@ -2917,7 +2915,7 @@ ldr x2, [x16, #504]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #512]
+ldr x0, [x16, #520]
 .word 0xf9400000
 .word 0x9280001e
 .word 0xf2bffffe
@@ -2934,22 +2932,22 @@ ldr x0, [x16, #512]
 .word 0xf9002ba0
 .word 0xf94027a0
 .loc 2 769 0
-bl _p_66
+bl _p_67
 .word 0xaa0003e1
 .word 0xf9402ba0
 .word 0x14000181
 .loc 2 773 0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #520]
+ldr x1, [x16, #528]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -2963,23 +2961,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #528]
+ldr x2, [x16, #536]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002d61
 .word 0xb9401000
 .word 0x34002800
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #536]
+ldr x1, [x16, #544]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -2993,23 +2991,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #544]
+ldr x2, [x16, #552]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540029e1
 .word 0x39404000
 .word 0x34002480
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #552]
+ldr x1, [x16, #560]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3023,23 +3021,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #560]
+ldr x2, [x16, #568]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54002661
 .word 0x39804000
 .word 0x34002100
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #568]
+ldr x1, [x16, #576]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3053,25 +3051,25 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #576]
+ldr x2, [x16, #584]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540022e1
 .word 0x79402000
 .word 0x34001d80
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #584]
+ldr x1, [x16, #592]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340005c0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #592]
+ldr x0, [x16, #600]
 .word 0xb9800001
 .word 0xb9003ba1
 .word 0xb9800401
@@ -3081,7 +3079,7 @@ ldr x0, [x16, #592]
 .word 0xb9800c00
 .word 0xb90047a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3095,7 +3093,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #600]
+ldr x2, [x16, #608]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001e01
@@ -3112,20 +3110,20 @@ ldr x2, [x16, #600]
 .word 0xf94023a1
 .word 0xf94017a2
 .word 0xf9401ba3
-bl _p_67
+bl _p_68
 .word 0x53001c00
 .word 0x350016e0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #608]
+ldr x1, [x16, #616]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3139,23 +3137,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #616]
+ldr x2, [x16, #624]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540018c1
 .word 0xf9400800
 .word 0xb4001360
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #624]
+ldr x1, [x16, #632]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3169,23 +3167,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #632]
+ldr x2, [x16, #640]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54001541
 .word 0xf9400800
 .word 0xb4000fe0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #640]
+ldr x1, [x16, #648]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3199,23 +3197,23 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #648]
+ldr x2, [x16, #656]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x540011c1
 .word 0x79802000
 .word 0x34000c60
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #656]
+ldr x1, [x16, #664]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340002a0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xb900101a
@@ -3229,18 +3227,18 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x2, [x16, #664]
+ldr x2, [x16, #672]
 .word 0xeb02003f
 .word 0x10000011
 .word 0x54000e41
 .word 0x79402000
 .word 0x340008e0
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #672]
+ldr x1, [x16, #680]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x34000380
@@ -3248,7 +3246,7 @@ ldr x1, [x16, #672]
 .word 0x93407c00
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e1
@@ -3264,7 +3262,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x3, [x16, #680]
+ldr x3, [x16, #688]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x54000a21
@@ -3273,11 +3271,11 @@ ldr x3, [x16, #680]
 .word 0x9a9f17e0
 .word 0x35000480
 .word 0xf94027a0
-bl _p_64
+bl _p_65
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #688]
+ldr x1, [x16, #696]
 .word 0xeb01001f
 .word 0x9a9f17e0
 .word 0x340005e0
@@ -3285,7 +3283,7 @@ ldr x1, [x16, #688]
 .word 0x2a0003e0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_65
+bl _p_66
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e1
@@ -3301,7 +3299,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x3, [x16, #696]
+ldr x3, [x16, #704]
 .word 0xeb03005f
 .word 0x10000011
 .word 0x540005c1
@@ -3311,39 +3309,39 @@ ldr x3, [x16, #696]
 .word 0x34000280
 .loc 2 786 0
 .word 0xf94027a0
-bl _p_68
+bl _p_69
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf94027a0
-bl _p_69
+bl _p_70
 .word 0xf9400000
 .word 0x1400001d
 .loc 2 789 0
 .word 0x1400000a
 .loc 2 791 0
 .word 0xf94027a0
-bl _p_68
+bl _p_69
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf94027a0
-bl _p_69
+bl _p_70
 .word 0xf9400000
 .word 0x14000013
 .loc 2 795 0
 .word 0xf94027a0
-bl _p_70
+bl _p_71
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf94027a0
-bl _p_70
+bl _p_71
 .word 0xd2800a01
 bl _p_2
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_71
+bl _p_72
 .word 0xaa0003e2
 .word 0xf9402fa0
 .word 0xf9002ba0
@@ -3354,12 +3352,12 @@ bl _p_71
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801ec0
+.word 0xd2801fc0
 .word 0xaa1103e1
-bl _p_39
-.word 0xd2801e00
+bl _p_40
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_26:
 .text
@@ -3375,17 +3373,17 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_TResult_INT__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_72
+bl _p_73
 .word 0xf90017a0
 .word 0xf9400ba0
-bl _p_73
+bl _p_74
 .word 0xaa0003e1
 .word 0xf94017af
 .word 0xd2800000
 .word 0xd63f0020
 .word 0xf90013a0
 .word 0xf9400ba0
-bl _p_74
+bl _p_75
 .word 0xf94013a1
 .word 0xf9000001
 .word 0x910003bf
@@ -3397,13 +3395,13 @@ Lme_27:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_INT__ctor
 System_Threading_Tasks_Task_1_TResult_INT__ctor:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 3 91 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9400ba0
-bl _p_75
+bl _p_76
 .loc 3 93 0
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -3424,7 +3422,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_object_System_Threading_Tasks_Ta
 .word 0xf9400fa1
 .word 0xb98023a2
 .word 0xd2800023
-bl _p_76
+bl _p_77
 .loc 3 99 0
 .word 0x910003bf
 .word 0xa8c37bfd
@@ -3445,7 +3443,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_TResult_INT:
 .word 0xd2800001
 .word 0xd2800002
 .word 0xf94013a3
-bl _p_77
+bl _p_78
 .loc 3 106 0
 .word 0xf9400ba0
 .word 0xb9801ba1
@@ -3472,7 +3470,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_bool_TResult_INT_System_Threadin
 .word 0x394063a1
 .word 0xb9802ba2
 .word 0xf9401ba3
-bl _p_77
+bl _p_78
 .loc 3 112 0
 .word 0x394063a0
 .word 0x35000080
@@ -3502,7 +3500,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_78
+bl _p_79
 .word 0xaa0003e7
 .word 0xf94023a0
 .word 0xf9400fa1
@@ -3518,7 +3516,7 @@ bl _p_78
 .loc 3 165 0
 .word 0xf9400ba0
 .word 0x9100c3a1
-bl _p_79
+bl _p_80
 .loc 3 166 0
 .word 0x910003bf
 .word 0xa8c57bfd
@@ -3559,7 +3557,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #712]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -3577,7 +3575,7 @@ ldr x1, [x16, #704]
 .word 0xf94002fe
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_80
+bl _p_81
 .word 0xaa0003e9
 .word 0xaa1703e0
 .word 0xf9402fa1
@@ -3594,7 +3592,7 @@ bl _p_80
 .loc 3 326 0
 .word 0xf94017a0
 .word 0x910143a1
-bl _p_79
+bl _p_80
 .loc 3 327 0
 .word 0xa94163b7
 .word 0xf94013b9
@@ -3623,7 +3621,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xf90033a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_81
+bl _p_82
 .word 0xaa0003e7
 .word 0xf94033a0
 .word 0xf9400fa1
@@ -3636,7 +3634,7 @@ bl _p_81
 .loc 3 336 0
 .word 0xf9400ba0
 .word 0xf9402ba1
-bl _p_79
+bl _p_80
 .loc 3 337 0
 .word 0x910003bf
 .word 0xa8c77bfd
@@ -3665,7 +3663,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_1_TResult_INT_System
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xf94027a7
-bl _p_82
+bl _p_83
 .loc 3 354 0
 .word 0xb98043a0
 .word 0xd281001e
@@ -3676,19 +3674,19 @@ bl _p_82
 .word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 3 356 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xf9002ba0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_37
+bl _p_38
 
 Lme_2f:
 .text
@@ -3713,7 +3711,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Func_2_object_TResult_INT
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_83
+bl _p_84
 .word 0xaa0003e9
 .word 0xf94033a0
 .word 0xf94013a1
@@ -3727,7 +3725,7 @@ bl _p_83
 .loc 3 365 0
 .word 0xf9400fa0
 .word 0xf9400381
-bl _p_79
+bl _p_80
 .loc 3 366 0
 .word 0xf9400bbc
 .word 0x910003bf
@@ -3758,7 +3756,7 @@ System_Threading_Tasks_Task_1_TResult_INT__ctor_System_Delegate_object_System_Th
 .word 0xb98043a5
 .word 0xb9804ba6
 .word 0xf9402ba7
-bl _p_82
+bl _p_83
 .loc 3 384 0
 .word 0xb9804ba0
 .word 0xd281001e
@@ -3769,19 +3767,19 @@ bl _p_82
 .word 0xa8c77bfd
 .word 0xd65f03c0
 .loc 3 386 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_37
+bl _p_38
 
 Lme_31:
 .text
@@ -3815,12 +3813,12 @@ System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Threading_Tasks_Task_S
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402ba0
-bl _p_84
+bl _p_85
 .word 0xd2800a01
 bl _p_2
 .word 0xf9003ba0
 .word 0xf9402ba0
-bl _p_85
+bl _p_86
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa5
@@ -3839,44 +3837,44 @@ bl _p_85
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_86
+bl _p_87
 .word 0xf94033a0
 .loc 3 413 0
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 3 397 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 3 401 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 3 406 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_37
+bl _p_38
 
 Lme_32:
 .text
@@ -3915,12 +3913,12 @@ System_Threading_Tasks_Task_1_TResult_INT_StartNew_System_Threading_Tasks_Task_S
 .word 0x2a1e0000
 .word 0xf9003fa0
 .word 0xf9402fa0
-bl _p_87
+bl _p_88
 .word 0xd2800a01
 bl _p_2
 .word 0xf9003ba0
 .word 0xf9402fa0
-bl _p_88
+bl _p_89
 .word 0xaa0003e9
 .word 0xf9403ba0
 .word 0xf9403fa6
@@ -3941,44 +3939,44 @@ bl _p_88
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_86
+bl _p_87
 .word 0xf94033a0
 .loc 3 437 0
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
 .loc 3 422 0
-.word 0xd29818a0
+.word 0xd298f640
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 3 426 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 3 430 0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xf90033a0
-.word 0xd2980400
+.word 0xd298e1a0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e2
 .word 0xf94033a1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_37
+bl _p_38
 
 Lme_33:
 .text
@@ -3994,7 +3992,7 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetResult_TResult_INT:
 .word 0xf9400fa0
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -4010,7 +4008,7 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetResult_TResult_INT:
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_89
+bl _p_90
 .word 0x53001c00
 .word 0x34000460
 .loc 3 474 0
@@ -4025,7 +4023,7 @@ bl _p_89
 .word 0xf90017a0
 .word 0xf9400fa0
 .word 0xb9804401
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xd280001e
 .word 0xf2a0201e
@@ -4033,23 +4031,23 @@ bl _p_89
 .word 0x885f7c10
 .word 0x8811fc01
 .word 0x35ffffd1
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa1003e0
 .loc 3 485 0
 .word 0xf9400fa0
 .word 0xf9401c00
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xaa0003fa
 .loc 3 486 0
 .word 0xb4000080
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_90
+bl _p_91
 .loc 3 488 0
 .word 0xf9400fa0
-bl _p_91
+bl _p_92
 .loc 3 490 0
 .word 0xd2800020
 .word 0x14000002
@@ -4059,9 +4057,9 @@ bl _p_91
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
-.word 0xd28020e0
+.word 0xd28021e0
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_34:
 .text
@@ -4082,7 +4080,7 @@ System_Threading_Tasks_Task_1_TResult_INT_DangerousSetResult_TResult_INT:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_92
+bl _p_93
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xb9801ba1
@@ -4099,12 +4097,12 @@ bl _p_92
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf90017a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94017a0
 .word 0xd280001e
 .word 0xf2a0201e
 .word 0x2a1e0001
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xb9004401
 .loc 3 519 0
@@ -4124,7 +4122,7 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Result:
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf90013a0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf94013a0
 .word 0xd280001e
 .word 0xf2a2201e
@@ -4144,7 +4142,7 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Result:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_93
+bl _p_94
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xd2800021
@@ -4183,7 +4181,7 @@ System_Threading_Tasks_Task_1_TResult_INT_GetResultCore_bool:
 .word 0xf9400ba0
 .word 0xb9804400
 .word 0xf9001ba0
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xf9401ba0
 .word 0xd280001e
 .word 0xf2a02c1e
@@ -4198,20 +4196,20 @@ System_Threading_Tasks_Task_1_TResult_INT_GetResultCore_bool:
 .word 0x92800001
 .word 0xf2bfffe1
 .word 0xf94013a2
-bl _p_94
+bl _p_95
 .loc 3 559 0
 .word 0x394063a0
 .word 0x34000060
 .word 0xf9400ba0
-bl _p_95
+bl _p_96
 .loc 3 562 0
 .word 0xf9400ba0
-bl _p_96
+bl _p_97
 .word 0x53001c00
 .word 0x35000080
 .word 0xf9400ba0
 .word 0xd2800021
-bl _p_97
+bl _p_98
 .loc 3 567 0
 .word 0xf9400ba0
 .word 0xb9804800
@@ -4230,30 +4228,32 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetException_object:
 .word 0xf9000bb9
 .word 0xf9000fa0
 .word 0xf90013a1
-.word 0xd2800019
+.word 0xd2800000
+.word 0x53001c19
 .loc 3 600 0
 .word 0xf9400fa0
 .word 0xd2800021
-bl _p_98
+bl _p_99
 .loc 3 601 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_89
+bl _p_90
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 3 604 0
 .word 0xf9400fa0
 .word 0xf94013a1
-bl _p_99
+bl _p_100
 .loc 3 605 0
 .word 0xf9400fa0
 .word 0xd2800001
-bl _p_100
+bl _p_101
 .loc 3 606 0
-.word 0xd2800039
+.word 0xd2800020
+.word 0x53001c19
 .loc 3 609 0
 .word 0xaa1903e0
 .word 0xf9400bb9
@@ -4276,7 +4276,7 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetCanceled_System_Threading_Cancel
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_101
+bl _p_102
 .word 0xaa0003e3
 .word 0xf9401ba0
 .word 0xf9400fa1
@@ -4299,26 +4299,28 @@ System_Threading_Tasks_Task_1_TResult_INT_TrySetCanceled_System_Threading_Cancel
 .word 0xf9000fa0
 .word 0xf90013a1
 .word 0xf9001ba2
-.word 0xd2800019
+.word 0xd2800000
+.word 0x53001c19
 .loc 3 648 0
 .word 0xf9400fa0
 .word 0xd2800001
 .word 0xf2a08001
 .word 0xd2800002
 .word 0xf2a0ac02
-bl _p_89
+bl _p_90
 .word 0x53001c00
-.word 0x34000100
+.word 0x34000120
 .loc 3 652 0
 .word 0xf9400fa0
 .word 0xf94013a1
 .word 0xf9401ba2
-bl _p_102
+bl _p_103
 .loc 3 653 0
 .word 0xf9400fa0
-bl _p_103
+bl _p_104
 .loc 3 654 0
-.word 0xd2800039
+.word 0xd2800020
+.word 0x53001c19
 .loc 3 657 0
 .word 0xaa1903e0
 .word 0xf9400bb9
@@ -4336,12 +4338,12 @@ System_Threading_Tasks_Task_1_TResult_INT_get_Factory:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_104
+bl _p_105
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf9400ba0
-bl _p_105
+bl _p_106
 .word 0xf9400000
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -4362,11 +4364,11 @@ System_Threading_Tasks_Task_1_TResult_INT_InnerInvoke:
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_106
+bl _p_107
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_107
+bl _p_108
 .word 0xaa0003fa
 .loc 3 678 0
 .word 0xaa1a03e0
@@ -4389,11 +4391,11 @@ bl _p_107
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_108
+bl _p_109
 .word 0xaa0003e2
 .word 0xf94013a0
 .word 0xf9400441
-bl _p_107
+bl _p_108
 .word 0xaa0003fa
 .loc 3 684 0
 .word 0xaa1a03e0
@@ -4432,11 +4434,11 @@ System_Threading_Tasks_Task_1_TResult_INT_GetAwaiter:
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_109
+bl _p_110
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_110
+bl _p_111
 .word 0xaa0003e2
 .word 0xf9401ba0
 .word 0xf9401fa1
@@ -4468,11 +4470,11 @@ System_Threading_Tasks_Task_1_TResult_INT_ConfigureAwait_bool:
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_111
+bl _p_112
 .word 0xf9002ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_112
+bl _p_113
 .word 0xaa0003e3
 .word 0xf94023a0
 .word 0xf94027a1
@@ -4505,7 +4507,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .loc 3 738 0
 .word 0xf9400ba0
 .word 0xf90027a0
-bl _p_113
+bl _p_114
 .word 0xaa0003e1
 .word 0xf94027a0
 .word 0xf9001fa1
@@ -4516,7 +4518,7 @@ bl _p_113
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_114
+bl _p_115
 .word 0xaa0003e6
 .word 0xf9401ba0
 .word 0xf9401fa2
@@ -4552,7 +4554,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0xf90023a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_115
+bl _p_116
 .word 0xaa0003e6
 .word 0xf94023a0
 .word 0xf94027a5
@@ -4589,7 +4591,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0xf9002ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_116
+bl _p_117
 .word 0xaa0003e6
 .word 0xf9402ba0
 .word 0xf9402fa5
@@ -4628,7 +4630,7 @@ System_Threading_Tasks_Task_1_TResult_INT_ContinueWith_System_Action_1_System_Th
 .word 0x910123a1
 .word 0x910143a2
 .word 0xb98043a0
-bl _p_117
+bl _p_118
 .loc 3 901 0
 .word 0xf9400fa0
 .word 0xf9003ba0
@@ -4638,13 +4640,13 @@ bl _p_117
 .word 0xf90043a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_118
+bl _p_119
 .word 0xd2800a01
 bl _p_2
 .word 0xf90037a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_119
+bl _p_120
 .word 0xaa0003e7
 .word 0xf94037a0
 .word 0xf9403ba1
@@ -4663,7 +4665,7 @@ bl _p_119
 .word 0xf94017a2
 .word 0xf9401ba3
 .word 0xb98043a4
-bl _p_120
+bl _p_121
 .loc 3 911 0
 .word 0xaa1a03e0
 .word 0xf9400bba
@@ -4671,23 +4673,23 @@ bl _p_120
 .word 0xa8c97bfd
 .word 0xd65f03c0
 .loc 3 891 0
-.word 0xd2981ae0
+.word 0xd298f880
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
-.word 0xd2981d60
+bl _p_38
+.word 0xd298fb00
 .word 0xf2a00020
 .loc 3 886 0
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 
 Lme_43:
 .text
@@ -4699,63 +4701,63 @@ System_Threading_Tasks_Task_1_TResult_INT__cctor:
 .word 0x910003fd
 .word 0xf9000baf
 .word 0xf9400ba0
-bl _p_121
+bl _p_122
 .word 0xd2800501
 bl _p_2
 .word 0xf90023a0
 .word 0xf9400ba0
-bl _p_122
+bl _p_123
 .word 0xaa0003e1
 .word 0xf94023a0
 .word 0xf9001fa0
 .word 0xd63f0020
 .word 0xf9400ba0
-bl _p_123
+bl _p_124
 .word 0xf9401fa1
 .word 0xf9000001
 .loc 3 87 0
 .word 0xf9400ba0
-bl _p_124
+bl _p_125
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf9400ba0
-bl _p_125
+bl _p_126
 .word 0xf9400000
 .word 0xf90017a0
 .word 0xeb1f001f
 .word 0x10000011
 .word 0x540002a0
 .word 0xf9400ba0
-bl _p_126
 bl _p_127
+bl _p_128
 .word 0xf9001ba0
 .word 0xf9400ba0
-bl _p_128
+bl _p_129
 .word 0xd2800e01
 bl _p_2
 .word 0xf94017a1
 .word 0xf9401ba2
 .word 0xf90013a0
-bl _p_129
+bl _p_130
 .word 0xf9400ba0
-bl _p_123
+bl _p_124
 .word 0xf94013a1
 .word 0x91002000
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801340
+.word 0xd2801440
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_44:
 .text
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor
 System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
 .loc 4 93 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -4766,7 +4768,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor:
 .word 0xf90013a0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_130
+bl _p_131
 .word 0xaa0003e5
 .word 0xf94013a0
 .word 0xf9400fa1
@@ -4793,7 +4795,7 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT__ctor_System_Threading_Cancella
 .word 0xf9001ba3
 .word 0xf9001fa4
 .word 0xb98033a0
-bl _p_131
+bl _p_132
 .loc 4 211 0
 .word 0xb9802ba0
 .word 0x92800bfe
@@ -4845,14 +4847,14 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2980000
+.word 0xd298dda0
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801380
+.word 0xd2801480
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .word 0x17ffffd2
 
 Lme_46:
@@ -4888,7 +4890,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #712]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -4907,17 +4909,17 @@ ldr x1, [x16, #704]
 .word 0xf9002ba0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_132
+bl _p_133
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
-.word 0xf9400fa0
-.word 0xf9400000
-bl _p_132
-.word 0xf9002fa0
+bl _p_49
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_133
+.word 0xf9002fa0
+.word 0xf9400fa0
+.word 0xf9400000
+bl _p_134
 .word 0xaa0003e7
 .word 0xf9402ba6
 .word 0xf9402faf
@@ -4967,7 +4969,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #712]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -4986,17 +4988,17 @@ ldr x1, [x16, #704]
 .word 0xf90033a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_134
+bl _p_135
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
-.word 0xf9400fa0
-.word 0xf9400000
-bl _p_134
-.word 0xf90037a0
+bl _p_49
 .word 0xf9400fa0
 .word 0xf9400000
 bl _p_135
+.word 0xf90037a0
+.word 0xf9400fa0
+.word 0xf9400000
+bl _p_136
 .word 0xaa0003e9
 .word 0xf94033a7
 .word 0xf94037af
@@ -5019,7 +5021,7 @@ Lme_48:
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_INT_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_INT_bool
 System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_INT_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_INT_bool:
 .loc 4 542 0 prologue_end
-.word 0xa9b17bfd
+.word 0xa9b07bfd
 .word 0x910003fd
 .word 0xf9000bb9
 .word 0xf90027af
@@ -5055,64 +5057,76 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncCoreLogic_System_IAsyn
 .word 0xd63f0200
 .word 0xf94013a0
 .loc 4 556 0
-.word 0x94000018
-.word 0x140000af
-.word 0xf90047a0
-.word 0xf94047a0
-.loc 4 557 0
-.word 0xf9002fa0
-bl _p_36
-.word 0xf90063a0
-.word 0xf94063a0
-.word 0xb4000060
-.word 0xf94063a0
-bl _p_37
-.word 0x9400000d
-.word 0x140000a4
+.word 0xf90037bf
+.word 0x94000023
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_30
+.word 0x140000b7
 .word 0xf9004ba0
 .word 0xf9404ba0
-.loc 4 558 0
-.word 0xf9002ba0
-bl _p_36
+.loc 4 557 0
+.word 0xf9002fa0
+bl _p_37
 .word 0xf90067a0
 .word 0xf94067a0
 .word 0xb4000060
 .word 0xf94067a0
+bl _p_38
+.word 0xf90037bf
+.word 0x94000014
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_30
+.word 0x140000a8
+.word 0xf9004fa0
+.word 0xf9404fa0
+.loc 4 558 0
+.word 0xf9002ba0
 bl _p_37
-.word 0x94000002
+.word 0xf9006ba0
+.word 0xf9406ba0
+.word 0xb4000060
+.word 0xf9406ba0
+bl _p_38
+.word 0xf90037bf
+.word 0x94000005
+.word 0xf94037a0
+.word 0xb4000040
+bl _p_30
 .word 0x14000099
-.word 0xf9005fbe
+.word 0xf90063be
 .loc 4 561 0
 .word 0xf9402fa0
 .word 0xb40003e0
 .loc 4 563 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xf9402fa0
-.word 0xf90043a0
-.word 0xf94043a0
+.word 0xf90047a0
+.word 0xf94047a0
 .word 0xf940001e
-.word 0xf94043a0
+.word 0xf94047a0
 .word 0x91022000
 .word 0xf9400000
 .word 0xf90023a0
 .word 0xf94023a0
 .word 0xf9001fa0
 .word 0xf9402fa0
-.word 0xf9006fa0
-.word 0xf94027a0
-bl _p_136
-.word 0x3980b410
-.word 0xb5000050
-bl _p_48
-.word 0xf94073a0
-.word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90077a0
 .word 0xf94027a0
 bl _p_137
+.word 0x3980b410
+.word 0xb5000050
+bl _p_49
+.word 0xf9407ba0
+.word 0xf940001e
+.word 0xf90073a0
+.word 0xf94027a0
+bl _p_138
 .word 0xaa0003e3
-.word 0xf9406ba0
-.word 0xf9406fa2
+.word 0xf94073a0
+.word 0xf94077a2
 .word 0xf9401fa1
 .word 0xd63f0060
 .loc 4 564 0
@@ -5122,34 +5136,34 @@ bl _p_137
 .word 0xb40006c0
 .loc 4 567 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xf9402ba0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_136
+bl _p_137
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
-.word 0xf94073a0
+bl _p_49
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_138
+bl _p_139
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .word 0x53001c00
 .loc 4 568 0
 .word 0x34000c00
 .word 0xf9402ba0
-.word 0xf9003ba0
-.word 0xf9403ba0
 .word 0xf9003fa0
-.word 0xf9403ba0
+.word 0xf9403fa0
+.word 0xf90043a0
+.word 0xf9403fa0
 .word 0xeb1f001f
 .word 0x540001a0
-.word 0xf9403ba0
+.word 0xf9403fa0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -5157,105 +5171,105 @@ bl _p_138
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #712]
+ldr x1, [x16, #720]
 .word 0xeb01001f
 .word 0x54000060
-.word 0xf9003fbf
+.word 0xf90043bf
 .word 0x14000001
-.word 0xf9403fa0
+.word 0xf94043a0
 .word 0xb4000960
 .loc 4 570 0
 .word 0xf94017a0
 .word 0xf9401c00
-.word 0xf9006ba0
-.word 0xd50330bf
-.word 0xf9406ba0
+.word 0xf90073a0
+.word 0xd5033bbf
+.word 0xf94073a0
 .word 0xf9401002
-.word 0xd50330bf
+.word 0xd5033bbf
 .word 0xaa0203e0
 .word 0xd2800001
 .word 0xf940005e
-bl _p_139
+bl _p_140
 .loc 4 572 0
 .word 0x1400003f
 .loc 4 575 0
-.word 0x3901a3bf
-.word 0x3941a3a0
+.word 0x3901c3bf
+.word 0x3941c3a0
 .word 0x34000140
 .loc 4 576 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_52
+bl _p_53
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800022
-bl _p_140
+bl _p_141
 .loc 4 578 0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #456]
 .word 0x39400000
 .word 0x340000e0
 .loc 4 580 0
 .word 0xf94017a1
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_52
-.word 0x93407c00
 bl _p_53
+.word 0x93407c00
+bl _p_54
 .loc 4 582 0
 .word 0x3940c3a0
 .word 0x34000280
 .loc 4 584 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xb98063a0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_136
+bl _p_137
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
-.word 0xf94073a0
+bl _p_49
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_141
+bl _p_142
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .loc 4 585 0
 .word 0x14000013
 .loc 4 588 0
 .word 0xf94017a0
-.word 0xf90073a0
+.word 0xf9007ba0
 .word 0xb98063a0
-.word 0xf9006fa0
+.word 0xf90077a0
 .word 0xf94027a0
-bl _p_136
+bl _p_137
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
-.word 0xf94073a0
+bl _p_49
+.word 0xf9407ba0
 .word 0xf940001e
-.word 0xf9006ba0
+.word 0xf90073a0
 .word 0xf94027a0
-bl _p_142
+bl _p_143
 .word 0xaa0003e2
-.word 0xf9406ba0
-.word 0xf9406fa1
+.word 0xf94073a0
+.word 0xf94077a1
 .word 0xd63f0040
 .loc 4 593 0
-.word 0xf9405fbe
+.word 0xf94063be
 .word 0xd61f03c0
 .loc 4 594 0
 .word 0xf9400bb9
 .word 0x910003bf
-.word 0xa8cf7bfd
+.word 0xa8d07bfd
 .word 0xd65f03c0
 
 Lme_49:
@@ -5275,11 +5289,11 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsync_System_Func_3_System_
 .word 0xf9001ba0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_143
+bl _p_144
 .word 0xf9001fa0
 .word 0xf9400ba0
 .word 0xf9400000
-bl _p_144
+bl _p_145
 .word 0xaa0003e5
 .word 0xf9401ba4
 .word 0xf9401faf
@@ -5311,12 +5325,12 @@ System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncImpl_System_Func_3_Sys
 .word 0xf90023bf
 .word 0xb9004bbf
 .word 0xf9401fa0
-bl _p_145
+bl _p_146
 .word 0xd2800501
 bl _p_2
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_146
+bl _p_147
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf90043a0
@@ -5354,33 +5368,33 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .loc 4 816 0
-.word 0xb40025d6
+.word 0xb4002696
 .loc 4 819 0
 .word 0xf94023a0
 .word 0xf9400800
 .word 0xb5000080
 .word 0xf94023a0
 .word 0xf9400c00
-.word 0xb4002400
+.word 0xb40024c0
 .loc 4 824 0
 .word 0xaa1a03e0
 .word 0xd2800021
-bl _p_147
+bl _p_148
 .loc 4 826 0
 .word 0xf94023a0
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_148
+bl _p_149
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf9401fa0
-bl _p_148
+bl _p_149
 .word 0xd2800a01
 bl _p_2
 .word 0xf9004ba0
 .word 0xf9401fa0
-bl _p_149
+bl _p_150
 .word 0xaa0003e3
 .word 0xf9404ba0
 .word 0xf90043a0
@@ -5409,28 +5423,28 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #456]
 .word 0x39400000
 .word 0x340000a0
 .loc 4 833 0
 .word 0xf94023a0
 .word 0xf9401000
-bl _p_150
+bl _p_151
 .word 0x14000001
 .loc 4 842 0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #720]
+ldr x0, [x16, #728]
 .word 0x39400000
-.word 0x34001080
+.word 0x340010e0
 .word 0xf9401fa0
-bl _p_151
+bl _p_152
 .word 0xd2800401
 bl _p_2
 .word 0xf90053a0
 .word 0xf9401fa0
-bl _p_152
+bl _p_153
 .word 0xaa0003e1
 .word 0xf94053a0
 .word 0xf9004fa0
@@ -5457,7 +5471,7 @@ ldr x2, [x16, #16]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #728]
+ldr x0, [x16, #736]
 .word 0xd2800281
 bl _p_2
 .word 0xf9404ba1
@@ -5477,13 +5491,16 @@ ldr x2, [x16, #16]
 .loc 4 847 0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54001940
+.word 0x54001a60
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #744]
 .word 0xd2800e01
 bl _p_2
+.word 0xeb1f035f
+.word 0x10000011
+.word 0x54001900
 .word 0xf900101a
 .word 0xf90047a0
 .word 0x91008000
@@ -5499,19 +5516,19 @@ ldr x1, [x16, #16]
 .word 0xd280003e
 .word 0x3900001e
 .word 0xf9401fa0
-bl _p_153
+bl _p_154
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf9001401
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_154
+bl _p_155
 .word 0xf94043a1
 .word 0xf9002020
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #744]
+ldr x0, [x16, #752]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -5523,25 +5540,25 @@ ldr x0, [x16, #744]
 .word 0xd63f0200
 .word 0xaa0003f9
 .loc 4 852 0
-.word 0xb4000b00
+.word 0xb4000b60
 .word 0xaa1903e0
 .word 0xf9400321
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #752]
+ldr x15, [x16, #760]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x53001c00
-.word 0x340009a0
+.word 0x34000a00
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_155
+bl _p_156
 .word 0x53001c00
-.word 0x340008e0
+.word 0x34000940
 .loc 4 855 0
 .word 0xf9400f40
 .word 0xf9400800
@@ -5553,10 +5570,10 @@ bl _p_155
 .word 0xf9401000
 .word 0xf9004ba0
 .word 0xf9401fa0
-bl _p_156
+bl _p_157
 .word 0xf9004fa0
 .word 0xf9401fa0
-bl _p_157
+bl _p_158
 .word 0xaa0003e5
 .word 0xf94043a1
 .word 0xf94047a2
@@ -5566,21 +5583,24 @@ bl _p_157
 .word 0xd2800004
 .word 0xd63f00a0
 .loc 4 857 0
-.word 0x14000030
+.word 0x14000033
 .loc 4 861 0
 .word 0xf94023a0
 .word 0xf9004ba0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x54000e60
+.word 0x54000f20
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #736]
+ldr x0, [x16, #744]
 .word 0xd2800e01
 bl _p_2
 .word 0xaa0003e1
 .word 0xf9404ba0
+.word 0xeb1f001f
+.word 0x10000011
+.word 0x54000d80
 .word 0xf9001020
 .word 0xf90047a1
 .word 0x91008021
@@ -5596,19 +5616,19 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0xf9401fa0
-bl _p_158
+bl _p_159
 .word 0xaa0003e1
 .word 0xf94047a0
 .word 0xf9001401
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_159
+bl _p_160
 .word 0xf94043a1
 .word 0xf9002020
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #744]
+ldr x0, [x16, #752]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -5630,17 +5650,17 @@ ldr x0, [x16, #744]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_52
+bl _p_53
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xd2800000
 .word 0xd2800062
-bl _p_140
+bl _p_141
 .loc 4 872 0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #448]
+ldr x0, [x16, #456]
 .word 0x39400000
 .word 0x34000100
 .loc 4 874 0
@@ -5648,9 +5668,9 @@ ldr x0, [x16, #448]
 .word 0xf9401001
 .word 0xaa0103e0
 .word 0xf940003e
-bl _p_52
-.word 0x93407c00
 bl _p_53
+.word 0x93407c00
+bl _p_54
 .loc 4 878 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -5659,22 +5679,22 @@ bl _p_53
 .word 0xb9804ba0
 .word 0xf90047a0
 .word 0xf9401fa0
-bl _p_148
+bl _p_149
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf9404ba0
 .word 0xf940001e
 .word 0xf90043a0
 .word 0xf9401fa0
-bl _p_160
+bl _p_161
 .word 0xaa0003e2
 .word 0xf94043a0
 .word 0xf94047a1
 .word 0xd63f0040
 .loc 4 879 0
 .word 0xf9402ba0
-bl _p_161
+bl _p_162
 .loc 4 882 0
 .word 0xf94023a0
 .word 0xf9401000
@@ -5684,26 +5704,29 @@ bl _p_161
 .word 0xa8cb7bfd
 .word 0xd65f03c0
 .loc 4 820 0
-.word 0xd2982a60
+.word 0xd2990800
 .word 0xf2a00020
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
-.word 0xd2982760
+bl _p_38
+.word 0xd2990500
 .word 0xf2a00020
 .loc 4 817 0
-bl _p_56
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
-.word 0xd2801340
+bl _p_38
+.word 0xd28021e0
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
+.word 0xd2801440
+.word 0xaa1103e1
+bl _p_40
 
 Lme_4b:
 .text
@@ -5720,7 +5743,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -5772,22 +5795,22 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_4c:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_get_Item1
 System_Tuple_2_T1_BOOL_T2_REF_get_Item1:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/external/corert/src/System.Private.CoreLib/src/System/Tuple.cs"
-.loc 5 212 0 prologue_end
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/external/corefx/src/Common/src/CoreLib/System/Tuple.cs"
+.loc 5 216 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -5802,7 +5825,7 @@ Lme_4d:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_get_Item2
 System_Tuple_2_T1_BOOL_T2_REF_get_Item2:
-.loc 5 213 0 prologue_end
+.loc 5 217 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -5817,7 +5840,7 @@ Lme_4e:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF__ctor_T1_BOOL_T2_REF
 System_Tuple_2_T1_BOOL_T2_REF__ctor_T1_BOOL_T2_REF:
-.loc 5 217 0 prologue_end
+.loc 5 221 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
@@ -5826,7 +5849,7 @@ System_Tuple_2_T1_BOOL_T2_REF__ctor_T1_BOOL_T2_REF:
 .word 0xf9400ba0
 .word 0x394063a1
 .word 0x39006001
-.loc 5 218 0
+.loc 5 222 0
 .word 0xf9400ba1
 .word 0xf94013a0
 .word 0xf9000820
@@ -5842,7 +5865,7 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.loc 5 219 0
+.loc 5 223 0
 .word 0x910003bf
 .word 0xa8c37bfd
 .word 0xd65f03c0
@@ -5852,31 +5875,34 @@ Lme_4f:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_Equals_object
 System_Tuple_2_T1_BOOL_T2_REF_Equals_object:
-.loc 5 223 0 prologue_end
-.word 0xa9be7bfd
+.loc 5 227 0 prologue_end
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400ba3
+.word 0xf9400ba0
+.word 0xf90013a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #760]
-.word 0xf9400002
+ldr x15, [x16, #768]
+bl _p_163
+.word 0xaa0003e2
+.word 0xf94013a3
 .word 0xaa0303e0
 .word 0xf9400fa1
 .word 0xf9400063
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #768]
+ldr x15, [x16, #776]
 .word 0x92800af0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_50:
@@ -5884,7 +5910,7 @@ Lme_50:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
 System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer:
-.loc 5 228 0 prologue_end
+.loc 5 232 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
 .word 0xa9016bb9
@@ -5894,28 +5920,28 @@ System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_Equals_obj
 .word 0xb5000079
 .word 0xd2800000
 .word 0x1400003d
-.loc 5 230 0
+.loc 5 234 0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_162
+bl _p_164
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_107
+bl _p_108
 .word 0xaa0003f9
-.loc 5 232 0
+.loc 5 236 0
 .word 0xaa1903e0
 .word 0xb5000060
-.loc 5 234 0
+.loc 5 238 0
 .word 0xd2800000
 .word 0x14000031
-.loc 5 237 0
+.loc 5 241 0
 .word 0xf94013a0
 .word 0x39406000
 .word 0xf90023a0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_163
+bl _p_165
 .word 0xd2800301
 bl _p_2
 .word 0xf94023a1
@@ -5925,7 +5951,7 @@ bl _p_2
 .word 0xf9001ba0
 .word 0xf94013a0
 .word 0xf9400000
-bl _p_163
+bl _p_165
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e2
@@ -5937,7 +5963,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #776]
+ldr x15, [x16, #784]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -5952,7 +5978,7 @@ ldr x15, [x16, #776]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #776]
+ldr x15, [x16, #784]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -5970,31 +5996,34 @@ Lme_51:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_System_IComparable_CompareTo_object
 System_Tuple_2_T1_BOOL_T2_REF_System_IComparable_CompareTo_object:
-.loc 5 242 0 prologue_end
-.word 0xa9be7bfd
+.loc 5 246 0 prologue_end
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 .word 0xf9000fa1
-.word 0xf9400ba3
+.word 0xf9400ba0
+.word 0xf90013a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #784]
-.word 0xf9400002
+ldr x15, [x16, #792]
+bl _p_166
+.word 0xaa0003e2
+.word 0xf94013a3
 .word 0xaa0303e0
 .word 0xf9400fa1
 .word 0xf9400063
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #792]
+ldr x15, [x16, #800]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_52:
@@ -6002,7 +6031,7 @@ Lme_52:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
 System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer:
-.loc 5 247 0 prologue_end
+.loc 5 251 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
 .word 0xa90167b8
@@ -6013,25 +6042,25 @@ System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralComparable_CompareTo
 .word 0xb5000079
 .word 0xd2800020
 .word 0x1400003d
-.loc 5 249 0
+.loc 5 253 0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_164
+bl _p_167
 .word 0xaa0003e2
 .word 0xf9400441
 .word 0xaa1903e0
-bl _p_107
+bl _p_108
 .word 0xaa0003f9
-.loc 5 251 0
+.loc 5 255 0
 .word 0xaa1903e0
 .word 0xb4000700
-.loc 5 258 0
+.loc 5 262 0
 .word 0xf94017a0
 .word 0x39406000
 .word 0xf90033a0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_165
+bl _p_168
 .word 0xd2800301
 bl _p_2
 .word 0xf94033a1
@@ -6041,7 +6070,7 @@ bl _p_2
 .word 0xf9002ba0
 .word 0xf94017a0
 .word 0xf9400000
-bl _p_165
+bl _p_168
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e2
@@ -6053,19 +6082,19 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #800]
+ldr x15, [x16, #808]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xaa0003f8
-.loc 5 260 0
+.loc 5 264 0
 .word 0xaa1803e0
 .word 0x34000060
 .word 0xaa1803e0
 .word 0x1400000e
-.loc 5 262 0
+.loc 5 266 0
 .word 0xf94017a0
 .word 0xf9400801
 .word 0xf9400b22
@@ -6074,7 +6103,7 @@ ldr x15, [x16, #800]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #800]
+ldr x15, [x16, #808]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -6085,9 +6114,9 @@ ldr x15, [x16, #800]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.loc 5 253 0
-.word 0xd2856700
-bl _p_56
+.loc 5 257 0
+.word 0xd2856800
+bl _p_57
 .word 0xf9002fa0
 .word 0xf94017a0
 .word 0xf9400000
@@ -6098,45 +6127,48 @@ bl _p_56
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf9402fa0
-bl _p_166
+bl _p_169
 .word 0xf9002ba0
-.word 0xd2856e80
-bl _p_56
+.word 0xd2856f80
+bl _p_57
 .word 0xaa0003e2
 .word 0xf9402ba1
-.word 0xd2801340
+.word 0xd2801440
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
-bl _p_37
+bl _p_38
 
 Lme_53:
 .text
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_GetHashCode
 System_Tuple_2_T1_BOOL_T2_REF_GetHashCode:
-.loc 5 267 0 prologue_end
-.word 0xa9be7bfd
+.loc 5 271 0 prologue_end
+.word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
-.word 0xf9400ba2
+.word 0xf9400ba0
+.word 0xf90013a0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #760]
-.word 0xf9400001
+ldr x15, [x16, #768]
+bl _p_163
+.word 0xaa0003e1
+.word 0xf94013a2
 .word 0xaa0203e0
 .word 0xf9400042
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706850
 .word 0xd63f0200
 .word 0x93407c00
 .word 0x910003bf
-.word 0xa8c27bfd
+.word 0xa8c37bfd
 .word 0xd65f03c0
 
 Lme_54:
@@ -6144,7 +6176,7 @@ Lme_54:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
 System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer:
-.loc 5 272 0 prologue_end
+.loc 5 276 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6155,7 +6187,7 @@ System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_GetHashCod
 .word 0xf90017a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_167
+bl _p_170
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e1
@@ -6166,7 +6198,7 @@ bl _p_2
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #816]
+ldr x15, [x16, #824]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6180,7 +6212,7 @@ ldr x15, [x16, #816]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #816]
+ldr x15, [x16, #824]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6201,31 +6233,28 @@ Lme_55:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_ToString
 System_Tuple_2_T1_BOOL_T2_REF_ToString:
-.loc 5 281 0 prologue_end
+.loc 5 285 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000ba0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #824]
+ldr x0, [x16, #832]
 .word 0xd2800601
 bl _p_2
 .word 0xf90017a0
-bl _p_168
+bl _p_171
 .word 0xf94017a0
-.loc 5 282 0
+.loc 5 286 0
 .word 0xf90013a0
 .word 0xaa0003e2
-
-adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
-add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #832]
 .word 0xaa0203e0
+.word 0xd2800501
 .word 0xf940005e
-bl _p_169
+bl _p_172
 .word 0xf94013a1
-.loc 5 283 0
+.loc 5 287 0
 .word 0xf9400ba2
 .word 0xaa0203e0
 .word 0xf9400042
@@ -6246,7 +6275,7 @@ Lme_56:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_BOOL_T2_REF_System_ITupleInternal_ToString_System_Text_StringBuilder
 System_Tuple_2_T1_BOOL_T2_REF_System_ITupleInternal_ToString_System_Text_StringBuilder:
-.loc 5 288 0 prologue_end
+.loc 5 292 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
 .word 0xf9000bba
@@ -6257,7 +6286,7 @@ System_Tuple_2_T1_BOOL_T2_REF_System_ITupleInternal_ToString_System_Text_StringB
 .word 0xf90013a0
 .word 0xf9400fa0
 .word 0xf9400000
-bl _p_170
+bl _p_173
 .word 0xd2800301
 bl _p_2
 .word 0xaa0003e1
@@ -6265,27 +6294,27 @@ bl _p_2
 .word 0x39004020
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_171
-.loc 5 289 0
+bl _p_174
+.loc 5 293 0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x1, [x16, #848]
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_169
-.loc 5 290 0
+bl _p_175
+.loc 5 294 0
 .word 0xf9400fa0
 .word 0xf9400801
 .word 0xaa1a03e0
 .word 0xf940035e
-bl _p_171
-.loc 5 291 0
+bl _p_174
+.loc 5 295 0
 .word 0xaa1a03e0
 .word 0xd2800521
 .word 0xf940035e
 bl _p_172
-.loc 5 292 0
+.loc 5 296 0
 .word 0xaa1a03e0
 .word 0xf9400341
 .word 0xf9402030
@@ -6308,7 +6337,7 @@ wrapper_delegate_invoke_System_Func_1_System_Tuple_2_bool_Foundation_NSError_inv
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -6356,14 +6385,14 @@ ldr x0, [x16, #440]
 .word 0xa8c47bfd
 .word 0xd65f03c0
 .word 0xaa1903e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f9
 .word 0xb5ffff80
 .word 0x17ffffd0
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_58:
 .text
@@ -6380,7 +6409,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Tuple_2_bool_Foundation_NSEr
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -6432,14 +6461,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_59:
 .text
@@ -6456,7 +6485,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Tup
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -6506,14 +6535,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffce
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_5a:
 .text
@@ -6530,7 +6559,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Tuple_2_bool_Fo
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -6582,14 +6611,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_5b:
 .text
@@ -6606,7 +6635,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x0, [x16, #440]
+ldr x0, [x16, #448]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -6658,14 +6687,14 @@ ldr x0, [x16, #440]
 .word 0xa8c57bfd
 .word 0xd65f03c0
 .word 0xaa1803e0
-bl _p_37
-bl _p_45
+bl _p_38
+bl _p_46
 .word 0xaa0003f8
 .word 0xb5ffff80
 .word 0x17ffffcc
-.word 0xd2801e00
+.word 0xd2801f00
 .word 0xaa1103e1
-bl _p_39
+bl _p_40
 
 Lme_5c:
 .text
@@ -6689,16 +6718,16 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abst
 .word 0xf9400fa1
 .word 0x910083a0
 .word 0xd2800c02
-bl _p_8
+bl _p_176
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_56
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 2 466 0
 .word 0xd2800000
 .word 0xf90043a0
@@ -6707,19 +6736,23 @@ bl _p_37
 .word 0xf9004fa0
 .loc 2 470 0
 .word 0x910203a0
-bl _p_173
+bl _p_177
 .loc 2 471 0
 .word 0xf9400fa0
-bl _p_174
+bl _p_178
 .loc 2 472 0
-.word 0x94000002
+.word 0xf90053bf
+.word 0x94000005
+.word 0xf94053a0
+.word 0xb4000040
+bl _p_30
 .word 0x14000006
-.word 0xf9005bbe
+.word 0xf9005fbe
 .loc 2 475 0
 .word 0x910203a0
-bl _p_175
+bl _p_179
 .loc 2 476 0
-.word 0xf9405bbe
+.word 0xf9405fbe
 .word 0xd61f03c0
 .loc 2 477 0
 .word 0x910003bf
@@ -6759,14 +6792,14 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abst
 .word 0xf9401400
 .word 0xf90027a0
 .word 0x14000009
-.word 0xd29ff2c0
-.word 0xf2a00020
-bl _p_56
+.word 0xd2812100
+.word 0xf2a00040
+bl _p_57
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
-bl _p_37
+bl _p_38
 .loc 2 466 0
 .word 0xd2800000
 .word 0xf9002ba0
@@ -6775,19 +6808,23 @@ bl _p_37
 .word 0xf90037a0
 .loc 2 470 0
 .word 0x910143a0
-bl _p_173
+bl _p_177
 .loc 2 471 0
 .word 0xf9400fa0
-bl _p_176
+bl _p_180
 .loc 2 472 0
-.word 0x94000002
+.word 0xf9003bbf
+.word 0x94000005
+.word 0xf9403ba0
+.word 0xb4000040
+bl _p_30
 .word 0x14000006
-.word 0xf90043be
+.word 0xf90047be
 .loc 2 475 0
 .word 0x910143a0
-bl _p_175
+bl _p_179
 .loc 2 476 0
-.word 0xf94043be
+.word 0xf94047be
 .word 0xd61f03c0
 .loc 2 477 0
 .word 0x910003bf
@@ -6823,7 +6860,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abst
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
+ldr x15, [x16, #272]
 .word 0xaa1803e0
 bl _p_10
 .word 0xaa1703f6
@@ -6831,7 +6868,7 @@ bl _p_10
 .word 0x910263a2
 .word 0xaa1603e0
 .word 0xaa1703e1
-bl _p_177
+bl _p_181
 .word 0xaa0003f7
 .loc 2 547 0
 .word 0xf9400300
@@ -6840,7 +6877,7 @@ bl _p_177
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #264]
+ldr x15, [x16, #272]
 .word 0xaa1803e0
 bl _p_10
 .word 0xaa0003f6
@@ -6848,7 +6885,7 @@ bl _p_10
 .word 0xf9401ba1
 .word 0x9100e3a0
 .word 0xd2800c02
-bl _p_8
+bl _p_176
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
@@ -6864,29 +6901,29 @@ bl _mono_gc_wbarrier_range_copy
 .word 0xf9404fa2
 .word 0xaa1803e0
 .word 0xaa1603e3
-bl _p_178
+bl _p_182
 .loc 2 559 0
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x15, [x16, #400]
+ldr x15, [x16, #408]
 .word 0xf94017a0
 .word 0xaa1703e1
-bl _p_179
+bl _p_183
 .loc 2 560 0
 .word 0x1400000c
 .word 0xf90053a0
 .word 0xf94053a0
 .loc 2 563 0
 .word 0xd2800001
-bl _p_180
+bl _p_184
 .loc 2 564 0
-bl _p_36
+bl _p_37
 .word 0xf90063a0
 .word 0xf94063a0
 .word 0xb4000060
 .word 0xf94063a0
-bl _p_37
+bl _p_38
 .word 0x14000001
 .loc 2 565 0
 .word 0xa9415fb6
@@ -6907,17 +6944,17 @@ System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_INT_T
 .word 0xf9000ba0
 .word 0xf9000fbf
 .word 0xf94013a0
-bl _p_181
+bl _p_185
 .word 0x3980b410
 .word 0xb5000050
-bl _p_48
+bl _p_49
 .word 0xf94013a0
-bl _p_181
+bl _p_185
 .word 0xd2800a01
 bl _p_2
 .word 0xf9001fa0
 .word 0xf94013a0
-bl _p_182
+bl _p_186
 .word 0xaa0003e5
 .word 0xf9401fa0
 .word 0xf9001ba0
@@ -6940,7 +6977,7 @@ b System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT__ctor_System_Threadi
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT
 System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
 .loc 6 317 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -6988,10 +7025,10 @@ System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_INT__ctor_Syst
 .word 0x9100e3a0
 .word 0xf9002ba0
 .word 0xf94027a0
-bl _p_183
+bl _p_187
 .word 0xf9002fa0
 .word 0xf94027a0
-bl _p_184
+bl _p_188
 .word 0xaa0003e3
 .word 0xf9402ba0
 .word 0xf9402faf
@@ -7030,7 +7067,7 @@ Lme_62:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_INT__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_INT_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_INT__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_INT_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.4/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
+.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/11.12.0.4/src/Xamarin.iOS/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
 .loc 7 131 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -7063,7 +7100,7 @@ ldr x0, [x16, #48]
 
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
-ldr x1, [x16, #704]
+ldr x1, [x16, #712]
 .word 0xd29ffffe
 .word 0xf2affffe
 .word 0xa1e0021
@@ -7089,7 +7126,7 @@ ldr x1, [x16, #704]
 .word 0xb9803ba5
 .word 0xb98043a6
 .word 0xd2800007
-bl _p_82
+bl _p_83
 .loc 7 135 0
 .word 0xf94013a1
 .word 0xf94017a0
@@ -7109,7 +7146,7 @@ ldr x2, [x16, #16]
 .loc 7 136 0
 .word 0xf94013a0
 .word 0xf94027a1
-bl _p_79
+bl _p_80
 .loc 7 137 0
 .word 0xa9415fb6
 .word 0x910003bf
@@ -7117,18 +7154,6 @@ bl _p_79
 .word 0xd65f03c0
 
 Lme_63:
-.text
-	.align 4
-	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
-System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor:
-.word 0xa9be7bfd
-.word 0x910003fd
-.word 0xf9000ba0
-.word 0x910003bf
-.word 0xa8c27bfd
-.word 0xd65f03c0
-
-Lme_64:
 .text
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
@@ -7140,9 +7165,104 @@ System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor:
 .word 0xa8c27bfd
 .word 0xd65f03c0
 
+Lme_64:
+.text
+	.align 4
+	.no_dead_strip System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
+System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
 Lme_65:
 .text
-ut_102:
+	.align 4
+	.no_dead_strip wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object:
+.word 0xa9bb7bfd
+.word 0x910003fd
+.word 0xa9015bb5
+.word 0xa90263b7
+.word 0xa9036bb9
+.word 0xaa0003f8
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x0, [x16, #448]
+.word 0xb9400000
+.word 0x35000720
+.word 0x14000001
+.word 0xf9403717
+.word 0xaa1703e0
+.word 0xb5000260
+.word 0xf9401317
+.word 0xaa1703e0
+.word 0xb4000120
+.word 0xf9401f00
+.word 0xf9400b03
+.word 0xaa1703e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xd63f0060
+.word 0x93407c00
+.word 0x14000022
+.word 0xf9401f00
+.word 0xf9400b02
+.word 0xaa1903e0
+.word 0xaa1a03e1
+.word 0xd63f0040
+.word 0x93407c00
+.word 0x1400001b
+.word 0xb9801af8
+.word 0xd2800016
+.word 0x93407ec0
+.word 0xb9801ae1
+.word 0xeb00003f
+.word 0x10000011
+.word 0x54000409
+.word 0xd37df000
+.word 0x8b0002e0
+.word 0x91008000
+.word 0xf9400015
+.word 0xaa1503e3
+.word 0xaa0303e0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+.word 0xf90023a3
+.word 0xf9400c70
+.word 0xd63f0200
+.word 0x93407c00
+.word 0xf94023a1
+.word 0xaa0003f5
+.word 0x110006d6
+.word 0xaa1603e0
+.word 0x6b18001f
+.word 0x54fffd4b
+.word 0xaa1503e0
+.word 0xa9415bb5
+.word 0xa94263b7
+.word 0xa9436bb9
+.word 0x910003bf
+.word 0xa8c57bfd
+.word 0xd65f03c0
+.word 0xaa1703e0
+bl _p_38
+bl _p_46
+.word 0xaa0003f7
+.word 0xb5ffff80
+.word 0x17ffffc6
+.word 0xd2801f00
+.word 0xaa1103e1
+bl _p_40
+
+Lme_66:
+.text
+ut_103:
 add x0, x0, 16
 b System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
 .text
@@ -7178,7 +7298,7 @@ ldr x3, [x16, #16]
 .word 0xa8c37bfd
 .word 0xd65f03c0
 
-Lme_66:
+Lme_67:
 .text
 	.align 3
 jit_code_end:
@@ -7288,8 +7408,9 @@ bl System_Runtime_CompilerServices_AsyncTaskCache_CreateCacheableTask_TResult_IN
 bl System_Runtime_CompilerServices_TaskAwaiter_1_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT
 bl System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
 bl System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_INT__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_INT_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
-bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
 bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
+bl System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
+bl wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
 bl System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
 method_addresses_end:
 
@@ -7299,7 +7420,7 @@ unbox_trampolines:
 
 	.long 14,15,16,17,32,33,34,35
 	.long 36,37,38,39,93,94,95,97
-	.long 98,102
+	.long 98,103
 unbox_trampolines_end:
 
 	.long 0
@@ -7323,7 +7444,7 @@ bl ut_94
 bl ut_95
 bl ut_97
 bl ut_98
-bl ut_102
+bl ut_103
 
 	.long 0
 .section __TEXT, __const
@@ -7331,7 +7452,7 @@ bl ut_102
 unwind_info:
 
 	.byte 0,13,12,31,0,68,14,16,157,2,158,1,68,13,29,13,12,31,0,68,14,32,157,4,158,3,68,13,29,14,12,31
-	.byte 0,68,14,160,2,157,36,158,35,68,13,29,14,12,31,0,68,14,176,1,157,22,158,21,68,13,29,18,12,31,0,68
+	.byte 0,68,14,192,1,157,24,158,23,68,13,29,14,12,31,0,68,14,128,1,157,16,158,15,68,13,29,18,12,31,0,68
 	.byte 14,64,157,8,158,7,68,13,29,68,153,6,154,5,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,13
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,24,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,151,26,152
 	.byte 25,68,153,24,154,23,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,153,12,154,11,23,12,31,0,68,14,64
@@ -7342,15 +7463,14 @@ unwind_info:
 	.byte 14,80,157,10,158,9,68,13,29,68,151,8,152,7,68,153,6,154,5,18,12,31,0,68,14,96,157,12,158,11,68,13
 	.byte 29,68,153,10,154,9,13,12,31,0,68,14,80,157,10,158,9,68,13,29,21,12,31,0,68,14,96,157,12,158,11,68
 	.byte 13,29,68,151,10,152,9,68,153,8,13,12,31,0,68,14,112,157,14,158,13,68,13,29,13,12,31,0,68,14,96,157
-	.byte 12,158,11,68,13,29,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,156,12,14,12,31,0,68,14,128,1,157
-	.byte 16,158,15,68,13,29,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4,16,12,31,0,68,14,48,157,6
-	.byte 158,5,68,13,29,68,153,4,17,12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,154,16,16,12,31,0,68,14
-	.byte 96,157,12,158,11,68,13,29,68,151,10,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,17,12,31,0
-	.byte 68,14,240,1,157,30,158,29,68,13,29,68,153,28,22,12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,150,20
-	.byte 68,153,19,154,18,18,12,31,0,68,14,80,157,10,158,9,68,13,29,68,153,8,154,7,21,12,31,0,68,14,112,157
-	.byte 14,158,13,68,13,29,68,152,12,153,11,68,154,10,14,12,31,0,68,14,192,1,157,24,158,23,68,13,29,14,12,31
-	.byte 0,68,14,144,1,157,18,158,17,68,13,29,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26,151,25
-	.byte 68,152,24,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11
+	.byte 12,158,11,68,13,29,16,12,31,0,68,14,112,157,14,158,13,68,13,29,68,156,12,16,12,31,0,68,14,48,157,6
+	.byte 158,5,68,13,29,68,154,4,16,12,31,0,68,14,48,157,6,158,5,68,13,29,68,153,4,17,12,31,0,68,14,144
+	.byte 1,157,18,158,17,68,13,29,68,154,16,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,16,12,31,0
+	.byte 68,14,112,157,14,158,13,68,13,29,68,150,12,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,22
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,150,20,68,153,19,154,18,18,12,31,0,68,14,80,157,10,158
+	.byte 9,68,13,29,68,153,8,154,7,21,12,31,0,68,14,112,157,14,158,13,68,13,29,68,152,12,153,11,68,154,10,14
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,22,12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,150,26
+	.byte 151,25,68,152,24,18,12,31,0,68,14,112,157,14,158,13,68,13,29,68,150,12,151,11
 
 .text
 	.align 4
@@ -7363,7 +7483,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 3210
+.word 3267
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
@@ -7371,55 +7491,55 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 3221
-	.no_dead_strip plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint_get_IsValueCreated
-plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint_get_IsValueCreated:
+.word 3278
+	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation__ctor
+plt_Plugin_Fingerprint_FingerprintImplementation__ctor:
 _p_3:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 3229
-	.no_dead_strip plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint__ctor_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint_System_Threading_LazyThreadSafetyMode
-plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint__ctor_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint_System_Threading_LazyThreadSafetyMode:
+.word 3286
+	.no_dead_strip plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint_get_IsValueCreated
+plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint_get_IsValueCreated:
 _p_4:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 3240
-	.no_dead_strip plt_System_NotImplementedException__ctor_string
-plt_System_NotImplementedException__ctor_string:
+.word 3288
+	.no_dead_strip plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint__ctor_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint_System_Threading_LazyThreadSafetyMode
+plt_System_Lazy_1_Plugin_Fingerprint_Abstractions_IFingerprint__ctor_System_Func_1_Plugin_Fingerprint_Abstractions_IFingerprint_System_Threading_LazyThreadSafetyMode:
 _p_5:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 3251
-	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation_CreateLaContext
-plt_Plugin_Fingerprint_FingerprintImplementation_CreateLaContext:
+.word 3299
+	.no_dead_strip plt_System_NotImplementedException__ctor_string
+plt_System_NotImplementedException__ctor_string:
 _p_6:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 3256
-	.no_dead_strip plt_string_memset_byte__int_int
-plt_string_memset_byte__int_int:
+.word 3310
+	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation_CreateLaContext
+plt_Plugin_Fingerprint_FingerprintImplementation_CreateLaContext:
 _p_7:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 3258
-	.no_dead_strip plt_string_memcpy_byte__byte__int
-plt_string_memcpy_byte__byte__int:
+.word 3315
+	.no_dead_strip plt_string_memset_byte__int_int
+plt_string_memset_byte__int_int:
 _p_8:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 3263
+.word 3317
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_Start_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_Start_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_:
 _p_9:
@@ -7427,7 +7547,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 3268
+.word 3322
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_get_Task:
 _p_10:
@@ -7435,7 +7555,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 3280
+.word 3334
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_Start_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_Start_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_:
 _p_11:
@@ -7443,7 +7563,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 3291
+.word 3345
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_get_Task:
 _p_12:
@@ -7451,7 +7571,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 3303
+.word 3357
 	.no_dead_strip plt_ObjCRuntime_Selector__ctor_string
 plt_ObjCRuntime_Selector__ctor_string:
 _p_13:
@@ -7459,7 +7579,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 3314
+.word 3368
 	.no_dead_strip plt_LocalAuthentication_LAContext_set_LocalizedFallbackTitle_string
 plt_LocalAuthentication_LAContext_set_LocalizedFallbackTitle_string:
 _p_14:
@@ -7467,7 +7587,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 3319
+.word 3373
 	.no_dead_strip plt_LocalAuthentication_LAContext_set_LocalizedCancelTitle_string
 plt_LocalAuthentication_LAContext_set_LocalizedCancelTitle_string:
 _p_15:
@@ -7475,7 +7595,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 3324
+.word 3378
 	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation_CreateNewContext
 plt_Plugin_Fingerprint_FingerprintImplementation_CreateNewContext:
 _p_16:
@@ -7483,7 +7603,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 3329
+.word 3383
 	.no_dead_strip plt_LocalAuthentication_LAContext_Invalidate
 plt_LocalAuthentication_LAContext_Invalidate:
 _p_17:
@@ -7491,7 +7611,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 3331
+.word 3385
 	.no_dead_strip plt_Foundation_NSObject_Dispose
 plt_Foundation_NSObject_Dispose:
 _p_18:
@@ -7499,7 +7619,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 3336
+.word 3390
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_19:
@@ -7507,7 +7627,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 3341
+.word 3395
 	.no_dead_strip plt_Foundation_NSProcessInfo__ctor
 plt_Foundation_NSProcessInfo__ctor:
 _p_20:
@@ -7515,7 +7635,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 3373
+.word 3427
 	.no_dead_strip plt_UIKit_UIDevice_get_CurrentDevice
 plt_UIKit_UIDevice_get_CurrentDevice:
 _p_21:
@@ -7523,7 +7643,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 3378
+.word 3432
 	.no_dead_strip plt_UIKit_UIDevice_CheckSystemVersion_int_int
 plt_UIKit_UIDevice_CheckSystemVersion_int_int:
 _p_22:
@@ -7531,7 +7651,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 3383
+.word 3437
 	.no_dead_strip plt_ObjCRuntime_Class_GetHandle_System_Type
 plt_ObjCRuntime_Class_GetHandle_System_Type:
 _p_23:
@@ -7539,7 +7659,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 3388
+.word 3442
 	.no_dead_strip plt_LocalAuthentication_LAContext__ctor
 plt_LocalAuthentication_LAContext__ctor:
 _p_24:
@@ -7547,7 +7667,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 3393
+.word 3447
 	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation_SetupContextProperties_Plugin_Fingerprint_Abstractions_AuthenticationRequestConfiguration
 plt_Plugin_Fingerprint_FingerprintImplementation_SetupContextProperties_Plugin_Fingerprint_Abstractions_AuthenticationRequestConfiguration:
 _p_25:
@@ -7555,7 +7675,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 3398
+.word 3452
 	.no_dead_strip plt_System_Threading_CancellationToken_Register_System_Action
 plt_System_Threading_CancellationToken_Register_System_Action:
 _p_26:
@@ -7563,7 +7683,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 3400
+.word 3454
 	.no_dead_strip plt_LocalAuthentication_LAContext_EvaluatePolicyAsync_LocalAuthentication_LAPolicy_string
 plt_LocalAuthentication_LAContext_EvaluatePolicyAsync_LocalAuthentication_LAPolicy_string:
 _p_27:
@@ -7571,7 +7691,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 3405
+.word 3459
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Tuple_2_bool_Foundation_NSError_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Tuple_2_bool_Foundation_NSError_GetAwaiter:
 _p_28:
@@ -7579,7 +7699,7 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 3410
+.word 3464
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError__Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError__Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_:
 _p_29:
@@ -7587,1143 +7707,1143 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 3421
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_GetResult
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_GetResult:
+.word 3475
+	.no_dead_strip plt__jit_icall_mono_thread_self_abort
+plt__jit_icall_mono_thread_self_abort:
 _p_30:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 3433
-	.no_dead_strip plt_System_Threading_CancellationTokenRegistration_Dispose
-plt_System_Threading_CancellationTokenRegistration_Dispose:
+.word 3487
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_GetResult
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_GetResult:
 _p_31:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 3444
-	.no_dead_strip plt_Foundation_NSError_get_Code
-plt_Foundation_NSError_get_Code:
+.word 3512
+	.no_dead_strip plt_System_Threading_CancellationTokenRegistration_Dispose
+plt_System_Threading_CancellationTokenRegistration_Dispose:
 _p_32:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 3449
-	.no_dead_strip plt_string_Contains_string
-plt_string_Contains_string:
+.word 3523
+	.no_dead_strip plt_Foundation_NSError_get_Code
+plt_Foundation_NSError_get_Code:
 _p_33:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3454
-	.no_dead_strip plt_Foundation_NSError_get_LocalizedDescription
-plt_Foundation_NSError_get_LocalizedDescription:
+.word 3528
+	.no_dead_strip plt_string_Contains_string
+plt_string_Contains_string:
 _p_34:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3459
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetException_System_Exception
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetException_System_Exception:
+.word 3533
+	.no_dead_strip plt_Foundation_NSError_get_LocalizedDescription
+plt_Foundation_NSError_get_LocalizedDescription:
 _p_35:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3464
-	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
-plt__jit_icall_mono_thread_get_undeniable_exception:
+.word 3538
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetException_System_Exception
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetException_System_Exception:
 _p_36:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3475
-	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
-plt__jit_icall_mono_arch_throw_exception:
+.word 3543
+	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
+plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_37:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3514
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult:
+.word 3554
+	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
+plt__jit_icall_mono_arch_throw_exception:
 _p_38:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3542
-	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
-plt__jit_icall_mono_arch_throw_corlib_exception:
+.word 3593
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult:
 _p_39:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3553
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 3621
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_40:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3588
-	.no_dead_strip plt_LocalAuthentication_LAContext_CanEvaluatePolicy_LocalAuthentication_LAPolicy_Foundation_NSError_
-plt_LocalAuthentication_LAContext_CanEvaluatePolicy_LocalAuthentication_LAPolicy_Foundation_NSError_:
+.word 3632
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAuthenticationResult_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_41:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3599
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetException_System_Exception
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetException_System_Exception:
+.word 3667
+	.no_dead_strip plt_LocalAuthentication_LAContext_CanEvaluatePolicy_LocalAuthentication_LAPolicy_Foundation_NSError_
+plt_LocalAuthentication_LAContext_CanEvaluatePolicy_LocalAuthentication_LAPolicy_Foundation_NSError_:
 _p_42:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3604
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAvailability
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAvailability:
+.word 3678
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetException_System_Exception
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetException_System_Exception:
 _p_43:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3615
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 3683
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAvailability
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetResult_Plugin_Fingerprint_Abstractions_FingerprintAvailability:
 _p_44:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3626
-	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
-plt__jit_icall_mono_thread_interruption_checkpoint:
+.word 3694
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Plugin_Fingerprint_Abstractions_FingerprintAvailability_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_45:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 3637
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 3705
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_46:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 3675
-	.no_dead_strip plt__rgctx_fetch_0
-plt__rgctx_fetch_0:
+.word 3716
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_47:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 3707
-	.no_dead_strip plt__jit_icall_mono_generic_class_init
-plt__jit_icall_mono_generic_class_init:
+.word 3754
+	.no_dead_strip plt__rgctx_fetch_0
+plt__rgctx_fetch_0:
 _p_48:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 3715
-	.no_dead_strip plt__rgctx_fetch_1
-plt__rgctx_fetch_1:
+.word 3786
+	.no_dead_strip plt__jit_icall_mono_generic_class_init
+plt__jit_icall_mono_generic_class_init:
 _p_49:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 3741
-	.no_dead_strip plt__rgctx_fetch_2
-plt__rgctx_fetch_2:
+.word 3794
+	.no_dead_strip plt__rgctx_fetch_1
+plt__rgctx_fetch_1:
 _p_50:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 3782
-	.no_dead_strip plt__rgctx_fetch_3
-plt__rgctx_fetch_3:
+.word 3820
+	.no_dead_strip plt__rgctx_fetch_2
+plt__rgctx_fetch_2:
 _p_51:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 3790
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
-plt_System_Threading_Tasks_Task_get_Id:
+.word 3861
+	.no_dead_strip plt__rgctx_fetch_3
+plt__rgctx_fetch_3:
 _p_52:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 3813
-	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
-plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
+.word 3869
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
+plt_System_Threading_Tasks_Task_get_Id:
 _p_53:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 3818
-	.no_dead_strip plt__rgctx_fetch_4
-plt__rgctx_fetch_4:
+.word 3892
+	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
+plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
 _p_54:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 3823
-	.no_dead_strip plt__rgctx_fetch_5
-plt__rgctx_fetch_5:
+.word 3897
+	.no_dead_strip plt__rgctx_fetch_4
+plt__rgctx_fetch_4:
 _p_55:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 3831
-	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
-plt__jit_icall_mono_helper_ldstr_mscorlib:
+.word 3902
+	.no_dead_strip plt__rgctx_fetch_5
+plt__rgctx_fetch_5:
 _p_56:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 3854
-	.no_dead_strip plt__rgctx_fetch_6
-plt__rgctx_fetch_6:
+.word 3910
+	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
+plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_57:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 3901
-	.no_dead_strip plt__rgctx_fetch_7
-plt__rgctx_fetch_7:
+.word 3933
+	.no_dead_strip plt__rgctx_fetch_6
+plt__rgctx_fetch_6:
 _p_58:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 3909
-	.no_dead_strip plt__rgctx_fetch_8
-plt__rgctx_fetch_8:
+.word 3980
+	.no_dead_strip plt__rgctx_fetch_7
+plt__rgctx_fetch_7:
 _p_59:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 3950
-	.no_dead_strip plt__rgctx_fetch_9
-plt__rgctx_fetch_9:
+.word 3988
+	.no_dead_strip plt__rgctx_fetch_8
+plt__rgctx_fetch_8:
 _p_60:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 3958
-	.no_dead_strip plt__rgctx_fetch_10
-plt__rgctx_fetch_10:
+.word 4029
+	.no_dead_strip plt__rgctx_fetch_9
+plt__rgctx_fetch_9:
 _p_61:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 3981
-	.no_dead_strip plt__rgctx_fetch_11
-plt__rgctx_fetch_11:
+.word 4037
+	.no_dead_strip plt__rgctx_fetch_10
+plt__rgctx_fetch_10:
 _p_62:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 3989
-	.no_dead_strip plt__rgctx_fetch_12
-plt__rgctx_fetch_12:
+.word 4060
+	.no_dead_strip plt__rgctx_fetch_11
+plt__rgctx_fetch_11:
 _p_63:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 4012
-	.no_dead_strip plt__rgctx_fetch_13
-plt__rgctx_fetch_13:
+.word 4068
+	.no_dead_strip plt__rgctx_fetch_12
+plt__rgctx_fetch_12:
 _p_64:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 4053
-	.no_dead_strip plt__rgctx_fetch_14
-plt__rgctx_fetch_14:
+.word 4091
+	.no_dead_strip plt__rgctx_fetch_13
+plt__rgctx_fetch_13:
 _p_65:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 4061
-	.no_dead_strip plt__rgctx_fetch_15
-plt__rgctx_fetch_15:
+.word 4132
+	.no_dead_strip plt__rgctx_fetch_14
+plt__rgctx_fetch_14:
 _p_66:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 4069
-	.no_dead_strip plt_System_Decimal_op_Equality_System_Decimal_System_Decimal
-plt_System_Decimal_op_Equality_System_Decimal_System_Decimal:
+.word 4140
+	.no_dead_strip plt__rgctx_fetch_15
+plt__rgctx_fetch_15:
 _p_67:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 4093
-	.no_dead_strip plt__rgctx_fetch_16
-plt__rgctx_fetch_16:
+.word 4148
+	.no_dead_strip plt_System_Decimal_op_Equality_System_Decimal_System_Decimal
+plt_System_Decimal_op_Equality_System_Decimal_System_Decimal:
 _p_68:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 4098
-	.no_dead_strip plt__rgctx_fetch_17
-plt__rgctx_fetch_17:
+.word 4172
+	.no_dead_strip plt__rgctx_fetch_16
+plt__rgctx_fetch_16:
 _p_69:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 4106
-	.no_dead_strip plt__rgctx_fetch_18
-plt__rgctx_fetch_18:
+.word 4177
+	.no_dead_strip plt__rgctx_fetch_17
+plt__rgctx_fetch_17:
 _p_70:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 4114
-	.no_dead_strip plt__rgctx_fetch_19
-plt__rgctx_fetch_19:
+.word 4185
+	.no_dead_strip plt__rgctx_fetch_18
+plt__rgctx_fetch_18:
 _p_71:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 4122
-	.no_dead_strip plt__rgctx_fetch_20
-plt__rgctx_fetch_20:
+.word 4193
+	.no_dead_strip plt__rgctx_fetch_19
+plt__rgctx_fetch_19:
 _p_72:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 4163
-	.no_dead_strip plt__rgctx_fetch_21
-plt__rgctx_fetch_21:
+.word 4201
+	.no_dead_strip plt__rgctx_fetch_20
+plt__rgctx_fetch_20:
 _p_73:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 4187
-	.no_dead_strip plt__rgctx_fetch_22
-plt__rgctx_fetch_22:
+.word 4242
+	.no_dead_strip plt__rgctx_fetch_21
+plt__rgctx_fetch_21:
 _p_74:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 4211
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
-plt_System_Threading_Tasks_Task__ctor:
+.word 4266
+	.no_dead_strip plt__rgctx_fetch_22
+plt__rgctx_fetch_22:
 _p_75:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 4219
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+.word 4290
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
+plt_System_Threading_Tasks_Task__ctor:
 _p_76:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 4224
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+.word 4298
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_77:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 4229
-	.no_dead_strip plt__rgctx_fetch_23
-plt__rgctx_fetch_23:
+.word 4303
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_78:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 4252
-	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
-plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
+.word 4308
+	.no_dead_strip plt__rgctx_fetch_23
+plt__rgctx_fetch_23:
 _p_79:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 4275
-	.no_dead_strip plt__rgctx_fetch_24
-plt__rgctx_fetch_24:
+.word 4331
+	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
+plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
 _p_80:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 4298
-	.no_dead_strip plt__rgctx_fetch_25
-plt__rgctx_fetch_25:
+.word 4354
+	.no_dead_strip plt__rgctx_fetch_24
+plt__rgctx_fetch_24:
 _p_81:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 4339
-	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 4377
+	.no_dead_strip plt__rgctx_fetch_25
+plt__rgctx_fetch_25:
 _p_82:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 4362
-	.no_dead_strip plt__rgctx_fetch_26
-plt__rgctx_fetch_26:
+.word 4418
+	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_83:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 4385
-	.no_dead_strip plt__rgctx_fetch_27
-plt__rgctx_fetch_27:
+.word 4441
+	.no_dead_strip plt__rgctx_fetch_26
+plt__rgctx_fetch_26:
 _p_84:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 4426
-	.no_dead_strip plt__rgctx_fetch_28
-plt__rgctx_fetch_28:
+.word 4464
+	.no_dead_strip plt__rgctx_fetch_27
+plt__rgctx_fetch_27:
 _p_85:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 4434
-	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
-plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+.word 4505
+	.no_dead_strip plt__rgctx_fetch_28
+plt__rgctx_fetch_28:
 _p_86:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 4457
-	.no_dead_strip plt__rgctx_fetch_29
-plt__rgctx_fetch_29:
+.word 4513
+	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_87:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 4480
-	.no_dead_strip plt__rgctx_fetch_30
-plt__rgctx_fetch_30:
+.word 4536
+	.no_dead_strip plt__rgctx_fetch_29
+plt__rgctx_fetch_29:
 _p_88:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 4488
-	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
-plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+.word 4559
+	.no_dead_strip plt__rgctx_fetch_30
+plt__rgctx_fetch_30:
 _p_89:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 4511
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
-plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+.word 4567
+	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_90:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 4516
-	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
-plt_System_Threading_Tasks_Task_FinishStageThree:
+.word 4590
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_91:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 4521
-	.no_dead_strip plt__rgctx_fetch_31
-plt__rgctx_fetch_31:
+.word 4595
+	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
+plt_System_Threading_Tasks_Task_FinishStageThree:
 _p_92:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 4544
-	.no_dead_strip plt__rgctx_fetch_32
-plt__rgctx_fetch_32:
+.word 4600
+	.no_dead_strip plt__rgctx_fetch_31
+plt__rgctx_fetch_31:
 _p_93:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 4585
-	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
-plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+.word 4623
+	.no_dead_strip plt__rgctx_fetch_32
+plt__rgctx_fetch_32:
 _p_94:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 4608
-	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
-plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
+.word 4664
+	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_95:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 4613
-	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
-plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
+.word 4687
+	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
+plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
 _p_96:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 4618
-	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
-plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+.word 4692
+	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
+plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
 _p_97:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 4623
-	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
-plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
+.word 4697
+	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_98:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 4628
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
-plt_System_Threading_Tasks_Task_AddException_object:
+.word 4702
+	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
+plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
 _p_99:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 4633
-	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
-plt_System_Threading_Tasks_Task_Finish_bool:
+.word 4707
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
+plt_System_Threading_Tasks_Task_AddException_object:
 _p_100:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 4638
-	.no_dead_strip plt__rgctx_fetch_33
-plt__rgctx_fetch_33:
+.word 4712
+	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
+plt_System_Threading_Tasks_Task_Finish_bool:
 _p_101:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 4661
-	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
-plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
+.word 4717
+	.no_dead_strip plt__rgctx_fetch_33
+plt__rgctx_fetch_33:
 _p_102:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 4684
-	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
-plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
+.word 4740
+	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
+plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
 _p_103:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 4689
-	.no_dead_strip plt__rgctx_fetch_34
-plt__rgctx_fetch_34:
+.word 4763
+	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
+plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
 _p_104:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 4712
-	.no_dead_strip plt__rgctx_fetch_35
-plt__rgctx_fetch_35:
+.word 4768
+	.no_dead_strip plt__rgctx_fetch_34
+plt__rgctx_fetch_34:
 _p_105:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 4720
-	.no_dead_strip plt__rgctx_fetch_36
-plt__rgctx_fetch_36:
+.word 4791
+	.no_dead_strip plt__rgctx_fetch_35
+plt__rgctx_fetch_35:
 _p_106:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 4755
-	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+.word 4799
+	.no_dead_strip plt__rgctx_fetch_36
+plt__rgctx_fetch_36:
 _p_107:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 4763
-	.no_dead_strip plt__rgctx_fetch_37
-plt__rgctx_fetch_37:
+.word 4834
+	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_108:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 4784
-	.no_dead_strip plt__rgctx_fetch_38
-plt__rgctx_fetch_38:
+.word 4842
+	.no_dead_strip plt__rgctx_fetch_37
+plt__rgctx_fetch_37:
 _p_109:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 4819
-	.no_dead_strip plt__rgctx_fetch_39
-plt__rgctx_fetch_39:
+.word 4863
+	.no_dead_strip plt__rgctx_fetch_38
+plt__rgctx_fetch_38:
 _p_110:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 4827
-	.no_dead_strip plt__rgctx_fetch_40
-plt__rgctx_fetch_40:
+.word 4898
+	.no_dead_strip plt__rgctx_fetch_39
+plt__rgctx_fetch_39:
 _p_111:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 4877
-	.no_dead_strip plt__rgctx_fetch_41
-plt__rgctx_fetch_41:
+.word 4906
+	.no_dead_strip plt__rgctx_fetch_40
+plt__rgctx_fetch_40:
 _p_112:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 4885
-	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
-plt_System_Threading_Tasks_TaskScheduler_get_Current:
+.word 4956
+	.no_dead_strip plt__rgctx_fetch_41
+plt__rgctx_fetch_41:
 _p_113:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 4908
-	.no_dead_strip plt__rgctx_fetch_42
-plt__rgctx_fetch_42:
+.word 4964
+	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
+plt_System_Threading_Tasks_TaskScheduler_get_Current:
 _p_114:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 4931
-	.no_dead_strip plt__rgctx_fetch_43
-plt__rgctx_fetch_43:
+.word 4987
+	.no_dead_strip plt__rgctx_fetch_42
+plt__rgctx_fetch_42:
 _p_115:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 4972
-	.no_dead_strip plt__rgctx_fetch_44
-plt__rgctx_fetch_44:
+.word 5010
+	.no_dead_strip plt__rgctx_fetch_43
+plt__rgctx_fetch_43:
 _p_116:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 5013
-	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
-plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+.word 5051
+	.no_dead_strip plt__rgctx_fetch_44
+plt__rgctx_fetch_44:
 _p_117:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 5036
-	.no_dead_strip plt__rgctx_fetch_45
-plt__rgctx_fetch_45:
+.word 5092
+	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_118:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 5068
-	.no_dead_strip plt__rgctx_fetch_46
-plt__rgctx_fetch_46:
+.word 5115
+	.no_dead_strip plt__rgctx_fetch_45
+plt__rgctx_fetch_45:
 _p_119:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 5076
-	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 5147
+	.no_dead_strip plt__rgctx_fetch_46
+plt__rgctx_fetch_46:
 _p_120:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 5099
-	.no_dead_strip plt__rgctx_fetch_47
-plt__rgctx_fetch_47:
+.word 5155
+	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_121:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 5131
-	.no_dead_strip plt__rgctx_fetch_48
-plt__rgctx_fetch_48:
+.word 5178
+	.no_dead_strip plt__rgctx_fetch_47
+plt__rgctx_fetch_47:
 _p_122:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 5139
-	.no_dead_strip plt__rgctx_fetch_49
-plt__rgctx_fetch_49:
+.word 5210
+	.no_dead_strip plt__rgctx_fetch_48
+plt__rgctx_fetch_48:
 _p_123:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 5162
-	.no_dead_strip plt__rgctx_fetch_50
-plt__rgctx_fetch_50:
+.word 5218
+	.no_dead_strip plt__rgctx_fetch_49
+plt__rgctx_fetch_49:
 _p_124:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 5179
-	.no_dead_strip plt__rgctx_fetch_51
-plt__rgctx_fetch_51:
+.word 5241
+	.no_dead_strip plt__rgctx_fetch_50
+plt__rgctx_fetch_50:
 _p_125:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 5187
-	.no_dead_strip plt__rgctx_fetch_52
-plt__rgctx_fetch_52:
+.word 5258
+	.no_dead_strip plt__rgctx_fetch_51
+plt__rgctx_fetch_51:
 _p_126:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 5195
-	.no_dead_strip plt__jit_icall_mono_ldftn
-plt__jit_icall_mono_ldftn:
+.word 5266
+	.no_dead_strip plt__rgctx_fetch_52
+plt__rgctx_fetch_52:
 _p_127:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 5218
-	.no_dead_strip plt__rgctx_fetch_53
-plt__rgctx_fetch_53:
+.word 5274
+	.no_dead_strip plt__jit_icall_mono_ldftn
+plt__jit_icall_mono_ldftn:
 _p_128:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 5243
-	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
-plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
+.word 5297
+	.no_dead_strip plt__rgctx_fetch_53
+plt__rgctx_fetch_53:
 _p_129:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 5251
-	.no_dead_strip plt__rgctx_fetch_54
-plt__rgctx_fetch_54:
+.word 5322
+	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
+plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
 _p_130:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 5291
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
-plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
+.word 5330
+	.no_dead_strip plt__rgctx_fetch_54
+plt__rgctx_fetch_54:
 _p_131:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 5314
-	.no_dead_strip plt__rgctx_fetch_55
-plt__rgctx_fetch_55:
+.word 5370
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
+plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
 _p_132:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 5346
-	.no_dead_strip plt__rgctx_fetch_56
-plt__rgctx_fetch_56:
+.word 5393
+	.no_dead_strip plt__rgctx_fetch_55
+plt__rgctx_fetch_55:
 _p_133:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 5354
-	.no_dead_strip plt__rgctx_fetch_57
-plt__rgctx_fetch_57:
+.word 5425
+	.no_dead_strip plt__rgctx_fetch_56
+plt__rgctx_fetch_56:
 _p_134:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 5395
-	.no_dead_strip plt__rgctx_fetch_58
-plt__rgctx_fetch_58:
+.word 5433
+	.no_dead_strip plt__rgctx_fetch_57
+plt__rgctx_fetch_57:
 _p_135:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 5403
-	.no_dead_strip plt__rgctx_fetch_59
-plt__rgctx_fetch_59:
+.word 5474
+	.no_dead_strip plt__rgctx_fetch_58
+plt__rgctx_fetch_58:
 _p_136:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 5444
-	.no_dead_strip plt__rgctx_fetch_60
-plt__rgctx_fetch_60:
+.word 5482
+	.no_dead_strip plt__rgctx_fetch_59
+plt__rgctx_fetch_59:
 _p_137:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 5452
-	.no_dead_strip plt__rgctx_fetch_61
-plt__rgctx_fetch_61:
+.word 5523
+	.no_dead_strip plt__rgctx_fetch_60
+plt__rgctx_fetch_60:
 _p_138:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 5475
-	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
-plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
+.word 5531
+	.no_dead_strip plt__rgctx_fetch_61
+plt__rgctx_fetch_61:
 _p_139:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 5498
-	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
-plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
+.word 5554
+	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
+plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
 _p_140:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 5503
-	.no_dead_strip plt__rgctx_fetch_62
-plt__rgctx_fetch_62:
+.word 5577
+	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
+plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
 _p_141:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 5508
-	.no_dead_strip plt__rgctx_fetch_63
-plt__rgctx_fetch_63:
+.word 5582
+	.no_dead_strip plt__rgctx_fetch_62
+plt__rgctx_fetch_62:
 _p_142:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 5531
-	.no_dead_strip plt__rgctx_fetch_64
-plt__rgctx_fetch_64:
+.word 5587
+	.no_dead_strip plt__rgctx_fetch_63
+plt__rgctx_fetch_63:
 _p_143:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 5572
-	.no_dead_strip plt__rgctx_fetch_65
-plt__rgctx_fetch_65:
+.word 5610
+	.no_dead_strip plt__rgctx_fetch_64
+plt__rgctx_fetch_64:
 _p_144:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 5580
-	.no_dead_strip plt__rgctx_fetch_66
-plt__rgctx_fetch_66:
+.word 5651
+	.no_dead_strip plt__rgctx_fetch_65
+plt__rgctx_fetch_65:
 _p_145:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 5630
-	.no_dead_strip plt__rgctx_fetch_67
-plt__rgctx_fetch_67:
+.word 5659
+	.no_dead_strip plt__rgctx_fetch_66
+plt__rgctx_fetch_66:
 _p_146:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 5638
-	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
-plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
+.word 5709
+	.no_dead_strip plt__rgctx_fetch_67
+plt__rgctx_fetch_67:
 _p_147:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 5661
-	.no_dead_strip plt__rgctx_fetch_68
-plt__rgctx_fetch_68:
+.word 5717
+	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
+plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_148:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 5666
-	.no_dead_strip plt__rgctx_fetch_69
-plt__rgctx_fetch_69:
+.word 5740
+	.no_dead_strip plt__rgctx_fetch_68
+plt__rgctx_fetch_68:
 _p_149:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 5674
-	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
-plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
+.word 5745
+	.no_dead_strip plt__rgctx_fetch_69
+plt__rgctx_fetch_69:
 _p_150:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 5697
-	.no_dead_strip plt__rgctx_fetch_70
-plt__rgctx_fetch_70:
+.word 5753
+	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
+plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
 _p_151:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 5711
-	.no_dead_strip plt__rgctx_fetch_71
-plt__rgctx_fetch_71:
+.word 5776
+	.no_dead_strip plt__rgctx_fetch_70
+plt__rgctx_fetch_70:
 _p_152:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 5719
-	.no_dead_strip plt__rgctx_fetch_72
-plt__rgctx_fetch_72:
+.word 5790
+	.no_dead_strip plt__rgctx_fetch_71
+plt__rgctx_fetch_71:
 _p_153:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 5742
-	.no_dead_strip plt__rgctx_fetch_73
-plt__rgctx_fetch_73:
+.word 5798
+	.no_dead_strip plt__rgctx_fetch_72
+plt__rgctx_fetch_72:
 _p_154:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 5765
-	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
-plt_System_Threading_AtomicBoolean_TryRelaxedSet:
+.word 5821
+	.no_dead_strip plt__rgctx_fetch_73
+plt__rgctx_fetch_73:
 _p_155:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 5788
-	.no_dead_strip plt__rgctx_fetch_74
-plt__rgctx_fetch_74:
+.word 5844
+	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
+plt_System_Threading_AtomicBoolean_TryRelaxedSet:
 _p_156:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 5793
-	.no_dead_strip plt__rgctx_fetch_75
-plt__rgctx_fetch_75:
+.word 5867
+	.no_dead_strip plt__rgctx_fetch_74
+plt__rgctx_fetch_74:
 _p_157:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 5801
-	.no_dead_strip plt__rgctx_fetch_76
-plt__rgctx_fetch_76:
+.word 5872
+	.no_dead_strip plt__rgctx_fetch_75
+plt__rgctx_fetch_75:
 _p_158:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 5824
-	.no_dead_strip plt__rgctx_fetch_77
-plt__rgctx_fetch_77:
+.word 5880
+	.no_dead_strip plt__rgctx_fetch_76
+plt__rgctx_fetch_76:
 _p_159:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 5847
-	.no_dead_strip plt__rgctx_fetch_78
-plt__rgctx_fetch_78:
+.word 5903
+	.no_dead_strip plt__rgctx_fetch_77
+plt__rgctx_fetch_77:
 _p_160:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 5870
-	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
-plt__jit_icall_mono_arch_rethrow_exception:
+.word 5926
+	.no_dead_strip plt__rgctx_fetch_78
+plt__rgctx_fetch_78:
 _p_161:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 5893
-	.no_dead_strip plt__rgctx_fetch_79
-plt__rgctx_fetch_79:
+.word 5949
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
 _p_162:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 5944
-	.no_dead_strip plt__rgctx_fetch_80
-plt__rgctx_fetch_80:
+.word 5972
+	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
+plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
 _p_163:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 5952
-	.no_dead_strip plt__rgctx_fetch_81
-plt__rgctx_fetch_81:
+.word 6002
+	.no_dead_strip plt__rgctx_fetch_79
+plt__rgctx_fetch_79:
 _p_164:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 5981
-	.no_dead_strip plt__rgctx_fetch_82
-plt__rgctx_fetch_82:
+.word 6043
+	.no_dead_strip plt__rgctx_fetch_80
+plt__rgctx_fetch_80:
 _p_165:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 5989
-	.no_dead_strip plt_SR_Format_string_object
-plt_SR_Format_string_object:
+.word 6051
+	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
+plt_System_Collections_Generic_Comparer_1_object_get_Default:
 _p_166:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 5997
-	.no_dead_strip plt__rgctx_fetch_83
-plt__rgctx_fetch_83:
+.word 6059
+	.no_dead_strip plt__rgctx_fetch_81
+plt__rgctx_fetch_81:
 _p_167:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 6023
-	.no_dead_strip plt_System_Text_StringBuilder__ctor
-plt_System_Text_StringBuilder__ctor:
+.word 6100
+	.no_dead_strip plt__rgctx_fetch_82
+plt__rgctx_fetch_82:
 _p_168:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 6031
-	.no_dead_strip plt_System_Text_StringBuilder_Append_string
-plt_System_Text_StringBuilder_Append_string:
+.word 6108
+	.no_dead_strip plt_SR_Format_string_object
+plt_SR_Format_string_object:
 _p_169:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 6036
-	.no_dead_strip plt__rgctx_fetch_84
-plt__rgctx_fetch_84:
+.word 6116
+	.no_dead_strip plt__rgctx_fetch_83
+plt__rgctx_fetch_83:
 _p_170:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 6062
-	.no_dead_strip plt_System_Text_StringBuilder_Append_object
-plt_System_Text_StringBuilder_Append_object:
+.word 6142
+	.no_dead_strip plt_System_Text_StringBuilder__ctor
+plt_System_Text_StringBuilder__ctor:
 _p_171:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 6070
+.word 6150
 	.no_dead_strip plt_System_Text_StringBuilder_Append_char
 plt_System_Text_StringBuilder_Append_char:
 _p_172:
@@ -8731,107 +8851,139 @@ adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 6075
-	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
-plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
+.word 6155
+	.no_dead_strip plt__rgctx_fetch_84
+plt__rgctx_fetch_84:
 _p_173:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 6080
-	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_MoveNext
-plt_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_MoveNext:
+.word 6181
+	.no_dead_strip plt_System_Text_StringBuilder_Append_object
+plt_System_Text_StringBuilder_Append_object:
 _p_174:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 6085
-	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
-plt_System_Threading_ExecutionContextSwitcher_Undo:
+.word 6189
+	.no_dead_strip plt_System_Text_StringBuilder_Append_string
+plt_System_Text_StringBuilder_Append_string:
 _p_175:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 6087
-	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_MoveNext
-plt_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_MoveNext:
+.word 6194
+	.no_dead_strip plt_string_memcpy_byte__byte__int
+plt_string_memcpy_byte__byte__int:
 _p_176:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 6092
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
+.word 6199
+	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
+plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_177:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 6094
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
+.word 6204
+	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_MoveNext
+plt_Plugin_Fingerprint_FingerprintImplementation__NativeAuthenticateAsyncd__2_MoveNext:
 _p_178:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 6099
-	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_UnsafeOnCompleted_System_Action
-plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_UnsafeOnCompleted_System_Action:
+.word 6209
+	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
+plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_179:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 6104
-	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+.word 6211
+	.no_dead_strip plt_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_MoveNext
+plt_Plugin_Fingerprint_FingerprintImplementation__GetAvailabilityAsyncd__3_MoveNext:
 _p_180:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 6127
-	.no_dead_strip plt__rgctx_fetch_85
-plt__rgctx_fetch_85:
+.word 6216
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_181:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 6160
-	.no_dead_strip plt__rgctx_fetch_86
-plt__rgctx_fetch_86:
+.word 6218
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_182:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 6168
-	.no_dead_strip plt__rgctx_fetch_87
-plt__rgctx_fetch_87:
+.word 6223
+	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_UnsafeOnCompleted_System_Action
+plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Tuple_2_bool_Foundation_NSError_UnsafeOnCompleted_System_Action:
 _p_183:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 6218
-	.no_dead_strip plt__rgctx_fetch_88
-plt__rgctx_fetch_88:
+.word 6228
+	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_184:
 adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
 add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 6226
+.word 6251
+	.no_dead_strip plt__rgctx_fetch_85
+plt__rgctx_fetch_85:
+_p_185:
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x16, [x16, #2344]
+br x16
+.word 6284
+	.no_dead_strip plt__rgctx_fetch_86
+plt__rgctx_fetch_86:
+_p_186:
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x16, [x16, #2352]
+br x16
+.word 6292
+	.no_dead_strip plt__rgctx_fetch_87
+plt__rgctx_fetch_87:
+_p_187:
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x16, [x16, #2360]
+br x16
+.word 6342
+	.no_dead_strip plt__rgctx_fetch_88
+plt__rgctx_fetch_88:
+_p_188:
+adrp x16, mono_aot_Plugin_Fingerprint_got@PAGE+0
+add x16, x16, mono_aot_Plugin_Fingerprint_got@PAGEOFF
+ldr x16, [x16, #2368]
+br x16
+.word 6350
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_Plugin_Fingerprint_got, 2344
+.lcomm mono_aot_Plugin_Fingerprint_got, 2376
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -8871,7 +9023,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_Plugin_Fingerprint_got
 	.align 3
@@ -8888,6 +9040,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -8939,13 +9093,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 108,2344,185,103,66,391195135,0,8386
-	.long 128,8,8,10,0,24,12200,3808
-	.long 3448,3048,0,3256,3416,3096,0,2368
-	.long 160,0,0,0,0,0,0,0
+	.long 108,2376,189,104,66,391195135,0,8583
+	.long 128,8,8,9,0,25,12424,3832
+	.long 3464,3064,0,3272,3432,3112,0,2376
+	.long 160,3824,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 228,39,226,199,154,157,37,153,54,180,163,62,154,177,227,204
+	.long 0,0
+	.byte 215,222,194,181,60,52,4,101,204,2,46,126,60,98,219,226
 	.globl _mono_aot_module_Plugin_Fingerprint_info
 	.align 3
 _mono_aot_module_Plugin_Fingerprint_info:
@@ -9486,12 +9640,12 @@ LDIFF_SYM71=LDIE_I4 - Ldebug_info_start
 
 LDIFF_SYM72=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM72
-	.byte 3,141,192,1,11
+	.byte 3,141,224,0,11
 	.asciz "V_1"
 
 LDIFF_SYM73=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM73
-	.byte 3,141,168,1,0
+	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -9506,7 +9660,7 @@ Lfde7_start:
 LDIFF_SYM75=Lme_7 - Plugin_Fingerprint_FingerprintImplementation_NativeAuthenticateAsync_Plugin_Fingerprint_Abstractions_AuthenticationRequestConfiguration_System_Threading_CancellationToken
 	.long LDIFF_SYM75
 	.long 0
-	.byte 12,31,0,68,14,160,2,157,36,158,35,68,13,29
+	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29
 	.align 3
 Lfde7_end:
 
@@ -9535,12 +9689,12 @@ LDIFF_SYM77=LDIE_BOOLEAN - Ldebug_info_start
 
 LDIFF_SYM78=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM78
-	.byte 3,141,128,1,11
+	.byte 3,141,208,0,11
 	.asciz "V_1"
 
 LDIFF_SYM79=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM79
-	.byte 3,141,232,0,0
+	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -9555,7 +9709,7 @@ Lfde8_start:
 LDIFF_SYM81=Lme_8 - Plugin_Fingerprint_FingerprintImplementation_GetAvailabilityAsync_bool
 	.long LDIFF_SYM81
 	.long 0
-	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29
 	.align 3
 Lfde8_end:
 
@@ -10133,7 +10287,7 @@ LTDIE_25:
 LDIFF_SYM153=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM153
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM154=LTDIE_23_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM154
@@ -10161,7 +10315,7 @@ LTDIE_26:
 LDIFF_SYM158=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM158
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM159=LTDIE_23_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM159
@@ -10189,47 +10343,47 @@ LTDIE_23:
 LDIFF_SYM163=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM163
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM164=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM164
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM165=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM165
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM166=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM166
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM167=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM167
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM168=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM168
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM169=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM169
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM170=LTDIE_24_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM170
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM171=LTDIE_25_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM171
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM172=LTDIE_26_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM172
@@ -11976,7 +12130,7 @@ LTDIE_68:
 LDIFF_SYM462=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM462
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM463=LTDIE_66_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM463
@@ -12004,7 +12158,7 @@ LTDIE_69:
 LDIFF_SYM467=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM467
 	.byte 2,35,0,6
-	.asciz "dictionary"
+	.asciz "_dictionary"
 
 LDIFF_SYM468=LTDIE_66_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM468
@@ -12032,47 +12186,47 @@ LTDIE_66:
 LDIFF_SYM472=LTDIE_1 - Ldebug_info_start
 	.long LDIFF_SYM472
 	.byte 2,35,0,6
-	.asciz "buckets"
+	.asciz "_buckets"
 
 LDIFF_SYM473=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM473
 	.byte 2,35,16,6
-	.asciz "entries"
+	.asciz "_entries"
 
 LDIFF_SYM474=LDIE_SZARRAY - Ldebug_info_start
 	.long LDIFF_SYM474
 	.byte 2,35,24,6
-	.asciz "count"
+	.asciz "_count"
 
 LDIFF_SYM475=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM475
 	.byte 2,35,64,6
-	.asciz "version"
+	.asciz "_freeList"
 
 LDIFF_SYM476=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM476
 	.byte 2,35,68,6
-	.asciz "freeList"
+	.asciz "_freeCount"
 
 LDIFF_SYM477=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM477
 	.byte 2,35,72,6
-	.asciz "freeCount"
+	.asciz "_version"
 
 LDIFF_SYM478=LDIE_I4 - Ldebug_info_start
 	.long LDIFF_SYM478
 	.byte 2,35,76,6
-	.asciz "comparer"
+	.asciz "_comparer"
 
 LDIFF_SYM479=LTDIE_67_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM479
 	.byte 2,35,32,6
-	.asciz "keys"
+	.asciz "_keys"
 
 LDIFF_SYM480=LTDIE_68_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM480
 	.byte 2,35,40,6
-	.asciz "values"
+	.asciz "_values"
 
 LDIFF_SYM481=LTDIE_69_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM481
@@ -16357,7 +16511,7 @@ Lfde72_start:
 LDIFF_SYM1092=Lme_49 - System_Threading_Tasks_TaskFactory_1_TResult_INT_FromAsyncCoreLogic_System_IAsyncResult_System_Func_2_System_IAsyncResult_TResult_INT_System_Action_1_System_IAsyncResult_System_Threading_Tasks_Task_1_TResult_INT_bool
 	.long LDIFF_SYM1092
 	.long 0
-	.byte 12,31,0,68,14,240,1,157,30,158,29,68,13,29,68,153,28
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30
 	.align 3
 Lfde72_end:
 
@@ -16414,7 +16568,7 @@ Lfde73_end:
 LTDIE_115:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM1099=LTDIE_1 - Ldebug_info_start
@@ -16435,7 +16589,7 @@ LDIFF_SYM1101=LTDIE_87_REFERENCE - Ldebug_info_start
 LDIFF_SYM1102=LTDIE_114_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1102
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM1103=LTDIE_115 - Ldebug_info_start
 	.long LDIFF_SYM1103
@@ -16480,7 +16634,7 @@ LDIFF_SYM1110=LTDIE_117 - Ldebug_info_start
 LTDIE_116:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 	.byte 32,16
 LDIFF_SYM1111=LTDIE_1 - Ldebug_info_start
@@ -16496,7 +16650,7 @@ LDIFF_SYM1112=LTDIE_117_REFERENCE - Ldebug_info_start
 LDIFF_SYM1113=LTDIE_115_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1113
 	.byte 2,35,24,0,7
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 LDIFF_SYM1114=LTDIE_116 - Ldebug_info_start
 	.long LDIFF_SYM1114
@@ -16739,7 +16893,7 @@ LDIFF_SYM1152=LTDIE_120 - Ldebug_info_start
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:get_Item1"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_get_Item1"
 
-	.byte 4,212,1
+	.byte 4,216,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_get_Item1
 	.quad Lme_4d
 
@@ -16773,7 +16927,7 @@ Lfde76_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:get_Item2"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_get_Item2"
 
-	.byte 4,213,1
+	.byte 4,217,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_get_Item2
 	.quad Lme_4e
 
@@ -16807,7 +16961,7 @@ Lfde77_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:.ctor"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF__ctor_T1_BOOL_T2_REF"
 
-	.byte 4,215,1
+	.byte 4,219,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF__ctor_T1_BOOL_T2_REF
 	.quad Lme_4f
 
@@ -16851,7 +17005,7 @@ Lfde78_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:Equals"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_Equals_object"
 
-	.byte 4,223,1
+	.byte 4,227,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_Equals_object
 	.quad Lme_50
 
@@ -16880,7 +17034,7 @@ Lfde79_start:
 LDIFF_SYM1167=Lme_50 - System_Tuple_2_T1_BOOL_T2_REF_Equals_object
 	.long LDIFF_SYM1167
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde79_end:
 
@@ -16890,7 +17044,7 @@ Lfde79_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:System.Collections.IStructuralEquatable.Equals"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer"
 
-	.byte 4,228,1
+	.byte 4,232,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_Equals_object_System_Collections_IEqualityComparer
 	.quad Lme_51
 
@@ -16939,7 +17093,7 @@ Lfde80_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:System.IComparable.CompareTo"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_System_IComparable_CompareTo_object"
 
-	.byte 4,242,1
+	.byte 4,246,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_System_IComparable_CompareTo_object
 	.quad Lme_52
 
@@ -16968,7 +17122,7 @@ Lfde81_start:
 LDIFF_SYM1177=Lme_52 - System_Tuple_2_T1_BOOL_T2_REF_System_IComparable_CompareTo_object
 	.long LDIFF_SYM1177
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde81_end:
 
@@ -16997,7 +17151,7 @@ LDIFF_SYM1180=LTDIE_121 - Ldebug_info_start
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:System.Collections.IStructuralComparable.CompareTo"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer"
 
-	.byte 4,247,1
+	.byte 4,251,1
 	.quad System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralComparable_CompareTo_object_System_Collections_IComparer
 	.quad Lme_53
 
@@ -17051,7 +17205,7 @@ Lfde82_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:GetHashCode"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_GetHashCode"
 
-	.byte 4,139,2
+	.byte 4,143,2
 	.quad System_Tuple_2_T1_BOOL_T2_REF_GetHashCode
 	.quad Lme_54
 
@@ -17075,7 +17229,7 @@ Lfde83_start:
 LDIFF_SYM1190=Lme_54 - System_Tuple_2_T1_BOOL_T2_REF_GetHashCode
 	.long LDIFF_SYM1190
 	.long 0
-	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
 Lfde83_end:
 
@@ -17085,7 +17239,7 @@ Lfde83_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:System.Collections.IStructuralEquatable.GetHashCode"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer"
 
-	.byte 4,144,2
+	.byte 4,148,2
 	.quad System_Tuple_2_T1_BOOL_T2_REF_System_Collections_IStructuralEquatable_GetHashCode_System_Collections_IEqualityComparer
 	.quad Lme_55
 
@@ -17171,7 +17325,7 @@ LDIFF_SYM1203=LTDIE_122 - Ldebug_info_start
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:ToString"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_ToString"
 
-	.byte 4,153,2
+	.byte 4,157,2
 	.quad System_Tuple_2_T1_BOOL_T2_REF_ToString
 	.quad Lme_56
 
@@ -17210,7 +17364,7 @@ Lfde85_end:
 	.asciz "System.Tuple`2<T1_BOOL,_T2_REF>:System.ITupleInternal.ToString"
 	.asciz "System_Tuple_2_T1_BOOL_T2_REF_System_ITupleInternal_ToString_System_Text_StringBuilder"
 
-	.byte 4,160,2
+	.byte 4,164,2
 	.quad System_Tuple_2_T1_BOOL_T2_REF_System_ITupleInternal_ToString_System_Text_StringBuilder
 	.quad Lme_57
 
@@ -18421,7 +18575,7 @@ LDIFF_SYM1391=LTDIE_143 - Ldebug_info_start
 LTDIE_141:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM1392=LTDIE_1 - Ldebug_info_start
@@ -18442,7 +18596,7 @@ LDIFF_SYM1394=LTDIE_87_REFERENCE - Ldebug_info_start
 LDIFF_SYM1395=LTDIE_143_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1395
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM1396=LTDIE_141 - Ldebug_info_start
 	.long LDIFF_SYM1396
@@ -18459,7 +18613,7 @@ LDIFF_SYM1398=LTDIE_141 - Ldebug_info_start
 LTDIE_140:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 	.byte 32,16
 LDIFF_SYM1399=LTDIE_1 - Ldebug_info_start
@@ -18475,7 +18629,7 @@ LDIFF_SYM1400=LTDIE_117_REFERENCE - Ldebug_info_start
 LDIFF_SYM1401=LTDIE_141_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1401
 	.byte 2,35,24,0,7
-	.asciz "_<>c__DisplayClass35_0"
+	.asciz "_<>c__DisplayClass35_1"
 
 LDIFF_SYM1402=LTDIE_140 - Ldebug_info_start
 	.long LDIFF_SYM1402
@@ -18490,11 +18644,11 @@ LTDIE_140_REFERENCE:
 LDIFF_SYM1404=LTDIE_140 - Ldebug_info_start
 	.long LDIFF_SYM1404
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<TResult_INT>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<TResult_INT>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
 	.quad Lme_64
 
 	.byte 2,118,16,3
@@ -18512,9 +18666,9 @@ Lfde99_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
 
-LDIFF_SYM1407=Lme_64 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
+LDIFF_SYM1407=Lme_64 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
 	.long LDIFF_SYM1407
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -18576,7 +18730,7 @@ LDIFF_SYM1416=LTDIE_146 - Ldebug_info_start
 LTDIE_144:
 
 	.byte 5
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 	.byte 40,16
 LDIFF_SYM1417=LTDIE_1 - Ldebug_info_start
@@ -18597,7 +18751,7 @@ LDIFF_SYM1419=LTDIE_87_REFERENCE - Ldebug_info_start
 LDIFF_SYM1420=LTDIE_146_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1420
 	.byte 2,35,32,0,7
-	.asciz "_<>c__DisplayClass35_1"
+	.asciz "_<>c__DisplayClass35_0"
 
 LDIFF_SYM1421=LTDIE_144 - Ldebug_info_start
 	.long LDIFF_SYM1421
@@ -18612,11 +18766,11 @@ LTDIE_144_REFERENCE:
 LDIFF_SYM1423=LTDIE_144 - Ldebug_info_start
 	.long LDIFF_SYM1423
 	.byte 2
-	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_1<TResult_INT>:.ctor"
-	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor"
+	.asciz "System.Threading.Tasks.TaskFactory`1/<>c__DisplayClass35_0<TResult_INT>:.ctor"
+	.asciz "System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor"
 
 	.byte 0,0
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
 	.quad Lme_65
 
 	.byte 2,118,16,3
@@ -18634,9 +18788,9 @@ Lfde100_start:
 
 	.long 0
 	.align 3
-	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
+	.quad System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
 
-LDIFF_SYM1426=Lme_65 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1_TResult_INT__ctor
+LDIFF_SYM1426=Lme_65 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_0_TResult_INT__ctor
 	.long LDIFF_SYM1426
 	.long 0
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
@@ -18644,108 +18798,204 @@ LDIFF_SYM1426=Lme_65 - System_Threading_Tasks_TaskFactory_1__c__DisplayClass35_1
 Lfde100_end:
 
 .section __DWARF, __debug_info,regular,debug
-LTDIE_148:
+LTDIE_147:
+
+	.byte 5
+	.asciz "System_Comparison`1"
+
+	.byte 112,16
+LDIFF_SYM1427=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM1427
+	.byte 2,35,0,0,7
+	.asciz "System_Comparison`1"
+
+LDIFF_SYM1428=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM1428
+LTDIE_147_POINTER:
+
+	.byte 13
+LDIFF_SYM1429=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM1429
+LTDIE_147_REFERENCE:
+
+	.byte 14
+LDIFF_SYM1430=LTDIE_147 - Ldebug_info_start
+	.long LDIFF_SYM1430
+	.byte 2
+	.asciz "(wrapper_delegate-invoke)_System.Comparison`1<object>:invoke_int_T_T"
+	.asciz "wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object"
+
+	.byte 0,0
+	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+	.quad Lme_66
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM1431=LTDIE_147_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1431
+	.byte 1,104,3
+	.asciz "param0"
+
+LDIFF_SYM1432=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1432
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM1433=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1433
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM1434=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1434
+	.byte 1,102,11
+	.asciz "V_1"
+
+LDIFF_SYM1435=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1435
+	.byte 1,104,11
+	.asciz "V_2"
+
+LDIFF_SYM1436=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1436
+	.byte 1,103,11
+	.asciz "V_3"
+
+LDIFF_SYM1437=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1437
+	.byte 1,101,11
+	.asciz "V_4"
+
+LDIFF_SYM1438=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM1438
+	.byte 1,103,11
+	.asciz "V_5"
+
+LDIFF_SYM1439=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1439
+	.byte 1,101,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM1440=Lfde101_end - Lfde101_start
+	.long LDIFF_SYM1440
+Lfde101_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+
+LDIFF_SYM1441=Lme_66 - wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object
+	.long LDIFF_SYM1441
+	.long 0
+	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5,68,153,4,154,3
+	.align 3
+Lfde101_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_149:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task`1"
 
 	.byte 80,16
-LDIFF_SYM1427=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM1427
+LDIFF_SYM1442=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM1442
 	.byte 2,35,0,6
 	.asciz "m_result"
 
-LDIFF_SYM1428=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM1428
+LDIFF_SYM1443=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM1443
 	.byte 2,35,72,0,7
 	.asciz "System_Threading_Tasks_Task`1"
 
-LDIFF_SYM1429=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM1429
-LTDIE_148_POINTER:
+LDIFF_SYM1444=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM1444
+LTDIE_149_POINTER:
 
 	.byte 13
-LDIFF_SYM1430=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM1430
-LTDIE_148_REFERENCE:
+LDIFF_SYM1445=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM1445
+LTDIE_149_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1431=LTDIE_148 - Ldebug_info_start
-	.long LDIFF_SYM1431
-LTDIE_147:
+LDIFF_SYM1446=LTDIE_149 - Ldebug_info_start
+	.long LDIFF_SYM1446
+LTDIE_148:
 
 	.byte 5
 	.asciz "_ConfiguredTaskAwaiter"
 
 	.byte 32,16
-LDIFF_SYM1432=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM1432
+LDIFF_SYM1447=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM1447
 	.byte 2,35,0,6
 	.asciz "m_task"
 
-LDIFF_SYM1433=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1433
+LDIFF_SYM1448=LTDIE_149_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1448
 	.byte 2,35,16,6
 	.asciz "m_continueOnCapturedContext"
 
-LDIFF_SYM1434=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1434
+LDIFF_SYM1449=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1449
 	.byte 2,35,24,0,7
 	.asciz "_ConfiguredTaskAwaiter"
 
-LDIFF_SYM1435=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM1435
-LTDIE_147_POINTER:
+LDIFF_SYM1450=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM1450
+LTDIE_148_POINTER:
 
 	.byte 13
-LDIFF_SYM1436=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM1436
-LTDIE_147_REFERENCE:
+LDIFF_SYM1451=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM1451
+LTDIE_148_REFERENCE:
 
 	.byte 14
-LDIFF_SYM1437=LTDIE_147 - Ldebug_info_start
-	.long LDIFF_SYM1437
+LDIFF_SYM1452=LTDIE_148 - Ldebug_info_start
+	.long LDIFF_SYM1452
 	.byte 2
 	.asciz "System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter<TResult_INT>:.ctor"
 	.asciz "System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool"
 
 	.byte 5,238,3
 	.quad System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
-	.quad Lme_66
+	.quad Lme_67
 
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM1438=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM1438
+LDIFF_SYM1453=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM1453
 	.byte 2,141,16,3
 	.asciz "task"
 
-LDIFF_SYM1439=LTDIE_148_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM1439
+LDIFF_SYM1454=LTDIE_149_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM1454
 	.byte 2,141,24,3
 	.asciz "continueOnCapturedContext"
 
-LDIFF_SYM1440=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM1440
+LDIFF_SYM1455=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM1455
 	.byte 2,141,32,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM1441=Lfde101_end - Lfde101_start
-	.long LDIFF_SYM1441
-Lfde101_start:
+LDIFF_SYM1456=Lfde102_end - Lfde102_start
+	.long LDIFF_SYM1456
+Lfde102_start:
 
 	.long 0
 	.align 3
 	.quad System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
 
-LDIFF_SYM1442=Lme_66 - System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
-	.long LDIFF_SYM1442
+LDIFF_SYM1457=Lme_67 - System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_TResult_INT__ctor_System_Threading_Tasks_Task_1_TResult_INT_bool
+	.long LDIFF_SYM1457
 	.long 0
 	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
 	.align 3
-Lfde101_end:
+Lfde102_end:
 
 .section __DWARF, __debug_info,regular,debug
 

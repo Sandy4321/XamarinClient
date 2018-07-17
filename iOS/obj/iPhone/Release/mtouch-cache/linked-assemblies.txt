@@ -1,3 +1,4 @@
+RemoveDynamicRegistrar:false
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/mscorlib.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/System.dll
@@ -42,8 +43,6 @@
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/MvvmCross.Plugins.Fingerprint.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/MvvmCross.Plugins.Fingerprint.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/Plugin.Fingerprint.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/SlideOverKit.iOS.dll
-/Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/SlideOverKit.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/FormsPinView.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/ZXing.Net.Mobile.Forms.iOS.dll
 /Users/Yiding/Documents/XamarinClient/iOS/bin/iPhone/Release/XamarinClient.iOS.app:/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhone/Release/mtouch-cache/Link/ZXingNetMobile.dll

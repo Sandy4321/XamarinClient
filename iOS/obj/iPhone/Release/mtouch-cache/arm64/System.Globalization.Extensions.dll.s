@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 5.4.0 (tarball Wed Jan 10 16:17:32 EST 2018)"
+	.asciz "Mono AOT Compiler 5.10.1 (tarball Tue May 29 19:16:06 EDT 2018)"
 	.asciz "System.Globalization.Extensions.dll"
 	.asciz ""
 
@@ -144,7 +144,7 @@ ldr x0, [x16, #0]
 .word 0xd2800021
 bl _p_2
 .word 0xaa0003e1
-.word 0xd2801360
+.word 0xd2801460
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_3
@@ -189,29 +189,29 @@ plt_string_Normalize_System_Text_NormalizationForm:
 _p_1:
 adrp x16, mono_aot_System_Globalization_Extensions_got@PAGE+0
 add x16, x16, mono_aot_System_Globalization_Extensions_got@PAGEOFF
-ldr x16, [x16, #200]
+ldr x16, [x16, #208]
 br x16
-.word 259
+.word 286
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr
 plt__jit_icall_mono_helper_ldstr:
 _p_2:
 adrp x16, mono_aot_System_Globalization_Extensions_got@PAGE+0
 add x16, x16, mono_aot_System_Globalization_Extensions_got@PAGEOFF
-ldr x16, [x16, #208]
+ldr x16, [x16, #216]
 br x16
-.word 264
+.word 291
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_3:
 adrp x16, mono_aot_System_Globalization_Extensions_got@PAGE+0
 add x16, x16, mono_aot_System_Globalization_Extensions_got@PAGEOFF
-ldr x16, [x16, #216]
+ldr x16, [x16, #224]
 br x16
-.word 284
+.word 311
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_System_Globalization_Extensions_got, 224
+.lcomm mono_aot_System_Globalization_Extensions_got, 232
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -234,7 +234,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "AF03DFE2-1A7F-4F7B-A60B-E0EF309A9078"
+	.asciz "2AF23DC0-375A-40C4-A560-B78D4FBD3535"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -243,7 +243,7 @@ assembly_name:
 	.align 3
 _mono_aot_file_info:
 
-	.long 140,0
+	.long 143,0
 	.align 3
 	.quad mono_aot_System_Globalization_Extensions_got
 	.align 3
@@ -260,6 +260,8 @@ _mono_aot_file_info:
 	.quad jit_code_end
 	.align 3
 	.quad method_addresses
+	.align 3
+	.quad 0
 	.align 3
 	.quad 0
 	.align 3
@@ -311,13 +313,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 24,224,4,2,66,391195135,0,345
-	.long 128,8,8,10,0,24,896,544
+	.long 25,232,4,2,66,391195135,0,372
+	.long 128,8,8,9,0,25,936,552
 	.long 336,184,0,280,312,232,0,176
-	.long 32,0,0,0,0,0,0,0
+	.long 32,544,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.long 0
-	.byte 19,255,8,204,223,60,236,170,229,207,81,73,82,117,84,254
+	.long 0,0
+	.byte 225,203,188,138,143,39,221,74,52,97,133,184,49,107,220,51
 	.globl _mono_aot_module_System_Globalization_Extensions_info
 	.align 3
 _mono_aot_module_System_Globalization_Extensions_info:

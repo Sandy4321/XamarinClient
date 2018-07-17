@@ -6,17 +6,9 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
-#import <WebKit/WebKit.h>
-#import <AVFoundation/AVFoundation.h>
-#import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
-#import <CoreSpotlight/CoreSpotlight.h>
-#import <QuickLook/QuickLook.h>
 #import <SafariServices/SafariServices.h>
-#import <MessageUI/MessageUI.h>
-#import <CloudKit/CloudKit.h>
-#import <Intents/Intents.h>
-#import <Accounts/Accounts.h>
+#import <QuickLook/QuickLook.h>
 #import <CoreTelephony/CoreTelephonyDefines.h>
 #import <CoreTelephony/CTCall.h>
 #import <CoreTelephony/CTCallCenter.h>
@@ -24,46 +16,66 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTSubscriber.h>
 #import <CoreTelephony/CTSubscriberInfo.h>
-#import <LocalAuthentication/LocalAuthentication.h>
+#import <Accounts/Accounts.h>
+#import <MessageUI/MessageUI.h>
 #import <GLKit/GLKit.h>
+#import <CoreSpotlight/CoreSpotlight.h>
+#import <QuartzCore/QuartzCore.h>
+#import <WebKit/WebKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <LocalAuthentication/LocalAuthentication.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-@class Foundation_InternalNSNotificationHandler;
+@class UIApplicationDelegate;
+@class SFSafariViewControllerDelegate;
+@class MFMailComposeViewControllerDelegate;
 @class MessageUI_Mono_MFMailComposeViewControllerDelegate;
+@class MFMessageComposeViewControllerDelegate;
 @class MessageUI_Mono_MFMessageComposeViewControllerDelegate;
+@class GLKViewDelegate;
+@class WKNavigationDelegate;
+@class WKScriptMessageHandler;
+@class WKUIDelegate;
 @class UIKit_UIControlEventProxy;
+@class UIActionSheetDelegate;
+@class UICollectionViewDataSource;
+@class UIPickerViewModel;
+@class UIScrollViewDelegate;
+@class UISplitViewControllerDelegate;
+@class Xamarin_iOS__UIKit_UITableViewDataSource;
+@class UITableViewDelegate;
+@class UITableViewSource;
+@class UIWebViewDelegate;
+@class Foundation_InternalNSNotificationHandler;
 @class __MonoMac_NSActionDispatcher;
 @class __Xamarin_NSTimerActionDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
-@protocol UIPickerViewModel;
+@class AVCaptureMetadataOutputObjectsDelegate;
+@class AVCaptureVideoDataOutputSampleBufferDelegate;
 @class Xamarin_Forms_Platform_iOS_FormsApplicationDelegate;
 @class AppDelegate;
+@class GLKit_GLKView__GLKViewDelegate;
+@class UIKit_UIAlertView__UIAlertViewDelegate;
+@class UIKit_UIBarButtonItem_Callback;
 @class UIKit_UIView_UIViewAppearance;
 @class UIKit_UIControl_UIControlAppearance;
-@class UIKit_UIAlertView__UIAlertViewDelegate;
+@class UIKit_UIButton_UIButtonAppearance;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
-@class __UIGestureRecognizerParametrizedToken;
 @class UIKit_UIGestureRecognizer__UIGestureRecognizerDelegate;
-@class __UIRotationGestureRecognizer;
 @class __UILongPressGestureRecognizer;
 @class __UITapGestureRecognizer;
 @class __UIPanGestureRecognizer;
 @class __UIPinchGestureRecognizer;
-@class __UISwipeGestureRecognizer;
-@class __UIScreenEdgePanGestureRecognizer;
-@class UIKit_UIBarButtonItem_Callback;
 @class UIKit_UINavigationBar_UINavigationBarAppearance;
-@class UIKit_UIButton_UIButtonAppearance;
 @class UIKit_UISearchBar__UISearchBarDelegate;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
-@class __NSObject_Disposer;
-@class GLKit_GLKView__GLKViewDelegate;
 @class UIKit_UISplitViewController__UISplitViewControllerDelegate;
 @class UIKit_UITabBarController__UITabBarControllerDelegate;
 @class UIKit_UIWebView__UIWebViewDelegate;
+@class __NSObject_Disposer;
 @class Xamarin_Forms_Platform_iOS_iOS7ButtonContainer;
 @class Xamarin_Forms_Platform_iOS_GlobalCloseContextGestureRecognizer;
 @class Xamarin_Forms_Platform_iOS_ModalWrapper;
@@ -146,8 +158,6 @@
 @class Rg_Plugins_Popup_IOS_Renderers_PopupPageRenderer;
 @class OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource;
 @class OpenTK_Platform_iPhoneOS_iPhoneOSGameView;
-@class SlideOverKit_iOS_MenuContainerPageiOSRenderer;
-@class SlideOverKit_iOS_SlidePopupViewRendereriOS;
 @class FormsPinView_iOS_ZFRippleButton;
 @class FormsPinView_iOS_PinItemViewRenderer;
 @class ZXing_Net_Mobile_Forms_iOS_ZXingScannerViewRenderer;
@@ -162,29 +172,128 @@
 @class BITHockeyBaseManager;
 @class BITAuthenticator;
 @protocol BITAuthenticatorDelegate;
+@class BITAuthenticatorDelegate;
 @class BITHockeyAttachment;
 @class BITCrashAttachment;
 @class BITCrashDetails;
 @class BITCrashManager;
 @protocol BITCrashManagerDelegate;
+@class BITCrashManagerDelegate;
 @class BITCrashMetaData;
 @protocol BITFeedbackComposeViewControllerDelegate;
 @class BITFeedbackActivity;
 @class BITFeedbackComposeViewController;
+@class BITFeedbackComposeViewControllerDelegate;
 @class BITHockeyBaseViewController;
 @class BITFeedbackListViewController;
 @class BITFeedbackManager;
 @protocol BITFeedbackManagerDelegate;
+@class BITFeedbackManagerDelegate;
 @protocol BITHockeyManagerDelegate;
+@class BITHockeyManagerDelegate;
 @class BITMetricsManager;
 @class BITStoreUpdateManager;
 @protocol BITStoreUpdateManagerDelegate;
+@class BITStoreUpdateManagerDelegate;
 @class BITUpdateManager;
 @protocol BITUpdateManagerDelegate;
+@class BITUpdateManagerDelegate;
 @class BITUpdateViewController;
 @class BITHockeyManager;
 
-@protocol UIPickerViewModel<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface UIApplicationDelegate : NSObject<UIApplicationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface SFSafariViewControllerDelegate : NSObject<SFSafariViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface MFMailComposeViewControllerDelegate : NSObject<UINavigationControllerDelegate, MFMailComposeViewControllerDelegate, UINavigationControllerDelegate, UINavigationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface MFMessageComposeViewControllerDelegate : NSObject<MFMessageComposeViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface GLKViewDelegate : NSObject<GLKViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface WKNavigationDelegate : NSObject<WKNavigationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface WKScriptMessageHandler : NSObject<WKScriptMessageHandler> {
+}
+	-(id) init;
+@end
+
+@interface WKUIDelegate : NSObject<WKUIDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UIActionSheetDelegate : NSObject<UIActionSheetDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UICollectionViewDataSource : NSObject<UICollectionViewDataSource> {
+}
+	-(id) init;
+@end
+
+@interface UIPickerViewModel : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UIScrollViewDelegate : NSObject<UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UISplitViewControllerDelegate : NSObject<UISplitViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Xamarin_iOS__UIKit_UITableViewDataSource : NSObject<UITableViewDataSource> {
+}
+	-(id) init;
+@end
+
+@interface UITableViewDelegate : NSObject<UITableViewDelegate, UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UITableViewSource : NSObject<UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface UIWebViewDelegate : NSObject<UIWebViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface AVCaptureMetadataOutputObjectsDelegate : NSObject<AVCaptureMetadataOutputObjectsDelegate> {
+}
+	-(id) init;
+@end
+
+@interface AVCaptureVideoDataOutputSampleBufferDelegate : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
+}
+	-(id) init;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_FormsApplicationDelegate : NSObject<UIApplicationDelegate> {
@@ -226,6 +335,13 @@
 }
 @end
 
+@interface UIKit_UIButton_UIButtonAppearance : UIKit_UIControl_UIControlAppearance {
+}
+	-(UIImage *) backgroundImageForState:(NSUInteger)p0;
+	-(UIColor *) titleColorForState:(NSUInteger)p0;
+	-(UIColor *) titleShadowColorForState:(NSUInteger)p0;
+@end
+
 @interface __UIGestureRecognizerToken : NSObject {
 }
 	-(void) release;
@@ -241,22 +357,10 @@
 	-(void) target;
 @end
 
-@interface __UIGestureRecognizerParametrizedToken : __UIGestureRecognizerToken {
-}
-	-(void) target:(UIGestureRecognizer *)p0;
-@end
-
 @interface UIKit_UINavigationBar_UINavigationBarAppearance : UIKit_UIView_UIViewAppearance {
 }
 	-(UIColor *) barTintColor;
 	-(NSDictionary *) titleTextAttributes;
-@end
-
-@interface UIKit_UIButton_UIButtonAppearance : UIKit_UIControl_UIControlAppearance {
-}
-	-(UIImage *) backgroundImageForState:(NSUInteger)p0;
-	-(UIColor *) titleColorForState:(NSUInteger)p0;
-	-(UIColor *) titleShadowColorForState:(NSUInteger)p0;
 @end
 
 @interface Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 : UIView {
@@ -596,20 +700,6 @@
 	-(id) initWithFrame:(CGRect)p0;
 @end
 
-@interface SlideOverKit_iOS_MenuContainerPageiOSRenderer : Xamarin_Forms_Platform_iOS_PageRenderer {
-}
-	-(void) viewDidLayoutSubviews;
-	-(void) viewDidAppear:(BOOL)p0;
-	-(void) viewDidDisappear:(BOOL)p0;
-	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
-	-(id) init;
-@end
-
-@interface SlideOverKit_iOS_SlidePopupViewRendereriOS : Xamarin_Forms_Platform_iOS_VisualElementRenderer_1 {
-}
-	-(id) init;
-@end
-
 @interface FormsPinView_iOS_ZFRippleButton : UIButton {
 }
 	-(void) release;
@@ -693,7 +783,7 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
-@interface ZXing_Mobile_ZXingScannerView_OutputRecorder : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate> {
+@interface ZXing_Mobile_ZXingScannerView_OutputRecorder : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureVideoDataOutputSampleBufferDelegate> {
 }
 	-(void) release;
 	-(id) retain;
@@ -755,6 +845,11 @@
 
 @protocol BITAuthenticatorDelegate
 	@optional -(void) authenticator:(id)p0 willShowAuthenticationController:(UIViewController *)p1;
+@end
+
+@interface BITAuthenticatorDelegate : NSObject<BITAuthenticatorDelegate> {
+}
+	-(id) init;
 @end
 
 @interface BITHockeyAttachment : NSObject {
@@ -828,6 +923,11 @@
 	@optional -(BOOL) considerAppNotTerminatedCleanlyReportForCrashManager:(id)p0;
 @end
 
+@interface BITCrashManagerDelegate : NSObject<BITCrashManagerDelegate> {
+}
+	-(id) init;
+@end
+
 @interface BITCrashMetaData : NSObject {
 }
 	-(NSString *) userEmail;
@@ -866,6 +966,11 @@
 	-(void) setDelegate:(NSObject *)p0;
 	-(id) init;
 	-(id) initWithCoder:(NSCoder *)p0;
+@end
+
+@interface BITFeedbackComposeViewControllerDelegate : NSObject<BITFeedbackComposeViewControllerDelegate> {
+}
+	-(id) init;
 @end
 
 @interface BITHockeyBaseViewController : UITableViewController {
@@ -919,6 +1024,11 @@
 	@optional -(BOOL) forceNewFeedbackThreadForFeedbackManager:(id)p0;
 @end
 
+@interface BITFeedbackManagerDelegate : NSObject<BITFeedbackManagerDelegate, BITFeedbackComposeViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
 @protocol BITHockeyManagerDelegate
 	@optional -(BOOL) shouldUseLiveIdentifierForHockeyManager:(id)p0;
 	@optional -(UIViewController *) viewControllerForHockeyManager:(id)p0 componentManager:(id)p1;
@@ -945,6 +1055,11 @@
 	@optional -(NSArray *) preparedItemsForFeedbackManager:(id)p0;
 	@optional -(BOOL) forceNewFeedbackThreadForFeedbackManager:(id)p0;
 	@optional -(void) authenticator:(id)p0 willShowAuthenticationController:(UIViewController *)p1;
+@end
+
+@interface BITHockeyManagerDelegate : NSObject<BITHockeyManagerDelegate> {
+}
+	-(id) init;
 @end
 
 @interface BITMetricsManager : BITHockeyBaseManager {
@@ -976,6 +1091,11 @@
 	@optional -(void) detectedUpdateFromStoreUpdateManager:(id)p0 newVersion:(NSString *)p1 storeURL:(NSURL *)p2;
 @end
 
+@interface BITStoreUpdateManagerDelegate : NSObject<BITStoreUpdateManagerDelegate> {
+}
+	-(id) init;
+@end
+
 @interface BITUpdateManager : BITHockeyBaseManager {
 }
 	-(void) checkForUpdate;
@@ -1003,6 +1123,11 @@
 	@optional -(BOOL) updateManagerShouldSendUsageData:(id)p0;
 	@optional -(void) updateManagerWillExitApp:(id)p0;
 	@optional -(BOOL) willStartDownloadAndUpdate:(id)p0;
+@end
+
+@interface BITUpdateManagerDelegate : NSObject<BITUpdateManagerDelegate> {
+}
+	-(id) init;
 @end
 
 @interface BITUpdateViewController : BITHockeyBaseViewController {
