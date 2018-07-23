@@ -1,71 +1,79 @@
-objc[88305]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x1313384d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x1311b7f48). One of the two will be used. Which one is undefined.
-objc[88305]: Class MPExportableArtworkProperties is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer (0x1152e57d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore (0x12a70d108). One of the two will be used. Which one is undefined.
-objc[88305]: Class SFUserNotification is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/Sharing.framework/Sharing (0x1229f1ab0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/Frameworks/SafariServices.framework/SafariServices (0x112f31448). One of the two will be used. Which one is undefined.
-2018-03-03 18:45:38.869 XamarinClient.iOS[88305:4265972] 
-Unhandled Exception:
-Xamarin.Auth.AccountStoreException: SaveAsync error = error = Could not save account to KeyChain: Param
+objc[6881]: Class VCWeakObjectHolder is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace (0x12adcc4d0) and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/AVConference.framework/AVConference (0x12ba84e38). One of the two will be used. Which one is undefined.
+2018-07-23 14:53:50.856 XamarinClient.iOS[6881:287084] [HockeySDK] -[BITHockeyManager logInvalidIdentifier:]/144 [HockeySDK] ERROR: The app identifier is invalid! Please use the HockeyApp app identifier you find on the apps website on HockeyApp! The SDK is disabled!
+2018-07-23 14:54:55.140 XamarinClient.iOS[6881:287084] ConvertToNSExceptionAndAbort
+2018-07-23 14:54:55.149 XamarinClient.iOS[6881:287084] Inserted Xamarin Exception Stack Line!
+2018-07-23 14:54:55.149 XamarinClient.iOS[6881:287084] Name: Xamarin.Auth.AccountStoreException
+2018-07-23 14:54:55.149 XamarinClient.iOS[6881:287084] Message: Xamarin.Auth.AccountStoreException: SaveAsync error = error = Could not save account to KeyChain: ParamXamarin Exception Stack:
 Add Empty Entitlements.plist 
  File /+ New file /+ iOS /+ Entitlements.plist
 
   at Xamarin.Auth.KeyChainAccountStore.SaveAsync (Xamarin.Auth.Account account, System.String serviceId) [0x00153] in <c3fe110b80ee4d7cb03754775e7b580d>:0 
   at Xamarin.Auth.KeyChainAccountStore.Save (Xamarin.Auth.Account account, System.String serviceId) [0x00000] in <c3fe110b80ee4d7cb03754775e7b580d>:0 
-  at XamarinClient.CreateAuthPage+<>c__DisplayClass5_1+<<-ctor>b__1>d.MoveNext () [0x000c7] in <a64366bfcf7a4892b2c3ded98673123f>:0 
+  at XamarinClient.CreateAuthPage+<>c__DisplayClass5_1+<<-ctor>b__1>d.MoveNext () [0x000c7] in <5b4c9df8d19a470c89d20d3e67ce5051>:0 
 --- End of stack trace from previous location where exception was thrown ---
-  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <d680a8bf3a2a4c8dbbfde665ba81f6f2>:0 
-  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <d680a8bf3a2a4c8dbbfde665ba81f6f2>:0 
-  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in <e0596b82250c450abdf075bc558add28>:0 
-  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <e0596b82250c450abdf075bc558add28>:0 
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at UIKit.UIKitSynchronizationContext+<>c__DisplayClass1_0.<Post>b__0 () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
 --- End of stack trace from previous location where exception was thrown ---
-  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
-  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <e0596b82250c450abdf075bc558add28>:0 
-  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <e0596b82250c450abdf075bc558add28>:0 
-  at XamarinClient.iOS.Application.Main (System.String[] args) [0x00000] in <a64366bfcf7a4892b2c3ded98673123f>:0 
-2018-03-03 18:45:38.871 XamarinClient.iOS[88305:4265972] Unhandled managed exception:
+  at (wrapper managed-to-native) UIKit.UIApplication.UIApplicationMain(int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0002c] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at XamarinClient.iOS.Application.Main (System.String[] args) [0x00000] in <5b4c9df8d19a470c89d20d3e67ce5051>:0 
+2018-07-23 14:54:55.166 XamarinClient.iOS[6881:287084] warning: exception inside UnhandledException handler: (null)
+2018-07-23 14:54:55.167 XamarinClient.iOS[6881:287084] Unhandled managed exception:
 SaveAsync error = error = Could not save account to KeyChain: Param
 Add Empty Entitlements.plist 
  File /+ New file /+ iOS /+ Entitlements.plist
  (Xamarin.Auth.AccountStoreException)
   at Xamarin.Auth.KeyChainAccountStore.SaveAsync (Xamarin.Auth.Account account, System.String serviceId) [0x00153] in <c3fe110b80ee4d7cb03754775e7b580d>:0 
   at Xamarin.Auth.KeyChainAccountStore.Save (Xamarin.Auth.Account account, System.String serviceId) [0x00000] in <c3fe110b80ee4d7cb03754775e7b580d>:0 
-  at XamarinClient.CreateAuthPage+<>c__DisplayClass5_1+<<-ctor>b__1>d.MoveNext () [0x000c7] in <a64366bfcf7a4892b2c3ded98673123f>:0 
+  at XamarinClient.CreateAuthPage+<>c__DisplayClass5_1+<<-ctor>b__1>d.MoveNext () [0x000c7] in <5b4c9df8d19a470c89d20d3e67ce5051>:0 
 --- End of stack trace from previous location where exception was thrown ---
-  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <d680a8bf3a2a4c8dbbfde665ba81f6f2>:0 
-  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <d680a8bf3a2a4c8dbbfde665ba81f6f2>:0 
-  at UIKit.UIKitSynchronizationContext+<Post>c__AnonStorey0.<>m__0 () [0x00000] in <e0596b82250c450abdf075bc558add28>:0 
-  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <e0596b82250c450abdf075bc558add28>:0 
+  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at System.Runtime.CompilerServices.AsyncMethodBuilderCore+<>c.<ThrowAsync>b__6_0 (System.Object state) [0x00000] in <b238a3153e534349ad10ed0787f2157a>:0 
+  at UIKit.UIKitSynchronizationContext+<>c__DisplayClass1_0.<Post>b__0 () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at Foundation.NSAsyncActionDispatcher.Apply () [0x00000] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
 --- End of stack trace from previous location where exception was thrown ---
-  at (wrapper managed-to-native) UIKit.UIApplication:UIApplicationMain (int,string[],intptr,intptr)
-  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <e0596b82250c450abdf075bc558add28>:0 
-  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x00038] in <e0596b82250c450abdf075bc558add28>:0 
-  at XamarinClient.iOS.Application.Main (System.String[] args) [0x00000] in <a64366bfcf7a4892b2c3ded98673123f>:0 
-2018-03-03 18:45:38.871 XamarinClient.iOS[88305:4265972] critical: Stacktrace:
+  at (wrapper managed-to-native) UIKit.UIApplication.UIApplicationMain(int,string[],intptr,intptr)
+  at UIKit.UIApplication.Main (System.String[] args, System.IntPtr principal, System.IntPtr delegate) [0x00005] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at UIKit.UIApplication.Main (System.String[] args, System.String principalClassName, System.String delegateClassName) [0x0002c] in <0b60c1467e7449608ac42f9c7bbfdd05>:0 
+  at XamarinClient.iOS.Application.Main (System.String[] args) [0x00000] in <5b4c9df8d19a470c89d20d3e67ce5051>:0 
+2018-07-23 14:54:55.168 XamarinClient.iOS[6881:287084] critical: Stacktrace:
 
-2018-03-03 18:45:38.871 XamarinClient.iOS[88305:4265972] critical: 
+2018-07-23 14:54:55.168 XamarinClient.iOS[6881:287084] critical: 
 Native stacktrace:
 
-2018-03-03 18:45:38.979 XamarinClient.iOS[88305:4265972] critical: 	0   XamarinClient.iOS                   0x000000010a4a8dc4 mono_handle_native_crash + 244
-2018-03-03 18:45:38.980 XamarinClient.iOS[88305:4265972] critical: 	1   libsystem_platform.dylib            0x000000011acfef5a _sigtramp + 26
-2018-03-03 18:45:38.980 XamarinClient.iOS[88305:4265972] critical: 	2   libsystem_pthread.dylib             0x000000011ad1d30b _pthread_keys + 9787
-2018-03-03 18:45:38.980 XamarinClient.iOS[88305:4265972] critical: 	3   libsystem_c.dylib                   0x000000011a9940eb abort + 127
-2018-03-03 18:45:38.980 XamarinClient.iOS[88305:4265972] critical: 	4   XamarinClient.iOS                   0x000000010a648b42 xamarin_unhandled_exception_handler + 34
-2018-03-03 18:45:38.981 XamarinClient.iOS[88305:4265972] critical: 	5   XamarinClient.iOS                   0x000000010a50d154 mono_invoke_unhandled_exception_hook + 148
-2018-03-03 18:45:38.981 XamarinClient.iOS[88305:4265972] critical: 	6   XamarinClient.iOS                   0x000000010a4a8b7d mono_handle_exception_internal + 5805
-2018-03-03 18:45:38.981 XamarinClient.iOS[88305:4265972] critical: 	7   XamarinClient.iOS                   0x000000010a4a74c8 mono_handle_exception + 24
-2018-03-03 18:45:38.981 XamarinClient.iOS[88305:4265972] critical: 	8   XamarinClient.iOS                   0x000000010a42ce2f mono_amd64_throw_exception + 143
-2018-03-03 18:45:38.981 XamarinClient.iOS[88305:4265972] critical: 	9   ???                                 0x00000001327d0ae7 0x0 + 5142022887
-2018-03-03 18:45:38.982 XamarinClient.iOS[88305:4265972] critical: 	10  XamarinClient.iOS                   0x000000010a37945c _ZL30native_to_managed_trampoline_9P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
-2018-03-03 18:45:38.982 XamarinClient.iOS[88305:4265972] critical: 	11  XamarinClient.iOS                   0x000000010a37e914 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 52
-2018-03-03 18:45:38.982 XamarinClient.iOS[88305:4265972] critical: 	12  Foundation                          0x000000010c2aa1e8 __NSThreadPerformPerform + 334
-2018-03-03 18:45:38.982 XamarinClient.iOS[88305:4265972] critical: 	13  CoreFoundation                      0x000000011890e101 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
-2018-03-03 18:45:38.982 XamarinClient.iOS[88305:4265972] critical: 	14  CoreFoundation                      0x00000001189adf71 __CFRunLoopDoSource0 + 81
-2018-03-03 18:45:38.983 XamarinClient.iOS[88305:4265972] critical: 	15  CoreFoundation                      0x00000001188f2a19 __CFRunLoopDoSources0 + 185
-2018-03-03 18:45:38.983 XamarinClient.iOS[88305:4265972] critical: 	16  CoreFoundation                      0x00000001188f1fff __CFRunLoopRun + 1279
-2018-03-03 18:45:38.983 XamarinClient.iOS[88305:4265972] critical: 	17  CoreFoundation                      0x00000001188f1889 CFRunLoopRunSpecific + 409
-2018-03-03 18:45:38.983 XamarinClient.iOS[88305:4265972] critical: 	18  GraphicsServices                    0x000000011b2929c6 GSEventRunModal + 62
-2018-03-03 18:45:38.983 XamarinClient.iOS[88305:4265972] critical: 	19  UIKit                               0x000000010c8915d6 UIApplicationMain + 159
-2018-03-03 18:45:38.984 XamarinClient.iOS[88305:4265972] critical: 	20  ???                                 0x000000013767fd43 0x0 + 5224529219
-2018-03-03 18:45:38.984 XamarinClient.iOS[88305:4265972] critical: 	21  ???                                 0x000000013767fba3 0x0 + 5224528803
-2018-03-03 18:45:38.984 XamarinClient.iOS[88305:4265972] critical: 
+2018-07-23 14:54:55.234 XamarinClient.iOS[6881:287084] critical: 	0   XamarinClient.iOS                   0x000000010358fff4 mono_handle_native_crash + 244
+2018-07-23 14:54:55.235 XamarinClient.iOS[6881:287084] critical: 	1   libsystem_platform.dylib            0x00000001145c0f5a _sigtramp + 26
+2018-07-23 14:54:55.235 XamarinClient.iOS[6881:287084] critical: 	2   ???                                 0x0000000103c556d8 0x0 + 4358231768
+2018-07-23 14:54:55.235 XamarinClient.iOS[6881:287084] critical: 	3   libsystem_c.dylib                   0x00000001141f6c97 abort + 127
+2018-07-23 14:54:55.235 XamarinClient.iOS[6881:287084] critical: 	4   XamarinClient.iOS                   0x000000010375b5d2 xamarin_unhandled_exception_handler + 34
+2018-07-23 14:54:55.235 XamarinClient.iOS[6881:287084] critical: 	5   XamarinClient.iOS                   0x0000000103616644 mono_invoke_unhandled_exception_hook + 148
+2018-07-23 14:54:55.236 XamarinClient.iOS[6881:287084] critical: 	6   XamarinClient.iOS                   0x000000010358fd39 mono_handle_exception_internal + 6105
+2018-07-23 14:54:55.237 XamarinClient.iOS[6881:287084] critical: 	7   XamarinClient.iOS                   0x000000010358e559 mono_handle_exception + 25
+2018-07-23 14:54:55.238 XamarinClient.iOS[6881:287084] critical: 	8   XamarinClient.iOS                   0x00000001034fcb1f mono_amd64_throw_exception + 143
+2018-07-23 14:54:55.238 XamarinClient.iOS[6881:287084] critical: 	9   ???                                 0x000000012ce45827 0x0 + 5048129575
+2018-07-23 14:54:55.238 XamarinClient.iOS[6881:287084] critical: 	10  XamarinClient.iOS                   0x00000001033d5acc _ZL31native_to_managed_trampoline_20P11objc_objectP13objc_selectorPP11_MonoMethodj + 284
+2018-07-23 14:54:55.239 XamarinClient.iOS[6881:287084] critical: 	11  XamarinClient.iOS                   0x00000001033da064 -[__MonoMac_NSAsyncActionDispatcher xamarinApplySelector] + 52
+2018-07-23 14:54:55.239 XamarinClient.iOS[6881:287084] critical: 	12  Foundation                          0x0000000111182d5e __NSThreadPerformPerform + 330
+2018-07-23 14:54:55.239 XamarinClient.iOS[6881:287084] critical: 	13  CoreFoundation                      0x000000011215abb1 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+2018-07-23 14:54:55.239 XamarinClient.iOS[6881:287084] critical: 	14  CoreFoundation                      0x000000011213f4af __CFRunLoopDoSources0 + 271
+2018-07-23 14:54:55.240 XamarinClient.iOS[6881:287084] critical: 	15  CoreFoundation                      0x000000011213ea6f __CFRunLoopRun + 1263
+2018-07-23 14:54:55.240 XamarinClient.iOS[6881:287084] critical: 	16  CoreFoundation                      0x000000011213e30b CFRunLoopRunSpecific + 635
+2018-07-23 14:54:55.240 XamarinClient.iOS[6881:287084] critical: 	17  GraphicsServices                    0x0000000115daaa73 GSEventRunModal + 62
+2018-07-23 14:54:55.241 XamarinClient.iOS[6881:287084] critical: 	18  UIKit                               0x000000010ef87057 UIApplicationMain + 159
+2018-07-23 14:54:55.241 XamarinClient.iOS[6881:287084] critical: 	19  ???                                 0x000000012f4348f8 0x0 + 5087906040
+2018-07-23 14:54:55.241 XamarinClient.iOS[6881:287084] critical: 	20  ???                                 0x000000012f434763 0x0 + 5087905635
+2018-07-23 14:54:55.241 XamarinClient.iOS[6881:287084] critical: 	21  XamarinClient.iOS                   0x00000001035a11e3 mono_jit_runtime_invoke + 1443
+2018-07-23 14:54:55.241 XamarinClient.iOS[6881:287084] critical: 	22  XamarinClient.iOS                   0x000000010367630f mono_runtime_invoke_checked + 127
+2018-07-23 14:54:55.242 XamarinClient.iOS[6881:287084] critical: 	23  XamarinClient.iOS                   0x000000010367b84e mono_runtime_exec_main_checked + 110
+2018-07-23 14:54:55.242 XamarinClient.iOS[6881:287084] critical: 	24  XamarinClient.iOS                   0x00000001034fbfcf mono_jit_exec + 287
+2018-07-23 14:54:55.243 XamarinClient.iOS[6881:287084] critical: 	25  XamarinClient.iOS                   0x00000001037622ed xamarin_main + 1309
+2018-07-23 14:54:55.243 XamarinClient.iOS[6881:287084] critical: 	26  XamarinClient.iOS                   0x0000000103434580 main + 80
+2018-07-23 14:54:55.243 XamarinClient.iOS[6881:287084] critical: 	27  libdyld.dylib                       0x0000000114124955 start + 1
+2018-07-23 14:54:55.244 XamarinClient.iOS[6881:287084] critical: 	28  ???                                 0x0000000000000001 0x0 + 1
+2018-07-23 14:54:55.244 XamarinClient.iOS[6881:287084] critical: 
 =================================================================
 Got a SIGABRT while executing native code. This usually indicates
 a fatal error in the mono runtime or one of the native libraries 

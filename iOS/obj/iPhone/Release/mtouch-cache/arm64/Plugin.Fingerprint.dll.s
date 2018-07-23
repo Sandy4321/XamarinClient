@@ -9099,7 +9099,7 @@ _mono_aot_file_info:
 	.long 160,3824,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 215,222,194,181,60,52,4,101,204,2,46,126,60,98,219,226
+	.byte 111,27,115,2,194,253,124,1,70,85,95,48,78,88,77,43
 	.globl _mono_aot_module_Plugin_Fingerprint_info
 	.align 3
 _mono_aot_module_Plugin_Fingerprint_info:

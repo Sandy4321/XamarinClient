@@ -10523,7 +10523,7 @@ _mono_aot_file_info:
 	.long 288,4472,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 117,35,144,113,88,43,243,185,121,203,99,180,198,169,154,136
+	.byte 213,132,4,154,186,163,75,63,118,148,122,62,125,159,9,99
 	.globl _mono_aot_module_Plugin_Messaging_info
 	.align 3
 _mono_aot_module_Plugin_Messaging_info:

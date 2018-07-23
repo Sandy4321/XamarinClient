@@ -1,0 +1,8 @@
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/ibtool/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/actool/_PartialAppManifest.items
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/actool/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/coremlc/_PartialAppManifest.items
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/coremlc/_BundleResourceWithLogicalName.items
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/optimized/
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/XamarinTest.csprojResolveAssemblyReference.cache
+/Users/Yiding/Documents/XamarinClient/XamarinTest/obj/iPhone/Release/XamarinTest.csproj.CoreCompileInputs.cache

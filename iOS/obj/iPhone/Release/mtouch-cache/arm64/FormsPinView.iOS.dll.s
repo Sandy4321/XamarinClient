@@ -4871,7 +4871,7 @@ _mono_aot_file_info:
 	.long 120,2200,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 9,89,29,186,160,140,146,242,223,39,235,48,224,52,112,42
+	.byte 181,27,174,250,64,86,189,41,51,62,189,175,145,153,139,71
 	.globl _mono_aot_module_FormsPinView_iOS_info
 	.align 3
 _mono_aot_module_FormsPinView_iOS_info:

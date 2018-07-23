@@ -543,7 +543,7 @@ _mono_aot_file_info:
 	.long 32,712,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 98,120,29,215,8,127,5,28,238,153,222,161,138,147,163,45
+	.byte 92,40,228,197,90,179,148,139,79,240,124,145,96,255,53,24
 	.globl _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info
 	.align 3
 _mono_aot_module_MvvmCross_Plugins_Fingerprint_iOS_info:

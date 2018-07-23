@@ -15,7 +15,7 @@ namespace XamarinTest
             RpcClient client = new RpcClient(false);
             client.Account = account;
             int balance = client.BalanceFromAccountTable().GetAwaiter().GetResult();
-            client.InitFromBootstrap().GetAwaiter().GetResult();
+            client.InitUserUtxo().GetAwaiter().GetResult();
             Assert.Equals(client.GetBalance(),-balance);
         }
     }

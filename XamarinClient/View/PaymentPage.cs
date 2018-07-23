@@ -113,6 +113,7 @@ namespace XamarinClient
             }
 
             RpcClient client = XamarinClientPage.client;
+
             try
             {
                 var result = client.ProposeTransaction(receiver, amount);

@@ -11306,7 +11306,7 @@ _mono_aot_file_info:
 	.long 224,5600,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 64,78,52,19,7,46,78,211,29,160,9,46,156,120,174,147
+	.byte 51,104,205,124,56,159,226,9,82,4,49,224,81,149,11,124
 	.globl _mono_aot_module_Plugin_Fingerprint_Abstractions_info
 	.align 3
 _mono_aot_module_Plugin_Fingerprint_Abstractions_info:

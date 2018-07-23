@@ -100,7 +100,14 @@ namespace BlockchainTools
             //Use TSLClient to create secure communication channel
             if (((IPEndPoint)client.Client.RemoteEndPoint).Port == 7522)
             {
-                return GetResultFromServerResponse(TlsClient.InvokeAndReadResponse(method, parameters, client));
+                if (!method.Equals("RpcNode.ProposeTransaction"))
+                {
+                    return GetResultFromServerResponse(TlsClient.InvokeAndReadResponse(method, parameters, client));
+                }
+                else
+                {
+                    return TransactionResult(TlsClient.InvokeAndReadResponse(method, parameters, client));
+                }
             }
 
             //If the wait time is too long, throw network error exception
@@ -145,7 +152,22 @@ namespace BlockchainTools
                     return InvokeAndReadResponse(method, parameters, client, sleepTime + 100);
                 }
             }
-            return GetResultFromServerResponse(recv);
+
+            if (!method.Equals("RpcNode.ProposeTransaction"))
+            {
+                return GetResultFromServerResponse(recv);
+            }
+            else
+            {
+                return TransactionResult(recv);
+            }
+        }
+
+        public byte[] TransactionResult(string response)
+        {
+            JObject responseJson = JObject.Parse(response);
+            string result = responseJson.GetValue("result").ToString();
+            return Encoding.UTF8.GetBytes(result);
         }
 
         //Internal method to get result from server response

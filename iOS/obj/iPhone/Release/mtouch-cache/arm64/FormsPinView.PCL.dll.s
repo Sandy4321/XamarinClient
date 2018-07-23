@@ -11664,7 +11664,7 @@ _mono_aot_file_info:
 	.long 272,4656,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 228,185,21,64,184,184,82,21,110,102,153,0,201,84,99,221
+	.byte 32,115,95,150,8,20,136,238,53,98,213,13,49,86,141,232
 	.globl _mono_aot_module_FormsPinView_PCL_info
 	.align 3
 _mono_aot_module_FormsPinView_PCL_info:

@@ -24,12 +24,15 @@ namespace BlockchainTools
         public Dictionary<byte[], int> Bootstrapresults { get; set; }
         public Dictionary<byte[], int> AccTableresults { get; set; }
         public Dictionary<byte[], int> UtxoOutputresults { get; set; }
+        bool payment;
+        byte[] signedTransaction;
 
         object Bootstrap_mutex = new object();
         object AccTable_mutex = new object();
         object TxIn_mutex = new object();
         object TxOut_mutex = new object();
         object UtxoOutput_mutex = new object();
+        object payment_mutex = new object();
 
         public RpcClient(bool IsNew)
         {
@@ -642,43 +645,44 @@ namespace BlockchainTools
                                   Convert.ToBase64String(txIn.script));
             }
 
-            byte[] signedTransaction = userTxService.MakeSignedTransaction(insArray, to, this.Account, value);
+            signedTransaction = userTxService.MakeSignedTransaction(insArray, to, this.Account, value);
             if (signedTransaction == null)
             {
                 return false;
             }
 
+            payment = false;
             int bizantine = ServerList.Count / 3;
+            List<Thread> threads = new List<Thread>();
             for (int i = 0; i < bizantine + 1; i++)
             {
-                TcpClient Client = new TcpClient();
-                Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
-                Rpc.InvokeAndReadResponse("RpcNode.ProposeTransaction", new Object[] { signedTransaction }, Client, 50);
-                Console.WriteLine("Proposed to server: " + ServerList[i].Item1 + ":" + ServerList[i].Item2);
+                Thread t = new Thread(paymentThread);
+                t.Start(i);
+                threads.Add(t);
             }
-            UtxoOutput utxo = new UtxoOutput(newBalance, false, this.Account.publicKey, this.Account.address);
-            for (int i = 0; i < 3; i++)
+            foreach(Thread t in threads){
+                t.Join();
+            }
+
+            return payment;
+        }
+
+        public void paymentThread(object param)
+        {
+            int i = (int)param;
+            TcpClient Client = new TcpClient();
+            Client.Connect(ServerList[i].Item1, ServerList[i].Item2);
+            byte[] result = Rpc.InvokeAndReadResponse("RpcNode.ProposeTransaction", new Object[] { signedTransaction }, Client, 50);
+            string recv = Encoding.UTF8.GetString(result);
+            if (recv.Equals("True"))
             {
-                Thread.Sleep(300);
-                Task<bool> task = Task.Run(async () =>
+                lock (payment_mutex)
                 {
-                    userTxService.userUtxo = new UserUtxo();
-                    await InitUserUtxo();
-                    foreach (UtxoOutput u in userTxService.userUtxo.UtxoOutputs)
-                    {
-                        if (u.ToString().Equals(utxo.ToString()))
-                        {
-                            return true;
-                        }
-                    }
-                    return false;
-                });
-                if (task.Result)
-                {
-                    return true;
+                    payment = true;
                 }
             }
-            return false;
+            Console.WriteLine(Encoding.UTF8.GetString(result));
+            Console.WriteLine("Proposed to server: " + ServerList[i].Item1 + ":" + ServerList[i].Item2);
         }
     }
 

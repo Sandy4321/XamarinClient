@@ -69944,7 +69944,7 @@ _mono_aot_file_info:
 	.long 1528,21384,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 10,48,164,254,191,153,40,239,68,66,100,78,93,56,94,77
+	.byte 220,250,181,61,176,166,193,127,104,189,29,141,170,67,172,133
 	.globl _mono_aot_module_MvvmCross_Platform_info
 	.align 3
 _mono_aot_module_MvvmCross_Platform_info:

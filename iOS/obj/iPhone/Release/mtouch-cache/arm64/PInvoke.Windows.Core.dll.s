@@ -2909,7 +2909,7 @@ _mono_aot_file_info:
 	.long 136,1824,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 63,131,238,41,178,152,140,158,116,113,211,234,90,68,244,252
+	.byte 139,61,149,222,222,204,37,233,2,151,168,200,12,31,127,15
 	.globl _mono_aot_module_PInvoke_Windows_Core_info
 	.align 3
 _mono_aot_module_PInvoke_Windows_Core_info:

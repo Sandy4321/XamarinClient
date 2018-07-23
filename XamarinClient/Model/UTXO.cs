@@ -338,6 +338,9 @@ namespace BlockchainTools
 
         public void InitUtxoReturns(byte[] received)
         {
+            if(received == null){
+                return;
+            }
             string content = Encoding.UTF8.GetString(received);
             List<UtxoReturn> receivedUtxoReturns = JsonConvert.DeserializeObject<List<UtxoReturn>>(content);
             UtxoReturns.AddRange(receivedUtxoReturns);
@@ -345,6 +348,10 @@ namespace BlockchainTools
 
         public void InitUtxoOutputs(byte[] received)
         {
+            if (received == null)
+            {
+                return;
+            }
             string content = Encoding.UTF8.GetString(received);
             List<UtxoOutput> receivedUtxoOutputs = JsonConvert.DeserializeObject<List<UtxoOutput>>(content);
             UtxoOutputs.AddRange(receivedUtxoOutputs);
