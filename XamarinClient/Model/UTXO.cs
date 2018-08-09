@@ -354,7 +354,7 @@ namespace BlockchainTools
             }
             string content = Encoding.UTF8.GetString(received);
             List<UtxoOutput> receivedUtxoOutputs = JsonConvert.DeserializeObject<List<UtxoOutput>>(content);
-            UtxoOutputs.AddRange(receivedUtxoOutputs);
+            if(receivedUtxoOutputs != null) UtxoOutputs.AddRange(receivedUtxoOutputs);
         }
 
         public object Clone()

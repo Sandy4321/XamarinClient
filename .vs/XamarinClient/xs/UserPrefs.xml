@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/Model/RpcClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/Model/UTXO.cs">
     <Files>
-      <File FileName="XamarinClient/View/XamarinClientPage.cs" Line="302" Column="51" />
-      <File FileName="XamarinClient/Model/RpcCall.cs" Line="110" Column="18" />
-      <File FileName="XamarinClient/Model/UTXO.cs" Line="354" Column="14" />
-      <File FileName="XamarinClient/Model/RpcClient.cs" Line="668" Column="1" />
-      <File FileName="XamarinClient/View/PaymentPage.cs" Line="123" Column="1" NotebookId="1" />
-      <File FileName="iOS/Main.cs" Line="9" Column="1" NotebookId="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="XamarinClient/View/XamarinClientPage.cs" Line="299" Column="46" />
+      <File FileName="XamarinClient/Model/RpcClient.cs" Line="584" Column="51" />
+      <File FileName="XamarinClient/Model/UTXO.cs" Line="357" Column="55" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
@@ -19,5 +17,5 @@
   </MonoDevelop.Ide.ItemProperties.XamarinTest>
   <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D2C7F0F8-315D-4AB4-980F-D54C56248E34" automaticSigning="False" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.XamarinClient.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.Droid PreferredExecutionTarget="Android.emulator" />
 </Properties>

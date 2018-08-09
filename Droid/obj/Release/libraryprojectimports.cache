@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj/Release/lp/4/jl/formsviewgroup.jar</Jar>
-    <Jar>obj/Release/lp/10/jl/__reference__sdk-v1.0.0.jar</Jar>
-    <Jar>obj/Release/lp/10/jl/__reference__pass-v1.2.0.jar</Jar>
-    <Jar>obj/Release/lp/24/jl/support-annotations.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/lp/10/jl/__reference__pass-v1.2.0.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/lp/10/jl/__reference__sdk-v1.0.0.jar</Jar>
     <Jar>/Users/Yiding/Documents/XamarinClient/Droid/obj/Release/lp/23/jl/bin/classes.jar</Jar>
