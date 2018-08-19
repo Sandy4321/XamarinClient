@@ -8,6 +8,7 @@ using Xamarin.Auth;
 using FormsPinView.PCL;
 
 using Plugin.Fingerprint;
+using System.Collections.ObjectModel;
 
 namespace XamarinClient
 {
@@ -117,8 +118,21 @@ namespace XamarinClient
         public void GoToHome(){
             if(acc.Properties.ContainsKey("PrivateKey")){
                 string pk = acc.Properties["PrivateKey"];
-                BlockchainTools.Account account = new BlockchainTools.Account(pk);
-                Application.Current.Properties.Add("Account", account);
+                try{
+                    BlockchainTools.Account account = new BlockchainTools.Account(pk);
+                    Application.Current.Properties.Add("Account", account);
+                } catch(Exception e){}
+            }
+            if(acc.Properties.ContainsKey("keys")){
+                string keys = acc.Properties["keys"];
+                string[] tokens = keys.Split(new char[] { '=' });
+                ObservableCollection<AccountDisplay> list = new ObservableCollection<AccountDisplay>();
+                foreach(string s in tokens){
+                    if(s != ""){
+                        list.Add(new AccountDisplay(s + "="));
+                    }
+                }
+                Application.Current.Properties.Add("Accounts", list);
             }
             App.Current.MainPage = new RootView();
            }

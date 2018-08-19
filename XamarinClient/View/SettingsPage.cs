@@ -44,14 +44,10 @@ namespace XamarinClient
 
     public class SettingsPage : ContentPage
     {
+        public Button accountPage;
         public Button passPhrase;
         public Button changePin;
         public Switch FPswitch;
-        public Entry PrivKey;
-        public Button ShowPrivKey;
-        public Button Save;
-        public Button CreateAccount;
-        public Button Remove;
 
         public ListView listView { get; set; }
         public static ObservableCollection<ServerDisplay> ServerList;
@@ -67,6 +63,15 @@ namespace XamarinClient
             Icon = "settings.png";
 
             pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
+
+            accountPage = new Button
+            {
+                Text = "Account",
+                FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label)),
+                HorizontalOptions = LayoutOptions.Start,
+                TextColor = Color.Black,
+            };
+            accountPage.Clicked += account_page;
 
             passPhrase = new Button
             {
@@ -95,73 +100,6 @@ namespace XamarinClient
                 FPswitch.IsToggled = true;
             }
             FPswitch.Toggled += FPswitch_Toggled;
-
-
-            PrivKey = new Entry
-            {
-                IsPassword = true,
-                Text = "",
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-            };
-
-            if(App.Current.Properties.ContainsKey("Account")){
-                Account acc = App.Current.Properties["Account"] as Account;
-                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
-            }
-
-            ShowPrivKey = new Button
-            {
-                HorizontalOptions = LayoutOptions.End,
-                Image = "hide.png",
-            };
-            ShowPrivKey.Clicked += ShowPrivateKey;
-
-            Save = new Button
-            {
-                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top,0),
-                Text = "Save",
-                Image = "adduser.png",
-            };
-            Save.Clicked += SaveKeys;
-
-            CreateAccount = new Button
-            {
-                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top,0),
-                Text = "Create",
-                Image = "newuser.png"
-            };
-            CreateAccount.Clicked += CreateNewAccount;
-
-            Remove = new Button
-            {
-                ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Top,0),
-                Text = "Remove",
-                Image = "trash.png",
-            };
-            Remove.Clicked += RemoveKeys;
-
-            Grid passwordGrid = new Grid
-            {
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                RowSpacing = 0.5,
-            };
-            passwordGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30, GridUnitType.Absolute) });
-            passwordGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(9, GridUnitType.Star) });
-            passwordGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            passwordGrid.Children.Add(PrivKey, 0, 0);
-            passwordGrid.Children.Add(ShowPrivKey, 1, 0);
-
-            Grid buttonsGrid = new Grid
-            {
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-            };
-            buttonsGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(60, GridUnitType.Absolute) });
-            buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            buttonsGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            buttonsGrid.Children.Add(CreateAccount, 0, 0);
-            buttonsGrid.Children.Add(Save,1,0);
-            buttonsGrid.Children.Add(Remove,2,0);
 
             ServerHost = new Entry
             {
@@ -196,17 +134,7 @@ namespace XamarinClient
                 VerticalOptions = LayoutOptions.Fill,
                 Children =
                 {
-                    new Label{
-                        Text = "Private Key",
-                        HorizontalOptions = LayoutOptions.Center,
-                        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
-                    },
-                    passwordGrid,
-                    buttonsGrid,
-
-                    new Label{
-                        Text = ""
-                    },
+                    accountPage,
 
                     passPhrase,
 
@@ -270,6 +198,10 @@ namespace XamarinClient
             Content = scroll;
         }
 
+        async void account_page(Object sender, EventArgs args){
+            await Navigation.PushAsync(new AccountPage());
+        }
+
         async void pass_phrase(object sender, EventArgs args){
             await Navigation.PushAsync(new Passphrase());
         }
@@ -289,105 +221,6 @@ namespace XamarinClient
             Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
             App.Current.Properties["Pin"] = pinAccount;
             return;
-        }
-
-        void ShowPrivateKey(object sender, EventArgs args)
-        {
-            PrivKey.IsPassword = !PrivKey.IsPassword;
-            if (PrivKey.IsPassword)
-            {
-                ShowPrivKey.Image = "hide.png";
-            }
-            else
-            {
-                ShowPrivKey.Image = "eye.png";
-            }
-        }
-
-        async void SaveKeys(object sender, EventArgs args)
-        {
-            if (PrivKey.Text == "")
-            {
-                await DisplayAlert("Error", "Private Key cannot be empty", "OK");
-                return;
-            }
-
-            Account account = new Account();
-            try
-            {
-                account = new Account(PrivKey.Text);
-            }
-            catch (Exception e)
-            {
-                await DisplayAlert("Fatal", "Invalid Private Key", "OK");
-                return;
-            }
-
-            if (!Application.Current.Properties.ContainsKey("Account"))
-            {
-                Application.Current.Properties.Add("Account", account);
-            }
-            else
-            {
-                Application.Current.Properties["Account"] = account;
-            }
-
-            SaveAccount(account);
-            await DisplayAlert("Account", "Account signed in successfully.", "OK");
-        }
-
-        async void CreateNewAccount(object sender, EventArgs args)
-        {
-            var response = await DisplayAlert("Alert","Are you sure you want to create a new key pair?\nPlease make sure you have a copy of this private key.","Yes","No");
-            if (!response)
-            {
-                return;
-            }
-            Account account = new Account();
-            if (!Application.Current.Properties.ContainsKey("Account"))
-            {
-                Application.Current.Properties.Add("Account", account);
-            }
-            else
-            {
-                Application.Current.Properties["Account"] = account;
-            }
-            SaveAccount(account);
-            await DisplayAlert("Account", "Account created successfully.", "OK");
-        }
-
-        async void RemoveKeys(object sender, EventArgs args)
-        {
-            var response = await DisplayAlert("Warning", "Are you sure you want to remove this private key?\nPlease make sure you have a copy of this private key.", "Yes", "No");
-            if(!response){
-                return;
-            }
-            if (App.Current.Properties.ContainsKey("Account"))
-            {
-                App.Current.Properties.Remove("Account");
-                Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
-                pinAccount.Properties.Remove("PrivateKey");
-                Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
-            }
-            return;
-        }
-
-        async void SaveAccount(Account account)
-        {
-            try
-            {
-                Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
-                if(!pinAccount.Properties.ContainsKey("PrivateKey")){
-                    pinAccount.Properties.Add("PrivateKey",Convert.ToBase64String(account.privateKey));
-                } else {
-                    pinAccount.Properties["PrivateKey"] = Convert.ToBase64String(account.privateKey);
-                }
-                Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
-            }
-            catch (Exception e)
-            {
-                var error = e.Message;
-            }
         }
 
         async void OnItemTapped(object sender, ItemTappedEventArgs e)
@@ -502,10 +335,6 @@ namespace XamarinClient
         }
 
         protected override void OnAppearing(){
-            if(App.Current.Properties.ContainsKey("Account")){
-                Account acc = App.Current.Properties["Account"] as Account;
-                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
-            }
             pinAccount = App.Current.Properties["Pin"] as Xamarin.Auth.Account;
             if (pinAccount.Properties["FingerPrint"].Equals("True"))
             {

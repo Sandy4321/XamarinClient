@@ -15710,7 +15710,7 @@ BlockchainTools_UserUtxo_InitUtxoOutputs_byte__:
 .word 0xf9000bba
 .word 0xf9000fa0
 .word 0xaa0103fa
-.word 0xb400025a
+.word 0xb400029a
 .loc 5 355 0
 bl _p_5
 .word 0xaa0003e2
@@ -15726,6 +15726,8 @@ ldr x15, [x16, #1792]
 bl _p_198
 .word 0xaa0003fa
 .loc 5 357 0
+.word 0xaa1a03e0
+.word 0xb40000e0
 .word 0xf9400fa0
 .word 0xf9400c02
 .word 0xaa0203e0
@@ -96245,7 +96247,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "174B681A-97B3-431C-884F-0F55B9A7E5A2"
+	.asciz "1665C578-F8B8-4888-B8EB-220E058A4DD5"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -96330,7 +96332,7 @@ _mono_aot_file_info:
 	.long 1360,29440,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0
-	.byte 252,172,164,3,88,88,1,198,254,202,95,15,34,78,81,229
+	.byte 198,54,184,91,0,182,242,133,34,121,194,223,196,133,240,25
 	.globl _mono_aot_module_XamarinClient_iOS_info
 	.align 3
 _mono_aot_module_XamarinClient_iOS_info:

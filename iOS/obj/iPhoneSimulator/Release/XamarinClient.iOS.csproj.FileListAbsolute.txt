@@ -124,3 +124,4 @@
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.App.xaml.g.cs
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.exe
 /Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.pdb
+/Users/Yiding/Documents/XamarinClient/iOS/obj/iPhoneSimulator/Release/XamarinClient.iOS.csprojResolveAssemblyReference.cache
