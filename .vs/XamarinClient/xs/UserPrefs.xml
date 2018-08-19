@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{A2D2695F-057C-49E2-81F4-0C3275A9CC0D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="XamarinClient/View/AuthenticationPage.cs">
     <Files>
-      <File FileName="XamarinClient/View/SettingsPage.cs" Line="340" Column="14" />
+      <File FileName="XamarinClient/View/SettingsPage.cs" Line="382" Column="13" />
       <File FileName="XamarinClient/View/AuthenticationPage.cs" Line="119" Column="1" NotebookId="1" />
-      <File FileName="XamarinClient/View/AccountPage.cs" Line="325" Column="20" NotebookId="1" />
+      <File FileName="XamarinClient/View/AccountPage.cs" Line="308" Column="17" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,17 +21,15 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/Yiding/Documents/XamarinClient/XamarinClient/View/AuthenticationPage.cs" relfile="XamarinClient/View/AuthenticationPage.cs" line="119" column="30" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.XamarinTest>
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.XamarinTest>
-  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D2C7F0F8-315D-4AB4-980F-D54C56248E34" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.XamarinClient.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.XamarinClient.Droid PreferredExecutionTarget="Android.emulator" />
 </Properties>

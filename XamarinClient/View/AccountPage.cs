@@ -63,12 +63,6 @@ namespace XamarinClient
                 HorizontalOptions = LayoutOptions.FillAndExpand,
             };
 
-            if (App.Current.Properties.ContainsKey("Account"))
-            {
-                Account acc = App.Current.Properties["Account"] as Account;
-                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
-            }
-
             ShowPrivKey = new Button
             {
                 HorizontalOptions = LayoutOptions.End,
@@ -127,6 +121,21 @@ namespace XamarinClient
             if(Application.Current.Properties.ContainsKey("Accounts"))
             {
                 AccountList = Application.Current.Properties["Accounts"] as ObservableCollection<AccountDisplay>;
+            }
+            else
+            {
+                Application.Current.Properties.Add("Accounts", AccountList);
+            }
+
+            if (App.Current.Properties.ContainsKey("Account"))
+            {
+                Account acc = App.Current.Properties["Account"] as Account;
+                PrivKey.Text = Convert.ToBase64String(acc.privateKey);
+                AccountDisplay accdisplay = new AccountDisplay(Convert.ToBase64String(acc.privateKey));
+                if(!AccountList.Contains(accdisplay))
+                {
+                    AccountList.Add(accdisplay);
+                }
             }
 
             listView = new ListView();
@@ -196,15 +205,6 @@ namespace XamarinClient
                 await DisplayAlert("Fatal", "Invalid Private Key", "OK");
                 return;
             }
-
-            if (!Application.Current.Properties.ContainsKey("Account"))
-            {
-                Application.Current.Properties.Add("Account", account);
-            }
-            else
-            {
-                Application.Current.Properties["Account"] = account;
-            }
             SaveAccount(account);
             await DisplayAlert("Account", "Account signed in successfully.", "OK");
         }
@@ -217,14 +217,6 @@ namespace XamarinClient
                 return;
             }
             Account account = new Account();
-            if (!Application.Current.Properties.ContainsKey("Account"))
-            {
-                Application.Current.Properties.Add("Account", account);
-            }
-            else
-            {
-                Application.Current.Properties["Account"] = account;
-            }
             SaveAccount(account);
             await DisplayAlert("Account", "Account created successfully.", "OK");
         }
@@ -272,9 +264,19 @@ namespace XamarinClient
 
         async void SaveAccount(Account account)
         {
+            PrivKey.Text = Convert.ToBase64String(account.privateKey);
             try
             {
                 Xamarin.Auth.AccountStore.Create().Delete(pinAccount, App.AppName);
+
+                if (!Application.Current.Properties.ContainsKey("Account"))
+                {
+                    Application.Current.Properties.Add("Account", account);
+                }
+                else
+                {
+                    Application.Current.Properties["Account"] = account;
+                }
                 if (!pinAccount.Properties.ContainsKey("PrivateKey"))
                 {
                     pinAccount.Properties.Add("PrivateKey", Convert.ToBase64String(account.privateKey));
@@ -299,8 +301,12 @@ namespace XamarinClient
                         pinAccount.Properties["keys"] = keys;
                     }
                 }
+                if(!Application.Current.Properties.ContainsKey("Accounts"))
+                {
+                    Application.Current.Properties.Add("Accounts", AccountList);
+                }
+
                 Xamarin.Auth.AccountStore.Create().Save(pinAccount, App.AppName);
-                PrivKey.Text = Convert.ToBase64String(account.privateKey);
             }
             catch (Exception e)
             {
@@ -320,14 +326,6 @@ namespace XamarinClient
             {
                 Account account = new Account(acc.DisplayName);
                 PrivKey.Text = acc.DisplayName;
-                if (!Application.Current.Properties.ContainsKey("Account"))
-                {
-                    Application.Current.Properties.Add("Account", account);
-                }
-                else
-                {
-                    Application.Current.Properties["Account"] = account;
-                }
                 SaveAccount(account);
             }
             ((ListView)sender).SelectedItem = null;
