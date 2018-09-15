@@ -15,6 +15,7 @@ namespace XamarinClient
         public Editor Detail = new Editor { HeightRequest = 100, };
         public Button Submit;
         public Button Cancel;
+        private Account acc;
 
         public ScrollView scroll;
 
@@ -143,7 +144,6 @@ namespace XamarinClient
             string emailaddr = Email.Text;
             string detail = Detail.Text;
 
-            Account acc = new Account();
             string body = "Address: " + Convert.ToBase64String(acc.address)
                                                        + "\nRole: " + role
                                                        + "\nReason: " + detail
@@ -168,6 +168,7 @@ namespace XamarinClient
         {
             if (App.Current.Properties.ContainsKey("Account"))
             {
+                acc = App.Current.Properties["Account"] as Account;
                 Content = scroll;
             }
             else

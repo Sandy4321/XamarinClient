@@ -24,7 +24,7 @@ namespace XamarinClient
             Children.Add(barcodepage);
 
             var getcoinpage = new NavigationPage(new GetCoinPage());
-            getcoinpage.Title = "Get Coin";
+            getcoinpage.Title = "Get Coins";
             getcoinpage.Icon = "coin.png";
             Children.Add(getcoinpage);
 

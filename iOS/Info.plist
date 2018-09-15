@@ -10,8 +10,6 @@
 	<string>com.RedbellyBlockchain.XamarinRbbcClient</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.3</string>
-	<key>CFBundleVersion</key>
-	<string>1.9</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -45,5 +43,7 @@
 	<string>LaunchScreen</string>
 	<key>NSCameraUsageDescription</key>
 	<string>New Entry</string>
+	<key>CFBundleVersion</key>
+	<string>2.0</string>
 </dict>
 </plist>

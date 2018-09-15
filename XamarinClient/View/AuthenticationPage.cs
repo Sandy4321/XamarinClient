@@ -129,7 +129,8 @@ namespace XamarinClient
                 ObservableCollection<AccountDisplay> list = new ObservableCollection<AccountDisplay>();
                 foreach(string s in tokens){
                     if(s != ""){
-                        list.Add(new AccountDisplay(s + "="));
+                        BlockchainTools.Account acc = new BlockchainTools.Account(s + "=");
+                        list.Add(new AccountDisplay(Convert.ToBase64String(acc.privateKey), Convert.ToBase64String(acc.address)));
                     }
                 }
                 Application.Current.Properties.Add("Accounts", list);

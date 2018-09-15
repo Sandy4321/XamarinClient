@@ -4,16 +4,19 @@ using System.Collections.ObjectModel;
 using BlockchainTools;
 
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace XamarinClient
 {
     public class AccountDisplay
     {
+        public string key;
         public string DisplayName;
 
-        public AccountDisplay(string pk)
+        public AccountDisplay(string key, string addr)
         {
-            this.DisplayName = pk;
+            this.key = key;
+            this.DisplayName = addr;
         }
 
         public override string ToString()
@@ -131,7 +134,7 @@ namespace XamarinClient
             {
                 Account acc = App.Current.Properties["Account"] as Account;
                 PrivKey.Text = Convert.ToBase64String(acc.privateKey);
-                AccountDisplay accdisplay = new AccountDisplay(Convert.ToBase64String(acc.privateKey));
+                AccountDisplay accdisplay = new AccountDisplay(Convert.ToBase64String(acc.privateKey), Convert.ToBase64String(acc.address));
                 if(!AccountList.Contains(accdisplay))
                 {
                     AccountList.Add(accdisplay);
@@ -286,7 +289,7 @@ namespace XamarinClient
                     pinAccount.Properties["PrivateKey"] = Convert.ToBase64String(account.privateKey);
                 }
 
-                AccountDisplay acc = new AccountDisplay(Convert.ToBase64String(account.privateKey));
+                AccountDisplay acc = new AccountDisplay(Convert.ToBase64String(account.privateKey), Convert.ToBase64String(account.address));
                 if (!AccountList.Contains(acc))
                 {
                     AccountList.Add(acc);
@@ -321,12 +324,16 @@ namespace XamarinClient
                 return;
             }
             AccountDisplay acc = e.Item as AccountDisplay;
-            var action = await DisplayActionSheet("Change Account", "Cancel", "Switch");
+            var action = await DisplayActionSheet("Change Account", "Cancel", "Switch", "Copy");
             if (action.Equals("Switch"))
             {
-                Account account = new Account(acc.DisplayName);
-                PrivKey.Text = acc.DisplayName;
+                Account account = new Account(acc.key);
+                PrivKey.Text = acc.key;
                 SaveAccount(account);
+            }
+            if(action.Equals("Copy"))
+            {
+                Clipboard.SetText(acc.DisplayName);
             }
             ((ListView)sender).SelectedItem = null;
             return;

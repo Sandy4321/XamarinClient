@@ -213,6 +213,9 @@
     <Reference Include="HockeySDK.iOSBindings">
       <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\packages\Xamarin.Essentials.0.10.0-preview\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
