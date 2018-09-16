@@ -149,7 +149,7 @@ namespace XamarinClient
                         HorizontalOptions = LayoutOptions.StartAndExpand,
                         Children = {
                             new Label{
-                                Text = "Finger Print Unlock",
+                                Text = "Built-in Unlock",
                                 HorizontalTextAlignment = TextAlignment.Start,
                             },
                             FPswitch,

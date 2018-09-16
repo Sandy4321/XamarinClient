@@ -44,7 +44,7 @@ namespace XamarinClient
 
                 if (!acc.Properties.ContainsKey("FingerPrint")){
                     Device.BeginInvokeOnMainThread(async () => {
-                        var res = await DisplayAlert("Finger Print", "Do you want to enable finger print unlock?", "Yes", "No");
+                        var res = await DisplayAlert("Built-in Unlock", "Do you want to enable built-in unlock?", "Yes", "No");
                         if (res)
                         {
                             AccountStore.Create().Delete(acc, App.AppName);
